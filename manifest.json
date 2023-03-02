@@ -1,0 +1,97 @@
+{
+  "manifest_version": 1,
+  "type": "WebApp",
+  "meta": {
+    "name": "Sons Of The Forest Map-DEV",
+    "author": "Leon Machens",
+    "version": "0.0.1",
+    "minimum-overwolf-version": "0.218.0",
+    "description": "Sons Of The Forest Map",
+    "dock_button_title": "Sons Of The Forest Map",
+    "icon": "icons/iconMouseOver.png",
+    "icon_gray": "icons/iconMouseNormal.png",
+    "launcher_icon": "icons/launcherIcon.ico"
+  },
+  "permissions": ["Hotkeys", "GameInfo", "FileSystem", "DesktopStreaming"],
+  "data": {
+    "start_window": "controller",
+    "windows": {
+      "controller": {
+        "file": "controller.html",
+        "debug_url": "http://localhost:3033/controller.html",
+        "is_background_page": true
+      },
+      "desktop": {
+        "file": "index.html",
+        "debug_url": "http://localhost:3033/index.html",
+        "resizable": true,
+        "override_on_update": true,
+        "desktop_only": true,
+        "transparent": true,
+        "native_window": true,
+        "size": {
+          "width": 1200,
+          "height": 800
+        },
+        "min_size": {
+          "width": 900,
+          "height": 600
+        },
+        "allow_local_file_access": true,
+        "popup_blocker": true,
+        "mute": true
+      },
+      "overlay": {
+        "file": "index.html",
+        "debug_url": "http://localhost:3033/index.html",
+        "resizable": true,
+        "override_on_update": true,
+        "transparent": true,
+        "in_game_only": true,
+        "focus_game_takeover": "ReleaseOnLostFocus",
+        "focus_game_takeover_release_hotkey": "toggle_app",
+        "size": {
+          "width": 1200,
+          "height": 800
+        },
+        "min_size": {
+          "width": 900,
+          "height": 600
+        },
+        "allow_local_file_access": true,
+        "popup_blocker": true,
+        "mute": true
+      }
+    },
+    "game_targeting": {
+      "type": "dedicated",
+      "game_ids": [22638]
+    },
+    "game_events": [22638],
+    "launch_events": [
+      {
+        "event": "GameLaunch",
+        "event_data": {
+          "game_ids": [22638]
+        },
+        "start_minimized": false
+      }
+    ],
+    "hotkeys": {
+      "toggle_app": {
+        "title": "Show/Hide App",
+        "action-type": "custom",
+        "default": "F6"
+      }
+    },
+    "protocol_override_domains": {
+      "googlesyndication": "http"
+    },
+    "force_browser": "user",
+    "developer": {
+      "enable_auto_refresh": true,
+      "reload_delay": 1000,
+      "filter": "*.*"
+    }
+  }
+}
