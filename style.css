@@ -19,10 +19,30 @@ body {
 button {
   padding: 0;
   border: none;
+  cursor: pointer;
+  width: fit-content;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #77777e;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  background-color: #18181b;
+  color: #f8f8ff;
+  transition: border-color 0.15s;
+  font-family: monospace;
 }
 
 button:focus {
   outline: none;
+}
+
+button:disabled {
+  background-color: #202022;
+  cursor: default;
+  color: #8b8b8c;
+}
+
+button:not(:disabled):hover {
+  border-color: #c9c9c9;
 }
 
 a {
@@ -240,25 +260,4 @@ input {
 
 .location-status {
   color: #71717a;
-}
-
-.show-on-map {
-  width: fit-content;
-  padding: 0.25rem 0.5rem;
-  border: 1px solid #333338;
-  border-radius: 0.25rem;
-  font-weight: 600;
-  background-color: #18181b;
-  color: #f8f8ff;
-  transition: border-color 0.15s;
-  cursor: pointer;
-}
-
-.show-on-map:not(:disabled):hover {
-  border-color: #c9c9c9;
-}
-.show-on-map:disabled {
-  background-color: #202022;
-  color: #8b8b8c;
-  cursor: default;
 }

@@ -1,5 +1,6 @@
 import { GAME_CLASS_ID, WINDOWS } from "./lib/config";
 import { listenToGameInfo } from "./lib/games";
+import { listenToHotkeyBinding } from "./lib/hotkeys";
 import { getPreferedWindowName, togglePreferedWindow } from "./lib/windows";
 
 export default function Status() {
@@ -25,6 +26,16 @@ export default function Status() {
     togglePreferedWindow();
     overlay.checked = (await getPreferedWindowName()) === WINDOWS.OVERLAY;
   };
+
+  const toggleAppHotkey =
+    document.querySelector<HTMLButtonElement>("#toggle_app_hotkey")!;
+
+  toggleAppHotkey.onclick = () => {
+    location.href = `overwolf://settings/games-overlay?hotkey=toggle_app&gameId=${GAME_CLASS_ID}`;
+  };
+  listenToHotkeyBinding("toggle_app", (binding) => {
+    toggleAppHotkey.innerText = binding;
+  });
 
   const locationStatus =
     document.querySelector<HTMLParagraphElement>(".location-status")!;
