@@ -13,7 +13,7 @@ export default function Player({ map }: { map: leaflet.Map }) {
   marker.rotation = 270;
 
   marker.addTo(map);
-  map.panTo(marker.getLatLng());
+  map.flyTo(marker.getLatLng(), 2);
 
   function updatePosition({
     location,

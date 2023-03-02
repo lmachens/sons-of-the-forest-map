@@ -82,6 +82,7 @@ waitForOverwolf().then(async () => {
 
     setLocation(lastLocation);
     updatePlayerPosition({ location: lastLocation, rotation: lastRotation });
+    panTo();
     updateDirectionLinePosition({
       location: lastLocation,
       rotation: lastRotation,
@@ -118,6 +119,8 @@ waitForOverwolf().then(async () => {
   }
   function onNewEvents(info: overwolf.games.events.NewGameEvents) {
     if (info.events.some((event) => event.name === "match_start")) {
+    }
+    if (info.events.some((event) => event.name === "match_end")) {
     }
     console.log(info);
   }

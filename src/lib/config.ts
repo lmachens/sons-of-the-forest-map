@@ -7,8 +7,8 @@ export const WINDOWS = {
   OVERLAY: "overlay",
 };
 export const BOUNDS: LatLngBoundsExpression = [
-  [0, 0],
-  [1000, 1000],
+  [-2000, -2000],
+  [2000, 2000],
 ];
 
 export const INTERESTED_IN_FEATURES = ["match_info", "location"];
