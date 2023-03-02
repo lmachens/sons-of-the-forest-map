@@ -39,7 +39,11 @@ export default function TraceLine({ map }: { map: leaflet.Map }) {
     circle.addTo(layerGroup);
   }
 
+  function clear() {
+    layerGroup.clearLayers();
+  }
   return {
     updatePosition,
+    clear,
   };
 }

@@ -55,7 +55,7 @@ waitForOverwolf().then(async () => {
   const { updatePosition: updateDirectionLinePosition } = DirectionLine({
     map,
   });
-  const { updatePosition: updateTraceLinePosition } = TraceLine({
+  const { updatePosition: updateTraceLinePosition, clear } = TraceLine({
     map,
   });
 
@@ -102,6 +102,7 @@ waitForOverwolf().then(async () => {
       overwolf.games.events.InfoUpdate2
     >
   ) {
+    // https://overwolf.github.io/api/games/events/sons-of-the-forest#location
     if (info.feature === "location") {
       const payload = info.info as unknown as {
         match_info: { location: string };
@@ -118,11 +119,14 @@ waitForOverwolf().then(async () => {
     console.log(info);
   }
   function onNewEvents(info: overwolf.games.events.NewGameEvents) {
+    // https://overwolf.github.io/api/games/events/sons-of-the-forest#match_info
     if (info.events.some((event) => event.name === "match_start")) {
+      clear();
     }
     if (info.events.some((event) => event.name === "match_end")) {
     }
-    console.log(info);
+    if (info.events.some((event) => event.name === "death")) {
+    }
   }
 
   function registerEvents() {
