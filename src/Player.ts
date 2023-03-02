@@ -6,18 +6,35 @@ export default function Player({ map }: { map: leaflet.Map }) {
     className: "",
     iconSize: [32, 32],
   });
-  const marker = new PlayerMarker([100, 100], {
+  const marker = new PlayerMarker([0, 0], {
     icon,
     interactive: false,
   });
-  marker.rotation = 45;
+  marker.rotation = 270;
+
   marker.addTo(map);
   map.panTo(marker.getLatLng());
+
+  function updatePosition({
+    location,
+    rotation,
+  }: {
+    location: {
+      x: number;
+      y: number;
+      z: number;
+    };
+    rotation: number;
+  }) {
+    marker.rotation = rotation;
+    marker.setLatLng([location.y, location.x]);
+  }
 
   function panTo() {
     map.panTo(marker.getLatLng());
   }
   return {
+    updatePosition,
     panTo,
   };
 }

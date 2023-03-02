@@ -1,4 +1,5 @@
 import Ads from "./Ads";
+import DirectionLine from "./DirectionLine";
 import ImageOverlay from "./ImageOverlay";
 import { WINDOWS } from "./lib/config";
 import { listenToGameLaunched, setFeatures } from "./lib/games";
@@ -7,6 +8,7 @@ import { closeWindow, getCurrentWindow } from "./lib/windows";
 import Map from "./Map";
 import Player from "./Player";
 import Status from "./Status";
+import TraceLine from "./TraceLine";
 
 waitForOverwolf().then(async () => {
   console.log("Init main");
@@ -44,12 +46,37 @@ waitForOverwolf().then(async () => {
   const map = Map(mapElement);
   ImageOverlay({ map });
 
-  const { panTo } = Player({ map });
   const { setLocation } = Status();
+  const { panTo, updatePosition: updatePlayerPosition } = Player({ map });
   const showOnMap = document.querySelector<HTMLButtonElement>(".show-on-map")!;
   showOnMap.onclick = () => {
     panTo();
   };
+  const { updatePosition: updateDirectionLinePosition } = DirectionLine({
+    map,
+  });
+  const { updatePosition: updateTraceLinePosition } = TraceLine({
+    map,
+  });
+
+  let lastLocation = { x: 100, y: 100, z: 4 };
+  let lastRotation = 87;
+
+  function updatePlayer() {
+    lastLocation = { x: 100, y: 100, z: 4 };
+    lastRotation = 87;
+
+    setLocation(lastLocation);
+    updatePlayerPosition({ location: lastLocation, rotation: lastRotation });
+    updateDirectionLinePosition({
+      location: lastLocation,
+      rotation: lastRotation,
+    });
+    updateTraceLinePosition({ location: lastLocation });
+  }
+
+  updatePlayer();
+
   const ads = document.querySelector<HTMLDivElement>(".ads")!;
   Ads(ads);
 
