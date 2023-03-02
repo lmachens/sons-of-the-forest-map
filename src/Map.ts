@@ -7,7 +7,7 @@ export default function Map(container: HTMLDivElement) {
   const map = leaflet.map(container, {
     zoomControl: false,
     attributionControl: false,
-    minZoom: -1,
+    minZoom: -3,
     maxZoom: 5,
     crs: leaflet.CRS.Simple,
   });

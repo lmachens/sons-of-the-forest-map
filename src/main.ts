@@ -116,7 +116,6 @@ waitForOverwolf().then(async () => {
         //
       }
     }
-    console.log(info);
   }
   function onNewEvents(info: overwolf.games.events.NewGameEvents) {
     // https://overwolf.github.io/api/games/events/sons-of-the-forest#match_info
