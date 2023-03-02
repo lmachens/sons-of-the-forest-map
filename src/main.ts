@@ -59,12 +59,26 @@ waitForOverwolf().then(async () => {
     map,
   });
 
-  let lastLocation = { x: 100, y: 100, z: 4 };
-  let lastRotation = 87;
+  let lastLocation = { x: 0, y: 0, z: 0 };
+  let lastRotation = 0;
 
-  function updatePlayer() {
-    lastLocation = { x: 100, y: 100, z: 4 };
-    lastRotation = 87;
+  function updatePlayer(location: { x: number; y: number; z: number }) {
+    lastRotation =
+      (Math.atan2(
+        location.y - (lastLocation.y || location.y),
+        location.x - (lastLocation.x || location.x)
+      ) *
+        180) /
+      Math.PI;
+    console.log(
+      lastLocation,
+      location,
+      lastRotation,
+      location.y - (lastLocation.y || location.y),
+      location.x - (lastLocation.x || location.x)
+    );
+
+    lastLocation = location;
 
     setLocation(lastLocation);
     updatePlayerPosition({ location: lastLocation, rotation: lastRotation });
@@ -74,8 +88,6 @@ waitForOverwolf().then(async () => {
     });
     updateTraceLinePosition({ location: lastLocation });
   }
-
-  updatePlayer();
 
   const ads = document.querySelector<HTMLDivElement>(".ads")!;
   Ads(ads);
@@ -89,9 +101,24 @@ waitForOverwolf().then(async () => {
       overwolf.games.events.InfoUpdate2
     >
   ) {
+    if (info.feature === "location") {
+      const payload = info.info as unknown as {
+        match_info: { location: string };
+      };
+      try {
+        const { loc_x, loc_y, loc_z } = JSON.parse(
+          payload.match_info.location
+        ) as { loc_x: number; loc_y: number; loc_z: number };
+        updatePlayer({ x: loc_x, y: loc_y, z: loc_z });
+      } catch (error) {
+        //
+      }
+    }
     console.log(info);
   }
   function onNewEvents(info: overwolf.games.events.NewGameEvents) {
+    if (info.events.some((event) => event.name === "match_start")) {
+    }
     console.log(info);
   }
 
