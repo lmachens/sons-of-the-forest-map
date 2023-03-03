@@ -189,7 +189,6 @@ input {
   flex-grow: 0;
   height: 300px;
   width: 400px;
-  background: green;
   background: url(/ads.webp);
   background-size: cover;
 }

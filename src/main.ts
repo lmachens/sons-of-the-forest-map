@@ -6,6 +6,7 @@ import { listenToGameLaunched, setFeatures } from "./lib/games";
 import { waitForOverwolf } from "./lib/overwolf";
 import { closeWindow, getCurrentWindow } from "./lib/windows";
 import Map from "./Map";
+import Nodes from "./Nodes";
 import Player from "./Player";
 import Status from "./Status";
 import TraceLine from "./TraceLine";
@@ -145,4 +146,6 @@ waitForOverwolf().then(async () => {
     registerEvents();
     setTimeout(setFeatures, 1000);
   });
+
+  Nodes({ map });
 });

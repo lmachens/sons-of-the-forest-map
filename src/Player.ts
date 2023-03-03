@@ -13,8 +13,8 @@ export default function Player({ map }: { map: leaflet.Map }) {
   marker.rotation = 270;
 
   marker.addTo(map);
-  map.flyTo(marker.getLatLng(), 2);
 
+  let firstTime = true;
   function updatePosition({
     location,
     rotation,
@@ -28,6 +28,10 @@ export default function Player({ map }: { map: leaflet.Map }) {
   }) {
     marker.rotation = rotation;
     marker.setLatLng([location.y, location.x]);
+    if (firstTime) {
+      map.flyTo(marker.getLatLng(), 2);
+      firstTime = false;
+    }
   }
 
   function panTo() {
