@@ -7,7 +7,7 @@
     "version": "0.1.2",
     "minimum-overwolf-version": "0.218.0",
     "description": "Sons Of The Forest Map",
-    "dock_button_title": "Sons Of The Forest Map",
+    "dock_button_title": "Sons Of The Forest",
     "icon": "icons/iconMouseOver.png",
     "icon_gray": "icons/iconMouseNormal.png",
     "launcher_icon": "icons/launcherIcon.ico"
