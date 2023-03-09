@@ -13,34 +13,7 @@ import TraceLine from "./TraceLine";
 waitForOverwolf().then(async () => {
   console.log("Init main");
 
-  const currentWindow = await getCurrentWindow();
-
-  const header = document.querySelector<HTMLElement>(".app-header")!;
-  header.onmousedown = () => overwolf.windows.dragMove(currentWindow.id);
-  const version = document.querySelector<HTMLElement>(".version")!;
-  overwolf.extensions.current.getManifest((manifest) => {
-    version.innerText += ` v${manifest.meta.version}`;
-  });
-
-  const discord = document.querySelector<HTMLButtonElement>("#discord")!;
-  discord.onclick = () => window.open("https://discord.com/invite/NTZu8Px");
-  const minimize = document.querySelector<HTMLButtonElement>("#minimize")!;
-  minimize.onclick = () => overwolf.windows.minimize(currentWindow.id);
-  const maximize = document.querySelector<HTMLButtonElement>("#maximize")!;
-  maximize.onclick = async () => {
-    const currentWindow = await getCurrentWindow();
-    if (currentWindow.stateEx === "maximized") {
-      overwolf.windows.restore(currentWindow.id);
-      maximize.classList.remove("toggled");
-    } else {
-      overwolf.windows.maximize(currentWindow.id);
-      maximize.classList.add("toggled");
-    }
-  };
-  const close = document.querySelector<HTMLButtonElement>("#close")!;
-  close.onclick = async () => {
-    closeWindow(WINDOWS.CONTROLLER);
-  };
+  initAppHeader();
 
   const mapElement = document.querySelector<HTMLDivElement>(".map")!;
   const map = Map(mapElement);
@@ -141,3 +114,34 @@ waitForOverwolf().then(async () => {
 
   Nodes({ map });
 });
+
+async function initAppHeader() {
+  const currentWindow = await getCurrentWindow();
+
+  const header = document.querySelector<HTMLElement>(".app-header")!;
+  header.onmousedown = () => overwolf.windows.dragMove(currentWindow.id);
+  const version = document.querySelector<HTMLElement>(".version")!;
+  overwolf.extensions.current.getManifest((manifest) => {
+    version.innerText += ` v${manifest.meta.version}`;
+  });
+
+  const minimize = document.querySelector<HTMLButtonElement>("#minimize")!;
+  minimize.onclick = () => overwolf.windows.minimize(currentWindow.id);
+  const maximize = document.querySelector<HTMLButtonElement>("#maximize")!;
+  async function toggleMaximize() {
+    const currentWindow = await getCurrentWindow();
+    if (currentWindow.stateEx === "maximized") {
+      overwolf.windows.restore(currentWindow.id);
+      maximize.classList.remove("toggled");
+    } else {
+      overwolf.windows.maximize(currentWindow.id);
+      maximize.classList.add("toggled");
+    }
+  }
+  maximize.onclick = toggleMaximize;
+  header.ondblclick = toggleMaximize;
+  const close = document.querySelector<HTMLButtonElement>("#close")!;
+  close.onclick = async () => {
+    closeWindow(WINDOWS.CONTROLLER);
+  };
+}

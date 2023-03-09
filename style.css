@@ -97,11 +97,6 @@ input {
   --social-color: #7289da;
 }
 
-.window-control-social:hover {
-  color: white;
-  background-color: var(--social-color);
-}
-
 .icon {
   position: relative;
   width: 30px;
