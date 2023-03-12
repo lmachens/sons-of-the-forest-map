@@ -15,6 +15,7 @@ waitForOverwolf().then(async () => {
   console.log("Init main");
 
   initAppHeader();
+  initResizeBorders();
 
   const mapElement = document.querySelector<HTMLDivElement>(".map")!;
   const map = Map(mapElement);
@@ -151,5 +152,69 @@ async function initAppHeader() {
   const close = document.querySelector<HTMLButtonElement>("#close")!;
   close.onclick = async () => {
     closeWindow(WINDOWS.CONTROLLER);
+  };
+}
+
+async function initResizeBorders() {
+  const currentWindow = await getCurrentWindow();
+  const top = document.querySelector<HTMLElement>(".resize.top")!;
+  top.onmousedown = () => {
+    overwolf.windows.dragResize(
+      currentWindow.id,
+      overwolf.windows.enums.WindowDragEdge.Top
+    );
+  };
+  const right = document.querySelector<HTMLElement>(".resize.right")!;
+  right.onmousedown = () => {
+    overwolf.windows.dragResize(
+      currentWindow.id,
+      overwolf.windows.enums.WindowDragEdge.Right
+    );
+  };
+  const bottom = document.querySelector<HTMLElement>(".resize.bottom")!;
+  bottom.onmousedown = () => {
+    overwolf.windows.dragResize(
+      currentWindow.id,
+      overwolf.windows.enums.WindowDragEdge.Bottom
+    );
+  };
+  const left = document.querySelector<HTMLElement>(".resize.left")!;
+  left.onmousedown = () => {
+    overwolf.windows.dragResize(
+      currentWindow.id,
+      overwolf.windows.enums.WindowDragEdge.Left
+    );
+  };
+  const topLeft = document.querySelector<HTMLElement>(".resize.top-left")!;
+  topLeft.onmousedown = () => {
+    overwolf.windows.dragResize(
+      currentWindow.id,
+      overwolf.windows.enums.WindowDragEdge.TopLeft
+    );
+  };
+  const topRight = document.querySelector<HTMLElement>(".resize.top-right")!;
+  topRight.onmousedown = () => {
+    overwolf.windows.dragResize(
+      currentWindow.id,
+      overwolf.windows.enums.WindowDragEdge.TopRight
+    );
+  };
+  const bottomLeft = document.querySelector<HTMLElement>(
+    ".resize.bottom-left"
+  )!;
+  bottomLeft.onmousedown = () => {
+    overwolf.windows.dragResize(
+      currentWindow.id,
+      overwolf.windows.enums.WindowDragEdge.BottomLeft
+    );
+  };
+  const bottomRight = document.querySelector<HTMLElement>(
+    ".resize.bottom-right"
+  )!;
+  bottomRight.onmousedown = () => {
+    overwolf.windows.dragResize(
+      currentWindow.id,
+      overwolf.windows.enums.WindowDragEdge.BottomRight
+    );
   };
 }
