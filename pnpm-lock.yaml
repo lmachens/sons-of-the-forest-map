@@ -3,16 +3,20 @@ lockfileVersion: 5.4
 specifiers:
   '@overwolf/types': 3.23.1
   '@types/leaflet': 1.9.1
+  '@types/throttle-debounce': 5.0.0
   leaflet: 1.9.3
+  throttle-debounce: 5.0.0
   typescript: ^4.9.3
   vite: ^4.1.0
 
 dependencies:
   leaflet: 1.9.3
+  throttle-debounce: 5.0.0
 
 devDependencies:
   '@overwolf/types': 3.23.1
   '@types/leaflet': 1.9.1
+  '@types/throttle-debounce': 5.0.0
   typescript: 4.9.5
   vite: 4.1.4
 
@@ -230,6 +234,10 @@ packages:
       '@types/geojson': 7946.0.10
     dev: true
 
+  /@types/throttle-debounce/5.0.0:
+    resolution: {integrity: sha512-Pb7k35iCGFcGPECoNE4DYp3Oyf2xcTd3FbFQxXUI9hEYKUl6YX+KLf7HrBmgVcD05nl50LIH6i+80js4iYmWbw==}
+    dev: true
+
   /esbuild/0.16.17:
     resolution: {integrity: sha512-G8LEkV0XzDMNwXKgM0Jwu3nY3lSTwSGY6XbxM9cr9+s0T/qSV1q1JVPBGzm3dcjhCic9+emZDmMffkwgPeOeLg==}
     engines: {node: '>=12'}
@@ -338,6 +346,11 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
     dev: true
+
+  /throttle-debounce/5.0.0:
+    resolution: {integrity: sha512-2iQTSgkkc1Zyk0MeVrt/3BvuOXYPl/R8Z0U2xxo9rjwNciaHDG3R+Lm6dh4EeUci49DanvBnuqI6jshoQQRGEg==}
+    engines: {node: '>=12.22'}
+    dev: false
 
   /typescript/4.9.5:
     resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
