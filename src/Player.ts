@@ -26,7 +26,26 @@ export default function Player({ map }: { map: leaflet.Map }) {
     };
     rotation: number;
   }) {
-    marker.rotation = rotation;
+    let playerRotation = 90 - rotation;
+
+    const oldRotation = marker.rotation || playerRotation;
+
+    let spins = 0;
+    if (oldRotation >= 180) {
+      spins += Math.floor(Math.abs(oldRotation + 180) / 360);
+    } else if (oldRotation <= -180) {
+      spins -= Math.floor(Math.abs(oldRotation - 180) / 360);
+    }
+    playerRotation += 360 * spins;
+    if (oldRotation - playerRotation >= 180) {
+      playerRotation += 360;
+    } else if (playerRotation - oldRotation >= 180) {
+      playerRotation -= 360;
+    }
+
+    marker.rotation = playerRotation;
+
+    marker.rotation = playerRotation;
     marker.setLatLng([location.y, location.x]);
     if (firstTime) {
       map.flyTo(marker.getLatLng(), 2);
@@ -56,9 +75,7 @@ class PlayerMarker extends leaflet.Marker {
     }
 
     this._icon.style.transformOrigin = "center";
-    this._icon.style.transform = `translate3d(${pos.x}px,${pos.y}px,0) rotate(${
-      90 - this.rotation
-    }deg)`;
+    this._icon.style.transform = `translate3d(${pos.x}px,${pos.y}px,0) rotate(${this.rotation}deg)`;
     return;
   }
 }
