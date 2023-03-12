@@ -1,4 +1,5 @@
 import Ads from "./Ads";
+import DirectionLine from "./DirectionLine";
 import ImageOverlay from "./ImageOverlay";
 import { WINDOWS } from "./lib/config";
 import { listenToGameLaunched, setFeatures } from "./lib/games";
@@ -25,6 +26,9 @@ waitForOverwolf().then(async () => {
   showOnMap.onclick = () => {
     panTo();
   };
+  const { updatePosition: updateDirectionLinePosition } = DirectionLine({
+    map,
+  });
   const { updatePosition: updateTraceLinePosition, clear } = TraceLine({
     map,
   });
@@ -53,6 +57,10 @@ waitForOverwolf().then(async () => {
     setLocation(lastLocation);
     updatePlayerPosition({ location: lastLocation, rotation: lastRotation });
     panTo();
+    updateDirectionLinePosition({
+      location: lastLocation,
+      rotation: lastRotation,
+    });
     updateTraceLinePosition({ location: lastLocation });
   }
 
