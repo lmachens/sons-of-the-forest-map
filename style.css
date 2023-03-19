@@ -1,3 +1,18 @@
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background: none;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c9c9c9;
+  opacity: 0.5;
+}
+
 body {
   margin: 0;
   background: black;
@@ -181,8 +196,7 @@ input {
 }
 
 .ads {
-  flex-shrink: 0;
-  flex-grow: 0;
+  flex: 0;
   height: 300px;
   width: 400px;
   background: url(/ads.webp);
@@ -203,6 +217,7 @@ input {
   flex-direction: column;
   gap: 0.5rem;
   border-bottom: 1px solid #27272a;
+  overflow: auto;
 }
 
 .game-status {
