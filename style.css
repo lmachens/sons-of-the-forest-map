@@ -199,8 +199,10 @@ input {
   flex: 0;
   height: 300px;
   width: 400px;
-  background: url(/ads.webp);
-  background-size: cover;
+  background: url(/ads.webp) #3f3f3f;
+  background-size: 250px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .map {
