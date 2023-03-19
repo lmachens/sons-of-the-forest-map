@@ -127,8 +127,17 @@ waitForOverwolf().then(async () => {
 async function initAppHeader() {
   const currentWindow = await getCurrentWindow();
 
+  let isMaximized = currentWindow.stateEx === "maximized";
+  if (isMaximized) {
+    document.body.classList.add("maximized");
+  }
+
   const header = document.querySelector<HTMLElement>(".app-header")!;
-  header.onmousedown = () => overwolf.windows.dragMove(currentWindow.id);
+  header.onmousedown = () => {
+    if (!isMaximized) {
+      overwolf.windows.dragMove(currentWindow.id);
+    }
+  };
   const version = document.querySelector<HTMLElement>(".version")!;
   overwolf.extensions.current.getManifest((manifest) => {
     version.innerText += ` v${manifest.meta.version}`;
@@ -137,14 +146,15 @@ async function initAppHeader() {
   const minimize = document.querySelector<HTMLButtonElement>("#minimize")!;
   minimize.onclick = () => overwolf.windows.minimize(currentWindow.id);
   const maximize = document.querySelector<HTMLButtonElement>("#maximize")!;
-  async function toggleMaximize() {
-    const currentWindow = await getCurrentWindow();
-    if (currentWindow.stateEx === "maximized") {
+  function toggleMaximize() {
+    if (isMaximized) {
       overwolf.windows.restore(currentWindow.id);
-      maximize.classList.remove("toggled");
+      document.body.classList.remove("maximized");
+      isMaximized = false;
     } else {
       overwolf.windows.maximize(currentWindow.id);
-      maximize.classList.add("toggled");
+      document.body.classList.add("maximized");
+      isMaximized = true;
     }
   }
   maximize.onclick = toggleMaximize;

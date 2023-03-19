@@ -123,10 +123,11 @@ input {
   opacity: 0;
 }
 
-.toggle-icons.toggled svg:nth-of-type(1) {
+.maximized .toggle-icons svg:nth-of-type(1) {
   opacity: 0;
 }
-.toggle-icons.toggled svg:nth-of-type(2) {
+
+.maximized .toggle-icons svg:nth-of-type(2) {
   opacity: 1;
 }
 
@@ -266,6 +267,10 @@ input {
 .resize {
   position: fixed;
   z-index: 1000;
+}
+
+.maximized .resize {
+  display: none;
 }
 
 .resize.top {
