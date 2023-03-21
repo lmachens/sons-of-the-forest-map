@@ -87,3 +87,17 @@ export function setFeatures() {
     }
   });
 }
+
+export function listenToOverlayEnablement(
+  callback: (enabled: boolean) => void
+) {
+  overwolf.settings.games.onOverlayEnablementChanged.addListener((event) => {
+    if (event.gameId === GAME_CLASS_ID) {
+      callback(event.enabled);
+    }
+  });
+
+  overwolf.settings.games.getOverlayEnabled(GAME_CLASS_ID, (event) => {
+    callback(event.enabled);
+  });
+}

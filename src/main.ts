@@ -2,7 +2,11 @@ import Ads from "./Ads";
 import DirectionLine from "./DirectionLine";
 import ImageOverlay from "./ImageOverlay";
 import { WINDOWS } from "./lib/config";
-import { listenToGameLaunched, setFeatures } from "./lib/games";
+import {
+  listenToGameLaunched,
+  listenToOverlayEnablement,
+  setFeatures,
+} from "./lib/games";
 import { waitForOverwolf } from "./lib/overwolf";
 import { closeWindow, getCurrentWindow } from "./lib/windows";
 import Map from "./Map";
@@ -119,6 +123,15 @@ waitForOverwolf().then(async () => {
     unregisterEvents();
     registerEvents();
     setTimeout(setFeatures, 1000);
+  });
+
+  listenToOverlayEnablement((enabled) => {
+    const gameOverlayWarning = document.querySelector(".game-overlay")!;
+    if (enabled) {
+      gameOverlayWarning.classList.add("hidden");
+    } else {
+      gameOverlayWarning.classList.remove("hidden");
+    }
   });
 
   Nodes({ map });

@@ -353,3 +353,12 @@ input {
   width: 8px;
   cursor: se-resize;
 }
+
+.warning {
+  text-transform: uppercase;
+  color: #f97316;
+}
+
+.hidden {
+  display: none;
+}
