@@ -112,13 +112,13 @@
         <div class="map"></div>
       </main>
       <aside class="aside">
-        <div class="status">
+        <div class="stack">
           <section class="paper">
             <h2>Realtime Status</h2>
-            <p class="game-status">
+            <p class="status" id="game_status">
               <span class="indicator"></span>
-              <span> Game is running </span>
-              <span> Game is not running </span>
+              <span>Game is running</span>
+              <span>Game is not running</span>
             </p>
             <p class="location-status">&nbsp;</p>
             <button class="show-on-map">Show on map</button>
@@ -134,12 +134,43 @@
             </div>
           </section>
           <section class="paper">
+            <h2>Multiplayer</h2>
+            <p class="description">
+              Connect your position with other players to see each other on this
+              app. First, connect to the peer server and connect to your friends
+              afterwards.
+            </p>
+            <button id="peer_connect">Connect to peer server</button>
+            <p class="status issue" id="my_peer_status">
+              <span class="indicator"></span>
+              <span>Connected to peer server</span>
+              <span>Not connected to peer server</span>
+            </p>
+
+            <div class="group">
+              <label>
+                <span class="w-sm">Your ID</span>
+                <input type="text" id="peer_id" disabled />
+              </label>
+              <button id="copy_peer_id">Copy</button>
+            </div>
+            <p class="warning" id="peer_error"></p>
+            <form class="group" id="connection_form">
+              <label>
+                <span class="w-sm">Friend ID</span>
+                <input type="text" name="other_peer_id" required />
+              </label>
+              <input type="submit" value="Add friend" />
+            </form>
+            <div id="connections"></div>
+          </section>
+          <section class="paper">
             <h2>Settings</h2>
             <div>
               Show/Hide app hotkey
               <button class="hotkey" id="toggle_app_hotkey"></button>
             </div>
-            <label class="checkbox">
+            <label class="group">
               <input type="checkbox" id="overlay" />
               <span>Activate Overlay</span>
             </label>
@@ -147,19 +178,19 @@
               This window is only visible as overlay in-game. Deactive it, if
               you like to move this window to second screen or to ALT+TAB it.
             </p>
-            <label class="checkbox">
+            <label class="group">
               <input type="checkbox" id="show_nodes" />
               <span>Show Nodes</span>
             </label>
             <p class="description">
               Show points of interest and other nodes on the map
             </p>
-            <label class="checkbox">
+            <label class="group">
               <input type="checkbox" id="direction_line" />
               <span>Show Direction Line</span>
             </label>
             <p class="description">Displays a line in walking direction.</p>
-            <label class="checkbox">
+            <label class="group">
               <input type="checkbox" id="trace_line" />
               <span>Show Trace Line</span>
             </label>
