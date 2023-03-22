@@ -165,6 +165,11 @@ export const types = [
     title: "Abandoned Village",
     icon: "/nodes/hut.svg",
   },
+  {
+    value: "cloth",
+    title: "Clothes",
+    icon: "/nodes/hanger.svg",
+  },
 ];
 
 export function getCustomNodes() {
