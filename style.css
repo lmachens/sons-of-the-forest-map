@@ -31,16 +31,19 @@ body {
   -webkit-user-drag: none;
 }
 
-button {
+button,
+input[type="submit"] {
   padding: 0;
   border: none;
 }
 
-button:focus {
+button:focus,
+input[type="submit"]:focus {
   outline: none;
 }
 
-.layout button {
+.layout button,
+.layout input[type="submit"] {
   cursor: pointer;
   width: fit-content;
   padding: 0.25rem 0.5rem;
@@ -53,17 +56,20 @@ button:focus {
   font-family: monospace;
 }
 
-.layout button:disabled {
+.layout button:disabled,
+.layout input[type="submit"]:disabled {
   background-color: #202022;
   cursor: default;
   color: #8b8b8c;
 }
 
-.layout button:not(:disabled):hover {
+.layout button:not(:disabled):hover,
+.layout input[type="submit"]:not(:disabled):hover {
   border-color: #c9c9c9;
 }
 
-.layout button:not(:disabled):hover {
+.layout button:not(:disabled):hover,
+.layout input[type="submit"]:not(:disabled):hover {
   border-color: #c9c9c9;
 }
 
@@ -212,7 +218,7 @@ input {
   outline: none;
 }
 
-.status {
+.stack {
   flex: 1;
   padding: 0.5rem;
   display: flex;
@@ -222,15 +228,15 @@ input {
   overflow: auto;
 }
 
-.game-status {
+.status {
   opacity: 0;
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.game-status.ok,
-.game-status.issue {
+.status.ok,
+.status.issue {
   opacity: 1;
 }
 
@@ -249,10 +255,10 @@ input {
   background-color: #f97316;
 }
 
-.game-status.issue span:nth-of-type(2) {
+.status.issue span:nth-of-type(2) {
   display: none;
 }
-.game-status.ok span:nth-of-type(3) {
+.status.ok span:nth-of-type(3) {
   display: none;
 }
 
@@ -265,7 +271,7 @@ input {
   gap: 0.25rem;
 }
 
-.checkbox {
+.group {
   display: flex;
   gap: 0.25rem;
   align-items: center;
@@ -361,4 +367,13 @@ input {
 
 .hidden {
   display: none;
+}
+
+.w-sm {
+  display: inline-block;
+  width: 70px;
+}
+
+.player {
+  z-index: 9000;
 }

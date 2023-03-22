@@ -4,15 +4,16 @@ import { listenToHotkeyBinding } from "./lib/hotkeys";
 import { getPreferedWindowName, togglePreferedWindow } from "./lib/windows";
 
 export default function Status() {
-  const gameStatus =
-    document.querySelector<HTMLParagraphElement>(".game-status")!;
+  const status = document.querySelector<HTMLParagraphElement>("#game_status")!;
 
   listenToGameInfo((gameInfo) => {
     const gameIsRunning = gameInfo?.classId === GAME_CLASS_ID;
     if (gameIsRunning) {
-      gameStatus.classList.add("ok");
+      status.classList.add("ok");
+      status.classList.remove("issue");
     } else {
-      gameStatus.classList.add("issue");
+      status.classList.add("issue");
+      status.classList.remove("ok");
     }
   });
 
