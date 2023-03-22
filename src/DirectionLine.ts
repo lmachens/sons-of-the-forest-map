@@ -1,4 +1,5 @@
 import leaflet from "leaflet";
+import { PlayerPosition } from "./lib/player-marker";
 
 export default function DirectionLine({ map }: { map: leaflet.Map }) {
   const polyline = leaflet.polyline([], {
@@ -24,17 +25,7 @@ export default function DirectionLine({ map }: { map: leaflet.Map }) {
     }
   };
 
-  function updatePosition({
-    location,
-    rotation,
-  }: {
-    location: {
-      x: number;
-      y: number;
-      z: number;
-    };
-    rotation: number;
-  }) {
+  function updatePosition({ location, rotation }: PlayerPosition) {
     const latLng: [number, number] = [
       location.y + Math.sin((rotation * Math.PI) / 180) * 1000,
       location.x + Math.cos((rotation * Math.PI) / 180) * 1000,

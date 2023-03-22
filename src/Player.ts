@@ -1,10 +1,10 @@
 import leaflet from "leaflet";
-import PlayerMarker from "./lib/player-marker";
+import PlayerMarker, { PlayerPosition } from "./lib/player-marker";
 
 export default function Player({ map }: { map: leaflet.Map }) {
   const icon = leaflet.icon({
     iconUrl: "/arrow.webp",
-    className: "",
+    className: "player",
     iconSize: [32, 32],
   });
   const marker = new PlayerMarker([0, 0], {
@@ -16,14 +16,7 @@ export default function Player({ map }: { map: leaflet.Map }) {
   marker.addTo(map);
 
   let firstTime = true;
-  function updatePosition(position: {
-    location: {
-      x: number;
-      y: number;
-      z: number;
-    };
-    rotation: number;
-  }) {
+  function updatePosition(position: PlayerPosition) {
     marker.updatePosition(position);
     if (firstTime) {
       map.flyTo(marker.getLatLng(), 2);

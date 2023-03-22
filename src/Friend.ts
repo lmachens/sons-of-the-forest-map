@@ -1,5 +1,5 @@
 import leaflet from "leaflet";
-import PlayerMarker from "./lib/player-marker";
+import PlayerMarker, { PlayerPosition } from "./lib/player-marker";
 
 export default function Friend({ map }: { map: leaflet.Map }) {
   const icon = leaflet.icon({
@@ -17,7 +17,8 @@ export default function Friend({ map }: { map: leaflet.Map }) {
   element.style.filter += `hue-rotate(${generateRandomInteger(10, 350)}deg)`;
 
   return {
-    updatePosition: marker.updatePosition,
+    updatePosition: (position: PlayerPosition) =>
+      marker.updatePosition(position),
     remove: () => marker.remove(),
   };
 }

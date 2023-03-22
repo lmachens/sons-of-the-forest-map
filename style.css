@@ -373,3 +373,7 @@ input {
   display: inline-block;
   width: 70px;
 }
+
+.player {
+  z-index: 9000;
+}

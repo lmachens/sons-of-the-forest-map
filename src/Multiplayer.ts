@@ -1,20 +1,14 @@
 import leaflet from "leaflet";
 import Peer, { DataConnection } from "peerjs";
 import Friend from "./Friend";
+import { PlayerPosition } from "./lib/player-marker";
 
 export default function Multiplayer({
   map,
   getLastPosition,
 }: {
   map: leaflet.Map;
-  getLastPosition: () => {
-    location: {
-      x: number;
-      y: number;
-      z: number;
-    };
-    rotation: number;
-  };
+  getLastPosition: () => PlayerPosition;
 }) {
   const status =
     document.querySelector<HTMLParagraphElement>("#my_peer_status")!;
@@ -34,32 +28,62 @@ export default function Multiplayer({
     };
   } = {};
 
-  function addConnectedStatus(id: string, conn: DataConnection) {
+  function addConnectedStatus(peer: string, conn: DataConnection) {
     const status = document.createElement("p");
     connectionsElement.append(status);
-    status.id = `connection_${id}`;
+    status.id = `connection_${peer}`;
     status.className = "status ok";
+    status.innerHTML = `<span class="indicator"></span><span>${peer}</span>`;
 
     const friend = Friend({ map });
-    connections[id] = { conn, friend };
+    connections[peer] = { conn, friend };
 
     return {
-      remove: () => status.remove(),
-      setConnectedId: (id: string) =>
-        (status.innerHTML = `<span class="indicator"></span><span>Connected to ${id}</span>`),
+      remove: () => {
+        status.remove();
+        friend.remove();
+      },
     };
   }
 
-  function closeExistingConnection(label: string) {
-    const existingConn = connections[label];
+  function closeExistingConnection(peer: string) {
+    const existingConn = connections[peer];
     if (existingConn) {
       existingConn.conn.close();
       document
         .querySelector(`#connection_${existingConn.conn.connectionId}`)
         ?.remove();
       existingConn.friend.remove();
-      delete connections[label];
+      delete connections[peer];
     }
+  }
+
+  function initializeConnection(conn: DataConnection) {
+    closeExistingConnection(conn.peer);
+    const status = addConnectedStatus(conn.peer, conn);
+    conn.on("open", () => {
+      console.log("conn open", conn.connectionId);
+      conn.send(getLastPosition());
+    });
+    conn.on("data", (data) => {
+      console.log("conn data", data);
+      if (
+        data &&
+        typeof data === "object" &&
+        "location" in data &&
+        "rotation" in data
+      ) {
+        const payload = data as PlayerPosition;
+        connections[conn.peer]?.friend.updatePosition(payload);
+      }
+    });
+    conn.on("close", () => {
+      console.log("conn close", conn.connectionId);
+      status.remove();
+    });
+    conn.on("error", (error) => {
+      console.log("conn error", error);
+    });
   }
 
   let peer: Peer | null = null;
@@ -74,23 +98,13 @@ export default function Multiplayer({
       status.classList.add("issue");
       status.classList.remove("ok");
       peerIdElement.value = "";
-      Object.values(connections).forEach((value, index) => {
-        value.friend.remove();
-        delete connections[index];
+      Object.keys(connections).forEach((peer) => {
+        closeExistingConnection(peer);
       });
     });
     peer.on("error", (error) => {
       peerErrorElement.innerText = error.message;
       console.log("peer error", error, error.name, error.message);
-      if (error.message === "Lost connection to server.") {
-        status.classList.add("issue");
-        status.classList.remove("ok");
-        peerIdElement.value = "";
-        Object.values(connections).forEach((value, index) => {
-          value.friend.remove();
-          delete connections[index];
-        });
-      }
     });
     peer.on("open", (id) => {
       console.log("peer open", id);
@@ -101,39 +115,13 @@ export default function Multiplayer({
     });
     peer.on("connection", (conn) => {
       console.log("peer connection", conn);
-
-      closeExistingConnection(conn.label);
-      const status = addConnectedStatus(conn.connectionId, conn);
-      status.setConnectedId(conn.label);
-      conn.on("data", (data) => {
-        if (
-          data &&
-          typeof data === "object" &&
-          "location" in data &&
-          "rotation" in data
-        ) {
-          const payload = data as {
-            location: {
-              x: number;
-              y: number;
-              z: number;
-            };
-            rotation: number;
-          };
-          connections[conn.label]?.friend.updatePosition(payload);
-        }
-      });
-
-      conn.on("close", () => {
-        console.log("conn close", conn.connectionId);
-        status.remove();
-      });
-      conn.send(getLastPosition());
+      initializeConnection(conn);
     });
     peer.on("disconnected", (connectionId) => {
       console.log("peer disconnected", connectionId);
-      document.querySelector(`#connection_${connectionId}`)?.remove();
-      delete connections[connectionId];
+      status.classList.add("issue");
+      status.classList.remove("ok");
+      peerIdElement.value = "";
     });
   };
 
@@ -156,19 +144,8 @@ export default function Multiplayer({
       return;
     }
     peerErrorElement.innerText = "";
-    closeExistingConnection(id);
-
-    const conn = peer.connect(id, { label: peer.id });
-    const status = addConnectedStatus(id, conn);
-    conn.on("open", () => {
-      console.log("conn open", conn.connectionId);
-      status.setConnectedId(id);
-      conn.send(getLastPosition());
-    });
-    conn.on("close", () => {
-      console.log("conn close", conn.connectionId);
-      status.remove();
-    });
+    const conn = peer.connect(id);
+    initializeConnection(conn);
   };
 
   const copyPeerId =
@@ -182,14 +159,7 @@ export default function Multiplayer({
       }, 3000);
     }
   };
-  function updatePosition(position: {
-    location: {
-      x: number;
-      y: number;
-      z: number;
-    };
-    rotation: number;
-  }) {
+  function updatePosition(position: PlayerPosition) {
     if (!peer) {
       return;
     }
@@ -197,6 +167,8 @@ export default function Multiplayer({
       conn.send(position);
     });
   }
+  // @ts-ignore
+  window.updatePosition = updatePosition;
 
   return {
     updatePosition,

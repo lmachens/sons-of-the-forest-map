@@ -1,5 +1,14 @@
 import leaflet from "leaflet";
 
+export type PlayerPosition = {
+  location: {
+    x: number;
+    y: number;
+    z: number;
+  };
+  rotation: number;
+};
+
 export default class PlayerMarker extends leaflet.Marker {
   declare rotation: number;
   private _icon: HTMLElement | undefined = undefined;
@@ -17,17 +26,7 @@ export default class PlayerMarker extends leaflet.Marker {
     return;
   }
 
-  updatePosition({
-    location,
-    rotation,
-  }: {
-    location: {
-      x: number;
-      y: number;
-      z: number;
-    };
-    rotation: number;
-  }) {
+  updatePosition({ location, rotation }: PlayerPosition) {
     let playerRotation = 90 - rotation;
 
     const oldRotation = this.rotation || playerRotation;
