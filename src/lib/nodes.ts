@@ -143,6 +143,6 @@ export const types = [
   {
     value: "camp",
     title: "Abandonden Camp",
-    icon: "/nodes/camp.svg
+    icon: "/nodes/camp.svg",
   }
 ];
