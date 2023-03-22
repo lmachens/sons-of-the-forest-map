@@ -135,4 +135,9 @@ export const types = [
     title: "Final Bunker",
     icon: "/nodes/bunker.svg",
   },
+  {
+    value: "3Dprinter",
+    title: "3D Printer",
+    icon: "/nodes/pc.svg",
+  },
 ];
