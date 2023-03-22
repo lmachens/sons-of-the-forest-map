@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "leaflet": "1.9.3",
+    "peerjs": "1.4.7",
     "throttle-debounce": "5.0.0"
   }
 }

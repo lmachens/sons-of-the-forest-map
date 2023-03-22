@@ -10,6 +10,7 @@ import {
 import { waitForOverwolf } from "./lib/overwolf";
 import { closeWindow, getCurrentWindow } from "./lib/windows";
 import Map from "./Map";
+import Multiplayer from "./Multiplayer";
 import Nodes from "./Nodes";
 import Player from "./Player";
 import Status from "./Status";
@@ -25,7 +26,18 @@ waitForOverwolf().then(async () => {
   const map = Map(mapElement);
   ImageOverlay({ map });
 
+  let lastLocation = { x: 0, y: 0, z: 0 };
+  let lastRotation = 0;
+
+  function getLastPosition() {
+    return { location: lastLocation, rotation: lastRotation };
+  }
+
   const { setLocation } = Status();
+  const { updatePosition: updateMultiplayerPosition } = Multiplayer({
+    map,
+    getLastPosition,
+  });
   const { panTo, updatePosition: updatePlayerPosition } = Player({ map });
   const showOnMap = document.querySelector<HTMLButtonElement>(".show-on-map")!;
   showOnMap.onclick = () => {
@@ -37,9 +49,6 @@ waitForOverwolf().then(async () => {
   const { updatePosition: updateTraceLinePosition, clear } = TraceLine({
     map,
   });
-
-  let lastLocation = { x: 0, y: 0, z: 0 };
-  let lastRotation = 0;
 
   function updatePlayer(location: { x: number; y: number; z: number }) {
     lastRotation =
@@ -60,13 +69,12 @@ waitForOverwolf().then(async () => {
     lastLocation = location;
 
     setLocation(lastLocation);
-    updatePlayerPosition({ location: lastLocation, rotation: lastRotation });
+    const lastPosition = getLastPosition();
+    updatePlayerPosition(lastPosition);
     panTo();
-    updateDirectionLinePosition({
-      location: lastLocation,
-      rotation: lastRotation,
-    });
-    updateTraceLinePosition({ location: lastLocation });
+    updateDirectionLinePosition(lastPosition);
+    updateTraceLinePosition(lastPosition);
+    updateMultiplayerPosition(lastPosition);
   }
 
   const ads = document.querySelector<HTMLDivElement>(".ads")!;
