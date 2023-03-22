@@ -42,7 +42,7 @@
     "z": 0
   },
   {
-    "type": "3DPrinter",
+    "type": "3Dprinter",
     "x": -1202,
     "y": 143,
     "z": 0
@@ -276,25 +276,25 @@
     "z": 0
   },
   {
-   "type": "camp",
+    "type": "camp",
     "x": 1698,
     "y": 33,
     "z": 0
   },
   {
-   "type": "camp",
+    "type": "camp",
     "x": 1263,
     "y": 494,
     "z": 0
-  },  
+  },
   {
-   "type": "camp",
+    "type": "camp",
     "x": 725,
     "y": 738,
     "z": 0
-  },  
+  },
   {
-   "type": "camp",
+    "type": "camp",
     "x": 799,
     "y": 975,
     "z": 0
