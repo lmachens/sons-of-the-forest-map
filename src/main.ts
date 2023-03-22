@@ -1,4 +1,5 @@
 import Ads from "./Ads";
+import CustomNode from "./CustomNode";
 import DirectionLine from "./DirectionLine";
 import ImageOverlay from "./ImageOverlay";
 import { WINDOWS } from "./lib/config";
@@ -142,7 +143,8 @@ waitForOverwolf().then(async () => {
     }
   });
 
-  Nodes({ map });
+  const { refreshCustomNodes } = Nodes({ map });
+  CustomNode({ map, getLastPosition, onAdd: refreshCustomNodes });
 });
 
 async function initAppHeader() {

@@ -377,3 +377,59 @@ input {
 .player {
   z-index: 9000;
 }
+
+.node-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.node-form > label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.node-form > div {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.type-radio > input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.type-radio > img {
+  width: 30px;
+  height: 30px;
+}
+
+.type-radio > input:checked ~ img {
+  background: #22c55e;
+  border-radius: 10px;
+}
+
+.types {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: auto;
+  max-height: 100px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.hint {
+  color: #f97316;
+}

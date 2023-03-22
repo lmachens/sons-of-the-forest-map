@@ -4,7 +4,22 @@ export type NodeType = {
   icon: string;
 };
 
+export type Node = {
+  id?: number;
+  title?: string;
+  description?: string;
+  type: string;
+  x: number;
+  y: number;
+  z: number;
+};
+
 export const types = [
+  {
+    value: "unknown",
+    title: "Unknown",
+    icon: "/nodes/unknown.webp",
+  },
   {
     value: "spawnPoint",
     title: "Spawn Point",
@@ -144,5 +159,22 @@ export const types = [
     value: "camp",
     title: "Abandonden Camp",
     icon: "/nodes/camp.svg",
-  }
+  },
 ];
+
+export function getCustomNodes() {
+  let customNodes: Node[] = [];
+  try {
+    const item = localStorage.getItem("custom_nodes");
+    if (item) {
+      customNodes = JSON.parse(item);
+    }
+  } catch (error) {
+    //
+  }
+  return customNodes;
+}
+
+export function setCustomNodes(customNodes: Node[]) {
+  localStorage.setItem("custom_nodes", JSON.stringify(customNodes));
+}

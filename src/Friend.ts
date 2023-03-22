@@ -10,6 +10,7 @@ export default function Friend({ map }: { map: leaflet.Map }) {
   const marker = new PlayerMarker([0, 0], {
     icon,
     interactive: false,
+    pmIgnore: true,
   });
   marker.rotation = 90;
   marker.addTo(map);
