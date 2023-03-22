@@ -31,11 +31,6 @@ export const types = [
     icon: "/nodes/telescopic-baton.svg",
   },
   {
-    value: "3DPrinter",
-    title: "3D Printer",
-    icon: "/nodes/laptop.svg",
-  },
-  {
     value: "pistol",
     title: "Pistol",
     icon: "/nodes/pistol-gun.svg",
@@ -140,4 +135,14 @@ export const types = [
     title: "3D Printer",
     icon: "/nodes/pc.svg",
   },
+  {
+    value: "cave",
+    title: "Cave Entrance",
+    icon: "/nodes/cave.svg",
+  },
+  {
+    value: "camp",
+    title: "Abandonden Camp",
+    icon: "/nodes/camp.svg",
+  }
 ];
