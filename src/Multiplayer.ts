@@ -167,8 +167,6 @@ export default function Multiplayer({
       conn.send(position);
     });
   }
-  // @ts-ignore
-  window.updatePosition = updatePosition;
 
   return {
     updatePosition,
