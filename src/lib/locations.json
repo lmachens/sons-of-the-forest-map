@@ -96,6 +96,12 @@
     "z": 0
   },
   {
+    "type": "shotgun",
+    "x": 1610,
+    "y": 510,
+    "z": 0
+  },
+  {
     "type": "maintenanceKeycard",
     "x": -457,
     "y": 709,
@@ -109,14 +115,14 @@
   },
   {
     "type": "vipKeycard",
-    "x": -1026,
-    "y": 1073,
+    "x": -977,
+    "y": 1039,
     "z": 0
   },
   {
     "type": "crossbow",
-    "x": -1009,
-    "y": 1077,
+    "x": -1022,
+    "y": 986,
     "z": 0
   },
   {
@@ -159,6 +165,12 @@
     "type": "goldenArmor",
     "x": 1170,
     "y": -592,
+    "z": 0
+  },
+  {
+    "type": "binoculars",
+    "x": -1112,
+    "y": 1721,
     "z": 0
   },
   {
@@ -315,6 +327,48 @@
     "type": "village",
     "x": 1459,
     "y": 747,
+    "z": 0
+  },
+  {
+    "type": "cloth",
+    "title": "Pajamas",
+    "x": 1634,
+    "y": 514,
+    "z": 0
+  },
+  {
+    "type": "cloth",
+    "title": "Hoodie or Tactical/Leather Jacket",
+    "x": -645,
+    "y": 1509,
+    "z": 0
+  },
+  {
+    "type": "cloth",
+    "title": "Blazer",
+    "x": -922,
+    "y": 1454,
+    "z": 0
+  },
+  {
+    "type": "cloth",
+    "title": "Camouflage Suit",
+    "x": -1111,
+    "y": 1723,
+    "z": 0
+  },
+  {
+    "type": "cloth",
+    "title": "Hoodie or Tactical/Leather Jacket",
+    "x": -1084,
+    "y": 1282,
+    "z": 0
+  },
+  {
+    "type": "cloth",
+    "title": "Dress",
+    "x": -914,
+    "y": 1010,
     "z": 0
   }
 ]
