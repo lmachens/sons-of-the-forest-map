@@ -141,6 +141,11 @@ export const types = [
     icon: "/nodes/abdominal-armor.svg",
   },
   {
+    value: "binoculars",
+    title: "Binoculars",
+    icon: "/nodes/binoculars.svg",
+  },
+  {
     value: "finalBunker",
     title: "Final Bunker",
     icon: "/nodes/bunker.svg",
