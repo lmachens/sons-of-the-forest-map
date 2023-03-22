@@ -139,5 +139,10 @@ export const types = [
     value: "cave",
     title: "Cave Entrance",
     icon: "/nodes/cave.svg",
+  },
+  {
+    value: "camp",
+    title: "Abandonden Camp",
+    icon: "/nodes/camp.svg
   }
 ];
