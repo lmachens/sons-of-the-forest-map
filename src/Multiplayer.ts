@@ -66,7 +66,6 @@ export default function Multiplayer({
       conn.send(getLastPosition());
     });
     conn.on("data", (data) => {
-      console.log("conn data", data);
       if (
         data &&
         typeof data === "object" &&
