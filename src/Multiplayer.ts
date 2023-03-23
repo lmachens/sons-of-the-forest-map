@@ -8,7 +8,7 @@ export default function Multiplayer({
   getLastPosition,
 }: {
   map: leaflet.Map;
-  getLastPosition: () => PlayerPosition;
+  getLastPosition?: () => PlayerPosition;
 }) {
   const status =
     document.querySelector<HTMLParagraphElement>("#my_peer_status")!;
@@ -63,7 +63,9 @@ export default function Multiplayer({
     const status = addConnectedStatus(conn.peer, conn);
     conn.on("open", () => {
       console.log("conn open", conn.connectionId);
-      conn.send(getLastPosition());
+      if (getLastPosition) {
+        conn.send(getLastPosition());
+      }
     });
     conn.on("data", (data) => {
       if (
