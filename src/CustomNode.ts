@@ -4,7 +4,7 @@ import "@geoman-io/leaflet-geoman-free";
 import "@geoman-io/leaflet-geoman-free/dist/leaflet-geoman.css";
 import leaflet from "leaflet";
 
-import CanvasMarker from "./lib/canvas-marker";
+import { getDivIcon, getIconElement } from "./lib/icons";
 import { getCustomNodes, setCustomNodes, types } from "./lib/nodes";
 import { PlayerPosition } from "./lib/player-marker";
 
@@ -27,11 +27,12 @@ export default function CustomNode({
     }
     isAdding = true;
     const playerPosition = getLastPosition();
-    const marker = new CanvasMarker(
+    const icon = getDivIcon(types[0], true);
+
+    const marker = new leaflet.Marker(
       [playerPosition.location.y, playerPosition.location.x],
       {
-        radius: 15,
-        src: types[0].icon,
+        icon,
         interactive: true,
         pmIgnore: false,
       }
@@ -42,14 +43,15 @@ export default function CustomNode({
     form.innerHTML = `
     <label><span>Title</span><input name="title" required /></label>
     <label><span>Description</span><textarea name="description"></textarea></label>
+    <label><span>Color</span><input type="color" name="color" value="#ffffff"/></label>
     <label><span>Type</span><div class="types">${types
       .map(
         (type, index) =>
-          `<label class="type-radio"><input name="type" type="radio" value="${
+          `<label class="type-label"><input name="type" type="radio" value="${
             type.value
-          }" ${index === 0 ? "checked" : ""} /><img src="${
-            type.icon
-          }"/></label>`
+          }" ${index === 0 ? "checked" : ""} />${
+            getIconElement(type).outerHTML
+          }</label>`
       )
       .join("")}</div></label>
     `;
@@ -66,8 +68,12 @@ export default function CustomNode({
     };
 
     actions.append(save, cancel);
-    form.append(actions);
+    const note = document.createElement("span");
+    note.innerText = "Drag icon to move the node position";
+    note.className = "description";
+    form.append(actions, note);
 
+    form.onclick = (event) => event.stopPropagation();
     form.onmousedown = (event) => event.stopPropagation();
     form.ondblclick = (event) => event.stopPropagation();
     form.onwheel = (event) => event.stopPropagation();
@@ -77,13 +83,23 @@ export default function CustomNode({
       const title = formData.get("title") as string;
       const description = formData.get("description") as string;
       const type = formData.get("type") as string;
+      const color = formData.get("color") as string;
       const latLng = marker.getLatLng();
       const x = latLng.lng;
       const y = latLng.lat;
       const z = 0;
 
       const customNodes = getCustomNodes();
-      customNodes.push({ id: Date.now(), title, description, type, x, y, z });
+      customNodes.push({
+        id: Date.now(),
+        title,
+        description,
+        type,
+        x,
+        y,
+        z,
+        color,
+      });
       setCustomNodes(customNodes);
       onAdd();
       marker.remove();
@@ -91,11 +107,9 @@ export default function CustomNode({
     };
     marker.bindTooltip(form, {
       direction: "top",
-      offset: [0, -14],
       interactive: true,
       permanent: true,
     });
-    marker.openPopup();
     marker.pm.enableLayerDrag();
   };
 }
