@@ -3,12 +3,8 @@ name: Build Overwolf App CI
 on:
   push:
     paths:
-      - 'packages/overwolf/manifest.json'
+      - "manifest.json"
   workflow_dispatch:
-
-defaults:
-  run:
-    working-directory: ./packages/overwolf
 
 jobs:
   build:
@@ -21,7 +17,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: 'pnpm'
+          cache: "pnpm"
       - run: pnpm install
       - name: Build Overwolf app
         run: pnpm build
