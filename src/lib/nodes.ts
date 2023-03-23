@@ -190,7 +190,7 @@ export const types = [
     value: "cave",
     title: "Cave Entrance",
     icon: icons.cave,
-    filter: "cave"
+    filter: "cave",
   },
   {
     value: "camp",
