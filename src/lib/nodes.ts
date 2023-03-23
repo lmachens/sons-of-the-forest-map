@@ -34,12 +34,13 @@ export const types = [
     value: "modernAxe",
     title: "Modern Axe",
     icon: icons["fire-axe"],
-    filter: "weapons",
+    filter: "tools",
   },
   {
     value: "flashlight",
     title: "Flashlight",
     icon: icons.flashlight,
+    filter: "tools",
   },
   {
     value: "machete",
@@ -69,16 +70,19 @@ export const types = [
     value: "rebreather",
     title: "Rebreather",
     icon: icons.lungs,
+    filter: "gear",
   },
   {
     value: "cross",
     title: "Cross",
     icon: icons["hasty-grave"],
+    filter: "custom",
   },
   {
     value: "ropeGun",
     title: "Rope Gun",
     icon: icons["rope-dart"],
+    filter: "tools",
   },
   {
     value: "slingshot",
@@ -90,6 +94,7 @@ export const types = [
     value: "shovel",
     title: "Shovel",
     icon: icons.spade,
+    filter: "tools",
   },
   {
     value: "shotgun",
@@ -101,11 +106,13 @@ export const types = [
     value: "maintenanceKeycard",
     title: "Maintenance Keycard",
     icon: icons["key-card"],
+    filter: "cards",
   },
   {
     value: "vipKeycard",
     title: "VIP Keycard",
     icon: icons["key-card"],
+    filter: "cards",
   },
   {
     value: "crossbow",
@@ -117,23 +124,25 @@ export const types = [
     value: "fireAxe",
     title: "Fire Axe",
     icon: icons["fire-axe"],
-    filter: "weapons",
+    filter: "tools",
   },
   {
     value: "guestKeycard",
     title: "Guest Keycard",
     icon: icons["key-card"],
+    filter: "cards",
   },
   {
     value: "guitar",
     title: "Guitar",
     icon: icons.guitar,
+    filter: "weapons",
   },
   {
     value: "chainsaw",
     title: "Chainsaw",
     icon: icons.chainsaw,
-    filter: "weapons",
+    filter: "tools",
   },
   {
     value: "compoundBow",
@@ -157,41 +166,49 @@ export const types = [
     value: "goldenArmor",
     title: "Golden Armor",
     icon: icons["abdominal-armor"],
+    filter: "gear",
   },
   {
     value: "binoculars",
     title: "Binoculars",
     icon: icons.binoculars,
+    filter: "tools",
   },
   {
     value: "finalBunker",
     title: "Final Bunker",
     icon: icons.bunker,
+    filter: "poi",
   },
   {
     value: "3Dprinter",
     title: "3D Printer",
     icon: icons.pc,
+    filter: "3d",
   },
   {
     value: "cave",
     title: "Cave Entrance",
     icon: icons.cave,
+    filter: "cave"
   },
   {
     value: "camp",
     title: "Abandonden Camp",
     icon: icons.camp,
+    filter: "poi",
   },
   {
     value: "village",
     title: "Abandoned Village",
     icon: icons.hut,
+    filter: "poi",
   },
   {
     value: "cloth",
     title: "Clothes",
     icon: icons.hanger,
+    filter: "clothes",
   },
 ];
 
@@ -222,8 +239,32 @@ export const filters = [
     title: "Point of Interest",
   },
   {
+    value: "cave",
+    title: "Cave Entrance",
+  },
+  {
+    value: "3d",
+    title: "3D Printer",
+  },
+  {
     value: "weapons",
     title: "Weapons",
+  },
+  {
+    value: "tools",
+    title: "Tools",
+  },
+  {
+    value: "clothes",
+    title: "Clothes",
+  },
+  {
+    value: "gear",
+    title: "Player Gear",
+  },
+  {
+    value: "cards",
+    title: "Cards",
   },
 ];
 
