@@ -2,16 +2,17 @@ import { defineConfig } from "vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "./",
   build: {
     target: "esnext",
+    outDir: "out",
     rollupOptions: {
       input: {
-        controller: "controller.html",
-        index: "index.html",
+        web: "index.html",
       },
     },
   },
   server: {
-    port: 3033,
+    port: 3034,
   },
 });
