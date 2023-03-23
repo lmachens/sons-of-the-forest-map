@@ -141,6 +141,11 @@ export const types = [
     icon: "/nodes/abdominal-armor.svg",
   },
   {
+    value: "binoculars",
+    title: "Binoculars",
+    icon: "/nodes/binoculars.svg",
+  },
+  {
     value: "finalBunker",
     title: "Final Bunker",
     icon: "/nodes/bunker.svg",
@@ -159,6 +164,16 @@ export const types = [
     value: "camp",
     title: "Abandonden Camp",
     icon: "/nodes/camp.svg",
+  },
+  {
+    value: "village",
+    title: "Abandoned Village",
+    icon: "/nodes/hut.svg",
+  },
+  {
+    value: "cloth",
+    title: "Clothes",
+    icon: "/nodes/hanger.svg",
   },
 ];
 
