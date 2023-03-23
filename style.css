@@ -463,6 +463,7 @@ input {
   border: 1px solid #77777e;
   font-family: monospace;
   color: #b3b3b4;
+  cursor: pointer;
 }
 
 .type-label > input:checked ~ span {
