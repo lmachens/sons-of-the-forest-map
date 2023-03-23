@@ -49,7 +49,7 @@ class CanvasMarker extends leaflet.CircleMarker {
   _setImageElement(src: string) {
     if (!imageElements[src]) {
       imageElements[src] = document.createElement("img");
-      imageElements[src].src = src;
+      imageElements[src].src = `./${src}`;
     }
     this.imageElement = imageElements[src];
   }
