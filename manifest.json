@@ -22,8 +22,8 @@
         "is_background_page": true
       },
       "desktop": {
-        "file": "index.html",
-        "debug_url": "http://localhost:3033/index.html",
+        "file": "app.html",
+        "debug_url": "http://localhost:3033/app.html",
         "resizable": true,
         "override_on_update": true,
         "desktop_only": true,
@@ -42,8 +42,8 @@
         "mute": true
       },
       "overlay": {
-        "file": "index.html",
-        "debug_url": "http://localhost:3033/index.html",
+        "file": "app.html",
+        "debug_url": "http://localhost:3033/app.html",
         "resizable": true,
         "override_on_update": true,
         "transparent": true,

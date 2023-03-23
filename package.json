@@ -4,8 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build && node copy-statics.mjs && ow opk pack dist -o soft.opk",
+    "dev": "vite -c vite-overwolf.config.ts",
+    "build": "tsc && vite build  -c vite-overwolf.config.ts && node copy-statics.mjs && ow opk pack dist -o soft.opk",
+    "web": "tsc && vite build -c vite-web.config.ts",
     "preview": "vite preview",
     "release": "ow opk upload soft.opk"
   },
