@@ -125,30 +125,30 @@ input {
   transition: 0.15s;
 }
 
-.icon svg {
+.icon > svg {
   width: 100%;
   height: 100%;
 }
 
-.toggle-icons svg {
+.toggle-icons > svg {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
 }
 
-.toggle-icons svg:nth-of-type(1) {
+.toggle-icons > svg:nth-of-type(1) {
   opacity: 1;
 }
-.toggle-icons svg:nth-of-type(2) {
+.toggle-icons > svg:nth-of-type(2) {
   opacity: 0;
 }
 
-.maximized .toggle-icons svg:nth-of-type(1) {
+.maximized .toggle-icons > svg:nth-of-type(1) {
   opacity: 0;
 }
 
-.maximized .toggle-icons svg:nth-of-type(2) {
+.maximized .toggle-icons > svg:nth-of-type(2) {
   opacity: 1;
 }
 
@@ -396,19 +396,19 @@ input {
   gap: 0.5rem;
 }
 
-.type-radio > input {
+.type-label > input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
   height: 0;
   width: 0;
 }
-.type-radio > img {
+.type-label > div {
   width: 30px;
   height: 30px;
 }
 
-.type-radio > input:checked ~ img {
+.type-label > input:checked ~ div {
   background: #22c55e;
   border-radius: 10px;
 }
@@ -420,6 +420,7 @@ input {
   flex-wrap: wrap;
   overflow: auto;
   max-height: 100px;
+  margin-bottom: 0.2rem;
 }
 
 .bold {
@@ -432,4 +433,39 @@ input {
 
 .hint {
   color: #f97316;
+}
+
+.filter-icon {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+.node-icon {
+  color: #ffffff;
+}
+
+.node-custom {
+  color: #ffffff;
+}
+
+.filter > input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.type-label > span {
+  display: block;
+  padding: 0rem 0.5rem;
+  border-radius: 10px;
+  border: 1px solid #77777e;
+  font-family: monospace;
+  color: #b3b3b4;
+}
+
+.type-label > input:checked ~ span {
+  background: #2eb15e;
+  color: white;
 }

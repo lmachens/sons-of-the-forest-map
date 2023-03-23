@@ -39,6 +39,5 @@ export default function Map(container: HTMLDivElement) {
 
   const coordinates = new CoordinatesControl({ position: "bottomright" });
   coordinates.addTo(map);
-
   return map;
 }

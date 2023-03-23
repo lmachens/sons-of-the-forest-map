@@ -1,7 +1,10 @@
+import icons from "./icons.json";
+
 export type NodeType = {
   value: string;
   title: string;
   icon: string;
+  filter?: string;
 };
 
 export type Node = {
@@ -12,168 +15,183 @@ export type Node = {
   x: number;
   y: number;
   z: number;
+  color?: string;
 };
 
 export const types = [
   {
     value: "unknown",
     title: "Unknown",
-    icon: "/nodes/unknown.webp",
+    icon: icons.unknown,
   },
   {
     value: "spawnPoint",
     title: "Spawn Point",
-    icon: "/nodes/teleport.svg",
+    icon: icons.teleport,
+    filter: "poi",
   },
   {
     value: "modernAxe",
     title: "Modern Axe",
-    icon: "/nodes/fire-axe.svg",
+    icon: icons["fire-axe"],
+    filter: "weapons",
   },
   {
     value: "flashlight",
     title: "Flashlight",
-    icon: "/nodes/flashlight.svg",
+    icon: icons.flashlight,
   },
   {
     value: "machete",
     title: "Machete",
-    icon: "/nodes/machete.svg",
+    icon: icons.machete,
+    filter: "weapons",
   },
   {
     value: "stunBaton",
     title: "Stun Baton",
-    icon: "/nodes/telescopic-baton.svg",
+    icon: icons["telescopic-baton"],
+    filter: "weapons",
   },
   {
     value: "pistol",
     title: "Pistol",
-    icon: "/nodes/pistol-gun.svg",
+    icon: icons["pistol-gun"],
+    filter: "weapons",
   },
   {
     value: "stunGun",
     title: "Stun Gun",
-    icon: "/nodes/ray-gun.svg",
+    icon: icons["ray-gun"],
+    filter: "weapons",
   },
   {
     value: "rebreather",
     title: "Rebreather",
-    icon: "/nodes/lungs.svg",
+    icon: icons.lungs,
   },
   {
     value: "cross",
     title: "Cross",
-    icon: "/nodes/hasty-grave.svg",
+    icon: icons["hasty-grave"],
   },
   {
     value: "ropeGun",
     title: "Rope Gun",
-    icon: "/nodes/rope-dart.svg",
+    icon: icons["rope-dart"],
   },
   {
     value: "slingshot",
     title: "Slingshot",
-    icon: "/nodes/slingshot.svg",
+    icon: icons.slingshot,
+    filter: "weapons",
   },
   {
     value: "shovel",
     title: "Shovel",
-    icon: "/nodes/spade.svg",
+    icon: icons.spade,
   },
   {
     value: "shotgun",
     title: "Shotgun",
-    icon: "/nodes/sawed-off-shotgun.svg",
+    icon: icons["sawed-off-shotgun"],
+    filter: "weapons",
   },
   {
     value: "maintenanceKeycard",
     title: "Maintenance Keycard",
-    icon: "/nodes/key-card.svg",
+    icon: icons["key-card"],
   },
   {
     value: "vipKeycard",
     title: "VIP Keycard",
-    icon: "/nodes/key-card.svg",
+    icon: icons["key-card"],
   },
   {
     value: "crossbow",
     title: "Crossbow",
-    icon: "/nodes/crossbow.svg",
+    icon: icons.crossbow,
+    filter: "weapons",
   },
   {
     value: "fireAxe",
     title: "Fire Axe",
-    icon: "/nodes/fire-axe.svg",
+    icon: icons["fire-axe"],
+    filter: "weapons",
   },
   {
     value: "guestKeycard",
     title: "Guest Keycard",
-    icon: "/nodes/key-card.svg",
+    icon: icons["key-card"],
   },
   {
     value: "guitar",
     title: "Guitar",
-    icon: "/nodes/guitar.svg",
+    icon: icons.guitar,
   },
   {
     value: "chainsaw",
     title: "Chainsaw",
-    icon: "/nodes/chainsaw.svg",
+    icon: icons.chainsaw,
+    filter: "weapons",
   },
   {
     value: "compoundBow",
     title: "Compound Bow",
-    icon: "/nodes/high-shot.svg",
+    icon: icons["high-shot"],
+    filter: "weapons",
   },
   {
     value: "revolver",
     title: "Revolver",
-    icon: "/nodes/revolver.svg",
+    icon: icons.revolver,
+    filter: "weapons",
   },
   {
     value: "katana",
     title: "Katana",
-    icon: "/nodes/katana.svg",
+    icon: icons.katana,
+    filter: "weapons",
   },
   {
     value: "goldenArmor",
     title: "Golden Armor",
-    icon: "/nodes/abdominal-armor.svg",
+    icon: icons["abdominal-armor"],
   },
   {
     value: "binoculars",
     title: "Binoculars",
-    icon: "/nodes/binoculars.svg",
+    icon: icons.binoculars,
   },
   {
     value: "finalBunker",
     title: "Final Bunker",
-    icon: "/nodes/bunker.svg",
+    icon: icons.bunker,
   },
   {
     value: "3Dprinter",
     title: "3D Printer",
-    icon: "/nodes/pc.svg",
+    icon: icons.pc,
   },
   {
     value: "cave",
     title: "Cave Entrance",
-    icon: "/nodes/cave.svg",
+    icon: icons.cave,
   },
   {
     value: "camp",
     title: "Abandonden Camp",
-    icon: "/nodes/camp.svg",
+    icon: icons.camp,
   },
   {
     value: "village",
     title: "Abandoned Village",
-    icon: "/nodes/hut.svg",
+    icon: icons.hut,
   },
   {
     value: "cloth",
     title: "Clothes",
-    icon: "/nodes/hanger.svg",
+    icon: icons.hanger,
   },
 ];
 
@@ -192,4 +210,36 @@ export function getCustomNodes() {
 
 export function setCustomNodes(customNodes: Node[]) {
   localStorage.setItem("custom_nodes", JSON.stringify(customNodes));
+}
+
+export const filters = [
+  {
+    value: "custom",
+    title: "Custom",
+  },
+  {
+    value: "poi",
+    title: "Point of Interest",
+  },
+  {
+    value: "weapons",
+    title: "Weapons",
+  },
+];
+
+export function getDeselectedFilters() {
+  let deselectedFilters: string[] = [];
+  try {
+    const item = localStorage.getItem("deselected_filters");
+    if (item) {
+      deselectedFilters = JSON.parse(item);
+    }
+  } catch (error) {
+    //
+  }
+  return deselectedFilters;
+}
+
+export function setDeselectedFilters(deselectedFilters: string[]) {
+  localStorage.setItem("deselected_filters", JSON.stringify(deselectedFilters));
 }
