@@ -378,6 +378,10 @@ input {
   z-index: 9000;
 }
 
+.friend {
+  z-index: 8900;
+}
+
 .node-form {
   display: flex;
   flex-direction: column;
