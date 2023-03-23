@@ -3,7 +3,7 @@ import PlayerMarker, { PlayerPosition } from "./lib/player-marker";
 
 export default function Friend({ map }: { map: leaflet.Map }) {
   const icon = leaflet.icon({
-    iconUrl: "/arrow.webp",
+    iconUrl: "./arrow.webp",
     className: "friend",
     iconSize: [32, 32],
   });
