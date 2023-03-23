@@ -194,7 +194,7 @@ export const types = [
   },
   {
     value: "camp",
-    title: "Abandonden Camp",
+    title: "Abandoned Camp",
     icon: icons.camp,
     filter: "poi",
   },
