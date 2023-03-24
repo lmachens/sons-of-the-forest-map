@@ -234,6 +234,12 @@ export const types = [
     icon: icons["hang-glider"],
     filter: "glider",
   },
+  {
+    value: "putter",
+    title: "Putter",
+    icon: icons.putter,
+    filter: "weapons",
+  },
 ];
 
 export function getCustomNodes() {
