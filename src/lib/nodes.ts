@@ -177,6 +177,12 @@ export const types = [
   {
     value: "finalBunker",
     title: "Final Bunker",
+    icon: icons["final-bunker"],
+    filter: "poi",
+  },
+  {
+    value: "bunker",
+    title: "Bunker",
     icon: icons.bunker,
     filter: "poi",
   },
