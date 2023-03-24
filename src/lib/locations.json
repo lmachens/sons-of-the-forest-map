@@ -48,6 +48,11 @@
     "z": 0
   },
   {
+    "type": "pistol",
+    "x": 1153,
+    "y": -607
+  },
+  {
     "type": "stunGun",
     "x": -647,
     "y": 1514,
@@ -139,14 +144,14 @@
   },
   {
     "type": "revolver",
-    "x": 1110,
-    "y": 1002,
+    "x": 1140,
+    "y": 1048,
     "z": 0
   },
   {
     "type": "katana",
-    "x": 1148,
-    "y": -609,
+    "x": 1160,
+    "y": -651,
     "z": 0
   },
   {
@@ -402,6 +407,20 @@
     "z": 0
   },
   {
+    "type": "cloth",
+    "title": "Leather Suit",
+    "x": 1166,
+    "y": -647,
+    "z": 0
+  },
+  {
+    "type": "cloth",
+    "title": "Golden Mask",
+    "x": 1139,
+    "y": -616,
+    "z": 0
+  },
+  {
     "type": "compass",
     "title": "GPS Locator",
     "x": -1797,
@@ -424,16 +443,23 @@
   },
   {
     "type": "book",
-    "title": "Parallel Universes and Travel Between Them",
+    "title": "Parallel Universes and Travel Between Them Book",
     "x": -1196,
     "y": 78,
     "z": 0
   },
   {
     "type": "book",
-    "title": "Pennant Line",
+    "title": "Pennant Line Book",
     "x": -416,
     "y": 694,
+    "z": 0
+  },
+  {
+    "type": "book",
+    "title": "Deep Sleep Book",
+    "x": 1139,
+    "y": -612,
     "z": 0
   },
   {
@@ -507,6 +533,41 @@
     "z": 0
   },
   {
+    "type": "document",
+    "title": "Email - Preliminary Findings",
+    "x": 1154,
+    "y": -606,
+    "z": 0
+  },
+  {
+    "type": "document",
+    "title": "Email - Safe in Cube",
+    "x": 1149,
+    "y": -602,
+    "z": 0
+  },
+  {
+    "type": "document",
+    "title": "Email - Classified Scientific Data",
+    "x": 1151,
+    "y": -619,
+    "y": 0,
+  },
+  {
+    "type": "document",
+    "title": "Numbers Translation",
+    "x": 1125,
+    "y": -606,
+    "z": 0
+  },
+  {
+    "type": "document",
+    "title": "Golf Balls",
+    "x": 1125,
+    "y": -605,
+    "z": 0
+  },
+  {
     "type": "hang-glider",
     "title": "Hang Glider",
     "x": -798,
@@ -546,6 +607,12 @@
     "title": "Hang Glider",
     "x": -1298,
     "y": 1737,
+    "z": 0
+  },
+  {
+    "type": "putter",
+    "x": 1124,
+    "y": -605,
     "z": 0
   },
 ]
