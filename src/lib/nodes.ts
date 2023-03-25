@@ -69,7 +69,7 @@ export const types = [
   {
     value: "rebreather",
     title: "Rebreather",
-    icon: icons.lungs,
+    icon: icons.rebreather,
     filter: "gear",
   },
   {
@@ -106,13 +106,13 @@ export const types = [
     value: "maintenanceKeycard",
     title: "Maintenance Keycard",
     icon: icons["key-card"],
-    filter: "cards",
+    filter: "collect",
   },
   {
     value: "vipKeycard",
     title: "VIP Keycard",
     icon: icons["key-card"],
-    filter: "cards",
+    filter: "collect",
   },
   {
     value: "crossbow",
@@ -130,7 +130,7 @@ export const types = [
     value: "guestKeycard",
     title: "Guest Keycard",
     icon: icons["key-card"],
-    filter: "cards",
+    filter: "collect",
   },
   {
     value: "guitar",
@@ -200,7 +200,7 @@ export const types = [
   },
   {
     value: "camp",
-    title: "Abandonden Camp",
+    title: "Abandoned Camp",
     icon: icons.camp,
     filter: "poi",
   },
@@ -215,6 +215,36 @@ export const types = [
     title: "Clothes",
     icon: icons.hanger,
     filter: "clothes",
+  },
+  {
+    value: "compass",
+    title: "Compass",
+    icon: icons.compass,
+    filter: "tools",
+  },
+  {
+    value: "book",
+    title: "Book",
+    icon: icons.book,
+    filter: "collect",
+  },
+  {
+    value: "document",
+    title: "Document",
+    icon: icons.document,
+    filter: "collect",
+  },
+  {
+    value: "hang-glider",
+    title: "Hang Glider",
+    icon: icons["hang-glider"],
+    filter: "glider",
+  },
+  {
+    value: "putter",
+    title: "Putter",
+    icon: icons.putter,
+    filter: "weapons",
   },
 ];
 
@@ -265,12 +295,16 @@ export const filters = [
     title: "Clothes",
   },
   {
+    value: "collect",
+    title: "Collectibles",
+  },
+  {
     value: "gear",
     title: "Player Gear",
   },
   {
-    value: "cards",
-    title: "Cards",
+    value: "glider",
+    title: "Hang Gliders"
   },
 ];
 

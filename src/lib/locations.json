@@ -26,7 +26,7 @@
   {
     "type": "flashlight",
     "x": -626,
-    "y": 385,
+    "y": 387,
     "z": 0
   },
   {
@@ -42,39 +42,38 @@
     "z": 0
   },
   {
-    "type": "3Dprinter",
-    "x": -1202,
-    "y": 143,
+    "type": "pistol",
+    "x": -1797,
+    "y": 578,
     "z": 0
   },
   {
     "type": "pistol",
-    "x": -1742,
-    "y": 590,
-    "z": 0
+    "x": 1153,
+    "y": -607
   },
   {
     "type": "stunGun",
-    "x": -434,
-    "y": 1519,
+    "x": -647,
+    "y": 1514,
     "z": 0
   },
   {
     "type": "rebreather",
-    "x": -427,
-    "y": 1509,
+    "x": -422,
+    "y": 1477,
     "z": 0
   },
   {
     "type": "cross",
-    "x": -1100,
-    "y": -167,
+    "x": -1174,
+    "y": -217,
     "z": 0
   },
   {
     "type": "ropeGun",
-    "x": -1099,
-    "y": -160,
+    "x": -1204,
+    "y": -277,
     "z": 0
   },
   {
@@ -91,26 +90,20 @@
   },
   {
     "type": "shotgun",
-    "x": -1335,
-    "y": 1430,
-    "z": 0
-  },
-  {
-    "type": "shotgun",
-    "x": 1610,
-    "y": 510,
+    "x": -1341,
+    "y": 1410,
     "z": 0
   },
   {
     "type": "maintenanceKeycard",
-    "x": -457,
-    "y": 709,
+    "x": -427,
+    "y": 700,
     "z": 0
   },
   {
     "type": "fireAxe",
-    "x": -447,
-    "y": 714,
+    "x": -415,
+    "y": 712,
     "z": 0
   },
   {
@@ -127,20 +120,20 @@
   },
   {
     "type": "guestKeycard",
-    "x": -1196,
-    "y": 136,
+    "x": -1184,
+    "y": 41,
     "z": 0
   },
   {
     "type": "guitar",
-    "x": -1182,
-    "y": 133,
+    "x": -1158,
+    "y": 17,
     "z": 0
   },
   {
     "type": "chainsaw",
-    "x": -1187,
-    "y": 135,
+    "x": -1151,
+    "y": 116,
     "z": 0
   },
   {
@@ -151,20 +144,20 @@
   },
   {
     "type": "revolver",
-    "x": 1110,
-    "y": 1002,
+    "x": 1140,
+    "y": 1048,
     "z": 0
   },
   {
     "type": "katana",
-    "x": 1148,
-    "y": -609,
+    "x": 1160,
+    "y": -651,
     "z": 0
   },
   {
     "type": "goldenArmor",
-    "x": 1170,
-    "y": -592,
+    "x": 181,
+    "y": -664,
     "z": 0
   },
   {
@@ -361,7 +354,7 @@
     "type": "cloth",
     "title": "Hoodie or Tactical/Leather Jacket",
     "x": -645,
-    "y": 1509,
+    "y": 1511,
     "z": 0
   },
   {
@@ -390,6 +383,257 @@
     "title": "Dress",
     "x": -914,
     "y": 1010,
+    "z": 0
+  },
+  {
+    "type": "cloth",
+    "title": "Leather Jacket",
+    "x": -971,
+    "y": -1061,
+    "z": 0
+  },
+  {
+    "type": "cloth",
+    "title": "Winter Jacket",
+    "x": -1031,
+    "y": -625,
+    "z": 0
+  },
+  {
+    "type": "cloth",
+    "title": "Hoodie or Tactical/Leather Jacket",
+    "x": -743,
+    "y": 20,
+    "z": 0
+  },
+  {
+    "type": "cloth",
+    "title": "Track Suit",
+    "x": -1141,
+    "y": 6,
+    "z": 0
+  },
+  {
+    "type": "cloth",
+    "title": "Pajamas",
+    "x": -1116,
+    "y": -18,
+    "z": 0
+  },
+  {
+    "type": "cloth",
+    "title": "Tuxedo",
+    "x": -416,
+    "y": 695,
+    "z": 0
+  },
+  {
+    "type": "cloth",
+    "title": "Leather Suit",
+    "x": 1166,
+    "y": -647,
+    "z": 0
+  },
+  {
+    "type": "cloth",
+    "title": "Golden Mask",
+    "x": 1139,
+    "y": -616,
+    "z": 0
+  },
+  {
+    "type": "compass",
+    "title": "GPS Locator",
+    "x": -1797,
+    "y": 577,
+    "z": 0
+  },
+  {
+    "type": "compass",
+    "title": "GPS Locator",
+    "x": -1341,
+    "y": 1411,
+    "z": 0
+  },
+  {
+    "type": "compass",
+    "title": "GPS Locator",
+    "x": -627,
+    "y": 386,
+    "z": 0
+  },
+  {
+    "type": "book",
+    "title": "Parallel Universes and Travel Between Them Book",
+    "x": -1196,
+    "y": 78,
+    "z": 0
+  },
+  {
+    "type": "book",
+    "title": "Pennant Line Book",
+    "x": -416,
+    "y": 694,
+    "z": 0
+  },
+  {
+    "type": "book",
+    "title": "Deep Sleep Book",
+    "x": 1139,
+    "y": -612,
+    "z": 0
+  },
+  {
+    "type": "document",
+    "title": "Email - Golf Balls",
+    "x": -1142,
+    "y": 2,
+    "z": 0
+  },
+  {
+    "type": "document",
+    "title": "Email - Another One",
+    "x": -1125,
+    "y": 110,
+    "z": 0
+  },
+  {
+    "type": "document",
+    "title": "Email - ATTENTION ALL",
+    "x": -425,
+    "y": 702,
+    "z": 0
+  },
+  {
+    "type": "document",
+    "title": "Will & Testament of Mr. Puffton",
+    "x": -1178,
+    "y": 27,
+    "z": 0
+  },
+  {
+    "type": "document",
+    "title": "Golf Ball Memo",
+    "x": -1277,
+    "y": -4,
+    "z": 0
+  },
+  {
+    "type": "document",
+    "title": "Email - Photo Reference",
+    "x": -1139,
+    "y": -234,
+    "z": 0
+  },
+  {
+    "type": "document",
+    "title": "Email - More Lightning",
+    "x": -1017,
+    "y": -264,
+    "z": 0
+  },
+  {
+    "type": "document",
+    "title": "Newspaper page - Missing CEO",
+    "x": -1204,
+    "y": -267,
+    "z": 0
+  },
+  {
+    "type": "document",
+    "title": "Newspaper page - Puffcorp outbids Sahara Terapeutics for remote island",
+    "x": -428,
+    "y": 1497,
+    "z": 0
+  },
+  {
+    "type": "document",
+    "title": "Album Cover",
+    "x": -432,
+    "y": 705,
+    "z": 0
+  },
+  {
+    "type": "document",
+    "title": "Email - Preliminary Findings",
+    "x": 1154,
+    "y": -606,
+    "z": 0
+  },
+  {
+    "type": "document",
+    "title": "Email - Safe in Cube",
+    "x": 1149,
+    "y": -602,
+    "z": 0
+  },
+  {
+    "type": "document",
+    "title": "Email - Classified Scientific Data",
+    "x": 1151,
+    "y": -619,
+    "z": 0
+  },
+  {
+    "type": "document",
+    "title": "Numbers Translation",
+    "x": 1125,
+    "y": -606,
+    "z": 0
+  },
+  {
+    "type": "document",
+    "title": "Golf Balls",
+    "x": 1125,
+    "y": -605,
+    "z": 0
+  },
+  {
+    "type": "hang-glider",
+    "title": "Hang Glider",
+    "x": -798,
+    "y": -281,
+    "z": 0
+  },
+  {
+    "type": "hang-glider",
+    "title": "Hang Glider",
+    "x": -504,
+    "y": -308,
+    "z": 0
+  },
+  {
+    "type": "hang-glider",
+    "title": "Hang Glider",
+    "x": -131,
+    "y": -1029,
+    "z": 0
+  },
+  {
+    "type": "hang-glider",
+    "title": "Hang Glider",
+    "x": -1181,
+    "y": -1724,
+    "z": 0
+  },
+  {
+    "type": "hang-glider",
+    "title": "Hang Glider",
+    "x": -1769,
+    "y": 1168,
+    "z": 0
+  },
+  {
+    "type": "hang-glider",
+    "title": "Hang Glider",
+    "x": -1298,
+    "y": 1737,
+    "z": 0
+  },
+  {
+    "type": "putter",
+    "x": 1124,
+    "y": -605,
     "z": 0
   }
 ]
