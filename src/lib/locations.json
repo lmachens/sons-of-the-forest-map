@@ -173,6 +173,27 @@
     "z": 0
   },
   {
+    "type": "bunker",
+    "title": "Maintenance A",
+    "x": -478,
+    "y": 710,
+    "z": 0
+  },
+  {
+    "type": "bunker",
+    "title": "Maintenance C",
+    "x": 1110,
+    "y": 1007,
+    "z": 0
+  },
+  {
+    "type": "bunker",
+    "title": "Cave Bunker",
+    "x": 1230,
+    "y": -652,
+    "z": 0
+  },
+  {
     "type": "3Dprinter",
     "x": -418,
     "y": 700,
