@@ -19,77 +19,102 @@
   },
   {
     "type": "modernAxe",
+    "title": "Modern Axe",
+    "description": "In the chest of a dead soldier",
     "x": -705,
     "y": 468,
     "z": 0
   },
   {
     "type": "flashlight",
+    "title": "Flashlight,
+    "description": "On hanging soldier",
     "x": -626,
     "y": 387,
     "z": 0
   },
   {
     "type": "machete",
+    "title": "Machete",
+    "description": "On the deflated boat",
     "x": -68,
     "y": 1459,
     "z": 0
   },
   {
     "type": "stunBaton",
+    "title": "Stun Baton",
+    "description": "In the pile of skulls",
     "x": -1145,
     "y": -161,
     "z": 0
   },
   {
     "type": "pistol",
+    "title": "Pistol",
+    "description": "On Emergency Raft",
     "x": -1797,
     "y": 578,
     "z": 0
   },
   {
     "type": "pistol",
+    "title": "Pistol",
     "x": 1153,
     "y": -607
   },
   {
     "type": "stunGun",
+    "title": "Stun Gun",
+    "description": "Inside the right tunnel",
     "x": -647,
     "y": 1514,
     "z": 0
   },
   {
     "type": "rebreather",
+    "title": "Rebreather",
+    "description": "Inside the right tunnel",
     "x": -422,
     "y": 1477,
     "z": 0
   },
   {
     "type": "cross",
+    "title": "Cross",
+    "description": "Next to the projector",
     "x": -1174,
     "y": -217,
     "z": 0
   },
   {
     "type": "ropeGun",
+    "title": "Rope Gun",
+    "description": "Near the cave exit in the left tunnel",
     "x": -1204,
     "y": -277,
     "z": 0
   },
   {
     "type": "slingshot",
+    "title": "Slingshot",
+    "description": "On one of soldiers bodies",
     "x": -533,
     "y": 120,
     "z": 0
   },
   {
     "type": "shovel",
+    "title": "Shovel",
+    "description": "In hands of dead worker inside cave",
     "x": -533,
     "y": 145,
     "z": 0
   },
   {
     "type": "shotgun",
+    "title": "Shotgun",
+    "description": "Inside grave",
     "x": -1341,
     "y": 1410,
     "z": 0
@@ -97,12 +122,15 @@
   {
     "type": "keycard",
     "title": "Meintenance Card",
+    "description": "Next to 3D Printer in the bunker",
     "x": -427,
     "y": 700,
     "z": 0
   },
   {
     "type": "fireAxe",
+    "title": "Fire Axe",
+    "description": "Inside the bunker room at the end of a hallway",
     "x": -415,
     "y": 712,
     "z": 0
@@ -110,12 +138,15 @@
   {
     "type": "keycard",
     "title": "VIP Card",
+    "description": "On desk in Security room, behind Maintenance Door",
     "x": -977,
     "y": 1039,
     "z": 0
   },
   {
     "type": "crossbow",
+    "title": "Crossbow",
+    "description": "Inside second hydroponic room",
     "x": -1022,
     "y": 986,
     "z": 0
@@ -129,12 +160,16 @@
   },
   {
     "type": "guitar",
+    "title": "Guitar",
+    "description": "On bar stand top, inside Cave Bunker",
     "x": -1158,
     "y": 17,
     "z": 0
   },
   {
     "type": "chainsaw",
+    "title": "Chainsaw",
+    "description": "In the Theater room, behind Guest Door",
     "x": -1151,
     "y": 116,
     "z": 0
@@ -142,6 +177,7 @@
   {
     "type": "compoundBow",
     "title": "Compound Bow",
+    "description": "Inside the bathroom, in Bunker B",
     "x": -1120,
     "y": -1039,
     "z": 0
@@ -170,6 +206,7 @@
   {
     "type": "binoculars",
     "title": "Binoculars",
+    "description": "On top of the kayak",
     "x": -1112,
     "y": 1721,
     "z": 0
@@ -184,13 +221,15 @@
   {
     "type": "bunker",
     "title": "Maintenance A",
+    "description": "Use Shovel to enter"
     "x": -478,
     "y": 710,
     "z": 0
   },
   {
     "type": "bunker",
-    "title": "Maintenance A",
+    "title": "Maintenance B",
+    "description": "Use Shovel to enter",
     "x": -1133,
     "y": -1100,
     "z": 0
@@ -198,6 +237,7 @@
   {
     "type": "bunker",
     "title": "Maintenance C",
+    "description": "Use shovel to enter",
     "x": 1110,
     "y": 1007,
     "z": 0
@@ -211,24 +251,28 @@
   },
   {
     "type": "3Dprinter",
+    "title": "3D Printer",
     "x": -418,
     "y": 700,
     "z": 0
   },
   {
     "type": "3Dprinter",
+    "title": "3D Printer",
     "x": -1195,
     "y": 78,
     "z": 0
   },
   {
     "type": "3Dprinter",
+    "title": "3D Printer",
     "x": -1126,
     "y": -1048,
     "z": 0
   },
   {
     "type": "3Dprinter",
+    "title": "3D Printer",
     "x": 1121,
     "y": -602,
     "z": 0
@@ -438,18 +482,21 @@
   },
   {
     "type": "village",
+    "title": "Abandoned Cabins",
     "x": 1827,
     "y": -487,
     "z": 0
   },
   {
     "type": "village",
+    "title": "Abandoned Cabins",
     "x": 1694,
     "y": 1025,
     "z": 0
   },
   {
     "type": "village",
+    "title": "Abandoned Cabins",
     "x": 1459,
     "y": 747,
     "z": 0
@@ -562,6 +609,7 @@
   {
     "type": "compass",
     "title": "GPS Locator",
+    "description": "On Emergency Raft",
     "x": -1797,
     "y": 577,
     "z": 0
@@ -569,6 +617,7 @@
   {
     "type": "compass",
     "title": "GPS Locator",
+    "description": "Inside grave",
     "x": -1341,
     "y": 1411,
     "z": 0
@@ -576,6 +625,7 @@
   {
     "type": "compass",
     "title": "GPS Locator",
+    "description": "On hanging soldier",
     "x": -627,
     "y": 386,
     "z": 0
@@ -583,6 +633,7 @@
   {
     "type": "book",
     "title": "Parallel Universes and Travel Between Them Book",
+    "description": "Next to 3D Printer inside the bunker",
     "x": -1196,
     "y": 78,
     "z": 0
@@ -597,6 +648,7 @@
   {
     "type": "book",
     "title": "Deep Sleep Book",
+    "description": "On top of the autopsy table on 5th level",
     "x": 1139,
     "y": -612,
     "z": 0
@@ -611,6 +663,7 @@
   {
     "type": "document",
     "title": "Email - Another One",
+    "description": "On the table, behind Guest Door",
     "x": -1125,
     "y": 110,
     "z": 0
@@ -618,6 +671,7 @@
   {
     "type": "document",
     "title": "Email - ATTENTION ALL",
+    "description": "In the pool area with big tree",
     "x": -425,
     "y": 702,
     "z": 0
@@ -625,6 +679,7 @@
   {
     "type": "document",
     "title": "Will & Testament of Mr. Puffton",
+    "description": "On the table, behind VIP Door",
     "x": -1178,
     "y": 27,
     "z": 0
@@ -632,6 +687,7 @@
   {
     "type": "document",
     "title": "Golf Ball Memo",
+    "description": "Held by one of the deceased",
     "x": -1277,
     "y": -4,
     "z": 0
@@ -653,6 +709,7 @@
   {
     "type": "document",
     "title": "Newspaper page - Missing CEO",
+    "description": "Inside the right cave tunnel",
     "x": -1204,
     "y": -267,
     "z": 0
@@ -681,6 +738,7 @@
   {
     "type": "document",
     "title": "Email - Safe in Cube",
+    "description": "In the first room after cutscene, on the computer desk",
     "x": 1149,
     "y": -602,
     "z": 0
@@ -688,6 +746,7 @@
   {
     "type": "document",
     "title": "Email - Classified Scientific Data",
+    "description": "In corridor after cutscene",
     "x": 1151,
     "y": -619,
     "z": 0
@@ -701,7 +760,8 @@
   },
   {
     "type": "document",
-    "title": "Golf Balls",
+    "title": "Email - Golf Balls",
+    "description": "On the wooden table, beside the Putter",
     "x": 1125,
     "y": -605,
     "z": 0
@@ -757,6 +817,7 @@
   },
   {
     "type": "putter",
+    "title": "Putter",
     "x": 1124,
     "y": -605,
     "z": 0
