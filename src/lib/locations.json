@@ -551,7 +551,7 @@
     "title": "Email - Classified Scientific Data",
     "x": 1151,
     "y": -619,
-    "y": 0,
+    "z": 0
   },
   {
     "type": "document",
@@ -614,5 +614,5 @@
     "x": 1124,
     "y": -605,
     "z": 0
-  },
+  }
 ]
