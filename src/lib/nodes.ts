@@ -103,15 +103,9 @@ export const types = [
     filter: "weapons",
   },
   {
-    value: "maintenanceKeycard",
-    title: "Maintenance Keycard",
-    icon: icons["key-card"],
-    filter: "collect",
-  },
-  {
-    value: "vipKeycard",
-    title: "VIP Keycard",
-    icon: icons["key-card"],
+    value: "keycard",
+    title: "Keycard",
+    icon: icons.keycard,
     filter: "collect",
   },
   {
@@ -127,12 +121,6 @@ export const types = [
     filter: "tools",
   },
   {
-    value: "guestKeycard",
-    title: "Guest Keycard",
-    icon: icons["key-card"],
-    filter: "collect",
-  },
-  {
     value: "guitar",
     title: "Guitar",
     icon: icons.guitar,
@@ -146,31 +134,31 @@ export const types = [
   },
   {
     value: "compoundBow",
-    title: "Compound Bow",
+    title: "Weapon",
     icon: icons["high-shot"],
     filter: "weapons",
   },
   {
     value: "revolver",
-    title: "Revolver",
+    title: "Gun",
     icon: icons.revolver,
     filter: "weapons",
   },
   {
     value: "katana",
-    title: "Katana",
+    title: "Weapon",
     icon: icons.katana,
     filter: "weapons",
   },
   {
     value: "goldenArmor",
-    title: "Golden Armor",
+    title: "Player Gear",
     icon: icons["abdominal-armor"],
     filter: "gear",
   },
   {
     value: "binoculars",
-    title: "Binoculars",
+    title: "Tool",
     icon: icons.binoculars,
     filter: "tools",
   },
@@ -194,13 +182,13 @@ export const types = [
   },
   {
     value: "cave",
-    title: "Cave Entrance",
+    title: "Cave entrance",
     icon: icons.cave,
     filter: "cave",
   },
   {
     value: "camp",
-    title: "Abandoned Camp",
+    title: "Point of Interest",
     icon: icons.camp,
     filter: "poi",
   },
@@ -246,6 +234,30 @@ export const types = [
     icon: icons.putter,
     filter: "weapons",
   },
+  {
+    value: "crate",
+    title: "Loot",
+    icon: icons.box,
+    filter: "loot",
+  },
+  {
+    value: "supply",
+    title: "Loot",
+    icon: icons.box,
+    filter: "loot",
+  },
+  {
+    value: "ammo",
+    title: "Loot",
+    icon: icons.box,
+    filter: "loot",
+  },
+  {
+    value: "helicopter",
+    title: "Point of Interest",
+    icon: icons.helicopter,
+    filter: "poi",
+  },
 ];
 
 export function getCustomNodes() {
@@ -272,7 +284,7 @@ export const filters = [
   },
   {
     value: "poi",
-    title: "Point of Interest",
+    title: "Points of Interest",
   },
   {
     value: "cave",
@@ -301,6 +313,10 @@ export const filters = [
   {
     value: "gear",
     title: "Player Gear",
+  },
+  {
+    value: "loot",
+    title: "Loot Crates",
   },
   {
     value: "glider",
