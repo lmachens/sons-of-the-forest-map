@@ -76,7 +76,7 @@ export const types = [
     value: "cross",
     title: "Weapon",
     icon: icons["hasty-grave"],
-    filter: "custom",
+    filter: "weapons",
   },
   {
     value: "ropeGun",
@@ -320,7 +320,7 @@ export const filters = [
   },
   {
     value: "glider",
-    title: "Hang Gliders"
+    title: "Hang Gliders",
   },
 ];
 
