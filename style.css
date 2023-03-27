@@ -454,6 +454,10 @@ input {
   color: #ffffff;
 }
 
+.node-icon.discovered {
+  opacity: 0.3;
+}
+
 .node-custom {
   color: #ffffff;
 }

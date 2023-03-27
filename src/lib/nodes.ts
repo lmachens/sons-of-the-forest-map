@@ -9,7 +9,7 @@ export type NodeType = {
 };
 
 export type Node = {
-  id?: number;
+  id: number;
   title?: string;
   description?: string;
   type: string;
@@ -262,20 +262,19 @@ export const types = [
 ];
 
 export function getCustomNodes() {
-  let customNodes: Node[] = [];
-  try {
-    const item = localStorage.getItem("custom_nodes");
-    if (item) {
-      customNodes = JSON.parse(item);
-    }
-  } catch (error) {
-    //
-  }
-  return customNodes;
+  return getItem<Node[]>("custom_nodes", []);
 }
 
 export function setCustomNodes(customNodes: Node[]) {
-  localStorage.setItem("custom_nodes", JSON.stringify(customNodes));
+  setItem("custom_nodes", customNodes);
+}
+
+export function getDiscoveredNodeIDs() {
+  return getItem<number[]>("discovered_node_ids", []);
+}
+
+export function setDiscoveredNodeIDs(discoveredNodeIDs: number[]) {
+  return setItem("discovered_node_ids", discoveredNodeIDs);
 }
 
 export const filters = [

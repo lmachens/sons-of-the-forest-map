@@ -13,10 +13,17 @@ export function getIconElement(type: NodeType) {
   });
 }
 
-export function getDivIcon(type: NodeType, isCustom: boolean, color?: string) {
+export function getDivIcon(
+  type: NodeType,
+  isCustom: boolean,
+  color?: string,
+  className?: string
+) {
   return leaflet.divIcon({
     html: getIconSVG(type, color),
-    className: `node-icon node-${type.value} ${isCustom ? "node-custom" : ""}`,
+    className: `node-icon node-${type.value} ${isCustom ? "node-custom" : ""} ${
+      className || ""
+    }`,
     iconSize: [32, 32],
     tooltipAnchor: [0, -20],
   });

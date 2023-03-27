@@ -1,23 +1,27 @@
 [
   {
+    "id": 1,
     "type": "spawnPoint",
     "x": -220,
     "y": -4,
     "z": 408
   },
   {
+    "id": 2,
     "type": "spawnPoint",
     "x": -415,
     "y": 1593,
     "z": 0
   },
   {
+    "id": 3,
     "type": "spawnPoint",
     "x": -1147,
     "y": -227,
     "z": 0
   },
   {
+    "id": 4,
     "type": "modernAxe",
     "title": "Modern Axe",
     "description": "In the chest of a dead soldier",
@@ -26,6 +30,7 @@
     "z": 0
   },
   {
+    "id": 5,
     "type": "flashlight",
     "title": "Flashlight",
     "description": "On hanging soldier",
@@ -34,6 +39,7 @@
     "z": 0
   },
   {
+    "id": 6,
     "type": "machete",
     "title": "Machete",
     "description": "On the deflated boat",
@@ -42,6 +48,7 @@
     "z": 0
   },
   {
+    "id": 7,
     "type": "stunBaton",
     "title": "Stun Baton",
     "description": "In the pile of skulls",
@@ -50,6 +57,7 @@
     "z": 0
   },
   {
+    "id": 8,
     "type": "pistol",
     "title": "Pistol",
     "description": "On Emergency Raft",
@@ -58,12 +66,14 @@
     "z": 0
   },
   {
+    "id": 9,
     "type": "pistol",
     "title": "Pistol",
     "x": 1153,
     "y": -607
   },
   {
+    "id": 10,
     "type": "stunGun",
     "title": "Stun Gun",
     "description": "Inside the right tunnel",
@@ -72,6 +82,7 @@
     "z": 0
   },
   {
+    "id": 11,
     "type": "rebreather",
     "title": "Rebreather",
     "description": "Inside the right tunnel",
@@ -80,6 +91,7 @@
     "z": 0
   },
   {
+    "id": 12,
     "type": "cross",
     "title": "Cross",
     "description": "Next to the projector",
@@ -88,6 +100,7 @@
     "z": 0
   },
   {
+    "id": 13,
     "type": "ropeGun",
     "title": "Rope Gun",
     "description": "Near the cave exit in the left tunnel",
@@ -96,6 +109,7 @@
     "z": 0
   },
   {
+    "id": 14,
     "type": "slingshot",
     "title": "Slingshot",
     "description": "On one of soldiers bodies",
@@ -104,6 +118,7 @@
     "z": 0
   },
   {
+    "id": 15,
     "type": "shovel",
     "title": "Shovel",
     "description": "In hands of dead worker inside cave",
@@ -112,6 +127,7 @@
     "z": 0
   },
   {
+    "id": 16,
     "type": "shotgun",
     "title": "Shotgun",
     "description": "Inside grave",
@@ -120,6 +136,7 @@
     "z": 0
   },
   {
+    "id": 17,
     "type": "keycard",
     "title": "Meintenance Card",
     "description": "Next to 3D Printer in the bunker",
@@ -128,6 +145,7 @@
     "z": 0
   },
   {
+    "id": 18,
     "type": "fireAxe",
     "title": "Fire Axe",
     "description": "Inside the bunker room at the end of a hallway",
@@ -136,6 +154,7 @@
     "z": 0
   },
   {
+    "id": 19,
     "type": "keycard",
     "title": "VIP Card",
     "description": "On desk in Security room, behind Maintenance Door",
@@ -144,6 +163,7 @@
     "z": 0
   },
   {
+    "id": 20,
     "type": "crossbow",
     "title": "Crossbow",
     "description": "Inside second hydroponic room",
@@ -152,6 +172,7 @@
     "z": 0
   },
   {
+    "id": 21,
     "type": "keycard",
     "title": "Guest Card",
     "x": -1184,
@@ -159,6 +180,7 @@
     "z": 0
   },
   {
+    "id": 22,
     "type": "guitar",
     "title": "Guitar",
     "description": "On bar stand top, inside Cave Bunker",
@@ -167,6 +189,7 @@
     "z": 0
   },
   {
+    "id": 23,
     "type": "chainsaw",
     "title": "Chainsaw",
     "description": "In the Theater room, behind Guest Door",
@@ -175,6 +198,7 @@
     "z": 0
   },
   {
+    "id": 24,
     "type": "compoundBow",
     "title": "Compound Bow",
     "description": "Inside the bathroom, in Bunker B",
@@ -183,6 +207,7 @@
     "z": 0
   },
   {
+    "id": 25,
     "type": "revolver",
     "title": "Revolver",
     "x": 1140,
@@ -190,6 +215,7 @@
     "z": 0
   },
   {
+    "id": 26,
     "type": "katana",
     "title": "Katana",
     "x": 1160,
@@ -197,6 +223,7 @@
     "z": 0
   },
   {
+    "id": 27,
     "type": "goldenArmor",
     "title": "Golden Armor",
     "x": 181,
@@ -204,6 +231,7 @@
     "z": 0
   },
   {
+    "id": 28,
     "type": "binoculars",
     "title": "Binoculars",
     "description": "On top of the kayak",
@@ -212,6 +240,7 @@
     "z": 0
   },
   {
+    "id": 29,
     "type": "finalBunker",
     "title": "Final Bunker",
     "x": 1766,
@@ -219,6 +248,7 @@
     "z": 0
   },
   {
+    "id": 30,
     "type": "bunker",
     "title": "Maintenance A",
     "description": "Use Shovel to enter",
@@ -227,6 +257,7 @@
     "z": 0
   },
   {
+    "id": 31,
     "type": "bunker",
     "title": "Maintenance B",
     "description": "Use Shovel to enter",
@@ -235,6 +266,7 @@
     "z": 0
   },
   {
+    "id": 32,
     "type": "bunker",
     "title": "Maintenance C",
     "description": "Use shovel to enter",
@@ -243,6 +275,7 @@
     "z": 0
   },
   {
+    "id": 33,
     "type": "bunker",
     "title": "Cave Bunker",
     "x": 1230,
@@ -250,6 +283,7 @@
     "z": 0
   },
   {
+    "id": 34,
     "type": "3Dprinter",
     "title": "3D Printer",
     "x": -418,
@@ -257,6 +291,7 @@
     "z": 0
   },
   {
+    "id": 35,
     "type": "3Dprinter",
     "title": "3D Printer",
     "x": -1195,
@@ -264,6 +299,7 @@
     "z": 0
   },
   {
+    "id": 36,
     "type": "3Dprinter",
     "title": "3D Printer",
     "x": -1126,
@@ -271,6 +307,7 @@
     "z": 0
   },
   {
+    "id": 37,
     "type": "3Dprinter",
     "title": "3D Printer",
     "x": 1121,
@@ -278,6 +315,7 @@
     "z": 0
   },
   {
+    "id": 38,
     "type": "cave",
     "title": "Cave Entrance",
     "x": 1230,
@@ -285,6 +323,7 @@
     "z": 0
   },
   {
+    "id": 39,
     "type": "cave",
     "title": "Cave Entrance",
     "x": 966,
@@ -292,6 +331,7 @@
     "z": 0
   },
   {
+    "id": 40,
     "type": "cave",
     "title": "Cave Entrance",
     "x": 430,
@@ -299,6 +339,7 @@
     "z": 0
   },
   {
+    "id": 41,
     "type": "cave",
     "title": "Cave Entrance",
     "x": -136,
@@ -306,6 +347,7 @@
     "z": 0
   },
   {
+    "id": 42,
     "type": "cave",
     "title": "Cave Entrance",
     "x": -530,
@@ -313,6 +355,7 @@
     "z": 0
   },
   {
+    "id": 43,
     "type": "cave",
     "title": "Cave Entrance",
     "x": -638,
@@ -320,6 +363,7 @@
     "z": 0
   },
   {
+    "id": 44,
     "type": "cave",
     "title": "Cave Entrance",
     "x": -106,
@@ -327,6 +371,7 @@
     "z": 0
   },
   {
+    "id": 45,
     "type": "cave",
     "title": "Cave Entrance",
     "x": -1104,
@@ -334,6 +379,7 @@
     "z": 0
   },
   {
+    "id": 46,
     "type": "cave",
     "title": "Cave Entrance",
     "x": -1234,
@@ -341,6 +387,7 @@
     "z": 0
   },
   {
+    "id": 47,
     "type": "cave",
     "title": "Cave Entrance",
     "x": -1190,
@@ -348,6 +395,7 @@
     "z": 0
   },
   {
+    "id": 48,
     "type": "cave",
     "title": "Cave Entrance",
     "x": -530,
@@ -355,6 +403,7 @@
     "z": 0
   },
   {
+    "id": 49,
     "type": "cave",
     "title": "Cave Entrance",
     "x": -1014,
@@ -362,6 +411,7 @@
     "z": 0
   },
   {
+    "id": 50,
     "type": "cave",
     "title": "Cave Entrance",
     "x": -423,
@@ -369,6 +419,7 @@
     "z": 0
   },
   {
+    "id": 51,
     "type": "camp",
     "title": "Abandoned Camp",
     "x": 1283,
@@ -376,6 +427,7 @@
     "z": 0
   },
   {
+    "id": 52,
     "type": "camp",
     "title": "Abandoned Camp",
     "x": 1698,
@@ -383,6 +435,7 @@
     "z": 0
   },
   {
+    "id": 53,
     "type": "camp",
     "title": "Abandoned Camp",
     "x": 1263,
@@ -390,6 +443,7 @@
     "z": 0
   },
   {
+    "id": 54,
     "type": "camp",
     "title": "Abandoned Camp",
     "x": 725,
@@ -397,6 +451,7 @@
     "z": 0
   },
   {
+    "id": 55,
     "type": "camp",
     "title": "Abandoned Camp",
     "x": 799,
@@ -404,6 +459,7 @@
     "z": 0
   },
   {
+    "id": 56,
     "type": "camp",
     "title": "Abandoned Camp",
     "x": -29,
@@ -411,6 +467,7 @@
     "z": 0
   },
   {
+    "id": 57,
     "type": "camp",
     "title": "Abandoned Camp",
     "x": -237,
@@ -418,6 +475,7 @@
     "z": 0
   },
   {
+    "id": 58,
     "type": "camp",
     "title": "Abandoned Camp",
     "x": -258,
@@ -425,6 +483,7 @@
     "z": 0
   },
   {
+    "id": 59,
     "type": "camp",
     "title": "Abandoned Camp",
     "x": 61,
@@ -432,6 +491,7 @@
     "z": 0
   },
   {
+    "id": 60,
     "type": "camp",
     "title": "Abandoned Camp",
     "x": -47,
@@ -439,6 +499,7 @@
     "z": 0
   },
   {
+    "id": 61,
     "type": "camp",
     "title": "Abandoned Camp",
     "x": -749,
@@ -446,6 +507,7 @@
     "z": 0
   },
   {
+    "id": 62,
     "type": "camp",
     "title": "Abandoned Camp",
     "x": -1121,
@@ -453,6 +515,7 @@
     "z": 0
   },
   {
+    "id": 63,
     "type": "camp",
     "title": "Abandoned Camp",
     "x": -1362,
@@ -460,6 +523,7 @@
     "z": 0
   },
   {
+    "id": 64,
     "type": "camp",
     "title": "Abandoned Camp",
     "x": -1255,
@@ -467,6 +531,7 @@
     "z": 0
   },
   {
+    "id": 65,
     "type": "camp",
     "title": "Abandoned Camp",
     "x": -1436,
@@ -474,6 +539,7 @@
     "z": 0
   },
   {
+    "id": 66,
     "type": "camp",
     "title": "Abandoned Camp",
     "x": -1650,
@@ -481,6 +547,7 @@
     "z": 0
   },
   {
+    "id": 67,
     "type": "village",
     "title": "Abandoned Cabins",
     "x": 1827,
@@ -488,6 +555,7 @@
     "z": 0
   },
   {
+    "id": 68,
     "type": "village",
     "title": "Abandoned Cabins",
     "x": 1694,
@@ -495,6 +563,7 @@
     "z": 0
   },
   {
+    "id": 69,
     "type": "village",
     "title": "Abandoned Cabins",
     "x": 1459,
@@ -502,6 +571,7 @@
     "z": 0
   },
   {
+    "id": 70,
     "type": "cloth",
     "title": "Pajamas",
     "x": 1634,
@@ -509,6 +579,7 @@
     "z": 0
   },
   {
+    "id": 71,
     "type": "cloth",
     "title": "Hoodie or Tactical/Leather Jacket",
     "x": -645,
@@ -516,6 +587,7 @@
     "z": 0
   },
   {
+    "id": 72,
     "type": "cloth",
     "title": "Blazer",
     "x": -922,
@@ -523,6 +595,7 @@
     "z": 0
   },
   {
+    "id": 73,
     "type": "cloth",
     "title": "Camouflage Suit",
     "x": -1111,
@@ -530,6 +603,7 @@
     "z": 0
   },
   {
+    "id": 74,
     "type": "cloth",
     "title": "Hoodie or Tactical/Leather Jacket",
     "x": -1084,
@@ -537,6 +611,7 @@
     "z": 0
   },
   {
+    "id": 75,
     "type": "cloth",
     "title": "Dress",
     "x": -914,
@@ -544,6 +619,7 @@
     "z": 0
   },
   {
+    "id": 76,
     "type": "cloth",
     "title": "Leather Jacket",
     "x": -971,
@@ -551,6 +627,7 @@
     "z": 0
   },
   {
+    "id": 77,
     "type": "cloth",
     "title": "Winter Jacket",
     "x": -1031,
@@ -558,6 +635,7 @@
     "z": 0
   },
   {
+    "id": 78,
     "type": "cloth",
     "title": "Hoodie or Tactical/Leather Jacket",
     "x": -743,
@@ -565,6 +643,7 @@
     "z": 0
   },
   {
+    "id": 79,
     "type": "cloth",
     "title": "Track Suit",
     "x": -1141,
@@ -572,6 +651,7 @@
     "z": 0
   },
   {
+    "id": 80,
     "type": "cloth",
     "title": "Pajamas",
     "x": -1116,
@@ -579,6 +659,7 @@
     "z": 0
   },
   {
+    "id": 81,
     "type": "cloth",
     "title": "Tuxedo",
     "x": -416,
@@ -586,6 +667,7 @@
     "z": 0
   },
   {
+    "id": 82,
     "type": "cloth",
     "title": "Leather Suit",
     "x": 1166,
@@ -593,6 +675,7 @@
     "z": 0
   },
   {
+    "id": 83,
     "type": "cloth",
     "title": "Golden Mask",
     "x": 1139,
@@ -600,6 +683,7 @@
     "z": 0
   },
   {
+    "id": 84,
     "type": "cloth",
     "title": "Leather Suit",
     "x": -888,
@@ -607,6 +691,7 @@
     "z": 0
   },
   {
+    "id": 85,
     "type": "compass",
     "title": "GPS Locator",
     "description": "On Emergency Raft",
@@ -615,6 +700,7 @@
     "z": 0
   },
   {
+    "id": 86,
     "type": "compass",
     "title": "GPS Locator",
     "description": "Inside grave",
@@ -623,6 +709,7 @@
     "z": 0
   },
   {
+    "id": 87,
     "type": "compass",
     "title": "GPS Locator",
     "description": "On hanging soldier",
@@ -631,6 +718,7 @@
     "z": 0
   },
   {
+    "id": 88,
     "type": "book",
     "title": "Parallel Universes and Travel Between Them Book",
     "description": "Next to 3D Printer inside the bunker",
@@ -639,6 +727,7 @@
     "z": 0
   },
   {
+    "id": 89,
     "type": "book",
     "title": "Pennant Line Book",
     "x": -416,
@@ -646,6 +735,7 @@
     "z": 0
   },
   {
+    "id": 90,
     "type": "book",
     "title": "Deep Sleep Book",
     "description": "On top of the autopsy table on 5th level",
@@ -654,6 +744,7 @@
     "z": 0
   },
   {
+    "id": 91,
     "type": "document",
     "title": "Email - Golf Balls",
     "x": -1142,
@@ -661,6 +752,7 @@
     "z": 0
   },
   {
+    "id": 92,
     "type": "document",
     "title": "Email - Another One",
     "description": "On the table, behind Guest Door",
@@ -669,6 +761,7 @@
     "z": 0
   },
   {
+    "id": 93,
     "type": "document",
     "title": "Email - ATTENTION ALL",
     "description": "In the pool area with big tree",
@@ -677,6 +770,7 @@
     "z": 0
   },
   {
+    "id": 94,
     "type": "document",
     "title": "Will & Testament of Mr. Puffton",
     "description": "On the table, behind VIP Door",
@@ -685,6 +779,7 @@
     "z": 0
   },
   {
+    "id": 95,
     "type": "document",
     "title": "Golf Ball Memo",
     "description": "Held by one of the deceased",
@@ -693,6 +788,7 @@
     "z": 0
   },
   {
+    "id": 96,
     "type": "document",
     "title": "Email - Photo Reference",
     "x": -1139,
@@ -700,6 +796,7 @@
     "z": 0
   },
   {
+    "id": 97,
     "type": "document",
     "title": "Email - More Lightning",
     "x": -1017,
@@ -707,6 +804,7 @@
     "z": 0
   },
   {
+    "id": 98,
     "type": "document",
     "title": "Newspaper page - Missing CEO",
     "description": "Inside the right cave tunnel",
@@ -715,6 +813,7 @@
     "z": 0
   },
   {
+    "id": 99,
     "type": "document",
     "title": "Newspaper page - Puffcorp outbids Sahara Terapeutics for remote island",
     "x": -428,
@@ -722,6 +821,7 @@
     "z": 0
   },
   {
+    "id": 100,
     "type": "document",
     "title": "Album Cover",
     "x": -432,
@@ -729,6 +829,7 @@
     "z": 0
   },
   {
+    "id": 101,
     "type": "document",
     "title": "Email - Preliminary Findings",
     "x": 1154,
@@ -736,6 +837,7 @@
     "z": 0
   },
   {
+    "id": 102,
     "type": "document",
     "title": "Email - Safe in Cube",
     "description": "In the first room after cutscene, on the computer desk",
@@ -744,6 +846,7 @@
     "z": 0
   },
   {
+    "id": 103,
     "type": "document",
     "title": "Email - Classified Scientific Data",
     "description": "In corridor after cutscene",
@@ -752,6 +855,7 @@
     "z": 0
   },
   {
+    "id": 104,
     "type": "document",
     "title": "Numbers Translation",
     "x": 1125,
@@ -759,6 +863,7 @@
     "z": 0
   },
   {
+    "id": 105,
     "type": "document",
     "title": "Email - Golf Balls",
     "description": "On the wooden table, beside the Putter",
@@ -767,6 +872,7 @@
     "z": 0
   },
   {
+    "id": 106,
     "type": "hang-glider",
     "title": "Hang Glider",
     "x": -798,
@@ -774,6 +880,7 @@
     "z": 0
   },
   {
+    "id": 107,
     "type": "hang-glider",
     "title": "Hang Glider",
     "x": -504,
@@ -781,6 +888,7 @@
     "z": 0
   },
   {
+    "id": 108,
     "type": "hang-glider",
     "title": "Hang Glider",
     "x": -131,
@@ -788,6 +896,7 @@
     "z": 0
   },
   {
+    "id": 109,
     "type": "hang-glider",
     "title": "Hang Glider",
     "x": -1181,
@@ -795,6 +904,7 @@
     "z": 0
   },
   {
+    "id": 110,
     "type": "hang-glider",
     "title": "Hang Glider",
     "x": -1769,
@@ -802,6 +912,7 @@
     "z": 0
   },
   {
+    "id": 111,
     "type": "hang-glider",
     "title": "Hang Glider",
     "x": -1298,
@@ -809,6 +920,7 @@
     "z": 0
   },
   {
+    "id": 112,
     "type": "hang-glider",
     "title": "Hang Glider",
     "x": -31,
@@ -816,6 +928,7 @@
     "z": 0
   },
   {
+    "id": 113,
     "type": "putter",
     "title": "Putter",
     "x": 1124,
@@ -823,6 +936,7 @@
     "z": 0
   },
   {
+    "id": 114,
     "type": "helicopter",
     "title": "Helicopter Crash Site",
     "x": -886,

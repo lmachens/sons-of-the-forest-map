@@ -21,5 +21,10 @@ Multiplayer({
 });
 
 const { refresh } = Nodes({ map });
-CustomNode({ map, getLastPosition, onAdd: refresh });
+CustomNode({
+  element: document.querySelector<HTMLButtonElement>("#add_custom_node")!,
+  map,
+  getLastPosition,
+  onAdd: refresh,
+});
 Filters({ onChange: refresh });
