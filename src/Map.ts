@@ -9,6 +9,9 @@ export default function Map(container: HTMLDivElement) {
     attributionControl: false,
     minZoom: -3,
     maxZoom: 5,
+    zoomSnap: 0.5,
+    zoomDelta: 0.5,
+    wheelPxPerZoomLevel: 120,
     crs: leaflet.CRS.Simple,
   });
   map.fitBounds(BOUNDS);
