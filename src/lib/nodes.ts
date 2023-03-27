@@ -265,6 +265,12 @@ export const types = [
     icon: icons.opener,
     filter: "tools",
   },
+  {
+    value: "flare",
+    title: "Loot",
+    icon: icons.box,
+    filter: "loot"
+  },
 ];
 
 export function getCustomNodes() {
