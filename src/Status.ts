@@ -30,12 +30,29 @@ export default function Status() {
 
   const toggleAppHotkey =
     document.querySelector<HTMLButtonElement>("#toggle_app_hotkey")!;
-
   toggleAppHotkey.onclick = () => {
     location.href = `overwolf://settings/games-overlay?hotkey=toggle_app&gameId=${GAME_CLASS_ID}`;
   };
   listenToHotkeyBinding("toggle_app", (binding) => {
     toggleAppHotkey.innerText = binding;
+  });
+  const zoomInAppHotkey = document.querySelector<HTMLButtonElement>(
+    "#zoom_in_app_hotkey"
+  )!;
+  zoomInAppHotkey.onclick = () => {
+    location.href = `overwolf://settings/games-overlay?hotkey=zoom_in_app&gameId=${GAME_CLASS_ID}`;
+  };
+  listenToHotkeyBinding("zoom_in_app", (binding) => {
+    zoomInAppHotkey.innerText = binding;
+  });
+  const zoomOutAppHotkey = document.querySelector<HTMLButtonElement>(
+    "#zoom_out_app_hotkey"
+  )!;
+  zoomOutAppHotkey.onclick = () => {
+    location.href = `overwolf://settings/games-overlay?hotkey=zoom_out_app&gameId=${GAME_CLASS_ID}`;
+  };
+  listenToHotkeyBinding("zoom_out_app", (binding) => {
+    zoomOutAppHotkey.innerText = binding;
   });
 
   const locationStatus =

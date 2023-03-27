@@ -374,6 +374,11 @@ input {
   width: 70px;
 }
 
+.w-lg {
+  display: inline-block;
+  width: 180px;
+}
+
 .player {
   z-index: 9000;
 }
