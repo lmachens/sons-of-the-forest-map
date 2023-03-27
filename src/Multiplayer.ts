@@ -2,6 +2,7 @@ import leaflet from "leaflet";
 import Peer, { DataConnection } from "peerjs";
 import Friend from "./Friend";
 import { PlayerPosition } from "./lib/player-marker";
+import { copyToClipboard } from "./lib/utils";
 
 export default function Multiplayer({
   map,
@@ -153,7 +154,7 @@ export default function Multiplayer({
     document.querySelector<HTMLButtonElement>("#copy_peer_id")!;
   copyPeerId.onclick = () => {
     if (peer?.id) {
-      overwolf.utils.placeOnClipboard(peer.id);
+      copyToClipboard(peer.id);
       copyPeerId.innerText = "Copied!";
       setTimeout(() => {
         copyPeerId.innerText = "Copy";

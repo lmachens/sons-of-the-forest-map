@@ -9,19 +9,18 @@ import { getCustomNodes, setCustomNodes, types } from "./lib/nodes";
 import { PlayerPosition } from "./lib/player-marker";
 
 export default function CustomNode({
+  element,
   map,
   getLastPosition,
   onAdd,
 }: {
+  element: HTMLButtonElement;
   map: leaflet.Map;
   getLastPosition: () => PlayerPosition;
   onAdd: () => void;
 }) {
-  const addCustomNode =
-    document.querySelector<HTMLButtonElement>("#add_custom_node")!;
-
   let isAdding = false;
-  addCustomNode.onclick = () => {
+  element.onclick = () => {
     if (isAdding) {
       return;
     }

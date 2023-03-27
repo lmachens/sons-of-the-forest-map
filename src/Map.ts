@@ -15,9 +15,6 @@ export default function Map(container: HTMLDivElement) {
     crs: leaflet.CRS.Simple,
   });
   map.fitBounds(BOUNDS);
-  map.on("contextmenu", () => {
-    // Do nothing
-  });
 
   const divElement = leaflet.DomUtil.create("div", "leaflet-position");
   const handleMouseMove = (event: leaflet.LeafletMouseEvent) => {

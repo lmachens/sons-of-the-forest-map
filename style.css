@@ -474,3 +474,28 @@ input {
   background: #2eb15e;
   color: white;
 }
+
+.contextmenu::before {
+  display: none;
+}
+
+.contextmenu {
+  padding: 0 !important;
+}
+
+.contextmenu button {
+  width: 100%;
+  background: none;
+  color: rgb(41, 41, 41);
+  border: none;
+  text-align: left;
+}
+
+.contextmenu button:hover {
+  background: #f8f8ff;
+}
+
+.contextmenu > div {
+  display: flex;
+  flex-direction: column;
+}

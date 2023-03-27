@@ -1,4 +1,5 @@
 import Ads from "./Ads";
+import ContextMenu from "./ContextMenu";
 import CustomNode from "./CustomNode";
 import DirectionLine from "./DirectionLine";
 import Filters from "./Filters";
@@ -150,7 +151,13 @@ waitForOverwolf().then(async () => {
   });
 
   const { refresh } = Nodes({ map });
-  CustomNode({ map, getLastPosition, onAdd: refresh });
+  CustomNode({
+    element: document.querySelector<HTMLButtonElement>("#add_custom_node")!,
+    map,
+    getLastPosition,
+    onAdd: refresh,
+  });
+  ContextMenu({ map, onAdd: refresh });
   Filters({ onChange: refresh });
 });
 

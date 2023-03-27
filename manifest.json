@@ -12,7 +12,13 @@
     "icon_gray": "icons/iconMouseNormal.png",
     "launcher_icon": "icons/launcherIcon.ico"
   },
-  "permissions": ["Hotkeys", "GameInfo", "FileSystem", "DesktopStreaming"],
+  "permissions": [
+    "Hotkeys",
+    "GameInfo",
+    "FileSystem",
+    "DesktopStreaming",
+    "Clipboard"
+  ],
   "data": {
     "start_window": "controller",
     "windows": {
