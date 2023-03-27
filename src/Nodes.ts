@@ -1,4 +1,5 @@
 import leaflet from "leaflet";
+import { createElement } from "./lib/elements";
 import { getDivIcon, getIconElement } from "./lib/icons";
 import locations from "./lib/locations.json" assert { type: "json" };
 import {
@@ -55,60 +56,66 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
         marker.options.pmIgnore = false;
         leaflet.PM.reInitLayer(marker);
 
-        const form = document.createElement("form");
-        form.className = "node-form";
-        form.innerHTML = `
-    <label><span>Title</span><input name="title" value="${
-      location.title
-    }" required /></label>
-    <label><span>Description</span><textarea name="description">${
-      location.description
-    }</textarea></label>
-    <label><span>Color</span><input type="color" name="color" value="${
-      location.color || "#ffffff"
-    }"/></label>
-    <label><span>Icon</span><div class="types">${types
-      .map(
-        (type) =>
-          `<label class="type-label"><input name="type" type="radio" value="${
-            type.value
-          }" ${type.value === location.type ? "checked" : ""} />${
-            getIconElement(type).outerHTML
-          }</label>`
-      )
-      .join("")}</div></label>
-    `;
-        const actions = document.createElement("div");
-        const save = document.createElement("input");
-        save.type = "submit";
-        save.value = "Save";
-        const remove = document.createElement("button");
-        remove.type = "button";
-        remove.innerText = "Delete";
-        remove.onclick = () => {
-          let customNodes = getCustomNodes();
-          customNodes = customNodes.filter((node) => node.id !== location.id!);
-          setCustomNodes(customNodes);
-          marker.pm.disableLayerDrag();
-          refresh();
-        };
-        const cancel = document.createElement("button");
-        cancel.type = "button";
-        cancel.innerText = "Cancel";
-        cancel.onclick = () => {
-          marker.unbindTooltip();
-          marker.bindTooltip(tooltip, {
-            direction: "top",
-          });
+        const form = createElement("form", {
+          className: "node-form",
+          innerHTML: `
+      <label><span>Title</span><input name="title" value="${
+        location.title
+      }" required /></label>
+      <label><span>Description</span><textarea name="description">${
+        location.description
+      }</textarea></label>
+      <label><span>Color</span><input type="color" name="color" value="${
+        location.color || "#ffffff"
+      }"/></label>
+      <label><span>Icon</span><div class="types">${types
+        .map(
+          (type) =>
+            `<label class="type-label"><input name="type" type="radio" value="${
+              type.value
+            }" ${type.value === location.type ? "checked" : ""} />${
+              getIconElement(type).outerHTML
+            }</label>`
+        )
+        .join("")}</div></label>
+      `,
+        });
+        const save = createElement("input", {
+          type: "submit",
+          value: "Save",
+        });
+        const remove = createElement("button", {
+          type: "button",
+          innerText: "Delete",
+          onclick: () => {
+            let customNodes = getCustomNodes();
+            customNodes = customNodes.filter(
+              (node) => node.id !== location.id!
+            );
+            setCustomNodes(customNodes);
+            marker.pm.disableLayerDrag();
+            refresh();
+          },
+        });
+        const cancel = createElement("button", {
+          type: "button",
+          innerText: "Cancel",
+          onclick: () => {
+            marker.unbindTooltip();
+            marker.bindTooltip(tooltip, {
+              direction: "top",
+            });
 
-          marker.pm.disableLayerDrag();
-          marker.options.pmIgnore = true;
-          leaflet.PM.reInitLayer(marker);
-        };
-        actions.append(save, remove, cancel);
-        const note = document.createElement("span");
-        note.innerText = "Drag icon to move the node position";
-        note.className = "description";
+            marker.pm.disableLayerDrag();
+            marker.options.pmIgnore = true;
+            leaflet.PM.reInitLayer(marker);
+          },
+        });
+        const actions = createElement("div", {}, [save, remove, cancel]);
+        const note = createElement("span", {
+          innerText: "Drag icon to move the node position",
+          className: "description",
+        });
         form.append(actions, note);
 
         form.onclick = (event) => event.stopPropagation();

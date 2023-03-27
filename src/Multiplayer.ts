@@ -1,6 +1,7 @@
 import leaflet from "leaflet";
 import Peer, { DataConnection } from "peerjs";
 import Friend from "./Friend";
+import { createElement } from "./lib/elements";
 import { PlayerPosition } from "./lib/player-marker";
 import { copyToClipboard } from "./lib/utils";
 
@@ -30,11 +31,12 @@ export default function Multiplayer({
   } = {};
 
   function addConnectedStatus(peer: string, conn: DataConnection) {
-    const status = document.createElement("p");
+    const status = createElement("p", {
+      id: `connection_${peer}`,
+      className: "status ok",
+      innerHTML: `<span class="indicator"></span><span>${peer}</span>`,
+    });
     connectionsElement.append(status);
-    status.id = `connection_${peer}`;
-    status.className = "status ok";
-    status.innerHTML = `<span class="indicator"></span><span>${peer}</span>`;
 
     const friend = Friend({ map });
     connections[peer] = { conn, friend };

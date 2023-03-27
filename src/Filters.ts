@@ -1,3 +1,4 @@
+import { createElement } from "./lib/elements";
 import {
   filters,
   getDeselectedFilters,
@@ -9,27 +10,33 @@ export default function Filters({ onChange }: { onChange: () => void }) {
   const container = document.querySelector<HTMLElement>("#filters")!;
 
   const items = filters.map((filter) => {
-    const label = document.createElement("label");
-    label.className = "type-label";
-    label.title = filter.title;
-    const span = document.createElement("span");
-    span.innerText = filter.title;
-    const checkbox = document.createElement("input");
-    checkbox.type = "checkbox";
-    checkbox.name = filter.value;
-    checkbox.checked = !deselectedFilters.includes(filter.value);
-    checkbox.onchange = () => {
-      if (checkbox.checked) {
-        deselectedFilters = deselectedFilters.filter(
-          (item) => item !== filter.value
-        );
-      } else {
-        deselectedFilters.push(filter.value);
-      }
-      setDeselectedFilters(deselectedFilters);
-      onChange();
-    };
-    label.append(checkbox, span);
+    const span = createElement("span", {
+      innerText: filter.title,
+    });
+    const checkbox = createElement("input", {
+      type: "checkbox",
+      name: filter.value,
+      checked: !deselectedFilters.includes(filter.value),
+      onchange: () => {
+        if (checkbox.checked) {
+          deselectedFilters = deselectedFilters.filter(
+            (item) => item !== filter.value
+          );
+        } else {
+          deselectedFilters.push(filter.value);
+        }
+        setDeselectedFilters(deselectedFilters);
+        onChange();
+      },
+    });
+    const label = createElement(
+      "label",
+      {
+        className: "type-label",
+        title: filter.title,
+      },
+      [checkbox, span]
+    );
     return label;
   });
   container.innerHTML = "";

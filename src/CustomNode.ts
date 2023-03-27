@@ -4,6 +4,7 @@ import "@geoman-io/leaflet-geoman-free";
 import "@geoman-io/leaflet-geoman-free/dist/leaflet-geoman.css";
 import leaflet from "leaflet";
 
+import { createElement } from "./lib/elements";
 import { getDivIcon, getIconElement } from "./lib/icons";
 import { getCustomNodes, setCustomNodes, types } from "./lib/nodes";
 import { PlayerPosition } from "./lib/player-marker";
@@ -37,9 +38,30 @@ export default function CustomNode({
       }
     );
     marker.addTo(map);
-    const form = document.createElement("form");
-    form.className = "node-form";
-    form.innerHTML = `
+
+    const save = createElement("input", {
+      type: "submit",
+      value: "Save",
+    });
+    const cancel = createElement("button", {
+      type: "button",
+      innerText: "Cancel",
+      onclick: () => {
+        marker.remove();
+        isAdding = false;
+      },
+    });
+
+    const actions = createElement("div", {}, [save, cancel]);
+    actions.append(save, cancel);
+    const note = createElement("span", {
+      innerText: "Drag icon to move the node position",
+      className: "description",
+    });
+
+    const form = createElement("form", {
+      className: "node-form",
+      innerHTML: `
     <label><span>Title</span><input name="title" required /></label>
     <label><span>Description</span><textarea name="description"></textarea></label>
     <label><span>Color</span><input type="color" name="color" value="#ffffff"/></label>
@@ -53,23 +75,9 @@ export default function CustomNode({
           }</label>`
       )
       .join("")}</div></label>
-    `;
-    const actions = document.createElement("div");
-    const save = document.createElement("input");
-    save.type = "submit";
-    save.value = "Save";
-    const cancel = document.createElement("button");
-    cancel.type = "button";
-    cancel.innerText = "Cancel";
-    cancel.onclick = () => {
-      marker.remove();
-      isAdding = false;
-    };
+    `,
+    });
 
-    actions.append(save, cancel);
-    const note = document.createElement("span");
-    note.innerText = "Drag icon to move the node position";
-    note.className = "description";
     form.append(actions, note);
 
     form.onclick = (event) => event.stopPropagation();

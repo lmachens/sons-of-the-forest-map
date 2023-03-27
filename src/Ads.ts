@@ -1,4 +1,5 @@
 import type { OwAd } from "@overwolf/types/owads";
+import { createElement } from "./lib/elements";
 
 declare global {
   interface Window {
@@ -16,9 +17,10 @@ export default function Ads(container: HTMLDivElement) {
       size: { width: 400, height: 300 },
     });
   }
-  const script = document.createElement("script");
-  script.src = "https://content.overwolf.com/libs/ads/latest/owads.min.js";
-  script.async = true;
-  script.onload = onOwAdReady;
+  const script = createElement("script", {
+    src: "https://content.overwolf.com/libs/ads/latest/owads.min.js",
+    async: true,
+    onload: onOwAdReady,
+  });
   document.body.append(script);
 }

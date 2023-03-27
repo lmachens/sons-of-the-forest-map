@@ -1,4 +1,5 @@
 import leaflet from "leaflet";
+import { createElement } from "./elements";
 import { NodeType } from "./nodes";
 
 export function getIconSVG(type: NodeType, color = "currentColor") {
@@ -6,10 +7,10 @@ export function getIconSVG(type: NodeType, color = "currentColor") {
 }
 
 export function getIconElement(type: NodeType) {
-  const div = document.createElement("div");
-  div.className = `filter-icon node-icon node-${type.value}`;
-  div.innerHTML = getIconSVG(type);
-  return div;
+  return createElement("div", {
+    className: `filter-icon node-icon node-${type.value}`,
+    innerHTML: getIconSVG(type),
+  });
 }
 
 export function getDivIcon(type: NodeType, isCustom: boolean, color?: string) {
