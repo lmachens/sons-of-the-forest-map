@@ -1,3 +1,4 @@
+import ContextMenu from "./ContextMenu";
 import CustomNode from "./CustomNode";
 import Filters from "./Filters";
 import ImageOverlay from "./ImageOverlay";
@@ -27,4 +28,5 @@ CustomNode({
   getLastPosition,
   onAdd: refresh,
 });
+ContextMenu({ map, onAdd: refresh });
 Filters({ onChange: refresh });
