@@ -2,6 +2,7 @@ import Ads from "./Ads";
 import CustomNode from "./CustomNode";
 import DirectionLine from "./DirectionLine";
 import Filters from "./Filters";
+import FollowLocation from "./FollowLocation";
 import ImageOverlay from "./ImageOverlay";
 import { WINDOWS } from "./lib/config";
 import {
@@ -45,6 +46,8 @@ waitForOverwolf().then(async () => {
   showOnMap.onclick = () => {
     panTo();
   };
+  const { isFollowing } = FollowLocation();
+
   const { updatePosition: updateDirectionLinePosition } = DirectionLine({
     map,
   });
@@ -73,7 +76,9 @@ waitForOverwolf().then(async () => {
     setLocation(lastLocation);
     const lastPosition = getLastPosition();
     updatePlayerPosition(lastPosition);
-    panTo();
+    if (isFollowing()) {
+      panTo();
+    }
     updateDirectionLinePosition(lastPosition);
     updateTraceLinePosition(lastPosition);
     updateMultiplayerPosition(lastPosition);

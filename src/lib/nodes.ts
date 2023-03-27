@@ -1,4 +1,5 @@
 import icons from "./icons.json";
+import { getItem, setItem } from "./storage";
 
 export type NodeType = {
   value: string;
@@ -325,18 +326,9 @@ export const filters = [
 ];
 
 export function getDeselectedFilters() {
-  let deselectedFilters: string[] = [];
-  try {
-    const item = localStorage.getItem("deselected_filters");
-    if (item) {
-      deselectedFilters = JSON.parse(item);
-    }
-  } catch (error) {
-    //
-  }
-  return deselectedFilters;
+  return getItem<string[]>("deselected_filters", []);
 }
 
 export function setDeselectedFilters(deselectedFilters: string[]) {
-  localStorage.setItem("deselected_filters", JSON.stringify(deselectedFilters));
+  setItem("deselected_filters", deselectedFilters);
 }
