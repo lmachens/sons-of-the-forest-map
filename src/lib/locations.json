@@ -512,6 +512,7 @@
     "id": 61,
     "type": "camp",
     "title": "Abandoned Camp",
+    "description": "2x Tents without save points",
     "x": -749,
     "y": 1277,
     "z": 0
@@ -1162,6 +1163,38 @@
     "z": 0
   },
   {
+    "id": 161,
+    "type": "supply",
+    "title":"2x Supply Cases",
+    "x": -883,
+    "y": 773,
+    "z": 0
+  },
+  {
+    "id": 162,
+    "type": "supply",
+    "title": "Supply Case",
+    "x": -843,
+    "y": 1011,
+    "z": 0
+  },
+  {
+    "id": 169,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": -1096,
+    "y": 1278,
+    "z": 0
+  },
+  {
+    "id": 170,
+    "type": "supply",
+    "title": "Supply Case",
+    "x": -751,
+    "y": 1276,
+    "z": 0
+  },
+  {
     "id": 118,
     "type": "ammo",
     "title": "3x Ammo Cases",
@@ -1223,6 +1256,30 @@
     "title": "Ammo Case",
     "x": -1218,
     "y": 662,
+    "z": 0
+  },
+  {
+    "id": 163,
+    "type": "ammo",
+    "title": "Ammo Case",
+    "x": -887,
+    "y": 767,
+    "z": 0
+  },
+  {
+    "id": 164,
+    "type": "ammo",
+    "title": "Ammo Case",
+    "x": -844,
+    "y": 1011,
+    "z": 0    
+  },
+  {
+    "id": 166,
+    "type": "ammo",
+    "title": "Ammo Case",
+    "x": -1141,
+    "y": 1127,
     "z": 0
   },
   {
@@ -1319,6 +1376,54 @@
     "title": "2x Crates",
     "x": -1215,
     "y": 651,
+    "z": 0
+  },
+  {
+    "id": 165,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": -843,
+    "y": 1016,
+    "z": 0
+  },
+  {
+    "id": 167,
+    "type": "crate",
+    "title": "3x Crates",
+    "x": -1079,
+    "y": 1269,
+    "z": 0
+  },
+  {
+    "id": 168,
+    "type": "crate",
+    "title": "4x Crates",
+    "x": -914,
+    "y": 1450,
+    "z": 0
+  },
+  {
+    "id": 171,
+    "type": "crate",
+    "title": "3x Crates",
+    "x": -1353,
+    "y": -835,
+    "z": 0    
+  },
+  {
+    "id": 172,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": -1130,
+    "y": -1106,
+    "z": 0
+  },
+  {
+    "id": 173,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": -1138,
+    "y": -1092,
     "z": 0
   }
 ]
