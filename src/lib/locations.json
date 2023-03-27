@@ -1062,7 +1062,7 @@
     "type": "supply",
     "title": "Supply Case",
     "x": -1137,
-    "y": - 221,
+    "y": -221,
     "z": 0
   },
   {
@@ -1074,7 +1074,7 @@
     "z": 0
   },
   {
-    "id": 140",
+    "id": 140,
     "type": "supply",
     "title": "Supply Case",
     "x": -1137,
