@@ -16,8 +16,9 @@
   {
     "id": 3,
     "type": "spawnPoint",
-    "x": -1147,
-    "y": -227,
+    "title": "Spawn Point",
+    "x": -1141,
+    "y": -217,
     "z": 0
   },
   {
@@ -237,6 +238,15 @@
     "description": "On top of the kayak",
     "x": -1112,
     "y": 1721,
+    "z": 0
+  },
+  {
+    "id": 115,
+    "type": "opener",
+    "title": "Can Opener",
+    "description": "You need it to open cans with cat food",
+    "x": -315,
+    "y": 1612,
     "z": 0
   },
   {
@@ -510,6 +520,7 @@
     "id": 62,
     "type": "camp",
     "title": "Abandoned Camp",
+    "description": "Tent with save point",
     "x": -1121,
     "y": 1628,
     "z": 0
@@ -518,6 +529,7 @@
     "id": 63,
     "type": "camp",
     "title": "Abandoned Camp",
+    "description": "2x Tents without save points"
     "x": -1362,
     "y": 1665,
     "z": 0
@@ -526,6 +538,7 @@
     "id": 64,
     "type": "camp",
     "title": "Abandoned Camp",
+    "description": "2x Tents with save points",
     "x": -1255,
     "y": 1397,
     "z": 0
@@ -534,6 +547,7 @@
     "id": 65,
     "type": "camp",
     "title": "Abandoned Camp",
+    "description": "2x Tents without save points",
     "x": -1436,
     "y": 1214,
     "z": 0
@@ -542,8 +556,27 @@
     "id": 66,
     "type": "camp",
     "title": "Abandoned Camp",
+    "description": "4x Tents without save points",
     "x": -1650,
     "y": 1188,
+    "z": 0
+  },
+  {
+    "id": 145,
+    "type": "camp",
+    "title": "Abandoned Camp",
+    "descriptiont": "Tent with save point",
+    "x": -1388,
+    "y": -217,
+    "z": 0
+  },
+  {
+    "id": 146,
+    "type": "camp",
+    "title": "Abandoned Camp",
+    "description": "2x Tents with save points",
+    "x": -1722,
+    "y": 59,
     "z": 0
   },
   {
@@ -815,7 +848,8 @@
   {
     "id": 99,
     "type": "document",
-    "title": "Newspaper page - Puffcorp outbids Sahara Terapeutics for remote island",
+    "title": "Newspaper Page - Puffcorp outbids Sahara Terapeutics for remote island",
+    "descritpion": "Next to second dead soldier near entrance",
     "x": -428,
     "y": 1497,
     "z": 0
@@ -941,6 +975,350 @@
     "title": "Helicopter Crash Site",
     "x": -886,
     "y": 770,
+    "z": 0
+  },
+  {
+    "id": 116,
+    "type": "supply",
+    "title": "4x Supply Cases",
+    "x": -428,
+    "y": 1594,
+    "z": 0
+  },
+  {
+    "id": 117,
+    "type": "supply",
+    "title": "Supply Case",
+    "x": -423,
+    "y": 1613,
+    "z": 0
+  },
+  {
+    "id": 121,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": -651,
+    "y": 1487,
+    "z": 0
+  },
+  {
+    "id": 122,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": -1114,
+    "y": 1690,
+    "z": 0
+  },
+  {
+    "id": 123,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": -1121,
+    "y": 1626,
+    "z": 0
+  },
+  {
+    "id": 126,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": -1364,
+    "y": 1665,
+    "z": 0
+  },
+  {
+    "id": 127,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": -1430,
+    "y": 1710,
+    "z": 0
+  },
+  {
+    "id": 128,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": -1258,
+    "y": 1400,
+    "z": 0
+  },
+  {
+    "id": 132,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": -1652,
+    "y": 1185,
+    "z": 0
+  },
+  {
+    "id": 133,
+    "type": "supply",
+    "title": "Supply Case",
+    "x": -1437,
+    "y": 1213,
+    "z": 0
+  },
+  {
+    "id": 137,
+    "type": "supply",
+    "title": "Supply Case",
+    "x": -1137,
+    "y": - 221,
+    "z": 0
+  },
+  {
+    "id": 139,
+    "type": "supply",
+    "title": "3x Supply Cases",
+    "x": -1150,
+    "y": -234,
+    "z": 0
+  },
+  {
+    "id": 140",
+    "type": "supply",
+    "title": "Supply Case",
+    "x": -1137,
+    "y": -236,
+    "z": 0
+  },
+  {
+    "id": 142,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": -1134,
+    "y": -130,
+    "z": 0
+  },
+  {
+    "id": 143,
+    "type": "supply",
+    "title": "Supply Case",
+    "x": -1260,
+    "y": -205,
+    "z": 0
+  },
+  {
+    "id": 144,
+    "type": "supply",
+    "title": "Supply Case",
+    "x": -1388,
+    "y": -216,
+    "z": 0
+  },
+  {
+    "id": 150,
+    "type": "supply",
+    "title": "Supply Case",
+    "x": -1719,
+    "y": 57,
+    "z": 0
+  },
+  {
+    "id": 151,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": -1592,
+    "y": 224,
+    "z": 0
+  },
+  {
+    "id": 152,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": -1606,
+    "y": 488,
+    "z": 0
+  },
+  {
+    "id": 153,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": -1342,
+    "y": 237,
+    "z": 0
+  },
+  {
+    "id": 157,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": -1217,
+    "y": 665,
+    "z": 0
+  },
+  {
+    "id": 158,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": -1217,
+    "y": 655,
+    "z": 0
+  },
+  {
+    "id": 159,
+    "type": "supply",
+    "title": "Supply Case",
+    "x": -1188,
+    "y": 572,
+    "z": 0
+  },
+  {
+    "id": 118,
+    "type": "ammo",
+    "title": "3x Ammo Cases",
+    "x": -435,
+    "y": 1589,
+    "z": 0
+  },
+  {
+    "id": 124,
+    "type": "ammo",
+    "title": "Ammo Case",
+    "x": -1119,
+    "y": 1630,
+    "z": 0
+  },
+  {
+    "id": 129,
+    "type": "ammo",
+    "title": "Ammo Case",
+    "x": -1254,
+    "y": 1395,
+    "z": 0
+  },
+  {
+    "id": 141,
+    "type": "ammo",
+    "title": "Ammo Case",
+    "x": -1146,
+    "y": -234,
+    "z": 0
+  },
+  {
+    "id": 148,
+    "type": "ammo",
+    "title": "2x Ammo Cases",
+    "x": -1726,
+    "y": 62,
+    "z": 0
+  },
+  {
+    "id": 154,
+    "type": "ammo",
+    "title": "Ammo Case",
+    "x": -1612,
+    "y": 490,
+    "z": 0
+  },
+  {
+    "id": 155,
+    "type": "ammo",
+    "title": "2x Ammo Cases",
+    "x": -1249,
+    "y": 217,
+    "z": 0
+  },
+  {
+    "id": 156,
+    "type": "ammo",
+    "title": "Ammo Case",
+    "x": -1218,
+    "y": 662,
+    "z": 0
+  },
+  {
+    "id": 119,
+    "type": "flare",
+    "title": "Flare Case",
+    "x": -434,
+    "y": 1597,
+    "z": 0
+  },
+  {
+    "id": 120,
+    "type": "flare",
+    "title": "Flare Case",
+    "x": -422,
+    "y": 1496,
+    "z": 0
+  },
+  {
+    "id": 125,
+    "type": "flare",
+    "title": "Flare Case",
+    "x": -1360,
+    "y": 1667,
+    "z": 0
+  },
+  {
+    "id": 131,
+    "type": "flare",
+    "title": "Flare Case",
+    "x": -1651,
+    "y": 1193,
+    "z": 0
+  },
+  {
+    "id": 134,
+    "type": "flare",
+    "title": "Flare Case",
+    "x": -1436,
+    "y": 1217,
+    "z": 0
+  },
+  {
+    "id": 138,
+    "type": "flare",
+    "title": "Flare Case",
+    "x": -1148,
+    "y": -240,
+    "z": 0
+  },
+  {
+    "id": 149,
+    "type": "flare",
+    "title": "Flare Case",
+    "x": -1723,
+    "y": 57,
+    "z": 0
+  },
+  {
+    "id": 130,
+    "type": "crate",
+    "title": "3x Crates",
+    "x": -1775,
+    "y": 1365,
+    "z": 0
+  },
+  {
+    "id": 135,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": -1467,
+    "y": 1111,
+    "z": 0
+  },
+  {
+    "id": 136,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": -1369,
+    "y": 803,
+    "z": 0
+  },
+  {
+    "id": 147,
+    "type": "crate",
+    "title": "3x Crates",
+    "x": =1639,
+    "y": -170,
+    "z": 0
+  },
+  {
+    "id": 160,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": -1215,
+    "y": 651,
     "z": 0
   }
 ]
