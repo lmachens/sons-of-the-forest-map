@@ -27,7 +27,7 @@
   },
   {
     "type": "flashlight",
-    "title": "Flashlight,
+    "title": "Flashlight",
     "description": "On hanging soldier",
     "x": -626,
     "y": 387,
@@ -221,7 +221,7 @@
   {
     "type": "bunker",
     "title": "Maintenance A",
-    "description": "Use Shovel to enter"
+    "description": "Use Shovel to enter",
     "x": -478,
     "y": 710,
     "z": 0
@@ -463,7 +463,7 @@
     "type": "camp",
     "title": "Abandoned Camp",
     "x": -1255,
-    "y": 1397
+    "y": 1397,
     "z": 0
   },
   {
@@ -810,7 +810,7 @@
   },
   {
     "type": "hang-glider",
-    "title": "Hang Glider", 
+    "title": "Hang Glider",
     "x": -31,
     "y": 666,
     "z": 0
@@ -828,5 +828,5 @@
     "x": -886,
     "y": 770,
     "z": 0
-  },
+  }
 ]
