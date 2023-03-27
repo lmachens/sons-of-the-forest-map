@@ -238,7 +238,7 @@ export const types = [
   {
     value: "crate",
     title: "Loot",
-    icon: icons.box,
+    icon: icons.crate,
     filter: "loot",
   },
   {
@@ -258,6 +258,12 @@ export const types = [
     title: "Point of Interest",
     icon: icons.helicopter,
     filter: "poi",
+  },
+  {
+    value: "opener",
+    title: "Tool",
+    icon: icons.opener,
+    filter: "tools",
   },
 ];
 
