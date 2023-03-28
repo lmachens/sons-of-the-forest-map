@@ -44,7 +44,8 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
   let contextMenuTooltip: leaflet.Tooltip | null = null;
 
   function addMarker(location: Node, isCustom: boolean, isDiscovered: boolean) {
-    const type = types.find((type) => type.value === location.type)!;
+    const type = types.find((type) => type.value === location.type) || types[0];
+
     const icon = getDivIcon(
       type,
       isCustom,
