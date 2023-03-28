@@ -26,8 +26,8 @@
     "type": "modernAxe",
     "title": "Modern Axe",
     "description": "In the chest of a dead soldier",
-    "x": -705,
-    "y": 468,
+    "x": -703,
+    "y": 445,
     "z": 0
   },
   {
@@ -327,7 +327,7 @@
   {
     "id": 38,
     "type": "cave",
-    "title": "Cave Entrance",
+    "title": "Cave Entrance with Bunker opening",
     "x": 1230,
     "y": -652,
     "z": 0
@@ -335,7 +335,7 @@
   {
     "id": 39,
     "type": "cave",
-    "title": "Cave Entrance",
+    "title": "Updated Cave Entrance",
     "x": 966,
     "y": -406,
     "z": 0
@@ -581,6 +581,114 @@
     "z": 0
   },
   {
+    "id": 180,
+    "type": "camp",
+    "title": "Abandoned Camp",
+    "description": "3x Tents with save points",
+    "x": -703,
+    "y": 450,
+    "z": 0
+  },
+  {
+    "id": 181,
+    "type": "camp",
+    "title": "Abandoned Camp",
+    "description": "3x Tents without save points",
+    "x": -1095,
+    "y": 87,
+    "z": 0
+  },
+  {
+    "id": 182,
+    "type": "camp",
+    "title": "Abandoned Camp",
+    "description": "2x Tents with save points",
+    "x": -1268,
+    "y": -11,
+    "z": 0
+  },
+  {
+    "id": 183,
+    "type": "camp",
+    "title": "Abandoned Camp",
+    "description": "Tent with save point",
+    "x": -1388,
+    "y": -218,
+    "z": 0
+  },
+  {
+    "id": 184,
+    "type": "camp",
+    "title": "Abandoned Camp",
+    "description": "2x Tents with save points",
+    "x": -1257,
+    "y": -597,
+    "z": 0
+  },
+  {
+    "id": 185,
+    "type": "camp",
+    "title": "Abandoned Camp",
+    "description": "2x Tents with save points",
+    "x": -1028,
+    "y": -623,
+    "z": 0
+  },
+  {
+    "id": 186,
+    "type": "camp",
+    "title": "Abandoned Camp",
+    "description": "3x Tents without save points",
+    "x": -703,
+    "y": -663,
+    "z": 0
+  },
+  {
+    "id": 187,
+    "type": "camp",
+    "title": "Abandoned Camp",
+    "description": "2x Tents with save points",
+    "x": -474,
+    "y": -335,
+    "z": 0
+  },
+  {
+    "id": 188,
+    "type": "camp",
+    "title": "Abandoned Camp",
+    "description": "2x Tents with save points",
+    "x": -156,
+    "y": -110,
+    "z": 0
+  },
+  {
+    "id": 189,
+    "type": "camp",
+    "title": "Abandoned Camp",
+    "description": "2x Tents with save points",
+    "x": 363,
+    "y": -170,
+    "z": 0
+  },
+  {
+    "id": 190,
+    "type": "camp",
+    "title": "Abandoned Camp",
+    "description": "Tent with save point",
+    "x": 402,
+    "y": -182,
+    "z": 0
+  },
+  {
+    "id": 191,
+    "type": "camp",
+    "title": "Abandoned Camp",
+    "description": "3x Tents without save points",
+    "x": -129,
+    "y": -1038,
+    "z": 0
+  },
+  {
     "id": 67,
     "type": "village",
     "title": "Abandoned Cabins",
@@ -816,9 +924,9 @@
     "id": 95,
     "type": "document",
     "title": "Golf Ball Memo",
-    "description": "Held by one of the deceased",
-    "x": -1277,
-    "y": -4,
+    "description": "Held by the deceased near the tent",
+    "x": -1269,
+    "y": -14,
     "z": 0
   },
   {
@@ -960,6 +1068,54 @@
     "title": "Hang Glider",
     "x": -31,
     "y": 666,
+    "z": 0
+  },
+  {
+    "id": 174,
+    "type": "hang-glider",
+    "title": "Hang Glider",
+    "x": 365,
+    "y": -161,
+    "z": 0
+  },
+  {
+    "id": 175,
+    "type": "hang-glider",
+    "title": "Hang Glider",
+    "x": 1081,
+    "y": -108,
+    "z": 0
+  },
+  {
+    "id": 176,
+    "type": "hang-glider",
+    "title": "Hang Glider",
+    "x": 1296,
+    "y": -29,
+    "z": 0
+  },
+  {
+    "id": 177,
+    "type": "hang-glider",
+    "title": "Hang Glider",
+    "x": 733,
+    "y": 739,
+    "z": 0
+  },
+  {
+    "id": 178,
+    "type": "hang-glider",
+    "title": "Hang Glider",
+    "x": 796,
+    "y": 974,
+    "z": 0
+  },
+  {
+    "id": 179,
+    "type": "hang-glider",
+    "title": "Hang Glider",
+    "x": 845,
+    "y": 1104,
     "z": 0
   },
   {
@@ -1424,6 +1580,254 @@
     "title": "2x Crates",
     "x": -1138,
     "y": -1092,
+    "z": 0
+  },
+  {
+    "id": 193,
+    "type": "crate",
+    "title": "3x Crates",
+    "x": 1747,
+    "y": -1209,
+    "z": 0
+  },
+  {
+    "id": 194,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": 1734,
+    "y": -1219,
+    "z": 0
+  },
+  {
+    "id": 195,
+    "type": "crate",
+    "title": "4x Crates",
+    "x": 931,
+    "y": -389,
+    "z": 0
+  },
+  {
+    "id": 196,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": 1361,
+    "y": -163,
+    "z": 0
+  },
+  {
+    "id": 197,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": 1352,
+    "y": -156,
+    "z": 0
+  },
+  {
+    "id": 198,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": 1397,
+    "y": -121,
+    "z": 0
+  },
+  {
+    "id": 199,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": 1853,
+    "y": 126,
+    "z": 0
+  },
+  {
+    "id": 200,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": 1782,
+    "y": -37,
+    "z": 0
+  },
+  {
+    "id": 201,
+    "type": "crate",
+    "title": "Crate",
+    "x": 1808,
+    "y": -60,
+    "z": 0
+  },
+  {
+    "id": 202,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": 1804,
+    "y": -78,
+    "z": 0
+  },
+  {
+    "id": 203,
+    "type": "crate",
+    "title": "Crate",
+    "x": 1465,
+    "y": 679,
+    "z": 0
+  },
+  {
+    "id": 205,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": 1506,
+    "y": 670,
+    "z": 0
+  },
+  {
+    "id": 206,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": 1503,
+    "y": 684,
+    "z": 0
+  },
+  {
+    "id": 207,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": 1570,
+    "y": 894,
+    "z": 0
+  },
+  {
+    "id": 208,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": 33,
+    "y": 1374,
+    "z": 0
+  },
+  {
+    "id": 209,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": 50,
+    "y": 1371,
+    "z": 0
+  },
+  {
+    "id": 210,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": 260,
+    "y": 1467,
+    "z": 0
+  },
+  {
+    "id": 211,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": 251,
+    "y": 1490,
+    "z": 0
+  },
+  {
+    "id": 212,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": -771,
+    "y": 762,
+    "z": 0
+  },
+  {
+    "id": 213,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": -758,
+    "y": 755,
+    "z": 0
+  },
+  {
+    "id": 214,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": -478,
+    "y": 482,
+    "z": 0
+  },
+  {
+    "id": 215,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": -1141,
+    "y": 444,
+    "z": 0
+  },
+  {
+    "id": 217,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": -1325,
+    "y": -488,
+    "z": 0
+  },
+  {
+    "id": 218,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": -967,
+    "y": -792,
+    "z": 0
+  },
+  {
+    "id": 219,
+    "type": "crate",
+    "title": "4x Crates",
+    "x": -610,
+    "y": -1042,
+    "z": 0
+  },
+  {
+    "id": 220,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": -1155,
+    "y": -1202,
+    "z": 0
+  },
+  {
+    "id": 221,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": -1775,
+    "y": -1603,
+    "z": 0
+  },
+  {
+    "id": 222,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": -1566,
+    "y": -1655,
+    "z": 0
+  },
+  {
+    "id": 192,
+    "type": "info",
+    "title": "Big Old Cross",
+    "x": 1728,
+    "y": -1198,
+    "z": 0
+  },
+  {
+    "id": 204,
+    "type": "info",
+    "title": "Wall Painting",
+    "x": 870,
+    "y": -379,
+    "z": 0
+  },
+  {
+    "id": 216,
+    "type": "info",
+    "title": "Hanging Skeletons",
+    "x": 1489,
+    "y": 716,
     "z": 0
   }
 ]

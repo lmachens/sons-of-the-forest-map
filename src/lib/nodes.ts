@@ -269,7 +269,13 @@ export const types = [
     value: "flare",
     title: "Loot",
     icon: icons.box,
-    filter: "loot"
+    filter: "loot",
+  },
+  {
+    value: "info",
+    title: "Point of Interest",
+    icon: icons.info,
+    filter: "poi",
   },
 ];
 
