@@ -13,14 +13,25 @@ export default function Friend({ map }: { map: leaflet.Map }) {
     pmIgnore: true,
   });
   marker.rotation = 90;
-  marker.addTo(map);
-  const element = marker.getElement()!;
-  element.style.filter += `hue-rotate(${generateRandomInteger(10, 350)}deg)`;
 
+  let firstTime = true;
   return {
-    updatePosition: (position: PlayerPosition) =>
-      marker.updatePosition(position),
-    remove: () => marker.remove(),
+    updatePosition: (position: PlayerPosition) => {
+      marker.updatePosition(position);
+      if (firstTime) {
+        marker.addTo(map);
+        const element = marker.getElement()!;
+        element.style.filter += `hue-rotate(${generateRandomInteger(
+          10,
+          350
+        )}deg)`;
+        firstTime = false;
+      }
+    },
+    remove: () => {
+      marker.remove();
+      firstTime = true;
+    },
   };
 }
 

@@ -64,13 +64,6 @@ waitForOverwolf().then(async () => {
       ) *
         180) /
       Math.PI;
-    console.log(
-      lastLocation,
-      location,
-      lastRotation,
-      location.y - (lastLocation.y || location.y),
-      location.x - (lastLocation.x || location.x)
-    );
 
     lastLocation = location;
 

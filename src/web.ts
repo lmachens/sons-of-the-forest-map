@@ -1,9 +1,9 @@
+import AppStatus from "./AppStatus";
 import ContextMenu from "./ContextMenu";
 import CustomNode from "./CustomNode";
 import Filters from "./Filters";
 import ImageOverlay from "./ImageOverlay";
 import Map from "./Map";
-import Multiplayer from "./Multiplayer";
 import Nodes from "./Nodes";
 
 let lastLocation = { x: 0, y: 0, z: 0 };
@@ -17,7 +17,7 @@ const mapElement = document.querySelector<HTMLDivElement>(".map")!;
 const map = Map(mapElement);
 ImageOverlay({ map });
 
-Multiplayer({
+AppStatus({
   map,
 });
 

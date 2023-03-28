@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sons Of The Forest Map</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,7 +12,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="web">
     <div class="layout">
       <main class="main">
         <div class="map"></div>
@@ -55,11 +56,18 @@
             <button id="add_custom_node">Add Custom Node</button>
           </section>
           <section class="paper">
-            <h2>Multiplayer</h2>
+            <h2>Realtime Status</h2>
             <p class="description">
-              Connect your position with other players to see each other on this
-              app. First, connect to the peer server and connect to your friends
-              afterwards.
+              Connect your position by installing the
+              <a
+                href="https://www.overwolf.com/app/Leon_Machens-Sons_Of_The_Forest_Map"
+                target="_blank"
+                >Overwolf app</a
+              >
+              and add your friends for a multiplayer experience. First, connect
+              to the peer server and connect to your app afterwards. The first
+              ID added will be set as your player. More players are for your
+              friend ID's.
             </p>
             <button id="peer_connect">Connect to peer server</button>
             <p class="status issue" id="my_peer_status">
@@ -78,12 +86,32 @@
             <p class="warning" id="peer_error"></p>
             <form class="group" id="connection_form">
               <label>
-                <span class="w-sm">Friend ID</span>
+                <span class="w-sm">App ID</span>
                 <input type="text" name="other_peer_id" required />
               </label>
-              <input type="submit" value="Add friend" />
+              <input type="submit" value="Add player" />
             </form>
             <div id="connections"></div>
+            <p class="location-status">Location is not detected</p>
+            <button class="show-on-map">Show on map</button>
+            <label class="group">
+              <input type="checkbox" id="follow_location" />
+              <span>Follow location</span>
+            </label>
+            <p class="description">
+              The player marker will be automatically centered if the location
+              is updated.
+            </p>
+            <div class="game-overlay hidden">
+              <span class="warning">Game is disabled!</span>
+              <p>
+                Open the
+                <a href="overwolf://store/game-settings/game-id/22638"
+                  >Overwolf settings</a
+                >
+                and activate Sons of the Forest.
+              </p>
+            </div>
           </section>
           <section class="paper">
             <h2>Settings</h2>
@@ -100,14 +128,6 @@
               Small dots will display the path you were walking.
             </p>
           </section>
-        </div>
-        <div class="banner">
-          <p>Get the app with real-time position, overlay mode and more!</p>
-          <a
-            href="https://www.overwolf.com/app/Leon_Machens-Sons_Of_The_Forest_Map"
-            target="_blank"
-            >Download now</a
-          >
         </div>
       </aside>
     </div>

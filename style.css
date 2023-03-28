@@ -188,6 +188,10 @@ input {
   height: calc(100% - 31px);
 }
 
+.web .layout {
+  height: 100%;
+}
+
 .main {
   flex-grow: 1;
   background: #9fb5d6;
@@ -207,7 +211,10 @@ input {
   width: 401px;
   background: #111111;
   flex-direction: column;
-  border-left: 1px solid #27272a;
+}
+
+.web .aside {
+  max-width: 100%;
 }
 
 @media screen and (min-width: 800px) {
@@ -217,6 +224,12 @@ input {
 
   .aside {
     display: flex;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .aside {
+    border-left: 1px solid #27272a;
   }
 }
 
@@ -251,6 +264,10 @@ input {
   font-size: 2rem;
   line-height: 2rem;
   text-transform: uppercase;
+}
+
+.web .banner {
+  max-width: 100%;
 }
 
 .ads {
@@ -427,7 +444,7 @@ input {
 
 .w-sm {
   display: inline-block;
-  width: 70px;
+  width: 68px;
 }
 
 .w-lg {

@@ -14,12 +14,11 @@ export default function Player({ map }: { map: leaflet.Map }) {
   });
   marker.rotation = 0;
 
-  marker.addTo(map);
-
   let firstTime = true;
   function updatePosition(position: PlayerPosition) {
     marker.updatePosition(position);
     if (firstTime) {
+      marker.addTo(map);
       map.flyTo(marker.getLatLng(), 2);
       firstTime = false;
     }
@@ -31,5 +30,9 @@ export default function Player({ map }: { map: leaflet.Map }) {
   return {
     updatePosition,
     panTo,
+    remove: () => {
+      marker.remove();
+      firstTime = true;
+    },
   };
 }
