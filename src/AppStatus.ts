@@ -24,6 +24,9 @@ export default function AppStatus({ map }: { map: leaflet.Map }) {
     document.querySelector<HTMLParagraphElement>("#peer_error")!;
   const connectionsElement =
     document.querySelector<HTMLElement>("#connections")!;
+  let peer: Peer | null = null;
+
+  const searchParams = new URLSearchParams(location.search);
 
   let connections: {
     [id: string]: {
@@ -33,8 +36,7 @@ export default function AppStatus({ map }: { map: leaflet.Map }) {
     };
   } = {};
 
-  let peer: Peer | null = null;
-  peerConnect.onclick = () => {
+  function connectToPeer(onOpen?: () => void) {
     if (peer) {
       peer.destroy();
     }
@@ -59,6 +61,9 @@ export default function AppStatus({ map }: { map: leaflet.Map }) {
       status.classList.add("ok");
       status.classList.remove("issue");
       peerIdElement.value = id;
+      if (onOpen) {
+        onOpen();
+      }
     });
     peer.on("connection", (conn) => {
       console.log("peer connection", conn);
@@ -70,7 +75,17 @@ export default function AppStatus({ map }: { map: leaflet.Map }) {
       status.classList.remove("ok");
       peerIdElement.value = "";
     });
-  };
+  }
+
+  const appId = searchParams.get("app_id");
+  if (appId) {
+    connectToPeer(() => {
+      if (peer) {
+        handleId(appId);
+      }
+    });
+  }
+  peerConnect.onclick = () => connectToPeer();
 
   function addConnectedStatus(peer: string, conn: DataConnection) {
     const status = createElement("p", {
@@ -143,12 +158,7 @@ export default function AppStatus({ map }: { map: leaflet.Map }) {
     });
   }
 
-  const connectionForm =
-    document.querySelector<HTMLFormElement>("#connection_form")!;
-  connectionForm.onsubmit = (event) => {
-    event.preventDefault();
-    const data = new FormData(connectionForm);
-    const id = (data.get("other_peer_id") as string).trim();
+  function handleId(id: string) {
     if (!id) {
       peerErrorElement.innerText = "Please enter an ID";
       return;
@@ -164,6 +174,14 @@ export default function AppStatus({ map }: { map: leaflet.Map }) {
     peerErrorElement.innerText = "";
     const conn = peer.connect(id);
     initializeConnection(conn);
+  }
+  const connectionForm =
+    document.querySelector<HTMLFormElement>("#connection_form")!;
+  connectionForm.onsubmit = (event) => {
+    event.preventDefault();
+    const data = new FormData(connectionForm);
+    const id = (data.get("other_peer_id") as string).trim();
+    handleId(id);
   };
 
   const locationStatus =

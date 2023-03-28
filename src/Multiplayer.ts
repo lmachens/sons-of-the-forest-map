@@ -1,5 +1,6 @@
 import leaflet from "leaflet";
 import Peer, { DataConnection } from "peerjs";
+import QRCode from "qrcode";
 import Friend from "./Friend";
 import { createElement } from "./lib/elements";
 import { PlayerPosition } from "./lib/player-marker";
@@ -92,6 +93,20 @@ export default function Multiplayer({
     });
   }
 
+  const qrLink = document.querySelector<HTMLAnchorElement>(".qr_link");
+  const canvas = document.querySelector<HTMLCanvasElement>(".qr");
+  function setLink(href: string) {
+    if (qrLink) {
+      qrLink.href = href;
+    }
+    if (canvas) {
+      QRCode.toCanvas(canvas, href, {
+        color: { dark: "#fff", light: "#27272a" },
+      });
+    }
+  }
+  setLink("https://lmachens.github.io/sons-of-the-forest-map/");
+
   let peer: Peer | null = null;
   peerConnect.onclick = () => {
     if (peer) {
@@ -104,6 +119,7 @@ export default function Multiplayer({
       status.classList.add("issue");
       status.classList.remove("ok");
       peerIdElement.value = "";
+      setLink("https://lmachens.github.io/sons-of-the-forest-map/");
       Object.keys(connections).forEach((peer) => {
         closeExistingConnection(peer);
       });
@@ -118,6 +134,7 @@ export default function Multiplayer({
       status.classList.add("ok");
       status.classList.remove("issue");
       peerIdElement.value = id;
+      setLink(`https://lmachens.github.io/sons-of-the-forest-map?app_id=${id}`);
     });
     peer.on("connection", (conn) => {
       console.log("peer connection", conn);
