@@ -1165,7 +1165,7 @@
   {
     "id": 161,
     "type": "supply",
-    "title":"2x Supply Cases",
+    "title": "2x Supply Cases",
     "x": -883,
     "y": 773,
     "z": 0
@@ -1272,7 +1272,7 @@
     "title": "Ammo Case",
     "x": -844,
     "y": 1011,
-    "z": 0    
+    "z": 0
   },
   {
     "id": 166,
@@ -1408,7 +1408,7 @@
     "title": "3x Crates",
     "x": -1353,
     "y": -835,
-    "z": 0    
+    "z": 0
   },
   {
     "id": 172,
