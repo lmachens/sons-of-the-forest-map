@@ -183,6 +183,7 @@ input {
 }
 
 .layout {
+  position: relative;
   display: flex;
   height: calc(100% - 31px);
 }
@@ -192,23 +193,73 @@ input {
   background: #9fb5d6;
 }
 
+.menu {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  padding: 0.25rem !important;
+  z-index: 10000;
+}
+
 .aside {
-  flex: 0;
+  display: none;
   width: 401px;
   background: #111111;
-  display: flex;
   flex-direction: column;
   border-left: 1px solid #27272a;
 }
 
-.ads {
-  flex: 0;
+@media screen and (min-width: 800px) {
+  .layout > .menu {
+    display: none;
+  }
+
+  .aside {
+    display: flex;
+  }
+}
+
+.open .aside {
+  display: flex;
+}
+
+.open .layout > .menu {
+  display: none;
+}
+
+.close .layout > .menu {
+  display: flex;
+}
+
+.close .aside {
+  display: none;
+}
+
+.banner {
   height: 300px;
   width: 400px;
   background: url(/ads.webp) #3f3f3f;
   background-size: 250px;
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+
+.ads {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 11000;
+  height: 300px;
+  width: 400px;
 }
 
 .map {
@@ -219,6 +270,7 @@ input {
 }
 
 .stack {
+  position: relative;
   flex: 1;
   padding: 0.5rem;
   display: flex;
@@ -228,6 +280,10 @@ input {
   overflow: auto;
 }
 
+.stack .menu {
+  background: none;
+  border: none;
+}
 .status {
   opacity: 0;
   display: flex;

@@ -37,7 +37,7 @@ export default function Map(container: HTMLDivElement) {
     },
   });
 
-  const coordinates = new CoordinatesControl({ position: "bottomright" });
+  const coordinates = new CoordinatesControl({ position: "bottomleft" });
   coordinates.addTo(map);
 
   if (typeof overwolf !== "undefined") {

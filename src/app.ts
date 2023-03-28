@@ -200,6 +200,20 @@ async function initAppHeader() {
   close.onclick = async () => {
     closeWindow(WINDOWS.CONTROLLER);
   };
+
+  const menuOpenElement =
+    document.querySelector<HTMLButtonElement>(".layout > .menu")!;
+  menuOpenElement.onclick = () => {
+    document.body.classList.add("open");
+    document.body.classList.remove("close");
+  };
+
+  const menuCloseElement =
+    document.querySelector<HTMLButtonElement>(".aside .menu")!;
+  menuCloseElement.onclick = () => {
+    document.body.classList.add("close");
+    document.body.classList.remove("open");
+  };
 }
 
 async function initResizeBorders() {
