@@ -1703,12 +1703,12 @@
     "z": 0
   },
   {
-  "id": 209,
-  "type": "crate",
-  "title": "2x Crates",
-  "x": 50,
-  "y": 1371,
-  "z": 0
+    "id": 209,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": 50,
+    "y": 1371,
+    "z": 0
   },
   {
     "id": 210,
