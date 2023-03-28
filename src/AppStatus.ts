@@ -1,13 +1,19 @@
 import leaflet from "leaflet";
 import Peer, { DataConnection } from "peerjs";
+import DirectionLine from "./DirectionLine";
 import FollowLocation from "./FollowLocation";
 import Friend from "./Friend";
 import { createElement } from "./lib/elements";
 import { PlayerPosition } from "./lib/player-marker";
 import Player from "./Player";
+import TraceLine from "./TraceLine";
 
 export default function AppStatus({ map }: { map: leaflet.Map }) {
   const { isFollowing } = FollowLocation();
+  const directionLine = DirectionLine({ map });
+  const traceLine = TraceLine({
+    map,
+  });
   const player = Player({ map });
   const showOnMap = document.querySelector<HTMLButtonElement>(".show-on-map")!;
   showOnMap.onclick = () => {
@@ -139,12 +145,12 @@ export default function AppStatus({ map }: { map: leaflet.Map }) {
         const connection = connections[conn.peer];
         if (connection) {
           connection.friend.updatePosition(payload);
-          if (
-            "panTo" in connection.friend &&
-            connection.isPlayer &&
-            isFollowing()
-          ) {
-            connection.friend.panTo();
+          if ("panTo" in connection.friend && connection.isPlayer) {
+            if (isFollowing()) {
+              connection.friend.panTo();
+            }
+            directionLine.updatePosition(payload);
+            traceLine.updatePosition(payload);
           }
         }
       }
