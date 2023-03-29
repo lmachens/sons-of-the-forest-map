@@ -1127,11 +1127,28 @@
     "z": 0
   },
   {
+    "id": 285,
+    "type": "putter",
+    "title": "Putter",
+    "description": "On the back of the Golf Cart",
+    "x": 1589,
+    "y": 1336,
+    "z": 0
+  },
+  {
     "id": 114,
     "type": "helicopter",
     "title": "Helicopter Crash Site",
     "x": -886,
     "y": 770,
+    "z": 0
+  },
+  {
+    "id": 272,
+    "type": "helicopter",
+    "title": "Helicopter Crash Site",
+    "x": -804,
+    "y": -218,
     "z": 0
   },
   {
@@ -1351,6 +1368,126 @@
     "z": 0
   },
   {
+    "id": 237,
+    "type": "supply",
+    "title": "Supply Case",
+    "x": -1169,
+    "y": -1694,
+    "z": 0
+  },
+  {
+    "id": 238,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": -848,
+    "y": 146,
+    "z": 0
+  },
+  {
+    "id": 239,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": -735,
+    "y": 30,
+    "z": 0
+  },
+  {
+    "id": 264,
+    "type": "supply",
+    "title": "3x Supply Cases",
+    "x": -606,
+    "y": 873,
+    "z": 0
+  },
+  {
+    "id": 265,
+    "type": "supply",
+    "title": "Supply Case",
+    "x": -655,
+    "y": 1497,
+    "z": 0
+  },
+  {
+    "id": 266,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": -1098,
+    "y": 1280,
+    "z": 0
+  },
+  {
+    "id": 267,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": -806,
+    "y": -221,
+    "z": 0
+  },
+  {
+    "id": 268,
+    "type": "supply",
+    "title": "Supply Case",
+    "x": -206,
+    "y": 878,
+    "z": 0
+  },
+  {
+    "id": 269,
+    "type": "supply",
+    "title": "Supply Case",
+    "x": 39,
+    "y": 1371,
+    "z": 0
+  },
+  {
+    "id": 295,
+    "type": "supply",
+    "title": "3x Supply Cases",
+    "x": 1057,
+    "y": -915,
+    "z": 0
+  },
+  {
+    "id": 296,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": 1905,
+    "y": 402,
+    "z": 0
+  },
+  {
+    "id": 297,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": 1800,
+    "y": -71,
+    "z": 0
+  },
+  {
+    "id": 298,
+    "type": "supply",
+    "title": "3x Supply Cases",
+    "x": 1948,
+    "y": 396,
+    "z": 0
+  },
+  {
+    "id": 299,
+    "type": "supply",
+    "title": "4x Supply Cases",
+    "x": 1951,
+    "y": 452,
+    "z": 0
+  },
+  {
+    "id": 300,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": 1904,
+    "y": 460,
+    "z": 0
+  },
+  {
     "id": 118,
     "type": "ammo",
     "title": "3x Ammo Cases",
@@ -1439,6 +1576,46 @@
     "z": 0
   },
   {
+    "id": 244,
+    "type": "ammo",
+    "title": "2x Ammo Cases",
+    "x": -1322,
+    "y": -490,
+    "z": 0
+  },
+  {
+    "id": 262,
+    "type": "ammo",
+    "title": "Ammo Case",
+    "x": -205,
+    "y": 878,
+    "z": 0
+  },
+  {
+    "id": 263,
+    "type": "ammo",
+    "title": "Ammo Case",
+    "x": 42,
+    "y": 1371,
+    "z": 0
+  },
+  {
+    "id": 286,
+    "type": "ammo",
+    "title": "Ammo Case",
+    "x": 1805,
+    "y": -67,
+    "z": 0
+  },
+  {
+    "id": 287,
+    "type": "ammo",
+    "title": "2x Ammo Cases",
+    "x": 1780,
+    "y": -34,
+    "z": 0
+  },
+  {
     "id": 119,
     "type": "flare",
     "title": "Flare Case",
@@ -1492,6 +1669,22 @@
     "title": "Flare Case",
     "x": -1723,
     "y": 57,
+    "z": 0
+  },
+  {
+    "id": 261,
+    "type": "flare",
+    "title": "Flare Case",
+    "x": -808,
+    "y": -216,
+    "z": 0
+  },
+  {
+    "id": 288,
+    "type": "flare",
+    "title": "Flare Case",
+    "x": 1066,
+    "y": -920,
     "z": 0
   },
   {
@@ -1807,6 +2000,86 @@
     "z": 0
   },
   {
+    "id": 240,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": -1571,
+    "y": -821,
+    "z": 0
+  },
+  {
+    "id": 241,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": -1138,
+    "y": -1082,
+    "z": 0
+  },
+  {
+    "id": 242,
+    "type": "crate",
+    "title": "3x Crates",
+    "x": -1153,
+    "y": -1203,
+    "z": 0
+  },
+  {
+    "id": 243,
+    "type": "crate",
+    "title": "3x Crates",
+    "x": -1351,
+    "y": -830,
+    "z": 0
+  },
+  {
+    "id": 289,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": 1375,
+    "y": -690,
+    "z": 0
+  },
+  {
+    "id": 290,
+    "type": "crate",
+    "title": "3x Crates",
+    "x": 1390,
+    "y": -699,
+    "z": 0
+  },
+  {
+    "id": 291,
+    "type": "crate",
+    "title": "Crate",
+    "x": 1061,
+    "y": -928,
+    "z": 0
+  },
+  {
+    "id": 292,
+    "type": "crate",
+    "title": "Crate",
+    "x": 1478,
+    "y": 707,
+    "z": 0
+  },
+  {
+    "id": 293,
+    "type": "crate",
+    "title": "Crate",
+    "x": 1424,
+    "y": 851,
+    "z": 0
+  },
+  {
+    "id": 294,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": 1430,
+    "y": 834,
+    "z": 0
+  },
+  {
     "id": 192,
     "type": "info",
     "title": "Big Old Cross",
@@ -1828,6 +2101,423 @@
     "title": "Hanging Skeletons",
     "x": 1489,
     "y": 716,
+    "z": 0
+  },
+  {
+    "id": 245,
+    "type": "info",
+    "title": "Plane Crash Site",
+    "x": 36,
+    "y": -1062,
+    "z": 0
+  },
+  {
+    "id": 270,
+    "type": "info",
+    "title": "Corpses of occultists",
+    "x": -425,
+    "y": 830,
+    "z": 0
+  },
+  {
+    "id": 271,
+    "type": "info",
+    "title": "Sitting Skeleton",
+    "x": -1140,
+    "y": 1128,
+    "z": 0
+  },
+  {
+    "id": 301,
+    "type": "info",
+    "title": "Skeletons Pile",
+    "x": 1571,
+    "y": 800,
+    "z": 0
+  },
+  {
+    "id": 302,
+    "type": "info",
+    "title": "Helipad A",
+    "x": 1928,
+    "y": 454,
+    "z": 0
+  },
+  {
+    "id": 303,
+    "type": "info",
+    "title": "Heliad B",
+    "x": 1827,
+    "y": 399,
+    "z": 0
+  },
+  {
+    "id": 223,
+    "type": "can",
+    "title": "Small Cannibal Camp",
+    "description": "4x Tents",
+    "x": -1572,
+    "y": -1660,
+    "z": 0
+  },
+  {
+    "id": 224,
+    "type": "can",
+    "title": "Medium Cannibal Camp",
+    "description": "5x Tents",
+    "x": -1777,
+    "y": -1601,
+    "z": 0
+  },
+  {
+    "id": 225,
+    "type": "can",
+    "title": "Small Cannibal Camp",
+    "description": "4x Tents",
+    "x": -1173,
+    "y": -1697,
+    "z": 0
+  },
+  {
+    "id": 226,
+    "type": "can",
+    "title": "Small Cannibal Camp",
+    "description": "4x Tents",
+    "x": -1575,
+    "y": -818,
+    "z": 0
+  },
+  {
+    "id": 227,
+    "type": "can",
+    "title": "Small Cannibal Camp",
+    "description": "4x Tents",
+    "x": -1350,
+    "y": -835,
+    "z": 0
+  },
+  {
+    "id": 228,
+    "type": "can",
+    "title": "Small Cannibal Camp",
+    "description": "3x Tents",
+    "x": -1155,
+    "y": -1208,
+    "z": 0
+  },
+  {
+    "id": 229,
+    "type": "can",
+    "title": "Big Cannibal Camp",
+    "description": "7x Tents",
+    "x": -1131,
+    "y": -1083,
+    "z": 0
+  },
+  {
+    "id": 230,
+    "type": "can",
+    "title": "Big Cannibal Camp",
+    "description": "8x Tents",
+    "x": -968,
+    "y": -782,
+    "z": 0
+  },
+  {
+    "id": 231,
+    "type": "can",
+    "title": "Small Cannibal Camp",
+    "description": "3x Tents",
+    "x": -1322,
+    "y": -484,
+    "z": 0
+  },
+  {
+    "id": 232,
+    "type": "can",
+    "title": "Medium Cannibal Camp",
+    "description": "5x Tents",
+    "x": -1395,
+    "y": -459,
+    "z":0
+  },
+  {
+    "id": 233,
+    "type": "can",
+    "title": "Medium Cannibal Camp",
+    "description": "5x Tents",
+    "x": -1640,
+    "y": -177,
+    "z": 0
+  },
+  {
+    "id": 234,
+    "type": "can",
+    "title": "Abandoned Cannibal Camp",
+    "description": "No Tents left",
+    "x": -1058,
+    "y": -258,
+    "z": 0
+  },
+  {
+    "id": 235,
+    "type": "can",
+    "title": "Small Cannibal Camp",
+    "description": "4x Tents",
+    "x": -845,
+    "y": 150,
+    "z": 0
+  },
+  {
+    "id": 236,
+    "type": "can",
+    "title": "Medium Cannibal Camp",
+    "description": "5x Tents",
+    "x": -740,
+    "y": 25,
+    "z": 0
+  },
+  {
+    "id": 246,
+    "type": "can",
+    "title": "Medium Cannibal Camp",
+    "description": "5x Tents",
+    "x": -482,
+    "y": 489,
+    "z": 0
+  },
+  {
+    "id": 247,
+    "type": "can",
+    "title": "Medium Cannibal Camp",
+    "description": "5x Tents",
+    "x": -1147,
+    "y": 452,
+    "z": 0
+  },
+  {
+    "id": 248,
+    "type": "can",
+    "title": "Small Cannibal Camp",
+    "description": "4x Tents",
+    "x": -1206,
+    "y": 658,
+    "z": 0
+  },
+  {
+    "id": 249,
+    "type": "can",
+    "title": "Medium Cannibal Camp",
+    "description": "6x Tents",
+    "x": -1513,
+    "y": 824,
+    "z": 0
+  },
+  {
+    "id": 250,
+    "type": "can",
+    "title": "Small Cannibal Camp",
+    "description": "3x Tents",
+    "x": -1470,
+    "y": 1121,
+    "z": 0
+  },
+  {
+    "id": 251,
+    "type": "can",
+    "title": "Large Cannibal Camp",
+    "description": "10x Tents",
+    "x": -1090,
+    "y": 1281,
+    "z": 0
+  },
+  {
+    "id": 252,
+    "type": "can",
+    "title": "Small Cannibal Camp",
+    "description": "4x Tents",
+    "x": -652,
+    "y": 1495,
+    "z": 0
+  },
+  {
+    "id": 253,
+    "type": "can",
+    "title": "Medium Cannibal Camp",
+    "description": "5x Tents",
+    "x": -844,
+    "y": 1019,
+    "z": 0
+  },
+  {
+    "id": 254,
+    "type": "can",
+    "title": "Small Cannibal Camp",
+    "description": "4x Tents",
+    "x": -763,
+    "y": 765,
+    "z": 0
+  },
+  {
+    "id": 255,
+    "type": "can",
+    "title": "Small Cannibal Camp",
+    "description": "3x Tents",
+    "x": -602,
+    "y": 880,
+    "z": 0
+  },
+  {
+    "id": 256,
+    "type": "can",
+    "title": "Medium Cannibal Camp",
+    "description": "5x Tents",
+    "x": -203,
+    "y": 878,
+    "z": 0
+  },
+  {
+    "id": 257,
+    "type": "can",
+    "title": "Medium Cannibal Camp",
+    "description": "6x Tents",
+    "x": -162,
+    "y": 1052,
+    "z": 0
+  },
+  {
+    "id": 258,
+    "type": "can",
+    "title": "Medium Cannibal Camp",
+    "description": "5x Tents",
+    "x": 219,
+    "y": 1136,
+    "z": 0
+  },
+  {
+    "id": 259,
+    "type": "can",
+    "title": "Medium Cannibal Camp",
+    "description": "5x Tents",
+    "x": 43,
+    "y": 1378,
+    "z": 0
+  },
+  {
+    "id": 260,
+    "type": "can",
+    "title": "Medium Cannibal Camp",
+    "description": "5x Tents",
+    "x": 257,
+    "y": 1478,
+    "z": 0
+  },
+  {
+    "id": 273,
+    "type": "can",
+    "title": "Medium Cannibal Camp",
+    "description": "5x Tents",
+    "x": 1511,
+    "y": 889,
+    "z": 0
+  },
+  {
+    "id": 274,
+    "type": "can",
+    "title": "Abandoned Cannibal Camp",
+    "description": "No Tents left",
+    "x": 1511,
+    "y": 672,
+    "z": 0
+  },
+  {
+    "id": 275,
+    "type": "can",
+    "title": "Abandoned Cannibal Camp",
+    "description": "2x Tents",
+    "x": 1468,
+    "y": 672,
+    "z": 0
+  },
+  {
+    "id": 276,
+    "type": "can",
+    "title": "Abandoned Cannibal Camp",
+    "description": "Only one Tent",
+    "x": 1478,
+    "y": 703,
+    "z": 0
+  },
+  {
+    "id": 277,
+    "type": "can",
+    "title": "Abandoned Cannibal Camp",
+    "description": "5x Tents",
+    "x": 1430,
+    "y": 844,
+    "z": 0
+  },
+  {
+    "id": 278,
+    "type": "can",
+    "title": "Abandoned Cannibal Camp",
+    "description": "6x Tents",
+    "x": 1851,
+    "y": 136,
+    "z": 0
+  },
+  {
+    "id": 279,
+    "type": "can",
+    "title": "Big Cannibal Camp",
+    "description": "7x Tents",
+    "x": 1779,
+    "y": -28,
+    "z": 0
+  },
+  {
+    "id": 280,
+    "type": "can",
+    "title": "Medium Cannibal Camp",
+    "description": "5x Tents",
+    "x": 1802,
+    "y": -67,
+    "z": 0
+  },
+  {
+    "id": 281,
+    "type": "can",
+    "title": "Small Cannibal Camp",
+    "description": "4x Tents",
+    "x": 1401,
+    "y": -122,
+    "z": 0
+  },
+  {
+    "id": 282,
+    "type": "can",
+    "title": "Medium Cannibal Camp",
+    "description": "5x Tents",
+    "x": 1356,
+    "y": -153,
+    "z": 0
+  },
+  {
+    "id": 283,
+    "type": "can",
+    "title": "Abandoned Cannibal Camp",
+    "description": "6x Tents",
+    "x": 1386,
+    "y": -689,
+    "z": 0
+  },
+  {
+    "id": 284,
+    "type": "can",
+    "title": "Medium Cannibal Camp",
+    "description": "5x Tents",
+    "x": 1056,
+    "y": -922,
     "z": 0
   }
 ]
