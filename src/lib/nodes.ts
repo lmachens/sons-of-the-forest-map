@@ -277,6 +277,12 @@ export const types = [
     icon: icons.info,
     filter: "poi",
   },
+  {
+    value: "can",
+    title: "Cannibal Camp",
+    icon: icons.can,
+    filter: "can",
+  },
 ];
 
 export function getCustomNodes() {
@@ -339,6 +345,10 @@ export const filters = [
   {
     value: "glider",
     title: "Hang Gliders",
+  },
+  {
+    value: "can",
+    title: "Cannibal Camp",
   },
 ];
 
