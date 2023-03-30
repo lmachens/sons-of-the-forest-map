@@ -1,6 +1,7 @@
 import leaflet from "leaflet";
+import CanvasMarker from "./lib/canvas-marker";
 import { createElement } from "./lib/elements";
-import { getDivIcon, getIconElement } from "./lib/icons";
+import { getIconElement } from "./lib/icons";
 import locations from "./lib/locations.json" assert { type: "json" };
 import {
   getCustomNodes,
@@ -46,14 +47,11 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
   function addMarker(location: Node, isCustom: boolean, isDiscovered: boolean) {
     const type = types.find((type) => type.value === location.type) || types[0];
 
-    const icon = getDivIcon(
-      type,
-      isCustom,
-      location.color,
-      isDiscovered ? "discovered" : ""
-    );
-    const marker = new leaflet.Marker([location.y, location.x], {
-      icon,
+    const marker = new CanvasMarker([location.y, location.x], {
+      path: type.icon,
+      color: location.color || "#ffffff",
+      radius: 16,
+      discovered: isDiscovered,
       pmIgnore: true,
     });
     marker.addTo(isCustom ? customGroup : group);
@@ -65,6 +63,7 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
     `;
     marker.bindTooltip(tooltipContent, {
       direction: "top",
+      offset: [0, -15],
     });
     function openEditCustomNodeTooltip() {
       marker.options.pmIgnore = false;
@@ -167,6 +166,9 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
     }
 
     marker.on("contextmenu", (event) => {
+      // @ts-ignore
+      event.originalEvent.propagatedFromMarker = true;
+
       if (contextMenuTooltip) {
         contextMenuTooltip.remove();
       }
