@@ -4,8 +4,9 @@ import "@geoman-io/leaflet-geoman-free";
 import "@geoman-io/leaflet-geoman-free/dist/leaflet-geoman.css";
 import leaflet from "leaflet";
 
+import CanvasMarker from "./lib/canvas-marker";
 import { createElement } from "./lib/elements";
-import { getDivIcon, getIconElement } from "./lib/icons";
+import { getIconElement } from "./lib/icons";
 import { getCustomNodes, setCustomNodes, types } from "./lib/nodes";
 import { PlayerPosition } from "./lib/player-marker";
 
@@ -27,12 +28,13 @@ export default function CustomNode({
     }
     isAdding = true;
     const playerPosition = getLastPosition();
-    const icon = getDivIcon(types[0], true);
 
-    const marker = new leaflet.Marker(
+    const marker = new CanvasMarker(
       [playerPosition.location.y, playerPosition.location.x],
       {
-        icon,
+        path: types[0].icon,
+        color: "#ffffff",
+        radius: 16,
         interactive: true,
         pmIgnore: false,
       }

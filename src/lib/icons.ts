@@ -1,4 +1,3 @@
-import leaflet from "leaflet";
 import { createElement } from "./elements";
 import { NodeType } from "./nodes";
 
@@ -8,23 +7,7 @@ export function getIconSVG(type: NodeType, color = "currentColor") {
 
 export function getIconElement(type: NodeType) {
   return createElement("div", {
-    className: `filter-icon node-icon node-${type.value}`,
+    className: `filter-icon node-${type.value}`,
     innerHTML: getIconSVG(type),
-  });
-}
-
-export function getDivIcon(
-  type: NodeType,
-  isCustom: boolean,
-  color?: string,
-  className?: string
-) {
-  return leaflet.divIcon({
-    html: getIconSVG(type, color),
-    className: `node-icon node-${type.value} ${isCustom ? "node-custom" : ""} ${
-      className || ""
-    }`,
-    iconSize: [32, 32],
-    tooltipAnchor: [0, -20],
   });
 }

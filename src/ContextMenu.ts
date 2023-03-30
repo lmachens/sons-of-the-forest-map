@@ -12,6 +12,10 @@ export default function ContextMenu({
   let tooltip: leaflet.Tooltip | null = null;
 
   map.on("contextmenu", (event) => {
+    // @ts-ignore
+    if (event.originalEvent.propagatedFromMarker) {
+      return;
+    }
     if (tooltip) {
       tooltip.remove();
     }
