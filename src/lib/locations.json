@@ -2,6 +2,7 @@
   {
     "id": 1,
     "type": "spawnPoint",
+    "title": "Spawn Point",
     "x": -220,
     "y": -4,
     "z": 408
@@ -9,6 +10,7 @@
   {
     "id": 2,
     "type": "spawnPoint",
+    "title": "Spawn Point",
     "x": -415,
     "y": 1593,
     "z": 0
@@ -80,7 +82,8 @@
     "description": "Inside the right tunnel",
     "x": -647,
     "y": 1514,
-    "z": 0
+    "z": 0,
+    "isUnderground": true
   },
   {
     "id": 11,
@@ -89,7 +92,8 @@
     "description": "Inside the right tunnel",
     "x": -422,
     "y": 1477,
-    "z": 0
+    "z": 0,
+    "isUnderground": true
   },
   {
     "id": 12,
@@ -98,7 +102,8 @@
     "description": "Next to the projector",
     "x": -1174,
     "y": -217,
-    "z": 0
+    "z": 0,
+    "isUnderground": true
   },
   {
     "id": 13,
@@ -107,7 +112,8 @@
     "description": "Near the cave exit in the left tunnel",
     "x": -1204,
     "y": -277,
-    "z": 0
+    "z": 0,
+    "isUnderground": true
   },
   {
     "id": 14,
@@ -123,9 +129,11 @@
     "type": "shovel",
     "title": "Shovel",
     "description": "In hands of dead worker inside cave",
-    "x": -533,
-    "y": 145,
-    "z": 0
+    "x": -429,
+    "y": -103,
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [13, 11]
   },
   {
     "id": 16,
@@ -134,7 +142,8 @@
     "description": "Inside grave",
     "x": -1341,
     "y": 1410,
-    "z": 0
+    "z": 0,
+    "requirements": [15]
   },
   {
     "id": 17,
@@ -143,7 +152,8 @@
     "description": "Next to 3D Printer in the bunker",
     "x": -427,
     "y": 700,
-    "z": 0
+    "z": 0,
+    "isUnderground": true
   },
   {
     "id": 18,
@@ -152,7 +162,8 @@
     "description": "Inside the bunker room at the end of a hallway",
     "x": -415,
     "y": 712,
-    "z": 0
+    "z": 0,
+    "isUnderground": true
   },
   {
     "id": 19,
@@ -161,7 +172,9 @@
     "description": "On desk in Security room, behind Maintenance Door",
     "x": -977,
     "y": 1039,
-    "z": 0
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [17]
   },
   {
     "id": 20,
@@ -170,7 +183,9 @@
     "description": "Inside second hydroponic room",
     "x": -1022,
     "y": 986,
-    "z": 0
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [17]
   },
   {
     "id": 21,
@@ -178,7 +193,8 @@
     "title": "Guest Card",
     "x": -1184,
     "y": 41,
-    "z": 0
+    "z": 0,
+    "isUnderground": true
   },
   {
     "id": 22,
@@ -187,7 +203,8 @@
     "description": "On bar stand top, inside Cave Bunker",
     "x": -1158,
     "y": 17,
-    "z": 0
+    "z": 0,
+    "isUnderground": true
   },
   {
     "id": 23,
@@ -196,7 +213,8 @@
     "description": "In the Theater room, behind Guest Door",
     "x": -1151,
     "y": 116,
-    "z": 0
+    "z": 0,
+    "isUnderground": true
   },
   {
     "id": 24,
@@ -205,7 +223,8 @@
     "description": "Inside the bathroom, in Bunker B",
     "x": -1120,
     "y": -1039,
-    "z": 0
+    "z": 0,
+    "isUnderground": true
   },
   {
     "id": 25,
@@ -213,7 +232,8 @@
     "title": "Revolver",
     "x": 1140,
     "y": 1048,
-    "z": 0
+    "z": 0,
+    "isUnderground": true
   },
   {
     "id": 26,
@@ -221,7 +241,8 @@
     "title": "Katana",
     "x": 1160,
     "y": -651,
-    "z": 0
+    "z": 0,
+    "isUnderground": true
   },
   {
     "id": 27,
@@ -229,7 +250,8 @@
     "title": "Golden Armor",
     "x": 181,
     "y": -664,
-    "z": 0
+    "z": 0,
+    "isUnderground": true
   },
   {
     "id": 28,
@@ -259,34 +281,48 @@
   },
   {
     "id": 30,
-    "type": "bunker",
+    "type": "hatch",
     "title": "Maintenance A",
     "description": "Use Shovel to enter",
     "x": -478,
     "y": 710,
-    "z": 0
+    "z": 0,
+    "requirements": [15]
   },
   {
     "id": 31,
-    "type": "bunker",
+    "type": "hatch",
     "title": "Maintenance B",
     "description": "Use Shovel to enter",
     "x": -1133,
     "y": -1100,
-    "z": 0
+    "z": 0,
+    "requirements": [15]
   },
   {
     "id": 32,
-    "type": "bunker",
+    "type": "hatch",
     "title": "Maintenance C",
     "description": "Use shovel to enter",
     "x": 1110,
     "y": 1007,
-    "z": 0
+    "z": 0,
+    "requirements": [15]
+  },
+  {
+    "id": 307,
+    "type": "hatch",
+    "title": "Food and Dining",
+    "description": "Go inside Cave to find it",
+    "x": -1027,
+    "y": 1036,
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [49]
   },
   {
     "id": 33,
-    "type": "bunker",
+    "type": "hatch",
     "title": "Cave Bunker",
     "x": 1230,
     "y": -652,
@@ -298,7 +334,8 @@
     "title": "3D Printer",
     "x": -418,
     "y": 700,
-    "z": 0
+    "z": 0,
+    "isUnderground": true
   },
   {
     "id": 35,
@@ -306,7 +343,8 @@
     "title": "3D Printer",
     "x": -1195,
     "y": 78,
-    "z": 0
+    "z": 0,
+    "isUnderground": true
   },
   {
     "id": 36,
@@ -314,7 +352,8 @@
     "title": "3D Printer",
     "x": -1126,
     "y": -1048,
-    "z": 0
+    "z": 0,
+    "isUnderground": true
   },
   {
     "id": 37,
@@ -322,7 +361,8 @@
     "title": "3D Printer",
     "x": 1121,
     "y": -602,
-    "z": 0
+    "z": 0,
+    "isUnderground": true
   },
   {
     "id": 38,
@@ -427,6 +467,16 @@
     "x": -423,
     "y": 1512,
     "z": 0
+  },
+  {
+    "id": 317,
+    "type": "zip",
+    "title": "Zip Line",
+    "x": -547,
+    "y": 144,
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [13]
   },
   {
     "id": 51,
@@ -756,9 +806,12 @@
     "id": 75,
     "type": "cloth",
     "title": "Dress",
+    "description": "On the couch to the left",
     "x": -914,
     "y": 1010,
-    "z": 0
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [19]
   },
   {
     "id": 76,
@@ -790,7 +843,9 @@
     "title": "Track Suit",
     "x": -1141,
     "y": 6,
-    "z": 0
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [17]
   },
   {
     "id": 80,
@@ -798,15 +853,19 @@
     "title": "Pajamas",
     "x": -1116,
     "y": -18,
-    "z": 0
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [17]
   },
   {
     "id": 81,
     "type": "cloth",
     "title": "Tuxedo",
+    "description": "On cabinet in the batrhroom",
     "x": -416,
     "y": 695,
-    "z": 0
+    "z": 0,
+    "isUnderground": true
   },
   {
     "id": 82,
@@ -822,7 +881,8 @@
     "title": "Golden Mask",
     "x": 1139,
     "y": -616,
-    "z": 0
+    "z": 0,
+    "isUnderground": true
   },
   {
     "id": 84,
@@ -831,6 +891,16 @@
     "x": -888,
     "y": 769,
     "z": 0
+  },
+  {
+    "id": 318,
+    "type": "cloth",
+    "title": "Wetsuit",
+    "x": -509,
+    "y": 128,
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [11]
   },
   {
     "id": 85,
@@ -848,7 +918,8 @@
     "description": "Inside grave",
     "x": -1341,
     "y": 1411,
-    "z": 0
+    "z": 0,
+    "requirements": [15]
   },
   {
     "id": 87,
@@ -866,15 +937,18 @@
     "description": "Next to 3D Printer inside the bunker",
     "x": -1196,
     "y": 78,
-    "z": 0
+    "z": 0,
+    "isUnderground": true
   },
   {
     "id": 89,
     "type": "book",
     "title": "Pennant Line Book",
+    "description": "On the floor, next to bathtube",
     "x": -416,
     "y": 694,
-    "z": 0
+    "z": 0,
+    "isUnderground": true
   },
   {
     "id": 90,
@@ -888,7 +962,7 @@
   {
     "id": 91,
     "type": "document",
-    "title": "Email - Golf Balls",
+    "title": "Email - RE: GOLF BALLS",
     "x": -1142,
     "y": 2,
     "z": 0
@@ -900,16 +974,18 @@
     "description": "On the table, behind Guest Door",
     "x": -1125,
     "y": 110,
-    "z": 0
+    "z": 0,
+    "isUnderground": true
   },
   {
     "id": 93,
     "type": "document",
     "title": "Email - ATTENTION ALL",
-    "description": "In the pool area with big tree",
+    "description": "Next to PC on the left",
     "x": -425,
     "y": 702,
-    "z": 0
+    "z": 0,
+    "isUnderground": true
   },
   {
     "id": 94,
@@ -967,9 +1043,11 @@
     "id": 100,
     "type": "document",
     "title": "Album Cover",
+    "description": "Next to TV",
     "x": -432,
     "y": 705,
-    "z": 0
+    "z": 0,
+    "isUnderground": true
   },
   {
     "id": 101,
@@ -1008,11 +1086,65 @@
   {
     "id": 105,
     "type": "document",
-    "title": "Email - Golf Balls",
+    "title": "Email - GOLF BALL",
     "description": "On the wooden table, beside the Putter",
     "x": 1125,
     "y": -605,
     "z": 0
+  },
+  {
+    "id": 308,
+    "type": "document",
+    "title": "Email - THOUGHT YOU MIGHT FIND THIS INTERESTING",
+    "description": "Next to dead person on the floor",
+    "x": -1021,
+    "y": 1036,
+    "z": 0,
+    "isUnderground": true
+  },
+  {
+    "id": 312,
+    "type": "document",
+    "title": "Email - ONE MORE",
+    "description": "On desk to the left side",
+    "x": -975,
+    "y": 1036,
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [17]
+  },
+  {
+    "id": 314,
+    "type": "document",
+    "title": "Email - RE:RE:RE: GOLF BALLS",
+    "description": "On the table with mutant",
+    "x": -913,
+    "y": 1036,
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [19]
+  },
+  {
+    "id": 315,
+    "type": "document",
+    "title": "Barbara's Reservation Card",
+    "description": "On the table with mutant",
+    "x": -915,
+    "y": 1037,
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [19]
+  },
+  {
+    "id": 316,
+    "type": "document",
+    "title": "Edward's Reservation Card",
+    "description": "On the table with mutant",
+    "x": -914,
+    "y": 1038,
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [19]
   },
   {
     "id": 106,
@@ -1124,7 +1256,8 @@
     "title": "Putter",
     "x": 1124,
     "y": -605,
-    "z": 0
+    "z": 0,
+    "isUnderground": true
   },
   {
     "id": 285,
@@ -1488,6 +1621,72 @@
     "z": 0
   },
   {
+    "id": 305,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": -479,
+    "y": 712,
+    "z": 0,
+    "isUnderground": true
+  },
+  {
+    "id": 310,
+    "type": "supply",
+    "title": "3x Supply Cases",
+    "x": -1009,
+    "y": 954,
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [17]
+  },
+  {
+    "id": 319,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": -488,
+    "y": 8,
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [11]
+  },
+  {
+    "id": 326,
+    "type": "supply",
+    "title": "Supply Case",
+    "x": -524,
+    "y": -17,
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [11]
+  },
+  {
+    "id": 328,
+    "type": "supply",
+    "title": "Supply Case",
+    "x": -580,
+    "y": -95,
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [11]
+  },
+  {
+    "id": 329,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": -1094,
+    "y": 90,
+    "z": 0
+  },
+  {
+    "id": 330,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": -1195,
+    "y": 81,
+    "z": 0,
+    "isUnderground": true
+  },
+  {
     "id": 118,
     "type": "ammo",
     "title": "3x Ammo Cases",
@@ -1616,6 +1815,46 @@
     "z": 0
   },
   {
+    "id": 320,
+    "type": "ammo",
+    "title": "Ammo Case",
+    "x": -486,
+    "y": 9,
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [11]
+  },
+  {
+    "id": 322,
+    "type": "ammo",
+    "title": "2x Ammo Cases",
+    "x": -518,
+    "y": 11,
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [11]
+  },
+  {
+    "id": 323,
+    "type": "ammo",
+    "title": "Ammo Case",
+    "x": -563,
+    "y": -65,
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [11]
+  },
+  {
+    "id": 324,
+    "type": "ammo",
+    "title": "Ammo Case",
+    "x": -564,
+    "y": -98,
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [11]
+  },
+  {
     "id": 119,
     "type": "flare",
     "title": "Flare Case",
@@ -1629,7 +1868,8 @@
     "title": "Flare Case",
     "x": -422,
     "y": 1496,
-    "z": 0
+    "z": 0,
+    "isUnderground": true
   },
   {
     "id": 125,
@@ -1685,6 +1925,34 @@
     "title": "Flare Case",
     "x": 1066,
     "y": -920,
+    "z": 0
+  },
+  {
+    "id": 321,
+    "type": "flare",
+    "title": "Flare Case",
+    "x": -490,
+    "y": 6,
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [11]
+  },
+  {
+    "id": 325,
+    "type": "flare",
+    "title": "Flare Case",
+    "x": -566,
+    "y": -98,
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [11]
+  },
+  {
+    "id": 331,
+    "type": "flare",
+    "title": "Flare Case",
+    "x": -1093,
+    "y": 84,
     "z": 0
   },
   {
@@ -2146,9 +2414,17 @@
   {
     "id": 303,
     "type": "info",
-    "title": "Heliad B",
+    "title": "Helipad B",
     "x": 1827,
     "y": 399,
+    "z": 0
+  },
+  {
+    "id": 304,
+    "type": "info",
+    "title": "Leg and Torso Effigies",
+    "x": -495,
+    "y": 1433,
     "z": 0
   },
   {
@@ -2519,5 +2795,70 @@
     "x": 1056,
     "y": -922,
     "z": 0
+  },
+  {
+    "id": 306,
+    "type": "mod",
+    "title": "Laser Sight",
+    "description": "Next to the computer on the left",
+    "x": -424,
+    "y": 702,
+    "z": 0,
+    "isUnderground": true
+  },
+  {
+    "id": 311,
+    "type": "mod",
+    "title": "Shotgun Rail",
+    "description": "On the right side reagl",
+    "x": -972,
+    "y": 1040,
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [17]
+  },
+  {
+    "id": 327,
+    "type": "mod",
+    "title": "Flashlight Attachment",
+    "description": "In the hand of dead soldier",
+    "x": -580,
+    "y": -69,
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [11]
+  },
+  {
+    "id": 309,
+    "type": "door",
+    "title": "Locked Door",
+    "description": "On the right side in first room",
+    "x": -1018,
+    "y": 1030,
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [17]
+  },
+  {
+    "id": 313,
+    "type": "door",
+    "title": "Locked Door",
+    "description": "At the end of the flooded corridor",
+    "x": -930,
+    "y": 1024,
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [19]
+  },
+  {
+    "id": 332,
+    "type": "door",
+    "title": "Locked Door",
+    "description": "At the end of the main corridor",
+    "x": -1149,
+    "y": 51,
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [17]
   }
 ]
