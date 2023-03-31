@@ -143,7 +143,7 @@
     "x": -1341,
     "y": 1410,
     "z": 0,
-    "requirements": 15
+    "requirements": [15]
   },
   {
     "id": 17,
@@ -174,7 +174,7 @@
     "y": 1039,
     "z": 0,
     "isUnderground": true,
-    "requirements": 17
+    "requirements": [17]
   },
   {
     "id": 20,
@@ -185,7 +185,7 @@
     "y": 986,
     "z": 0,
     "isUnderground": true,
-    "requirements": 17
+    "requirements": [17]
   },
   {
     "id": 21,
@@ -281,48 +281,48 @@
   },
   {
     "id": 30,
-    "type": "bunker",
+    "type": "hatch",
     "title": "Maintenance A",
     "description": "Use Shovel to enter",
     "x": -478,
     "y": 710,
     "z": 0,
-    "requirements": 15
+    "requirements": [15]
   },
   {
     "id": 31,
-    "type": "bunker",
+    "type": "hatch",
     "title": "Maintenance B",
     "description": "Use Shovel to enter",
     "x": -1133,
     "y": -1100,
     "z": 0,
-    "requirements": 15
+    "requirements": [15]
   },
   {
     "id": 32,
-    "type": "bunker",
+    "type": "hatch",
     "title": "Maintenance C",
     "description": "Use shovel to enter",
     "x": 1110,
     "y": 1007,
     "z": 0,
-    "requirements": 15
+    "requirements": [15]
   },
   {
     "id": 307,
-    "type": "bunker",
+    "type": "hatch",
     "title": "Food and Dining",
     "description": "Go inside Cave to find it",
     "x": -1027,
     "y": 1036,
     "z": 0,
     "isUnderground": true,
-    "requirements": 49
+    "requirements": [49]
   },
   {
     "id": 33,
-    "type": "bunker",
+    "type": "hatch",
     "title": "Cave Bunker",
     "x": 1230,
     "y": -652,
@@ -476,7 +476,7 @@
     "y": 144,
     "z": 0,
     "isUnderground": true,
-    "requirements": 13
+    "requirements": [13]
   },
   {
     "id": 51,
@@ -811,7 +811,7 @@
     "y": 1010,
     "z": 0,
     "isUnderground": true,
-    "requirements": 19
+    "requirements": [19]
   },
   {
     "id": 76,
@@ -845,7 +845,7 @@
     "y": 6,
     "z": 0,
     "isUnderground": true,
-    "requirements": 17
+    "requirements": [17]
   },
   {
     "id": 80,
@@ -855,7 +855,7 @@
     "y": -18,
     "z": 0,
     "isUnderground": true,
-    "requirements": 17
+    "requirements": [17]
   },
   {
     "id": 81,
@@ -893,14 +893,14 @@
     "z": 0
   },
   {
-    "id":318,
+    "id": 318,
     "type": "cloth",
     "title": "Wetsuit",
     "x": -509,
     "y": 128,
     "z": 0,
     "isUnderground": true,
-    "requirements": 11
+    "requirements": [11]
   },
   {
     "id": 85,
@@ -919,7 +919,7 @@
     "x": -1341,
     "y": 1411,
     "z": 0,
-    "requirements": 15
+    "requirements": [15]
   },
   {
     "id": 87,
@@ -1111,7 +1111,7 @@
     "y": 1036,
     "z": 0,
     "isUnderground": true,
-    "requirements": 17
+    "requirements": [17]
   },
   {
     "id": 314,
@@ -1122,7 +1122,7 @@
     "y": 1036,
     "z": 0,
     "isUnderground": true,
-    "requirements": 19
+    "requirements": [19]
   },
   {
     "id": 315,
@@ -1133,7 +1133,7 @@
     "y": 1037,
     "z": 0,
     "isUnderground": true,
-    "requirements": 19
+    "requirements": [19]
   },
   {
     "id": 316,
@@ -1144,7 +1144,7 @@
     "y": 1038,
     "z": 0,
     "isUnderground": true,
-    "requirements": 19
+    "requirements": [19]
   },
   {
     "id": 106,
@@ -1621,23 +1621,23 @@
     "z": 0
   },
   {
-  "id": 305,
-  "type": "supply",
-  "title": "2x Supply Cases",
-  "x": -479,
-  "y": 712,
-  "z": 0,
-  "isUnderground": true
+    "id": 305,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": -479,
+    "y": 712,
+    "z": 0,
+    "isUnderground": true
   },
   {
     "id": 310,
     "type": "supply",
-    "title":"3x Supply Cases",
+    "title": "3x Supply Cases",
     "x": -1009,
     "y": 954,
     "z": 0,
     "isUnderground": true,
-    "requirements": 17
+    "requirements": [17]
   },
   {
     "id": 319,
@@ -1647,7 +1647,7 @@
     "y": 8,
     "z": 0,
     "isUnderground": true,
-    "requirements": 11
+    "requirements": [11]
   },
   {
     "id": 326,
@@ -1657,7 +1657,7 @@
     "y": -17,
     "z": 0,
     "isUnderground": true,
-    "requirements": 11
+    "requirements": [11]
   },
   {
     "id": 328,
@@ -1667,7 +1667,7 @@
     "y": -95,
     "z": 0,
     "isUnderground": true,
-    "requirements": 11
+    "requirements": [11]
   },
   {
     "id": 329,
@@ -1822,7 +1822,7 @@
     "y": 9,
     "z": 0,
     "isUnderground": true,
-    "requirements": 11
+    "requirements": [11]
   },
   {
     "id": 322,
@@ -1832,7 +1832,7 @@
     "y": 11,
     "z": 0,
     "isUnderground": true,
-    "requirements": 11
+    "requirements": [11]
   },
   {
     "id": 323,
@@ -1842,7 +1842,7 @@
     "y": -65,
     "z": 0,
     "isUnderground": true,
-    "requirements": 11
+    "requirements": [11]
   },
   {
     "id": 324,
@@ -1852,7 +1852,7 @@
     "y": -98,
     "z": 0,
     "isUnderground": true,
-    "requirements": 11
+    "requirements": [11]
   },
   {
     "id": 119,
@@ -1935,17 +1935,17 @@
     "y": 6,
     "z": 0,
     "isUnderground": true,
-    "requirements": 11
+    "requirements": [11]
   },
   {
-    "id":325,
+    "id": 325,
     "type": "flare",
     "title": "Flare Case",
     "x": -566,
     "y": -98,
     "z": 0,
     "isUnderground": true,
-    "requirements": 11
+    "requirements": [11]
   },
   {
     "id": 331,
@@ -2815,7 +2815,7 @@
     "y": 1040,
     "z": 0,
     "isUnderground": true,
-    "requirements": 17
+    "requirements": [17]
   },
   {
     "id": 327,
@@ -2826,7 +2826,7 @@
     "y": -69,
     "z": 0,
     "isUnderground": true,
-    "requirements": 11
+    "requirements": [11]
   },
   {
     "id": 309,
@@ -2837,7 +2837,7 @@
     "y": 1030,
     "z": 0,
     "isUnderground": true,
-    "requirements": 17
+    "requirements": [17]
   },
   {
     "id": 313,
@@ -2848,7 +2848,7 @@
     "y": 1024,
     "z": 0,
     "isUnderground": true,
-    "requirements": 19
+    "requirements": [19]
   },
   {
     "id": 332,
@@ -2859,6 +2859,6 @@
     "y": 51,
     "z": 0,
     "isUnderground": true,
-    "requirements": 17
+    "requirements": [17]
   }
 ]
