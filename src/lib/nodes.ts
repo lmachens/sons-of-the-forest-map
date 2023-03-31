@@ -172,10 +172,10 @@ export const types = [
     filter: "poi",
   },
   {
-    value: "bunker",
-    title: "Bunker",
-    icon: icons.bunker,
-    filter: "poi",
+    value: "hatch",
+    title: "Floor Hatch",
+    icon: icons.hatch,
+    filter: "hatch",
   },
   {
     value: "3Dprinter",
@@ -285,6 +285,24 @@ export const types = [
     icon: icons.can,
     filter: "can",
   },
+  {
+    value: "mod",
+    title: "Weapon Attachement",
+    icon: icons.mod,
+    filter: "mod",
+  },
+  {
+    value: "door",
+    title: "Locked Door",
+    icon: icons.door,
+    filter: "door",
+  },
+  {
+    value: "zip",
+    title: "Zip Line",
+    icon: icons.zip,
+    filter: "cave",
+  },
 ];
 
 export function getCustomNodes() {
@@ -314,15 +332,27 @@ export const filters = [
   },
   {
     value: "cave",
-    title: "Cave Entrance",
+    title: "Cave Entrances",
+  },
+  {
+    value: "hatch",
+    title: "Bunker Entrances"
+  },
+  {
+    value: "door",
+    title: "Locked Doors"
   },
   {
     value: "3d",
-    title: "3D Printer",
+    title: "3D Printers",
   },
   {
     value: "weapons",
     title: "Weapons",
+  },
+  {
+    value: "mod",
+    title: "Attachments"
   },
   {
     value: "tools",
