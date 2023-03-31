@@ -17,6 +17,8 @@ export type Node = {
   y: number;
   z: number;
   color?: string;
+  isUnderground?: boolean;
+  requirements?: number[];
 };
 
 export const types = [

@@ -517,6 +517,10 @@ input {
   color: #f97316;
 }
 
+.info {
+  color: rgb(112, 180, 202);
+}
+
 .filter-icon {
   cursor: pointer;
   width: 30px;

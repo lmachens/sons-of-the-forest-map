@@ -7,7 +7,7 @@ leaflet.Canvas.include({
       return;
     }
 
-    const { path, color, radius, discovered } = layer.options;
+    const { path, color, radius, isDiscovered, isUnderground } = layer.options;
 
     const p = layer._point.round();
     const imageSize = radius * 2;
@@ -30,12 +30,23 @@ leaflet.Canvas.include({
     ctx.shadowOffsetY = 0;
     ctx.shadowBlur = 3;
 
-    if (discovered) {
+    if (isDiscovered) {
       ctx.globalAlpha = 0.3;
     }
     const path2D = new Path2D(path);
     ctx.stroke(path2D);
     ctx.fill(path2D);
+
+    if (isUnderground) {
+      ctx.fillStyle = "lightblue";
+
+      ctx.translate(250, -50);
+      ctx.scale(15, 15);
+
+      const path2D = new Path2D("M17 13v-6l-5 4l-5 -4v6l5 4z");
+      ctx.stroke(path2D);
+      ctx.fill(path2D);
+    }
     ctx.restore();
   },
 });
@@ -47,7 +58,8 @@ export type CanvasMarkerOptions = {
   path: string;
   color: string;
   radius: number;
-  discovered?: boolean;
+  isUnderground?: boolean;
+  isDiscovered?: boolean;
 };
 
 class CanvasMarker extends leaflet.CircleMarker {

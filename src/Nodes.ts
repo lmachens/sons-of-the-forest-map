@@ -51,14 +51,27 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       path: type.icon,
       color: location.color || "#ffffff",
       radius: 16,
-      discovered: isDiscovered,
+      isDiscovered,
+      isUnderground: location.isUnderground,
       pmIgnore: true,
     });
     marker.addTo(isCustom ? customGroup : group);
+
+    const requirements = location.requirements
+      ?.map((requirementId) => {
+        const location = locations.find(
+          (location) => location.id === requirementId
+        );
+        return `<p class="italic">${location?.title}</p>`;
+      })
+      .join("\n");
+
     const tooltipContent = `
     <p class="bold">${location.title ?? ""}</p>
     <p class="italic">${isCustom ? "Custom Node" : type.title}</p>
     <p>${location.description?.replaceAll("\n", "<br/>") || ""}</p>
+    ${location.isUnderground ? '<p class="info italic">Underground</p>' : ""}
+    ${requirements ? `<p class="bold">Requirements</p>${requirements}` : ""}
     <p class="hint">Right-Click to open menu</p>
     `;
     marker.bindTooltip(tooltipContent, {
