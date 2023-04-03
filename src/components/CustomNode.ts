@@ -61,10 +61,15 @@ export default function CustomNode({
       className: "description",
     });
 
-    const form = createElement("form", {
-      className: "node-form",
-      innerHTML: `
-    <label><span>Title</span><input name="title" required /></label>
+    const titleLabel = createElement("label", {}, [
+      createElement("span", { innerText: "Title" }),
+      createElement("input", { name: "title", required: true }),
+    ]);
+    const form = createElement(
+      "form",
+      {
+        className: "node-form",
+        innerHTML: `
     <label><span>Description</span><textarea name="description"></textarea></label>
     <label><span>Color</span><input type="color" name="color" value="#ffffff"/></label>
     <label><span>Type</span><div class="types">${types
@@ -78,7 +83,10 @@ export default function CustomNode({
       )
       .join("")}</div></label>
     `,
-    });
+      },
+      []
+    );
+    form.prepend(titleLabel);
 
     form.append(actions, note);
 
@@ -120,5 +128,7 @@ export default function CustomNode({
       permanent: true,
     });
     marker.pm.enableLayerDrag();
+
+    titleLabel.focus();
   };
 }
