@@ -194,7 +194,8 @@
     "x": -1184,
     "y": 41,
     "z": 0,
-    "isUnderground": true
+    "isUnderground": true,
+    "requirements": [17]
   },
   {
     "id": 22,
@@ -204,7 +205,8 @@
     "x": -1158,
     "y": 17,
     "z": 0,
-    "isUnderground": true
+    "isUnderground": true,
+    "requirements": [17]
   },
   {
     "id": 23,
@@ -269,6 +271,15 @@
     "description": "You need it to open cans with cat food",
     "x": -315,
     "y": 1612,
+    "z": 0
+  },
+  {
+    "id": 340,
+    "type": "opener",
+    "title": "Can Opener",
+    "description": "Next to campfire",
+    "x": -1267,
+    "y": -6,
     "z": 0
   },
   {
@@ -970,12 +981,13 @@
   {
     "id": 92,
     "type": "document",
-    "title": "Email - Another One",
+    "title": "Email - ANOTHER ONE",
     "description": "On the table, behind Guest Door",
     "x": -1125,
     "y": 110,
     "z": 0,
-    "isUnderground": true
+    "isUnderground": true,
+    "requirements": [17]
   },
   {
     "id": 93,
@@ -990,16 +1002,18 @@
   {
     "id": 94,
     "type": "document",
-    "title": "Will & Testament of Mr. Puffton",
-    "description": "On the table, behind VIP Door",
+    "title": "LAST WILL AND TESTAMENT OF EDWART PUFFTON",
+    "description": "On second table behind doors",
     "x": -1178,
     "y": 27,
-    "z": 0
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [17]
   },
   {
     "id": 95,
     "type": "document",
-    "title": "Golf Ball Memo",
+    "title": "Email: RE: GOLF BALLS",
     "description": "Held by the deceased near the tent",
     "x": -1269,
     "y": -14,
@@ -1042,12 +1056,13 @@
   {
     "id": 100,
     "type": "document",
-    "title": "Album Cover",
+    "title": "Music Album Cover",
     "description": "Next to TV",
     "x": -432,
     "y": 705,
     "z": 0,
-    "isUnderground": true
+    "isUnderground": true,
+    "requirements": [17]
   },
   {
     "id": 101,
@@ -1145,6 +1160,39 @@
     "z": 0,
     "isUnderground": true,
     "requirements": [19]
+  },
+  {
+    "id": 333,
+    "type": "document",
+    "title": "Email - Note to all employees",
+    "description": "Beside sunbed in the room with big tree",
+    "x": -1120,
+    "y": 18,
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [17]
+  },
+  {
+    "id": 334,
+    "type": "document",
+    "title": "Email :RE:RE: GOLF BALLS",
+    "description": "In the room with couches, at the end turn to left table",
+    "x": -1191,
+    "y": 35,
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [17]
+  },
+  {
+    "id": 335,
+    "type": "document",
+    "title": "Music Album Cover",
+    "description": "Next to body with stuck guitar inside it",
+    "x": -1157,
+    "y": 29,
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [17]
   },
   {
     "id": 106,
@@ -1583,9 +1631,17 @@
   {
     "id": 296,
     "type": "supply",
-    "title": "2x Supply Cases",
-    "x": 1905,
-    "y": 402,
+    "title": "Supply Case",
+    "x": 1907,
+    "y": 398,
+    "z": 0
+  },
+  {
+    "id": 345,
+    "type": "supply",
+    "title": "Supply Case",
+    "x": 1901,
+    "y": 410,
     "z": 0
   },
   {
@@ -1599,9 +1655,9 @@
   {
     "id": 298,
     "type": "supply",
-    "title": "3x Supply Cases",
+    "title": "4x Supply Cases",
     "x": 1948,
-    "y": 396,
+    "y": 398,
     "z": 0
   },
   {
@@ -1615,9 +1671,17 @@
   {
     "id": 300,
     "type": "supply",
-    "title": "2x Supply Cases",
-    "x": 1904,
-    "y": 460,
+    "title": "Supply Case",
+    "x": 1905,
+    "y": 454,
+    "z": 0
+  },
+  {
+    "id": 346,
+    "type": "supply",
+    "title": "Supply Case",
+    "x": 1902,
+    "y": 466,
     "z": 0
   },
   {
@@ -1685,6 +1749,56 @@
     "y": 81,
     "z": 0,
     "isUnderground": true
+  },
+  {
+    "id": 336,
+    "type": "supply",
+    "title": "Supply Case",
+    "x": -1183,
+    "y": 28,
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [17]
+  },
+  {
+    "id": 141,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": -1267,
+    "y": -14,
+    "z": 0
+  },
+  {
+    "id": 142,
+    "type": "supply",
+    "title": "Supply Case",
+    "x": -1267,
+    "y": -6,
+    "z": 0
+  },
+  {
+    "id": 143,
+    "type": "supply",
+    "title": "Supply Case",
+    "x": -1275,
+    "y": -13,
+    "z": 0
+  },
+  {
+    "id": 343,
+    "type": "supply",
+    "title": "Supply Case",
+    "x": -1783,
+    "y": -749,
+    "z": 0
+  },
+  {
+    "id": 344,
+    "type": "supply",
+    "title": "Supply Case",
+    "x": -1772,
+    "y": -761,
+    "z": 0
   },
   {
     "id": 118,
@@ -1853,6 +1967,16 @@
     "z": 0,
     "isUnderground": true,
     "requirements": [11]
+  },
+  {
+    "id": 337,
+    "type": "ammo",
+    "title": "Ammo Case",
+    "x": -1182,
+    "y": 25,
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [17]
   },
   {
     "id": 119,
@@ -2348,6 +2472,22 @@
     "z": 0
   },
   {
+    "id": 349,
+    "type": "crate",
+    "title": "Coffin",
+    "x": -1679,
+    "y": -1760,
+    "z": 0
+  },
+  {
+    "id": 350,
+    "type": "crate",
+    "title": "2x Coffins",
+    "x": -1681,
+    "y": -1740,
+    "z": 0
+  },
+  {
     "id": 192,
     "type": "info",
     "title": "Big Old Cross",
@@ -2425,6 +2565,526 @@
     "title": "Leg and Torso Effigies",
     "x": -495,
     "y": 1433,
+    "z": 0
+  },
+  {
+    "id": 351,
+    "type": "info",
+    "title": "5x Effigies",
+    "x": -1630,
+    "y": 832,
+    "z": 0
+  },
+  {
+    "id": 352,
+    "type": "info",
+    "title" :"3x Effigies",
+    "x": -639,
+    "y": 1494,
+    "z": 0
+  },
+  {
+    "id": 353,
+    "type": "info",
+    "title": "Dead Soldier Effigie",
+    "x": -420,
+    "y": 1643,
+    "z": 0
+  },
+  {
+    "id": 354,
+    "type": "info",
+    "title": "Dead Soldier Effigie",
+    "x": -400,
+    "y": 1645,
+    "z": 0
+  },
+  {
+    "id": 355,
+    "type": "info",
+    "title": "3x Effigies",
+    "x": 1571,
+    "y": 790,
+    "z": 0
+  },
+  {
+    "id": 356,
+    "type": "info",
+    "title": "3x Effigies",
+    "x": 1871,
+    "y": 143,
+    "z": 0
+  },
+  {
+    "id": 357,
+    "type": "info",
+    "title": "Kayak",
+    "x": -1118,
+    "y": 1692,
+    "z": 0
+  },
+  {
+    "id": 358,
+    "type": "info",
+    "title": "2x Kayaks",
+    "x": 1882,
+    "y": 1438,
+    "z": 0
+  },
+  {
+    "id": 359,
+    "type": "info",
+    "title": "Kayak",
+    "x": -1111,
+    "y": 1722,
+    "z": 0
+  },
+  {
+    "id": 360,
+    "type": "info",
+    "title": "2x Kayaks",
+    "x": 11,
+    "y": -1853,
+    "z": 0
+  },
+  {
+    "id": 361,
+    "type": "info",
+    "title": "Boat",
+    "x": 1861,
+    "y": 750,
+    "z": 0
+  },
+  {
+    "id": 362,
+    "type": "info",
+    "title": "Boat",
+    "x": 631,
+    "y": -1827,
+    "z": 0
+  },
+  {
+    "id": 363,
+    "type": "info",
+    "title": "3x Boats",
+    "x": 1848,
+    "y": 774,
+    "z": 0
+  },
+  {
+    "id": 364,
+    "type": "info",
+    "title": "Boat",
+    "x": -512,
+    "y": -1851,
+    "z": 0
+  },
+  {
+    "id": 365,
+    "type": "info",
+    "title": "2x Boats",
+    "x": -529,
+    "y": -1899,
+    "z": 0
+  },
+  {
+    "id": 366,
+    "type": "info",
+    "title": "2x Boats",
+    "x": -1059,
+    "y": -1872,
+    "z": 0
+  },
+  {
+    "id": 367,
+    "type": "info",
+    "title": "2x Boats",
+    "x": -1789,
+    "y": -1591,
+    "z": 0
+  },
+  {
+    "id": 368,
+    "type": "info",
+    "title": "3x Boats",
+    "x": -1761,
+    "y": -1093,
+    "z": 0
+  },
+  {
+    "id": 369,
+    "type": "info",
+    "title": "Boat",
+    "x": -1784,
+    "y": -754,
+    "z": 0
+  },
+  {
+    "id": 370,
+    "type": "info",
+    "title": "2x Boats",
+    "x": -1397,
+    "y": 604,
+    "z": 0
+  },
+  {
+    "id": 371,
+    "type": "info",
+    "title": "3x Golf Carts Underwater",
+    "x": 1618,
+    "y": 772,
+    "z": 0
+  },
+  {
+    "id": 372,
+    "type": "info",
+    "title": "Golf Cart",
+    "x": 1943,
+    "y": 399,
+    "z": 0
+  },
+  {
+    "id": 373,
+    "type": "info",
+    "title": "2x Golf Carts",
+    "x": 1905,
+    "y": 460,
+    "z": 0
+  },
+  {
+    "id": 374,
+    "type": "info",
+    "title": "2x Golf Carts",
+    "x": 1906,
+    "y": 404,
+    "z": 0
+  },
+  {
+    "id": 375,
+    "type": "info",
+    "title": "Golf Cart",
+    "x": 1023,
+    "y": 1641,
+    "z": 0
+  },
+  {
+    "id": 376,
+    "type": "info",
+    "title": "Mutant",
+    "x": 209,
+    "y": 1457,
+    "z": 0
+  },
+  {
+    "id": 377,
+    "type": "info",
+    "title": "Mutant",
+    "x": 1812,
+    "y" :142,
+    "z": 0
+  },
+  {
+    "id": 378,
+    "type": "info",
+    "title": "Mutant",
+    "x": 1799,
+    "y": -54,
+    "z": 0
+  },
+  {
+    "id": 379,
+    "type": "info",
+    "title": "Mutant",
+    "x": -1762,
+    "y": -1596,
+    "z": 0
+  },
+  {
+    "id": 380,
+    "type": "info",
+    "title": "Mutant",
+    "x": -1494,
+    "y": 820,
+    "z": 0
+  },
+  {
+    "id": 381,
+    "type": "info",
+    "title": "2x Dead Killer Whales",
+    "x": 1868,
+    "y": 82,
+    "z": 0
+  },
+  {
+    "id": 382,
+    "type": "info",
+    "title": "2x Dead Killer Whales",
+    "x": 1854,
+    "y": 96,
+    "z": 0
+  },
+  {
+    "id": 383,
+    "type": "info",
+    "title": "2x Dead Killer Whales",
+    "x": -237,
+    "y": 1425,
+    "z": 0
+  },
+  {
+    "id": 384,
+    "type": "info",
+    "title": "2x Dead Killer Whales",
+    "x": -1764,
+    "y": -977,
+    "z": 0
+  },
+  {
+    "id": 385,
+    "type": "info",
+    "title": "Pond",
+    "x": 261,
+    "y": -1777,
+    "z": 0
+  },
+  {
+    "id": 386,
+    "type": "info",
+    "title": "Pond",
+    "x": 274,
+    "y": -1749,
+    "z": 0
+  },
+  {
+    "id": 387,
+    "type": "info",
+    "title": "Pond",
+    "x": 290,
+    "y": -1787,
+    "z": 0
+  },
+  {
+    "id": 388,
+    "type": "info",
+    "title": "Pond",
+    "x": -1182,
+    "y": -1589,
+    "z": 0
+  },
+  {
+    "id": 389,
+    "type": "info",
+    "title": "Pond",
+    "x": 1296,
+    "y": -802,
+    "z": 0
+  },
+  {
+    "id": 390,
+    "type": "info",
+    "title": "4x Graves",
+    "x": 1711,
+    "y": -1217,
+    "z": 0
+  },
+  {
+    "id": 391,
+    "type": "info",
+    "title": "2x Graves",
+    "x": 287,
+    "y": -1643,
+    "z": 0
+  },
+  {
+    "id": 392,
+    "type": "info",
+    "title": "4x Graves",
+    "x": -842,
+    "y": 1716,
+    "z": 0
+  },
+  {
+    "id": 393,
+    "type": "info",
+    "title": "4x Graves",
+    "x": -1314,
+    "y": 1474,
+    "z": 0
+  },
+  {
+    "id": 394,
+    "type": "info",
+    "title": "Grave",
+    "x": -1340,
+    "y": 1412,
+    "z": 0
+  },
+  {
+    "id": 395,
+    "type": "info",
+    "title": "Grave",
+    "x": -1455,
+    "y": 1415,
+    "z": 0
+  },
+  {
+    "id": 396,
+    "type": "info",
+    "title": "Grave",
+    "x": -1595,
+    "y": 763,
+    "z": 0
+  },
+  {
+    "id": 397,
+    "type": "info",
+    "title": "3x Graves",
+    "x": -1789,
+    "y": 22,
+    "z": 0
+  },
+  {
+    "id": 398,
+    "type": "info",
+    "title": "3x Graves",
+    "x": -1455,
+    "y": -124,
+    "z": 0 
+  },
+  {
+    "id": 399,
+    "type": "info",
+    "title": "2x Graves",
+    "x": -1596,
+    "y": -1131,
+    "z": 0
+  },
+  {
+    "id": 400,
+    "type": "info",
+    "title": "2x Graves",
+    "x": -1611,
+    "y": -1151,
+    "z": 0
+  },
+  {
+    "id": 401,
+    "type": "info",
+    "title": "2x Graves",
+    "x": -1628,
+    "y": 1503,
+    "z": 0
+  },
+  {
+    "id": 402,
+    "type": "info",
+    "title": "3x Graves",
+    "x": -1634,
+    "y": -1508,
+    "z": 0
+  },
+  {
+    "id": 403,
+    "type": "info",
+    "title": "2x Graves",
+    "x": 1818,
+    "y": -488,
+    "z": 0
+  },
+  {
+    "id": 404,
+    "type": "info",
+    "title": "3x Graves",
+    "x": 1616,
+    "y": 194,
+    "z": 0
+  },
+  {
+    "id": 405,
+    "type": "info",
+    "title": "2x Graves",
+    "x": 1249,
+    "y": 763,
+    "z": 0
+  },
+  {
+    "id": 406,
+    "type": "info",
+    "title": "3x Graves",
+    "x": 1430,
+    "y": 861,
+    "z": 0
+  },
+  {
+    "id": 407,
+    "type": "info",
+    "title": "3x Graves",
+    "x": 1666,
+    "y": 964,
+    "z": 0
+  },
+  {
+    "id": 408,
+    "type": "info",
+    "title": "3x Graves",
+    "x": 1667,
+    "y": 958,
+    "z": 0
+  },
+  {
+    "id": 409,
+    "type": "info",
+    "title": "Grave",
+    "x": 1296,
+    "y": 1073,
+    "z": 0
+  },
+  {
+    "id": 410,
+    "type": "info",
+    "title": "2x Graves",
+    "x": 1271,
+    "y": 1161,
+    "z": 0
+  },
+  {
+    "id": 411,
+    "type": "info",
+    "title": "2x Graves",
+    "x": 891,
+    "y": 1361,
+    "z": 0
+  },
+  {
+    "id": 412,
+    "type": "info",
+    "title" :"3x Graves",
+    "x": 1255,
+    "y": 1690,
+    "z": 0
+  },
+  {
+    "id": 413,
+    "type": "info",
+    "title": "3x Graves",
+    "x": 527,
+    "y": 1046,
+    "z": 0
+  },
+  {
+    "id": 414,
+    "type": "info",
+    "title": "2x Graves",
+    "x": 122,
+    "y": 1152,
+    "z": 0
+  },
+  {
+    "id": 415,
+    "type": "info",
+    "title": "4x Graves",
+    "x": 64,
+    "y": 1322,
     "z": 0
   },
   {
@@ -2797,6 +3457,23 @@
     "z": 0
   },
   {
+    "id": 347,
+    "type": "can",
+    "title": "Abandoned Cannibal Camp",
+    "description": "2x Tents",
+    "x": 1733,
+    "y": -1218,
+    "z": 0
+  },
+  {
+    "id": 348,
+    "type": "can",
+    "title": "Cannibal building",
+    "x": -1684,
+    "y": 906,
+    "z": 0
+  },
+  {
     "id": 306,
     "type": "mod",
     "title": "Laser Sight",
@@ -2816,6 +3493,22 @@
     "z": 0,
     "isUnderground": true,
     "requirements": [17]
+  },
+  {
+    "id": 341,
+    "type": "mod",
+    "title": "Shotgun Rail",
+    "x": -1362,
+    "y": 1663,
+    "z": 0
+  },
+  {
+    "id": 342,
+    "type": "mod",
+    "title": "Pistol Rail",
+    "x": -1609,
+    "y": 486,
+    "z": 0
   },
   {
     "id": 327,
@@ -2857,6 +3550,28 @@
     "description": "At the end of the main corridor",
     "x": -1149,
     "y": 51,
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [17]
+  },
+  {
+    "id": 338,
+    "type": "door",
+    "title": "Locked Door",
+    "description": "At the end of a bar section in Night Club room",
+    "x": -1170,
+    "y": 26,
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [17]
+  },
+  {
+    "id": 339,
+    "type": "door",
+    "title": "Locked Door",
+    "description": "In the right corner of the pool",
+    "x": -1139,
+    "y": 26,
     "z": 0,
     "isUnderground": true,
     "requirements": [17]
