@@ -36,7 +36,10 @@ export function JoinCommunity() {
       className: "join-community paper",
       innerHTML: `
     <h2>
-      Join the community
+      <svg>
+        <use xlink:href="#window-control_discord" />
+      </svg>
+      <span>Join the community</span>
     </h2>
     <p class="description">
       Discuss latest updates, ask questions and share your ideas with other players.
