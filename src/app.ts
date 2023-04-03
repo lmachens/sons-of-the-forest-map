@@ -5,6 +5,7 @@ import DirectionLine from "./components/DirectionLine";
 import Filters from "./components/Filters";
 import FollowLocation from "./components/FollowLocation";
 import ImageOverlay from "./components/ImageOverlay";
+import { JoinCommunity } from "./components/JoinCommunity";
 import Map from "./components/Map";
 import Multiplayer from "./components/Multiplayer";
 import Nodes from "./components/Nodes";
@@ -152,6 +153,7 @@ waitForOverwolf().then(async () => {
   });
   ContextMenu({ map, onAdd: refresh });
   Filters({ onChange: refresh });
+  JoinCommunity();
 });
 
 async function initAppHeader() {

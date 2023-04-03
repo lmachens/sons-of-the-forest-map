@@ -13,41 +13,42 @@
     />
   </head>
   <body class="web">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="icon-menu" viewBox="0 0 24 24">
+        <path
+          d="M19 16a1 1 0 01.117 1.993L19 18H5a1 1 0 01-.117-1.993L5 16h14zm0-5a1 1 0 01.117 1.993L19 13H5a1 1 0 01-.117-1.993L5 11h14zm0-5a1 1 0 01.117 1.993L19 8H5a1 1 0 01-.117-1.993L5 6h14z"
+          fill="currentcolor"
+          fill-rule="evenodd"
+        ></path>
+      </symbol>
+      <symbol
+        id="icon-close"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+        stroke="currentColor"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M18 6l-12 12"></path>
+        <path d="M6 6l12 12"></path>
+      </symbol>
+    </svg>
     <div class="layout">
       <main class="main">
         <div class="map"></div>
       </main>
       <button class="menu">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="1.5em"
-          height="1.5em"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M19 16a1 1 0 01.117 1.993L19 18H5a1 1 0 01-.117-1.993L5 16h14zm0-5a1 1 0 01.117 1.993L19 13H5a1 1 0 01-.117-1.993L5 11h14zm0-5a1 1 0 01.117 1.993L19 8H5a1 1 0 01-.117-1.993L5 6h14z"
-            fill="currentcolor"
-            fill-rule="evenodd"
-          ></path>
+        <svg width="1.5em" height="1.5em">
+          <use xlink:href="#icon-menu" />
         </svg>
       </button>
       <aside class="aside">
         <div class="stack">
           <button class="menu">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="1.5em"
-              height="1.5em"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <path d="M18 6l-12 12"></path>
-              <path d="M6 6l12 12"></path>
+            <svg width="1.5em" height="1.5em">
+              <use xlink:href="#icon-close" />
             </svg>
           </button>
           <section class="paper">

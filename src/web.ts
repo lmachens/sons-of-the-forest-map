@@ -3,6 +3,7 @@ import ContextMenu from "./components/ContextMenu";
 import CustomNode from "./components/CustomNode";
 import Filters from "./components/Filters";
 import ImageOverlay from "./components/ImageOverlay";
+import { JoinCommunity } from "./components/JoinCommunity";
 import Map from "./components/Map";
 import Nodes from "./components/Nodes";
 
@@ -44,3 +45,5 @@ menuCloseElement.onclick = () => {
   document.body.classList.add("close");
   document.body.classList.remove("open");
 };
+
+JoinCommunity();
