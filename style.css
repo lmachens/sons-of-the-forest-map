@@ -110,6 +110,15 @@ input {
   margin: 0;
 }
 
+select {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #77777e;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  background-color: #18181b;
+  color: #f8f8ff;
+}
+
 .app-header {
   display: flex;
   height: 30px;

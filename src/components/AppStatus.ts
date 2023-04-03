@@ -1,10 +1,12 @@
 import leaflet from "leaflet";
 import Peer, { DataConnection } from "peerjs";
 import { createElement } from "../lib/elements";
+import { startNewGameSession } from "../lib/game-sessions";
 import { PlayerPosition } from "../lib/player-marker";
 import DirectionLine from "./DirectionLine";
 import FollowLocation from "./FollowLocation";
 import Friend from "./Friend";
+import GameSessions from "./GameSessions";
 import Player from "./Player";
 import TraceLine from "./TraceLine";
 
@@ -14,6 +16,8 @@ export default function AppStatus({ map }: { map: leaflet.Map }) {
   const traceLine = TraceLine({
     map,
   });
+  GameSessions(traceLine);
+
   const player = Player({ map });
   const showOnMap = document.querySelector<HTMLButtonElement>(".show-on-map")!;
   showOnMap.onclick = () => {
@@ -103,6 +107,7 @@ export default function AppStatus({ map }: { map: leaflet.Map }) {
 
     if (Object.keys(connections).length === 0) {
       connections[peer] = { conn, friend: player, isPlayer: true };
+      startNewGameSession();
     } else {
       const friend = Friend({ map });
       connections[peer] = { conn, friend };

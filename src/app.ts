@@ -4,6 +4,7 @@ import CustomNode from "./components/CustomNode";
 import DirectionLine from "./components/DirectionLine";
 import Filters from "./components/Filters";
 import FollowLocation from "./components/FollowLocation";
+import GameSessions from "./components/GameSessions";
 import ImageOverlay from "./components/ImageOverlay";
 import { JoinCommunity } from "./components/JoinCommunity";
 import Map from "./components/Map";
@@ -53,7 +54,11 @@ waitForOverwolf().then(async () => {
   const { updatePosition: updateDirectionLinePosition } = DirectionLine({
     map,
   });
-  const { updatePosition: updateTraceLinePosition, clear } = TraceLine({
+  const {
+    updatePosition: updateTraceLinePosition,
+    showSession,
+    hideSession,
+  } = TraceLine({
     map,
   });
 
@@ -109,7 +114,6 @@ waitForOverwolf().then(async () => {
   function onNewEvents(info: overwolf.games.events.NewGameEvents) {
     // https://overwolf.github.io/api/games/events/sons-of-the-forest#match_info
     if (info.events.some((event) => event.name === "match_start")) {
-      clear();
     }
     if (info.events.some((event) => event.name === "match_end")) {
     }
@@ -154,6 +158,7 @@ waitForOverwolf().then(async () => {
   ContextMenu({ map, onAdd: refresh });
   Filters({ onChange: refresh });
   JoinCommunity();
+  GameSessions({ showSession, hideSession });
 });
 
 async function initAppHeader() {
