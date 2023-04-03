@@ -1,4 +1,5 @@
 import { GAME_CLASS_ID, WINDOWS } from "./lib/config";
+import { startNewGameSession } from "./lib/game-sessions";
 import { getGameIsRunning } from "./lib/games";
 import { waitForOverwolf } from "./lib/overwolf";
 import {
@@ -11,6 +12,7 @@ import {
 
 waitForOverwolf().then(() => {
   initController();
+  startNewGameSession();
 });
 
 async function initController() {

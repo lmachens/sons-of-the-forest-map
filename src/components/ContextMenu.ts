@@ -1,6 +1,6 @@
 import leaflet from "leaflet";
+import { createElement } from "../lib/elements";
 import CustomNode from "./CustomNode";
-import { createElement } from "./lib/elements";
 
 export default function ContextMenu({
   map,

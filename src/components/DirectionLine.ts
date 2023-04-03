@@ -1,5 +1,5 @@
 import leaflet from "leaflet";
-import { PlayerPosition } from "./lib/player-marker";
+import { PlayerPosition } from "../lib/player-marker";
 
 export default function DirectionLine({ map }: { map: leaflet.Map }) {
   const polyline = leaflet.polyline([], {

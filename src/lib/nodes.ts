@@ -21,7 +21,7 @@ export type Node = {
   requirements?: number[];
 };
 
-export const types = [
+export const types: NodeType[] = [
   {
     value: "unknown",
     title: "Unknown",
@@ -321,66 +321,87 @@ export function setDiscoveredNodeIDs(discoveredNodeIDs: number[]) {
   return setItem("discovered_node_ids", discoveredNodeIDs);
 }
 
+export type Filter = {
+  value: string;
+  title: string;
+  color: string;
+};
+
 export const filters = [
   {
     value: "custom",
     title: "Custom",
+    color: "rgb(200 200 200)",
   },
   {
     value: "poi",
     title: "Points of Interest",
+    color: "rgb(152 251 152)",
   },
   {
     value: "cave",
     title: "Cave Entrances",
+    color: "rgb(173 216 230)",
   },
   {
     value: "hatch",
-    title: "Bunker Entrances"
+    title: "Bunker Entrances",
+    color: "rgb(255 215 0)",
   },
   {
     value: "door",
-    title: "Locked Doors"
+    title: "Locked Doors",
+    color: "rgb(176 196 222)",
   },
   {
     value: "3d",
     title: "3D Printers",
+    color: "rgb(255 105 180)",
   },
   {
     value: "weapons",
     title: "Weapons",
+    color: "rgb(195, 22, 22)",
   },
   {
     value: "mod",
-    title: "Attachments"
+    title: "Attachments",
+    color: "rgb(255 182 193)",
   },
   {
     value: "tools",
     title: "Tools",
+    color: "rgb(144 238 144)",
   },
   {
     value: "clothes",
     title: "Clothes",
+    color: "rgb(186 85 211)",
   },
   {
     value: "collect",
     title: "Collectibles",
+    color: "rgb(240 125 138)",
   },
   {
     value: "gear",
     title: "Player Gear",
+    color: "rgb(255 140 0)",
   },
   {
     value: "loot",
     title: "Loot Crates",
+    color: "rgb(123 104 238)",
   },
   {
     value: "glider",
     title: "Hang Gliders",
+    color: "rgb(65 105 225)",
   },
   {
     value: "can",
     title: "Cannibal Camp",
+    color: "rgb(32 178 170)",
   },
 ];
 

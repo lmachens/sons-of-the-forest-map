@@ -20,25 +20,34 @@ leaflet.Canvas.include({
     const scale = imageSize / 512;
 
     ctx.scale(scale, scale);
+    const path2D = new Path2D(path);
+
+    const globalAlpha = isDiscovered ? 0.1 : 1;
+    ctx.globalAlpha = globalAlpha;
 
     ctx.strokeStyle = "#000";
-    ctx.lineWidth = 1;
-    ctx.fillStyle = color;
+    ctx.shadowColor = "rgba(0, 0, 0, 0.75)";
+    ctx.shadowBlur = 3;
 
-    ctx.shadowColor = "#000000";
+    ctx.lineWidth = 15;
+    ctx.stroke(path2D);
+    ctx.fillStyle = "#ffffff";
+    ctx.fill(path2D);
+
+    ctx.fillStyle = color;
+    ctx.globalAlpha = 0.15;
+    ctx.shadowColor = color;
     ctx.shadowOffsetX = 0;
     ctx.shadowOffsetY = 0;
     ctx.shadowBlur = 3;
-
-    if (isDiscovered) {
-      ctx.globalAlpha = 0.3;
-    }
-    const path2D = new Path2D(path);
+    ctx.stroke(path2D);
     ctx.stroke(path2D);
     ctx.fill(path2D);
+    ctx.globalAlpha = globalAlpha;
 
     if (isUnderground) {
-      ctx.fillStyle = "lightblue";
+      ctx.lineWidth = 1;
+      ctx.fillStyle = "#fff";
 
       ctx.translate(250, -50);
       ctx.scale(15, 15);

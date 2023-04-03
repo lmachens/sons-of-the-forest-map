@@ -1,10 +1,11 @@
-import AppStatus from "./AppStatus";
-import ContextMenu from "./ContextMenu";
-import CustomNode from "./CustomNode";
-import Filters from "./Filters";
-import ImageOverlay from "./ImageOverlay";
-import Map from "./Map";
-import Nodes from "./Nodes";
+import AppStatus from "./components/AppStatus";
+import ContextMenu from "./components/ContextMenu";
+import CustomNode from "./components/CustomNode";
+import Filters from "./components/Filters";
+import ImageOverlay from "./components/ImageOverlay";
+import { JoinCommunity } from "./components/JoinCommunity";
+import Map from "./components/Map";
+import Nodes from "./components/Nodes";
 
 let lastLocation = { x: 0, y: 0, z: 0 };
 let lastRotation = 0;
@@ -44,3 +45,5 @@ menuCloseElement.onclick = () => {
   document.body.classList.add("close");
   document.body.classList.remove("open");
 };
+
+JoinCommunity();

@@ -1,10 +1,10 @@
 import leaflet from "leaflet";
 import Peer, { DataConnection } from "peerjs";
 import QRCode from "qrcode";
+import { createElement } from "../lib/elements";
+import { PlayerPosition } from "../lib/player-marker";
+import { copyToClipboard } from "../lib/utils";
 import Friend from "./Friend";
-import { createElement } from "./lib/elements";
-import { PlayerPosition } from "./lib/player-marker";
-import { copyToClipboard } from "./lib/utils";
 
 export default function Multiplayer({
   map,
@@ -105,7 +105,7 @@ export default function Multiplayer({
       });
     }
   }
-  setLink("https://lmachens.github.io/sons-of-the-forest-map/");
+  setLink("https://soft.th.gl/");
 
   let peer: Peer | null = null;
   peerConnect.onclick = () => {
@@ -119,7 +119,7 @@ export default function Multiplayer({
       status.classList.add("issue");
       status.classList.remove("ok");
       peerIdElement.value = "";
-      setLink("https://lmachens.github.io/sons-of-the-forest-map/");
+      setLink("https://soft.th.gl/");
       Object.keys(connections).forEach((peer) => {
         closeExistingConnection(peer);
       });
@@ -134,7 +134,7 @@ export default function Multiplayer({
       status.classList.add("ok");
       status.classList.remove("issue");
       peerIdElement.value = id;
-      setLink(`https://lmachens.github.io/sons-of-the-forest-map?app_id=${id}`);
+      setLink(`https://soft.th.gl/?app_id=${id}`);
     });
     peer.on("connection", (conn) => {
       console.log("peer connection", conn);
