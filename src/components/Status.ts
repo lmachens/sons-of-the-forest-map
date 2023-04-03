@@ -1,7 +1,7 @@
-import { GAME_CLASS_ID, WINDOWS } from "./lib/config";
-import { listenToGameInfo } from "./lib/games";
-import { listenToHotkeyBinding } from "./lib/hotkeys";
-import { getPreferedWindowName, togglePreferedWindow } from "./lib/windows";
+import { GAME_CLASS_ID, WINDOWS } from "../lib/config";
+import { listenToGameInfo } from "../lib/games";
+import { listenToHotkeyBinding } from "../lib/hotkeys";
+import { getPreferedWindowName, togglePreferedWindow } from "../lib/windows";
 
 export default function Status() {
   const status = document.querySelector<HTMLParagraphElement>("#game_status")!;

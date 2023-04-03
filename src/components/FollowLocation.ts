@@ -1,4 +1,4 @@
-import { getItem, setItem } from "./lib/storage";
+import { getItem, setItem } from "../lib/storage";
 
 export default function FollowLocation() {
   let followLocation = getItem("follow_location", true);

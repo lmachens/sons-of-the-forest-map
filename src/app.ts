@@ -1,10 +1,16 @@
-import Ads from "./Ads";
-import ContextMenu from "./ContextMenu";
-import CustomNode from "./CustomNode";
-import DirectionLine from "./DirectionLine";
-import Filters from "./Filters";
-import FollowLocation from "./FollowLocation";
-import ImageOverlay from "./ImageOverlay";
+import Ads from "./components/Ads";
+import ContextMenu from "./components/ContextMenu";
+import CustomNode from "./components/CustomNode";
+import DirectionLine from "./components/DirectionLine";
+import Filters from "./components/Filters";
+import FollowLocation from "./components/FollowLocation";
+import ImageOverlay from "./components/ImageOverlay";
+import Map from "./components/Map";
+import Multiplayer from "./components/Multiplayer";
+import Nodes from "./components/Nodes";
+import Player from "./components/Player";
+import Status from "./components/Status";
+import TraceLine from "./components/TraceLine";
 import { WINDOWS } from "./lib/config";
 import {
   listenToGameLaunched,
@@ -13,12 +19,6 @@ import {
 } from "./lib/games";
 import { waitForOverwolf } from "./lib/overwolf";
 import { closeWindow, getCurrentWindow } from "./lib/windows";
-import Map from "./Map";
-import Multiplayer from "./Multiplayer";
-import Nodes from "./Nodes";
-import Player from "./Player";
-import Status from "./Status";
-import TraceLine from "./TraceLine";
 
 waitForOverwolf().then(async () => {
   console.log("Init main");

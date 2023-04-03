@@ -4,11 +4,11 @@ import "@geoman-io/leaflet-geoman-free";
 import "@geoman-io/leaflet-geoman-free/dist/leaflet-geoman.css";
 import leaflet from "leaflet";
 
-import CanvasMarker from "./lib/canvas-marker";
-import { createElement } from "./lib/elements";
-import { getIconElement } from "./lib/icons";
-import { getCustomNodes, setCustomNodes, types } from "./lib/nodes";
-import { PlayerPosition } from "./lib/player-marker";
+import CanvasMarker from "../lib/canvas-marker";
+import { createElement } from "../lib/elements";
+import { getIconElement } from "../lib/icons";
+import { getCustomNodes, setCustomNodes, types } from "../lib/nodes";
+import { PlayerPosition } from "../lib/player-marker";
 
 export default function CustomNode({
   element,

@@ -1,7 +1,7 @@
 import leaflet from "leaflet";
 import "leaflet/dist/leaflet.css";
 
-import { BOUNDS } from "./lib/config";
+import { BOUNDS } from "../lib/config";
 
 export default function Map(container: HTMLDivElement) {
   const map = leaflet.map(container, {

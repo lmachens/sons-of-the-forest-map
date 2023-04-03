@@ -1,10 +1,10 @@
 import leaflet from "leaflet";
 import Peer, { DataConnection } from "peerjs";
 import QRCode from "qrcode";
+import { createElement } from "../lib/elements";
+import { PlayerPosition } from "../lib/player-marker";
+import { copyToClipboard } from "../lib/utils";
 import Friend from "./Friend";
-import { createElement } from "./lib/elements";
-import { PlayerPosition } from "./lib/player-marker";
-import { copyToClipboard } from "./lib/utils";
 
 export default function Multiplayer({
   map,

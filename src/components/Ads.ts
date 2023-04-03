@@ -1,5 +1,5 @@
 import type { OwAd } from "@overwolf/types/owads";
-import { createElement } from "./lib/elements";
+import { createElement } from "../lib/elements";
 
 declare global {
   interface Window {

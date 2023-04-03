@@ -1,10 +1,10 @@
 import leaflet from "leaflet";
 import Peer, { DataConnection } from "peerjs";
+import { createElement } from "../lib/elements";
+import { PlayerPosition } from "../lib/player-marker";
 import DirectionLine from "./DirectionLine";
 import FollowLocation from "./FollowLocation";
 import Friend from "./Friend";
-import { createElement } from "./lib/elements";
-import { PlayerPosition } from "./lib/player-marker";
 import Player from "./Player";
 import TraceLine from "./TraceLine";
 

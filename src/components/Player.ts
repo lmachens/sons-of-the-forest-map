@@ -1,5 +1,5 @@
 import leaflet from "leaflet";
-import PlayerMarker, { PlayerPosition } from "./lib/player-marker";
+import PlayerMarker, { PlayerPosition } from "../lib/player-marker";
 
 export default function Player({ map }: { map: leaflet.Map }) {
   const icon = leaflet.icon({

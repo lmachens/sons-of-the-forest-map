@@ -1,8 +1,8 @@
 import leaflet from "leaflet";
-import CanvasMarker from "./lib/canvas-marker";
-import { createElement } from "./lib/elements";
-import { getIconElement } from "./lib/icons";
-import locations from "./lib/locations.json" assert { type: "json" };
+import CanvasMarker from "../lib/canvas-marker";
+import { createElement } from "../lib/elements";
+import { getIconElement } from "../lib/icons";
+import locations from "../lib/locations.json" assert { type: "json" };
 import {
   getCustomNodes,
   getDeselectedFilters,
@@ -11,7 +11,7 @@ import {
   setCustomNodes,
   setDiscoveredNodeIDs,
   types,
-} from "./lib/nodes";
+} from "../lib/nodes";
 
 export default function Nodes({ map }: { map: leaflet.Map }) {
   const group = new leaflet.LayerGroup();
