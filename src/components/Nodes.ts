@@ -4,6 +4,7 @@ import { createElement } from "../lib/elements";
 import { getIconElement } from "../lib/icons";
 import locations from "../lib/locations.json" assert { type: "json" };
 import {
+  filters,
   getCustomNodes,
   getDeselectedFilters,
   getDiscoveredNodeIDs,
@@ -46,10 +47,12 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
 
   function addMarker(location: Node, isCustom: boolean, isDiscovered: boolean) {
     const type = types.find((type) => type.value === location.type) || types[0];
+    const filter =
+      filters.find((filter) => filter.value === type.filter) || filters[0];
 
     const marker = new CanvasMarker([location.y, location.x], {
       path: type.icon,
-      color: location.color || "#ffffff",
+      color: location.color || filter.color || "#ffffff",
       radius: 16,
       isDiscovered,
       isUnderground: location.isUnderground,

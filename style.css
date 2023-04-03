@@ -552,7 +552,9 @@ input {
   width: 0;
 }
 .type-label > span {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
   padding: 0rem 0.5rem;
   border-radius: 10px;
   border: 1px solid #77777e;
@@ -561,8 +563,17 @@ input {
   cursor: pointer;
 }
 
+.type-label > span::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--color);
+}
+
 .type-label > input:checked ~ span {
-  background: #2eb15e;
+  border-color: var(--color);
   color: white;
 }
 

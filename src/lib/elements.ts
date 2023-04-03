@@ -1,6 +1,8 @@
 export function createElement<K extends keyof HTMLElementTagNameMap>(
   tagName: K,
-  props: Partial<HTMLElementTagNameMap[K]> = {},
+  props: Partial<Omit<HTMLElementTagNameMap[K], "style">> & {
+    style?: string;
+  } = {},
   children?: (string | Node)[]
 ) {
   const element = document.createElement(tagName);
