@@ -1,3 +1,4 @@
+import leaflet from "leaflet";
 import Ads from "./components/Ads";
 import ContextMenu from "./components/ContextMenu";
 import CustomNode from "./components/CustomNode";
@@ -25,12 +26,11 @@ import { closeWindow, getCurrentWindow } from "./lib/windows";
 waitForOverwolf().then(async () => {
   console.log("Init main");
 
-  initAppHeader();
-  initResizeBorders();
-
   const mapElement = document.querySelector<HTMLDivElement>(".map")!;
   const map = Map(mapElement);
   ImageOverlay({ map });
+  initAppHeader({ map });
+  initResizeBorders();
 
   let lastLocation = { x: 0, y: 0, z: 0 };
   let lastRotation = 0;
@@ -161,7 +161,7 @@ waitForOverwolf().then(async () => {
   GameSessions({ showSession, hideSession });
 });
 
-async function initAppHeader() {
+async function initAppHeader({ map }: { map: leaflet.Map }) {
   const currentWindow = await getCurrentWindow();
 
   let isMaximized = currentWindow.stateEx === "maximized";
@@ -206,6 +206,7 @@ async function initAppHeader() {
   menuOpenElement.onclick = () => {
     document.body.classList.add("open");
     document.body.classList.remove("close");
+    map.invalidateSize(true);
   };
 
   const menuCloseElement =
@@ -213,6 +214,7 @@ async function initAppHeader() {
   menuCloseElement.onclick = () => {
     document.body.classList.add("close");
     document.body.classList.remove("open");
+    map.invalidateSize(true);
   };
 }
 

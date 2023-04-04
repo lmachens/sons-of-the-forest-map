@@ -37,6 +37,7 @@ const menuOpenElement =
 menuOpenElement.onclick = () => {
   document.body.classList.add("open");
   document.body.classList.remove("close");
+  map.invalidateSize(true);
 };
 
 const menuCloseElement =
@@ -44,6 +45,7 @@ const menuCloseElement =
 menuCloseElement.onclick = () => {
   document.body.classList.add("close");
   document.body.classList.remove("open");
+  map.invalidateSize(true);
 };
 
 JoinCommunity();
