@@ -53,6 +53,7 @@ export default defineConfig({
         ],
         theme_color: "#ffffff",
         background_color: "#ffffff",
+        display: "standalone",
       },
       workbox: {
         globPatterns: ["**/*.{js,css,html,ico,png,svg,webp}"],
