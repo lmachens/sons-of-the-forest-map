@@ -20,7 +20,11 @@ export default defineConfig({
   plugins: [
     VitePWA({
       registerType: "autoUpdate",
-      includeAssets: ["favicon.ico", "apple-touch-icon.png", "masked-icon.svg"],
+      includeAssets: [
+        "favicon.ico",
+        "apple-touch-icon.png",
+        "android-chrome-512x512.png",
+      ],
       manifest: {
         name: "Sons Of The Forest Map",
         short_name: "SOFT Map",
