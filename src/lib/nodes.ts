@@ -303,6 +303,18 @@ export const types: NodeType[] = [
     icon: icons.zip,
     filter: "cave",
   },
+  {
+    value: "uni",
+    title: "Unicycle",
+    icon: icons.uni,
+    filter: "tools",
+  },
+  {
+    value: "vision",
+    title: "Googles",
+    icon: icons.vision,
+    filter: "gear",
+  },
 ];
 
 export function getCustomNodes() {
