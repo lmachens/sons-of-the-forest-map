@@ -2640,7 +2640,7 @@
   {
     "id": 352,
     "type": "info",
-    "title" :"3x Effigies",
+    "title": "3x Effigies",
     "x": -639,
     "y": 1494,
     "z": 0
@@ -2842,7 +2842,7 @@
     "type": "info",
     "title": "Mutant",
     "x": 1812,
-    "y" :142,
+    "y": 142,
     "z": 0
   },
   {
@@ -3019,7 +3019,7 @@
     "title": "3x Graves",
     "x": -1455,
     "y": -124,
-    "z": 0 
+    "z": 0
   },
   {
     "id": 399,
@@ -3128,7 +3128,7 @@
   {
     "id": 412,
     "type": "info",
-    "title" :"3x Graves",
+    "title": "3x Graves",
     "x": 1255,
     "y": 1690,
     "z": 0
