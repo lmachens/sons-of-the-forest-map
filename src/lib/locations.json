@@ -971,6 +971,15 @@
     "z": 0
   },
   {
+    "id": 427,
+    "type": "book",
+    "title": "The Realm Beyond",
+    "description": "Between two Occultists corpses",
+    "x": -541,
+    "y": -632,
+    "z": 0
+  },
+  {
     "id": 91,
     "type": "document",
     "title": "Email - RE: GOLF BALLS",
@@ -1801,6 +1810,41 @@
     "z": 0
   },
   {
+    "id": 416,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": 1258,
+    "y": 196,
+    "z": 0
+  },
+  {
+    "id": 417,
+    "type": "supply",
+    "title": "Supply Case",
+    "x": -168,
+    "y": -418,
+    "z": 0,
+    "isUnderground": true
+  },
+  {
+    "id": 418,
+    "type": "supply",
+    "title": "Supply Case",
+    "x": -179,
+    "y": -418,
+    "z": 0,
+    "isUnderground": true
+  },
+  {
+    "id": 419,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": -464,
+    "y": -601,
+    "z": 0,
+    "isUnderground": true
+  },
+  {
     "id": 118,
     "type": "ammo",
     "title": "3x Ammo Cases",
@@ -2078,6 +2122,24 @@
     "x": -1093,
     "y": 84,
     "z": 0
+  },
+  {
+    "id": 420,
+    "type": "flare",
+    "title": "Flare Case",
+    "x": -150,
+    "y": -418,
+    "z": 0,
+    "isUnderground": true
+  },
+  {
+    "id": 421,
+    "type": "flare",
+    "title": "Flare Case",
+    "x": -42,
+    "y": -344,
+    "z": 0,
+    "isUnderground": true
   },
   {
     "id": 130,
@@ -2578,7 +2640,7 @@
   {
     "id": 352,
     "type": "info",
-    "title" :"3x Effigies",
+    "title": "3x Effigies",
     "x": -639,
     "y": 1494,
     "z": 0
@@ -2780,7 +2842,7 @@
     "type": "info",
     "title": "Mutant",
     "x": 1812,
-    "y" :142,
+    "y": 142,
     "z": 0
   },
   {
@@ -2880,6 +2942,14 @@
     "z": 0
   },
   {
+    "id": 426,
+    "type": "info",
+    "title": "Pond",
+    "x": 1063,
+    "y": -107,
+    "z": 0
+  },
+  {
     "id": 390,
     "type": "info",
     "title": "4x Graves",
@@ -2949,7 +3019,7 @@
     "title": "3x Graves",
     "x": -1455,
     "y": -124,
-    "z": 0 
+    "z": 0
   },
   {
     "id": 399,
@@ -3058,7 +3128,7 @@
   {
     "id": 412,
     "type": "info",
-    "title" :"3x Graves",
+    "title": "3x Graves",
     "x": 1255,
     "y": 1690,
     "z": 0
@@ -3086,6 +3156,42 @@
     "x": 64,
     "y": 1322,
     "z": 0
+  },
+  {
+    "id": 422,
+    "type": "info",
+    "title": "Astronaut Corpse",
+    "x": 148,
+    "y": -643,
+    "z": 0,
+    "isUnderground": true
+  },
+  {
+    "id": 423,
+    "type": "info",
+    "title": "Astronaut Corpse",
+    "x": 174,
+    "y": -658,
+    "z": 0,
+    "isUnderground": true
+  },
+  {
+    "id": 424,
+    "type": "info",
+    "title": "3x Astronaut Corpses",
+    "x": 182,
+    "y": -671,
+    "z": 0,
+    "isUnderground": true
+  },
+  {
+    "id": 425,
+    "type": "info",
+    "title": "3x Astronaut Corpses",
+    "x": 175,
+    "y": -666,
+    "z": 0,
+    "isUnderground": true
   },
   {
     "id": 223,
@@ -3351,10 +3457,10 @@
   {
     "id": 273,
     "type": "can",
-    "title": "Medium Cannibal Camp",
+    "title": "Abandoned Cannibal Camp",
     "description": "5x Tents",
-    "x": 1511,
-    "y": 889,
+    "x": 1568,
+    "y": 890,
     "z": 0
   },
   {
@@ -3575,5 +3681,25 @@
     "z": 0,
     "isUnderground": true,
     "requirements": [17]
+  },
+  {
+    "id": 428,
+    "type": "uni",
+    "title": "Knight V",
+    "description": "Next to Winter Jacket",
+    "x": -1031,
+    "y": -624,
+    "z": 0
+  },
+  {
+    "id": 429,
+    "type": "vision",
+    "title": "Night Vision",
+    "description": "On the head of Occultist",
+    "x": -150,
+    "y": -420,
+    "z": 0,
+    "isUnderground": true,
+    "requirements": [11]
   }
 ]
