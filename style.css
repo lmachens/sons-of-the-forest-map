@@ -373,6 +373,7 @@ select {
   display: flex;
   gap: 0.25rem;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .description {
@@ -526,7 +527,6 @@ select {
   align-items: center;
   flex-wrap: wrap;
   overflow: auto;
-  max-height: 100px;
   margin-bottom: 0.2rem;
 }
 

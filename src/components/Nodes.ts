@@ -37,6 +37,15 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       .forEach((node) =>
         addMarker(node, false, discoveredNodeIDs.includes(node.id))
       );
+
+    const customNodesCount = document.querySelector<HTMLSpanElement>(
+      "#custom_nodes_count"
+    )!;
+    customNodesCount.innerText = customNodes.length.toString();
+    const discoveredNodesCount = document.querySelector<HTMLSpanElement>(
+      "#discovered_nodes_count"
+    )!;
+    discoveredNodesCount.innerText = discoveredNodeIDs.length.toString();
   }
   refresh();
 
@@ -223,6 +232,17 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
         .addTo(map);
     });
   }
+
+  const resetDiscoveredNodes = document.querySelector<HTMLButtonElement>(
+    "#reset_discovered_nodes"
+  )!;
+  resetDiscoveredNodes.onclick = () => {
+    if (!confirm("Are you sure you want to reset all discovered nodes?")) {
+      return;
+    }
+    setDiscoveredNodeIDs([]);
+    refresh();
+  };
 
   return {
     refresh,
