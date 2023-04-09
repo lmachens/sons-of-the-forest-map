@@ -19,6 +19,7 @@ export type Node = {
   color?: string;
   isUnderground?: boolean;
   requirements?: number[];
+  items?: number[];
 };
 
 export const types: NodeType[] = [
@@ -185,7 +186,7 @@ export const types: NodeType[] = [
   },
   {
     value: "cave",
-    title: "Cave",
+    title: "Cave Entrance",
     icon: icons.cave,
     filter: "cave",
   },

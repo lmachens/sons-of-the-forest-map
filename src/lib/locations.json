@@ -4,24 +4,21 @@
     "type": "spawnPoint",
     "title": "Spawn Point",
     "x": -220,
-    "y": -4,
-    "z": 408
+    "y": -4
   },
   {
     "id": 2,
     "type": "spawnPoint",
     "title": "Spawn Point",
     "x": -415,
-    "y": 1593,
-    "z": 0
+    "y": 1593
   },
   {
     "id": 3,
     "type": "spawnPoint",
     "title": "Spawn Point",
     "x": -1141,
-    "y": -217,
-    "z": 0
+    "y": -217
   },
   {
     "id": 4,
@@ -29,8 +26,7 @@
     "title": "Modern Axe",
     "description": "In the chest of a dead soldier",
     "x": -703,
-    "y": 445,
-    "z": 0
+    "y": 445
   },
   {
     "id": 5,
@@ -38,8 +34,7 @@
     "title": "Flashlight",
     "description": "On hanging soldier",
     "x": -626,
-    "y": 387,
-    "z": 0
+    "y": 387
   },
   {
     "id": 6,
@@ -56,8 +51,7 @@
     "title": "Stun Baton",
     "description": "In the pile of skulls",
     "x": -1145,
-    "y": -161,
-    "z": 0
+    "y": -161
   },
   {
     "id": 8,
@@ -65,15 +59,15 @@
     "title": "Pistol",
     "description": "On Emergency Raft",
     "x": -1797,
-    "y": 578,
-    "z": 0
+    "y": 578
   },
   {
     "id": 9,
     "type": "pistol",
     "title": "Pistol",
     "x": 1153,
-    "y": -607
+    "y": -607,
+    "isUnderground": true
   },
   {
     "id": 10,
@@ -82,7 +76,6 @@
     "description": "Inside the right tunnel",
     "x": -647,
     "y": 1514,
-    "z": 0,
     "isUnderground": true
   },
   {
@@ -92,7 +85,6 @@
     "description": "Inside the right tunnel",
     "x": -422,
     "y": 1477,
-    "z": 0,
     "isUnderground": true
   },
   {
@@ -102,7 +94,6 @@
     "description": "Next to the projector",
     "x": -1174,
     "y": -217,
-    "z": 0,
     "isUnderground": true
   },
   {
@@ -112,7 +103,6 @@
     "description": "Near the cave exit in the left tunnel",
     "x": -1204,
     "y": -277,
-    "z": 0,
     "isUnderground": true
   },
   {
@@ -121,8 +111,7 @@
     "title": "Slingshot",
     "description": "On one of soldiers bodies",
     "x": -533,
-    "y": 120,
-    "z": 0
+    "y": 120
   },
   {
     "id": 15,
@@ -131,7 +120,6 @@
     "description": "In hands of dead worker inside cave",
     "x": -429,
     "y": -103,
-    "z": 0,
     "isUnderground": true,
     "requirements": [13, 11]
   },
@@ -142,27 +130,24 @@
     "description": "Inside grave",
     "x": -1341,
     "y": 1410,
-    "z": 0,
     "requirements": [15]
   },
   {
     "id": 17,
     "type": "keycard",
-    "title": "Meintenance Card",
+    "title": "Maintenance Card",
     "description": "Next to 3D Printer in the bunker",
     "x": -427,
     "y": 700,
-    "z": 0,
     "isUnderground": true
   },
   {
     "id": 18,
     "type": "fireAxe",
-    "title": "Fire Axe",
+    "title": "Firefighter Axe",
     "description": "Inside the bunker room at the end of a hallway",
     "x": -415,
     "y": 712,
-    "z": 0,
     "isUnderground": true
   },
   {
@@ -172,7 +157,6 @@
     "description": "On desk in Security room, behind Maintenance Door",
     "x": -977,
     "y": 1039,
-    "z": 0,
     "isUnderground": true,
     "requirements": [17]
   },
@@ -183,7 +167,6 @@
     "description": "Inside second hydroponic room",
     "x": -1022,
     "y": 986,
-    "z": 0,
     "isUnderground": true,
     "requirements": [17]
   },
@@ -193,7 +176,6 @@
     "title": "Guest Card",
     "x": -1184,
     "y": 41,
-    "z": 0,
     "isUnderground": true,
     "requirements": [17]
   },
@@ -204,7 +186,6 @@
     "description": "On bar stand top, inside Cave Bunker",
     "x": -1158,
     "y": 17,
-    "z": 0,
     "isUnderground": true,
     "requirements": [17]
   },
@@ -215,7 +196,6 @@
     "description": "In the Theater room, behind Guest Door",
     "x": -1151,
     "y": 116,
-    "z": 0,
     "isUnderground": true
   },
   {
@@ -225,7 +205,6 @@
     "description": "Inside the bathroom, in Bunker B",
     "x": -1120,
     "y": -1039,
-    "z": 0,
     "isUnderground": true
   },
   {
@@ -234,7 +213,6 @@
     "title": "Revolver",
     "x": 1140,
     "y": 1048,
-    "z": 0,
     "isUnderground": true
   },
   {
@@ -243,7 +221,6 @@
     "title": "Katana",
     "x": 1160,
     "y": -651,
-    "z": 0,
     "isUnderground": true
   },
   {
@@ -252,7 +229,6 @@
     "title": "Golden Armor",
     "x": 181,
     "y": -664,
-    "z": 0,
     "isUnderground": true
   },
   {
@@ -261,8 +237,7 @@
     "title": "Binoculars",
     "description": "On top of the kayak",
     "x": -1112,
-    "y": 1721,
-    "z": 0
+    "y": 1721
   },
   {
     "id": 115,
@@ -270,8 +245,7 @@
     "title": "Can Opener",
     "description": "You need it to open cans with cat food",
     "x": -315,
-    "y": 1612,
-    "z": 0
+    "y": 1612
   },
   {
     "id": 340,
@@ -279,65 +253,63 @@
     "title": "Can Opener",
     "description": "Next to campfire",
     "x": -1267,
-    "y": -6,
-    "z": 0
+    "y": -6
   },
   {
     "id": 29,
     "type": "finalBunker",
     "title": "Final Bunker",
     "x": 1766,
-    "y": 553,
-    "z": 0
+    "y": 553
   },
   {
     "id": 30,
     "type": "hatch",
     "title": "Maintenance A",
-    "description": "Use Shovel to enter",
+    "description": "Dig out the hatch",
     "x": -478,
     "y": 710,
-    "z": 0,
-    "requirements": [15]
+    "requirements": [15],
+    "items": [34, 17, 18, 306, 81, 89, 100, 93]
   },
   {
     "id": 31,
     "type": "hatch",
     "title": "Maintenance B",
-    "description": "Use Shovel to enter",
+    "description": "Dig out the hatch",
     "x": -1133,
     "y": -1100,
-    "z": 0,
-    "requirements": [15]
+    "requirements": [15],
+    "items": [36, 24]
   },
   {
     "id": 32,
     "type": "hatch",
     "title": "Maintenance C",
-    "description": "Use shovel to enter",
+    "description": "Dig out the hatch",
     "x": 1110,
     "y": 1007,
-    "z": 0,
-    "requirements": [15]
+    "requirements": [15],
+    "items": [25]
   },
   {
     "id": 307,
     "type": "hatch",
-    "title": "Food and Dining",
-    "description": "Go inside Cave to find it",
+    "title": "Food and Dining Bunker",
     "x": -1027,
     "y": 1036,
-    "z": 0,
     "isUnderground": true,
-    "requirements": [49]
+    "requirements": [49],
+    "items": [19, 20, 311, 312, 315, 316, 314, 308]
   },
   {
     "id": 33,
     "type": "hatch",
-    "title": "Cave Bunker",
-    "x": 1230,
-    "y": -652,
-    "z": 0
+    "title": "Residential Bunker",
+    "x": 1214,
+    "y": -638,
+    "isUnderground": true,
+    "items": [37, 9, 26, 113, 432, 443, 82, 83, 90, 104, 102, 103, 105]
   },
   {
     "id": 34,
@@ -345,7 +317,6 @@
     "title": "3D Printer",
     "x": -418,
     "y": 700,
-    "z": 0,
     "isUnderground": true
   },
   {
@@ -354,7 +325,6 @@
     "title": "3D Printer",
     "x": -1195,
     "y": 78,
-    "z": 0,
     "isUnderground": true
   },
   {
@@ -363,7 +333,6 @@
     "title": "3D Printer",
     "x": -1126,
     "y": -1048,
-    "z": 0,
     "isUnderground": true
   },
   {
@@ -372,112 +341,103 @@
     "title": "3D Printer",
     "x": 1121,
     "y": -602,
-    "z": 0,
     "isUnderground": true
   },
   {
     "id": 38,
     "type": "cave",
-    "title": "Cave Entrance with Bunker opening",
+    "title": "Cave leading to the Bunker",
     "x": 1230,
-    "y": -652,
-    "z": 0
+    "y": -652
   },
   {
     "id": 39,
     "type": "cave",
-    "title": "Updated Cave Entrance",
+    "title": "Large Lake Grotto",
     "x": 966,
-    "y": -406,
-    "z": 0
+    "y": -406
   },
   {
     "id": 40,
     "type": "cave",
-    "title": "Cave Entrance",
+    "title": "Mountaintop Lake Grotto",
     "x": 430,
-    "y": -206,
-    "z": 0
+    "y": -206
   },
   {
     "id": 41,
     "type": "cave",
-    "title": "Cave Entrance",
+    "title": "Frozen Lake Grotto",
     "x": -136,
-    "y": -90,
-    "z": 0
+    "y": -90
   },
   {
     "id": 42,
     "type": "cave",
-    "title": "Cave Entrance",
+    "title": "Golden Armor Cave",
     "x": -530,
     "y": -627,
-    "z": 0
+    "items": [429, 27]
   },
   {
     "id": 43,
     "type": "cave",
-    "title": "Cave Entrance",
+    "title": "Pond Grotto",
     "x": -638,
-    "y": -1046,
-    "z": 0
+    "y": -1046
   },
   {
     "id": 44,
     "type": "cave",
-    "title": "Cave Entrance",
+    "title": "Mountainside Grotto",
     "x": -106,
-    "y": -1060,
-    "z": 0
+    "y": -1060
   },
   {
     "id": 45,
     "type": "cave",
     "title": "Cave Entrance",
     "x": -1104,
-    "y": -179,
-    "z": 0
+    "y": -179
   },
   {
     "id": 46,
     "type": "cave",
-    "title": "Cave Entrance",
+    "title": "Rope Gun Cave",
     "x": -1234,
     "y": -302,
-    "z": 0
+    "items": [13, 12, 96, 98]
   },
   {
     "id": 47,
     "type": "cave",
-    "title": "Cave Entrance",
+    "title": "Cave leading to Entertainment Bunker",
     "x": -1190,
     "y": 126,
-    "z": 0
+    "items": [35, 21, 23, 22, 80, 79, 88, 335, 91, 333, 334, 94]
   },
   {
     "id": 48,
     "type": "cave",
-    "title": "Cave Entrance",
+    "title": "Shovel Cave",
     "x": -530,
     "y": 132,
-    "z": 0
+    "items": [14, 15, 327, 318]
   },
   {
     "id": 49,
     "type": "cave",
-    "title": "Cave Entrance",
+    "title": "Cave leading to the Bunker",
     "x": -1014,
-    "y": 1028,
-    "z": 0
+    "y": 1028
   },
   {
     "id": 50,
     "type": "cave",
-    "title": "Cave Entrance",
+    "title": "Rebreather Cave",
     "x": -423,
     "y": 1512,
-    "z": 0
+    "items": [11, 10, 71, 99]
   },
   {
     "id": 317,
@@ -485,7 +445,6 @@
     "title": "Zip Line",
     "x": -547,
     "y": 144,
-    "z": 0,
     "isUnderground": true,
     "requirements": [13]
   },
@@ -494,80 +453,70 @@
     "type": "camp",
     "title": "Abandoned Camp",
     "x": 1283,
-    "y": -727,
-    "z": 0
+    "y": -727
   },
   {
     "id": 52,
     "type": "camp",
     "title": "Abandoned Camp",
     "x": 1698,
-    "y": 33,
-    "z": 0
+    "y": 33
   },
   {
     "id": 53,
     "type": "camp",
     "title": "Abandoned Camp",
     "x": 1263,
-    "y": 494,
-    "z": 0
+    "y": 494
   },
   {
     "id": 54,
     "type": "camp",
     "title": "Abandoned Camp",
     "x": 725,
-    "y": 738,
-    "z": 0
+    "y": 738
   },
   {
     "id": 55,
     "type": "camp",
     "title": "Abandoned Camp",
     "x": 799,
-    "y": 975,
-    "z": 0
+    "y": 975
   },
   {
     "id": 56,
     "type": "camp",
     "title": "Abandoned Camp",
     "x": -29,
-    "y": 667,
-    "z": 0
+    "y": 667
   },
   {
     "id": 57,
     "type": "camp",
     "title": "Abandoned Camp",
     "x": -237,
-    "y": 944,
-    "z": 0
+    "y": 944
   },
   {
     "id": 58,
     "type": "camp",
     "title": "Abandoned Camp",
     "x": -258,
-    "y": 1073,
-    "z": 0
+    "y": 1073
   },
   {
     "id": 59,
     "type": "camp",
     "title": "Abandoned Camp",
     "x": 61,
-    "y": 1247,
-    "z": 0
+    "y": 1247
   },
   {
     "id": 60,
     "type": "camp",
     "title": "Abandoned Camp",
     "x": -47,
-    "y": 1456,
-    "z": 0
+    "y": 1456
   },
   {
     "id": 61,
@@ -575,8 +524,7 @@
     "title": "Abandoned Camp",
     "description": "2x Tents without save points",
     "x": -749,
-    "y": 1277,
-    "z": 0
+    "y": 1277
   },
   {
     "id": 62,
@@ -584,8 +532,7 @@
     "title": "Abandoned Camp",
     "description": "Tent with save point",
     "x": -1121,
-    "y": 1628,
-    "z": 0
+    "y": 1628
   },
   {
     "id": 63,
@@ -593,8 +540,7 @@
     "title": "Abandoned Camp",
     "description": "2x Tents without save points",
     "x": -1362,
-    "y": 1665,
-    "z": 0
+    "y": 1665
   },
   {
     "id": 64,
@@ -602,8 +548,7 @@
     "title": "Abandoned Camp",
     "description": "2x Tents with save points",
     "x": -1255,
-    "y": 1397,
-    "z": 0
+    "y": 1397
   },
   {
     "id": 65,
@@ -611,8 +556,7 @@
     "title": "Abandoned Camp",
     "description": "2x Tents without save points",
     "x": -1436,
-    "y": 1214,
-    "z": 0
+    "y": 1214
   },
   {
     "id": 66,
@@ -620,8 +564,7 @@
     "title": "Abandoned Camp",
     "description": "4x Tents without save points",
     "x": -1650,
-    "y": 1188,
-    "z": 0
+    "y": 1188
   },
   {
     "id": 145,
@@ -629,8 +572,7 @@
     "title": "Abandoned Camp",
     "descriptiont": "Tent with save point",
     "x": -1388,
-    "y": -217,
-    "z": 0
+    "y": -217
   },
   {
     "id": 146,
@@ -638,8 +580,7 @@
     "title": "Abandoned Camp",
     "description": "2x Tents with save points",
     "x": -1722,
-    "y": 59,
-    "z": 0
+    "y": 59
   },
   {
     "id": 180,
@@ -647,8 +588,7 @@
     "title": "Abandoned Camp",
     "description": "3x Tents with save points",
     "x": -703,
-    "y": 450,
-    "z": 0
+    "y": 450
   },
   {
     "id": 181,
@@ -656,8 +596,7 @@
     "title": "Abandoned Camp",
     "description": "3x Tents without save points",
     "x": -1095,
-    "y": 87,
-    "z": 0
+    "y": 87
   },
   {
     "id": 182,
@@ -665,8 +604,7 @@
     "title": "Abandoned Camp",
     "description": "2x Tents with save points",
     "x": -1268,
-    "y": -11,
-    "z": 0
+    "y": -11
   },
   {
     "id": 183,
@@ -674,8 +612,7 @@
     "title": "Abandoned Camp",
     "description": "Tent with save point",
     "x": -1388,
-    "y": -218,
-    "z": 0
+    "y": -218
   },
   {
     "id": 184,
@@ -683,8 +620,7 @@
     "title": "Abandoned Camp",
     "description": "2x Tents with save points",
     "x": -1257,
-    "y": -597,
-    "z": 0
+    "y": -597
   },
   {
     "id": 185,
@@ -692,8 +628,7 @@
     "title": "Abandoned Camp",
     "description": "2x Tents with save points",
     "x": -1028,
-    "y": -623,
-    "z": 0
+    "y": -623
   },
   {
     "id": 186,
@@ -701,8 +636,7 @@
     "title": "Abandoned Camp",
     "description": "3x Tents without save points",
     "x": -703,
-    "y": -663,
-    "z": 0
+    "y": -663
   },
   {
     "id": 187,
@@ -710,8 +644,7 @@
     "title": "Abandoned Camp",
     "description": "2x Tents with save points",
     "x": -474,
-    "y": -335,
-    "z": 0
+    "y": -335
   },
   {
     "id": 188,
@@ -719,8 +652,7 @@
     "title": "Abandoned Camp",
     "description": "2x Tents with save points",
     "x": -156,
-    "y": -110,
-    "z": 0
+    "y": -110
   },
   {
     "id": 189,
@@ -728,8 +660,7 @@
     "title": "Abandoned Camp",
     "description": "2x Tents with save points",
     "x": 363,
-    "y": -170,
-    "z": 0
+    "y": -170
   },
   {
     "id": 190,
@@ -737,8 +668,7 @@
     "title": "Abandoned Camp",
     "description": "Tent with save point",
     "x": 402,
-    "y": -182,
-    "z": 0
+    "y": -182
   },
   {
     "id": 191,
@@ -746,32 +676,28 @@
     "title": "Abandoned Camp",
     "description": "3x Tents without save points",
     "x": -129,
-    "y": -1038,
-    "z": 0
+    "y": -1038
   },
   {
     "id": 67,
     "type": "village",
     "title": "Abandoned Cabins",
     "x": 1827,
-    "y": -487,
-    "z": 0
+    "y": -487
   },
   {
     "id": 68,
     "type": "village",
     "title": "Abandoned Cabins",
     "x": 1694,
-    "y": 1025,
-    "z": 0
+    "y": 1025
   },
   {
     "id": 69,
     "type": "village",
     "title": "Abandoned Cabins",
     "x": 1459,
-    "y": 747,
-    "z": 0
+    "y": 747
   },
   {
     "id": 70,
@@ -779,7 +705,7 @@
     "title": "Pajamas",
     "x": 1634,
     "y": 514,
-    "z": 0
+    "isUnderground": true
   },
   {
     "id": 71,
@@ -787,31 +713,28 @@
     "title": "Hoodie or Tactical/Leather Jacket",
     "x": -645,
     "y": 1511,
-    "z": 0
+    "isUnderground": true
   },
   {
     "id": 72,
     "type": "cloth",
     "title": "Blazer",
     "x": -922,
-    "y": 1454,
-    "z": 0
+    "y": 1454
   },
   {
     "id": 73,
     "type": "cloth",
     "title": "Camouflage Suit",
     "x": -1111,
-    "y": 1723,
-    "z": 0
+    "y": 1723
   },
   {
     "id": 74,
     "type": "cloth",
     "title": "Hoodie or Tactical/Leather Jacket",
     "x": -1084,
-    "y": 1282,
-    "z": 0
+    "y": 1282
   },
   {
     "id": 75,
@@ -820,7 +743,6 @@
     "description": "On the couch to the left",
     "x": -914,
     "y": 1010,
-    "z": 0,
     "isUnderground": true,
     "requirements": [19]
   },
@@ -828,25 +750,23 @@
     "id": 76,
     "type": "cloth",
     "title": "Leather Jacket",
+    "description": "Inside plane",
     "x": -971,
-    "y": -1061,
-    "z": 0
+    "y": -1061
   },
   {
     "id": 77,
     "type": "cloth",
     "title": "Winter Jacket",
     "x": -1031,
-    "y": -625,
-    "z": 0
+    "y": -625
   },
   {
     "id": 78,
     "type": "cloth",
     "title": "Hoodie or Tactical/Leather Jacket",
     "x": -743,
-    "y": 20,
-    "z": 0
+    "y": 20
   },
   {
     "id": 79,
@@ -854,7 +774,6 @@
     "title": "Track Suit",
     "x": -1141,
     "y": 6,
-    "z": 0,
     "isUnderground": true,
     "requirements": [17]
   },
@@ -864,7 +783,6 @@
     "title": "Pajamas",
     "x": -1116,
     "y": -18,
-    "z": 0,
     "isUnderground": true,
     "requirements": [17]
   },
@@ -875,7 +793,6 @@
     "description": "On cabinet in the batrhroom",
     "x": -416,
     "y": 695,
-    "z": 0,
     "isUnderground": true
   },
   {
@@ -884,7 +801,7 @@
     "title": "Leather Suit",
     "x": 1166,
     "y": -647,
-    "z": 0
+    "isUnderground": true
   },
   {
     "id": 83,
@@ -892,7 +809,6 @@
     "title": "Golden Mask",
     "x": 1139,
     "y": -616,
-    "z": 0,
     "isUnderground": true
   },
   {
@@ -900,8 +816,7 @@
     "type": "cloth",
     "title": "Leather Suit",
     "x": -888,
-    "y": 769,
-    "z": 0
+    "y": 769
   },
   {
     "id": 318,
@@ -909,7 +824,6 @@
     "title": "Wetsuit",
     "x": -509,
     "y": 128,
-    "z": 0,
     "isUnderground": true,
     "requirements": [11]
   },
@@ -919,8 +833,7 @@
     "title": "GPS Locator",
     "description": "On Emergency Raft",
     "x": -1797,
-    "y": 577,
-    "z": 0
+    "y": 577
   },
   {
     "id": 86,
@@ -929,7 +842,6 @@
     "description": "Inside grave",
     "x": -1341,
     "y": 1411,
-    "z": 0,
     "requirements": [15]
   },
   {
@@ -938,8 +850,7 @@
     "title": "GPS Locator",
     "description": "On hanging soldier",
     "x": -627,
-    "y": 386,
-    "z": 0
+    "y": 386
   },
   {
     "id": 88,
@@ -948,7 +859,6 @@
     "description": "Next to 3D Printer inside the bunker",
     "x": -1196,
     "y": 78,
-    "z": 0,
     "isUnderground": true
   },
   {
@@ -958,7 +868,6 @@
     "description": "On the floor, next to bathtube",
     "x": -416,
     "y": 694,
-    "z": 0,
     "isUnderground": true
   },
   {
@@ -968,7 +877,7 @@
     "description": "On top of the autopsy table on 5th level",
     "x": 1139,
     "y": -612,
-    "z": 0
+    "isUnderground": true
   },
   {
     "id": 427,
@@ -976,8 +885,7 @@
     "title": "The Realm Beyond",
     "description": "Between two Occultists corpses",
     "x": -541,
-    "y": -632,
-    "z": 0
+    "y": -632
   },
   {
     "id": 91,
@@ -985,7 +893,7 @@
     "title": "Email - RE: GOLF BALLS",
     "x": -1142,
     "y": 2,
-    "z": 0
+    "isUnderground": true
   },
   {
     "id": 92,
@@ -994,7 +902,6 @@
     "description": "On the table, behind Guest Door",
     "x": -1125,
     "y": 110,
-    "z": 0,
     "isUnderground": true,
     "requirements": [17]
   },
@@ -1005,7 +912,6 @@
     "description": "Next to PC on the left",
     "x": -425,
     "y": 702,
-    "z": 0,
     "isUnderground": true
   },
   {
@@ -1015,18 +921,16 @@
     "description": "On second table behind doors",
     "x": -1178,
     "y": 27,
-    "z": 0,
     "isUnderground": true,
     "requirements": [17]
   },
   {
     "id": 95,
     "type": "document",
-    "title": "Email: RE: GOLF BALLS",
+    "title": "Email - RE: GOLF BALLS",
     "description": "Held by the deceased near the tent",
     "x": -1269,
-    "y": -14,
-    "z": 0
+    "y": -14
   },
   {
     "id": 96,
@@ -1034,7 +938,7 @@
     "title": "Email - Photo Reference",
     "x": -1139,
     "y": -234,
-    "z": 0
+    "isUnderground": true
   },
   {
     "id": 97,
@@ -1042,7 +946,7 @@
     "title": "Email - More Lightning",
     "x": -1017,
     "y": -264,
-    "z": 0
+    "isUnderground": true
   },
   {
     "id": 98,
@@ -1051,7 +955,7 @@
     "description": "Inside the right cave tunnel",
     "x": -1204,
     "y": -267,
-    "z": 0
+    "isUnderground": true
   },
   {
     "id": 99,
@@ -1060,7 +964,7 @@
     "description": "Next to second dead soldier near entrance",
     "x": -428,
     "y": 1497,
-    "z": 0
+    "isUnderground": true
   },
   {
     "id": 100,
@@ -1069,7 +973,6 @@
     "description": "Next to TV",
     "x": -432,
     "y": 705,
-    "z": 0,
     "isUnderground": true,
     "requirements": [17]
   },
@@ -1078,8 +981,7 @@
     "type": "document",
     "title": "Email - Preliminary Findings",
     "x": 1154,
-    "y": -606,
-    "z": 0
+    "y": -606
   },
   {
     "id": 102,
@@ -1088,7 +990,7 @@
     "description": "In the first room after cutscene, on the computer desk",
     "x": 1149,
     "y": -602,
-    "z": 0
+    "isUnderground": true
   },
   {
     "id": 103,
@@ -1097,7 +999,7 @@
     "description": "In corridor after cutscene",
     "x": 1151,
     "y": -619,
-    "z": 0
+    "isUnderground": true
   },
   {
     "id": 104,
@@ -1105,16 +1007,16 @@
     "title": "Numbers Translation",
     "x": 1125,
     "y": -606,
-    "z": 0
+    "isUnderground": true
   },
   {
     "id": 105,
     "type": "document",
-    "title": "Email - GOLF BALL",
+    "title": "Email - RE:RE:RE:RE: GOLF BALLS",
     "description": "On the wooden table, beside the Putter",
     "x": 1125,
     "y": -605,
-    "z": 0
+    "isUnderground": true
   },
   {
     "id": 308,
@@ -1123,7 +1025,6 @@
     "description": "Next to dead person on the floor",
     "x": -1021,
     "y": 1036,
-    "z": 0,
     "isUnderground": true
   },
   {
@@ -1133,7 +1034,6 @@
     "description": "On desk to the left side",
     "x": -975,
     "y": 1036,
-    "z": 0,
     "isUnderground": true,
     "requirements": [17]
   },
@@ -1144,7 +1044,6 @@
     "description": "On the table with mutant",
     "x": -913,
     "y": 1036,
-    "z": 0,
     "isUnderground": true,
     "requirements": [19]
   },
@@ -1155,7 +1054,6 @@
     "description": "On the table with mutant",
     "x": -915,
     "y": 1037,
-    "z": 0,
     "isUnderground": true,
     "requirements": [19]
   },
@@ -1166,7 +1064,6 @@
     "description": "On the table with mutant",
     "x": -914,
     "y": 1038,
-    "z": 0,
     "isUnderground": true,
     "requirements": [19]
   },
@@ -1177,18 +1074,16 @@
     "description": "Beside sunbed in the room with big tree",
     "x": -1120,
     "y": 18,
-    "z": 0,
     "isUnderground": true,
     "requirements": [17]
   },
   {
     "id": 334,
     "type": "document",
-    "title": "Email :RE:RE: GOLF BALLS",
+    "title": "Email - RE:RE: GOLF BALLS",
     "description": "In the room with couches, at the end turn to left table",
     "x": -1191,
     "y": 35,
-    "z": 0,
     "isUnderground": true,
     "requirements": [17]
   },
@@ -1199,7 +1094,6 @@
     "description": "Next to body with stuck guitar inside it",
     "x": -1157,
     "y": 29,
-    "z": 0,
     "isUnderground": true,
     "requirements": [17]
   },
@@ -1208,104 +1102,91 @@
     "type": "hang-glider",
     "title": "Hang Glider",
     "x": -798,
-    "y": -281,
-    "z": 0
+    "y": -281
   },
   {
     "id": 107,
     "type": "hang-glider",
     "title": "Hang Glider",
     "x": -504,
-    "y": -308,
-    "z": 0
+    "y": -308
   },
   {
     "id": 108,
     "type": "hang-glider",
     "title": "Hang Glider",
     "x": -131,
-    "y": -1029,
-    "z": 0
+    "y": -1029
   },
   {
     "id": 109,
     "type": "hang-glider",
     "title": "Hang Glider",
     "x": -1181,
-    "y": -1724,
-    "z": 0
+    "y": -1724
   },
   {
     "id": 110,
     "type": "hang-glider",
     "title": "Hang Glider",
     "x": -1769,
-    "y": 1168,
-    "z": 0
+    "y": 1168
   },
   {
     "id": 111,
     "type": "hang-glider",
     "title": "Hang Glider",
     "x": -1298,
-    "y": 1737,
-    "z": 0
+    "y": 1737
   },
   {
     "id": 112,
     "type": "hang-glider",
     "title": "Hang Glider",
     "x": -31,
-    "y": 666,
-    "z": 0
+    "y": 666
   },
   {
     "id": 174,
     "type": "hang-glider",
     "title": "Hang Glider",
     "x": 365,
-    "y": -161,
-    "z": 0
+    "y": -161
   },
   {
     "id": 175,
     "type": "hang-glider",
     "title": "Hang Glider",
     "x": 1081,
-    "y": -108,
-    "z": 0
+    "y": -108
   },
   {
     "id": 176,
     "type": "hang-glider",
     "title": "Hang Glider",
     "x": 1296,
-    "y": -29,
-    "z": 0
+    "y": -29
   },
   {
     "id": 177,
     "type": "hang-glider",
     "title": "Hang Glider",
     "x": 733,
-    "y": 739,
-    "z": 0
+    "y": 739
   },
   {
     "id": 178,
     "type": "hang-glider",
     "title": "Hang Glider",
     "x": 796,
-    "y": 974,
-    "z": 0
+    "y": 974
   },
   {
     "id": 179,
     "type": "hang-glider",
     "title": "Hang Glider",
     "x": 845,
-    "y": 1104,
-    "z": 0
+    "y": 1104
   },
   {
     "id": 113,
@@ -1313,7 +1194,6 @@
     "title": "Putter",
     "x": 1124,
     "y": -605,
-    "z": 0,
     "isUnderground": true
   },
   {
@@ -1322,376 +1202,329 @@
     "title": "Putter",
     "description": "On the back of the Golf Cart",
     "x": 1589,
-    "y": 1336,
-    "z": 0
+    "y": 1336
   },
   {
     "id": 114,
     "type": "helicopter",
     "title": "Helicopter Crash Site",
     "x": -886,
-    "y": 770,
-    "z": 0
+    "y": 770
   },
   {
     "id": 272,
     "type": "helicopter",
     "title": "Helicopter Crash Site",
     "x": -804,
-    "y": -218,
-    "z": 0
+    "y": -218
   },
   {
     "id": 116,
     "type": "supply",
     "title": "4x Supply Cases",
     "x": -428,
-    "y": 1594,
-    "z": 0
+    "y": 1594
   },
   {
     "id": 117,
     "type": "supply",
     "title": "Supply Case",
     "x": -423,
-    "y": 1613,
-    "z": 0
+    "y": 1613
   },
   {
     "id": 121,
     "type": "supply",
     "title": "2x Supply Cases",
     "x": -651,
-    "y": 1487,
-    "z": 0
+    "y": 1487
   },
   {
     "id": 122,
     "type": "supply",
     "title": "2x Supply Cases",
     "x": -1114,
-    "y": 1690,
-    "z": 0
+    "y": 1690
   },
   {
     "id": 123,
     "type": "supply",
     "title": "2x Supply Cases",
     "x": -1121,
-    "y": 1626,
-    "z": 0
+    "y": 1626
   },
   {
     "id": 126,
     "type": "supply",
     "title": "2x Supply Cases",
     "x": -1364,
-    "y": 1665,
-    "z": 0
+    "y": 1665
   },
   {
     "id": 127,
     "type": "supply",
     "title": "2x Supply Cases",
     "x": -1430,
-    "y": 1710,
-    "z": 0
+    "y": 1710
   },
   {
     "id": 128,
     "type": "supply",
     "title": "2x Supply Cases",
     "x": -1258,
-    "y": 1400,
-    "z": 0
+    "y": 1400
   },
   {
     "id": 132,
     "type": "supply",
     "title": "2x Supply Cases",
     "x": -1652,
-    "y": 1185,
-    "z": 0
+    "y": 1185
   },
   {
     "id": 133,
     "type": "supply",
     "title": "Supply Case",
     "x": -1437,
-    "y": 1213,
-    "z": 0
+    "y": 1213
   },
   {
     "id": 137,
     "type": "supply",
     "title": "Supply Case",
     "x": -1137,
-    "y": -221,
-    "z": 0
+    "y": -221
   },
   {
     "id": 139,
     "type": "supply",
     "title": "3x Supply Cases",
     "x": -1150,
-    "y": -234,
-    "z": 0
+    "y": -234
   },
   {
     "id": 140,
     "type": "supply",
     "title": "Supply Case",
     "x": -1137,
-    "y": -236,
-    "z": 0
+    "y": -236
   },
   {
     "id": 142,
     "type": "supply",
     "title": "2x Supply Cases",
     "x": -1134,
-    "y": -130,
-    "z": 0
+    "y": -130
   },
   {
     "id": 143,
     "type": "supply",
     "title": "Supply Case",
     "x": -1260,
-    "y": -205,
-    "z": 0
+    "y": -205
   },
   {
     "id": 144,
     "type": "supply",
     "title": "Supply Case",
     "x": -1388,
-    "y": -216,
-    "z": 0
+    "y": -216
   },
   {
     "id": 150,
     "type": "supply",
     "title": "Supply Case",
     "x": -1719,
-    "y": 57,
-    "z": 0
+    "y": 57
   },
   {
     "id": 151,
     "type": "supply",
     "title": "2x Supply Cases",
     "x": -1592,
-    "y": 224,
-    "z": 0
+    "y": 224
   },
   {
     "id": 152,
     "type": "supply",
     "title": "2x Supply Cases",
     "x": -1606,
-    "y": 488,
-    "z": 0
+    "y": 488
   },
   {
     "id": 153,
     "type": "supply",
     "title": "2x Supply Cases",
     "x": -1342,
-    "y": 237,
-    "z": 0
+    "y": 237
   },
   {
     "id": 157,
     "type": "supply",
     "title": "2x Supply Cases",
     "x": -1217,
-    "y": 665,
-    "z": 0
+    "y": 665
   },
   {
     "id": 158,
     "type": "supply",
     "title": "2x Supply Cases",
     "x": -1217,
-    "y": 655,
-    "z": 0
+    "y": 655
   },
   {
     "id": 159,
     "type": "supply",
     "title": "Supply Case",
     "x": -1188,
-    "y": 572,
-    "z": 0
+    "y": 572
   },
   {
     "id": 161,
     "type": "supply",
     "title": "2x Supply Cases",
     "x": -883,
-    "y": 773,
-    "z": 0
+    "y": 773
   },
   {
     "id": 162,
     "type": "supply",
     "title": "Supply Case",
     "x": -843,
-    "y": 1011,
-    "z": 0
+    "y": 1011
   },
   {
     "id": 169,
     "type": "supply",
     "title": "2x Supply Cases",
     "x": -1096,
-    "y": 1278,
-    "z": 0
+    "y": 1278
   },
   {
     "id": 170,
     "type": "supply",
     "title": "Supply Case",
     "x": -751,
-    "y": 1276,
-    "z": 0
+    "y": 1276
   },
   {
     "id": 237,
     "type": "supply",
     "title": "Supply Case",
     "x": -1169,
-    "y": -1694,
-    "z": 0
+    "y": -1694
   },
   {
     "id": 238,
     "type": "supply",
     "title": "2x Supply Cases",
     "x": -848,
-    "y": 146,
-    "z": 0
+    "y": 146
   },
   {
     "id": 239,
     "type": "supply",
     "title": "2x Supply Cases",
     "x": -735,
-    "y": 30,
-    "z": 0
+    "y": 30
   },
   {
     "id": 264,
     "type": "supply",
     "title": "3x Supply Cases",
     "x": -606,
-    "y": 873,
-    "z": 0
+    "y": 873
   },
   {
     "id": 265,
     "type": "supply",
     "title": "Supply Case",
     "x": -655,
-    "y": 1497,
-    "z": 0
+    "y": 1497
   },
   {
     "id": 266,
     "type": "supply",
     "title": "2x Supply Cases",
     "x": -1098,
-    "y": 1280,
-    "z": 0
+    "y": 1280
   },
   {
     "id": 267,
     "type": "supply",
     "title": "2x Supply Cases",
     "x": -806,
-    "y": -221,
-    "z": 0
+    "y": -221
   },
   {
     "id": 268,
     "type": "supply",
     "title": "Supply Case",
     "x": -206,
-    "y": 878,
-    "z": 0
+    "y": 878
   },
   {
     "id": 269,
     "type": "supply",
     "title": "Supply Case",
     "x": 39,
-    "y": 1371,
-    "z": 0
+    "y": 1371
   },
   {
     "id": 295,
     "type": "supply",
     "title": "3x Supply Cases",
     "x": 1057,
-    "y": -915,
-    "z": 0
+    "y": -915
   },
   {
     "id": 296,
     "type": "supply",
     "title": "Supply Case",
     "x": 1907,
-    "y": 398,
-    "z": 0
+    "y": 398
   },
   {
     "id": 345,
     "type": "supply",
     "title": "Supply Case",
     "x": 1901,
-    "y": 410,
-    "z": 0
+    "y": 410
   },
   {
     "id": 297,
     "type": "supply",
     "title": "2x Supply Cases",
     "x": 1800,
-    "y": -71,
-    "z": 0
+    "y": -71
   },
   {
     "id": 298,
     "type": "supply",
     "title": "4x Supply Cases",
     "x": 1948,
-    "y": 398,
-    "z": 0
+    "y": 398
   },
   {
     "id": 299,
     "type": "supply",
     "title": "4x Supply Cases",
     "x": 1951,
-    "y": 452,
-    "z": 0
+    "y": 452
   },
   {
     "id": 300,
     "type": "supply",
     "title": "Supply Case",
     "x": 1905,
-    "y": 454,
-    "z": 0
+    "y": 454
   },
   {
     "id": 346,
     "type": "supply",
     "title": "Supply Case",
     "x": 1902,
-    "y": 466,
-    "z": 0
+    "y": 466
   },
   {
     "id": 305,
@@ -1699,7 +1532,6 @@
     "title": "2x Supply Cases",
     "x": -479,
     "y": 712,
-    "z": 0,
     "isUnderground": true
   },
   {
@@ -1708,7 +1540,6 @@
     "title": "3x Supply Cases",
     "x": -1009,
     "y": 954,
-    "z": 0,
     "isUnderground": true,
     "requirements": [17]
   },
@@ -1718,7 +1549,6 @@
     "title": "2x Supply Cases",
     "x": -488,
     "y": 8,
-    "z": 0,
     "isUnderground": true,
     "requirements": [11]
   },
@@ -1728,7 +1558,6 @@
     "title": "Supply Case",
     "x": -524,
     "y": -17,
-    "z": 0,
     "isUnderground": true,
     "requirements": [11]
   },
@@ -1738,7 +1567,6 @@
     "title": "Supply Case",
     "x": -580,
     "y": -95,
-    "z": 0,
     "isUnderground": true,
     "requirements": [11]
   },
@@ -1747,8 +1575,7 @@
     "type": "supply",
     "title": "2x Supply Cases",
     "x": -1094,
-    "y": 90,
-    "z": 0
+    "y": 90
   },
   {
     "id": 330,
@@ -1756,7 +1583,6 @@
     "title": "2x Supply Cases",
     "x": -1195,
     "y": 81,
-    "z": 0,
     "isUnderground": true
   },
   {
@@ -1765,7 +1591,6 @@
     "title": "Supply Case",
     "x": -1183,
     "y": 28,
-    "z": 0,
     "isUnderground": true,
     "requirements": [17]
   },
@@ -1774,48 +1599,42 @@
     "type": "supply",
     "title": "2x Supply Cases",
     "x": -1267,
-    "y": -14,
-    "z": 0
+    "y": -14
   },
   {
     "id": 142,
     "type": "supply",
     "title": "Supply Case",
     "x": -1267,
-    "y": -6,
-    "z": 0
+    "y": -6
   },
   {
     "id": 143,
     "type": "supply",
     "title": "Supply Case",
     "x": -1275,
-    "y": -13,
-    "z": 0
+    "y": -13
   },
   {
     "id": 343,
     "type": "supply",
     "title": "Supply Case",
     "x": -1783,
-    "y": -749,
-    "z": 0
+    "y": -749
   },
   {
     "id": 344,
     "type": "supply",
     "title": "Supply Case",
     "x": -1772,
-    "y": -761,
-    "z": 0
+    "y": -761
   },
   {
     "id": 416,
     "type": "supply",
     "title": "2x Supply Cases",
     "x": 1258,
-    "y": 196,
-    "z": 0
+    "y": 196
   },
   {
     "id": 417,
@@ -1823,7 +1642,6 @@
     "title": "Supply Case",
     "x": -168,
     "y": -418,
-    "z": 0,
     "isUnderground": true
   },
   {
@@ -1832,7 +1650,6 @@
     "title": "Supply Case",
     "x": -179,
     "y": -418,
-    "z": 0,
     "isUnderground": true
   },
   {
@@ -1841,7 +1658,37 @@
     "title": "2x Supply Cases",
     "x": -464,
     "y": -601,
-    "z": 0,
+    "isUnderground": true
+  },
+  {
+    "id": 445,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": 1137,
+    "y": 1061,
+    "isUnderground": true
+  },
+  {
+    "id": 446,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": 1219,
+    "y": -626
+  },
+  {
+    "id": 447,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": 1157,
+    "y": -623,
+    "isUnderground": true
+  },
+  {
+    "id": 448,
+    "type": "supply",
+    "title": "Supply Case",
+    "x": 1149,
+    "y": -608,
     "isUnderground": true
   },
   {
@@ -1849,128 +1696,112 @@
     "type": "ammo",
     "title": "3x Ammo Cases",
     "x": -435,
-    "y": 1589,
-    "z": 0
+    "y": 1589
   },
   {
     "id": 124,
     "type": "ammo",
     "title": "Ammo Case",
     "x": -1119,
-    "y": 1630,
-    "z": 0
+    "y": 1630
   },
   {
     "id": 129,
     "type": "ammo",
     "title": "Ammo Case",
     "x": -1254,
-    "y": 1395,
-    "z": 0
+    "y": 1395
   },
   {
     "id": 141,
     "type": "ammo",
     "title": "Ammo Case",
     "x": -1146,
-    "y": -234,
-    "z": 0
+    "y": -234
   },
   {
     "id": 148,
     "type": "ammo",
     "title": "2x Ammo Cases",
     "x": -1726,
-    "y": 62,
-    "z": 0
+    "y": 62
   },
   {
     "id": 154,
     "type": "ammo",
     "title": "Ammo Case",
     "x": -1612,
-    "y": 490,
-    "z": 0
+    "y": 490
   },
   {
     "id": 155,
     "type": "ammo",
     "title": "2x Ammo Cases",
     "x": -1249,
-    "y": 217,
-    "z": 0
+    "y": 217
   },
   {
     "id": 156,
     "type": "ammo",
     "title": "Ammo Case",
     "x": -1218,
-    "y": 662,
-    "z": 0
+    "y": 662
   },
   {
     "id": 163,
     "type": "ammo",
     "title": "Ammo Case",
     "x": -887,
-    "y": 767,
-    "z": 0
+    "y": 767
   },
   {
     "id": 164,
     "type": "ammo",
     "title": "Ammo Case",
     "x": -844,
-    "y": 1011,
-    "z": 0
+    "y": 1011
   },
   {
     "id": 166,
     "type": "ammo",
     "title": "Ammo Case",
     "x": -1141,
-    "y": 1127,
-    "z": 0
+    "y": 1127
   },
   {
     "id": 244,
     "type": "ammo",
     "title": "2x Ammo Cases",
     "x": -1322,
-    "y": -490,
-    "z": 0
+    "y": -490
   },
   {
     "id": 262,
     "type": "ammo",
     "title": "Ammo Case",
     "x": -205,
-    "y": 878,
-    "z": 0
+    "y": 878
   },
   {
     "id": 263,
     "type": "ammo",
     "title": "Ammo Case",
     "x": 42,
-    "y": 1371,
-    "z": 0
+    "y": 1371
   },
   {
     "id": 286,
     "type": "ammo",
     "title": "Ammo Case",
     "x": 1805,
-    "y": -67,
-    "z": 0
+    "y": -67
   },
   {
     "id": 287,
     "type": "ammo",
     "title": "2x Ammo Cases",
     "x": 1780,
-    "y": -34,
-    "z": 0
+    "y": -34
   },
   {
     "id": 320,
@@ -1978,7 +1809,6 @@
     "title": "Ammo Case",
     "x": -486,
     "y": 9,
-    "z": 0,
     "isUnderground": true,
     "requirements": [11]
   },
@@ -1988,7 +1818,6 @@
     "title": "2x Ammo Cases",
     "x": -518,
     "y": 11,
-    "z": 0,
     "isUnderground": true,
     "requirements": [11]
   },
@@ -1998,7 +1827,6 @@
     "title": "Ammo Case",
     "x": -563,
     "y": -65,
-    "z": 0,
     "isUnderground": true,
     "requirements": [11]
   },
@@ -2008,7 +1836,6 @@
     "title": "Ammo Case",
     "x": -564,
     "y": -98,
-    "z": 0,
     "isUnderground": true,
     "requirements": [11]
   },
@@ -2018,7 +1845,6 @@
     "title": "Ammo Case",
     "x": -1182,
     "y": 25,
-    "z": 0,
     "isUnderground": true,
     "requirements": [17]
   },
@@ -2027,8 +1853,7 @@
     "type": "flare",
     "title": "Flare Case",
     "x": -434,
-    "y": 1597,
-    "z": 0
+    "y": 1597
   },
   {
     "id": 120,
@@ -2036,7 +1861,6 @@
     "title": "Flare Case",
     "x": -422,
     "y": 1496,
-    "z": 0,
     "isUnderground": true
   },
   {
@@ -2044,56 +1868,49 @@
     "type": "flare",
     "title": "Flare Case",
     "x": -1360,
-    "y": 1667,
-    "z": 0
+    "y": 1667
   },
   {
     "id": 131,
     "type": "flare",
     "title": "Flare Case",
     "x": -1651,
-    "y": 1193,
-    "z": 0
+    "y": 1193
   },
   {
     "id": 134,
     "type": "flare",
     "title": "Flare Case",
     "x": -1436,
-    "y": 1217,
-    "z": 0
+    "y": 1217
   },
   {
     "id": 138,
     "type": "flare",
     "title": "Flare Case",
     "x": -1148,
-    "y": -240,
-    "z": 0
+    "y": -240
   },
   {
     "id": 149,
     "type": "flare",
     "title": "Flare Case",
     "x": -1723,
-    "y": 57,
-    "z": 0
+    "y": 57
   },
   {
     "id": 261,
     "type": "flare",
     "title": "Flare Case",
     "x": -808,
-    "y": -216,
-    "z": 0
+    "y": -216
   },
   {
     "id": 288,
     "type": "flare",
     "title": "Flare Case",
     "x": 1066,
-    "y": -920,
-    "z": 0
+    "y": -920
   },
   {
     "id": 321,
@@ -2101,7 +1918,6 @@
     "title": "Flare Case",
     "x": -490,
     "y": 6,
-    "z": 0,
     "isUnderground": true,
     "requirements": [11]
   },
@@ -2111,7 +1927,6 @@
     "title": "Flare Case",
     "x": -566,
     "y": -98,
-    "z": 0,
     "isUnderground": true,
     "requirements": [11]
   },
@@ -2120,8 +1935,7 @@
     "type": "flare",
     "title": "Flare Case",
     "x": -1093,
-    "y": 84,
-    "z": 0
+    "y": 84
   },
   {
     "id": 420,
@@ -2129,7 +1943,6 @@
     "title": "Flare Case",
     "x": -150,
     "y": -418,
-    "z": 0,
     "isUnderground": true
   },
   {
@@ -2138,7 +1951,6 @@
     "title": "Flare Case",
     "x": -42,
     "y": -344,
-    "z": 0,
     "isUnderground": true
   },
   {
@@ -2146,416 +1958,364 @@
     "type": "crate",
     "title": "3x Crates",
     "x": -1775,
-    "y": 1365,
-    "z": 0
+    "y": 1365
   },
   {
     "id": 135,
     "type": "crate",
     "title": "2x Crates",
     "x": -1467,
-    "y": 1111,
-    "z": 0
+    "y": 1111
   },
   {
     "id": 136,
     "type": "crate",
     "title": "2x Crates",
     "x": -1369,
-    "y": 803,
-    "z": 0
+    "y": 803
   },
   {
     "id": 147,
     "type": "crate",
     "title": "3x Crates",
     "x": -1639,
-    "y": -170,
-    "z": 0
+    "y": -170
   },
   {
     "id": 160,
     "type": "crate",
     "title": "2x Crates",
     "x": -1215,
-    "y": 651,
-    "z": 0
+    "y": 651
   },
   {
     "id": 165,
     "type": "crate",
     "title": "2x Crates",
     "x": -843,
-    "y": 1016,
-    "z": 0
+    "y": 1016
   },
   {
     "id": 167,
     "type": "crate",
     "title": "3x Crates",
     "x": -1079,
-    "y": 1269,
-    "z": 0
+    "y": 1269
   },
   {
     "id": 168,
     "type": "crate",
     "title": "4x Crates",
     "x": -914,
-    "y": 1450,
-    "z": 0
+    "y": 1450
   },
   {
     "id": 171,
     "type": "crate",
     "title": "3x Crates",
     "x": -1353,
-    "y": -835,
-    "z": 0
+    "y": -835
   },
   {
     "id": 172,
     "type": "crate",
     "title": "2x Crates",
     "x": -1130,
-    "y": -1106,
-    "z": 0
+    "y": -1106
   },
   {
     "id": 173,
     "type": "crate",
     "title": "2x Crates",
     "x": -1138,
-    "y": -1092,
-    "z": 0
+    "y": -1092
   },
   {
     "id": 193,
     "type": "crate",
     "title": "3x Crates",
     "x": 1747,
-    "y": -1209,
-    "z": 0
+    "y": -1209
   },
   {
     "id": 194,
     "type": "crate",
     "title": "2x Crates",
     "x": 1734,
-    "y": -1219,
-    "z": 0
+    "y": -1219
   },
   {
     "id": 195,
     "type": "crate",
     "title": "4x Crates",
     "x": 931,
-    "y": -389,
-    "z": 0
+    "y": -389
   },
   {
     "id": 196,
     "type": "crate",
     "title": "2x Crates",
     "x": 1361,
-    "y": -163,
-    "z": 0
+    "y": -163
   },
   {
     "id": 197,
     "type": "crate",
     "title": "2x Crates",
     "x": 1352,
-    "y": -156,
-    "z": 0
+    "y": -156
   },
   {
     "id": 198,
     "type": "crate",
     "title": "2x Crates",
     "x": 1397,
-    "y": -121,
-    "z": 0
+    "y": -121
   },
   {
     "id": 199,
     "type": "crate",
     "title": "2x Crates",
     "x": 1853,
-    "y": 126,
-    "z": 0
+    "y": 126
   },
   {
     "id": 200,
     "type": "crate",
     "title": "2x Crates",
     "x": 1782,
-    "y": -37,
-    "z": 0
+    "y": -37
   },
   {
     "id": 201,
     "type": "crate",
     "title": "Crate",
     "x": 1808,
-    "y": -60,
-    "z": 0
+    "y": -60
   },
   {
     "id": 202,
     "type": "crate",
     "title": "2x Crates",
     "x": 1804,
-    "y": -78,
-    "z": 0
+    "y": -78
   },
   {
     "id": 203,
     "type": "crate",
     "title": "Crate",
     "x": 1465,
-    "y": 679,
-    "z": 0
+    "y": 679
   },
   {
     "id": 205,
     "type": "crate",
     "title": "2x Crates",
     "x": 1506,
-    "y": 670,
-    "z": 0
+    "y": 670
   },
   {
     "id": 206,
     "type": "crate",
     "title": "2x Crates",
     "x": 1503,
-    "y": 684,
-    "z": 0
+    "y": 684
   },
   {
     "id": 207,
     "type": "crate",
     "title": "2x Crates",
     "x": 1570,
-    "y": 894,
-    "z": 0
+    "y": 894
   },
   {
     "id": 208,
     "type": "crate",
     "title": "2x Crates",
     "x": 33,
-    "y": 1374,
-    "z": 0
+    "y": 1374
   },
   {
     "id": 209,
     "type": "crate",
     "title": "2x Crates",
     "x": 50,
-    "y": 1371,
-    "z": 0
+    "y": 1371
   },
   {
     "id": 210,
     "type": "crate",
     "title": "2x Crates",
     "x": 260,
-    "y": 1467,
-    "z": 0
+    "y": 1467
   },
   {
     "id": 211,
     "type": "crate",
     "title": "2x Crates",
     "x": 251,
-    "y": 1490,
-    "z": 0
+    "y": 1490
   },
   {
     "id": 212,
     "type": "crate",
     "title": "2x Crates",
     "x": -771,
-    "y": 762,
-    "z": 0
+    "y": 762
   },
   {
     "id": 213,
     "type": "crate",
     "title": "2x Crates",
     "x": -758,
-    "y": 755,
-    "z": 0
+    "y": 755
   },
   {
     "id": 214,
     "type": "crate",
     "title": "2x Crates",
     "x": -478,
-    "y": 482,
-    "z": 0
+    "y": 482
   },
   {
     "id": 215,
     "type": "crate",
     "title": "2x Crates",
     "x": -1141,
-    "y": 444,
-    "z": 0
+    "y": 444
   },
   {
     "id": 217,
     "type": "crate",
     "title": "2x Crates",
     "x": -1325,
-    "y": -488,
-    "z": 0
+    "y": -488
   },
   {
     "id": 218,
     "type": "crate",
     "title": "2x Crates",
     "x": -967,
-    "y": -792,
-    "z": 0
+    "y": -792
   },
   {
     "id": 219,
     "type": "crate",
     "title": "4x Crates",
     "x": -610,
-    "y": -1042,
-    "z": 0
+    "y": -1042
   },
   {
     "id": 220,
     "type": "crate",
     "title": "2x Crates",
     "x": -1155,
-    "y": -1202,
-    "z": 0
+    "y": -1202
   },
   {
     "id": 221,
     "type": "crate",
     "title": "2x Crates",
     "x": -1775,
-    "y": -1603,
-    "z": 0
+    "y": -1603
   },
   {
     "id": 222,
     "type": "crate",
     "title": "2x Crates",
     "x": -1566,
-    "y": -1655,
-    "z": 0
+    "y": -1655
   },
   {
     "id": 240,
     "type": "crate",
     "title": "2x Crates",
     "x": -1571,
-    "y": -821,
-    "z": 0
+    "y": -821
   },
   {
     "id": 241,
     "type": "crate",
     "title": "2x Crates",
     "x": -1138,
-    "y": -1082,
-    "z": 0
+    "y": -1082
   },
   {
     "id": 242,
     "type": "crate",
     "title": "3x Crates",
     "x": -1153,
-    "y": -1203,
-    "z": 0
+    "y": -1203
   },
   {
     "id": 243,
     "type": "crate",
     "title": "3x Crates",
     "x": -1351,
-    "y": -830,
-    "z": 0
+    "y": -830
   },
   {
     "id": 289,
     "type": "crate",
     "title": "2x Crates",
     "x": 1375,
-    "y": -690,
-    "z": 0
+    "y": -690
   },
   {
     "id": 290,
     "type": "crate",
     "title": "3x Crates",
     "x": 1390,
-    "y": -699,
-    "z": 0
+    "y": -699
   },
   {
     "id": 291,
     "type": "crate",
     "title": "Crate",
     "x": 1061,
-    "y": -928,
-    "z": 0
+    "y": -928
   },
   {
     "id": 292,
     "type": "crate",
     "title": "Crate",
     "x": 1478,
-    "y": 707,
-    "z": 0
+    "y": 707
   },
   {
     "id": 293,
     "type": "crate",
     "title": "Crate",
     "x": 1424,
-    "y": 851,
-    "z": 0
+    "y": 851
   },
   {
     "id": 294,
     "type": "crate",
     "title": "2x Crates",
     "x": 1430,
-    "y": 834,
-    "z": 0
+    "y": 834
   },
   {
     "id": 349,
     "type": "crate",
     "title": "Coffin",
     "x": -1679,
-    "y": -1760,
-    "z": 0
+    "y": -1760
   },
   {
     "id": 350,
     "type": "crate",
     "title": "2x Coffins",
     "x": -1681,
-    "y": -1740,
-    "z": 0
+    "y": -1740
   },
   {
     "id": 192,
     "type": "info",
     "title": "Big Old Cross",
     "x": 1728,
-    "y": -1198,
-    "z": 0
+    "y": -1198
   },
   {
     "id": 204,
@@ -2563,599 +2323,595 @@
     "title": "Wall Painting",
     "x": 870,
     "y": -379,
-    "z": 0
+    "isUnderground": true
   },
   {
     "id": 216,
     "type": "info",
     "title": "Hanging Skeletons",
     "x": 1489,
-    "y": 716,
-    "z": 0
+    "y": 716
   },
   {
     "id": 245,
     "type": "info",
     "title": "Plane Crash Site",
     "x": 36,
-    "y": -1062,
-    "z": 0
+    "y": -1062
   },
   {
     "id": 270,
     "type": "info",
     "title": "Corpses of occultists",
     "x": -425,
-    "y": 830,
-    "z": 0
+    "y": 830
   },
   {
     "id": 271,
     "type": "info",
     "title": "Sitting Skeleton",
     "x": -1140,
-    "y": 1128,
-    "z": 0
+    "y": 1128
   },
   {
     "id": 301,
     "type": "info",
     "title": "Skeletons Pile",
     "x": 1571,
-    "y": 800,
-    "z": 0
+    "y": 800
   },
   {
     "id": 302,
     "type": "info",
     "title": "Helipad A",
     "x": 1928,
-    "y": 454,
-    "z": 0
+    "y": 454
   },
   {
     "id": 303,
     "type": "info",
     "title": "Helipad B",
     "x": 1827,
-    "y": 399,
-    "z": 0
+    "y": 399
   },
   {
     "id": 304,
     "type": "info",
     "title": "Leg and Torso Effigies",
     "x": -495,
-    "y": 1433,
-    "z": 0
+    "y": 1433
   },
   {
     "id": 351,
     "type": "info",
     "title": "5x Effigies",
     "x": -1630,
-    "y": 832,
-    "z": 0
+    "y": 832
   },
   {
     "id": 352,
     "type": "info",
     "title": "3x Effigies",
     "x": -639,
-    "y": 1494,
-    "z": 0
+    "y": 1494
   },
   {
     "id": 353,
     "type": "info",
     "title": "Dead Soldier Effigie",
     "x": -420,
-    "y": 1643,
-    "z": 0
+    "y": 1643
   },
   {
     "id": 354,
     "type": "info",
     "title": "Dead Soldier Effigie",
     "x": -400,
-    "y": 1645,
-    "z": 0
+    "y": 1645
   },
   {
     "id": 355,
     "type": "info",
     "title": "3x Effigies",
     "x": 1571,
-    "y": 790,
-    "z": 0
+    "y": 790
   },
   {
     "id": 356,
     "type": "info",
     "title": "3x Effigies",
     "x": 1871,
-    "y": 143,
-    "z": 0
+    "y": 143
+  },
+  {
+    "id": 435,
+    "type": "info",
+    "title": "2x Effigies",
+    "x": 924,
+    "y": 1559
   },
   {
     "id": 357,
     "type": "info",
     "title": "Kayak",
     "x": -1118,
-    "y": 1692,
-    "z": 0
+    "y": 1692
   },
   {
     "id": 358,
     "type": "info",
     "title": "2x Kayaks",
     "x": 1882,
-    "y": 1438,
-    "z": 0
+    "y": 1438
   },
   {
     "id": 359,
     "type": "info",
     "title": "Kayak",
     "x": -1111,
-    "y": 1722,
-    "z": 0
+    "y": 1722
   },
   {
     "id": 360,
     "type": "info",
     "title": "2x Kayaks",
     "x": 11,
-    "y": -1853,
-    "z": 0
+    "y": -1853
   },
   {
     "id": 361,
     "type": "info",
     "title": "Boat",
     "x": 1861,
-    "y": 750,
-    "z": 0
+    "y": 750
   },
   {
     "id": 362,
     "type": "info",
     "title": "Boat",
     "x": 631,
-    "y": -1827,
-    "z": 0
+    "y": -1827
   },
   {
     "id": 363,
     "type": "info",
     "title": "3x Boats",
     "x": 1848,
-    "y": 774,
-    "z": 0
+    "y": 774
   },
   {
     "id": 364,
     "type": "info",
     "title": "Boat",
     "x": -512,
-    "y": -1851,
-    "z": 0
+    "y": -1851
   },
   {
     "id": 365,
     "type": "info",
     "title": "2x Boats",
     "x": -529,
-    "y": -1899,
-    "z": 0
+    "y": -1899
   },
   {
     "id": 366,
     "type": "info",
     "title": "2x Boats",
     "x": -1059,
-    "y": -1872,
-    "z": 0
+    "y": -1872
   },
   {
     "id": 367,
     "type": "info",
     "title": "2x Boats",
     "x": -1789,
-    "y": -1591,
-    "z": 0
+    "y": -1591
   },
   {
     "id": 368,
     "type": "info",
     "title": "3x Boats",
     "x": -1761,
-    "y": -1093,
-    "z": 0
+    "y": -1093
   },
   {
     "id": 369,
     "type": "info",
     "title": "Boat",
     "x": -1784,
-    "y": -754,
-    "z": 0
+    "y": -754
   },
   {
     "id": 370,
     "type": "info",
     "title": "2x Boats",
     "x": -1397,
-    "y": 604,
-    "z": 0
+    "y": 604
   },
   {
     "id": 371,
     "type": "info",
     "title": "3x Golf Carts Underwater",
     "x": 1618,
-    "y": 772,
-    "z": 0
+    "y": 772
   },
   {
     "id": 372,
     "type": "info",
     "title": "Golf Cart",
     "x": 1943,
-    "y": 399,
-    "z": 0
+    "y": 399
   },
   {
     "id": 373,
     "type": "info",
     "title": "2x Golf Carts",
     "x": 1905,
-    "y": 460,
-    "z": 0
+    "y": 460
   },
   {
     "id": 374,
     "type": "info",
     "title": "2x Golf Carts",
     "x": 1906,
-    "y": 404,
-    "z": 0
+    "y": 404
   },
   {
     "id": 375,
     "type": "info",
     "title": "Golf Cart",
     "x": 1023,
-    "y": 1641,
-    "z": 0
+    "y": 1641
+  },
+  {
+    "id": 436,
+    "type": "info",
+    "title": "Golf Cart",
+    "x": 987,
+    "y": 1532
+  },
+  {
+    "id": 437,
+    "type": "info",
+    "title": "Golf Cart",
+    "x": 848,
+    "y": 1534
   },
   {
     "id": 376,
     "type": "info",
     "title": "Mutant",
     "x": 209,
-    "y": 1457,
-    "z": 0
+    "y": 1457
   },
   {
     "id": 377,
     "type": "info",
     "title": "Mutant",
     "x": 1812,
-    "y": 142,
-    "z": 0
+    "y": 142
   },
   {
     "id": 378,
     "type": "info",
     "title": "Mutant",
     "x": 1799,
-    "y": -54,
-    "z": 0
+    "y": -54
   },
   {
     "id": 379,
     "type": "info",
     "title": "Mutant",
     "x": -1762,
-    "y": -1596,
-    "z": 0
+    "y": -1596
   },
   {
     "id": 380,
     "type": "info",
     "title": "Mutant",
     "x": -1494,
-    "y": 820,
-    "z": 0
+    "y": 820
   },
   {
     "id": 381,
     "type": "info",
     "title": "2x Dead Killer Whales",
     "x": 1868,
-    "y": 82,
-    "z": 0
+    "y": 82
   },
   {
     "id": 382,
     "type": "info",
     "title": "2x Dead Killer Whales",
     "x": 1854,
-    "y": 96,
-    "z": 0
+    "y": 96
   },
   {
     "id": 383,
     "type": "info",
     "title": "2x Dead Killer Whales",
     "x": -237,
-    "y": 1425,
-    "z": 0
+    "y": 1425
   },
   {
     "id": 384,
     "type": "info",
     "title": "2x Dead Killer Whales",
     "x": -1764,
-    "y": -977,
-    "z": 0
+    "y": -977
   },
   {
     "id": 385,
     "type": "info",
     "title": "Pond",
     "x": 261,
-    "y": -1777,
-    "z": 0
+    "y": -1777
   },
   {
     "id": 386,
     "type": "info",
     "title": "Pond",
     "x": 274,
-    "y": -1749,
-    "z": 0
+    "y": -1749
   },
   {
     "id": 387,
     "type": "info",
     "title": "Pond",
     "x": 290,
-    "y": -1787,
-    "z": 0
+    "y": -1787
   },
   {
     "id": 388,
     "type": "info",
     "title": "Pond",
     "x": -1182,
-    "y": -1589,
-    "z": 0
+    "y": -1589
   },
   {
     "id": 389,
     "type": "info",
     "title": "Pond",
     "x": 1296,
-    "y": -802,
-    "z": 0
+    "y": -802
   },
   {
     "id": 426,
     "type": "info",
     "title": "Pond",
     "x": 1063,
-    "y": -107,
-    "z": 0
+    "y": -107
+  },
+  {
+    "id": 438,
+    "type": "info",
+    "title": "Pond",
+    "x": 1192,
+    "y": 803
+  },
+  {
+    "id": 439,
+    "type": "info",
+    "title": "Pond",
+    "x": 1174,
+    "y": 653
+  },
+  {
+    "id": 440,
+    "type": "info",
+    "title": "Pond",
+    "x": 1239,
+    "y": 269
+  },
+  {
+    "id": 441,
+    "type": "info",
+    "title": "Pond",
+    "x": 1830,
+    "y": -447
+  },
+  {
+    "id": 442,
+    "type": "info",
+    "title": "Pond",
+    "x": 1560,
+    "y": -515
+  },
+  {
+    "id": 444,
+    "type": "info",
+    "title": "Pond",
+    "x": 602,
+    "y": -1012
+  },
+  {
+    "id": 445,
+    "type": "info",
+    "title": "Pond",
+    "x": -285,
+    "y": -1467
   },
   {
     "id": 390,
     "type": "info",
     "title": "4x Graves",
     "x": 1711,
-    "y": -1217,
-    "z": 0
+    "y": -1217
   },
   {
     "id": 391,
     "type": "info",
     "title": "2x Graves",
     "x": 287,
-    "y": -1643,
-    "z": 0
+    "y": -1643
   },
   {
     "id": 392,
     "type": "info",
     "title": "4x Graves",
     "x": -842,
-    "y": 1716,
-    "z": 0
+    "y": 1716
   },
   {
     "id": 393,
     "type": "info",
     "title": "4x Graves",
     "x": -1314,
-    "y": 1474,
-    "z": 0
+    "y": 1474
   },
   {
     "id": 394,
     "type": "info",
     "title": "Grave",
     "x": -1340,
-    "y": 1412,
-    "z": 0
+    "y": 1412
   },
   {
     "id": 395,
     "type": "info",
     "title": "Grave",
     "x": -1455,
-    "y": 1415,
-    "z": 0
+    "y": 1415
   },
   {
     "id": 396,
     "type": "info",
     "title": "Grave",
     "x": -1595,
-    "y": 763,
-    "z": 0
+    "y": 763
   },
   {
     "id": 397,
     "type": "info",
     "title": "3x Graves",
     "x": -1789,
-    "y": 22,
-    "z": 0
+    "y": 22
   },
   {
     "id": 398,
     "type": "info",
     "title": "3x Graves",
     "x": -1455,
-    "y": -124,
-    "z": 0
+    "y": -124
   },
   {
     "id": 399,
     "type": "info",
     "title": "2x Graves",
     "x": -1596,
-    "y": -1131,
-    "z": 0
+    "y": -1131
   },
   {
     "id": 400,
     "type": "info",
     "title": "2x Graves",
     "x": -1611,
-    "y": -1151,
-    "z": 0
+    "y": -1151
   },
   {
     "id": 401,
     "type": "info",
     "title": "2x Graves",
     "x": -1628,
-    "y": 1503,
-    "z": 0
+    "y": 1503
   },
   {
     "id": 402,
     "type": "info",
     "title": "3x Graves",
     "x": -1634,
-    "y": -1508,
-    "z": 0
+    "y": -1508
   },
   {
     "id": 403,
     "type": "info",
     "title": "2x Graves",
     "x": 1818,
-    "y": -488,
-    "z": 0
+    "y": -488
   },
   {
     "id": 404,
     "type": "info",
     "title": "3x Graves",
     "x": 1616,
-    "y": 194,
-    "z": 0
+    "y": 194
   },
   {
     "id": 405,
     "type": "info",
     "title": "2x Graves",
     "x": 1249,
-    "y": 763,
-    "z": 0
+    "y": 763
   },
   {
     "id": 406,
     "type": "info",
     "title": "3x Graves",
     "x": 1430,
-    "y": 861,
-    "z": 0
+    "y": 861
   },
   {
     "id": 407,
     "type": "info",
     "title": "3x Graves",
     "x": 1666,
-    "y": 964,
-    "z": 0
+    "y": 964
   },
   {
     "id": 408,
     "type": "info",
     "title": "3x Graves",
     "x": 1667,
-    "y": 958,
-    "z": 0
+    "y": 958
   },
   {
     "id": 409,
     "type": "info",
     "title": "Grave",
     "x": 1296,
-    "y": 1073,
-    "z": 0
+    "y": 1073
   },
   {
     "id": 410,
     "type": "info",
     "title": "2x Graves",
     "x": 1271,
-    "y": 1161,
-    "z": 0
+    "y": 1161
   },
   {
     "id": 411,
     "type": "info",
     "title": "2x Graves",
     "x": 891,
-    "y": 1361,
-    "z": 0
+    "y": 1361
   },
   {
     "id": 412,
     "type": "info",
     "title": "3x Graves",
     "x": 1255,
-    "y": 1690,
-    "z": 0
+    "y": 1690
   },
   {
     "id": 413,
     "type": "info",
     "title": "3x Graves",
     "x": 527,
-    "y": 1046,
-    "z": 0
+    "y": 1046
   },
   {
     "id": 414,
     "type": "info",
     "title": "2x Graves",
     "x": 122,
-    "y": 1152,
-    "z": 0
+    "y": 1152
   },
   {
     "id": 415,
     "type": "info",
     "title": "4x Graves",
     "x": 64,
-    "y": 1322,
-    "z": 0
+    "y": 1322
   },
   {
     "id": 422,
@@ -3163,7 +2919,6 @@
     "title": "Astronaut Corpse",
     "x": 148,
     "y": -643,
-    "z": 0,
     "isUnderground": true
   },
   {
@@ -3172,7 +2927,6 @@
     "title": "Astronaut Corpse",
     "x": 174,
     "y": -658,
-    "z": 0,
     "isUnderground": true
   },
   {
@@ -3181,7 +2935,6 @@
     "title": "3x Astronaut Corpses",
     "x": 182,
     "y": -671,
-    "z": 0,
     "isUnderground": true
   },
   {
@@ -3190,7 +2943,6 @@
     "title": "3x Astronaut Corpses",
     "x": 175,
     "y": -666,
-    "z": 0,
     "isUnderground": true
   },
   {
@@ -3199,8 +2951,7 @@
     "title": "Small Cannibal Camp",
     "description": "4x Tents",
     "x": -1572,
-    "y": -1660,
-    "z": 0
+    "y": -1660
   },
   {
     "id": 224,
@@ -3208,8 +2959,7 @@
     "title": "Medium Cannibal Camp",
     "description": "5x Tents",
     "x": -1777,
-    "y": -1601,
-    "z": 0
+    "y": -1601
   },
   {
     "id": 225,
@@ -3217,8 +2967,7 @@
     "title": "Small Cannibal Camp",
     "description": "4x Tents",
     "x": -1173,
-    "y": -1697,
-    "z": 0
+    "y": -1697
   },
   {
     "id": 226,
@@ -3226,8 +2975,7 @@
     "title": "Small Cannibal Camp",
     "description": "4x Tents",
     "x": -1575,
-    "y": -818,
-    "z": 0
+    "y": -818
   },
   {
     "id": 227,
@@ -3235,8 +2983,7 @@
     "title": "Small Cannibal Camp",
     "description": "4x Tents",
     "x": -1350,
-    "y": -835,
-    "z": 0
+    "y": -835
   },
   {
     "id": 228,
@@ -3244,8 +2991,7 @@
     "title": "Small Cannibal Camp",
     "description": "3x Tents",
     "x": -1155,
-    "y": -1208,
-    "z": 0
+    "y": -1208
   },
   {
     "id": 229,
@@ -3253,8 +2999,7 @@
     "title": "Big Cannibal Camp",
     "description": "7x Tents",
     "x": -1131,
-    "y": -1083,
-    "z": 0
+    "y": -1083
   },
   {
     "id": 230,
@@ -3262,8 +3007,7 @@
     "title": "Big Cannibal Camp",
     "description": "8x Tents",
     "x": -968,
-    "y": -782,
-    "z": 0
+    "y": -782
   },
   {
     "id": 231,
@@ -3271,8 +3015,7 @@
     "title": "Small Cannibal Camp",
     "description": "3x Tents",
     "x": -1322,
-    "y": -484,
-    "z": 0
+    "y": -484
   },
   {
     "id": 232,
@@ -3280,8 +3023,7 @@
     "title": "Medium Cannibal Camp",
     "description": "5x Tents",
     "x": -1395,
-    "y": -459,
-    "z": 0
+    "y": -459
   },
   {
     "id": 233,
@@ -3289,8 +3031,7 @@
     "title": "Medium Cannibal Camp",
     "description": "5x Tents",
     "x": -1640,
-    "y": -177,
-    "z": 0
+    "y": -177
   },
   {
     "id": 234,
@@ -3298,8 +3039,7 @@
     "title": "Abandoned Cannibal Camp",
     "description": "No Tents left",
     "x": -1058,
-    "y": -258,
-    "z": 0
+    "y": -258
   },
   {
     "id": 235,
@@ -3307,8 +3047,7 @@
     "title": "Small Cannibal Camp",
     "description": "4x Tents",
     "x": -845,
-    "y": 150,
-    "z": 0
+    "y": 150
   },
   {
     "id": 236,
@@ -3316,8 +3055,7 @@
     "title": "Medium Cannibal Camp",
     "description": "5x Tents",
     "x": -740,
-    "y": 25,
-    "z": 0
+    "y": 25
   },
   {
     "id": 246,
@@ -3325,8 +3063,7 @@
     "title": "Medium Cannibal Camp",
     "description": "5x Tents",
     "x": -482,
-    "y": 489,
-    "z": 0
+    "y": 489
   },
   {
     "id": 247,
@@ -3334,8 +3071,7 @@
     "title": "Medium Cannibal Camp",
     "description": "5x Tents",
     "x": -1147,
-    "y": 452,
-    "z": 0
+    "y": 452
   },
   {
     "id": 248,
@@ -3343,8 +3079,7 @@
     "title": "Small Cannibal Camp",
     "description": "4x Tents",
     "x": -1206,
-    "y": 658,
-    "z": 0
+    "y": 658
   },
   {
     "id": 249,
@@ -3352,8 +3087,7 @@
     "title": "Medium Cannibal Camp",
     "description": "6x Tents",
     "x": -1513,
-    "y": 824,
-    "z": 0
+    "y": 824
   },
   {
     "id": 250,
@@ -3361,8 +3095,7 @@
     "title": "Small Cannibal Camp",
     "description": "3x Tents",
     "x": -1470,
-    "y": 1121,
-    "z": 0
+    "y": 1121
   },
   {
     "id": 251,
@@ -3370,8 +3103,7 @@
     "title": "Large Cannibal Camp",
     "description": "10x Tents",
     "x": -1090,
-    "y": 1281,
-    "z": 0
+    "y": 1281
   },
   {
     "id": 252,
@@ -3379,8 +3111,7 @@
     "title": "Small Cannibal Camp",
     "description": "4x Tents",
     "x": -652,
-    "y": 1495,
-    "z": 0
+    "y": 1495
   },
   {
     "id": 253,
@@ -3388,8 +3119,7 @@
     "title": "Medium Cannibal Camp",
     "description": "5x Tents",
     "x": -844,
-    "y": 1019,
-    "z": 0
+    "y": 1019
   },
   {
     "id": 254,
@@ -3397,8 +3127,7 @@
     "title": "Small Cannibal Camp",
     "description": "4x Tents",
     "x": -763,
-    "y": 765,
-    "z": 0
+    "y": 765
   },
   {
     "id": 255,
@@ -3406,8 +3135,7 @@
     "title": "Small Cannibal Camp",
     "description": "3x Tents",
     "x": -602,
-    "y": 880,
-    "z": 0
+    "y": 880
   },
   {
     "id": 256,
@@ -3415,8 +3143,7 @@
     "title": "Medium Cannibal Camp",
     "description": "5x Tents",
     "x": -203,
-    "y": 878,
-    "z": 0
+    "y": 878
   },
   {
     "id": 257,
@@ -3424,8 +3151,7 @@
     "title": "Medium Cannibal Camp",
     "description": "6x Tents",
     "x": -162,
-    "y": 1052,
-    "z": 0
+    "y": 1052
   },
   {
     "id": 258,
@@ -3433,8 +3159,7 @@
     "title": "Medium Cannibal Camp",
     "description": "5x Tents",
     "x": 219,
-    "y": 1136,
-    "z": 0
+    "y": 1136
   },
   {
     "id": 259,
@@ -3442,8 +3167,7 @@
     "title": "Medium Cannibal Camp",
     "description": "5x Tents",
     "x": 43,
-    "y": 1378,
-    "z": 0
+    "y": 1378
   },
   {
     "id": 260,
@@ -3451,8 +3175,7 @@
     "title": "Medium Cannibal Camp",
     "description": "5x Tents",
     "x": 257,
-    "y": 1478,
-    "z": 0
+    "y": 1478
   },
   {
     "id": 273,
@@ -3460,8 +3183,7 @@
     "title": "Abandoned Cannibal Camp",
     "description": "5x Tents",
     "x": 1568,
-    "y": 890,
-    "z": 0
+    "y": 890
   },
   {
     "id": 274,
@@ -3469,8 +3191,7 @@
     "title": "Abandoned Cannibal Camp",
     "description": "No Tents left",
     "x": 1511,
-    "y": 672,
-    "z": 0
+    "y": 672
   },
   {
     "id": 275,
@@ -3478,8 +3199,7 @@
     "title": "Abandoned Cannibal Camp",
     "description": "2x Tents",
     "x": 1468,
-    "y": 672,
-    "z": 0
+    "y": 672
   },
   {
     "id": 276,
@@ -3487,8 +3207,7 @@
     "title": "Abandoned Cannibal Camp",
     "description": "Only one Tent",
     "x": 1478,
-    "y": 703,
-    "z": 0
+    "y": 703
   },
   {
     "id": 277,
@@ -3496,8 +3215,7 @@
     "title": "Abandoned Cannibal Camp",
     "description": "5x Tents",
     "x": 1430,
-    "y": 844,
-    "z": 0
+    "y": 844
   },
   {
     "id": 278,
@@ -3505,8 +3223,7 @@
     "title": "Abandoned Cannibal Camp",
     "description": "6x Tents",
     "x": 1851,
-    "y": 136,
-    "z": 0
+    "y": 136
   },
   {
     "id": 279,
@@ -3514,8 +3231,7 @@
     "title": "Big Cannibal Camp",
     "description": "7x Tents",
     "x": 1779,
-    "y": -28,
-    "z": 0
+    "y": -28
   },
   {
     "id": 280,
@@ -3523,8 +3239,7 @@
     "title": "Medium Cannibal Camp",
     "description": "5x Tents",
     "x": 1802,
-    "y": -67,
-    "z": 0
+    "y": -67
   },
   {
     "id": 281,
@@ -3532,8 +3247,7 @@
     "title": "Small Cannibal Camp",
     "description": "4x Tents",
     "x": 1401,
-    "y": -122,
-    "z": 0
+    "y": -122
   },
   {
     "id": 282,
@@ -3541,8 +3255,7 @@
     "title": "Medium Cannibal Camp",
     "description": "5x Tents",
     "x": 1356,
-    "y": -153,
-    "z": 0
+    "y": -153
   },
   {
     "id": 283,
@@ -3550,8 +3263,7 @@
     "title": "Abandoned Cannibal Camp",
     "description": "6x Tents",
     "x": 1386,
-    "y": -689,
-    "z": 0
+    "y": -689
   },
   {
     "id": 284,
@@ -3559,8 +3271,7 @@
     "title": "Medium Cannibal Camp",
     "description": "5x Tents",
     "x": 1056,
-    "y": -922,
-    "z": 0
+    "y": -922
   },
   {
     "id": 347,
@@ -3568,16 +3279,14 @@
     "title": "Abandoned Cannibal Camp",
     "description": "2x Tents",
     "x": 1733,
-    "y": -1218,
-    "z": 0
+    "y": -1218
   },
   {
     "id": 348,
     "type": "can",
     "title": "Cannibal building",
     "x": -1684,
-    "y": 906,
-    "z": 0
+    "y": 906
   },
   {
     "id": 306,
@@ -3586,7 +3295,6 @@
     "description": "Next to the computer on the left",
     "x": -424,
     "y": 702,
-    "z": 0,
     "isUnderground": true
   },
   {
@@ -3596,7 +3304,6 @@
     "description": "On the right side reagl",
     "x": -972,
     "y": 1040,
-    "z": 0,
     "isUnderground": true,
     "requirements": [17]
   },
@@ -3605,16 +3312,38 @@
     "type": "mod",
     "title": "Shotgun Rail",
     "x": -1362,
-    "y": 1663,
-    "z": 0
+    "y": 1663
+  },
+  {
+    "id": 432,
+    "type": "mod",
+    "title": "Shotgun Rail",
+    "x": 1143,
+    "y": -639,
+    "isUnderground": true
   },
   {
     "id": 342,
     "type": "mod",
     "title": "Pistol Rail",
     "x": -1609,
-    "y": 486,
-    "z": 0
+    "y": 486
+  },
+  {
+    "id": 431,
+    "type": "mod",
+    "title": "Pistol Rail",
+    "x": -807,
+    "y": -220
+  },
+  {
+    "id": 443,
+    "type": "mod",
+    "title": "Pistol Rail",
+    "x": 1154,
+    "y": -606,
+    "isUnderground": true,
+    "requirements": [21]
   },
   {
     "id": 327,
@@ -3623,9 +3352,15 @@
     "description": "In the hand of dead soldier",
     "x": -580,
     "y": -69,
-    "z": 0,
     "isUnderground": true,
     "requirements": [11]
+  },
+  {
+    "id": 430,
+    "type": "mod",
+    "title": "Silencer",
+    "x": -808,
+    "y": -217
   },
   {
     "id": 309,
@@ -3634,7 +3369,6 @@
     "description": "On the right side in first room",
     "x": -1018,
     "y": 1030,
-    "z": 0,
     "isUnderground": true,
     "requirements": [17]
   },
@@ -3645,7 +3379,6 @@
     "description": "At the end of the flooded corridor",
     "x": -930,
     "y": 1024,
-    "z": 0,
     "isUnderground": true,
     "requirements": [19]
   },
@@ -3656,7 +3389,6 @@
     "description": "At the end of the main corridor",
     "x": -1149,
     "y": 51,
-    "z": 0,
     "isUnderground": true,
     "requirements": [17]
   },
@@ -3667,7 +3399,6 @@
     "description": "At the end of a bar section in Night Club room",
     "x": -1170,
     "y": 26,
-    "z": 0,
     "isUnderground": true,
     "requirements": [17]
   },
@@ -3678,9 +3409,26 @@
     "description": "In the right corner of the pool",
     "x": -1139,
     "y": 26,
-    "z": 0,
     "isUnderground": true,
     "requirements": [17]
+  },
+  {
+    "id": 433,
+    "type": "door",
+    "title": "Locked Door",
+    "x": 1142,
+    "y": -608,
+    "isUnderground": true,
+    "requirements": [21]
+  },
+  {
+    "id": 434,
+    "type": "door",
+    "title": "Locked Door",
+    "x": 1218,
+    "y": -625,
+    "isUnderground": true,
+    "requirements": [21]
   },
   {
     "id": 428,
@@ -3688,8 +3436,7 @@
     "title": "Knight V",
     "description": "Next to Winter Jacket",
     "x": -1031,
-    "y": -624,
-    "z": 0
+    "y": -624
   },
   {
     "id": 429,
@@ -3698,8 +3445,16 @@
     "description": "On the head of Occultist",
     "x": -150,
     "y": -420,
-    "z": 0,
     "isUnderground": true,
     "requirements": [11]
+  },
+  {
+    "id": 449,
+    "type": "vision",
+    "title": "Night Vision",
+    "description": "On sitting skeletons head",
+    "x": -609,
+    "y": -1048,
+    "isUnderground": true
   }
 ]
