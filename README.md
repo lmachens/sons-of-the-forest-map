@@ -1,6 +1,6 @@
 # Sons Of The Forest Map
 
-Stay on top of your game with real-time position tracking, nodes of weapons & points of interest, and overlay mode for seamless progress tracking.
+Stay on top of the game Sons Of The Forest with real-time position tracking, nodes of weapons & points of interest, and overlay mode for seamless progress tracking.
 
 ![](/assets/screenshot2.jpg)
 
