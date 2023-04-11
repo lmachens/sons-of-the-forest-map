@@ -104,7 +104,6 @@ export default function CustomNode({
       const latLng = marker.getLatLng();
       const x = latLng.lng;
       const y = latLng.lat;
-      const z = 0;
 
       const customNodes = getCustomNodes();
       customNodes.push({
@@ -114,7 +113,6 @@ export default function CustomNode({
         type,
         x,
         y,
-        z,
         color,
       });
       setCustomNodes(customNodes);
