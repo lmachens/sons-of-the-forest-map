@@ -13,7 +13,6 @@ import {
   setDiscoveredNodeIDs,
   types,
 } from "../lib/nodes";
-import { getItem } from "../lib/storage";
 
 export default function Nodes({ map }: { map: leaflet.Map }) {
   const group = new leaflet.LayerGroup();
@@ -81,9 +80,7 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
 
     const items = location.items
       ?.map((itemsId) => {
-        const location = locations.find(
-          (location) => location.id === itemsId
-        );
+        const location = locations.find((location) => location.id === itemsId);
         return `<p class="italic">${location?.title}</p>`;
       })
       .join("\n");
@@ -180,11 +177,10 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
         const latLng = marker.getLatLng();
         const x = latLng.lng;
         const y = latLng.lat;
-        const z = 0;
 
         let customNodes = getCustomNodes();
         customNodes = customNodes.filter((node) => node.id !== id);
-        customNodes.push({ id, title, description, type, x, y, z, color });
+        customNodes.push({ id, title, description, type, x, y, color });
         setCustomNodes(customNodes);
         marker.pm.disableLayerDrag();
         refresh();

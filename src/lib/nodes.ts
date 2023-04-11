@@ -15,7 +15,6 @@ export type Node = {
   type: string;
   x: number;
   y: number;
-  z: number;
   color?: string;
   isUnderground?: boolean;
   requirements?: number[];
