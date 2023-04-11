@@ -105,7 +105,7 @@ export default function Multiplayer({
       });
     }
   }
-  setLink("https://soft.th.gl/");
+  setLink("https://sotf.th.gl/");
 
   let peer: Peer | null = null;
   peerConnect.onclick = () => {
@@ -119,7 +119,7 @@ export default function Multiplayer({
       status.classList.add("issue");
       status.classList.remove("ok");
       peerIdElement.value = "";
-      setLink("https://soft.th.gl/");
+      setLink("https://sotf.th.gl/");
       Object.keys(connections).forEach((peer) => {
         closeExistingConnection(peer);
       });
@@ -134,7 +134,7 @@ export default function Multiplayer({
       status.classList.add("ok");
       status.classList.remove("issue");
       peerIdElement.value = id;
-      setLink(`https://soft.th.gl/?app_id=${id}`);
+      setLink(`https://sotf.th.gl/?app_id=${id}`);
     });
     peer.on("connection", (conn) => {
       console.log("peer connection", conn);

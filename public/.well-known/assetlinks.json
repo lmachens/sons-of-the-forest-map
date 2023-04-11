@@ -3,7 +3,7 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
-      "package_name": "gl.th.soft.twa",
+      "package_name": "gl.th.sotf.twa",
       "sha256_cert_fingerprints": [
         "52:A0:45:FA:EF:E4:18:B0:96:13:75:BB:E4:1C:57:EA:05:5A:19:8A:08:41:F1:F3:FA:07:58:2E:07:5A:DB:46"
       ]

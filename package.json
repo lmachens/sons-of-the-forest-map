@@ -6,10 +6,10 @@
   "scripts": {
     "dev:overwolf": "vite -c vite-overwolf.config.ts",
     "dev:web": "vite -c vite-web.config.ts",
-    "build": "tsc && vite build  -c vite-overwolf.config.ts && node copy-statics.mjs && ow opk pack dist -o soft.opk && ow opk sign soft.opk",
+    "build": "tsc && vite build  -c vite-overwolf.config.ts && node copy-statics.mjs && ow opk pack dist -o sotf.opk && ow opk sign sotf.opk",
     "web": "tsc && vite build -c vite-web.config.ts",
     "preview": "vite preview",
-    "release": "ow opk upload soft.signed.opk"
+    "release": "ow opk upload sotf.signed.opk"
   },
   "devDependencies": {
     "@overwolf/ow-cli": "0.0.5-0",

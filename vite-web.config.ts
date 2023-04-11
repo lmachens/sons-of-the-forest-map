@@ -27,7 +27,7 @@ export default defineConfig({
       ],
       manifest: {
         name: "Sons Of The Forest Map",
-        short_name: "SOFT Map",
+        short_name: "SOTF Map",
         description:
           "Stay on top of your game with real-time position tracking, nodes of weapons & points of interest, and overlay mode for seamless progress tracking.",
         lang: "en",

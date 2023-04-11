@@ -8,7 +8,7 @@ Stay on top of the game Sons Of The Forest with real-time position tracking, nod
 
 Head over to the [Sons Of The Forest Map](https://www.overwolf.com/app/Leon_Machens-Sons_Of_The_Forest_Map) page on Overwolf and click the "Download" button.
 
-You can also use the web-version of the app [here](https://soft.th.gl), but you will not be able to use the position syncing feature.
+You can also use the web-version of the app [here](https://sotf.th.gl), but you will not be able to use the position syncing feature.
 
 Join the [Discord](https://discord.com/invite/NTZu8Px) to get the latest news and updates.
 
@@ -22,7 +22,7 @@ Join the [Discord](https://discord.com/invite/NTZu8Px) to get the latest news an
 - Custom nodes
 - Overlay mode for seamless progress tracking
 - Easy to use and navigate while playing the game
-- [Web version](https://soft.th.gl) with position syncing
+- [Web version](https://sotf.th.gl) with position syncing
 
 ## Description
 
