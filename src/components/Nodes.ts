@@ -78,12 +78,20 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       })
       .join("\n");
 
+    const items = location.items
+      ?.map((itemsId) => {
+        const location = locations.find((location) => location.id === itemsId);
+        return `<p class="italic">${location?.title}</p>`;
+      })
+      .join("\n");
+
     const tooltipContent = `
     <p class="bold">${location.title ?? ""}</p>
     <p class="italic">${isCustom ? "Custom Node" : type.title}</p>
     <p>${location.description?.replaceAll("\n", "<br/>") || ""}</p>
     ${location.isUnderground ? '<p class="info italic">Underground</p>' : ""}
     ${requirements ? `<p class="bold">Requirements</p>${requirements}` : ""}
+    ${items ? `<p class="bold">Items</p>${items}` : ""}
     <p class="hint">Right-Click to open menu</p>
     `;
     marker.bindTooltip(tooltipContent, {
@@ -169,11 +177,10 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
         const latLng = marker.getLatLng();
         const x = latLng.lng;
         const y = latLng.lat;
-        const z = 0;
 
         let customNodes = getCustomNodes();
         customNodes = customNodes.filter((node) => node.id !== id);
-        customNodes.push({ id, title, description, type, x, y, z, color });
+        customNodes.push({ id, title, description, type, x, y, color });
         setCustomNodes(customNodes);
         marker.pm.disableLayerDrag();
         refresh();
