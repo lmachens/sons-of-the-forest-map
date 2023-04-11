@@ -977,6 +977,16 @@
     "requirements": [17]
   },
   {
+    "id": 335,
+    "type": "document",
+    "title": "Music Album Cover",
+    "description": "Next to corpse with stuck guitar inside it",
+    "x": -1157,
+    "y": 29,
+    "isUnderground": true,
+    "requirements": [17]
+  },
+  {
     "id": 101,
     "type": "document",
     "title": "Email - Preliminary Findings",
@@ -1088,14 +1098,12 @@
     "requirements": [17]
   },
   {
-    "id": 335,
+    "id": 475,
     "type": "document",
-    "title": "Music Album Cover",
-    "description": "Next to body with stuck guitar inside it",
-    "x": -1157,
-    "y": 29,
-    "isUnderground": true,
-    "requirements": [17]
+    "title": "Cult phamplet - You will find meaning in life again",
+    "description": "Between corpses",
+    "x": -633,
+    "y": 1279
   },
   {
     "id": 106,
@@ -1692,6 +1700,90 @@
     "isUnderground": true
   },
   {
+    "id": 450,
+    "type": "supply",
+    "title": "Supply Case",
+    "x": -258,
+    "y": -1
+  },
+  {
+    "id": 451,
+    "type": "supply",
+    "title": "Supply Case",
+    "x": -254,
+    "y": -16
+  },
+  {
+    "id": 452,
+    "type": "supply",
+    "title": "Supply Case",
+    "x": -254,
+    "y": -5
+  },
+  {
+    "id": 453,
+    "type": "supply",
+    "title": "Supply Case",
+    "x": -252,
+    "y": -11
+  },
+  {
+    "id": 454,
+    "type": "supply",
+    "title": "Supply Case",
+    "x": -236,
+    "y": -23
+  },
+  {
+    "id": 465,
+    "type": "supply",
+    "title": "Supply Case",
+    "x": -591,
+    "y": -814
+  },
+  {
+    "id": 466,
+    "type": "supply",
+    "title": "Supply Case",
+    "x": -49,
+    "y": 1451
+  },
+  {
+    "id": 467,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": -45,
+    "y": 1454
+  },
+  {
+    "id": 468,
+    "type": "supply",
+    "title": "Supply Case",
+    "x": -50,
+    "y": 1453
+  },
+  {
+    "id": 469,
+    "type": "supply",
+    "title": "Supply Case",
+    "x": -253,
+    "y": -11
+  },
+  {
+    "id": 476,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": -700,
+    "y": 446
+  },
+  {
+    "id": 477,
+    "type": "supply",
+    "title": "2x Supply Cases",
+    "x": -707,
+    "y": 445
+  },
+  {
     "id": 118,
     "type": "ammo",
     "title": "3x Ammo Cases",
@@ -1849,6 +1941,69 @@
     "requirements": [17]
   },
   {
+    "id": 455,
+    "type": "ammo",
+    "title": "Ammo Case",
+    "x": -256,
+    "y": -16
+  },
+  {
+    "id": 456,
+    "type": "ammo",
+    "title": "Ammo Case",
+    "x": -258,
+    "y": -6
+  },
+  {
+    "id": 457,
+    "type": "ammo",
+    "title": "Ammo Case",
+    "x": -250,
+    "y": 1
+  },
+  {
+    "id": 458,
+    "type": "ammo",
+    "title": "Ammo Case",
+    "x": -238,
+    "y": -10
+  },
+  {
+    "id": 470,
+    "type": "ammo",
+    "title": "Ammo Case",
+    "x": -238,
+    "y": -9
+  },
+  {
+    "id": 471,
+    "type": "ammo",
+    "title": "Ammo Case",
+    "x": -45,
+    "y": 1453
+  },
+  {
+    "id": 472,
+    "type": "ammo",
+    "title": "Ammo Case",
+    "x": -64,
+    "y": 1459
+  },
+  {
+    "id": 478,
+    "type": "ammo",
+    "title": "Ammo Case",
+    "x": -706,
+    "y": 451
+  },
+  {
+    "id": 479,
+    "type": "ammo",
+    "title": "Ammo Case",
+    "x": -707,
+    "y": 457
+  },
+  {
     "id": 119,
     "type": "flare",
     "title": "Flare Case",
@@ -1952,6 +2107,13 @@
     "x": -42,
     "y": -344,
     "isUnderground": true
+  },
+  {
+    "id": 471,
+    "type": "flare",
+    "title": "Flare Case",
+    "x": -710,
+    "y": 461
   },
   {
     "id": 130,
@@ -2311,6 +2473,34 @@
     "y": -1740
   },
   {
+    "id": 484,
+    "type": "crate",
+    "title": "2x Coffin",
+    "x": -970,
+    "y": 819
+  },
+  {
+    "id": 459,
+    "type": "crate",
+    "title": "Crate",
+    "x": -1152,
+    "y": 455
+  },
+  {
+    "id": 460,
+    "type": "crate",
+    "title": "Crate",
+    "x": -747,
+    "y": 28
+  },
+  {
+    "id": 461,
+    "type": "crate",
+    "title": "3x Crates",
+    "x": -112,
+    "y": -103
+  },
+  {
     "id": 192,
     "type": "info",
     "title": "Big Old Cross",
@@ -2342,9 +2532,16 @@
   {
     "id": 270,
     "type": "info",
-    "title": "Corpses of occultists",
+    "title": "Occultists corpses",
     "x": -425,
     "y": 830
+  },
+  {
+    "id": 474,
+    "type": "info",
+    "title": "Occultists corpses",
+    "x": -630,
+    "y": 1270
   },
   {
     "id": 271,
@@ -2429,6 +2626,27 @@
     "title": "2x Effigies",
     "x": 924,
     "y": 1559
+  },
+  {
+    "id": 463,
+    "type": "info",
+    "title": "2x Effigies",
+    "x": -727,
+    "y": 31
+  },
+  {
+    "id": 481,
+    "type": "info",
+    "title": "2x Effigies",
+    "x": -499,
+    "y": 476
+  },
+  {
+    "id": 482,
+    "type": "info",
+    "title": "2x Effigies",
+    "x": -1069,
+    "y": 1296
   },
   {
     "id": 357,
@@ -2578,6 +2796,20 @@
     "y": 1534
   },
   {
+    "id": 473,
+    "type": "info",
+    "title": "2x Golf Carts",
+    "x": -978,
+    "y": 134
+  },
+  {
+    "id": 480,
+    "type": "info",
+    "title": "2x Golf Carts",
+    "x": -1016,
+    "y": 1019
+  },
+  {
     "id": 376,
     "type": "info",
     "title": "Mutant",
@@ -2611,6 +2843,13 @@
     "title": "Mutant",
     "x": -1494,
     "y": 820
+  },
+  {
+    "id": 483,
+    "type": "info",
+    "title": "Mutant",
+    "x": -1065,
+    "y": 1295
   },
   {
     "id": 381,
@@ -2912,6 +3151,13 @@
     "title": "4x Graves",
     "x": 64,
     "y": 1322
+  },
+  {
+    "id": 464,
+    "type": "info",
+    "title": "3x Graves",
+    "x": -1000,
+    "y": 210
   },
   {
     "id": 422,
@@ -3302,8 +3548,8 @@
     "type": "mod",
     "title": "Shotgun Rail",
     "description": "On the right side reagl",
-    "x": -972,
-    "y": 1040,
+    "x": -1175,
+    "y": 26,
     "isUnderground": true,
     "requirements": [17]
   },
@@ -3311,8 +3557,8 @@
     "id": 341,
     "type": "mod",
     "title": "Shotgun Rail",
-    "x": -1362,
-    "y": 1663
+    "x": -47,
+    "y": 1454
   },
   {
     "id": 432,
@@ -3437,6 +3683,20 @@
     "description": "Next to Winter Jacket",
     "x": -1031,
     "y": -624
+  },
+  {
+    "id": 462,
+    "type": "uni",
+    "title": "Knight V",
+    "x": -743,
+    "y": 28
+  },
+  {
+    "id": 485,
+    "type": "uni",
+    "title": "Knight V",
+    "X": -1092,
+    "y": 1277
   },
   {
     "id": 429,
