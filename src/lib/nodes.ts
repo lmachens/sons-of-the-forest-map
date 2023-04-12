@@ -1,4 +1,5 @@
 import icons from "./icons.json";
+import { MapLocation } from "./locations";
 import { getItem, setItem } from "./storage";
 
 export type NodeType = {
@@ -6,19 +7,6 @@ export type NodeType = {
   title: string;
   icon: string;
   filter?: string;
-};
-
-export type Node = {
-  id: number;
-  title?: string;
-  description?: string;
-  type: string;
-  x: number;
-  y: number;
-  color?: string;
-  isUnderground?: boolean;
-  requirements?: number[];
-  items?: number[];
 };
 
 export const types: NodeType[] = [
@@ -318,10 +306,10 @@ export const types: NodeType[] = [
 ];
 
 export function getCustomNodes() {
-  return getItem<Node[]>("custom_nodes", []);
+  return getItem<MapLocation[]>("custom_nodes", []);
 }
 
-export function setCustomNodes(customNodes: Node[]) {
+export function setCustomNodes(customNodes: MapLocation[]) {
   setItem("custom_nodes", customNodes);
 }
 

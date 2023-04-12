@@ -32,11 +32,13 @@ export default function CustomNode({
     const marker = new CanvasMarker(
       [playerPosition.location.y, playerPosition.location.x],
       {
+        id: Date.now(),
         path: types[0].icon,
         color: "#ffffff",
         radius: 16,
         interactive: true,
         pmIgnore: false,
+        tooltipContent: "",
       }
     );
     marker.addTo(map);
@@ -124,6 +126,7 @@ export default function CustomNode({
       direction: "top",
       interactive: true,
       permanent: true,
+      offset: [0, -15],
     });
     marker.pm.enableLayerDrag();
 
