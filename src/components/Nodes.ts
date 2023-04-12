@@ -2,41 +2,80 @@ import leaflet from "leaflet";
 import CanvasMarker from "../lib/canvas-marker";
 import { createElement } from "../lib/elements";
 import { getIconElement } from "../lib/icons";
-import locations from "../lib/locations.json" assert { type: "json" };
+import {
+  MapLocation,
+  getMapLocationById,
+  getMapLocations,
+} from "../lib/locations";
+import { setMeta } from "../lib/meta";
 import {
   filters,
   getCustomNodes,
   getDeselectedFilters,
   getDiscoveredNodeIDs,
-  Node,
   setCustomNodes,
   setDiscoveredNodeIDs,
   types,
 } from "../lib/nodes";
+import { getMapLocationId, setMapLocationId } from "../lib/router";
 
+const ICON_RADIUS = 16;
+const HIGHLIGHTED_ICON_RADIUS = ICON_RADIUS * 1.5;
 export default function Nodes({ map }: { map: leaflet.Map }) {
   const group = new leaflet.LayerGroup();
   const customGroup = new leaflet.LayerGroup();
+
+  let selectedMarker: CanvasMarker | null = null;
+
+  map.on("click", (event) => {
+    // @ts-ignore
+    if (event.originalEvent.propagatedFromMarker) {
+      return;
+    }
+    setMapLocationId(null);
+    unselectMarker();
+  });
 
   function refresh() {
     const deselectedFilters = getDeselectedFilters();
     const customNodes = getCustomNodes();
     const discoveredNodeIDs = getDiscoveredNodeIDs();
     customGroup.clearLayers();
+
+    const mapLocationId = getMapLocationId();
+
     if (!deselectedFilters.includes("custom")) {
-      customNodes.forEach((node) =>
-        addMarker(node, true, discoveredNodeIDs.includes(node.id))
-      );
+      customNodes.forEach((node) => {
+        const isSelected = node.id === mapLocationId;
+        const marker = addMarker(
+          node,
+          true,
+          discoveredNodeIDs.includes(node.id),
+          isSelected
+        );
+        if (isSelected) {
+          selectedMarker = marker;
+        }
+      });
     }
     group.clearLayers();
-    (locations as Node[])
-      .filter((node) => {
-        const type = types.find((type) => type.value === node.type)!;
+    getMapLocations()
+      .filter((mapLocation) => {
+        const type = types.find((type) => type.value === mapLocation.type)!;
         return !deselectedFilters.includes(type.filter!);
       })
-      .forEach((node) =>
-        addMarker(node, false, discoveredNodeIDs.includes(node.id))
-      );
+      .forEach((mapLocation) => {
+        const isSelected = mapLocation.id === mapLocationId;
+        const marker = addMarker(
+          mapLocation,
+          false,
+          discoveredNodeIDs.includes(mapLocation.id),
+          isSelected
+        );
+        if (isSelected) {
+          selectedMarker = marker;
+        }
+      });
 
     const customNodesCount = document.querySelector<HTMLSpanElement>(
       "#custom_nodes_count"
@@ -52,52 +91,94 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
   group.addTo(map);
   customGroup.addTo(map);
 
+  function displaySelectedMarker() {
+    if (selectedMarker) {
+      selectedMarker.bringToFront();
+      selectedMarker.unbindTooltip();
+      selectedMarker.openPopup();
+
+      const mapLocation = getMapLocationById(selectedMarker.options.id);
+      if (mapLocation) {
+        setMeta(mapLocation.title, mapLocation.description);
+      }
+    }
+  }
+
+  function unselectMarker() {
+    if (selectedMarker) {
+      selectedMarker.options.isHighlighted = false;
+      selectedMarker.setRadius(ICON_RADIUS);
+      selectedMarker.closePopup();
+      selectedMarker.bindTooltip(selectedMarker.options.tooltipContent, {
+        direction: "top",
+        offset: [0, -15],
+      });
+      selectedMarker.redraw();
+      selectedMarker = null;
+    }
+  }
+
+  displaySelectedMarker();
+
   let contextMenuTooltip: leaflet.Tooltip | null = null;
 
-  function addMarker(location: Node, isCustom: boolean, isDiscovered: boolean) {
-    const type = types.find((type) => type.value === location.type) || types[0];
+  function addMarker(
+    mapLocation: MapLocation,
+    isCustom: boolean,
+    isDiscovered: boolean,
+    isHighlighted = false
+  ) {
+    const type =
+      types.find((type) => type.value === mapLocation.type) || types[0];
     const filter =
       filters.find((filter) => filter.value === type.filter) || filters[0];
 
-    const marker = new CanvasMarker([location.y, location.x], {
-      path: type.icon,
-      color: location.color || filter.color || "#ffffff",
-      radius: 16,
-      isDiscovered,
-      isUnderground: location.isUnderground,
-      pmIgnore: true,
-    });
-    marker.addTo(isCustom ? customGroup : group);
-
-    const requirements = location.requirements
+    const requirements = mapLocation.requirements
       ?.map((requirementId) => {
-        const location = locations.find(
-          (location) => location.id === requirementId
-        );
-        return `<p class="italic">${location?.title}</p>`;
+        const mapLocation = getMapLocationById(requirementId);
+        return `<p class="italic">${mapLocation?.title}</p>`;
       })
       .join("\n");
 
-    const items = location.items
+    const items = mapLocation.items
       ?.map((itemsId) => {
-        const location = locations.find((location) => location.id === itemsId);
-        return `<p class="italic">${location?.title}</p>`;
+        const mapLocation = getMapLocationById(itemsId);
+        return `<p class="italic">${mapLocation?.title}</p>`;
       })
       .join("\n");
 
     const tooltipContent = `
-    <p class="bold">${location.title ?? ""}</p>
+    <p class="bold">${mapLocation.title ?? ""}</p>
     <p class="italic">${isCustom ? "Custom Node" : type.title}</p>
-    <p>${location.description?.replaceAll("\n", "<br/>") || ""}</p>
-    ${location.isUnderground ? '<p class="info italic">Underground</p>' : ""}
+    <p>${mapLocation.description?.replaceAll("\n", "<br/>") || ""}</p>
+    ${mapLocation.isUnderground ? '<p class="info italic">Underground</p>' : ""}
     ${requirements ? `<p class="bold">Requirements</p>${requirements}` : ""}
     ${items ? `<p class="bold">Items</p>${items}` : ""}
     <p class="hint">Right-Click to open menu</p>
     `;
+
+    const marker = new CanvasMarker([mapLocation.y, mapLocation.x], {
+      id: mapLocation.id,
+      path: type.icon,
+      color: mapLocation.color || filter.color || "#ffffff",
+      radius: isHighlighted ? HIGHLIGHTED_ICON_RADIUS : ICON_RADIUS,
+      isDiscovered,
+      isUnderground: mapLocation.isUnderground,
+      pmIgnore: true,
+      isHighlighted,
+      tooltipContent,
+    });
+    marker.addTo(isCustom ? customGroup : group);
+
     marker.bindTooltip(tooltipContent, {
       direction: "top",
       offset: [0, -15],
     });
+
+    marker.bindPopup(tooltipContent, {
+      offset: [0, -10],
+    });
+
     function openEditCustomNodeTooltip() {
       marker.options.pmIgnore = false;
       leaflet.PM.reInitLayer(marker);
@@ -106,20 +187,20 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
         className: "node-form",
         innerHTML: `
       <label><span>Title</span><input name="title" value="${
-        location.title
+        mapLocation.title
       }" required /></label>
       <label><span>Description</span><textarea name="description">${
-        location.description
+        mapLocation.description
       }</textarea></label>
       <label><span>Color</span><input type="color" name="color" value="${
-        location.color || "#ffffff"
+        mapLocation.color || "#ffffff"
       }"/></label>
       <label><span>Icon</span><div class="types">${types
         .map(
           (type) =>
             `<label class="type-label"><input name="type" type="radio" value="${
               type.value
-            }" ${type.value === location.type ? "checked" : ""} />${
+            }" ${type.value === mapLocation.type ? "checked" : ""} />${
               getIconElement(type).outerHTML
             }</label>`
         )
@@ -135,7 +216,9 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
         innerText: "Delete",
         onclick: () => {
           let customNodes = getCustomNodes();
-          customNodes = customNodes.filter((node) => node.id !== location.id!);
+          customNodes = customNodes.filter(
+            (node) => node.id !== mapLocation.id
+          );
           setCustomNodes(customNodes);
           marker.pm.disableLayerDrag();
           refresh();
@@ -169,7 +252,7 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       form.onsubmit = (event) => {
         event.preventDefault();
         const formData = new FormData(form);
-        const id = location.id!;
+        const id = mapLocation.id;
         const title = formData.get("title") as string;
         const description = formData.get("description") as string;
         const type = formData.get("type") as string;
@@ -210,10 +293,10 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
           let discoveredNodeIDs = getDiscoveredNodeIDs();
           if (isDiscovered) {
             discoveredNodeIDs = discoveredNodeIDs.filter(
-              (id) => id !== location.id
+              (id) => id !== mapLocation.id
             );
           } else {
-            discoveredNodeIDs.push(location.id);
+            discoveredNodeIDs.push(mapLocation.id);
           }
           setDiscoveredNodeIDs(discoveredNodeIDs);
           refresh();
@@ -238,6 +321,23 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
         .setContent(container)
         .addTo(map);
     });
+
+    if (isHighlighted) {
+      marker.bindPopup(tooltipContent);
+      marker.openPopup();
+    }
+
+    marker.on("click", () => {
+      unselectMarker();
+      selectedMarker = marker;
+      selectedMarker.setRadius(HIGHLIGHTED_ICON_RADIUS);
+      selectedMarker.options.isHighlighted = true;
+      selectedMarker.redraw();
+      displaySelectedMarker();
+      setMapLocationId(mapLocation.id);
+    });
+
+    return marker;
   }
 
   const resetDiscoveredNodes = document.querySelector<HTMLButtonElement>(

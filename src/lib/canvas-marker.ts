@@ -7,12 +7,24 @@ leaflet.Canvas.include({
       return;
     }
 
-    const { path, color, radius, isDiscovered, isUnderground } = layer.options;
+    const { path, color, radius, isDiscovered, isUnderground, isHighlighted } =
+      layer.options;
 
     const p = layer._point.round();
     const imageSize = radius * 2;
+
     const dx = p.x - radius;
     const dy = p.y - radius;
+
+    if (isHighlighted) {
+      ctx.beginPath();
+      ctx.arc(dx + radius, dy + radius, radius, 0, Math.PI * 2, true);
+      ctx.fillStyle = "rgba(255, 255, 255, 0.7)";
+      ctx.fill();
+      ctx.strokeStyle = "rgba(255, 255, 255, 0.7)";
+      ctx.lineWidth = 1.5;
+      ctx.stroke();
+    }
 
     ctx.save();
     ctx.translate(dx, dy);
@@ -64,11 +76,14 @@ const renderer = leaflet.canvas() as leaflet.Canvas & {
 };
 
 export type CanvasMarkerOptions = {
+  id: number;
   path: string;
   color: string;
   radius: number;
   isUnderground?: boolean;
   isDiscovered?: boolean;
+  isHighlighted?: boolean;
+  tooltipContent: string;
 };
 
 class CanvasMarker extends leaflet.CircleMarker {
