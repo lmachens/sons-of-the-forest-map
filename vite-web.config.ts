@@ -62,7 +62,7 @@ export default defineConfig({
         dir: "ltr",
       },
       workbox: {
-        globPatterns: ["**/*.{js,css,html,ico,png,svg,webp}"],
+        globPatterns: ["**/*.{js,css,ico,png,svg,webp}"],
       },
       devOptions: {
         enabled: true,
