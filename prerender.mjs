@@ -12,6 +12,7 @@ const server = await createServer({
   // any valid user config options, plus `mode` and `configFile`
   configFile: toAbsolute("vite-web.config.ts"),
   root: __dirname,
+  mode: "production",
   server: {
     port: 1337,
   },
