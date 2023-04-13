@@ -6,6 +6,7 @@ import ImageOverlay from "./components/ImageOverlay";
 import { JoinCommunity } from "./components/JoinCommunity";
 import Map from "./components/Map";
 import Nodes from "./components/Nodes";
+import Zones from "./components/Zones";
 
 let lastLocation = { x: 0, y: 0, z: 0 };
 let lastRotation = 0;
@@ -49,3 +50,4 @@ menuCloseElement.onclick = () => {
 };
 
 JoinCommunity();
+Zones({ map });

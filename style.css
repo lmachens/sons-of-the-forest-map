@@ -31,6 +31,10 @@ body {
   -webkit-user-drag: none;
 }
 
+code {
+  color: rgb(112, 180, 202);
+}
+
 button,
 input[type="submit"],
 .button {
@@ -683,4 +687,10 @@ select {
 .leaflet-popup-tip {
   width: 12px !important;
   height: 12px !important;
+}
+
+.zone-label {
+  font-family: monospace;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 1px black;
 }

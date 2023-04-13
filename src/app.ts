@@ -14,6 +14,7 @@ import Nodes from "./components/Nodes";
 import Player from "./components/Player";
 import Status from "./components/Status";
 import TraceLine from "./components/TraceLine";
+import Zones from "./components/Zones";
 import { WINDOWS } from "./lib/config";
 import {
   listenToGameLaunched,
@@ -159,6 +160,7 @@ waitForOverwolf().then(async () => {
   Filters({ onChange: refresh });
   JoinCommunity();
   GameSessions({ showSession, hideSession });
+  Zones({ map });
 });
 
 async function initAppHeader({ map }: { map: leaflet.Map }) {
