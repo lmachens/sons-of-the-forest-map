@@ -11,9 +11,14 @@ export function setTitle(title?: string) {
 }
 
 export function setDescription(description?: string) {
-  const meta = document.querySelector(
+  let meta = document.querySelector<HTMLMetaElement>(
     "meta[name='description']"
-  ) as HTMLMetaElement;
+  );
+  if (!meta) {
+    meta = document.createElement("meta");
+    meta.name = "description";
+    document.head.appendChild(meta);
+  }
   if (description) {
     meta.content = description;
   } else {

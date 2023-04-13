@@ -79,12 +79,16 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
 
     const customNodesCount = document.querySelector<HTMLSpanElement>(
       "#custom_nodes_count"
-    )!;
-    customNodesCount.innerText = customNodes.length.toString();
+    );
+    if (customNodesCount) {
+      customNodesCount.innerText = customNodes.length.toString();
+    }
     const discoveredNodesCount = document.querySelector<HTMLSpanElement>(
       "#discovered_nodes_count"
-    )!;
-    discoveredNodesCount.innerText = discoveredNodeIDs.length.toString();
+    );
+    if (discoveredNodesCount) {
+      discoveredNodesCount.innerText = discoveredNodeIDs.length.toString();
+    }
   }
   refresh();
 
