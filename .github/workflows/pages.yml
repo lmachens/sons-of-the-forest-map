@@ -27,6 +27,12 @@ jobs:
         with:
           node-version: 18
           cache: "pnpm"
+      - name: Cache Puppeteer
+        id: cache-puppeteer
+        uses: actions/cache@v3
+        with:
+          path: .cache/puppeteer
+          key: ${{ runner.os }}-puppeteer
       - run: pnpm install
       - name: Build Web
         run: pnpm web

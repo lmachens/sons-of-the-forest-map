@@ -63,7 +63,23 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ["**/*.{js,html,css,ico,png,svg,webp}"],
-        globIgnores: ["**/locations/*.webp"],
+        navigateFallbackDenylist: [/^\/locations\/.*\.webp$/],
+        runtimeCaching: [
+          {
+            urlPattern: /^\/locations\/.*\.webp$/,
+            handler: "CacheFirst",
+            options: {
+              cacheName: "locations-images-cache",
+              expiration: {
+                maxEntries: 100,
+                maxAgeSeconds: 60 * 60 * 24 * 365, // <== 365 days
+              },
+              cacheableResponse: {
+                statuses: [200],
+              },
+            },
+          },
+        ],
       },
     }),
   ],
