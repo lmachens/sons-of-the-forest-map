@@ -3101,340 +3101,340 @@
     "isUnderground": true
   },
   {
-    "id": 223,
+    "id": 236,
     "type": "can",
-    "title": "Small Cannibal Camp",
-    "description": "4x Tents",
-    "x": -1572,
-    "y": -1660
-  },
-  {
-    "id": 224,
-    "type": "can",
-    "title": "Medium Cannibal Camp",
-    "description": "5x Tents",
-    "x": -1777,
-    "y": -1601
-  },
-  {
-    "id": 225,
-    "type": "can",
-    "title": "Small Cannibal Camp",
-    "description": "4x Tents",
-    "x": -1173,
-    "y": -1697
-  },
-  {
-    "id": 226,
-    "type": "can",
-    "title": "Small Cannibal Camp",
-    "description": "4x Tents",
-    "x": -1575,
-    "y": -818
-  },
-  {
-    "id": 227,
-    "type": "can",
-    "title": "Small Cannibal Camp",
-    "description": "4x Tents",
-    "x": -1350,
-    "y": -835
-  },
-  {
-    "id": 228,
-    "type": "can",
-    "title": "Small Cannibal Camp",
-    "description": "3x Tents",
-    "x": -1155,
-    "y": -1208
-  },
-  {
-    "id": 229,
-    "type": "can",
-    "title": "Big Cannibal Camp",
-    "description": "7x Tents",
-    "x": -1131,
-    "y": -1083
-  },
-  {
-    "id": 230,
-    "type": "can",
-    "title": "Big Cannibal Camp",
-    "description": "8x Tents",
-    "x": -968,
-    "y": -782
-  },
-  {
-    "id": 231,
-    "type": "can",
-    "title": "Small Cannibal Camp",
-    "description": "3x Tents",
-    "x": -1322,
-    "y": -484
-  },
-  {
-    "id": 232,
-    "type": "can",
-    "title": "Medium Cannibal Camp",
-    "description": "5x Tents",
-    "x": -1395,
-    "y": -459
-  },
-  {
-    "id": 233,
-    "type": "can",
-    "title": "Medium Cannibal Camp",
-    "description": "5x Tents",
-    "x": -1640,
-    "y": -177
+    "title": "Village1",
+    "description": "Medium Village",
+    "x": -738,
+    "y": 27
   },
   {
     "id": 234,
     "type": "can",
-    "title": "Abandoned Cannibal Camp",
-    "description": "No Tents left",
-    "x": -1058,
-    "y": -258
+    "title": "Village2",
+    "description": "Abandoned Village",
+    "x": -1056,
+    "y": -257
   },
   {
-    "id": 235,
+    "id": 230,
     "type": "can",
-    "title": "Small Cannibal Camp",
-    "description": "4x Tents",
-    "x": -845,
-    "y": 150
-  },
-  {
-    "id": 236,
-    "type": "can",
-    "title": "Medium Cannibal Camp",
-    "description": "5x Tents",
-    "x": -740,
-    "y": 25
-  },
-  {
-    "id": 246,
-    "type": "can",
-    "title": "Medium Cannibal Camp",
-    "description": "5x Tents",
-    "x": -482,
-    "y": 489
-  },
-  {
-    "id": 247,
-    "type": "can",
-    "title": "Medium Cannibal Camp",
-    "description": "5x Tents",
-    "x": -1147,
-    "y": 452
+    "title": "Village3",
+    "description": "Big Village",
+    "x": -969,
+    "y": -777
   },
   {
     "id": 248,
     "type": "can",
-    "title": "Small Cannibal Camp",
-    "description": "4x Tents",
-    "x": -1206,
-    "y": 658
-  },
-  {
-    "id": 249,
-    "type": "can",
-    "title": "Medium Cannibal Camp",
-    "description": "6x Tents",
-    "x": -1513,
-    "y": 824
-  },
-  {
-    "id": 250,
-    "type": "can",
-    "title": "Small Cannibal Camp",
-    "description": "3x Tents",
-    "x": -1470,
-    "y": 1121
+    "title": "Village4",
+    "description": "Small Village",
+    "x": -1207,
+    "y": 657 
   },
   {
     "id": 251,
     "type": "can",
-    "title": "Large Cannibal Camp",
-    "description": "10x Tents",
+    "title": "Village5",
+    "description": "Large Village",
     "x": -1090,
     "y": 1281
   },
   {
     "id": 252,
     "type": "can",
-    "title": "Small Cannibal Camp",
-    "description": "4x Tents",
+    "title": "Village6",
+    "description": "Small Village",
     "x": -652,
     "y": 1495
   },
   {
-    "id": 253,
-    "type": "can",
-    "title": "Medium Cannibal Camp",
-    "description": "5x Tents",
-    "x": -844,
-    "y": 1019
-  },
-  {
-    "id": 254,
-    "type": "can",
-    "title": "Small Cannibal Camp",
-    "description": "4x Tents",
-    "x": -763,
-    "y": 765
-  },
-  {
     "id": 255,
     "type": "can",
-    "title": "Small Cannibal Camp",
-    "description": "3x Tents",
+    "title": "Village7",
+    "description": "Small Village",
     "x": -602,
     "y": 880
   },
   {
-    "id": 256,
+    "id": 229,
     "type": "can",
-    "title": "Medium Cannibal Camp",
-    "description": "5x Tents",
-    "x": -203,
-    "y": 878
+    "title": "Village8",
+    "description": "Big Village",
+    "x": -1131,
+    "y": -1083
   },
   {
-    "id": 257,
+    "id": 225,
     "type": "can",
-    "title": "Medium Cannibal Camp",
-    "description": "6x Tents",
-    "x": -162,
-    "y": 1052
+    "title": "Village9",
+    "description": "Small Village",
+    "x": -1173,
+    "y": -1697
+  },
+  {
+    "id": 223,
+    "type": "can",
+    "title": "Village10",
+    "description": "Small Village",
+    "x": -1572,
+    "y": -1660
+  },
+  {
+    "id": 231,
+    "type": "can",
+    "title": "Village11",
+    "description": "Small Village",
+    "x": -1322,
+    "y": -484
+  },
+  {
+    "id": 246,
+    "type": "can",
+    "title": "Village12",
+    "description": "Medium Village",
+    "x": -482,
+    "y": 489
+  },
+  {
+    "id": 250,
+    "type": "can",
+    "title": "Village13",
+    "description": "Small Village",
+    "x": -1470,
+    "y": 1121
+  },
+  {
+    "id": 226,
+    "type": "can",
+    "title": "Village14",
+    "description": "Small Village",
+    "x": -1575,
+    "y": -818
+  },
+  {
+    "id": 254,
+    "type": "can",
+    "title": "Village15",
+    "description": "Small Village",
+    "x": -763,
+    "y": 765
+  },
+  {
+    "id": 249,
+    "type": "can",
+    "title": "Village16",
+    "description": "Medium Village",
+    "x": -1513,
+    "y": 824
+  },
+  {
+    "id": 253,
+    "type": "can",
+    "title": "Village17",
+    "description": "Medium Village",
+    "x": -844,
+    "y": 1019
   },
   {
     "id": 258,
     "type": "can",
-    "title": "Medium Cannibal Camp",
-    "description": "5x Tents",
+    "title": "Village18",
+    "description": "Medium Village",
     "x": 219,
     "y": 1136
   },
   {
     "id": 259,
     "type": "can",
-    "title": "Medium Cannibal Camp",
-    "description": "5x Tents",
+    "title": "Village19",
+    "description": "Medium Village",
     "x": 43,
     "y": 1378
   },
   {
-    "id": 260,
+    "id": 256,
     "type": "can",
-    "title": "Medium Cannibal Camp",
-    "description": "5x Tents",
-    "x": 257,
-    "y": 1478
+    "title": "Village20",
+    "description": "Medium Village",
+    "x": -203,
+    "y": 878
   },
   {
-    "id": 273,
+    "id": 247,
     "type": "can",
-    "title": "Abandoned Cannibal Camp",
-    "description": "5x Tents",
-    "x": 1568,
-    "y": 890
+    "title": "Village21",
+    "description": "Medium Village",
+    "x": -1147,
+    "y": 452
   },
   {
-    "id": 274,
+    "id": 233,
     "type": "can",
-    "title": "Abandoned Cannibal Camp",
-    "description": "No Tents left",
-    "x": 1511,
-    "y": 672
+    "title": "Village22",
+    "description": "Medium Village",
+    "x": -1640,
+    "y": -177
   },
   {
-    "id": 275,
+    "id": 232,
     "type": "can",
-    "title": "Abandoned Cannibal Camp",
-    "description": "2x Tents",
-    "x": 1468,
-    "y": 672
+    "title": "Village23",
+    "description": "Medium Village",
+    "x": -1395,
+    "y": -459
   },
   {
-    "id": 276,
+    "id": 227,
     "type": "can",
-    "title": "Abandoned Cannibal Camp",
-    "description": "Only one Tent",
-    "x": 1478,
-    "y": 703
+    "title": "Village24",
+    "description": "Small Village",
+    "x": -1350,
+    "y": -835
   },
   {
-    "id": 277,
+    "id": 228,
     "type": "can",
-    "title": "Abandoned Cannibal Camp",
-    "description": "5x Tents",
-    "x": 1430,
-    "y": 844
-  },
-  {
-    "id": 278,
-    "type": "can",
-    "title": "Abandoned Cannibal Camp",
-    "description": "6x Tents",
-    "x": 1851,
-    "y": 136
+    "title": "Village25",
+    "description": "Small Village",
+    "x": -1155,
+    "y": -1208
   },
   {
     "id": 279,
     "type": "can",
-    "title": "Big Cannibal Camp",
-    "description": "7x Tents",
+    "title": "Village26",
+    "description": "Abandoned Village",
     "x": 1779,
     "y": -28
   },
   {
     "id": 280,
     "type": "can",
-    "title": "Medium Cannibal Camp",
-    "description": "5x Tents",
+    "title": "Village27",
+    "description": "Abandoned Village",
     "x": 1802,
     "y": -67
   },
   {
-    "id": 281,
+    "id": 278,
     "type": "can",
-    "title": "Small Cannibal Camp",
-    "description": "4x Tents",
-    "x": 1401,
-    "y": -122
+    "title": "Village28",
+    "description": "Medium Village",
+    "x": 1851,
+    "y": 136
+  },
+  {
+    "id": 260,
+    "type": "can",
+    "title": "Village30",
+    "description": "Medium Village",
+    "x": 257,
+    "y": 1478
   },
   {
     "id": 282,
     "type": "can",
-    "title": "Medium Cannibal Camp",
-    "description": "5x Tents",
+    "title": "Village31",
+    "description": "Medium Village",
     "x": 1356,
     "y": -153
   },
   {
-    "id": 283,
+    "id": 281,
     "type": "can",
-    "title": "Abandoned Cannibal Camp",
-    "description": "6x Tents",
-    "x": 1386,
-    "y": -689
+    "title": "Village32",
+    "description": "Small Village",
+    "x": 1401,
+    "y": -122
   },
   {
     "id": 284,
     "type": "can",
-    "title": "Medium Cannibal Camp",
-    "description": "5x Tents",
+    "title": "Village33",
+    "description": "Medium Village",
     "x": 1056,
     "y": -922
   },
   {
-    "id": 347,
+    "id": 224,
+    "type": "can",
+    "title": "Village34",
+    "description": "Medium Village",
+    "x": -1777,
+    "y": -1601
+  },
+  {
+    "id": 235,
+    "type": "can",
+    "title": "Village35",
+    "description": "Small Village",
+    "x": -845,
+    "y": 150
+  },
+  {
+    "id": 257,
+    "type": "can",
+    "title": "Village36",
+    "description": "Medium Village",
+    "x": -162,
+    "y": 1052
+  },
+  {
+    "id": 277,
+    "type": "can",
+    "title": "AbandonedVillage-1",
+    "description": "Abandoned Village",
+    "x": 1430,
+    "y": 844
+  },
+  {
+    "id": 275,
+    "type": "can",
+    "title": "AbandonedVillage-2",
+    "description": "Abandoned Village",
+    "x": 1468,
+    "y": 672
+  },
+  {
+    "id": 274,
     "type": "can",
     "title": "Abandoned Cannibal Camp",
-    "description": "2x Tents",
+    "description": "Abandoned Village",
+    "x": 1511,
+    "y": 672
+  },
+  {
+    "id": 276,
+    "type": "can",
+    "title": "Abandoned Cannibal Camp",
+    "description": "Abandoned Village",
+    "x": 1478,
+    "y": 703
+  },
+  {
+    "id": 273,
+    "type": "can",
+    "title": "AbandonedVillage-3",
+    "description": "Abandoned Village",
+    "x": 1568,
+    "y": 890
+  },
+  {
+    "id": 347,
+    "type": "can",
+    "title": "AbandonedVillage-4",
+    "description": "Abandoned Village",
     "x": 1733,
     "y": -1218
+  },
+  {
+    "id": 283,
+    "type": "can",
+    "title": "AbandonedVillage-5",
+    "description": "Abandoned Village",
+    "x": 1386,
+    "y": -689
   },
   {
     "id": 348,
@@ -3627,32 +3627,25 @@
     "isUnderground": true
   },
   {
-    "id": 486,
+    "id": 528,
     "type": "lake",
-    "title": "LakeP (9)",
-    "x": -1587,
-    "y": 248
+    "title": "LakeA",
+    "x": -1010,
+    "y": -32
   },
   {
-    "id": 487,
+    "id": 505,
     "type": "lake",
-    "title": "LakeP (8)",
-    "x": -1472,
-    "y": 1117
+    "title": "LakeBA",
+    "x": 1609,
+    "y": 769
   },
   {
-    "id": 488,
+    "id": 506,
     "type": "lake",
-    "title": "LakeP 7",
-    "x": -1037,
-    "y": 1297
-  },
-  {
-    "id": 489,
-    "type": "lake",
-    "title": "LakeH",
-    "x": -1030,
-    "y": 804
+    "title": "LakeBB",
+    "x": 1317,
+    "y": 516
   },
   {
     "id": 490,
@@ -3660,13 +3653,6 @@
     "title": "LakeBC",
     "x": -7,
     "y": 1303
-  },
-  {
-    "id": 491,
-    "type": "lake",
-    "title": "LakeC",
-    "x": 10,
-    "y": 1096
   },
   {
     "id": 492,
@@ -3683,11 +3669,543 @@
     "y": 726
   },
   {
+    "id": 491,
+    "type": "lake",
+    "title": "LakeC",
+    "x": 10,
+    "y": 1096
+  },
+  {
+    "id": 520,
+    "type": "lake",
+    "title": "LakeE",
+    "x": 275,
+    "y": -308
+  },
+  {
+    "id": 523,
+    "type": "lake",
+    "title": "LakeF",
+    "x": -980,
+    "y": -733
+  },
+  {
+    "id": 522,
+    "type": "lake",
+    "title": "LakeG",
+    "x": -1274,
+    "y": -643
+  },
+  {
+    "id": 489,
+    "type": "lake",
+    "title": "LakeH",
+    "x": -1030,
+    "y": 804
+  },
+  {
+    "id": 517,
+    "type": "lake",
+    "title": "LakeI",
+    "x": 565,
+    "y": -1485
+  },
+  {
+    "id": 518,
+    "type": "lake",
+    "title": "LakeJ",
+    "x": 565,
+    "y": -1485
+  },
+  {
+    "id": 509,
+    "type": "lake",
+    "title": "LakeK",
+    "x": 1585,
+    "y": -1135
+  },
+  {
+    "id": 524,
+    "type": "lake",
+    "title": "LakeL",
+    "x": -667,
+    "y": -631
+  },
+  {
+    "id": 521,
+    "type": "lake",
+    "title": "LakeM",
+    "x": -1177,
+    "y": -1353
+  },
+  {
+    "id": 510,
+    "type": "lake",
+    "title": "LakeM (1)",
+    "x": 714,
+    "y": -1657
+  },
+  {
+    "id": 511,
+    "type": "lake",
+    "title": "LakeM (2)",
+    "x": 1212,
+    "y": -1609
+  },
+  {
+    "id": 530,
+    "type": "lake",
+    "title": "LakeM (3)",
+    "x": -941,
+    "y": 152
+  },
+  {
+    "id": 508,
+    "type": "lake",
+    "title": "LakeN",
+    "x": 1126,
+    "y": -465
+  },
+  {
+    "id": 529,
+    "type": "lake",
+    "title": "LakeM",
+    "x": -1178,
+    "y": -1353
+  },
+  {
+    "id": 507,
+    "type": "lake",
+    "title": "LakeO",
+    "x": 1273,
+    "y": -129
+  },
+  {
     "id": 494,
     "type": "lake",
     "title": "LakeP",
     "x": -704,
     "y": 458
+  },
+  {
+    "id": 532, 
+    "type": "lake",
+    "title": "LakeP 1",
+    "x": -703,
+    "y": 458
+  },
+  {
+    "id": 533,
+    "type": "lake",
+    "title": "LakeP 2",
+    "x": -1067,
+    "y": 1117
+  },
+  {
+    "id": 534,
+    "type": "lake",
+    "title": "LakeP 3",
+    "x": -1666,
+    "y": 1097
+  },
+  {
+    "id": 527,
+    "type": "lake",
+    "title": "LakeP 4",
+    "x": -1317,
+    "y": 1297
+  },
+  {
+    "id": 526,
+    "type": "lake",
+    "title": "LakeP 5",
+    "x": -1135,
+    "y": 1626
+  },
+  {
+    "id": 525,
+    "type": "lake",
+    "title": "LakeP 6",
+    "x": -1252,
+    "y": 1400
+  },
+  {
+    "id": 488,
+    "type": "lake",
+    "title": "LakeP 7",
+    "x": -1037,
+    "y": 1297
+  },
+  {
+    "id": 535,
+    "type": "lake",
+    "title": "LakeP (4)",
+    "x": -1587,
+    "y": 248
+  },
+  {
+    "id": 536,
+    "type": "lake",
+    "title": "LakeP (5)",
+    "x": -1718,
+    "y": 67
+  },
+  {
+    "id": 537,
+    "type": "lake",
+    "title": "LakeP (6)",
+    "x": -1729,
+    "y": -271
+  },
+  {
+    "id": 538,
+    "type": "lake",
+    "title": "LakeP (7)",
+    "x": -1473,
+    "y": 856
+  },
+  {
+    "id": 487,
+    "type": "lake",
+    "title": "LakeP (8)",
+    "x": -1472,
+    "y": 1117
+  },
+  {
+    "id": 486,
+    "type": "lake",
+    "title": "LakeP (9)",
+    "x": -1382,
+    "y": 1496
+  },
+  {
+    "id": 539,
+    "type": "lake",
+    "title": "LakeP (10)",
+    "x": -238,
+    "y": -1662
+  },
+  {
+    "id": 445,
+    "type": "lake",
+    "title": "LakeP (11)",
+    "x": -285,
+    "y": -1469
+  },
+  {
+    "id": 540,
+    "type": "lake",
+    "title": "LakeP (12)",
+    "x": 147,
+    "y": -1589
+  },
+  {
+    "id": 541,
+    "type": "lake",
+    "title": "LakeP (13)",
+    "x": -1113,
+    "y": 1088
+  },
+  {
+    "id": 388,
+    "type": "lake",
+    "title": "LakeP (14)",
+    "x": -1182,
+    "y": -1589
+  },
+  {
+    "id": 385,
+    "type": "lake",
+    "title": "LakeP (15)",
+    "x": 274,
+    "y": -1748
+  },
+  {
+    "id": 387,
+    "type": "lake",
+    "title": "LakeP (16)",
+    "x": 261,
+    "y": -1777
+  },
+  {
+    "id": 386,
+    "type": "lake",
+    "title": "LakeP (17)",
+    "x": 292,
+    "y": -1786
+  },
+  {
+    "id": 542,
+    "type": "lake",
+    "title": "LakeP (18)",
+    "x": 720,
+    "y": 830
+  },
+  {
+    "id": 543,
+    "type": "lake",
+    "title": "LakeP (19)",
+    "x": 191,
+    "y": 1262
+  },
+  {
+    "id": 544,
+    "type": "lake",
+    "title": "LakeP (20)",
+    "x": -299,
+    "y": 962
+  },
+  {
+    "id": 545,
+    "type": "lake",
+    "title": "LakeP (21)",
+    "x": -157,
+    "y": 1195
+  },
+  {
+    "id": 546,
+    "type": "lake",
+    "title": "LakeP (22)",
+    "x": -175,
+    "y": 935
+  },
+  {
+    "id": 547,
+    "type": "lake",
+    "title": "LakeP (23)",
+    "x": -38,
+    "y": 672
+  },
+  {
+    "id": 548,
+    "type": "lake",
+    "title": "LakeP (24)",
+    "x": -385,
+    "y": 522
+  },
+  {
+    "id": 549,
+    "type": "lake",
+    "title": "LakeP (25)",
+    "x": -330,
+    "y": 897
+  },
+  {
+    "id": 550,
+    "type": "lake",
+    "title": "LakeP (26)",
+    "x": -329,
+    "y": 1136
+  },
+  {
+    "id": 551,
+    "type": "lake",
+    "title": "LakeP (27)",
+    "x": -204,
+    "y": 1094
+  },
+  {
+    "id": 389,
+    "type": "lake",
+    "title": "LakeP (29)",
+    "x": 1296,
+    "y": -801
+  },
+  {
+    "id": 552,
+    "type": "lake",
+    "title": "LakeP (30)",
+    "x": 1451,
+    "y": -423
+  },
+  {
+    "id": 442,
+    "type": "lake",
+    "title": "LakeP (31)",
+    "x": 1561,
+    "y": -514
+  },
+  {
+    "id": 553,
+    "type": "lake",
+    "title": "LakeP (32)",
+    "x": 1552,
+    "y": -398
+  },
+  {
+    "id": 554,
+    "type": "lake",
+    "title": "LakeP (33)",
+    "x": 1630,
+    "y": 26
+  },
+  {
+    "id": 441,
+    "type": "lake",
+    "title": "LakeP (34)",
+    "x": 1830,
+    "y": -447
+  },
+  {
+    "id": 555,
+    "type": "lake",
+    "title": "LakeP (35)",
+    "x": 1660,
+    "y": 377
+  },
+  {
+    "id": 438,
+    "type": "lake",
+    "title": "LakeP (36)",
+    "x": 1193,
+    "y": 804
+  },
+  {
+    "id": 439,
+    "type": "lake",
+    "title": "LakeP (37)",
+    "x": 1173,
+    "y": 653
+  },
+  {
+    "id": 556,
+    "type": "lake",
+    "title": "LakeP (38)",
+    "x": 1552,
+    "y": 516
+  },
+  {
+    "id": 557,
+    "type": "lake",
+    "title": "LakeP (39)",
+    "x": 1725,
+    "y": -287
+  },
+  {
+    "id": 558,
+    "type": "lake",
+    "title": "LakeP (40)",
+    "x": 1562,
+    "y": -272
+  },
+  {
+    "id": 559,
+    "type": "lake",
+    "title": "LakeP (41)",
+    "x": 1468,
+    "y": -596
+  },
+  {
+    "id": 560,
+    "type": "lake",
+    "title": "LakeP (42)",
+    "x": 1064,
+    "y": -107
+  },
+  {
+    "id": 426,
+    "type": "lake",
+    "title": "LakeP (43)",
+    "x": 607,
+    "y": -1010
+  },
+  {
+    "id": 561,
+    "type": "lake",
+    "title": "LakeP (44)",
+    "x": 933,
+    "y": -1249
+  },
+  {
+    "id": 562,
+    "type": "lake",
+    "title": "LakeP (45)",
+    "x": 1671,
+    "y": 947
+  },
+  {
+    "id": 563,
+    "type": "lake",
+    "title": "LakeP (46)",
+    "x": 1703,
+    "y": 553
+  },
+  {
+    "id": 564,
+    "type": "lake",
+    "title": "LakeP (47)",
+    "x": 1528,
+    "y": 362
+  },
+  {
+    "id": 444,
+    "type": "lake",
+    "title": "LakeP (48)",
+    "x": 880,
+    "y": -956
+  },
+  {
+    "id": 565,
+    "type": "lake",
+    "title": "LakeP (49)",
+    "x": 1379,
+    "y": 70
+  },
+  {
+    "id": 440,
+    "type": "lake",
+    "title": "LakeP 50",
+    "x": 1239,
+    "y": 270
+  },
+  {
+    "id": 566,
+    "type": "lake",
+    "title": "LakeP 52",
+    "x": -1037,
+    "y": 1297
+  },
+  {
+    "id": 503,
+    "type": "lake",
+    "title": "LakeQ",
+    "x": -1251,
+    "y": -37
+  },
+  {
+    "id": 504,
+    "type": "lake",
+    "title": "LakeR",
+    "x": -1293,
+    "y": 10
+  },
+  {
+    "id": 500,
+    "type": "lake",
+    "title": "LakeS",
+    "x": -1109,
+    "y": -139
+  },
+  {
+    "id": 501,
+    "type": "lake",
+    "title": "LakeT",
+    "x": -1155,
+    "y": -190
+  },
+  {
+    "id": 502,
+    "type": "lake",
+    "title": "LakeU",
+    "x": -1173,
+    "y": -245
+  },
+  {
+    "id": 531,
+    "type": "lake",
+    "title": "LakeV",
+    "x": -645,
+    "y": -1063
   },
   {
     "id": 495,
@@ -3718,95 +4236,18 @@
     "y": -245
   },
   {
+    "id": 519,
+    "type": "lake",
+    "title": "LakeZ 1",
+    "x": 480,
+    "y": -1679
+  },
+  {
     "id": 499,
     "type": "lake",
     "title": "LakeAGroup",
     "x": -954,
     "y": -16
-  },
-  {
-    "id": 500,
-    "type": "lake",
-    "title": "LakeS",
-    "x": -1109,
-    "y": -139
-  },
-  {
-    "id": 501,
-    "type": "lake",
-    "title": "LakeT",
-    "x": -1155,
-    "y": -190
-  },
-  {
-    "id": 502,
-    "type": "lake",
-    "title": "LakeU",
-    "x": -1173,
-    "y": -245
-  },
-  {
-    "id": 503,
-    "type": "lake",
-    "title": "LakeQ",
-    "x": -1251,
-    "y": -37
-  },
-  {
-    "id": 504,
-    "type": "lake",
-    "title": "LakeR",
-    "x": -1293,
-    "y": 10
-  },
-  {
-    "id": 505,
-    "type": "lake",
-    "title": "LakeBA",
-    "x": 1609,
-    "y": 769
-  },
-  {
-    "id": 506,
-    "type": "lake",
-    "title": "LakeBB",
-    "x": 1317,
-    "y": 516
-  },
-  {
-    "id": 507,
-    "type": "lake",
-    "title": "LakeO",
-    "x": 1273,
-    "y": -129
-  },
-  {
-    "id": 508,
-    "type": "lake",
-    "title": "LakeN",
-    "x": 1126,
-    "y": -465
-  },
-  {
-    "id": 509,
-    "type": "lake",
-    "title": "LakeK",
-    "x": 1585,
-    "y": -1135
-  },
-  {
-    "id": 510,
-    "type": "lake",
-    "title": "LakeM (1)",
-    "x": 714,
-    "y": -1657
-  },
-  {
-    "id": 511,
-    "type": "lake",
-    "title": "LakeM (2)",
-    "x": 1212,
-    "y": -1609
   },
   {
     "id": 512,
@@ -3842,467 +4283,5 @@
     "title": "GolfPondE",
     "x": 1240,
     "y": 1197
-  },
-  {
-    "id": 517,
-    "type": "lake",
-    "title": "LakeI",
-    "x": 565,
-    "y": -1485
-  },
-  {
-    "id": 518,
-    "type": "lake",
-    "title": "LakeJ",
-    "x": 565,
-    "y": -1485
-  },
-  {
-    "id": 519,
-    "type": "lake",
-    "title": "LakeZ 1",
-    "x": 480,
-    "y": -1679
-  },
-  {
-    "id": 520,
-    "type": "lake",
-    "title": "LakeE",
-    "x": 275,
-    "y": -308
-  },
-  {
-    "id": 521,
-    "type": "lake",
-    "title": "LakeY",
-    "x": -646,
-    "y": -1062
-  },
-  {
-    "id": 522,
-    "type": "lake",
-    "title": "LakeM",
-    "x": -1177,
-    "y": -1353
-  },
-  {
-    "id": 523,
-    "type": "lake",
-    "title": "LakeG",
-    "x": -1274,
-    "y": -643
-  },
-  {
-    "id": 524,
-    "type": "lake",
-    "title": "LakeF",
-    "x": -980,
-    "y": -733
-  },
-  {
-    "id": 525,
-    "type": "lake",
-    "title": "LakeL",
-    "x": -667,
-    "y": -631
-  },
-  {
-    "id": 526,
-    "type": "lake",
-    "title": "LakeP 6",
-    "x": -1252,
-    "y": 1400
-  },
-  {
-    "id": 527,
-    "type": "lake",
-    "title": "LakeP 5",
-    "x": -1135,
-    "y": 1626
-  },
-  {
-    "id": 528,
-    "type": "lake",
-    "title": "LakeP 4",
-    "x": -1317,
-    "y": 1297
-  },
-  {
-    "id": 389,
-    "type": "lake",
-    "title": "LakeP (29)",
-    "x": 1296,
-    "y": -801
-  },
-  {
-    "id": 442,
-    "type": "lake",
-    "title": "LakeP (31)",
-    "x": 1561,
-    "y": -514
-  },
-  {
-    "id": 441,
-    "type": "lake",
-    "title": "LakeP (34)",
-    "x": 1830,
-    "y": -447
-  },
-  {
-    "id": 440,
-    "type": "lake",
-    "title": "LakeP 50",
-    "x": 1239,
-    "y": 270
-  },
-  {
-    "id": 426,
-    "type": "lake",
-    "title": "LakeP (43)",
-    "x": 607,
-    "y": -1010
-  },
-  {
-    "id": 439,
-    "type": "lake",
-    "title": "LakeP (37)",
-    "x": 1173,
-    "y": 653
-  },
-  {
-    "id": 438,
-    "type": "lake",
-    "title": "LakeP (36)",
-    "x": 1193,
-    "y": 804
-  },
-  {
-    "id": 385,
-    "type": "lake",
-    "title": "LakeP (15)",
-    "x": 274,
-    "y": -1748
-  },
-  {
-    "id": 387,
-    "type": "lake",
-    "title": "LakeP (16)",
-    "x": 261,
-    "y": -1777
-  },
-  {
-    "id": 386,
-    "type": "lake",
-    "title": "LakeP (17)",
-    "x": 292,
-    "y": -1786
-  },
-  {
-    "id": 444,
-    "type": "lake",
-    "title": "LakeP (48)",
-    "x": 880,
-    "y": -956
-  },
-  {
-    "id": 445,
-    "type": "lake",
-    "title": "LakeP (11)",
-    "x": -285,
-    "y": -1469
-  },
-  {
-    "id": 388,
-    "type": "lake",
-    "title": "LakeP (14)",
-    "x": -1182,
-    "y": -1589
-  },
-  {
-    "id": 529,
-    "type": "lake",
-    "title": "LakeA",
-    "x": -1010,
-    "y": -32
-  },
-  {
-    "id": 530,
-    "type": "lake",
-    "title": "LakeM",
-    "x": -1178,
-    "y": -1353
-  },
-  {
-    "id": 531,
-    "type": "lake",
-    "title": "LakeM (3)",
-    "x": -941,
-    "y": 152
-  },
-  {
-    "id": 532,
-    "type": "lake",
-    "title": "LakeV",
-    "x": -645,
-    "y": -1063
-  },
-  {
-    "id": 533, 
-    "type": "lake",
-    "title": "LakeP 1",
-    "x": -703,
-    "y": 458
-  },
-  {
-    "id": 534,
-    "type": "lake",
-    "title": "LakeP 2",
-    "x": -1067,
-    "y": 1117
-  },
-  {
-    "id": 535,
-    "type": "lake",
-    "title": "LakeP 3",
-    "x": -1666,
-    "y": 1097
-  },
-  {
-    "id": 536,
-    "type": "lake",
-    "title": "LakeP (4)",
-    "x": -1587,
-    "y": 248
-  },
-  {
-    "id": 537,
-    "type": "lake",
-    "title": "LakeP (5)",
-    "x": -1718,
-    "y": 67
-  },
-  {
-    "id": 538,
-    "type": "lake",
-    "title": "LakeP (6)",
-    "x": -1729,
-    "y": -271
-  },
-  {
-    "id": 539,
-    "type": "lake",
-    "title": "LakeP (7)",
-    "x": -1473,
-    "y": 856
-  },
-  {
-    "id": 540,
-    "type": "lake",
-    "title": "LakeP (9)",
-    "x": -1382,
-    "y": 1496
-  },
-  {
-    "id": 541,
-    "type": "lake",
-    "title": "LakeP (10)",
-    "x": -238,
-    "y": -1662
-  },
-  {
-    "id": 542,
-    "type": "lake",
-    "title": "LakeP (12)",
-    "x": 147,
-    "y": -1589
-  },
-  {
-    "id": 543,
-    "type": "lake",
-    "title": "LakeP (13)",
-    "x": -1113,
-    "y": 1088
-  },
-  {
-    "id": 544,
-    "type": "lake",
-    "title": "LakeP (18)",
-    "x": 720,
-    "y": 830
-  },
-  {
-    "id": 545,
-    "type": "lake",
-    "title": "LakeP (19)",
-    "x": 191,
-    "y": 1262
-  },
-  {
-    "id": 546,
-    "type": "lake",
-    "title": "LakeP (20)",
-    "x": -299,
-    "y": 962
-  },
-  {
-    "id": 547,
-    "type": "lake",
-    "title": "LakeP (21)",
-    "x": -157,
-    "y": 1195
-  },
-  {
-    "id": 548,
-    "type": "lake",
-    "title": "LakeP (22)",
-    "x": -175,
-    "y": 935
-  },
-  {
-    "id": 549,
-    "type": "lake",
-    "title": "LakeP (23)",
-    "x": -38,
-    "y": 672
-  },
-  {
-    "id": 550,
-    "type": "lake",
-    "title": "LakeP (24)",
-    "x": -385,
-    "y": 522
-  },
-  {
-    "id": 551,
-    "type": "lake",
-    "title": "LakeP (25)",
-    "x": -330,
-    "y": 897
-  },
-  {
-    "id": 552,
-    "type": "lake",
-    "title": "LakeP (26)",
-    "x": -329,
-    "y": 1136
-  },
-  {
-    "id": 553,
-    "type": "lake",
-    "title": "LakeP (27)",
-    "x": -204,
-    "y": 1094
-  },
-  {
-    "id": 554,
-    "type": "lake",
-    "title": "LakeP (30)",
-    "x": 1451,
-    "y": -423
-  },
-  {
-    "id": 555,
-    "type": "lake",
-    "title": "LakeP (32)",
-    "x": 1552,
-    "y": -398
-  },
-  {
-    "id": 556,
-    "type": "lake",
-    "title": "LakeP (33)",
-    "x": 1630,
-    "y": 26
-  },
-  {
-    "id": 557,
-    "type": "lake",
-    "title": "LakeP (34)",
-    "x": 1831,
-    "y": -447
-  },
-  {
-    "id": 558,
-    "type": "lake",
-    "title": "LakeP (35)",
-    "x": 1660,
-    "y": 377
-  },
-  {
-    "id": 559,
-    "type": "lake",
-    "title": "LakeP (38)",
-    "x": 1552,
-    "y": 516
-  },
-  {
-    "id": 560,
-    "type": "lake",
-    "title": "LakeP (39)",
-    "x": 1725,
-    "y": -287
-  },
-  {
-    "id": 561,
-    "type": "lake",
-    "title": "LakeP (40)",
-    "x": 1562,
-    "y": -272
-  },
-  {
-    "id": 562,
-    "type": "lake",
-    "title": "LakeP (41)",
-    "x": 1468,
-    "y": -596
-  },
-  {
-    "id": 563,
-    "type": "lake",
-    "title": "LakeP (42)",
-    "x": 1064,
-    "y": -107
-  },
-  {
-    "id": 564,
-    "type": "lake",
-    "title": "LakeP (44)",
-    "x": 933,
-    "y": -1249
-  },
-  {
-    "id": 565,
-    "type": "lake",
-    "title": "LakeP (45)",
-    "x": 1671,
-    "y": 947
-  },
-  {
-    "id": 567,
-    "type": "lake",
-    "title": "LakeP (46)",
-    "x": 1703,
-    "y": 553
-  },
-  {
-    "id": 568,
-    "type": "lake",
-    "title": "LakeP (47)",
-    "x": 1528,
-    "y": 362
-  },
-  {
-    "id": 569,
-    "type": "lake",
-    "title": "LakeP (49)",
-    "x": 1379,
-    "y": 70
-  },
-  {
-    "id": 570,
-    "type": "lake",
-    "title": "LakeP 52",
-    "x": -1037,
-    "y": 1297
   }
 ]
