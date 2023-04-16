@@ -54,7 +54,7 @@ export const types: NodeType[] = [
   {
     value: "stunGun",
     title: "Weapon",
-    icon: icons["ray-gun"],
+    icon: icons["stun-gun"],
     filter: "weapons",
   },
   {
@@ -97,7 +97,7 @@ export const types: NodeType[] = [
     value: "keycard",
     title: "Keycard",
     icon: icons.keycard,
-    filter: "collect",
+    filter: "tools",
   },
   {
     value: "crossbow",
@@ -205,13 +205,13 @@ export const types: NodeType[] = [
     value: "book",
     title: "Book",
     icon: icons.book,
-    filter: "collect",
+    filter: "docs",
   },
   {
     value: "document",
     title: "Document",
     icon: icons.document,
-    filter: "collect",
+    filter: "docs",
   },
   {
     value: "hang-glider",
@@ -269,7 +269,7 @@ export const types: NodeType[] = [
   },
   {
     value: "can",
-    title: "Cannibal Camp",
+    title: "Cannibal Camps",
     icon: icons.can,
     filter: "can",
   },
@@ -295,13 +295,49 @@ export const types: NodeType[] = [
     value: "uni",
     title: "Unicycle",
     icon: icons.uni,
-    filter: "tools",
+    filter: "gear",
   },
   {
     value: "vision",
     title: "Googles",
     icon: icons.vision,
     filter: "gear",
+  },
+  {
+    value: "prail",
+    title: "Weapon Attachment",
+    icon: icons["pistol-rail"],
+    filter: "mod",
+  },
+  {
+    value: "srail",
+    title: "Shotgun Rail",
+    icon: icons["shotgun-rail"],
+    filter: "mod",
+  },
+  {
+    value: "lake",
+    title: "Water Body",
+    icon: icons.info,
+    filter: "lake",
+  },
+  {
+    value: "light",
+    title: "Weapon Attachment",
+    icon: icons["flashlight-attachment"],
+    filter: "mod",
+  },
+  {
+    value: "suppressor",
+    title: "Weapon Attachment",
+    icon: icons.suppressor,
+    filter: "mod",
+  },
+  {
+    value: "laser",
+    title: "Weapon Attachment",
+    icon: icons["laser-sight"],
+    filter: "mod",
   },
 ];
 
@@ -379,8 +415,8 @@ export const filters = [
     color: "rgb(186 85 211)",
   },
   {
-    value: "collect",
-    title: "Collectibles",
+    value: "docs",
+    title: "Documents",
     color: "rgb(240 125 138)",
   },
   {
@@ -400,8 +436,13 @@ export const filters = [
   },
   {
     value: "can",
-    title: "Cannibal Camp",
-    color: "rgb(32 178 170)",
+    title: "Cannibal Camps",
+    color: "rgb(255 0 0)",
+  },
+  {
+    value: "lake",
+    title: "Lakes",
+    color: "rgb(29 222 255)",
   },
 ];
 
