@@ -2568,7 +2568,7 @@
     "id": 303,
     "type": "info",
     "title": "Helipad B",
-    "x": 1827,
+    "x": 1921,
     "y": 399
   },
   {
@@ -2878,97 +2878,6 @@
     "title": "2x Dead Killer Whales",
     "x": -1764,
     "y": -977
-  },
-  {
-    "id": 385,
-    "type": "info",
-    "title": "Pond",
-    "x": 261,
-    "y": -1777
-  },
-  {
-    "id": 386,
-    "type": "info",
-    "title": "Pond",
-    "x": 274,
-    "y": -1749
-  },
-  {
-    "id": 387,
-    "type": "info",
-    "title": "Pond",
-    "x": 290,
-    "y": -1787
-  },
-  {
-    "id": 388,
-    "type": "info",
-    "title": "Pond",
-    "x": -1182,
-    "y": -1589
-  },
-  {
-    "id": 389,
-    "type": "info",
-    "title": "Pond",
-    "x": 1296,
-    "y": -802
-  },
-  {
-    "id": 426,
-    "type": "info",
-    "title": "Pond",
-    "x": 1063,
-    "y": -107
-  },
-  {
-    "id": 438,
-    "type": "info",
-    "title": "Pond",
-    "x": 1192,
-    "y": 803
-  },
-  {
-    "id": 439,
-    "type": "info",
-    "title": "Pond",
-    "x": 1174,
-    "y": 653
-  },
-  {
-    "id": 440,
-    "type": "info",
-    "title": "Pond",
-    "x": 1239,
-    "y": 269
-  },
-  {
-    "id": 441,
-    "type": "info",
-    "title": "Pond",
-    "x": 1830,
-    "y": -447
-  },
-  {
-    "id": 442,
-    "type": "info",
-    "title": "Pond",
-    "x": 1560,
-    "y": -515
-  },
-  {
-    "id": 444,
-    "type": "info",
-    "title": "Pond",
-    "x": 602,
-    "y": -1012
-  },
-  {
-    "id": 445,
-    "type": "info",
-    "title": "Pond",
-    "x": -285,
-    "y": -1467
   },
   {
     "id": 390,
@@ -3536,7 +3445,7 @@
   },
   {
     "id": 306,
-    "type": "mod",
+    "type": "laser",
     "title": "Laser Sight",
     "description": "Next to the computer on the left",
     "x": -424,
@@ -3545,7 +3454,7 @@
   },
   {
     "id": 311,
-    "type": "mod",
+    "type": "srail",
     "title": "Shotgun Rail",
     "description": "On the right side reagl",
     "x": -1175,
@@ -3555,14 +3464,14 @@
   },
   {
     "id": 341,
-    "type": "mod",
+    "type": "srail",
     "title": "Shotgun Rail",
     "x": -47,
     "y": 1454
   },
   {
     "id": 432,
-    "type": "mod",
+    "type": "srail",
     "title": "Shotgun Rail",
     "x": 1143,
     "y": -639,
@@ -3570,21 +3479,21 @@
   },
   {
     "id": 342,
-    "type": "mod",
+    "type": "prail",
     "title": "Pistol Rail",
     "x": -1609,
     "y": 486
   },
   {
     "id": 431,
-    "type": "mod",
+    "type": "prail",
     "title": "Pistol Rail",
     "x": -807,
     "y": -220
   },
   {
     "id": 443,
-    "type": "mod",
+    "type": "prail",
     "title": "Pistol Rail",
     "x": 1154,
     "y": -606,
@@ -3593,7 +3502,7 @@
   },
   {
     "id": 327,
-    "type": "mod",
+    "type": "light",
     "title": "Flashlight Attachment",
     "description": "In the hand of dead soldier",
     "x": -580,
@@ -3603,8 +3512,8 @@
   },
   {
     "id": 430,
-    "type": "mod",
-    "title": "Silencer",
+    "type": "suppressor",
+    "title": "Pistol Suppressor",
     "x": -808,
     "y": -217
   },
@@ -3716,5 +3625,684 @@
     "x": -609,
     "y": -1048,
     "isUnderground": true
+  },
+  {
+    "id": 486,
+    "type": "lake",
+    "title": "LakeP (9)",
+    "x": -1587,
+    "y": 248
+  },
+  {
+    "id": 487,
+    "type": "lake",
+    "title": "LakeP (8)",
+    "x": -1472,
+    "y": 1117
+  },
+  {
+    "id": 488,
+    "type": "lake",
+    "title": "LakeP 7",
+    "x": -1037,
+    "y": 1297
+  },
+  {
+    "id": 489,
+    "type": "lake",
+    "title": "LakeH",
+    "x": -1030,
+    "y": 804
+  },
+  {
+    "id": 490,
+    "type": "lake",
+    "title": "LakeBC",
+    "x": -7,
+    "y": 1303
+  },
+  {
+    "id": 491,
+    "type": "lake",
+    "title": "LakeC",
+    "x": 10,
+    "y": 1096
+  },
+  {
+    "id": 492,
+    "type": "lake",
+    "title": "LakeBD",
+    "x": 66,
+    "y": 897
+  },
+  {
+    "id": 493,
+    "type": "lake",
+    "title": "LakeBE",
+    "x": -234,
+    "y": 726
+  },
+  {
+    "id": 494,
+    "type": "lake",
+    "title": "LakeP",
+    "x": -704,
+    "y": 458
+  },
+  {
+    "id": 495,
+    "type": "lake",
+    "title": "LakeW",
+    "x": -535,
+    "y": 121
+  },
+  {
+    "id": 496,
+    "type": "lake",
+    "title": "LakeX",
+    "x": -720,
+    "y": 10
+  },
+  {
+    "id": 497,
+    "type": "lake",
+    "title": "LakeY",
+    "x": -590,
+    "y": -119
+  },
+  {
+    "id": 498,
+    "type": "lake",
+    "title": "LakeZ",
+    "x": -784,
+    "y": -245
+  },
+  {
+    "id": 499,
+    "type": "lake",
+    "title": "LakeAGroup",
+    "x": -954,
+    "y": -16
+  },
+  {
+    "id": 500,
+    "type": "lake",
+    "title": "LakeS",
+    "x": -1109,
+    "y": -139
+  },
+  {
+    "id": 501,
+    "type": "lake",
+    "title": "LakeT",
+    "x": -1155,
+    "y": -190
+  },
+  {
+    "id": 502,
+    "type": "lake",
+    "title": "LakeU",
+    "x": -1173,
+    "y": -245
+  },
+  {
+    "id": 503,
+    "type": "lake",
+    "title": "LakeQ",
+    "x": -1251,
+    "y": -37
+  },
+  {
+    "id": 504,
+    "type": "lake",
+    "title": "LakeR",
+    "x": -1293,
+    "y": 10
+  },
+  {
+    "id": 505,
+    "type": "lake",
+    "title": "LakeBA",
+    "x": 1609,
+    "y": 769
+  },
+  {
+    "id": 506,
+    "type": "lake",
+    "title": "LakeBB",
+    "x": 1317,
+    "y": 516
+  },
+  {
+    "id": 507,
+    "type": "lake",
+    "title": "LakeO",
+    "x": 1273,
+    "y": -129
+  },
+  {
+    "id": 508,
+    "type": "lake",
+    "title": "LakeN",
+    "x": 1126,
+    "y": -465
+  },
+  {
+    "id": 509,
+    "type": "lake",
+    "title": "LakeK",
+    "x": 1585,
+    "y": -1135
+  },
+  {
+    "id": 510,
+    "type": "lake",
+    "title": "LakeM (1)",
+    "x": 714,
+    "y": -1657
+  },
+  {
+    "id": 511,
+    "type": "lake",
+    "title": "LakeM (2)",
+    "x": 1212,
+    "y": -1609
+  },
+  {
+    "id": 512,
+    "type": "lake",
+    "title": "GolfPondA",
+    "x": 821,
+    "y": 1349
+  },
+  {
+    "id": 513,
+    "type": "lake",
+    "title": "GolfPondB",
+    "x": 796,
+    "y": 1511
+  },
+  {
+    "id": 514,
+    "type": "lake",
+    "title": "GolfPondC",
+    "x": 1014,
+    "y": 1605
+  },
+  {
+    "id": 515,
+    "type": "lake",
+    "title": "GolfPondD",
+    "x": 1427,
+    "y": 1741
+  },
+  {
+    "id": 516,
+    "type": "lake",
+    "title": "GolfPondE",
+    "x": 1240,
+    "y": 1197
+  },
+  {
+    "id": 517,
+    "type": "lake",
+    "title": "LakeI",
+    "x": 565,
+    "y": -1485
+  },
+  {
+    "id": 518,
+    "type": "lake",
+    "title": "LakeJ",
+    "x": 565,
+    "y": -1485
+  },
+  {
+    "id": 519,
+    "type": "lake",
+    "title": "LakeZ 1",
+    "x": 480,
+    "y": -1679
+  },
+  {
+    "id": 520,
+    "type": "lake",
+    "title": "LakeE",
+    "x": 275,
+    "y": -308
+  },
+  {
+    "id": 521,
+    "type": "lake",
+    "title": "LakeY",
+    "x": -646,
+    "y": -1062
+  },
+  {
+    "id": 522,
+    "type": "lake",
+    "title": "LakeM",
+    "x": -1177,
+    "y": -1353
+  },
+  {
+    "id": 523,
+    "type": "lake",
+    "title": "LakeG",
+    "x": -1274,
+    "y": -643
+  },
+  {
+    "id": 524,
+    "type": "lake",
+    "title": "LakeF",
+    "x": -980,
+    "y": -733
+  },
+  {
+    "id": 525,
+    "type": "lake",
+    "title": "LakeL",
+    "x": -667,
+    "y": -631
+  },
+  {
+    "id": 526,
+    "type": "lake",
+    "title": "LakeP 6",
+    "x": -1252,
+    "y": 1400
+  },
+  {
+    "id": 527,
+    "type": "lake",
+    "title": "LakeP 5",
+    "x": -1135,
+    "y": 1626
+  },
+  {
+    "id": 528,
+    "type": "lake",
+    "title": "LakeP 4",
+    "x": -1317,
+    "y": 1297
+  },
+  {
+    "id": 389,
+    "type": "lake",
+    "title": "LakeP (29)",
+    "x": 1296,
+    "y": -801
+  },
+  {
+    "id": 442,
+    "type": "lake",
+    "title": "LakeP (31)",
+    "x": 1561,
+    "y": -514
+  },
+  {
+    "id": 441,
+    "type": "lake",
+    "title": "LakeP (34)",
+    "x": 1830,
+    "y": -447
+  },
+  {
+    "id": 440,
+    "type": "lake",
+    "title": "LakeP 50",
+    "x": 1239,
+    "y": 270
+  },
+  {
+    "id": 426,
+    "type": "lake",
+    "title": "LakeP (43)",
+    "x": 607,
+    "y": -1010
+  },
+  {
+    "id": 439,
+    "type": "lake",
+    "title": "LakeP (37)",
+    "x": 1173,
+    "y": 653
+  },
+  {
+    "id": 438,
+    "type": "lake",
+    "title": "LakeP (36)",
+    "x": 1193,
+    "y": 804
+  },
+  {
+    "id": 385,
+    "type": "lake",
+    "title": "LakeP (15)",
+    "x": 274,
+    "y": -1748
+  },
+  {
+    "id": 387,
+    "type": "lake",
+    "title": "LakeP (16)",
+    "x": 261,
+    "y": -1777
+  },
+  {
+    "id": 386,
+    "type": "lake",
+    "title": "LakeP (17)",
+    "x": 292,
+    "y": -1786
+  },
+  {
+    "id": 444,
+    "type": "lake",
+    "title": "LakeP (48)",
+    "x": 880,
+    "y": -956
+  },
+  {
+    "id": 445,
+    "type": "lake",
+    "title": "LakeP (11)",
+    "x": -285,
+    "y": -1469
+  },
+  {
+    "id": 388,
+    "type": "lake",
+    "title": "LakeP (14)",
+    "x": -1182,
+    "y": -1589
+  },
+  {
+    "id": 529,
+    "type": "lake",
+    "title": "LakeA",
+    "x": -1010,
+    "y": -32
+  },
+  {
+    "id": 530,
+    "type": "lake",
+    "title": "LakeM",
+    "x": -1178,
+    "y": -1353
+  },
+  {
+    "id": 531,
+    "type": "lake",
+    "title": "LakeM (3)",
+    "x": -941,
+    "y": 152
+  },
+  {
+    "id": 532,
+    "type": "lake",
+    "title": "LakeV",
+    "x": -645,
+    "y": -1063
+  },
+  {
+    "id": 533,
+    "type": "lake",
+    "title": "LakeP 1",
+    "x": -703,
+    "y": 458
+  },
+  {
+    "id": 534,
+    "type": "lake",
+    "title": "LakeP 2",
+    "x": -1067,
+    "y": 1117
+  },
+  {
+    "id": 535,
+    "type": "lake",
+    "title": "LakeP 3",
+    "x": -1666,
+    "y": 1097
+  },
+  {
+    "id": 536,
+    "type": "lake",
+    "title": "LakeP (4)",
+    "x": -1587,
+    "y": 248
+  },
+  {
+    "id": 537,
+    "type": "lake",
+    "title": "LakeP (5)",
+    "x": -1718,
+    "y": 67
+  },
+  {
+    "id": 538,
+    "type": "lake",
+    "title": "LakeP (6)",
+    "x": -1729,
+    "y": -271
+  },
+  {
+    "id": 539,
+    "type": "lake",
+    "title": "LakeP (7)",
+    "x": -1473,
+    "y": 856
+  },
+  {
+    "id": 540,
+    "type": "lake",
+    "title": "LakeP (9)",
+    "x": -1382,
+    "y": 1496
+  },
+  {
+    "id": 541,
+    "type": "lake",
+    "title": "LakeP (10)",
+    "x": -238,
+    "y": -1662
+  },
+  {
+    "id": 542,
+    "type": "lake",
+    "title": "LakeP (12)",
+    "x": 147,
+    "y": -1589
+  },
+  {
+    "id": 543,
+    "type": "lake",
+    "title": "LakeP (13)",
+    "x": -1113,
+    "y": 1088
+  },
+  {
+    "id": 544,
+    "type": "lake",
+    "title": "LakeP (18)",
+    "x": 720,
+    "y": 830
+  },
+  {
+    "id": 545,
+    "type": "lake",
+    "title": "LakeP (19)",
+    "x": 191,
+    "y": 1262
+  },
+  {
+    "id": 546,
+    "type": "lake",
+    "title": "LakeP (20)",
+    "x": -299,
+    "y": 962
+  },
+  {
+    "id": 547,
+    "type": "lake",
+    "title": "LakeP (21)",
+    "x": -157,
+    "y": 1195
+  },
+  {
+    "id": 548,
+    "type": "lake",
+    "title": "LakeP (22)",
+    "x": -175,
+    "y": 935
+  },
+  {
+    "id": 549,
+    "type": "lake",
+    "title": "LakeP (23)",
+    "x": -38,
+    "y": 672
+  },
+  {
+    "id": 550,
+    "type": "lake",
+    "title": "LakeP (24)",
+    "x": -385,
+    "y": 522
+  },
+  {
+    "id": 551,
+    "type": "lake",
+    "title": "LakeP (25)",
+    "x": -330,
+    "y": 897
+  },
+  {
+    "id": 552,
+    "type": "lake",
+    "title": "LakeP (26)",
+    "x": -329,
+    "y": 1136
+  },
+  {
+    "id": 553,
+    "type": "lake",
+    "title": "LakeP (27)",
+    "x": -204,
+    "y": 1094
+  },
+  {
+    "id": 554,
+    "type": "lake",
+    "title": "LakeP (30)",
+    "x": 1451,
+    "y": -423
+  },
+  {
+    "id": 555,
+    "type": "lake",
+    "title": "LakeP (32)",
+    "x": 1552,
+    "y": -398
+  },
+  {
+    "id": 556,
+    "type": "lake",
+    "title": "LakeP (33)",
+    "x": 1630,
+    "y": 26
+  },
+  {
+    "id": 557,
+    "type": "lake",
+    "title": "LakeP (34)",
+    "x": 1831,
+    "y": -447
+  },
+  {
+    "id": 558,
+    "type": "lake",
+    "title": "LakeP (35)",
+    "x": 1660,
+    "y": 377
+  },
+  {
+    "id": 559,
+    "type": "lake",
+    "title": "LakeP (38)",
+    "x": 1552,
+    "y": 516
+  },
+  {
+    "id": 560,
+    "type": "lake",
+    "title": "LakeP (39)",
+    "x": 1725,
+    "y": -287
+  },
+  {
+    "id": 561,
+    "type": "lake",
+    "title": "LakeP (40)",
+    "x": 1562,
+    "y": -272
+  },
+  {
+    "id": 562,
+    "type": "lake",
+    "title": "LakeP (41)",
+    "x": 1468,
+    "y": -596
+  },
+  {
+    "id": 563,
+    "type": "lake",
+    "title": "LakeP (42)",
+    "x": 1064,
+    "y": -107
+  },
+  {
+    "id": 564,
+    "type": "lake",
+    "title": "LakeP (44)",
+    "x": 933,
+    "y": -1249
+  },
+  {
+    "id": 565,
+    "type": "lake",
+    "title": "LakeP (45)",
+    "x": 1671,
+    "y": 947
+  },
+  {
+    "id": 567,
+    "type": "lake",
+    "title": "LakeP (46)",
+    "x": 1703,
+    "y": 553
+  },
+  {
+    "id": 568,
+    "type": "lake",
+    "title": "LakeP (47)",
+    "x": 1528,
+    "y": 362
+  },
+  {
+    "id": 569,
+    "type": "lake",
+    "title": "LakeP (49)",
+    "x": 1379,
+    "y": 70
+  },
+  {
+    "id": 570,
+    "type": "lake",
+    "title": "LakeP 52",
+    "x": -1037,
+    "y": 1297
   }
 ]
