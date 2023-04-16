@@ -98,6 +98,11 @@
         "title": "Zoom out",
         "action-type": "custom",
         "default": "F8"
+      },
+      "toggle_zones_grid": {
+        "title": "Show/Hide Zones Grid",
+        "action-type": "custom",
+        "default": "F9"
       }
     },
     "protocol_override_domains": {
