@@ -307,38 +307,38 @@ export const types: NodeType[] = [
     value: "prail",
     title: "Weapon Attachment",
     icon: icons["pistol-rail"],
-    filter: "mod"
+    filter: "mod",
   },
   {
     value: "srail",
     title: "Shotgun Rail",
     icon: icons["shotgun-rail"],
-    filter: "mod"
+    filter: "mod",
   },
   {
     value: "lake",
     title: "Water Body",
     icon: icons.info,
-    filter: "lake"
+    filter: "lake",
   },
   {
     value: "light",
     title: "Weapon Attachment",
     icon: icons["flashlight-attachment"],
-    filter: "mod"
+    filter: "mod",
   },
   {
     value: "suppressor",
     title: "Weapon Attachment",
     icon: icons.suppressor,
-    filter: "mod"
+    filter: "mod",
   },
   {
     value: "laser",
     title: "Weapon Attachment",
     icon: icons["laser-sight"],
-    filter: "mod"
-  }
+    filter: "mod",
+  },
 ];
 
 export function getCustomNodes() {
