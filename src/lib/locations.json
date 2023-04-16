@@ -3130,7 +3130,7 @@
     "title": "Village4",
     "description": "Small Village",
     "x": -1207,
-    "y": 657 
+    "y": 657
   },
   {
     "id": 251,
@@ -3788,7 +3788,7 @@
     "y": 458
   },
   {
-    "id": 532, 
+    "id": 532,
     "type": "lake",
     "title": "LakeP 1",
     "x": -703,

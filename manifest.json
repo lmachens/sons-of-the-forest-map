@@ -4,7 +4,7 @@
   "meta": {
     "name": "Sons Of The Forest Map-DEV",
     "author": "Leon Machens",
-    "version": "0.19.0",
+    "version": "0.20.0",
     "minimum-overwolf-version": "0.218.0",
     "description": "Sons Of The Forest Map",
     "dock_button_title": "Sons Of The Forest",
@@ -98,6 +98,11 @@
         "title": "Zoom out",
         "action-type": "custom",
         "default": "F8"
+      },
+      "toggle_zones_grid": {
+        "title": "Show/Hide Zones Grid",
+        "action-type": "custom",
+        "default": "F9"
       }
     },
     "protocol_override_domains": {

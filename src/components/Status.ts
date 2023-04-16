@@ -54,6 +54,15 @@ export default function Status() {
   listenToHotkeyBinding("zoom_out_app", (binding) => {
     zoomOutAppHotkey.innerText = binding;
   });
+  const toggleZonesGridHotkey = document.querySelector<HTMLButtonElement>(
+    "#toggle_zones_grid_hotkey"
+  )!;
+  toggleZonesGridHotkey.onclick = () => {
+    location.href = `overwolf://settings/games-overlay?hotkey=toggle_zones_grid&gameId=${GAME_CLASS_ID}`;
+  };
+  listenToHotkeyBinding("toggle_zones_grid", (binding) => {
+    toggleZonesGridHotkey.innerText = binding;
+  });
 
   const locationStatus =
     document.querySelector<HTMLParagraphElement>(".location-status")!;

@@ -53,7 +53,7 @@ export default function Map(container: HTMLDivElement) {
   coordinates.addTo(map);
 
   if (typeof overwolf !== "undefined") {
-    overwolf.settings.hotkeys.onPressed.addListener(async (event) => {
+    overwolf.settings.hotkeys.onPressed.addListener((event) => {
       if (event.name === "zoom_in_app") {
         map.zoomIn();
       } else if (event.name === "zoom_out_app") {
