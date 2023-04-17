@@ -24,21 +24,23 @@ export default function Zones({ map }: { map: leaflet.Map }) {
     }
   };
 
-  overwolf.settings.hotkeys.onPressed.addListener((event) => {
-    if (event.name === "toggle_zones_grid") {
-      if (showZones.checked) {
-        showZones.checked = false;
-        localStorage.removeItem("show_zones");
-        removeZones();
-        layerGroup.removeFrom(map);
-      } else {
-        showZones.checked = true;
-        localStorage.setItem("show_zones", "true");
-        drawZones();
-        layerGroup.addTo(map);
+  if (typeof overwolf !== "undefined") {
+    overwolf.settings.hotkeys.onPressed.addListener((event) => {
+      if (event.name === "toggle_zones_grid") {
+        if (showZones.checked) {
+          showZones.checked = false;
+          localStorage.removeItem("show_zones");
+          removeZones();
+          layerGroup.removeFrom(map);
+        } else {
+          showZones.checked = true;
+          localStorage.setItem("show_zones", "true");
+          drawZones();
+          layerGroup.addTo(map);
+        }
       }
-    }
-  });
+    });
+  }
 
   function drawZones() {
     for (let i = 0; i < 25; i++) {
