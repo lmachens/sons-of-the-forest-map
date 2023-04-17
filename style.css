@@ -504,6 +504,8 @@ select {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  width: 210px;
+  padding: 0.5rem;
 }
 
 .node-form > label {
@@ -542,6 +544,7 @@ select {
   flex-wrap: wrap;
   overflow: auto;
   margin-bottom: 0.2rem;
+  max-height: 120px;
 }
 
 .bold {
@@ -606,6 +609,7 @@ select {
 
 .contextmenu {
   padding: 0 !important;
+  width: 160px;
 }
 
 .contextmenu button {
@@ -613,7 +617,7 @@ select {
   background: none;
   color: rgb(41, 41, 41);
   border: none;
-  text-align: left;
+  text-align: center;
 }
 
 .contextmenu button:hover {
