@@ -761,3 +761,9 @@ select {
   max-height: max-content;
   object-fit: contain;
 }
+
+.tooltip-container a {
+  display: block;
+  font-style: italic;
+  text-decoration: none;
+}

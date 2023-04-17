@@ -26,6 +26,7 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
   const customGroup = new leaflet.LayerGroup();
 
   let selectedMarker: CanvasMarker | null = null;
+  let latestMarkers: CanvasMarker[] = [];
 
   map.on("click", (event) => {
     // @ts-ignore
@@ -35,6 +36,33 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
     setMapLocationId(null);
     unselectMarker();
   });
+
+  function refreshVisibility() {
+    const deselectedFilters = getDeselectedFilters();
+    const mapLocationId = getMapLocationId();
+
+    getMapLocations().forEach((mapLocation) => {
+      const type = types.find((type) => type.value === mapLocation.type)!;
+      const isVisible =
+        mapLocation.id === mapLocationId ||
+        !deselectedFilters.includes(type.filter!);
+
+      const marker = latestMarkers.find(
+        (marker) => marker.options.id === mapLocation.id
+      );
+      if (marker) {
+        if (group.hasLayer(marker)) {
+          if (!isVisible) {
+            group.removeLayer(marker);
+          }
+        } else {
+          if (isVisible) {
+            group.addLayer(marker);
+          }
+        }
+      }
+    });
+  }
 
   function refresh() {
     const deselectedFilters = getDeselectedFilters();
@@ -56,26 +84,24 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
         if (isSelected) {
           selectedMarker = marker;
         }
+        marker.addTo(customGroup);
       });
     }
     group.clearLayers();
-    getMapLocations()
-      .filter((mapLocation) => {
-        const type = types.find((type) => type.value === mapLocation.type)!;
-        return !deselectedFilters.includes(type.filter!);
-      })
-      .forEach((mapLocation) => {
-        const isSelected = mapLocation.id === mapLocationId;
-        const marker = addMarker(
-          mapLocation,
-          false,
-          discoveredNodeIDs.includes(mapLocation.id),
-          isSelected
-        );
-        if (isSelected) {
-          selectedMarker = marker;
-        }
-      });
+    latestMarkers = getMapLocations().map((mapLocation) => {
+      const isSelected = mapLocation.id === mapLocationId;
+      const marker = addMarker(
+        mapLocation,
+        false,
+        discoveredNodeIDs.includes(mapLocation.id),
+        isSelected
+      );
+      if (isSelected) {
+        selectedMarker = marker;
+      }
+      return marker;
+    });
+    refreshVisibility();
 
     const customNodesCount = document.querySelector<HTMLSpanElement>(
       "#custom_nodes_count"
@@ -120,6 +146,7 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       selectedMarker.redraw();
       selectedMarker = null;
     }
+    refreshVisibility();
   }
 
   displaySelectedMarker();
@@ -137,24 +164,49 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
     const filter =
       filters.find((filter) => filter.value === type.filter) || filters[0];
 
-    const requirements = mapLocation.requirements
-      ?.map((requirementId) => {
-        const mapLocation = getMapLocationById(requirementId);
-        return `<p class="italic">${mapLocation?.title}</p>`;
-      })
-      .join("\n");
+    const panToRelatedMarker = (id: number) => {
+      unselectMarker();
+      setMapLocationId(id);
+      const marker = latestMarkers.find((marker) => marker.options.id === id);
+      if (marker) {
+        if (!group.hasLayer(marker)) {
+          marker.addTo(group);
+        }
+        selectedMarker = marker;
+        selectedMarker.setRadius(HIGHLIGHTED_ICON_RADIUS);
+        selectedMarker.options.isHighlighted = true;
+        selectedMarker.redraw();
+        displaySelectedMarker();
+        map.setView(selectedMarker.getLatLng());
+      }
+    };
+    const requirements = mapLocation.requirements?.map((requirementId) => {
+      const mapLocation = getMapLocationById(requirementId);
+      return createElement("a", {
+        href: `/locations/${requirementId}`,
+        innerText: mapLocation?.title,
+        onclick: (event) => {
+          event.preventDefault();
+          panToRelatedMarker(requirementId);
+        },
+      });
+    });
 
-    const items = mapLocation.items
-      ?.map((itemsId) => {
-        const mapLocation = getMapLocationById(itemsId);
-        return `<p class="italic">${mapLocation?.title}</p>`;
-      })
-      .join("\n");
+    const items = mapLocation.items?.map((itemId) => {
+      const mapLocation = getMapLocationById(itemId);
+      return createElement("a", {
+        href: `/locations/${itemId}`,
+        innerText: mapLocation?.title,
+        onclick: (event) => {
+          event.preventDefault();
+          panToRelatedMarker(itemId);
+        },
+      });
+    });
 
     const tooltipContent = createElement("div", {
-      className: "tooltip-container",
+      className: "tooltip-content",
       innerHTML: `
-      <div class="tooltip-content">
       <p class="bold">${mapLocation.title ?? ""}</p>
       <p class="italic">${isCustom ? "Custom Node" : type.title}</p>
       <p>${mapLocation.description?.replaceAll("\n", "<br/>") || ""}</p>
@@ -163,11 +215,33 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
           ? '<p class="info italic">Underground</p>'
           : ""
       }
-      ${requirements ? `<p class="bold">Requirements</p>${requirements}` : ""}
-      ${items ? `<p class="bold">Items</p>${items}` : ""}
-      <p class="hint">Right-Click to open menu</p>
-    </div>`,
+      `,
     });
+    if (requirements) {
+      tooltipContent.append(
+        createElement("p", { className: "bold", innerText: "Requirements" }),
+        ...requirements
+      );
+    }
+    if (items) {
+      tooltipContent.append(
+        createElement("p", { className: "bold", innerText: "Items" }),
+        ...items
+      );
+    }
+    tooltipContent.append(
+      createElement("p", {
+        className: "hint",
+        innerText: "Right-Click to open menu",
+      })
+    );
+    const tooltipContainer = createElement(
+      "div",
+      {
+        className: "tooltip-container",
+      },
+      [tooltipContent]
+    );
     if (mapLocation.screenshot) {
       const screenshot = createElement("img", {
         className: "screenshot-preview",
@@ -193,7 +267,7 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
           document.body.appendChild(container);
         },
       });
-      tooltipContent.prepend(screenshot);
+      tooltipContainer.prepend(screenshot);
     }
 
     const marker = new CanvasMarker([mapLocation.y, mapLocation.x], {
@@ -205,16 +279,15 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       isUnderground: mapLocation.isUnderground,
       pmIgnore: true,
       isHighlighted,
-      tooltipContent,
+      tooltipContent: tooltipContainer,
     });
-    marker.addTo(isCustom ? customGroup : group);
 
-    marker.bindTooltip(tooltipContent, {
+    marker.bindTooltip(tooltipContainer, {
       direction: "top",
       offset: [0, -15],
     });
 
-    marker.bindPopup(tooltipContent, {
+    marker.bindPopup(tooltipContainer, {
       offset: [0, -10],
     });
 
@@ -268,7 +341,7 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
         innerText: "Cancel",
         onclick: () => {
           marker.unbindTooltip();
-          marker.bindTooltip(tooltipContent, {
+          marker.bindTooltip(tooltipContainer, {
             direction: "top",
           });
 
@@ -362,7 +435,7 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
     });
 
     if (isHighlighted) {
-      marker.bindPopup(tooltipContent);
+      marker.bindPopup(tooltipContainer);
       marker.openPopup();
     }
 
