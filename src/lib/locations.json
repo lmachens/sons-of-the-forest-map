@@ -111,7 +111,8 @@
     "title": "Slingshot",
     "description": "On one of soldiers bodies",
     "x": -533,
-    "y": 120
+    "y": 120,
+    "screenshot": "slingshot.webp"
   },
   {
     "id": 15,
@@ -300,7 +301,8 @@
     "y": 1036,
     "isUnderground": true,
     "requirements": [49],
-    "items": [19, 20, 311, 312, 315, 316, 314, 308]
+    "items": [19, 20, 311, 312, 315, 316, 314, 308],
+    "screenshot": "food_and_dining_cave.webp"
   },
   {
     "id": 33,
@@ -406,7 +408,8 @@
     "title": "Rope Gun Cave",
     "x": -1234,
     "y": -302,
-    "items": [13, 12, 96, 98]
+    "items": [13, 12, 96, 98],
+    "screenshot": "ropegun_cave.webp"
   },
   {
     "id": 47,
@@ -816,7 +819,8 @@
     "type": "cloth",
     "title": "Leather Suit",
     "x": -888,
-    "y": 769
+    "y": 769,
+    "screenshot": "leather_suit_heli.webp"
   },
   {
     "id": 318,

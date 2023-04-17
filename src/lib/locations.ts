@@ -11,6 +11,7 @@ export type MapLocation = {
   isUnderground?: boolean;
   requirements?: number[];
   items?: number[];
+  screenshot?: string;
 };
 
 export function getMapLocations(): MapLocation[] {

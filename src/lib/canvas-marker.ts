@@ -83,7 +83,7 @@ export type CanvasMarkerOptions = {
   isUnderground?: boolean;
   isDiscovered?: boolean;
   isHighlighted?: boolean;
-  tooltipContent: string;
+  tooltipContent: string | HTMLElement;
 };
 
 class CanvasMarker extends leaflet.CircleMarker {

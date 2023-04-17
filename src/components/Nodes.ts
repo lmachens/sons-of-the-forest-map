@@ -151,15 +151,50 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       })
       .join("\n");
 
-    const tooltipContent = `
-    <p class="bold">${mapLocation.title ?? ""}</p>
-    <p class="italic">${isCustom ? "Custom Node" : type.title}</p>
-    <p>${mapLocation.description?.replaceAll("\n", "<br/>") || ""}</p>
-    ${mapLocation.isUnderground ? '<p class="info italic">Underground</p>' : ""}
-    ${requirements ? `<p class="bold">Requirements</p>${requirements}` : ""}
-    ${items ? `<p class="bold">Items</p>${items}` : ""}
-    <p class="hint">Right-Click to open menu</p>
-    `;
+    const tooltipContent = createElement("div", {
+      className: "tooltip-container",
+      innerHTML: `
+      <div class="tooltip-content">
+      <p class="bold">${mapLocation.title ?? ""}</p>
+      <p class="italic">${isCustom ? "Custom Node" : type.title}</p>
+      <p>${mapLocation.description?.replaceAll("\n", "<br/>") || ""}</p>
+      ${
+        mapLocation.isUnderground
+          ? '<p class="info italic">Underground</p>'
+          : ""
+      }
+      ${requirements ? `<p class="bold">Requirements</p>${requirements}` : ""}
+      ${items ? `<p class="bold">Items</p>${items}` : ""}
+      <p class="hint">Right-Click to open menu</p>
+    </div>`,
+    });
+    if (mapLocation.screenshot) {
+      const screenshot = createElement("img", {
+        className: "screenshot-preview",
+        src: `/screenshots/${mapLocation.screenshot}`,
+        alt: "",
+        onclick: () => {
+          const container = createElement(
+            "div",
+            {
+              className: "screenshot-container",
+              onclick: () => {
+                container.remove();
+              },
+            },
+            [
+              createElement("img", {
+                className: "screenshot-full",
+                src: `/screenshots/${mapLocation.screenshot}`,
+                alt: "",
+              }),
+            ]
+          );
+          document.body.appendChild(container);
+        },
+      });
+      tooltipContent.prepend(screenshot);
+    }
 
     const marker = new CanvasMarker([mapLocation.y, mapLocation.x], {
       id: mapLocation.id,
