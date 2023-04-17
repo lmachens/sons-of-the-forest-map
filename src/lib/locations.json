@@ -408,8 +408,7 @@
     "title": "Rope Gun Cave",
     "x": -1234,
     "y": -302,
-    "items": [13, 12, 96, 98],
-    "screenshot": "ropegun_cave.webp"
+    "items": [13, 12, 96, 98]
   },
   {
     "id": 47,
@@ -425,7 +424,8 @@
     "title": "Shovel Cave",
     "x": -530,
     "y": 132,
-    "items": [14, 15, 327, 318]
+    "items": [14, 15, 327, 318],
+    "screenshot": "shovel_cave.webp"
   },
   {
     "id": 49,
