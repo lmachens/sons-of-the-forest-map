@@ -771,3 +771,38 @@ select {
   font-style: italic;
   text-decoration: none;
 }
+
+#gt_float_wrapper {
+  top: 2px !important;
+  right: 130px !important;
+}
+.gt_float_switcher {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+
+.gt_float_switcher,
+.gt_float_switcher .gt-selected {
+  background: none !important;
+}
+
+.gt_float_switcher .gt-selected .gt-current-lang {
+  padding: 0 !important;
+}
+
+.gt-current-lang {
+  color: white !important;
+}
+
+.gt_options {
+  background: black;
+}
+
+.gt_float_switcher .gt_options a {
+  color: white !important;
+}
+
+.gt_float_switcher img {
+  border: 1px solid #363636;
+  width: 25px !important;
+}
