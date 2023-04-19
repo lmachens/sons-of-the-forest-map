@@ -3,7 +3,7 @@ import path from "node:path";
 import puppeteer from "puppeteer";
 import { fileURLToPath } from "url";
 import { createServer } from "vite";
-import mapLocations from "./src/lib/locations.json" assert { type: "json" };
+import mapLocations from "../src/lib/locations.json" assert { type: "json" };
 
 const __dirname = fileURLToPath(new URL(".", import.meta.url));
 const toAbsolute = (p) => path.resolve(__dirname, p);
