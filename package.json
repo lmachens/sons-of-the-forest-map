@@ -6,17 +6,20 @@
   "scripts": {
     "dev:overwolf": "vite -c vite-overwolf.config.ts",
     "dev:web": "vite -c vite-web.config.ts",
-    "build": "tsc && vite build  -c vite-overwolf.config.ts && node copy-statics.mjs && ow opk pack dist -o sotf.opk && ow opk sign sotf.opk",
+    "build": "tsc && vite build -c vite-overwolf.config.ts && node copy-statics.mjs && ow opk pack dist -o sotf.opk && ow opk sign sotf.opk",
     "web": "tsc && vite build -c vite-web.config.ts && node prerender.mjs",
     "preview": "vite preview -c vite-web.config.ts",
-    "release": "ow opk upload sotf.signed.opk"
+    "release": "ow opk upload sotf.signed.opk",
+    "i18n": "node scripts/i18n.mjs"
   },
   "devDependencies": {
     "@overwolf/ow-cli": "0.0.5-0",
     "@overwolf/types": "3.23.1",
+    "@translate-tools/core": "0.2.13",
     "@types/leaflet": "1.9.1",
     "@types/qrcode": "1.5.0",
     "@types/throttle-debounce": "5.0.0",
+    "html-to-text": "9.0.5",
     "puppeteer": "19.9.0",
     "typescript": "^4.9.3",
     "vite": "^4.1.0",

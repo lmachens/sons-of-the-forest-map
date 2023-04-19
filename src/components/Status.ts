@@ -1,6 +1,7 @@
 import { GAME_CLASS_ID, WINDOWS } from "../lib/config";
 import { listenToGameInfo } from "../lib/games";
 import { listenToHotkeyBinding } from "../lib/hotkeys";
+import { t } from "../lib/i18n";
 import { getPreferedWindowName, togglePreferedWindow } from "../lib/windows";
 
 export default function Status() {
@@ -66,11 +67,11 @@ export default function Status() {
 
   const locationStatus =
     document.querySelector<HTMLParagraphElement>(".location-status")!;
-  locationStatus.innerText = "Location is not detected";
+  locationStatus.innerText = t("Location is not detected");
 
   function setLocation(location: { x: number; y: number; z: number } | null) {
     if (!location) {
-      locationStatus.innerText = "Location is not detected";
+      locationStatus.innerText = t("Location is not detected");
     } else {
       locationStatus.innerText = `X: ${location.x} Y: ${location.y} Z: ${location.z}`;
     }

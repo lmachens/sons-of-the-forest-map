@@ -484,7 +484,7 @@ select {
 
 .w-sm {
   display: inline-block;
-  width: 68px;
+  min-width: 68px;
 }
 
 .w-lg {
@@ -770,4 +770,10 @@ select {
   display: block;
   font-style: italic;
   text-decoration: none;
+}
+
+.locale-selector {
+  position: fixed;
+  top: 2px;
+  right: 130px;
 }

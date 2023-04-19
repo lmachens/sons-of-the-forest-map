@@ -10,7 +10,7 @@ const toAbsolute = (p) => path.resolve(__dirname, p);
 
 const server = await createServer({
   // any valid user config options, plus `mode` and `configFile`
-  configFile: toAbsolute("vite-web.config.ts"),
+  configFile: toAbsolute("./vite-web.config.ts"),
   root: __dirname,
   mode: "production",
   server: {
@@ -23,7 +23,7 @@ const browser = await puppeteer.launch();
 const page = await browser.newPage();
 await page.setViewport({ width: 1200, height: 628 });
 
-const template = fs.readFileSync(toAbsolute("out/index.html"), "utf-8");
+const template = fs.readFileSync(toAbsolute("./out/index.html"), "utf-8");
 
 const indexMeta = generateMeta({
   title: "Sons Of The Forest Map",
@@ -33,7 +33,7 @@ const indexMeta = generateMeta({
   image: "https://sotf.th.gl/index.webp",
 });
 const indexHTML = template.replace(`<!--PRELOAD_TEMPLATE-->`, indexMeta);
-fs.writeFileSync(toAbsolute(`out/index.html`), indexHTML);
+fs.writeFileSync(toAbsolute(`./out/index.html`), indexHTML);
 
 await page.goto(`http://localhost:1337`, {
   waitUntil: "networkidle0",
@@ -53,11 +53,11 @@ for (const mapLocation of mapLocations) {
   });
   const html = template.replace(`<!--PRELOAD_TEMPLATE-->`, meta);
 
-  fs.mkdirSync(toAbsolute(`out/locations/${mapLocation.id}`), {
+  fs.mkdirSync(toAbsolute(`./out/locations/${mapLocation.id}`), {
     recursive: true,
   });
   fs.writeFileSync(
-    toAbsolute(`out/locations/${mapLocation.id}/index.html`),
+    toAbsolute(`./out/locations/${mapLocation.id}/index.html`),
     html
   );
 

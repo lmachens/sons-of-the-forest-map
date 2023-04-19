@@ -1,5 +1,6 @@
 import leaflet from "leaflet";
 import { createElement } from "../lib/elements";
+import { t } from "../lib/i18n";
 import CustomNode from "./CustomNode";
 
 export default function ContextMenu({
@@ -20,7 +21,7 @@ export default function ContextMenu({
       tooltip.remove();
     }
     const customNodeButton = createElement("button", {
-      innerText: "Add Custom Node",
+      innerText: t("Add Custom Node"),
     });
     CustomNode({
       element: customNodeButton,
@@ -37,11 +38,11 @@ export default function ContextMenu({
     });
 
     const zoomIn = createElement("button", {
-      innerText: "Zoom In",
+      innerText: t("Zoom In"),
       onclick: () => map.zoomIn(),
     });
     const zoomOut = createElement("button", {
-      innerText: "Zoom Out",
+      innerText: t("Zoom Out"),
       onclick: () => map.zoomOut(),
     });
     const container = createElement("div", {}, [

@@ -2,6 +2,7 @@ import leaflet from "leaflet";
 import Peer, { DataConnection } from "peerjs";
 import { createElement } from "../lib/elements";
 import { startNewGameSession } from "../lib/game-sessions";
+import { t } from "../lib/i18n";
 import { PlayerPosition } from "../lib/player-marker";
 import DirectionLine from "./DirectionLine";
 import FollowLocation from "./FollowLocation";
@@ -171,15 +172,15 @@ export default function AppStatus({ map }: { map: leaflet.Map }) {
 
   function handleId(id: string) {
     if (!id) {
-      peerErrorElement.innerText = "Please enter an ID";
+      peerErrorElement.innerText = t("Please enter an ID");
       return;
     }
     if (!peer || peer.disconnected) {
-      peerErrorElement.innerText = "Connect to peer server first";
+      peerErrorElement.innerText = t("Connect to peer server first");
       return;
     }
     if (id === peer.id) {
-      peerErrorElement.innerText = "You can not connect to yourself";
+      peerErrorElement.innerText = t("You can not connect to yourself");
       return;
     }
     peerErrorElement.innerText = "";
@@ -197,11 +198,11 @@ export default function AppStatus({ map }: { map: leaflet.Map }) {
 
   const locationStatus =
     document.querySelector<HTMLParagraphElement>(".location-status")!;
-  locationStatus.innerText = "Location is not detected";
+  locationStatus.innerText = t("Location is not detected");
 
   function setLocation(location: { x: number; y: number; z: number } | null) {
     if (!location) {
-      locationStatus.innerText = "Location is not detected";
+      locationStatus.innerText = t("Location is not detected");
     } else {
       locationStatus.innerText = `X: ${location.x} Y: ${location.y} Z: ${location.z}`;
     }

@@ -1,4 +1,5 @@
 import { createElement } from "../lib/elements";
+import { t } from "../lib/i18n";
 import { getItem, setItem } from "../lib/storage";
 
 export function JoinCommunity() {
@@ -12,17 +13,17 @@ export function JoinCommunity() {
       className: "group",
       innerHTML: `
     <a href="https://discord.com/invite/NTZu8Px" target="_blank" class="button discord">
-        Join our Discord
+        ${t("Join our Discord")}
       </a>
       <a href="https://discord.gg/6JFVjYjrF4" target="_blank" class="button discord">
-        Join German community
+        ${t("Join German community")}
       </a>
     `,
     },
     [
       createElement("button", {
         className: "button",
-        innerText: "Do not show again",
+        innerText: t("Do not show again"),
         onclick: () => {
           element.remove();
           setItem("hide_join_community", true);
@@ -39,10 +40,12 @@ export function JoinCommunity() {
       <svg>
         <use xlink:href="#window-control_discord" />
       </svg>
-      <span>Join the community</span>
+      <span>${t("Join the community")}</span>
     </h2>
     <p class="description">
-      Discuss latest updates, ask questions and share your ideas with other players.
+      ${t(
+        "Discuss latest updates, ask questions and share your ideas with other players."
+      )}
     </p>
     `,
     },
