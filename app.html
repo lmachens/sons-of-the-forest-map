@@ -97,7 +97,7 @@
       </symbol>
     </svg>
     <header class="app-header">
-      <h1 class="version notranslate">Sons Of The Forest Map</h1>
+      <h1 class="version">Sons Of The Forest Map</h1>
       <div class="window-controls-group">
         <a
           href="https://discord.com/invite/NTZu8Px"
@@ -145,22 +145,30 @@
             </svg>
           </button>
           <section class="paper">
-            <h2>Nodes</h2>
+            <h2 data-i18n>Nodes</h2>
             <div class="types" id="filters">&nbsp;</div>
-            <h3>Custom Nodes (<span id="custom_nodes_count"></span>)</h3>
-            <div class="group">
-              <button id="add_custom_node">Add Node</button>
-            </div>
             <h3>
-              Discovered Nodes (<span id="discovered_nodes_count"></span>)
+              <span data-i18n>Custom Nodes</span> (<span
+                id="custom_nodes_count"
+              ></span
+              >)
             </h3>
             <div class="group">
-              <button id="reset_discovered_nodes">Reset</button>
+              <button id="add_custom_node" data-i18n>Add Node</button>
+            </div>
+            <h3>
+              <span data-i18n>Discovered Nodes</span> (<span
+                id="discovered_nodes_count"
+              ></span
+              >)
+            </h3>
+            <div class="group">
+              <button id="reset_discovered_nodes" data-i18n>Reset</button>
             </div>
           </section>
           <section class="paper">
-            <h2>Game sessions</h2>
-            <p class="description">
+            <h2 data-i18n>Game sessions</h2>
+            <p class="description" data-i18n>
               Your current game session is automatically saved. You can load
               saved game sessions to trace your path. The last 5 sessions are
               saved.
@@ -168,63 +176,67 @@
             <div id="game_sessions"></div>
           </section>
           <section class="paper">
-            <h2>Realtime Status</h2>
+            <h2 data-i18n>Realtime Status</h2>
             <p class="status" id="game_status">
               <span class="indicator"></span>
-              <span>Game is running</span>
-              <span>Game is not running</span>
+              <span data-i18n>Game is running</span>
+              <span data-i18n>Game is not running</span>
             </p>
             <p class="location-status">&nbsp;</p>
-            <button class="show-on-map">Show on map</button>
+            <button class="show-on-map" data-i18n>Show on map</button>
             <label class="group">
               <input type="checkbox" id="follow_location" />
-              <span>Follow location</span>
+              <span data-i18n>Follow location</span>
             </label>
-            <p class="description">
+            <p class="description" data-i18n>
               The player marker will be automatically centered if the location
               is updated.
             </p>
             <div class="game-overlay hidden">
-              <span class="warning">Game is disabled!</span>
+              <span class="warning" data-i18n>Game is disabled!</span>
               <p>
-                Open the
-                <a href="overwolf://store/game-settings/game-id/22638"
+                <span data-i18n>Open the</span>
+                <a href="overwolf://store/game-settings/game-id/22638" data-i18n
                   >Overwolf settings</a
                 >
-                and activate Sons of the Forest.
+                <span data-i18n>and activate Sons of the Forest.</span>
               </p>
             </div>
           </section>
           <section class="paper">
-            <h2>Position Sync</h2>
+            <h2 data-i18n>Position Sync</h2>
             <p class="description">
-              Connect your position with the
-              <a href="https://sotf.th.gl/" target="_blank">web version</a>
-              for a real-time experience on any device! And add other players,
-              to see each other on the map. First, connect to the peer server
-              and connect to your friends afterwards.
+              <span data-i18n>Connect your position with the</span>
+              <a href="https://sotf.th.gl/" target="_blank" data-i18n
+                >web version</a
+              >
+              <span data-i18n
+                >for a real-time experience on any device! And add other
+                players, to see each other on the map. First, connect to the
+                peer server and connect to your friends afterwards.</span
+              >
             </p>
-            <button id="peer_connect">Connect to peer server</button>
+            <button id="peer_connect" data-i18n>Connect to peer server</button>
             <p class="status issue" id="my_peer_status">
               <span class="indicator"></span>
-              <span>Connected to peer server</span>
-              <span>Not connected to peer server</span>
+              <span data-i18n>Connected to peer server</span>
+              <span data-i18n>Not connected to peer server</span>
             </p>
 
             <div class="group">
               <label>
-                <span class="w-sm">Your ID</span>
+                <span class="w-sm" data-i18n>Your ID</span>
                 <input type="text" id="peer_id" disabled />
               </label>
-              <button id="copy_peer_id">Copy</button>
+              <button id="copy_peer_id" data-i18n>Copy</button>
             </div>
             <p class="warning" id="peer_error"></p>
             <form class="group" id="connection_form">
               <label>
-                <span class="w-sm">Friend ID</span>
+                <span class="w-sm" data-i18n>Friend ID</span>
                 <input type="text" name="other_peer_id" required />
               </label>
-              <input type="submit" value="Add friend" />
+              <button type="submit" data-i18n>Add friend</button>
             </form>
             <div id="connections"></div>
             <a href="https://sotf.th.gl/" target="_blank" class="qr_link">
@@ -232,73 +244,65 @@
             ></a>
           </section>
           <section class="paper">
-            <h2>Settings</h2>
+            <h2 data-i18n>Settings</h2>
             <div>
-              <span class="w-lg">Show/Hide app hotkey</span>
+              <span class="w-lg" data-i18n>Show/Hide app hotkey</span>
               <button class="hotkey" id="toggle_app_hotkey"></button>
             </div>
             <div>
-              <span class="w-lg">Zoom in hotkey</span>
+              <span class="w-lg" data-i18n>Zoom in hotkey</span>
               <button class="hotkey" id="zoom_in_app_hotkey"></button>
             </div>
             <div>
-              <span class="w-lg">Zoom out hotkey</span>
+              <span class="w-lg" data-i18n>Zoom out hotkey</span>
               <button class="hotkey" id="zoom_out_app_hotkey"></button>
             </div>
             <div>
-              <span class="w-lg">Show/Hide Zones Grid</span>
+              <span class="w-lg" data-i18n>Show/Hide Zones Grid</span>
               <button class="hotkey" id="toggle_zones_grid_hotkey"></button>
             </div>
             <label class="group">
               <input type="checkbox" id="overlay" />
-              <span>Activate Overlay</span>
+              <span data-i18n>Activate Overlay</span>
             </label>
-            <p class="description">
+            <p class="description" data-i18n>
               This window is only visible as overlay in-game. Deactive it, if
               you like to move this window to second screen or to ALT+TAB it.
             </p>
             <label class="group">
               <input type="checkbox" id="direction_line" />
-              <span>Show Direction Line</span>
+              <span data-i18n>Show Direction Line</span>
             </label>
-            <p class="description">Displays a line in walking direction.</p>
+            <p class="description" data-i18n>
+              Displays a line in walking direction.
+            </p>
             <label class="group">
               <input type="checkbox" id="trace_line" />
-              <span>Show Trace Line</span>
+              <span data-i18n>Show Trace Line</span>
             </label>
-            <p class="description">
+            <p class="description" data-i18n>
               Small dots will display the path you were walking.
             </p>
             <label class="group">
               <input type="checkbox" id="zones_grid" />
-              <span>Show Zones</span>
+              <span data-i18n>Show Zones</span>
             </label>
             <p class="description">
-              A grid for the in-game zones are displayed on the map to help
-              teleporting to this zone. Type
-              <code>cheatstick</code> while in game (blindly) and press
-              <code>F1</code> to open the prompt. Enter
-              <code>gotozone TH</code> as example to teleport to this zone.
+              <span data-i18n
+                >A grid for the in-game zones are displayed on the map to help
+                teleporting to this zone. Type</span
+              >
+              <code>cheatstick</code>
+              <span data-i18n>while in game (blindly) and press</span>
+              <code>F1</code> <span data-i18n>to open the prompt. Enter</span>
+              <code>gotozone TH</code>
+              <span data-i18n>as example to teleport to this zone.</span>
             </p>
           </section>
         </div>
         <div class="banner"></div>
       </aside>
       <div class="ads"></div>
-      <div class="gtranslate_wrapper"></div>
-      <script>
-        window.gtranslateSettings = {
-          default_language: "en",
-          wrapper_selector: ".gtranslate_wrapper",
-          switcher_horizontal_position: "right",
-          switcher_vertical_position: "top",
-          float_switcher_open_direction: "bottom",
-        };
-      </script>
-      <script
-        src="https://cdn.gtranslate.net/widgets/latest/float.js"
-        defer
-      ></script>
     </div>
     <div class="resize top"></div>
     <div class="resize right"></div>

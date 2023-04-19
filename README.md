@@ -43,6 +43,23 @@ If you want to contribute to this project, please join the [Discord](https://dis
 3. Install the dependencies with `pnpm install`
 4. Start the development with `pnpm dev:web`
 
+### Internationalization
+
+The app supports multiple languages. If you want to add or update a language, please follow these steps:
+
+### Add new language strings
+
+The script in `scripts/i18n.mjs` will automatically extract all strings from the app and updates the locale files in `src/locales`.
+
+#### Add a new language
+
+Add the locale of the new language in `scripts/i18n.mjs` and run `pnpm i18n` to extract the strings of the app and create a new locale file in `src/locales`.
+This will take a while, because the script uses Google Translate to translate the strings. Please check the new locale file and correct any mistakes.
+
+#### Update an existing language
+
+Update the locale files in `src/locales`.
+
 ## Authors
 
 - **[DevLeon](https://github.com/lmachens)** - _Development_

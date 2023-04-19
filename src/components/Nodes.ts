@@ -1,6 +1,7 @@
 import leaflet from "leaflet";
 import CanvasMarker from "../lib/canvas-marker";
 import { createElement } from "../lib/elements";
+import { t } from "../lib/i18n";
 import { getIconElement } from "../lib/icons";
 import {
   MapLocation,
@@ -207,12 +208,12 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
     const tooltipContent = createElement("div", {
       className: "tooltip-content",
       innerHTML: `
-      <p class="bold">${mapLocation.title ?? ""}</p>
-      <p class="italic">${isCustom ? "Custom Node" : type.title}</p>
-      <p>${mapLocation.description?.replaceAll("\n", "<br/>") || ""}</p>
+      <p class="bold">${t(mapLocation.title) ?? ""}</p>
+      <p class="italic">${isCustom ? t("Custom Node") : t(type.title)}</p>
+      <p>${t(mapLocation.description || "")}</p>
       ${
         mapLocation.isUnderground
-          ? '<p class="info italic">Underground</p>'
+          ? `<p class="info italic">${t("Underground")}</p>`
           : ""
       }
       `,
@@ -232,7 +233,7 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
     tooltipContent.append(
       createElement("p", {
         className: "hint",
-        innerText: "Right-Click to open menu",
+        innerText: t("Right-Click to open menu"),
       })
     );
     const tooltipContainer = createElement(
@@ -321,11 +322,11 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       });
       const save = createElement("input", {
         type: "submit",
-        value: "Save",
+        value: t("Save"),
       });
       const remove = createElement("button", {
         type: "button",
-        innerText: "Delete",
+        innerText: t("Delete"),
         onclick: () => {
           let customNodes = getCustomNodes();
           customNodes = customNodes.filter(
@@ -338,7 +339,7 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       });
       const cancel = createElement("button", {
         type: "button",
-        innerText: "Cancel",
+        innerText: t("Cancel"),
         onclick: () => {
           marker.unbindTooltip();
           marker.bindTooltip(tooltipContainer, {
@@ -352,7 +353,7 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       });
       const actions = createElement("div", {}, [save, remove, cancel]);
       const note = createElement("span", {
-        innerText: "Drag icon to move the node position",
+        innerText: t("Drag icon to move the node position"),
         className: "description",
       });
       form.append(actions, note);
@@ -400,7 +401,9 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
         contextMenuTooltip.remove();
       }
       const hideElement = createElement("button", {
-        innerText: isDiscovered ? "Set as undiscovered" : "Set as discoverd",
+        innerText: isDiscovered
+          ? t("Set as undiscovered")
+          : t("Set as discoverd"),
         onclick: () => {
           let discoveredNodeIDs = getDiscoveredNodeIDs();
           if (isDiscovered) {
@@ -417,7 +420,7 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       const container = createElement("div", {}, [hideElement]);
       if (isCustom) {
         const editElement = createElement("button", {
-          innerText: "Edit Custom Node",
+          innerText: t("Edit Custom Node"),
           onclick: openEditCustomNodeTooltip,
         });
         container.append(editElement);
@@ -456,7 +459,7 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
     "#reset_discovered_nodes"
   )!;
   resetDiscoveredNodes.onclick = () => {
-    if (!confirm("Are you sure you want to reset all discovered nodes?")) {
+    if (!confirm(t("Are you sure you want to reset all discovered nodes?"))) {
       return;
     }
     setDiscoveredNodeIDs([]);

@@ -6,6 +6,7 @@ import leaflet from "leaflet";
 
 import CanvasMarker from "../lib/canvas-marker";
 import { createElement } from "../lib/elements";
+import { t } from "../lib/i18n";
 import { getIconElement } from "../lib/icons";
 import { getCustomNodes, setCustomNodes, types } from "../lib/nodes";
 import { PlayerPosition } from "../lib/player-marker";
@@ -45,11 +46,11 @@ export default function CustomNode({
 
     const save = createElement("input", {
       type: "submit",
-      value: "Save",
+      value: t("Save"),
     });
     const cancel = createElement("button", {
       type: "button",
-      innerText: "Cancel",
+      innerText: t("Cancel"),
       onclick: () => {
         marker.remove();
         isAdding = false;
@@ -59,7 +60,7 @@ export default function CustomNode({
     const actions = createElement("div", {}, [save, cancel]);
     actions.append(save, cancel);
     const note = createElement("span", {
-      innerText: "Drag icon to move the node position",
+      innerText: t("Drag icon to move the node position"),
       className: "description",
     });
 

@@ -8,6 +8,7 @@ import FollowLocation from "./components/FollowLocation";
 import GameSessions from "./components/GameSessions";
 import ImageOverlay from "./components/ImageOverlay";
 import { JoinCommunity } from "./components/JoinCommunity";
+import LocaleSelector from "./components/LocaleSelector";
 import Map from "./components/Map";
 import Multiplayer from "./components/Multiplayer";
 import Nodes from "./components/Nodes";
@@ -21,11 +22,16 @@ import {
   listenToOverlayEnablement,
   setFeatures,
 } from "./lib/games";
+import { loadDictionary, translateHTML } from "./lib/i18n";
 import { waitForOverwolf } from "./lib/overwolf";
 import { closeWindow, getCurrentWindow } from "./lib/windows";
 
 waitForOverwolf().then(async () => {
   console.log("Init main");
+
+  await loadDictionary();
+  translateHTML();
+  LocaleSelector();
 
   const mapElement = document.querySelector<HTMLDivElement>(".map")!;
   const map = Map(mapElement);
