@@ -173,7 +173,7 @@ export const types: NodeType[] = [
   },
   {
     value: "cave",
-    title: "Cave Entrance",
+    title: "Cave",
     icon: icons.cave,
     filter: "cave",
   },
@@ -191,7 +191,7 @@ export const types: NodeType[] = [
   },
   {
     value: "cloth",
-    title: "Clothes",
+    title: "Cloth",
     icon: icons.hanger,
     filter: "clothes",
   },
@@ -215,9 +215,9 @@ export const types: NodeType[] = [
   },
   {
     value: "hang-glider",
-    title: "Player Gear",
+    title: "Aircarft",
     icon: icons["hang-glider"],
-    filter: "glider",
+    filter: "vehicle",
   },
   {
     value: "putter",
@@ -227,19 +227,19 @@ export const types: NodeType[] = [
   },
   {
     value: "crate",
-    title: "Loot",
+    title: "Crate",
     icon: icons.crate,
     filter: "loot",
   },
   {
     value: "supply",
-    title: "Loot",
+    title: "Case",
     icon: icons.box,
     filter: "loot",
   },
   {
     value: "ammo",
-    title: "Loot",
+    title: "Case",
     icon: icons.box,
     filter: "loot",
   },
@@ -257,7 +257,7 @@ export const types: NodeType[] = [
   },
   {
     value: "flare",
-    title: "Loot",
+    title: "Case",
     icon: icons.box,
     filter: "loot",
   },
@@ -269,15 +269,9 @@ export const types: NodeType[] = [
   },
   {
     value: "can",
-    title: "Cannibal Camps",
+    title: "Cannibal Camp",
     icon: icons.can,
-    filter: "can",
-  },
-  {
-    value: "mod",
-    title: "Weapon Attachement",
-    icon: icons.mod,
-    filter: "mod",
+    filter: "village",
   },
   {
     value: "door",
@@ -295,7 +289,7 @@ export const types: NodeType[] = [
     value: "uni",
     title: "Unicycle",
     icon: icons.uni,
-    filter: "gear",
+    filter: "vehicle",
   },
   {
     value: "vision",
@@ -316,12 +310,6 @@ export const types: NodeType[] = [
     filter: "mod",
   },
   {
-    value: "lake",
-    title: "Water Body",
-    icon: icons.info,
-    filter: "lake",
-  },
-  {
     value: "light",
     title: "Weapon Attachment",
     icon: icons["flashlight-attachment"],
@@ -338,6 +326,12 @@ export const types: NodeType[] = [
     title: "Weapon Attachment",
     icon: icons["laser-sight"],
     filter: "mod",
+  },
+  {
+    value: "lake",
+    title: "Water Body",
+    icon: icons.info,
+    filter: "lake",
   },
 ];
 
@@ -376,12 +370,12 @@ export const filters = [
   },
   {
     value: "cave",
-    title: "Cave Entrances",
+    title: "Caves",
     color: "rgb(173 216 230)",
   },
   {
     value: "hatch",
-    title: "Bunker Entrances",
+    title: "Bunkers",
     color: "rgb(255 215 0)",
   },
   {
@@ -405,6 +399,11 @@ export const filters = [
     color: "rgb(255 182 193)",
   },
   {
+    value: "gear",
+    title: "Player Gear",
+    color: "rgb(255 140 0)",
+  },
+  {
     value: "tools",
     title: "Tools",
     color: "rgb(144 238 144)",
@@ -420,22 +419,17 @@ export const filters = [
     color: "rgb(240 125 138)",
   },
   {
-    value: "gear",
-    title: "Player Gear",
-    color: "rgb(255 140 0)",
-  },
-  {
     value: "loot",
-    title: "Loot Crates",
+    title: "Crates",
     color: "rgb(123 104 238)",
   },
   {
-    value: "glider",
-    title: "Hang Gliders",
+    value: "vehicle",
+    title: "Transportation",
     color: "rgb(65 105 225)",
   },
   {
-    value: "can",
+    value: "village",
     title: "Cannibal Camps",
     color: "rgb(255 0 0)",
   },
