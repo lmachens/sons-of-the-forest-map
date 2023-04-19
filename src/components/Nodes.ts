@@ -10,19 +10,21 @@ import {
 } from "../lib/locations";
 import { setMeta } from "../lib/meta";
 import {
-  filters,
   getCustomNodes,
   getDeselectedFilters,
   getDiscoveredNodeIDs,
+  getFilters,
+  getTypes,
   setCustomNodes,
   setDiscoveredNodeIDs,
-  types,
 } from "../lib/nodes";
 import { getMapLocationId, setMapLocationId } from "../lib/router";
 
 const ICON_RADIUS = 16;
 const HIGHLIGHTED_ICON_RADIUS = ICON_RADIUS * 1.5;
 export default function Nodes({ map }: { map: leaflet.Map }) {
+  const types = getTypes();
+  const filters = getFilters();
   const group = new leaflet.LayerGroup();
   const customGroup = new leaflet.LayerGroup();
 

@@ -26,7 +26,8 @@
     "title": "Modern Axe",
     "description": "In the chest of a dead soldier",
     "x": -703,
-    "y": 445
+    "y": 445,
+    "screenshot": "modern_axe.webp"
   },
   {
     "id": 5,
@@ -34,7 +35,8 @@
     "title": "Flashlight",
     "description": "On hanging soldier",
     "x": -626,
-    "y": 387
+    "y": 387,
+    "screenshot": "flashlight.webp"
   },
   {
     "id": 6,
@@ -43,7 +45,7 @@
     "description": "On the deflated boat",
     "x": -68,
     "y": 1459,
-    "z": 0
+    "screenshot": "machete.webp"
   },
   {
     "id": 7,
@@ -51,7 +53,8 @@
     "title": "Stun Baton",
     "description": "In the pile of skulls",
     "x": -1145,
-    "y": -161
+    "y": -161,
+    "screenshot": "stun_baton.webp"
   },
   {
     "id": 8,
@@ -59,7 +62,8 @@
     "title": "Pistol",
     "description": "On Emergency Raft",
     "x": -1797,
-    "y": 578
+    "y": 578,
+    "screenshot": "pistol_1.webp"
   },
   {
     "id": 9,
@@ -67,7 +71,9 @@
     "title": "Pistol",
     "x": 1153,
     "y": -607,
-    "isUnderground": true
+    "isUnderground": true,
+    "requirements": [17],
+    "screenshot": "pistol_2.webp"
   },
   {
     "id": 10,
@@ -76,16 +82,18 @@
     "description": "Inside the right tunnel",
     "x": -647,
     "y": 1514,
-    "isUnderground": true
+    "isUnderground": true,
+    "screenshot": "stun_gun.webp"
   },
   {
     "id": 11,
     "type": "rebreather",
     "title": "Rebreather",
-    "description": "Inside the right tunnel",
+    "description": "Inside the left tunnel",
     "x": -422,
     "y": 1477,
-    "isUnderground": true
+    "isUnderground": true,
+    "screenshot": "rebreather.webp"
   },
   {
     "id": 12,
@@ -94,7 +102,8 @@
     "description": "Next to the projector",
     "x": -1174,
     "y": -217,
-    "isUnderground": true
+    "isUnderground": true,
+    "screenshot": "cross.webp"
   },
   {
     "id": 13,
@@ -103,7 +112,8 @@
     "description": "Near the cave exit in the left tunnel",
     "x": -1204,
     "y": -277,
-    "isUnderground": true
+    "isUnderground": true,
+    "screenshot": "rope_gun.webp"
   },
   {
     "id": 14,
@@ -122,7 +132,8 @@
     "x": -429,
     "y": -103,
     "isUnderground": true,
-    "requirements": [13, 11]
+    "requirements": [13, 11],
+    "screenshot": "shovel.webp"
   },
   {
     "id": 16,
@@ -131,7 +142,8 @@
     "description": "Inside grave",
     "x": -1341,
     "y": 1410,
-    "requirements": [15]
+    "requirements": [15],
+    "screenshot": "shotgun.webp"
   },
   {
     "id": 17,
@@ -140,7 +152,8 @@
     "description": "Next to 3D Printer in the bunker",
     "x": -427,
     "y": 700,
-    "isUnderground": true
+    "isUnderground": true,
+    "screenshot": "maintenance_card.webp"
   },
   {
     "id": 18,
@@ -149,17 +162,19 @@
     "description": "Inside the bunker room at the end of a hallway",
     "x": -415,
     "y": 712,
-    "isUnderground": true
+    "isUnderground": true,
+    "screenshot": "firefighter_axe.webp"
   },
   {
     "id": 19,
     "type": "keycard",
     "title": "VIP Card",
-    "description": "On desk in Security room, behind Maintenance Door",
+    "description": "On desk in Security room",
     "x": -977,
     "y": 1039,
     "isUnderground": true,
-    "requirements": [17]
+    "requirements": [17],
+    "screenshot": "vip_card.webp"
   },
   {
     "id": 20,
@@ -169,7 +184,8 @@
     "x": -1022,
     "y": 986,
     "isUnderground": true,
-    "requirements": [17]
+    "requirements": [17],
+    "screenshot": "crossbow.webp"
   },
   {
     "id": 21,
@@ -178,35 +194,40 @@
     "x": -1184,
     "y": 41,
     "isUnderground": true,
-    "requirements": [17]
+    "requirements": [17],
+    "screenshot": "guest_keycard.webp"
   },
   {
     "id": 22,
     "type": "guitar",
     "title": "Guitar",
-    "description": "On bar stand top, inside Cave Bunker",
+    "description": "On bar stand top",
     "x": -1158,
     "y": 17,
     "isUnderground": true,
-    "requirements": [17]
+    "requirements": [17],
+    "screenshot": "guitar.webp"
   },
   {
     "id": 23,
     "type": "chainsaw",
     "title": "Chainsaw",
-    "description": "In the Theater room, behind Guest Door",
+    "description": "In the Theater room",
     "x": -1151,
     "y": 116,
-    "isUnderground": true
+    "isUnderground": true,
+    "requirements": [17],
+    "screenshot": "chainsaw.webp"
   },
   {
     "id": 24,
     "type": "compoundBow",
     "title": "Compound Bow",
-    "description": "Inside the bathroom, in Bunker B",
+    "description": "Inside the bathroom",
     "x": -1120,
     "y": -1039,
-    "isUnderground": true
+    "isUnderground": true,
+    "screenshot": "compound_bow.webp"
   },
   {
     "id": 25,
@@ -214,7 +235,8 @@
     "title": "Revolver",
     "x": 1140,
     "y": 1048,
-    "isUnderground": true
+    "isUnderground": true,
+    "screenshot": "revolver.webp"
   },
   {
     "id": 26,
@@ -222,7 +244,9 @@
     "title": "Katana",
     "x": 1160,
     "y": -651,
-    "isUnderground": true
+    "isUnderground": true,
+    "requirements": [17],
+    "screenshot": "katana.webp"
   },
   {
     "id": 27,
@@ -230,7 +254,9 @@
     "title": "Golden Armor",
     "x": 181,
     "y": -664,
-    "isUnderground": true
+    "isUnderground": true,
+    "requirements": [11],
+    "screenshot": "golden_armor.webp"
   },
   {
     "id": 28,
@@ -238,15 +264,17 @@
     "title": "Binoculars",
     "description": "On top of the kayak",
     "x": -1112,
-    "y": 1721
+    "y": 1721,
+    "screenshot": "binoculars.webp"
   },
   {
     "id": 115,
     "type": "opener",
     "title": "Can Opener",
-    "description": "You need it to open cans with cat food",
+    "description": "On rocks",
     "x": -315,
-    "y": 1612
+    "y": 1612,
+    "screenshot": "can_opener_1.webp"
   },
   {
     "id": 340,
@@ -254,7 +282,8 @@
     "title": "Can Opener",
     "description": "Next to campfire",
     "x": -1267,
-    "y": -6
+    "y": -6,
+    "screenshot": "can_opener_2.webp"
   },
   {
     "id": 29,
@@ -271,7 +300,8 @@
     "x": -478,
     "y": 710,
     "requirements": [15],
-    "items": [34, 17, 18, 306, 81, 89, 100, 93]
+    "items": [34, 17, 18, 306, 81, 89, 100, 93],
+    "screenshot": "maintenance_a.webp"
   },
   {
     "id": 31,
@@ -281,7 +311,8 @@
     "x": -1133,
     "y": -1100,
     "requirements": [15],
-    "items": [36, 24]
+    "items": [36, 24],
+    "screenshot": "maintenance_b.webp"
   },
   {
     "id": 32,
@@ -291,7 +322,8 @@
     "x": 1110,
     "y": 1007,
     "requirements": [15],
-    "items": [25]
+    "items": [25],
+    "screenshot": "maintenance_c.webp"
   },
   {
     "id": 307,
@@ -302,7 +334,7 @@
     "isUnderground": true,
     "requirements": [49],
     "items": [19, 20, 311, 312, 315, 316, 314, 308],
-    "screenshot": "food_and_dining_cave.webp"
+    "screenshot": "food_and_dining_bunker.webp"
   },
   {
     "id": 33,
@@ -311,7 +343,8 @@
     "x": 1214,
     "y": -638,
     "isUnderground": true,
-    "items": [37, 9, 26, 113, 432, 443, 82, 83, 90, 104, 102, 103, 105]
+    "items": [37, 9, 26, 113, 432, 443, 82, 83, 90, 104, 102, 103, 105],
+    "screenshot": "residential_bunker.webp"
   },
   {
     "id": 34,
@@ -348,30 +381,34 @@
   {
     "id": 38,
     "type": "cave",
-    "title": "Cave leading to the Bunker",
+    "title": "Cave leading to Residential Bunker",
     "x": 1230,
-    "y": -652
+    "y": -652,
+    "screenshot": "cave_leading_to_residential_bunker.webp"
   },
   {
     "id": 39,
     "type": "cave",
     "title": "Large Lake Grotto",
     "x": 966,
-    "y": -406
+    "y": -406,
+    "screenshot": "large_lake_grotto.webp"
   },
   {
     "id": 40,
     "type": "cave",
     "title": "Mountaintop Lake Grotto",
     "x": 430,
-    "y": -206
+    "y": -206,
+    "screenshot": "mountaintop_lake_grotto.webp"
   },
   {
     "id": 41,
     "type": "cave",
     "title": "Frozen Lake Grotto",
     "x": -136,
-    "y": -90
+    "y": -90,
+    "screenshot": "frozen_lake_grotto.webp"
   },
   {
     "id": 42,
@@ -379,36 +416,43 @@
     "title": "Golden Armor Cave",
     "x": -530,
     "y": -627,
-    "items": [429, 27]
+    "items": [429, 27],
+    "screenshot": "golden_armor_cave.webp"
   },
   {
     "id": 43,
     "type": "cave",
     "title": "Pond Grotto",
     "x": -638,
-    "y": -1046
+    "y": -1046,
+    "items": [449],
+    "screenshot": "pond_grotto.webp"
   },
   {
     "id": 44,
     "type": "cave",
     "title": "Mountainside Grotto",
     "x": -106,
-    "y": -1060
+    "y": -1060,
+    "screenshot": "mountainside_grotto.webp"
   },
   {
     "id": 45,
     "type": "cave",
-    "title": "Cave Entrance",
+    "title": "Rope Gun Cave Main Entrance",
     "x": -1104,
-    "y": -179
+    "y": -179,
+    "items": [13, 12, 96, 98],
+    "screenshot": "rope_gun_cave_main_entrance.webp"
   },
   {
     "id": 46,
     "type": "cave",
-    "title": "Rope Gun Cave",
+    "title": "Rope Gun Cave Second Entrance",
     "x": -1234,
     "y": -302,
-    "items": [13, 12, 96, 98]
+    "requirements": [13],
+    "screenshot": "rope_gun_cave_second_entrance.webp"
   },
   {
     "id": 47,
@@ -416,7 +460,8 @@
     "title": "Cave leading to Entertainment Bunker",
     "x": -1190,
     "y": 126,
-    "items": [35, 21, 23, 22, 80, 79, 88, 335, 91, 333, 334, 94]
+    "items": [35, 21, 23, 22, 80, 79, 88, 335, 91, 333, 334, 94],
+    "screenshot": "cave_leading_to_entertainment_bunker.webp"
   },
   {
     "id": 48,
@@ -430,9 +475,10 @@
   {
     "id": 49,
     "type": "cave",
-    "title": "Cave leading to the Bunker",
+    "title": "Cave leading to the Food and Dining Bunker",
     "x": -1014,
-    "y": 1028
+    "y": 1028,
+    "screenshot": "food_and_dining_cave.webp"
   },
   {
     "id": 50,
@@ -440,7 +486,8 @@
     "title": "Rebreather Cave",
     "x": -423,
     "y": 1512,
-    "items": [11, 10, 71, 99]
+    "items": [11, 10, 71, 99],
+    "screenshot": "rebreather_cave.webp"
   },
   {
     "id": 317,
@@ -716,38 +763,45 @@
     "title": "Hoodie or Tactical/Leather Jacket",
     "x": -645,
     "y": 1511,
-    "isUnderground": true
+    "isUnderground": true,
+    "screenshot": "hoodie_3.webp"
   },
   {
     "id": 72,
     "type": "cloth",
     "title": "Blazer",
+    "description": "Inside open coffin",
     "x": -922,
-    "y": 1454
+    "y": 1454,
+    "screenshot": "blazer.webp"
   },
   {
     "id": 73,
     "type": "cloth",
     "title": "Camouflage Suit",
+    "description": "Inside Kayak",
     "x": -1111,
-    "y": 1723
+    "y": 1723,
+    "screenshot": "camouflage_suit.webp"
   },
   {
     "id": 74,
     "type": "cloth",
     "title": "Hoodie or Tactical/Leather Jacket",
     "x": -1084,
-    "y": 1282
+    "y": 1282,
+    "screenshot": "hoodie_2.webp"
   },
   {
     "id": 75,
     "type": "cloth",
     "title": "Dress",
-    "description": "On the couch to the left",
+    "description": "On the right side from entrance",
     "x": -914,
     "y": 1010,
     "isUnderground": true,
-    "requirements": [19]
+    "requirements": [19],
+    "screenshot": "dress.webp"
   },
   {
     "id": 76,
@@ -755,21 +809,24 @@
     "title": "Leather Jacket",
     "description": "Inside plane",
     "x": -971,
-    "y": -1061
+    "y": -1061,
+    "screenshot": "leather_jacket.webp"
   },
   {
     "id": 77,
     "type": "cloth",
     "title": "Winter Jacket",
     "x": -1031,
-    "y": -625
+    "y": -625,
+    "screenshot": "winter_jacket.webp"
   },
   {
     "id": 78,
     "type": "cloth",
     "title": "Hoodie or Tactical/Leather Jacket",
     "x": -743,
-    "y": 20
+    "y": 20,
+    "screenshot": "hoodie_1.webp"
   },
   {
     "id": 79,
@@ -778,7 +835,8 @@
     "x": -1141,
     "y": 6,
     "isUnderground": true,
-    "requirements": [17]
+    "requirements": [17],
+    "screenshot": "track_suit.webp"
   },
   {
     "id": 80,
@@ -787,7 +845,8 @@
     "x": -1116,
     "y": -18,
     "isUnderground": true,
-    "requirements": [17]
+    "requirements": [17],
+    "screenshot": "pajamas_1.webp"
   },
   {
     "id": 81,
@@ -796,7 +855,8 @@
     "description": "On cabinet in the batrhroom",
     "x": -416,
     "y": 695,
-    "isUnderground": true
+    "isUnderground": true,
+    "screenshot": "tuxedo.webp"
   },
   {
     "id": 82,
@@ -804,7 +864,9 @@
     "title": "Leather Suit",
     "x": 1166,
     "y": -647,
-    "isUnderground": true
+    "isUnderground": true,
+    "requirements": [17],
+    "screenshot": "leather_suit_2.webp"
   },
   {
     "id": 83,
@@ -812,7 +874,9 @@
     "title": "Golden Mask",
     "x": 1139,
     "y": -616,
-    "isUnderground": true
+    "isUnderground": true,
+    "requirements": [17],
+    "screenshot": "golden_mask.webp"
   },
   {
     "id": 84,
@@ -820,7 +884,7 @@
     "title": "Leather Suit",
     "x": -888,
     "y": 769,
-    "screenshot": "leather_suit_heli.webp"
+    "screenshot": "leather_suit_1.webp"
   },
   {
     "id": 318,
@@ -829,7 +893,8 @@
     "x": -509,
     "y": 128,
     "isUnderground": true,
-    "requirements": [11]
+    "requirements": [11],
+    "screenshot": "wetsuit.webp"
   },
   {
     "id": 85,
@@ -837,7 +902,8 @@
     "title": "GPS Locator",
     "description": "On Emergency Raft",
     "x": -1797,
-    "y": 577
+    "y": 577,
+    "screenshot": "gps_locator_2.webp"
   },
   {
     "id": 86,
@@ -846,7 +912,8 @@
     "description": "Inside grave",
     "x": -1341,
     "y": 1411,
-    "requirements": [15]
+    "requirements": [15],
+    "screenshot": "gps_locator_3.webp"
   },
   {
     "id": 87,
@@ -854,7 +921,8 @@
     "title": "GPS Locator",
     "description": "On hanging soldier",
     "x": -627,
-    "y": 386
+    "y": 386,
+    "screenshot": "gps_locator_1.webp"
   },
   {
     "id": 88,
@@ -903,7 +971,7 @@
     "id": 92,
     "type": "document",
     "title": "Email - ANOTHER ONE",
-    "description": "On the table, behind Guest Door",
+    "description": "On the table",
     "x": -1125,
     "y": 110,
     "isUnderground": true,
@@ -1110,95 +1178,117 @@
     "y": 1279
   },
   {
+    "id": 576,
+    "type": "document",
+    "title": "Market Observations",
+    "x": 1156,
+    "y": -654,
+    "isUnderground": true,
+    "requirements": [17]
+  },
+  {
     "id": 106,
     "type": "hang-glider",
     "title": "Hang Glider",
     "x": -798,
-    "y": -281
+    "y": -281,
+    "screenshot": "hang_glider_3.webp"
   },
   {
     "id": 107,
     "type": "hang-glider",
     "title": "Hang Glider",
     "x": -504,
-    "y": -308
+    "y": -308,
+    "screenshot": "hang_glider_4.webp"
   },
   {
     "id": 108,
     "type": "hang-glider",
     "title": "Hang Glider",
     "x": -131,
-    "y": -1029
+    "y": -1029,
+    "screenshot": "hang_glider_12.webp"
   },
   {
     "id": 109,
     "type": "hang-glider",
     "title": "Hang Glider",
     "x": -1181,
-    "y": -1724
+    "y": -1724,
+    "screenshot": "hang_glider_13.webp"
   },
   {
     "id": 110,
     "type": "hang-glider",
     "title": "Hang Glider",
     "x": -1769,
-    "y": 1168
+    "y": 1168,
+    "screenshot": "hang_glider_2.webp"
   },
   {
     "id": 111,
     "type": "hang-glider",
     "title": "Hang Glider",
     "x": -1298,
-    "y": 1737
+    "y": 1737,
+    "screenshot": "hang_glider_1.webp"
   },
   {
     "id": 112,
     "type": "hang-glider",
     "title": "Hang Glider",
     "x": -31,
-    "y": 666
+    "y": 666,
+    "screenshot": "hang_glider_5.webp"
   },
   {
     "id": 174,
     "type": "hang-glider",
     "title": "Hang Glider",
     "x": 365,
-    "y": -161
+    "y": -161,
+    "screenshot": "hang_glider_9.webp"
   },
   {
     "id": 175,
     "type": "hang-glider",
     "title": "Hang Glider",
     "x": 1081,
-    "y": -108
+    "y": -108,
+    "screenshot": "hang_glider_10.webp"
   },
   {
     "id": 176,
     "type": "hang-glider",
     "title": "Hang Glider",
     "x": 1296,
-    "y": -29
+    "y": -29,
+    "screenshot": "hang_glider_11.webp"
   },
   {
     "id": 177,
     "type": "hang-glider",
     "title": "Hang Glider",
     "x": 733,
-    "y": 739
+    "y": 739,
+    "screenshot": "hang_glider_8.webp"
   },
   {
     "id": 178,
     "type": "hang-glider",
     "title": "Hang Glider",
     "x": 796,
-    "y": 974
+    "y": 974,
+    "screenshot": "hang_glider_7.webp"
   },
   {
     "id": 179,
     "type": "hang-glider",
     "title": "Hang Glider",
     "x": 845,
-    "y": 1104
+    "y": 1104,
+    "screenshot": "hang_glider_6.webp"
   },
   {
     "id": 113,
@@ -1206,7 +1296,9 @@
     "title": "Putter",
     "x": 1124,
     "y": -605,
-    "isUnderground": true
+    "isUnderground": true,
+    "requirements": [17],
+    "screenshot": "putter_2.webp"
   },
   {
     "id": 285,
@@ -1214,7 +1306,8 @@
     "title": "Putter",
     "description": "On the back of the Golf Cart",
     "x": 1589,
-    "y": 1336
+    "y": 1336,
+    "screenshot": "putter_1.webp"
   },
   {
     "id": 114,
@@ -2008,6 +2101,22 @@
     "y": 457
   },
   {
+    "id": 580,
+    "type": "ammo",
+    "title": "Ammo Case",
+    "x": -1133,
+    "y": -282,
+    "isUnderground": true
+  },
+  {
+    "id": 581,
+    "type": "ammo",
+    "title": "Ammo Case",
+    "x": -1205,
+    "y": -277,
+    "isUnderground": true
+  },
+  {
     "id": 119,
     "type": "flare",
     "title": "Flare Case",
@@ -2505,6 +2614,29 @@
     "y": -103
   },
   {
+    "id": 577,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": -1006,
+    "y": -391
+  },
+  {
+    "id": 578,
+    "type": "crate",
+    "title": "Crate",
+    "x": -518,
+    "y": -598,
+    "isUnderground": true
+  },
+  {
+    "id": 579,
+    "type": "crate",
+    "title": "5x Crates",
+    "x": -507,
+    "y": -618,
+    "isUnderground": true
+  },
+  {
     "id": 192,
     "type": "info",
     "title": "Big Old Cross",
@@ -2517,6 +2649,22 @@
     "title": "Wall Painting",
     "x": 870,
     "y": -379,
+    "isUnderground": true
+  },
+  {
+    "id": 582,
+    "type": "info",
+    "title": "Wall Painting",
+    "x": -989,
+    "y": -248,
+    "isUnderground": true
+  },
+  {
+    "id": 583,
+    "type": "info",
+    "title": "Wall Painting",
+    "x": -461,
+    "y": -556,
     "isUnderground": true
   },
   {
@@ -3454,24 +3602,27 @@
     "description": "Next to the computer on the left",
     "x": -424,
     "y": 702,
-    "isUnderground": true
+    "isUnderground": true,
+    "screenshot": "laser_sight.webp"
   },
   {
     "id": 311,
     "type": "srail",
     "title": "Shotgun Rail",
-    "description": "On the right side reagl",
+    "description": "In the right corner of the room",
     "x": -1175,
     "y": 26,
     "isUnderground": true,
-    "requirements": [17]
+    "requirements": [17],
+    "screenshot": "shotgun_rail_2.webp"
   },
   {
     "id": 341,
     "type": "srail",
     "title": "Shotgun Rail",
     "x": -47,
-    "y": 1454
+    "y": 1454,
+    "screenshot": "shotgun_rail_1.webp"
   },
   {
     "id": 432,
@@ -3479,21 +3630,26 @@
     "title": "Shotgun Rail",
     "x": 1143,
     "y": -639,
-    "isUnderground": true
+    "isUnderground": true,
+    "requirements": [17],
+    "screenshot": "shotgun_rail_3.webp"
   },
   {
     "id": 342,
     "type": "prail",
     "title": "Pistol Rail",
+    "description": "In hand of dead soldier",
     "x": -1609,
-    "y": 486
+    "y": 486,
+    "screenshot": "pistol_rail_2.webp"
   },
   {
     "id": 431,
     "type": "prail",
     "title": "Pistol Rail",
     "x": -807,
-    "y": -220
+    "y": -220,
+    "screenshot": "pistol_rail_1.webp"
   },
   {
     "id": 443,
@@ -3502,7 +3658,8 @@
     "x": 1154,
     "y": -606,
     "isUnderground": true,
-    "requirements": [21]
+    "requirements": [17],
+    "screenshot": "pistol_rail_3.webp"
   },
   {
     "id": 327,
@@ -3512,14 +3669,35 @@
     "x": -580,
     "y": -69,
     "isUnderground": true,
-    "requirements": [11]
+    "requirements": [11],
+    "screenshot": "flashlight_attachment_1.webp"
+  },
+  {
+    "id": 569,
+    "type": "light",
+    "title": "Flashlight Attachment",
+    "x": 1154,
+    "y": -604,
+    "isUnderground": true,
+    "requirements": [17],
+    "screenshot": "flashlight_attachment_2.webp"
   },
   {
     "id": 430,
     "type": "suppressor",
     "title": "Pistol Suppressor",
     "x": -808,
-    "y": -217
+    "y": -217,
+    "screenshot": "pistol_suppressor_1.webp"
+  },
+  {
+    "id": 567,
+    "type": "suppressor",
+    "title": "Pistol Suppressor",
+    "description": "Next to 3D Printer",
+    "x": -1126,
+    "y": -1050,
+    "screenshot": "pistol_suppressor_2.webp"
   },
   {
     "id": 309,
@@ -3578,7 +3756,7 @@
     "x": 1142,
     "y": -608,
     "isUnderground": true,
-    "requirements": [21]
+    "requirements": [17]
   },
   {
     "id": 434,
@@ -3587,29 +3765,87 @@
     "x": 1218,
     "y": -625,
     "isUnderground": true,
-    "requirements": [21]
+    "requirements": [17]
   },
   {
     "id": 428,
     "type": "uni",
     "title": "Knight V",
-    "description": "Next to Winter Jacket",
     "x": -1031,
-    "y": -624
+    "y": -624,
+    "screenshot": "knight_v_1.webp"
   },
   {
     "id": 462,
     "type": "uni",
     "title": "Knight V",
     "x": -743,
-    "y": 28
+    "y": 28,
+    "screenshot": "knight_v_3.webp"
   },
   {
     "id": 485,
     "type": "uni",
     "title": "Knight V",
     "x": -1092,
-    "y": 1277
+    "y": 1277,
+    "screenshot": "knight_v_4.webp"
+  },
+  {
+    "id": 568,
+    "type": "uni",
+    "title": "Knight V",
+    "x": -1271,
+    "y": -15,
+    "screenshot": "knight_v_2.webp"
+  },
+  {
+    "id": 570,
+    "type": "uni",
+    "title": "Knight V",
+    "x": -1121,
+    "y": 1627,
+    "screenshot": "knight_v_5.webp"
+  },
+  {
+    "id": 571,
+    "type": "uni",
+    "title": "Knight V",
+    "x": -973,
+    "y": -783,
+    "screenshot": "knight_v_6.webp"
+  },
+  {
+    "id": 572,
+    "type": "uni",
+    "title": "Knight V",
+    "x": -1132,
+    "y": -1086,
+    "screenshot": "knight_v_7.webp"
+  },
+  {
+    "id": 573,
+    "type": "uni",
+    "title": "Knight V",
+    "x": 1285,
+    "y": -725,
+    "screenshot": "knight_v_8.webp"
+  },
+  {
+    "id": 574,
+    "type": "uni",
+    "title": "Knight V",
+    "x": 1455,
+    "y": -417,
+    "screenshot": "knight_v_9.webp"
+  },
+  {
+    "id": 575,
+    "type": "uni",
+    "title": "Knight V",
+    "x": -238,
+    "y": 951,
+    "screenshot": "knight_v_10.webp"
   },
   {
     "id": 429,
@@ -3619,16 +3855,18 @@
     "x": -150,
     "y": -420,
     "isUnderground": true,
-    "requirements": [11]
+    "requirements": [11],
+    "screenshot": "night_vision_1.webp"
   },
   {
     "id": 449,
     "type": "vision",
     "title": "Night Vision",
-    "description": "On sitting skeletons head",
+    "description": "On skeletons head",
     "x": -609,
     "y": -1048,
-    "isUnderground": true
+    "isUnderground": true,
+    "screenshot": "night_vision_2.webp"
   },
   {
     "id": 528,

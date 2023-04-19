@@ -8,7 +8,7 @@ import CanvasMarker from "../lib/canvas-marker";
 import { createElement } from "../lib/elements";
 import { t } from "../lib/i18n";
 import { getIconElement } from "../lib/icons";
-import { getCustomNodes, setCustomNodes, types } from "../lib/nodes";
+import { getCustomNodes, getTypes, setCustomNodes } from "../lib/nodes";
 import { PlayerPosition } from "../lib/player-marker";
 
 export default function CustomNode({
@@ -22,6 +22,7 @@ export default function CustomNode({
   getLastPosition: () => PlayerPosition;
   onAdd: () => void;
 }) {
+  const types = getTypes();
   let isAdding = false;
   element.onclick = () => {
     if (isAdding) {
