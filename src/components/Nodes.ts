@@ -185,7 +185,7 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       const mapLocation = getMapLocationById(requirementId);
       return createElement("a", {
         href: `/locations/${requirementId}`,
-        innerText: mapLocation?.title,
+        innerText: t(mapLocation?.title || ""),
         onclick: (event) => {
           event.preventDefault();
           panToRelatedMarker(requirementId);
@@ -197,7 +197,7 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       const mapLocation = getMapLocationById(itemId);
       return createElement("a", {
         href: `/locations/${itemId}`,
-        innerText: mapLocation?.title,
+        innerText: t(mapLocation?.title || ""),
         onclick: (event) => {
           event.preventDefault();
           panToRelatedMarker(itemId);
@@ -220,13 +220,13 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
     });
     if (requirements) {
       tooltipContent.append(
-        createElement("p", { className: "bold", innerText: "Requirements" }),
+        createElement("p", { className: "bold", innerText: t("Requirements") }),
         ...requirements
       );
     }
     if (items) {
       tooltipContent.append(
-        createElement("p", { className: "bold", innerText: "Items" }),
+        createElement("p", { className: "bold", innerText: t("Items") }),
         ...items
       );
     }
