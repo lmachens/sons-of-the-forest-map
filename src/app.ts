@@ -24,6 +24,7 @@ import {
 } from "./lib/games";
 import { loadDictionary, translateHTML } from "./lib/i18n";
 import { waitForOverwolf } from "./lib/overwolf";
+import { initWakelock } from "./lib/wakelock";
 import { closeWindow, getCurrentWindow } from "./lib/windows";
 
 waitForOverwolf().then(async () => {
@@ -286,4 +287,6 @@ async function initResizeBorders() {
       overwolf.windows.enums.WindowDragEdge.BottomRight
     );
   };
+
+  initWakelock();
 }

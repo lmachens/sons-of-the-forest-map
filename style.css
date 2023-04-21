@@ -777,3 +777,10 @@ select {
   top: 2px;
   right: 130px;
 }
+
+.web .locale-selector {
+  right: auto;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 10000;
+}

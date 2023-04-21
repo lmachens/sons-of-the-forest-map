@@ -10,38 +10,40 @@ const locales = ["de", "pl"];
 const __dirname = fileURLToPath(new URL(".", import.meta.url));
 const toAbsolute = (p) => path.resolve(__dirname, p);
 
-const template = readFileSync(toAbsolute("../app.html"), "utf-8");
+const findStaticKeys = (filePath) => {
+  const template = readFileSync(filePath, "utf-8");
 
-const text = convert(template, {
-  wordwrap: null,
-  baseElements: {
-    selectors: ["[data-i18n]"],
-  },
-  selectors: [
-    {
-      selector: "*",
-      format: "block",
+  const text = convert(template, {
+    wordwrap: null,
+    baseElements: {
+      selectors: ["[data-i18n]"],
     },
-    {
-      selector: "h2",
-      format: "block",
-    },
-    {
-      selector: "h3",
-      format: "block",
-    },
-    {
-      selector: "p",
-      format: "block",
-    },
-    {
-      selector: "a",
-      format: "block",
-    },
-  ],
-});
+    selectors: [
+      {
+        selector: "*",
+        format: "block",
+      },
+      {
+        selector: "h2",
+        format: "block",
+      },
+      {
+        selector: "h3",
+        format: "block",
+      },
+      {
+        selector: "p",
+        format: "block",
+      },
+      {
+        selector: "a",
+        format: "block",
+      },
+    ],
+  });
 
-let keys = text.split("\n").filter(Boolean);
+  return text.split("\n").filter(Boolean);
+};
 
 const findDynamicKeys = function (dirPath, dynamicKeys = []) {
   const files = readdirSync(dirPath);
@@ -64,8 +66,11 @@ const findDynamicKeys = function (dirPath, dynamicKeys = []) {
   return dynamicKeys;
 };
 
+const appKeys = findStaticKeys(toAbsolute("../app.html"));
+const webKeys = findStaticKeys(toAbsolute("../index.html"));
 const dynamicKeys = findDynamicKeys(toAbsolute("../src/"));
-keys.push(...dynamicKeys);
+
+const keys = [...appKeys, ...webKeys, ...dynamicKeys];
 
 locations.forEach((location) => {
   if (location.title) {

@@ -455,5 +455,10 @@
   "Flare Suitcase": "Walizka z Flarami",
   "Aircarft": "Samolot",
   "Abandoned Cannibal Village": "Opuszczona wioska kanibali",
-  "Case": "Walizka"
+  "Case": "Walizka",
+  "Realtime Sync": "Synchronizacja w czasie rzeczywistym",
+  "Connect your position by installing the": "Podłącz swoją pozycję, instalując",
+  "Overwolf app": "Aplikacja Ovwolf",
+  "and add your friends for a multiplayer experience. First, connect to the peer server and connect to your app afterwards. The first ID added will be set as your player. More players are for your friend ID's.": "I dodaj znajomych, aby uzyskać doświadczenie dla wielu graczy. Najpierw podłącz się do serwera równorzędnego i później połącz się z aplikacją. Pierwszy dodany identyfikator zostanie ustawiony jako Twój gracz. Więcej graczy jest dla identyfikatorów znajomych.",
+  "App ID": "Identyfikator aplikacji"
 }
