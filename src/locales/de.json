@@ -455,5 +455,10 @@
   "Ammo Suitcase": "Munitionskoffer",
   "2x Ammo Suitcases": "2x Munitionskoffer",
   "Flare Suitcase": "Flare -Koffer",
-  "Abandoned Cannibal Village": "Verlassenes Kannibaledorf"
+  "Abandoned Cannibal Village": "Verlassenes Kannibaledorf",
+  "Realtime Sync": "Echtzeitsynchronisierung",
+  "Connect your position by installing the": "Verbinde deine Spieler-Position, indem du die ",
+  "Overwolf app": "Overwolf-App",
+  "and add your friends for a multiplayer experience. First, connect to the peer server and connect to your app afterwards. The first ID added will be set as your player. More players are for your friend ID's.": "installierst und füge deine Freunde für ein Multiplayer-Erlebnis hinzu. Stelle zunächst eine Verbindung zum Peer-Server und stellen anschließend eine Verbindung zur App her. Die erste hinzugefügte ID wird als dein Spieler festgelegt. Weitere IDs sind die deiner Freunde.",
+  "App ID": "App ID"
 }

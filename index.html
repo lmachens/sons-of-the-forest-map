@@ -52,7 +52,7 @@
       </symbol>
     </svg>
     <div class="layout">
-      <h1 class="hidden notranslate">Sons of the Forest Map</h1>
+      <h1 class="hidden">Sons of the Forest Map</h1>
       <main class="main">
         <div class="map"></div>
       </main>
@@ -69,22 +69,30 @@
             </svg>
           </button>
           <section class="paper">
-            <h2>Nodes</h2>
+            <h2 data-i18n>Nodes</h2>
             <div class="types" id="filters">&nbsp;</div>
-            <h3>Custom Nodes (<span id="custom_nodes_count"></span>)</h3>
-            <div class="group">
-              <button id="add_custom_node">Add Node</button>
-            </div>
             <h3>
-              Discovered Nodes (<span id="discovered_nodes_count"></span>)
+              <span data-i18n>Custom Nodes</span> (<span
+                id="custom_nodes_count"
+              ></span
+              >)
             </h3>
             <div class="group">
-              <button id="reset_discovered_nodes">Reset</button>
+              <button id="add_custom_node" data-i18n>Add Node</button>
+            </div>
+            <h3>
+              <span data-i18n>Discovered Nodes</span> (<span
+                id="discovered_nodes_count"
+              ></span
+              >)
+            </h3>
+            <div class="group">
+              <button id="reset_discovered_nodes" data-i18n>Reset</button>
             </div>
           </section>
           <section class="paper">
-            <h2>Game sessions</h2>
-            <p class="description">
+            <h2 data-i18n>Game sessions</h2>
+            <p class="description" data-i18n>
               Your current game session is automatically saved. You can load
               saved game sessions to trace your path. The last 5 sessions are
               saved.
@@ -92,87 +100,96 @@
             <div id="game_sessions"></div>
           </section>
           <section class="paper">
-            <h2>Realtime Sync</h2>
+            <h2 data-i18n>Realtime Sync</h2>
             <p class="description">
-              Connect your position by installing the
+              <span data-i18n>Connect your position by installing the</span>
               <a
                 href="https://www.overwolf.com/app/Leon_Machens-Sons_Of_The_Forest_Map"
                 target="_blank"
+                data-i18n
                 >Overwolf app</a
               >
-              and add your friends for a multiplayer experience. First, connect
-              to the peer server and connect to your app afterwards. The first
-              ID added will be set as your player. More players are for your
-              friend ID's.
+              <span data-i18n
+                >and add your friends for a multiplayer experience. First,
+                connect to the peer server and connect to your app afterwards.
+                The first ID added will be set as your player. More players are
+                for your friend ID's.</span
+              >
             </p>
-            <button id="peer_connect">Connect to peer server</button>
+            <button id="peer_connect" data-i18n>Connect to peer server</button>
             <p class="status issue" id="my_peer_status">
               <span class="indicator"></span>
-              <span>Connected to peer server</span>
-              <span>Not connected to peer server</span>
+              <span data-i18n>Connected to peer server</span>
+              <span data-i18n>Not connected to peer server</span>
             </p>
 
             <div class="group">
               <label>
-                <span class="w-sm">Your ID</span>
+                <span class="w-sm" data-i18n>Your ID</span>
                 <input type="text" id="peer_id" disabled />
               </label>
-              <button id="copy_peer_id">Copy</button>
+              <button id="copy_peer_id" data-i18n>Copy</button>
             </div>
             <p class="warning" id="peer_error"></p>
             <form class="group" id="connection_form">
               <label>
-                <span class="w-sm">App ID</span>
+                <span class="w-sm" data-i18n>App ID</span>
                 <input type="text" name="other_peer_id" required />
               </label>
               <input type="submit" value="Add player" />
             </form>
             <div id="connections"></div>
-            <p class="location-status">Location is not detected</p>
-            <button class="show-on-map">Show on map</button>
+            <p class="location-status" data-i18n>Location is not detected</p>
+            <button class="show-on-map" data-i18n>Show on map</button>
             <label class="group">
               <input type="checkbox" id="follow_location" />
-              <span>Follow location</span>
+              <span data-i18n>Follow location</span>
             </label>
-            <p class="description">
+            <p class="description" data-i18n>
               The player marker will be automatically centered if the location
               is updated.
             </p>
             <div class="game-overlay hidden">
-              <span class="warning">Game is disabled!</span>
+              <span class="warning" data-i18n>Game is disabled!</span>
               <p>
-                Open the
-                <a href="overwolf://store/game-settings/game-id/22638"
+                <span data-i18n>Open the</span>
+                <a href="overwolf://store/game-settings/game-id/22638" data-i18n
                   >Overwolf settings</a
                 >
-                and activate Sons of the Forest.
+                <span data-i18n>and activate Sons of the Forest.</span>
               </p>
             </div>
           </section>
           <section class="paper">
-            <h2>Settings</h2>
+            <h2 data-i18n>Settings</h2>
             <label class="group">
               <input type="checkbox" id="direction_line" />
-              <span>Show Direction Line</span>
+              <span data-i18n>Show Direction Line</span>
             </label>
-            <p class="description">Displays a line in walking direction.</p>
+            <p class="description" data-i18n>
+              Displays a line in walking direction.
+            </p>
             <label class="group">
               <input type="checkbox" id="trace_line" />
-              <span>Show Trace Line</span>
+              <span data-i18n>Show Trace Line</span>
             </label>
-            <p class="description">
+            <p class="description" data-i18n>
               Small dots will display the path you were walking.
             </p>
             <label class="group">
               <input type="checkbox" id="zones_grid" />
-              <span>Show Zones</span>
+              <span data-i18n>Show Zones</span>
             </label>
             <p class="description">
-              A grid for the in-game zones are displayed on the map to help
-              teleporting to this zone. Type
-              <code>cheatstick</code> while in game (blindly) and press
-              <code>F1</code> to open the prompt. Enter
-              <code>gotozone TH</code> as example to teleport to this zone.
+              <span data-i18n
+                >A grid for the in-game zones are displayed on the map to help
+                teleporting to this zone. Type</span
+              >
+              <code>cheatstick</code>
+              <span data-i18n>while in game (blindly) and press</span>
+              <code>F1</code> <span data-i18n>to open the prompt. Enter</span>
+              <code>gotozone TH</code>
+              <span data-i18n>as example to teleport to this zone.</span>
             </p>
           </section>
         </div>
