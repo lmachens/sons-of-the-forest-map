@@ -13,7 +13,7 @@ export const locales = [
   },
 ];
 
-export let locale = localStorage.getItem("locale") || "de";
+export let locale = localStorage.getItem("locale") || "en";
 export let dictionary: Record<string, string> = {};
 
 export async function setLocale(newLocale: string) {
