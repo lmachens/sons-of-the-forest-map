@@ -7,6 +7,7 @@ import { JoinCommunity } from "./components/JoinCommunity";
 import Map from "./components/Map";
 import Nodes from "./components/Nodes";
 import Zones from "./components/Zones";
+import { initWakelock } from "./lib/wakelock";
 
 let lastLocation = { x: 0, y: 0, z: 0 };
 let lastRotation = 0;
@@ -51,3 +52,4 @@ menuCloseElement.onclick = () => {
 
 JoinCommunity();
 Zones({ map });
+initWakelock();
