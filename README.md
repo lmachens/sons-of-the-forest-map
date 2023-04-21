@@ -2,7 +2,7 @@
 
 Stay on top of the game Sons Of The Forest with real-time position tracking, nodes of weapons & points of interest, and overlay mode for seamless progress tracking.
 
-![](/assets/screenshot2.jpg)
+![](/assets/screenshot1.jpg)
 
 ## Installation
 
@@ -14,15 +14,18 @@ Join the [Discord](https://discord.com/invite/NTZu8Px) to get the latest news an
 
 ## Features
 
-- Real-time position tracking
-- Position streaming to mobile devices and tablets
-- Group functionality to see each other on the map
-- Trace routes
-- Nodes of weapons and other points of interest
-- Custom nodes
+- Real-time position tracking with the Overwolf App: [Overwolf App](https://www.overwolf.com/app/Leon_Machens-Sons_Of_The_Forest_Map)
+- Position streaming to mobile devices and tablets (via web)
+- Group functionality to support multiplayer
+- Trace your routes and save up to 5 game sessions
+- Nodes with tools, weapons and many more
+- Screenshots for the most important items
+- Custom nodes for you to save interesting locations
 - Overlay mode for seamless progress tracking
-- Easy to use and navigate while playing the game
-- [Web version](https://sotf.th.gl) with position syncing
+- Easy to use and navigate with customizable hotkeys
+- Multiple languages are supported (English, German, Polish, ...)
+- Web version / PWA for ability to use the map "on the go": [Web version](https://sotf.th.gl)
+- Open Source for community contributions: [GitHub](https://github.com/lmachens/sons-of-the-forest-map)
 
 ## Description
 
