@@ -1,11 +1,12 @@
 import { GAME_CLASS_ID, WINDOWS } from "./lib/config";
 import { startNewGameSession } from "./lib/game-sessions";
-import { getGameIsRunning } from "./lib/games";
+import { getRunningGameInfo } from "./lib/games";
 import { waitForOverwolf } from "./lib/overwolf";
 import {
   closeMainWindow,
   closeWindow,
   getPreferedWindowName,
+  moveToOtherScreen,
   restoreWindow,
   toggleWindow,
 } from "./lib/windows";
@@ -18,10 +19,13 @@ waitForOverwolf().then(() => {
 async function initController() {
   console.log("Init controller");
   const openApp = async () => {
-    const isGameRunning = await getGameIsRunning(GAME_CLASS_ID);
-    if (isGameRunning) {
+    const runningGameInfo = await getRunningGameInfo(GAME_CLASS_ID);
+    if (runningGameInfo) {
       const preferedWindowName = await getPreferedWindowName();
-      restoreWindow(preferedWindowName);
+      const windowId = await restoreWindow(preferedWindowName);
+      if (preferedWindowName === WINDOWS.DESKTOP) {
+        moveToOtherScreen(windowId, runningGameInfo.monitorHandle.value);
+      }
     } else {
       restoreWindow(WINDOWS.DESKTOP);
     }

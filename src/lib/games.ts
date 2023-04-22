@@ -1,9 +1,11 @@
 import { GAME_CLASS_ID, INTERESTED_IN_FEATURES } from "./config";
 
-export function getGameIsRunning(gameId: number): Promise<boolean> {
+export function getRunningGameInfo(
+  gameId: number
+): Promise<overwolf.games.GetRunningGameInfoResult | null> {
   return new Promise((resolve) => {
     overwolf.games.getRunningGameInfo((result) => {
-      resolve(result && result.classId === gameId);
+      resolve(result && result.classId === gameId ? result : null);
     });
   });
 }

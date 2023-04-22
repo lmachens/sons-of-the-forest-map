@@ -1,5 +1,5 @@
 import { GAME_CLASS_ID, WINDOWS } from "./config";
-import { getGameIsRunning } from "./games";
+import { getRunningGameInfo } from "./games";
 
 const declaredWindows: {
   [windowName: string]: overwolf.windows.WindowInfo;
@@ -86,8 +86,8 @@ export async function togglePreferedWindow(): Promise<void> {
     preferedWindowName === WINDOWS.DESKTOP ? WINDOWS.OVERLAY : WINDOWS.DESKTOP;
   localStorage.setItem("prefered-window-name", newPreferedWindowName);
   if (newPreferedWindowName === WINDOWS.OVERLAY) {
-    const isGameRunning = await getGameIsRunning(GAME_CLASS_ID);
-    if (isGameRunning) {
+    const runningGameInfo = await getRunningGameInfo(GAME_CLASS_ID);
+    if (runningGameInfo) {
       await restoreWindow(WINDOWS.OVERLAY);
       await closeWindow(WINDOWS.DESKTOP);
     }
@@ -100,5 +100,38 @@ export async function togglePreferedWindow(): Promise<void> {
 export async function getCurrentWindow(): Promise<overwolf.windows.WindowInfo> {
   return new Promise<overwolf.windows.WindowInfo>((resolve) =>
     overwolf.windows.getCurrentWindow((result) => resolve(result.window))
+  );
+}
+
+export async function moveToOtherScreen(
+  windowId: string,
+  monitorHandleValue: number
+) {
+  const monitors = await getMonitorsList();
+  const hasSecondScreen = monitors.length > 1;
+  if (!hasSecondScreen) {
+    return;
+  }
+  const desktopWindow = await obtainDeclaredWindow(WINDOWS.DESKTOP);
+  const otherScreens = monitors.filter(
+    (monitor) => monitor.handle.value !== monitorHandleValue
+  );
+  const secondScreen =
+    otherScreens.find(
+      (secondScreen) => desktopWindow.monitorId === secondScreen.id
+    ) || otherScreens[0];
+
+  if (desktopWindow.monitorId === secondScreen.id) {
+    return;
+  }
+
+  const x =
+    secondScreen.x +
+    Math.floor(secondScreen.width / 2 - desktopWindow.width / 2);
+  const y =
+    secondScreen.y +
+    Math.floor(secondScreen.height / 2 - desktopWindow.height / 2);
+  return new Promise((resolve) =>
+    overwolf.windows.changePosition(windowId, x, y, resolve)
   );
 }
