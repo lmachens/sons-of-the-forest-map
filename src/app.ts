@@ -1,5 +1,4 @@
 import leaflet from "leaflet";
-import Ads from "./components/Ads";
 import ContextMenu from "./components/ContextMenu";
 import CustomNode from "./components/CustomNode";
 import DirectionLine from "./components/DirectionLine";
@@ -12,6 +11,7 @@ import LocaleSelector from "./components/LocaleSelector";
 import Map from "./components/Map";
 import Multiplayer from "./components/Multiplayer";
 import Nodes from "./components/Nodes";
+import OverwolfAds from "./components/OverwolfAds";
 import Player from "./components/Player";
 import Status from "./components/Status";
 import TraceLine from "./components/TraceLine";
@@ -93,7 +93,7 @@ waitForOverwolf().then(async () => {
   }
 
   const ads = document.querySelector<HTMLDivElement>(".ads")!;
-  Ads(ads);
+  OverwolfAds(ads);
 
   function onError(info: overwolf.games.events.ErrorEvent) {
     console.error(info);

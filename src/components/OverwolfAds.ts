@@ -7,7 +7,7 @@ declare global {
   }
 }
 
-export default function Ads(container: HTMLDivElement) {
+export default function OverwolfAds(container: HTMLDivElement) {
   function setIsPLaying(isPlaying: boolean) {
     container.style.pointerEvents = isPlaying ? "all" : "none";
   }

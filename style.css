@@ -784,3 +784,7 @@ select {
   left: 0.5rem;
   z-index: 10000;
 }
+
+#ncmp__tool {
+  padding: 0 !important;
+}
