@@ -783,14 +783,60 @@ select {
   text-decoration: none;
 }
 
-.locale-selector {
+#ncmp__tool {
+  padding: 0 !important;
+}
+
+.aside-headline {
   position: absolute;
   top: 0.5rem;
   left: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
 }
 
-#ncmp__tool {
-  padding: 0 !important;
+.search {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  border: 1px solid #77777e;
+  font-weight: 600;
+  border-radius: 0.25rem;
+}
+
+.search > svg {
+  width: 18px;
+  height: 18px;
+  margin: 0.2rem;
+}
+
+.search > input {
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.search-results {
+  visibility: hidden;
+  position: absolute;
+  top: 2.5rem;
+  z-index: 10;
+  width: 100%;
+  border: 1px solid #77777e;
+  background-color: #18181b;
+  color: #f8f8ff;
+}
+
+.search-results.visible {
+  visibility: visible;
+}
+
+.search-result {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  padding: 0.5rem;
 }
 
 .links {

@@ -13,6 +13,7 @@ import Multiplayer from "./components/Multiplayer";
 import Nodes from "./components/Nodes";
 import OverwolfAds from "./components/OverwolfAds";
 import Player from "./components/Player";
+import Search from "./components/Search";
 import Status from "./components/Status";
 import TraceLine from "./components/TraceLine";
 import Zones from "./components/Zones";
@@ -156,7 +157,7 @@ waitForOverwolf().then(async () => {
     }
   });
 
-  const { refresh } = Nodes({ map });
+  const { refresh, panToMarker } = Nodes({ map });
   CustomNode({
     element: document.querySelector<HTMLButtonElement>("#add_custom_node")!,
     map,
@@ -168,6 +169,7 @@ waitForOverwolf().then(async () => {
   JoinCommunity();
   GameSessions({ showSession, hideSession });
   Zones({ map });
+  Search({ panToMarker });
 });
 
 async function initAppHeader({ map }: { map: leaflet.Map }) {

@@ -1,3 +1,4 @@
+import { t } from "./i18n";
 import mapLocations from "./locations.json" assert { type: "json" };
 
 export type MapLocation = {
@@ -15,9 +16,22 @@ export type MapLocation = {
 };
 
 export function getMapLocations(): MapLocation[] {
-  return mapLocations;
+  return mapLocations.map((mapLocation) => ({
+    ...mapLocation,
+    title: t(mapLocation.title),
+    description: mapLocation.description && t(mapLocation.description),
+  }));
 }
 
 export function getMapLocationById(id: number): MapLocation | null {
-  return mapLocations.find((mapLocation) => mapLocation.id === id) ?? null;
+  const mapLocation =
+    mapLocations.find((mapLocation) => mapLocation.id === id) ?? null;
+  if (mapLocation) {
+    return {
+      ...mapLocation,
+      title: t(mapLocation.title),
+      description: mapLocation.description && t(mapLocation.description),
+    };
+  }
+  return null;
 }

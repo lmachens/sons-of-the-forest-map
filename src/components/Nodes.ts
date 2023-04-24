@@ -156,6 +156,23 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
 
   let contextMenuTooltip: leaflet.Tooltip | null = null;
 
+  const panToMarker = (id: number) => {
+    unselectMarker();
+    setMapLocationId(id);
+    const marker = latestMarkers.find((marker) => marker.options.id === id);
+    if (marker) {
+      if (!group.hasLayer(marker)) {
+        marker.addTo(group);
+      }
+      selectedMarker = marker;
+      selectedMarker.setRadius(HIGHLIGHTED_ICON_RADIUS);
+      selectedMarker.options.isHighlighted = true;
+      selectedMarker.redraw();
+      displaySelectedMarker();
+      map.setView(selectedMarker.getLatLng());
+    }
+  };
+
   function addMarker(
     mapLocation: MapLocation,
     isCustom: boolean,
@@ -167,30 +184,14 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
     const filter =
       filters.find((filter) => filter.value === type.filter) || filters[0];
 
-    const panToRelatedMarker = (id: number) => {
-      unselectMarker();
-      setMapLocationId(id);
-      const marker = latestMarkers.find((marker) => marker.options.id === id);
-      if (marker) {
-        if (!group.hasLayer(marker)) {
-          marker.addTo(group);
-        }
-        selectedMarker = marker;
-        selectedMarker.setRadius(HIGHLIGHTED_ICON_RADIUS);
-        selectedMarker.options.isHighlighted = true;
-        selectedMarker.redraw();
-        displaySelectedMarker();
-        map.setView(selectedMarker.getLatLng());
-      }
-    };
     const requirements = mapLocation.requirements?.map((requirementId) => {
       const mapLocation = getMapLocationById(requirementId);
       return createElement("a", {
         href: `/locations/${requirementId}`,
-        innerText: t(mapLocation?.title || ""),
+        innerText: mapLocation?.title,
         onclick: (event) => {
           event.preventDefault();
-          panToRelatedMarker(requirementId);
+          panToMarker(requirementId);
         },
       });
     });
@@ -199,10 +200,10 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       const mapLocation = getMapLocationById(itemId);
       return createElement("a", {
         href: `/locations/${itemId}`,
-        innerText: t(mapLocation?.title || ""),
+        innerText: mapLocation?.title,
         onclick: (event) => {
           event.preventDefault();
-          panToRelatedMarker(itemId);
+          panToMarker(itemId);
         },
       });
     });
@@ -210,9 +211,9 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
     const tooltipContent = createElement("div", {
       className: "tooltip-content",
       innerHTML: `
-      <p class="bold">${t(mapLocation.title) ?? ""}</p>
-      <p class="italic">${isCustom ? t("Custom Node") : t(type.title)}</p>
-      <p>${t(mapLocation.description || "")}</p>
+      <p class="bold">${mapLocation.title ?? ""}</p>
+      <p class="italic">${isCustom ? t("Custom Node") : type.title}</p>
+      <p>${mapLocation.description || ""}</p>
       ${
         mapLocation.isUnderground
           ? `<p class="info italic">${t("Underground")}</p>`
@@ -470,5 +471,6 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
 
   return {
     refresh,
+    panToMarker,
   };
 }

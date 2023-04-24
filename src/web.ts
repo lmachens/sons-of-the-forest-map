@@ -7,6 +7,7 @@ import { JoinCommunity } from "./components/JoinCommunity";
 import LocaleSelector from "./components/LocaleSelector";
 import Map from "./components/Map";
 import Nodes from "./components/Nodes";
+import Search from "./components/Search";
 import Zones from "./components/Zones";
 import { loadDictionary, translateHTML } from "./lib/i18n";
 import { initWakelock } from "./lib/wakelock";
@@ -30,7 +31,7 @@ loadDictionary().then(() => {
     map,
   });
 
-  const { refresh } = Nodes({ map });
+  const { refresh, panToMarker } = Nodes({ map });
   CustomNode({
     element: document.querySelector<HTMLButtonElement>("#add_custom_node")!,
     map,
@@ -59,4 +60,5 @@ loadDictionary().then(() => {
   JoinCommunity();
   Zones({ map });
   initWakelock();
+  Search({ panToMarker });
 });
