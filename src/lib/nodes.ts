@@ -61,9 +61,9 @@ export function getTypes(): NodeType[] {
     },
     {
       value: "rebreather",
-      title: t("Player Gear"),
+      title: t("Tool"),
       icon: icons.rebreather,
-      filter: "gear",
+      filter: "tools",
     },
     {
       value: "cross",
@@ -145,9 +145,9 @@ export function getTypes(): NodeType[] {
     },
     {
       value: "goldenArmor",
-      title: t("Player Gear"),
+      title: t("Cloth"),
       icon: icons["abdominal-armor"],
-      filter: "gear",
+      filter: "clothes",
     },
     {
       value: "binoculars",
@@ -159,7 +159,7 @@ export function getTypes(): NodeType[] {
       value: "finalBunker",
       title: t("Final Bunker"),
       icon: icons["final-bunker"],
-      filter: "poi",
+      filter: "hatch",
     },
     {
       value: "hatch",
@@ -297,7 +297,7 @@ export function getTypes(): NodeType[] {
       value: "vision",
       title: t("Googles"),
       icon: icons.vision,
-      filter: "gear",
+      filter: "tools",
     },
     {
       value: "prail",
@@ -334,6 +334,18 @@ export function getTypes(): NodeType[] {
       title: t("Water Body"),
       icon: icons.info,
       filter: "lake",
+    },
+    {
+      value: "laptop",
+      title: t("Upload location to GPS Tracker"),
+      icon: icons.laptop,
+      filter: "laptop"
+    },
+    {
+      value: "go-pro",
+      title: t("Watch pre-made videos"),
+      icon: icons["go-pro"] ,
+      filter: "tools"
     },
   ];
 }
@@ -403,8 +415,8 @@ export function getFilters(): Filter[] {
       color: "rgb(255 182 193)",
     },
     {
-      value: "gear",
-      title: t("Player Gear"),
+      value: "laptop",
+      title: t("Laptops"),
       color: "rgb(255 140 0)",
     },
     {
