@@ -236,14 +236,22 @@ select {
 }
 
 .aside {
-  display: none;
+  display: flex;
   width: 401px;
   background: #111111;
   flex-direction: column;
+  position: fixed;
+  right: -401px;
+  top: 30px;
+  bottom: 0;
+  transition: right ease-in 0.15s;
+  z-index: 10000;
+  padding-top: 2.5rem;
 }
 
 .web .aside {
   max-width: 100%;
+  top: 0;
 }
 
 @media screen and (min-width: 800px) {
@@ -252,7 +260,12 @@ select {
   }
 
   .aside {
-    display: flex;
+    right: 0;
+  }
+
+  .nitro-video {
+    width: 100%;
+    height: 220px;
   }
 }
 
@@ -273,7 +286,7 @@ select {
 }
 
 .open .aside {
-  display: flex;
+  right: 0;
 }
 
 .open .layout > .menu {
@@ -285,7 +298,7 @@ select {
 }
 
 .close .aside {
-  display: none;
+  right: -401px;
 }
 
 .banner {
@@ -336,7 +349,7 @@ select {
   overflow: auto;
 }
 
-.stack .menu {
+.aside .menu {
   background: none;
   border: none;
 }
@@ -542,9 +555,7 @@ select {
   gap: 0.25rem;
   align-items: center;
   flex-wrap: wrap;
-  overflow: auto;
   margin-bottom: 0.2rem;
-  max-height: 120px;
 }
 
 .bold {
@@ -773,18 +784,27 @@ select {
 }
 
 .locale-selector {
-  position: fixed;
-  top: 2px;
-  right: 130px;
-}
-
-.web .locale-selector {
-  right: auto;
+  position: absolute;
   top: 0.5rem;
   left: 0.5rem;
-  z-index: 10000;
 }
 
 #ncmp__tool {
   padding: 0 !important;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  color: rgb(199, 199, 199);
+  text-align: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.links a {
+  /* text-decoration: none; */
+  color: rgb(112, 180, 202);
 }

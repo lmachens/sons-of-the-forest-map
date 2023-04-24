@@ -2,6 +2,7 @@ import { createElement } from "../lib/elements";
 import { locale as currentLocale, locales } from "../lib/i18n";
 
 export default function LocaleSelector() {
+  const container = document.querySelector<HTMLDivElement>(".locale-selector")!;
   const options = locales.map((locale) =>
     createElement("option", {
       value: locale.code,
@@ -12,7 +13,6 @@ export default function LocaleSelector() {
   const localeSelector = createElement(
     "select",
     {
-      className: "locale-selector",
       onchange: () => {
         const newLocale = localeSelector.value;
         localStorage.setItem("locale", newLocale);
@@ -22,5 +22,5 @@ export default function LocaleSelector() {
     options
   );
 
-  document.body.append(localeSelector);
+  container.append(localeSelector);
 }
