@@ -461,5 +461,6 @@
   "Connect your position by installing the": "Włącz śledzenie lokacji instalując",
   "Overwolf app": "Aplikację Overwolf",
   "and add your friends for a multiplayer experience. First, connect to the peer server and connect to your app afterwards. The first ID added will be set as your player. More players are for your friend ID's.": "dodaj znajomych, aby uzyskać wsparcie dla wielu graczy. Najpierw połącz się z serwerem równorzędnym i później połącz z aplikacją. Pierwsze dodane ID zostanie ustawione jako twój znacznik. Kolejne identyfikatory są ustawiane jako znaczniki twoich znajomych.",
-  "App ID": "ID aplikacji"
+  "App ID": "ID aplikacji",
+  "No results": "Brak wyników"
 }
