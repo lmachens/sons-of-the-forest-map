@@ -100,3 +100,17 @@ function generateMeta({ title, description, image, url }) {
     <link rel="canonical" href="${url}" />
 `;
 }
+
+function generateSitemap() {
+  let sitemap = `<?xml version="1.0" encoding="UTF-8"?>`;
+  sitemap += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`;
+
+  sitemap += `<url><loc>https://sotf.th.gl/</loc></url>`;
+  for (const mapLocation of mapLocations) {
+    sitemap += `<url><loc>https://sotf.th.gl/locations/${mapLocation.id}</loc></url>`;
+  }
+
+  sitemap += `</urlset>`;
+  fs.writeFileSync(toAbsolute(`./out/sitemap.xml`), sitemap);
+}
+generateSitemap();
