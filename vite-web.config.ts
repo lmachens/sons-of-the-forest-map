@@ -63,7 +63,11 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ["**/*.{js,html,css,ico,png,svg,webp}"],
-        navigateFallbackDenylist: [/^\/locations\/.*\.webp$/, /^\/index.webp$/],
+        navigateFallbackDenylist: [
+          /^\/locations\/.*\.webp$/,
+          /^\/index.webp$/,
+          /^\/sitemap.xml$/,
+        ],
         runtimeCaching: [
           {
             urlPattern: /^\/locations\/.*\.webp$/,
