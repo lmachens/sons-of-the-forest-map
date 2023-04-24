@@ -288,7 +288,7 @@
   {
     "id": 29,
     "type": "finalBunker",
-    "title": "Final Bunker",
+    "title": "Luxury Bunker",
     "x": 1766,
     "y": 553
   },
@@ -377,6 +377,92 @@
     "x": 1121,
     "y": -602,
     "isUnderground": true
+  },
+  {
+    "id": 587,
+    "type": "laptop",
+    "title": "Laptop no.1",
+    "description": "Entertainment Bunker Location",
+    "x": -422,
+    "y": 1494,
+    "isUnderground": true,
+    "screenshot": "laptop_rebreather_cave.webp"
+  },
+  {
+    "id": 588,
+    "type": "laptop",
+    "title": "Laptop no.2",
+    "description": "Bunker A Location",
+    "x": -581,
+    "y": -69,
+    "isUnderground": true,
+    "requirements": [13, 11],
+    "screenshot": "laptop_shovel_cave.webp"
+  },
+  {
+    "id": 592,
+    "type": "laptop",
+    "title": "Laptop no.3",
+    "description": "Food and Dining Bunker Location",
+    "x": -424,
+    "y": 703,
+    "isUnderground": true,
+    "requirements": [15],
+    "screenshot": "laptop_bunker_b.webp"
+  },
+  {
+    "id": 589,
+    "type": "laptop",
+    "title": "Laptop no.4",
+    "description": "Residential Bunker Location",
+    "x": -971,
+    "y": 1036,
+    "isUnderground": true,
+    "requirements": [17],
+    "screenshot": "laptop_food_and_dining_bunker.webp"
+  },
+  {
+    "id": 590,
+    "type": "laptop",
+    "title": "Laptop no.5",
+    "description": "Bunker B Location",
+    "x": -1179,
+    "y": 27,
+    "isUnderground": true,
+    "requirements": [17],
+    "screenshot": "laptop_entertainment_bunker.webp"
+  },
+  {
+    "id": 591,
+    "type": "laptop",
+    "title": "Laptop no.6",
+    "description": "Bunker C Location",
+    "x": -1127,
+    "y": -1046,
+    "isUnderground": true,
+    "requirements": [15],
+    "screenshot": "laptop_bunker_b.webp"
+  },
+  {
+    "id": 585,
+    "type": "laptop",
+    "title": "Laptop no.7",
+    "description": "Luxury Bunker Location",
+    "x": 1176,
+    "y": -645,
+    "isUnderground": true,
+    "requirements": [21],
+    "screenshot": "laptop_residential_bunker.webp"
+  },
+  {
+    "id": 586,
+    "type": "go-pro",
+    "title": "Go Pro Camera",
+    "x": 1137,
+    "y": -621,
+    "isUnderground": true,
+    "requirements": [21],
+    "screenshot": "action_camera.webp"
   },
   {
     "id": 38,
@@ -3749,7 +3835,7 @@
     "x": 1142,
     "y": -608,
     "isUnderground": true,
-    "requirements": [17]
+    "requirements": [21]
   },
   {
     "id": 434,
@@ -3758,7 +3844,7 @@
     "x": 1218,
     "y": -625,
     "isUnderground": true,
-    "requirements": [17]
+    "requirements": [21]
   },
   {
     "id": 428,
@@ -4518,5 +4604,12 @@
     "title": "GolfPondE",
     "x": 1240,
     "y": 1197
+  },
+  {
+    "id": 584,
+    "type": "lake",
+    "title": "GolfPondF",
+    "x": 1364,
+    "y": 1559
   }
 ]
