@@ -331,7 +331,7 @@ export function getTypes(): NodeType[] {
     },
     {
       value: "lake",
-      title: "Water Body",
+      title: t("Water Body"),
       icon: icons.info,
       filter: "lake",
     },
@@ -404,7 +404,7 @@ export function getFilters(): Filter[] {
     },
     {
       value: "gear",
-      title: "Player Gear",
+      title: t("Player Gear"),
       color: "rgb(255 140 0)",
     },
     {
