@@ -706,7 +706,7 @@
     "id": 145,
     "type": "camp",
     "title": "Abandoned Camp",
-    "descriptiont": "Tent with save point",
+    "description": "Tent with save point",
     "x": -1388,
     "y": -217
   },
@@ -938,7 +938,7 @@
     "id": 81,
     "type": "cloth",
     "title": "Tuxedo",
-    "description": "On cabinet in the batrhroom",
+    "description": "On cabinet in the bathroom",
     "x": -416,
     "y": 695,
     "isUnderground": true,
@@ -1258,7 +1258,7 @@
   {
     "id": 475,
     "type": "document",
-    "title": "Cult phamplet - You will find meaning in life again",
+    "title": "Cult pamphlet - You will find meaning in life again",
     "description": "Between corpses",
     "x": -633,
     "y": 1279
@@ -2833,14 +2833,14 @@
   {
     "id": 353,
     "type": "info",
-    "title": "Dead Soldier Effigie",
+    "title": "Dead Soldier Effigy",
     "x": -420,
     "y": 1643
   },
   {
     "id": 354,
     "type": "info",
-    "title": "Dead Soldier Effigie",
+    "title": "Dead Soldier Effigy",
     "x": -400,
     "y": 1645
   },
