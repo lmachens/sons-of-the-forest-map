@@ -11,6 +11,10 @@ export const locales = [
     code: "pl",
     name: "Polski",
   },
+  {
+    code: "pt-BR",
+    name: "Português Brasileiro",
+  },
 ];
 
 export let locale = localStorage.getItem("locale") || "en";

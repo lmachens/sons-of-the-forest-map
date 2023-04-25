@@ -5,7 +5,7 @@ import path from "node:path";
 import { fileURLToPath } from "url";
 import locations from "../src/lib/locations.json" assert { type: "json" };
 
-const locales = ["de", "pl"];
+const locales = ["de", "pl", "pt-BR"];
 
 const __dirname = fileURLToPath(new URL(".", import.meta.url));
 const toAbsolute = (p) => path.resolve(__dirname, p);
@@ -110,6 +110,10 @@ locales.forEach(async (locale) => {
   for (const key of keys) {
     if (!dictionary[key]) {
       dictionary[key] = await translator.translate(key, "en", locale);
+      writeFileSync(
+        toAbsolute(`../src/locales/${locale}.json`),
+        JSON.stringify(dictionary, null, 2)
+      );
     }
   }
 
