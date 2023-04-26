@@ -222,7 +222,6 @@
   "Winter Jacket": "Jaqueta de inverno",
   "Track Suit": "Traje de pista",
   "Tuxedo": "Smoking",
-  "On cabinet in the batrhroom": "No gabinete no banheiro",
   "Leather Suit": "Traje de couro",
   "Golden Mask": "Máscara de ouro",
   "Wetsuit": "Meteira",
@@ -272,7 +271,6 @@
   "Beside sunbed in the room with big tree": "Ao lado da espreguiçadeira na sala com grande árvore",
   "Email - RE:RE: GOLF BALLS": "Email - Re: Re: bolas de golfe",
   "In the room with couches, at the end turn to left table": "Na sala com sofás, no final, vire para a mesa esquerda",
-  "Cult phamplet - You will find meaning in life again": "Cult Phamplet - você encontrará significado na vida novamente",
   "Between corpses": "Entre cadáveres",
   "Market Observations": "Observações de mercado",
   "Hang Glider": "Pendure o planador",
@@ -305,7 +303,6 @@
   "Leg and Torso Effigies": "Efígies da perna e torso",
   "5x Effigies": "5x efígies",
   "3x Effigies": "3x efígies",
-  "Dead Soldier Effigie": "Soldado morto effigie",
   "2x Effigies": "2x efígies",
   "Kayak": "Caiaque",
   "2x Kayaks": "2x caiaques",
@@ -481,5 +478,8 @@
   "GolfPondC": "Golfpondc",
   "GolfPondD": "Golfpondd",
   "GolfPondE": "Golfponde",
-  "GolfPondF": "Golfpondf"
+  "GolfPondF": "Golfpondf",
+  "On cabinet in the bathroom": "No gabinete no banheiro",
+  "Cult pamphlet - You will find meaning in life again": "Panfleto cult - você encontrará significado na vida novamente",
+  "Dead Soldier Effigy": "Efígie do soldado morto"
 }

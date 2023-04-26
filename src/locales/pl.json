@@ -171,7 +171,6 @@
   "Winter Jacket": "Kurtka zimowa",
   "Track Suit": "Dres",
   "Tuxedo": "Smoking",
-  "On cabinet in the batrhroom": "Na szafce w łazience",
   "Leather Suit": "Strój skórzany",
   "Golden Mask": "Złota Maska",
   "Wetsuit": "Kombinezon Piankowy",
@@ -220,7 +219,6 @@
   "Beside sunbed in the room with big tree": "Obok leżaka w pomieszczeniu z dużym drzewem",
   "Email - RE:RE: GOLF BALLS": "Email - RE:RE: PIŁKI GOLFOWE",
   "In the room with couches, at the end turn to left table": "W pokoju z kanapami, na końcu spójrz na lewy stół",
-  "Cult phamplet - You will find meaning in life again": "Ulotka okultystów - Znów znajdziesz sens w życiu",
   "Between corpses": "Między zwłokami",
   "Hang Glider": "Lotnia",
   "Putter": "Kij golfowy",
@@ -244,7 +242,6 @@
   "Leg and Torso Effigies": "Wizerunki nóg i tułowia",
   "5x Effigies": "5x Wizerunków",
   "3x Effigies": "3x Wizerunki",
-  "Dead Soldier Effigie": "Wizerunek martwych żołnierzy",
   "2x Effigies": "2x Wizerunki",
   "Kayak": "Kajak",
   "2x Kayaks": "2x Kajaki",
@@ -481,5 +478,8 @@
   "Laptop no.6": "Laptop nr.6",
   "Luxury Bunker Location": "Lokalizacja Bunkra Luksusowego",
   "Laptop no.7": "Laptop nr.7",
-  "Bunker C Location": "Lokalizacja Bunkra C."
+  "Bunker C Location": "Lokalizacja Bunkra C.",
+  "On cabinet in the bathroom": "Na szafce w łazience",
+  "Cult pamphlet - You will find meaning in life again": "Ulotka okultystów - Znów znajdziesz sens w życiu",
+  "Dead Soldier Effigy": "Wizerunek martwych żołnierzy"
 }

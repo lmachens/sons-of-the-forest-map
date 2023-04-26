@@ -171,7 +171,6 @@
   "Winter Jacket": "Winterjacke",
   "Track Suit": "Trainingsanzug",
   "Tuxedo": "Smoking",
-  "On cabinet in the batrhroom": "Auf dem Schrank im Badezimmer",
   "Leather Suit": "Lederanzug",
   "Golden Mask": "Goldene Maske",
   "Wetsuit": "Neoprenanzug",
@@ -220,7 +219,6 @@
   "Beside sunbed in the room with big tree": "Neben den Sonnenliegen im Raum mit dem großem Baum",
   "Email - RE:RE: GOLF BALLS": "E-Mail - Re: Re: Golfbälle",
   "In the room with couches, at the end turn to left table": "Im Raum mit den Sofas am Ende beim linken Tisch",
-  "Cult phamplet - You will find meaning in life again": "Kult-Broschüre - Sie werden im Leben wieder Sinn finden",
   "Between corpses": "Zwischen den Leichen",
   "Hang Glider": "Hängegleiter",
   "Putter": "Putter",
@@ -244,7 +242,6 @@
   "Leg and Torso Effigies": "Bein- und Torso-Totems",
   "5x Effigies": "5x Totems",
   "3x Effigies": "3x Totems",
-  "Dead Soldier Effigie": "toter Soldat Totem",
   "2x Effigies": "2x Totem",
   "Kayak": "Kajak",
   "2x Kayaks": "2x Kajaks",
@@ -481,5 +478,8 @@
   "Laptop no.6": "Laptop Nr. 6",
   "Luxury Bunker Location": "Luxus Bunker Standort",
   "Laptop no.7": "Laptop Nr. 7",
-  "Bunker C Location": "Bunker C Standort"
+  "Bunker C Location": "Bunker C Standort",
+  "On cabinet in the bathroom": "Auf dem Schrank im Badezimmer",
+  "Cult pamphlet - You will find meaning in life again": "Kult-Broschüre - Sie werden im Leben wieder Sinn finden",
+  "Dead Soldier Effigy": "Toter Soldat Totem"
 }
