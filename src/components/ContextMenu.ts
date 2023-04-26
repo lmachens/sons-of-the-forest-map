@@ -25,6 +25,7 @@ export default function ContextMenu({
     });
     CustomNode({
       element: customNodeButton,
+      onOpen: () => tooltip?.remove(),
       map,
       getLastPosition: () => ({
         location: {

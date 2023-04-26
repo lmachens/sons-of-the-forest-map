@@ -13,6 +13,7 @@ export type MapLocation = {
   requirements?: number[];
   items?: number[];
   screenshot?: string;
+  wiki?: string;
 };
 
 export function getMapLocations(): MapLocation[] {

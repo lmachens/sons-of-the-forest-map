@@ -517,7 +517,6 @@ select {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  width: 210px;
   padding: 0.5rem;
 }
 
@@ -531,6 +530,19 @@ select {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
+}
+
+.actions {
+  display: flex;
+}
+
+.actions > * {
+  flex: 1;
+}
+
+.layout .tooltip-container .actions .tooltip-button {
+  border-top: none;
+  border-left: 1px solid #77777e;
 }
 
 .type-label > input {
@@ -558,6 +570,10 @@ select {
   margin-bottom: 0.2rem;
 }
 
+.node-form .types {
+  max-height: 120px;
+  overflow: auto;
+}
 .bold {
   font-weight: bold;
 }
@@ -714,6 +730,7 @@ select {
 .leaflet-popup-tip {
   width: 12px !important;
   height: 12px !important;
+  background-color: #18181b !important;
 }
 
 .leaflet-popup-close-button {
@@ -746,6 +763,7 @@ select {
 
 .tooltip-container {
   width: 210px;
+  min-height: 20px;
   overflow: hidden;
 }
 
@@ -867,4 +885,24 @@ select {
 
 .nitro-video.show-fallback .fallback {
   display: grid;
+}
+
+a.external-link {
+  font-style: normal;
+}
+
+a.external-link:after {
+  content: " "
+    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAVklEQVR4Xn3PgQkAMQhDUXfqTu7kTtkpd5RA8AInfArtQ2iRXFWT2QedAfttj2FsPIOE1eCOlEuoWWjgzYaB/IkeGOrxXhqB+uA9Bfcm0lAZuh+YIeAD+cAqSz4kCMUAAAAASUVORK5CYII=);
+}
+
+.layout .tooltip-container .tooltip-button {
+  border-radius: 0;
+  border: 0;
+  border-top: 1px solid #77777e;
+  width: 100%;
+}
+
+.layout .tooltip-button:not(:disabled):hover {
+  border-color: #77777e;
 }

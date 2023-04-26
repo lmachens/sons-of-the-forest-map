@@ -16,15 +16,19 @@ export default function CustomNode({
   map,
   getLastPosition,
   onAdd,
+  onOpen,
 }: {
   element: HTMLButtonElement;
   map: leaflet.Map;
   getLastPosition: () => PlayerPosition;
   onAdd: () => void;
+  onOpen: () => void;
 }) {
   const types = getTypes();
   let isAdding = false;
-  element.onclick = () => {
+  element.onclick = (event) => {
+    event.stopPropagation();
+    onOpen();
     if (isAdding) {
       return;
     }
@@ -47,10 +51,12 @@ export default function CustomNode({
 
     const save = createElement("input", {
       type: "submit",
+      className: "tooltip-button",
       value: t("Save"),
     });
     const cancel = createElement("button", {
       type: "button",
+      className: "tooltip-button",
       innerText: t("Cancel"),
       onclick: () => {
         marker.remove();
@@ -58,7 +64,10 @@ export default function CustomNode({
       },
     });
 
-    const actions = createElement("div", {}, [save, cancel]);
+    const actions = createElement("div", { className: "actions" }, [
+      save,
+      cancel,
+    ]);
     actions.append(save, cancel);
     const note = createElement("span", {
       innerText: t("Drag icon to move the node position"),
@@ -69,11 +78,10 @@ export default function CustomNode({
       createElement("span", { innerText: "Title" }),
       createElement("input", { name: "title", required: true }),
     ]);
-    const form = createElement(
-      "form",
-      {
-        className: "node-form",
-        innerHTML: `
+    const form = createElement("form");
+    const container = createElement("div", {
+      className: "node-form",
+      innerHTML: `
     <label><span>Description</span><textarea name="description"></textarea></label>
     <label><span>Color</span><input type="color" name="color" value="#ffffff"/></label>
     <label><span>Type</span><div class="types">${types
@@ -87,12 +95,11 @@ export default function CustomNode({
       )
       .join("")}</div></label>
     `,
-      },
-      []
-    );
-    form.prepend(titleLabel);
+    });
+    container.prepend(titleLabel);
+    container.append(note);
 
-    form.append(actions, note);
+    form.append(container, actions);
 
     form.onclick = (event) => event.stopPropagation();
     form.onmousedown = (event) => event.stopPropagation();
@@ -124,13 +131,21 @@ export default function CustomNode({
       marker.remove();
       isAdding = false;
     };
-    marker.bindTooltip(form, {
-      direction: "top",
-      interactive: true,
-      permanent: true,
-      offset: [0, -15],
-    });
+
+    const tooltipContainer = createElement(
+      "div",
+      {
+        className: "tooltip-container",
+      },
+      [form]
+    );
+
     marker.pm.enableLayerDrag();
+
+    marker.bindPopup(tooltipContainer, {
+      offset: [0, -10],
+    });
+    marker.openPopup();
 
     titleLabel.focus();
   };

@@ -154,8 +154,6 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
 
   displaySelectedMarker();
 
-  let contextMenuTooltip: leaflet.Tooltip | null = null;
-
   const panToMarker = (id: number) => {
     unselectMarker();
     setMapLocationId(id);
@@ -221,6 +219,18 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       }
       `,
     });
+
+    if (mapLocation.wiki) {
+      tooltipContent.append(
+        createElement("a", {
+          href: mapLocation.wiki,
+          className: "external-link",
+          innerText: t("Wiki"),
+          target: "_blank",
+        })
+      );
+    }
+
     if (requirements) {
       tooltipContent.append(
         createElement("p", { className: "bold", innerText: t("Requirements") }),
@@ -233,18 +243,47 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
         ...items
       );
     }
-    tooltipContent.append(
-      createElement("p", {
-        className: "hint",
-        innerText: t("Right-Click to open menu"),
-      })
-    );
+
+    const hideElement = createElement("button", {
+      className: "tooltip-button",
+      innerText: isDiscovered
+        ? t("Set as undiscovered")
+        : t("Set as discoverd"),
+      onclick: (event) => {
+        event.stopPropagation();
+        let discoveredNodeIDs = getDiscoveredNodeIDs();
+        if (isDiscovered) {
+          discoveredNodeIDs = discoveredNodeIDs.filter(
+            (id) => id !== mapLocation.id
+          );
+        } else {
+          discoveredNodeIDs.push(mapLocation.id);
+        }
+        setDiscoveredNodeIDs(discoveredNodeIDs);
+        hideElement.innerText = selectedMarker!.options.isDiscovered
+          ? t("Set as discoverd")
+          : t("Set as undiscovered");
+        selectedMarker!.options.isDiscovered =
+          !selectedMarker!.options.isDiscovered;
+        selectedMarker?.redraw();
+      },
+    });
+    const actionsContainer = createElement("div", {}, [hideElement]);
+    if (isCustom) {
+      const editElement = createElement("button", {
+        className: "tooltip-button",
+        innerText: t("Edit Custom Node"),
+        onclick: openEditCustomNodeTooltip,
+      });
+      actionsContainer.append(editElement);
+    }
+
     const tooltipContainer = createElement(
       "div",
       {
         className: "tooltip-container",
       },
-      [tooltipContent]
+      [tooltipContent, actionsContainer]
     );
     if (mapLocation.screenshot) {
       const screenshot = createElement("img", {
@@ -295,11 +334,13 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       offset: [0, -10],
     });
 
-    function openEditCustomNodeTooltip() {
+    function openEditCustomNodeTooltip(event: MouseEvent) {
+      event.stopPropagation();
       marker.options.pmIgnore = false;
       leaflet.PM.reInitLayer(marker);
 
-      const form = createElement("form", {
+      const form = createElement("form");
+      const container = createElement("div", {
         className: "node-form",
         innerHTML: `
       <label><span>Title</span><input name="title" value="${
@@ -323,12 +364,15 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
         .join("")}</div></label>
       `,
       });
+
       const save = createElement("input", {
         type: "submit",
+        className: "tooltip-button",
         value: t("Save"),
       });
       const remove = createElement("button", {
         type: "button",
+        className: "tooltip-button",
         innerText: t("Delete"),
         onclick: () => {
           let customNodes = getCustomNodes();
@@ -342,24 +386,30 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       });
       const cancel = createElement("button", {
         type: "button",
+        className: "tooltip-button",
         innerText: t("Cancel"),
-        onclick: () => {
-          marker.unbindTooltip();
-          marker.bindTooltip(tooltipContainer, {
-            direction: "top",
-          });
-
+        onclick: (event) => {
+          event.stopPropagation();
           marker.pm.disableLayerDrag();
           marker.options.pmIgnore = true;
+          tooltipContainer.replaceChildren(tooltipContent, actionsContainer);
           leaflet.PM.reInitLayer(marker);
         },
       });
-      const actions = createElement("div", {}, [save, remove, cancel]);
+      const actions = createElement(
+        "div",
+        {
+          className: "actions",
+        },
+        [save, remove, cancel]
+      );
       const note = createElement("span", {
         innerText: t("Drag icon to move the node position"),
         className: "description",
       });
-      form.append(actions, note);
+
+      container.append(note);
+      form.append(container, actions);
 
       form.onclick = (event) => event.stopPropagation();
       form.onmousedown = (event) => event.stopPropagation();
@@ -382,63 +432,12 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
         customNodes.push({ id, title, description, type, x, y, color });
         setCustomNodes(customNodes);
         marker.pm.disableLayerDrag();
+        tooltipContainer.replaceChildren(tooltipContent, actionsContainer);
         refresh();
       };
-      marker.unbindTooltip();
-      marker.remove();
-      marker.addTo(map);
-      marker.bindTooltip(form, {
-        direction: "top",
-        interactive: true,
-        permanent: true,
-      });
-
+      tooltipContainer.replaceChildren(form);
       marker.pm.enableLayerDrag();
     }
-
-    marker.on("contextmenu", (event) => {
-      // @ts-ignore
-      event.originalEvent.propagatedFromMarker = true;
-
-      if (contextMenuTooltip) {
-        contextMenuTooltip.remove();
-      }
-      const hideElement = createElement("button", {
-        innerText: isDiscovered
-          ? t("Set as undiscovered")
-          : t("Set as discoverd"),
-        onclick: () => {
-          let discoveredNodeIDs = getDiscoveredNodeIDs();
-          if (isDiscovered) {
-            discoveredNodeIDs = discoveredNodeIDs.filter(
-              (id) => id !== mapLocation.id
-            );
-          } else {
-            discoveredNodeIDs.push(mapLocation.id);
-          }
-          setDiscoveredNodeIDs(discoveredNodeIDs);
-          refresh();
-        },
-      });
-      const container = createElement("div", {}, [hideElement]);
-      if (isCustom) {
-        const editElement = createElement("button", {
-          innerText: t("Edit Custom Node"),
-          onclick: openEditCustomNodeTooltip,
-        });
-        container.append(editElement);
-      }
-
-      contextMenuTooltip = leaflet
-        .tooltip({
-          direction: "bottom",
-          interactive: true,
-          className: "contextmenu",
-        })
-        .setLatLng(event.latlng)
-        .setContent(container)
-        .addTo(map);
-    });
 
     if (isHighlighted) {
       marker.bindPopup(tooltipContainer);
@@ -446,6 +445,9 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
     }
 
     marker.on("click", () => {
+      // if (marker.pm?.layerDragEnabled()) {
+      //   return;
+      // }
       unselectMarker();
       selectedMarker = marker;
       selectedMarker.setRadius(HIGHLIGHTED_ICON_RADIUS);
