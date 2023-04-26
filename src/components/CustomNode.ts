@@ -22,13 +22,15 @@ export default function CustomNode({
   map: leaflet.Map;
   getLastPosition: () => PlayerPosition;
   onAdd: () => void;
-  onOpen: () => void;
+  onOpen?: () => void;
 }) {
   const types = getTypes();
   let isAdding = false;
   element.onclick = (event) => {
     event.stopPropagation();
-    onOpen();
+    if (onOpen) {
+      onOpen();
+    }
     if (isAdding) {
       return;
     }
