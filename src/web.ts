@@ -6,6 +6,7 @@ import ImageOverlay from "./components/ImageOverlay";
 import { JoinCommunity } from "./components/JoinCommunity";
 import LocaleSelector from "./components/LocaleSelector";
 import Map from "./components/Map";
+import NitroPay from "./components/NitroPay";
 import Nodes from "./components/Nodes";
 import Search from "./components/Search";
 import Zones from "./components/Zones";
@@ -61,4 +62,5 @@ loadDictionary().then(() => {
   Zones({ map });
   initWakelock();
   Search({ panToMarker });
+  NitroPay();
 });

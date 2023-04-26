@@ -815,6 +815,7 @@ select {
   border: none;
   outline: none;
   color: white;
+  width: 120px;
 }
 
 .search-results {
@@ -853,4 +854,17 @@ select {
 .links a {
   /* text-decoration: none; */
   color: rgb(112, 180, 202);
+}
+
+.fallback {
+  display: none;
+  height: 100%;
+  width: 100%;
+  place-content: center;
+  border: 1px solid #77777e;
+  border-radius: 0.25rem;
+}
+
+.nitro-video.show-fallback .fallback {
+  display: grid;
 }
