@@ -1928,14 +1928,14 @@
     "y": -14
   },
   {
-    "id": 142,
+    "id": 593,
     "type": "supply",
     "title": "Supply Suitcase",
     "x": -1267,
     "y": -6
   },
   {
-    "id": 143,
+    "id": 594,
     "type": "supply",
     "title": "Supply Suitcase",
     "x": -1275,
@@ -2123,7 +2123,7 @@
     "y": 1395
   },
   {
-    "id": 141,
+    "id": 595,
     "type": "ammo",
     "title": "Ammo Suitcase",
     "x": -1146,
@@ -4451,7 +4451,7 @@
     "y": -1662
   },
   {
-    "id": 445,
+    "id": 596,
     "type": "lake",
     "title": "LakeP (11)",
     "x": -285,
