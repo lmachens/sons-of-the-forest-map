@@ -906,3 +906,52 @@ a.external-link:after {
 .layout .tooltip-button:not(:disabled):hover {
   border-color: #77777e;
 }
+
+.compass {
+  position: fixed;
+  z-index: 1000;
+  top: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    rgba(0, 0, 0, 0.8),
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    rgba(0, 0, 0, 0.8),
+    transparent
+  );
+  height: 26px;
+  width: 70vw;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.compass-needle {
+  color: white;
+  background-color: #00000031;
+  text-align: center;
+  display: flex;
+  font-size: 1.5rem;
+  text-shadow: 0px 0 1px black, 0px 0 2px black;
+  transition: background-position-x 0.1s ease-in-out;
+  background: url("/compass.webp");
+  background-size: 600px 26px;
+  height: 100%;
+  width: 100%;
+  background-position-x: calc(50% + 285px);
+}
+
+.compass-needle:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  background-color: orangered;
+  height: 100%;
+}

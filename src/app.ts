@@ -1,4 +1,5 @@
 import leaflet from "leaflet";
+import Compass from "./components/Compass";
 import ContextMenu from "./components/ContextMenu";
 import CustomNode from "./components/CustomNode";
 import DirectionLine from "./components/DirectionLine";
@@ -70,6 +71,7 @@ waitForOverwolf().then(async () => {
   } = TraceLine({
     map,
   });
+  const { updateRotation } = Compass();
 
   function updatePlayer(location: { x: number; y: number; z: number }) {
     lastRotation =
@@ -91,6 +93,7 @@ waitForOverwolf().then(async () => {
     updateDirectionLinePosition(lastPosition);
     updateTraceLinePosition(lastPosition);
     updateMultiplayerPosition(lastPosition);
+    updateRotation(lastRotation);
   }
 
   const ads = document.querySelector<HTMLDivElement>(".ads")!;

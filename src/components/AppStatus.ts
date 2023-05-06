@@ -4,6 +4,7 @@ import { createElement } from "../lib/elements";
 import { startNewGameSession } from "../lib/game-sessions";
 import { t } from "../lib/i18n";
 import { PlayerPosition } from "../lib/player-marker";
+import Compass from "./Compass";
 import DirectionLine from "./DirectionLine";
 import FollowLocation from "./FollowLocation";
 import Friend from "./Friend";
@@ -18,6 +19,7 @@ export default function AppStatus({ map }: { map: leaflet.Map }) {
     map,
   });
   GameSessions(traceLine);
+  const { updateRotation } = Compass();
 
   const player = Player({ map });
   const showOnMap = document.querySelector<HTMLButtonElement>(".show-on-map")!;
@@ -157,6 +159,7 @@ export default function AppStatus({ map }: { map: leaflet.Map }) {
             }
             directionLine.updatePosition(payload);
             traceLine.updatePosition(payload);
+            updateRotation(payload.rotation);
           }
         }
       }
