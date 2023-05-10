@@ -305,6 +305,7 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
                 className: "screenshot-full",
                 src: `/screenshots/${mapLocation.screenshot}`,
                 alt: "",
+                loading: "lazy",
               }),
             ]
           );

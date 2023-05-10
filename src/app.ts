@@ -6,7 +6,6 @@ import DirectionLine from "./components/DirectionLine";
 import Filters from "./components/Filters";
 import FollowLocation from "./components/FollowLocation";
 import GameSessions from "./components/GameSessions";
-import ImageOverlay from "./components/ImageOverlay";
 import { JoinCommunity } from "./components/JoinCommunity";
 import LocaleSelector from "./components/LocaleSelector";
 import Map from "./components/Map";
@@ -16,6 +15,7 @@ import OverwolfAds from "./components/OverwolfAds";
 import Player from "./components/Player";
 import Search from "./components/Search";
 import Status from "./components/Status";
+import TileLayer from "./components/TileLayer";
 import TraceLine from "./components/TraceLine";
 import Zones from "./components/Zones";
 import { WINDOWS } from "./lib/config";
@@ -38,7 +38,7 @@ waitForOverwolf().then(async () => {
 
   const mapElement = document.querySelector<HTMLDivElement>(".map")!;
   const map = Map(mapElement);
-  ImageOverlay({ map });
+  TileLayer({ map });
   initAppHeader({ map });
   initResizeBorders();
 

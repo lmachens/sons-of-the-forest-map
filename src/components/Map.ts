@@ -1,7 +1,7 @@
 import leaflet from "leaflet";
 import "leaflet/dist/leaflet.css";
 
-import { BOUNDS } from "../lib/config";
+import { BOUNDS, MAX_BOUNDS } from "../lib/config";
 import { getMapLocationById } from "../lib/locations";
 import { getMapLocationId } from "../lib/router";
 
@@ -15,12 +15,13 @@ export default function Map(container: HTMLDivElement) {
   const map = leaflet.map(container, {
     zoomControl: false,
     attributionControl: false,
-    minZoom: -3,
+    minZoom: -4,
     maxZoom: 5,
     zoomSnap: 0.5,
     zoomDelta: 0.5,
     wheelPxPerZoomLevel: 120,
     crs: leaflet.CRS.Simple,
+    maxBounds: MAX_BOUNDS,
   });
   if (mapLocation) {
     map.setView([mapLocation.y, mapLocation.x], 0);

@@ -2,13 +2,13 @@ import AppStatus from "./components/AppStatus";
 import ContextMenu from "./components/ContextMenu";
 import CustomNode from "./components/CustomNode";
 import Filters from "./components/Filters";
-import ImageOverlay from "./components/ImageOverlay";
 import { JoinCommunity } from "./components/JoinCommunity";
 import LocaleSelector from "./components/LocaleSelector";
 import Map from "./components/Map";
 import NitroPay from "./components/NitroPay";
 import Nodes from "./components/Nodes";
 import Search from "./components/Search";
+import TileLayer from "./components/TileLayer";
 import Zones from "./components/Zones";
 import { loadDictionary, translateHTML } from "./lib/i18n";
 import { initWakelock } from "./lib/wakelock";
@@ -26,7 +26,7 @@ loadDictionary().then(() => {
 
   const mapElement = document.querySelector<HTMLDivElement>(".map")!;
   const map = Map(mapElement);
-  ImageOverlay({ map });
+  TileLayer({ map });
 
   AppStatus({
     map,
