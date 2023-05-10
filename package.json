@@ -15,21 +15,21 @@
   "devDependencies": {
     "@overwolf/ow-cli": "0.0.5-0",
     "@overwolf/types": "3.23.1",
-    "@translate-tools/core": "0.2.13",
-    "@types/leaflet": "1.9.1",
+    "@translate-tools/core": "0.2.14",
+    "@types/leaflet": "1.9.3",
     "@types/qrcode": "1.5.0",
     "@types/throttle-debounce": "5.0.0",
     "html-to-text": "9.0.5",
-    "puppeteer": "19.9.0",
-    "typescript": "^4.9.3",
-    "vite": "^4.1.0",
+    "puppeteer": "20.1.2",
+    "typescript": "5.0.4",
+    "vite": "4.3.5",
     "vite-plugin-pwa": "0.14.7"
   },
   "dependencies": {
     "@geoman-io/leaflet-geoman-free": "2.14.2",
     "leaflet": "1.9.3",
     "peerjs": "1.4.7",
-    "qrcode": "1.5.1",
+    "qrcode": "1.5.3",
     "throttle-debounce": "5.0.0"
   }
 }
