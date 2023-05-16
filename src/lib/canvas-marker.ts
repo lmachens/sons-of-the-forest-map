@@ -22,9 +22,9 @@ leaflet.Canvas.include({
       if (cachedImages[key].complete) {
         this._ctx.drawImage(cachedImages[key], dx, dy);
       } else {
-        cachedImages[key].onload = () => {
+        cachedImages[key].addEventListener("load", () => {
           this._ctx.drawImage(cachedImages[key], dx, dy);
-        };
+        });
       }
       return;
     }
@@ -87,9 +87,9 @@ leaflet.Canvas.include({
     const img = new Image(imageSize, imageSize);
     img.src = ctx.canvas.toDataURL("image/webp");
     cachedImages[key] = img;
-    img.onload = () => {
-      this._ctx.drawImage(cachedImages[key], dx, dy);
-    };
+    img.addEventListener("load", () => {
+      this._ctx.drawImage(img, dx, dy);
+    });
   },
 });
 const renderer = leaflet.canvas() as leaflet.Canvas & {

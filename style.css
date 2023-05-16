@@ -910,7 +910,7 @@ a.external-link:after {
 .compass {
   position: fixed;
   z-index: 1000;
-  top: 0.6rem;
+  top: 2.5rem;
   left: 50%;
   transform: translateX(-50%);
   mask-image: linear-gradient(
@@ -929,6 +929,10 @@ a.external-link:after {
   width: 70vw;
   overflow: hidden;
   pointer-events: none;
+}
+
+.web .compass {
+  top: 0.6rem;
 }
 
 .compass-needle {
