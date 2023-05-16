@@ -10,5 +10,6 @@ export default function TileLayer({ map }: { map: leaflet.Map }) {
     maxZoom: 5,
     zoomOffset: 4,
     bounds: BOUNDS,
+    tileSize: 250,
   }).addTo(map);
 }
