@@ -1,5 +1,4 @@
 import leaflet from "leaflet";
-import "leaflet/dist/leaflet.css";
 
 import { BOUNDS, MAX_BOUNDS } from "../lib/config";
 import { getMapLocationById } from "../lib/locations";
