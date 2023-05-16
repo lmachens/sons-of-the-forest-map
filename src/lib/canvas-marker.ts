@@ -1,20 +1,38 @@
 import leaflet from "leaflet";
 
+const cachedImages: Record<string, HTMLImageElement> = {};
 leaflet.Canvas.include({
   updateCanvasImg(layer: CanvasMarker) {
-    const ctx: CanvasRenderingContext2D = this._ctx;
-    if (!ctx) {
+    const {
+      type,
+      path,
+      color,
+      radius,
+      isDiscovered,
+      isUnderground,
+      isHighlighted,
+    } = layer.options;
+    const imageSize = radius * 2;
+    const p = layer._point.round();
+    const dx = p.x - radius;
+    const dy = p.y - radius;
+
+    const key = `${type}-${isDiscovered}-${isHighlighted}-${isUnderground}`;
+    if (cachedImages[key]) {
+      if (cachedImages[key].complete) {
+        this._ctx.drawImage(cachedImages[key], dx, dy);
+      } else {
+        cachedImages[key].onload = () => {
+          this._ctx.drawImage(cachedImages[key], dx, dy);
+        };
+      }
       return;
     }
 
-    const { path, color, radius, isDiscovered, isUnderground, isHighlighted } =
-      layer.options;
-
-    const p = layer._point.round();
-    const imageSize = radius * 2;
-
-    const dx = p.x - radius;
-    const dy = p.y - radius;
+    const canvas = document.createElement("canvas");
+    canvas.width = imageSize;
+    canvas.height = imageSize;
+    const ctx = canvas.getContext("2d")!;
 
     if (isHighlighted) {
       ctx.beginPath();
@@ -25,9 +43,6 @@ leaflet.Canvas.include({
       ctx.lineWidth = 1.5;
       ctx.stroke();
     }
-
-    ctx.save();
-    ctx.translate(dx, dy);
 
     const scale = imageSize / 512;
 
@@ -68,7 +83,13 @@ leaflet.Canvas.include({
       ctx.stroke(path2D);
       ctx.fill(path2D);
     }
-    ctx.restore();
+
+    const img = new Image(imageSize, imageSize);
+    img.src = ctx.canvas.toDataURL("image/webp");
+    cachedImages[key] = img;
+    img.onload = () => {
+      this._ctx.drawImage(cachedImages[key], dx, dy);
+    };
   },
 });
 const renderer = leaflet.canvas() as leaflet.Canvas & {
@@ -78,6 +99,7 @@ const renderer = leaflet.canvas() as leaflet.Canvas & {
 export type CanvasMarkerOptions = {
   id: number;
   path: string;
+  type: string;
   color: string;
   radius: number;
   isUnderground?: boolean;
@@ -89,7 +111,6 @@ export type CanvasMarkerOptions = {
 class CanvasMarker extends leaflet.CircleMarker {
   declare options: leaflet.CircleMarkerOptions & CanvasMarkerOptions;
   private _renderer: typeof renderer;
-  declare imageElement: HTMLImageElement;
   declare _point: any;
 
   constructor(

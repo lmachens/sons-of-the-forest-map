@@ -41,6 +41,7 @@ export default function CustomNode({
       [playerPosition.location.y, playerPosition.location.x],
       {
         id: Date.now(),
+        type: types[0].value,
         path: types[0].icon,
         color: "#ffffff",
         radius: 16,

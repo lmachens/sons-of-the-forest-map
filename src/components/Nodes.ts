@@ -317,6 +317,7 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
 
     const marker = new CanvasMarker([mapLocation.y, mapLocation.x], {
       id: mapLocation.id,
+      type: type.value,
       path: type.icon,
       color: mapLocation.color || filter.color || "#ffffff",
       radius: isHighlighted ? HIGHLIGHTED_ICON_RADIUS : ICON_RADIUS,
