@@ -43,6 +43,15 @@ export default function TraceLine({ map }: { map: leaflet.Map }) {
   }
   latestGameSession.traceLine.forEach((location) => addCircle(location));
 
+  let lastLocation: {
+    x: number;
+    y: number;
+    z: number;
+  } = {
+    x: 0,
+    y: 0,
+    z: 0,
+  };
   const updatePosition = throttle(
     750,
     function updatePosition({
@@ -54,8 +63,14 @@ export default function TraceLine({ map }: { map: leaflet.Map }) {
         z: number;
       };
     }) {
-      addCircle(location);
-      addTraceLineItem(location);
+      if (
+        Math.abs(location.x - lastLocation.x) > 3 ||
+        Math.abs(location.y - lastLocation.y) > 3
+      ) {
+        addCircle(location);
+        addTraceLineItem(location);
+        lastLocation = location;
+      }
     }
   );
   const layerGroups: {

@@ -29,6 +29,5 @@ const COMPASS_NEEDLE_EAST = 135;
 
 function rotationToX(rotation: number) {
   const x = COMPASS_NEEDLE_EAST + rotation * STEP;
-  console.log(x, rotation, rotation * STEP);
   return x.toFixed(0);
 }

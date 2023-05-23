@@ -7,6 +7,7 @@ import Filters from "./components/Filters";
 import FollowLocation from "./components/FollowLocation";
 import GameSessions from "./components/GameSessions";
 import { JoinCommunity } from "./components/JoinCommunity";
+import Kelvin from "./components/Kelvin";
 import LocaleSelector from "./components/LocaleSelector";
 import Map from "./components/Map";
 import Multiplayer from "./components/Multiplayer";
@@ -55,6 +56,7 @@ waitForOverwolf().then(async () => {
     getLastPosition,
   });
   const { panTo, updatePosition: updatePlayerPosition } = Player({ map });
+  const { updatePosition: updateKelvinPosition } = Kelvin({ map });
   const showOnMap = document.querySelector<HTMLButtonElement>(".show-on-map")!;
   showOnMap.onclick = () => {
     panTo();
@@ -111,13 +113,29 @@ waitForOverwolf().then(async () => {
     // https://overwolf.github.io/api/games/events/sons-of-the-forest#location
     if (info.feature === "location") {
       const payload = info.info as unknown as {
-        match_info: { location: string };
+        match_info: { location?: string; npc_location?: string };
       };
       try {
-        const { loc_x, loc_y, loc_z } = JSON.parse(
-          payload.match_info.location
-        ) as { loc_x: number; loc_y: number; loc_z: number };
-        updatePlayer({ x: loc_x, y: loc_y, z: loc_z });
+        if (payload.match_info.location) {
+          const { loc_x, loc_y, loc_z } = JSON.parse(
+            payload.match_info.location
+          ) as {
+            loc_x: number;
+            loc_y: number;
+            loc_z: number;
+          };
+          updatePlayer({ x: loc_x, y: loc_y, z: loc_z });
+        }
+        if (payload.match_info.npc_location) {
+          const { loc_x, loc_y } = JSON.parse(
+            payload.match_info.npc_location
+          ) as {
+            loc_x: number;
+            loc_y: number;
+            loc_z: number;
+          };
+          updateKelvinPosition(loc_x, loc_y);
+        }
       } catch (error) {
         //
       }
