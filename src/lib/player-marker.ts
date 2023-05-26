@@ -46,7 +46,6 @@ export default class PlayerMarker extends leaflet.Marker {
 
     this.rotation = playerRotation;
 
-    this.rotation = playerRotation;
     this.setLatLng([location.y, location.x]);
   }
 }
