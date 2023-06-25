@@ -347,6 +347,30 @@ export function getTypes(): NodeType[] {
       icon: icons["go-pro"] ,
       filter: "tools"
     },
+    {
+      value: "golf-cart",
+      title: t("Drive around the map"),
+      icon: icons.uni,
+      filter: "vehicle"
+    },
+    {
+      value: "rifle",
+      title: t("Ranged type of weapon"),
+      icon: icons["sawed-off-shotgun"],
+      filter: "weapons"
+    },
+    {
+      value: "stream",
+      title: t("River"),
+      icon: icons.info,
+      filter: "lake"
+    },
+    {
+      value: "waterfall",
+      title: t("Waterfall"),
+      icon: icons.info,
+      filter: "lake"
+    },
   ];
 }
 

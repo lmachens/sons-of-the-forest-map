@@ -2,25 +2,25 @@
   {
     "id": 1,
     "type": "spawnPoint",
-    "title": "Spawn Point",
-    "x": -220,
-    "y": -4,
+    "title": "SnowCrash",
+    "x": -225,
+    "y": -12,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Helicopter_Crash_Site"
   },
   {
     "id": 2,
     "type": "spawnPoint",
-    "title": "Spawn Point",
-    "x": -415,
-    "y": 1593,
+    "title": "OceanCrash",
+    "x": -426,
+    "y": 1603,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Helicopter_Crash_Site"
   },
   {
     "id": 3,
     "type": "spawnPoint",
-    "title": "Spawn Point",
+    "title": "TreeCrash",
     "x": -1141,
-    "y": -217,
+    "y": -216,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Helicopter_Crash_Site"
   },
   {
@@ -160,6 +160,16 @@
     "requirements": [15],
     "screenshot": "shotgun.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Shotgun"
+  },
+  {
+    "id": 845,
+    "type": "rifle",
+    "title": "Rifle",
+    "description": "In hands of dead soldier",
+    "x": 674,
+    "y": -273,
+    "isUnderground": true,
+    "screenshot": "rifle.webp"
   },
   {
     "id": 17,
@@ -316,9 +326,19 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Can_Opener"
   },
   {
+    "id": 827,
+    "type": "opener",
+    "title": "Can Opener",
+    "description": "Next to a tent",
+    "x": -154,
+    "y": -110,
+    "screenshot": "can_opener_3.webp",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Can_Opener"
+  },
+  {
     "id": 29,
     "type": "finalBunker",
-    "title": "Luxury Bunker",
+    "title": "BunkerLuxury",
     "x": 1766,
     "y": 553,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Bunkers#Luxury_Bunker_Check_on_map"
@@ -326,7 +346,7 @@
   {
     "id": 30,
     "type": "hatch",
-    "title": "Maintenance A",
+    "title": "BunkerA",
     "description": "Dig out the hatch",
     "x": -478,
     "y": 710,
@@ -338,7 +358,7 @@
   {
     "id": 31,
     "type": "hatch",
-    "title": "Maintenance B",
+    "title": "BunkerB",
     "description": "Dig out the hatch",
     "x": -1133,
     "y": -1100,
@@ -350,7 +370,7 @@
   {
     "id": 32,
     "type": "hatch",
-    "title": "Maintenance C",
+    "title": "BunkerC",
     "description": "Dig out the hatch",
     "x": 1110,
     "y": 1007,
@@ -362,7 +382,7 @@
   {
     "id": 307,
     "type": "hatch",
-    "title": "Food and Dining Bunker",
+    "title": "BunkerFood",
     "x": -1027,
     "y": 1036,
     "isUnderground": true,
@@ -374,7 +394,7 @@
   {
     "id": 33,
     "type": "hatch",
-    "title": "Residential Bunker",
+    "title": "BunkerResidential",
     "x": 1214,
     "y": -638,
     "isUnderground": true,
@@ -497,12 +517,28 @@
   {
     "id": 586,
     "type": "go-pro",
-    "title": "Go Pro Camera",
+    "title": "Action Camera",
     "x": 1137,
     "y": -621,
     "isUnderground": true,
     "requirements": [21],
-    "screenshot": "action_camera.webp"
+    "screenshot": "action_camera_1.webp"
+  },
+  {
+    "id": 824,
+    "type": "go-pro",
+    "title": "Action Camera",
+    "x": 467,
+    "y": 1215,
+    "screenshot": "action_camera_2.webp"
+  },
+  {
+    "id": 825,
+    "type": "go-pro",
+    "title": "Action Camera",
+    "x": -1119,
+    "y": 7,
+    "screenshot": "action_camera_3.webp"
   },
   {
     "id": 38,
@@ -526,6 +562,7 @@
     "id": 40,
     "type": "cave",
     "title": "Mountaintop Lake Grotto",
+    "description": "IceCaveC",
     "x": 430,
     "y": -206,
     "screenshot": "mountaintop_lake_grotto.webp",
@@ -535,6 +572,7 @@
     "id": 41,
     "type": "cave",
     "title": "Frozen Lake Grotto",
+    "description": "IceCaveA",
     "x": -136,
     "y": -90,
     "screenshot": "frozen_lake_grotto.webp",
@@ -564,6 +602,7 @@
     "id": 44,
     "type": "cave",
     "title": "Mountainside Grotto",
+    "description": "IceCaveB",
     "x": -106,
     "y": -1060,
     "screenshot": "mountainside_grotto.webp",
@@ -592,7 +631,7 @@
   {
     "id": 47,
     "type": "cave",
-    "title": "Cave leading to Entertainment Bunker",
+    "title": "BunkerEntertainment",
     "x": -1190,
     "y": 126,
     "items": [35, 21, 23, 22, 80, 79, 88, 335, 91, 333, 334, 94],
@@ -612,7 +651,7 @@
   {
     "id": 49,
     "type": "cave",
-    "title": "Cave leading to the Food and Dining Bunker",
+    "title": "FoodHatch",
     "x": -1014,
     "y": 1028,
     "screenshot": "food_and_dining_cave.webp",
@@ -636,6 +675,69 @@
     "y": 144,
     "isUnderground": true,
     "requirements": [13]
+  },
+  {
+    "id": 66,
+    "type": "camp",
+    "title": "WhiteTents1",
+    "description": "Abandoned Campsite",
+    "x": -1659,
+    "y": 1191,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 65,
+    "type": "camp",
+    "title": "WhiteTents2",
+    "description": "Abandoned Campsite",
+    "x": -1436,
+    "y": 1214,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 63,
+    "type": "camp",
+    "title": "WhiteTents3",
+    "description": "Abandoned Campsite",
+    "x": -1362,
+    "y": 1667,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 61,
+    "type": "camp",
+    "title": "WhiteTents4",
+    "description": "Abandoned Campsite",
+    "x": -750,
+    "y": 1276,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 57,
+    "type": "camp",
+    "title": "WhiteTents5",
+    "description": "Campsite with save point",
+    "x": -237,
+    "y": 945,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 58,
+    "type": "camp",
+    "title": "WhiteTents6",
+    "description": "Abandoned Campsite",
+    "x": -262,
+    "y": 1075,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 191,
+    "type": "camp",
+    "title": "WhiteTents7",
+    "description": "Abandoned Campsite",
+    "x": -129,
+    "y": -1038,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 51,
@@ -686,22 +788,6 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
-    "id": 57,
-    "type": "camp",
-    "title": "Abandoned Camp",
-    "x": -237,
-    "y": 944,
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
-  },
-  {
-    "id": 58,
-    "type": "camp",
-    "title": "Abandoned Camp",
-    "x": -258,
-    "y": 1073,
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
-  },
-  {
     "id": 59,
     "type": "camp",
     "title": "Abandoned Camp",
@@ -718,15 +804,6 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
-    "id": 61,
-    "type": "camp",
-    "title": "Abandoned Camp",
-    "description": "2x Tents without save points",
-    "x": -749,
-    "y": 1277,
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
-  },
-  {
     "id": 62,
     "type": "camp",
     "title": "Abandoned Camp",
@@ -736,39 +813,12 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
-    "id": 63,
-    "type": "camp",
-    "title": "Abandoned Camp",
-    "description": "2x Tents without save points",
-    "x": -1362,
-    "y": 1665,
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
-  },
-  {
     "id": 64,
     "type": "camp",
     "title": "Abandoned Camp",
     "description": "2x Tents with save points",
     "x": -1255,
     "y": 1397,
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
-  },
-  {
-    "id": 65,
-    "type": "camp",
-    "title": "Abandoned Camp",
-    "description": "2x Tents without save points",
-    "x": -1436,
-    "y": 1214,
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
-  },
-  {
-    "id": 66,
-    "type": "camp",
-    "title": "Abandoned Camp",
-    "description": "4x Tents without save points",
-    "x": -1650,
-    "y": 1188,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
@@ -889,26 +939,9 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
-    "id": 191,
-    "type": "camp",
-    "title": "Abandoned Camp",
-    "description": "3x Tents without save points",
-    "x": -129,
-    "y": -1038,
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
-  },
-  {
-    "id": 67,
-    "type": "village",
-    "title": "Abandoned Cabins",
-    "x": 1827,
-    "y": -487,
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
-  },
-  {
     "id": 68,
     "type": "village",
-    "title": "Abandoned Cabins",
+    "title": "AbandonedBuildings1",
     "x": 1694,
     "y": 1025,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
@@ -916,9 +949,17 @@
   {
     "id": 69,
     "type": "village",
-    "title": "Abandoned Cabins",
+    "title": "AbandonedBuildings2",
     "x": 1459,
     "y": 747,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 67,
+    "type": "village",
+    "title": "AbandonedBuildings3",
+    "x": 1824,
+    "y": -512,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
@@ -928,6 +969,7 @@
     "x": 1634,
     "y": 514,
     "isUnderground": true,
+    "screenshot": "pajamas_2.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Pajamas"
   },
   {
@@ -1150,6 +1192,17 @@
     "x": -541,
     "y": -632,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Books#The_Realm_Beyond"
+  },
+  {
+    "id": 828,
+    "type": "book",
+    "title": "Rescued Book",
+    "description": "",
+    "x": 1623,
+    "y": 504,
+    "isUnderground": true,
+    "screenshot": "rescued_book.webp",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Books#Rescued_Book"
   },
   {
     "id": 91,
@@ -1391,6 +1444,33 @@
     "requirements": [17]
   },
   {
+    "id": 829,
+    "type": "document",
+    "title": "EMAIL - CROSSES BURN DEMONS",
+    "x": 1616,
+    "y": 484,
+    "isUnderground": true,
+    "screenshot": "EMAIL - CROSSES BURN DEMONS.webp"
+  },
+  {
+    "id": 830,
+    "type": "document",
+    "title": "EMAIL - OUT DEMONIA",
+    "x": 1154,
+    "y": 523,
+    "isUnderground": true,
+    "screenshot": "EMAIL - OUT DEMONIA.webp"
+  },
+  {
+    "id": 831,
+    "type": "document",
+    "title": "EMAIL - STAY INSIDE THE CUBE",
+    "x": 1153,
+    "y": 523,
+    "isUnderground": true,
+    "screenshot": "EMAIL - STAY INSIDE THE CUBE.webp"
+  },
+  {
     "id": 106,
     "type": "hang-glider",
     "title": "Hang Glider",
@@ -1508,6 +1588,97 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hang_Glider"
   },
   {
+    "id": 812,
+    "type": "golf-cart",
+    "title": "Golf Cart",
+    "x": -1134,
+    "y": -1105
+  },
+  {
+    "id": 813,
+    "type": "golf-cart",
+    "title": "Golf Cart",
+    "x": -929,
+    "y": -995
+  },
+  {
+    "id": 814,
+    "type": "golf-cart",
+    "title": "Golf Cart",
+    "x": -893,
+    "y": -918
+  },
+  {
+    "id": 815,
+    "type": "golf-cart",
+    "title": "Golf Cart",
+    "x": 1815,
+    "y": -508
+  },
+  {
+    "id": 815,
+    "type": "golf-cart",
+    "title": "Golf Cart",
+    "x": 1828,
+    "y": -484
+  },
+  {
+    "id": 816,
+    "type": "golf-cart",
+    "title": "Golf Cart",
+    "x": 1840,
+    "y": 355
+  },
+  {
+    "id": 817,
+    "type": "golf-cart",
+    "title": "Golf Cart",
+    "x": 1904,
+    "y": 461
+  },
+  {
+    "id": 818,
+    "type": "golf-cart",
+    "title": "Golf Cart",
+    "x": 1691,
+    "y": 1027
+  },
+  {
+    "id": 819,
+    "type": "golf-cart",
+    "title": "Golf Cart",
+    "x": 1583,
+    "y": 1340
+  },
+  {
+    "id": 820,
+    "type": "golf-cart",
+    "title": "Golf Cart",
+    "x": 1031,
+    "y": 1523
+  },
+  {
+    "id": 821,
+    "type": "golf-cart",
+    "title": "Golf Cart",
+    "x": 1044,
+    "y": 1826
+  },
+  {
+    "id": 822,
+    "type": "golf-cart",
+    "title": "Golf Cart",
+    "x": 736,
+    "y": 1493
+  },
+  {
+    "id": 823,
+    "type": "golf-cart",
+    "title": "Golf Cart",
+    "x": 1014,
+    "y": 1222
+  },
+  {
     "id": 113,
     "type": "putter",
     "title": "Putter",
@@ -1539,7 +1710,7 @@
   {
     "id": 272,
     "type": "helicopter",
-    "title": "Helicopter Crash Site",
+    "title": "VineChopper",
     "x": -804,
     "y": -218,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Helicopter_Crash_Sites"
@@ -2858,6 +3029,76 @@
     "isUnderground": true
   },
   {
+    "id": 832,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": 625,
+    "y": -1661
+  },
+  {
+    "id": 833,
+    "type": "crate",
+    "title": "Crate",
+    "x": 1493,
+    "y": 948
+  },
+  {
+    "id": 834,
+    "type": "crate",
+    "title": "Crate",
+    "x": 1566,
+    "y": -638
+  },
+  {
+    "id": 835,
+    "type": "crate",
+    "title": "3x Crates",
+    "x": 1151,
+    "y": 696
+  },
+  {
+    "id": 836,
+    "type": "crate",
+    "title": "3x Crates",
+    "x": 599,
+    "y": -1008
+  },
+  {
+    "id": 837,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": 1246,
+    "y": -1643
+  },
+  {
+    "id": 838,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": 1514,
+    "y": -1598
+  },
+  {
+    "id": 839,
+    "type": "crate",
+    "title": "Crate",
+    "x": 1744,
+    "y": 804
+  },
+  {
+    "id": 840,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": 697,
+    "y": 831
+  },
+  {
+    "id": 841,
+    "type": "crate",
+    "title": "2x Crates",
+    "x": 627,
+    "y": -1661
+  },
+  {
     "id": 192,
     "type": "info",
     "title": "Big Old Cross",
@@ -3283,6 +3524,50 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Killer_Whale"
   },
   {
+    "id": 851,
+    "type": "info",
+    "title": "Grave2",
+    "x": -286,
+    "y": 637,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Gravesites"
+  },
+  {
+    "id": 852,
+    "type": "info",
+    "title": "Grave3",
+    "description": "5x Graves",
+    "x": -1633,
+    "y": -1506,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Gravesites"
+  },
+  {
+    "id": 853,
+    "type": "info",
+    "title": "Grave4",
+    "description": "1x Grave",
+    "x": -1046,
+    "y": 42,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Gravesites"
+  },
+  {
+    "id": 393,
+    "type": "info",
+    "title": "Grave5",
+    "description": "4x Graves",
+    "x": -1314,
+    "y": 1474,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Gravesites"
+  },
+  {
+    "id": 398,
+    "type": "info",
+    "title": "Graves6",
+    "description": "3x Graves",
+    "x": -1455,
+    "y": -124,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Gravesites"
+  },
+  {
     "id": 390,
     "type": "info",
     "title": "4x Graves",
@@ -3304,14 +3589,6 @@
     "title": "4x Graves",
     "x": -842,
     "y": 1716,
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Gravesites"
-  },
-  {
-    "id": 393,
-    "type": "info",
-    "title": "4x Graves",
-    "x": -1314,
-    "y": 1474,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Gravesites"
   },
   {
@@ -3344,14 +3621,6 @@
     "title": "3x Graves",
     "x": -1789,
     "y": 22,
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Gravesites"
-  },
-  {
-    "id": 398,
-    "type": "info",
-    "title": "3x Graves",
-    "x": -1455,
-    "y": -124,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Gravesites"
   },
   {
@@ -3529,6 +3798,52 @@
     "x": 175,
     "y": -666,
     "isUnderground": true
+  },
+  {
+    "id": 846,
+    "type": "info",
+    "title": "Wall Painting",
+    "x": -149,
+    "y": -420,
+    "isUnderground": true,
+    "screenshot": "wall_painting_1.webp"
+  },
+  {
+    "id": 848,
+    "type": "info",
+    "title": "DeadDeer",
+    "x": -1298,
+    "y": 233
+  },
+  {
+    "id": 849,
+    "type": "info",
+    "title": "DeadDeer2",
+    "x": -789,
+    "y": -123
+  },
+  {
+    "id": 850,
+    "type": "info",
+    "title": "DeadDeer3",
+    "x": -1299,
+    "y": 191
+  },
+  {
+    "id": 879,
+    "type": "info",
+    "title": "Yacht Good Times",
+    "x": 417,
+    "y": 1173,
+    "screenshot": "yacht_good_times.webp"
+  },
+  {
+    "id": 880,
+    "type": "info",
+    "title": "Yacht Evening Star",
+    "x": 466,
+    "y": 1217,
+    "screenshot": "yacht_evening_star.webp"
   },
   {
     "id": 236,
@@ -3846,6 +4161,96 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
   },
   {
+    "id": 802,
+    "type": "can",
+    "title": "Village37",
+    "description": "Medium Village",
+    "x": 600,
+    "y": -1014,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
+  },
+  {
+    "id": 803,
+    "type": "can",
+    "title": "Village38",
+    "description": "Small Village",
+    "x": 1568,
+    "y": -633,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
+  },
+  {
+    "id": 804,
+    "type": "can",
+    "title": "Village39",
+    "description": "Small Village",
+    "x": 482,
+    "y": -1705,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
+  },
+  {
+    "id": 805,
+    "type": "can",
+    "title": "Village40",
+    "description": "Big Village",
+    "x": 1234,
+    "y": -1650,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
+  },
+  {
+    "id": 806,
+    "type": "can",
+    "title": "Village41",
+    "description": "Big Village",
+    "x": 1521,
+    "y": -1587,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
+  },
+  {
+    "id": 807,
+    "type": "can",
+    "title": "Village42",
+    "description": "Small Village",
+    "x": 1492,
+    "y": 947,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
+  },
+  {
+    "id": 808,
+    "type": "can",
+    "title": "Village43",
+    "description": "Medium Village",
+    "x": 1149,
+    "y": 705,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
+  },
+  {
+    "id": 809,
+    "type": "can",
+    "title": "Village44",
+    "description": "Medium Village",
+    "x": 1747,
+    "y": 807,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
+  },
+  {
+    "id": 810,
+    "type": "can",
+    "title": "Village45",
+    "description": "Medium Village",
+    "x": 705,
+    "y": 824,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
+  },
+  {
+    "id": 811,
+    "type": "can",
+    "title": "Village46",
+    "description": "Small Village",
+    "x": 631,
+    "y": -1657,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
+  },
+  {
     "id": 277,
     "type": "can",
     "title": "AbandonedVillage-1",
@@ -3950,6 +4355,25 @@
     "isUnderground": true,
     "requirements": [17],
     "screenshot": "shotgun_rail_3.webp",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Shotgun_Rail"
+  },
+  {
+    "id": 826,
+    "type": "srail",
+    "title": "Shotgun Rail",
+    "x": 1613,
+    "y": 481,
+    "isUnderground": true,
+    "screenshot": "shotgun_rail_4.webp",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Shotgun_Rail"
+  },
+  {
+    "id": 847,
+    "type": "srail",
+    "title": "Shotgun Rail",
+    "x": -1362,
+    "y": 1662,
+    "screenshot": "shotgun_rail_5.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Shotgun_Rail"
   },
   {
@@ -4526,6 +4950,59 @@
     "title": "LakeE",
     "x": 275.55,
     "y": -308.87
+  },
+  {
+    "id": 872,
+    "type": "lake",
+    "title": "LakeEA",
+    "x": 1128,
+    "y": 797
+  },
+  {
+    "id": 873,
+    "type": "lake",
+    "title": "LakeEB",
+    "x": 1232,
+    "y": 971
+  },
+  {
+    "id": 874,
+    "type": "lake",
+    "title": "LakeEC",
+    "x": 1624,
+    "y": 250
+  },
+  {
+    "id": 874,
+    "type": "lake",
+    "title": "LakeED",
+    "description": "Hot Spring",
+    "x": 897,
+    "y": 377
+  },
+  {
+    "id": 842,
+    "type": "lake",
+    "title": "LakeEE",
+    "description": "Hot Spring",
+    "x": -458,
+    "y": 517
+  },
+  {
+    "id": 843,
+    "type": "lake",
+    "title": "LakeEF",
+    "description": "Hot Spring",
+    "x": 1716,
+    "y": 419
+  },
+  {
+    "id": 844,
+    "type": "lake",
+    "title": "LakeEG",
+    "description": "Hot Spring",
+    "x": 209,
+    "y": -914
   },
   {
     "id": 645,
@@ -5543,6 +6020,34 @@
     "y": 917.77
   },
   {
+    "id": 875,
+    "type": "lake",
+    "title": "LakePFA",
+    "x": 1664,
+    "y": 641
+  },
+  {
+    "id": 876,
+    "type": "lake",
+    "title": "LakePFB",
+    "x": 1372,
+    "y": 289
+  },
+  {
+    "id": 877,
+    "type": "lake",
+    "title": "LakePFC",
+    "x": 1380,
+    "y": 960
+  },
+  {
+    "id": 878,
+    "type": "lake",
+    "title": "LakePFD",
+    "x": 1549,
+    "y": 1064
+  },
+  {
     "id": 790,
     "type": "lake",
     "title": "LakeQ",
@@ -5625,5 +6130,131 @@
     "title": "Lake Virginia",
     "x": -577.852,
     "y": 562.8575
+  },
+  {
+    "id": 854,
+    "type": "stream",
+    "title": "StreamL",
+    "x": -1208,
+    "y": -1370
+  },
+  {
+    "id": 855,
+    "type": "stream",
+    "title": "StreamM",
+    "x": -613,
+    "y": -759
+  },
+  {
+    "id": 856,
+    "type": "stream",
+    "title": "StreamIWaterfallA",
+    "x": -539,
+    "y": 409
+  },
+  {
+    "id": 857,
+    "type": "stream",
+    "title": "StreamIWaterfallB",
+    "x": -571,
+    "y": 541
+  },
+  {
+    "id": 858,
+    "type": "stream",
+    "title": "StreamIWaterfallMarh",
+    "x": -510,
+    "y": 741
+  },
+  {
+    "id": 859,
+    "type": "stream",
+    "title": "StreamIWaterfallC",
+    "x": -605,
+    "y": 873
+  },
+  {
+    "id": 860,
+    "type": "stream",
+    "title": "StreamIDeep",
+    "x": -496,
+    "y": 995
+  },
+  {
+    "id": 861,
+    "type": "stream",
+    "title": "StreamWaterfallD",
+    "x": -476,
+    "y": 1108
+  },
+  {
+    "id": 862,
+    "type": "stream",
+    "title": "StreamEPlay",
+    "x": -822,
+    "y": 290
+  },
+  {
+    "id": 863,
+    "type": "stream",
+    "title": "StreamRapidSBPlay",
+    "x": -1382,
+    "y": -38
+  },
+  {
+    "id": 864,
+    "type": "stream",
+    "title": "StreamFPlay",
+    "x": -1442,
+    "y": 344
+  },
+  {
+    "id": 865,
+    "type": "stream",
+    "title": "StreamUpperLakeCPlay",
+    "x": -1258,
+    "y": 282
+  },
+  {
+    "id": 866,
+    "type": "waterfall",
+    "title": "Waterfall",
+    "x": -984,
+    "y": -635
+  },
+  {
+    "id": 867,
+    "type": "waterfall",
+    "title": "WaterfallTest1",
+    "x": -1091,
+    "y": 795
+  },
+  {
+    "id": 868,
+    "type": "waterfall",
+    "title": "WaterfallTest2",
+    "x": -1033,
+    "y": -616
+  },
+  {
+    "id": 869,
+    "type": "waterfall",
+    "title": "WaterfallTest3",
+    "x": -1273,
+    "y": 7
+  },
+  {
+    "id": 870,
+    "type": "waterfall",
+    "title": "WaterfallSmall",
+    "x": -981,
+    "y": -115
+  },
+  {
+    "id": 871,
+    "type": "waterfall",
+    "title": "WaterfallTest",
+    "x": 1438,
+    "y": 217
   }
 ]
