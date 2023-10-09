@@ -82,7 +82,9 @@
     "x": 1153,
     "y": -607,
     "isUnderground": true,
-    "requirements": [17],
+    "requirements": [
+      17
+    ],
     "screenshot": "pistol_2.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Pistol"
   },
@@ -148,7 +150,10 @@
     "x": -429,
     "y": -103,
     "isUnderground": true,
-    "requirements": [13, 11],
+    "requirements": [
+      13,
+      11
+    ],
     "screenshot": "shovel.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Shovel"
   },
@@ -159,7 +164,9 @@
     "description": "Inside grave",
     "x": -1341,
     "y": 1410,
-    "requirements": [15],
+    "requirements": [
+      15
+    ],
     "screenshot": "shotgun.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Shotgun"
   },
@@ -193,7 +200,9 @@
     "x": -415.00,
     "y": 712.26,
     "isUnderground": true,
-    "requirements": [15],
+    "requirements": [
+      15
+    ],
     "screenshot": "firefighter_axe.webp",
     "tp": "gotocoords -416 76,1 711,8",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Firefighter_Axe"
@@ -206,7 +215,9 @@
     "x": -977,
     "y": 1039,
     "isUnderground": true,
-    "requirements": [17],
+    "requirements": [
+      17
+    ],
     "screenshot": "vip_card.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/VIP_Keycard"
   },
@@ -218,7 +229,9 @@
     "x": -1022,
     "y": 986,
     "isUnderground": true,
-    "requirements": [17],
+    "requirements": [
+      17
+    ],
     "screenshot": "crossbow.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Crossbow"
   },
@@ -229,7 +242,9 @@
     "x": -1184,
     "y": 41,
     "isUnderground": true,
-    "requirements": [17],
+    "requirements": [
+      17
+    ],
     "screenshot": "guest_keycard.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Guest_Keycard"
   },
@@ -241,7 +256,9 @@
     "x": -1158,
     "y": 17,
     "isUnderground": true,
-    "requirements": [17],
+    "requirements": [
+      17
+    ],
     "screenshot": "guitar.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Guitar"
   },
@@ -253,7 +270,9 @@
     "x": -1151,
     "y": 116,
     "isUnderground": true,
-    "requirements": [17],
+    "requirements": [
+      17
+    ],
     "screenshot": "chainsaw.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Chainsaw"
   },
@@ -265,7 +284,9 @@
     "x": -1120.68,
     "y": -1039.18,
     "isUnderground": true,
-    "requirements": [15],
+    "requirements": [
+      15
+    ],
     "screenshot": "compound_bow.webp",
     "tp": "gotocoords -1120,6 270 -1039,8",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Compound_Bow"
@@ -287,7 +308,9 @@
     "x": 1160,
     "y": -651,
     "isUnderground": true,
-    "requirements": [17],
+    "requirements": [
+      17
+    ],
     "screenshot": "katana.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Katana"
   },
@@ -298,7 +321,9 @@
     "x": 181,
     "y": -664,
     "isUnderground": true,
-    "requirements": [11],
+    "requirements": [
+      11
+    ],
     "screenshot": "golden_armor.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golden_Armor"
   },
@@ -320,7 +345,9 @@
     "x": 1414,
     "y": 735,
     "isUnderground": true,
-    "requirements": [11],
+    "requirements": [
+      11
+    ],
     "screenshot": "pickaxe.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Pickaxe"
   },
@@ -362,7 +389,9 @@
     "x": 1289,
     "y": 640,
     "isUnderground": true,
-    "requirements": [11],
+    "requirements": [
+      11
+    ],
     "screenshot": "artifact_b.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Artifact#Artifact_Piece_B"
   },
@@ -381,8 +410,21 @@
     "description": "Dig out the hatch",
     "x": -478,
     "y": 710,
-    "requirements": [15],
-    "items": [34, 592, 17, 18, 434, 306, 81, 89, 100, 93],
+    "requirements": [
+      15
+    ],
+    "items": [
+      34,
+      592,
+      17,
+      18,
+      434,
+      306,
+      81,
+      89,
+      100,
+      93
+    ],
     "screenshot": "maintenance_a.webp",
     "tp": "goto BunkerAHatch",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Bunkers#Maintenance_A_Check_on_map"
@@ -394,8 +436,16 @@
     "description": "Dig out the hatch",
     "x": -1133,
     "y": -1100,
-    "requirements": [15],
-    "items": [36, 24, 591, 567, 919],
+    "requirements": [
+      15
+    ],
+    "items": [
+      36,
+      24,
+      591,
+      567,
+      919
+    ],
     "screenshot": "maintenance_b.webp",
     "tp": "goto BunkerBHatch",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Bunkers#Maintenance_B"
@@ -407,8 +457,12 @@
     "description": "Dig out the hatch",
     "x": 1110,
     "y": 1007,
-    "requirements": [15],
-    "items": [25],
+    "requirements": [
+      15
+    ],
+    "items": [
+      25
+    ],
     "screenshot": "maintenance_c.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Bunkers#Maintenance_C_Check_on_map"
   },
@@ -419,8 +473,19 @@
     "x": -1027,
     "y": 1036,
     "isUnderground": true,
-    "requirements": [49],
-    "items": [19, 20, 311, 312, 315, 316, 314, 308],
+    "requirements": [
+      49
+    ],
+    "items": [
+      19,
+      20,
+      311,
+      312,
+      315,
+      316,
+      314,
+      308
+    ],
     "screenshot": "food_and_dining_bunker.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Bunkers#Food_and_Dining_Bunker_Check_on_map"
   },
@@ -431,7 +496,21 @@
     "x": 1214,
     "y": -638,
     "isUnderground": true,
-    "items": [37, 9, 26, 113, 432, 443, 82, 83, 90, 104, 102, 103, 105],
+    "items": [
+      37,
+      9,
+      26,
+      113,
+      432,
+      443,
+      82,
+      83,
+      90,
+      104,
+      102,
+      103,
+      105
+    ],
     "screenshot": "residential_bunker.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Bunkers#Residential_Bunker_Check_on_map"
   },
@@ -442,7 +521,9 @@
     "x": -418.46,
     "y": 700.50,
     "isUnderground": true,
-    "requirements": [15],
+    "requirements": [
+      15
+    ],
     "tp": "gotocoords -426,9 76,1 700,2",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/3D_Printer"
   },
@@ -462,7 +543,9 @@
     "x": -1125.49,
     "y": -1048.59,
     "isUnderground": true,
-    "requirements": [15],
+    "requirements": [
+      15
+    ],
     "tp": "gotocoords -1126,3 270 -1049,6",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/3D_Printer"
   },
@@ -493,7 +576,10 @@
     "x": -581,
     "y": -69,
     "isUnderground": true,
-    "requirements": [13, 11],
+    "requirements": [
+      13,
+      11
+    ],
     "screenshot": "laptop_shovel_cave.webp"
   },
   {
@@ -504,7 +590,9 @@
     "x": -424.42,
     "y": 703.43,
     "isUnderground": true,
-    "requirements": [15],
+    "requirements": [
+      15
+    ],
     "tp": "gotocoords -425,2 76,1 703,4",
     "screenshot": "laptop_bunker_b.webp"
   },
@@ -516,7 +604,9 @@
     "x": -971,
     "y": 1036,
     "isUnderground": true,
-    "requirements": [17],
+    "requirements": [
+      17
+    ],
     "screenshot": "laptop_food_and_dining_bunker.webp"
   },
   {
@@ -527,7 +617,9 @@
     "x": -1179,
     "y": 27,
     "isUnderground": true,
-    "requirements": [17],
+    "requirements": [
+      17
+    ],
     "screenshot": "laptop_entertainment_bunker.webp"
   },
   {
@@ -538,7 +630,9 @@
     "x": -1127.82,
     "y": -1047.01,
     "isUnderground": true,
-    "requirements": [15],
+    "requirements": [
+      15
+    ],
     "screenshot": "laptop_bunker_b.webp",
     "tp": "gotocoords -1127,8 270 -1047,8"
   },
@@ -550,7 +644,9 @@
     "x": 1176,
     "y": -645,
     "isUnderground": true,
-    "requirements": [21],
+    "requirements": [
+      21
+    ],
     "screenshot": "laptop_residential_bunker.webp"
   },
   {
@@ -560,7 +656,9 @@
     "x": 1137,
     "y": -621,
     "isUnderground": true,
-    "requirements": [21],
+    "requirements": [
+      21
+    ],
     "screenshot": "action_camera_1.webp"
   },
   {
@@ -623,7 +721,10 @@
     "title": "Golden Armor Cave",
     "x": -530,
     "y": -627,
-    "items": [429, 27],
+    "items": [
+      429,
+      27
+    ],
     "screenshot": "golden_armor_cave.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Caves#Lake/Golden_Armor_Cave_Check_on_map"
   },
@@ -633,7 +734,9 @@
     "title": "Pond Grotto",
     "x": -638,
     "y": -1046,
-    "items": [449],
+    "items": [
+      449
+    ],
     "screenshot": "pond_grotto.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Caves#Pond_Grotto_Check_on_map"
   },
@@ -653,7 +756,12 @@
     "title": "Rope Gun Cave Main Entrance",
     "x": -1104,
     "y": -179,
-    "items": [13, 12, 96, 98],
+    "items": [
+      13,
+      12,
+      96,
+      98
+    ],
     "screenshot": "rope_gun_cave_main_entrance.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Caves#Lakeside/Rope_Gun_Cave_Check_on_map"
   },
@@ -663,7 +771,9 @@
     "title": "Rope Gun Cave Second Entrance",
     "x": -1234,
     "y": -302,
-    "requirements": [13],
+    "requirements": [
+      13
+    ],
     "screenshot": "rope_gun_cave_second_entrance.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Caves#Lakeside/Rope_Gun_Cave_Check_on_map"
   },
@@ -681,7 +791,20 @@
     "title": "BunkerEntertainment",
     "x": -1190,
     "y": 126,
-    "items": [35, 21, 23, 22, 80, 79, 88, 335, 91, 333, 334, 94],
+    "items": [
+      35,
+      21,
+      23,
+      22,
+      80,
+      79,
+      88,
+      335,
+      91,
+      333,
+      334,
+      94
+    ],
     "screenshot": "cave_leading_to_entertainment_bunker.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Bunkers#Entertainment_Bunker_Check_on_map"
   },
@@ -691,7 +814,12 @@
     "title": "Shovel Cave",
     "x": -530,
     "y": 132,
-    "items": [14, 15, 327, 318],
+    "items": [
+      14,
+      15,
+      327,
+      318
+    ],
     "screenshot": "shovel_cave.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Caves#Flooded/Shovel_Cave_Check_on_map"
   },
@@ -710,7 +838,12 @@
     "title": "Rebreather Cave",
     "x": -423,
     "y": 1512,
-    "items": [11, 10, 71, 99],
+    "items": [
+      11,
+      10,
+      71,
+      99
+    ],
     "screenshot": "rebreather_cave.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Caves#Beach/Rebreather_Cave_Check_on_map"
   },
@@ -721,7 +854,9 @@
     "x": -547,
     "y": 144,
     "isUnderground": true,
-    "requirements": [13]
+    "requirements": [
+      13
+    ]
   },
   {
     "id": 66,
@@ -901,7 +1036,11 @@
     "description": "With save point",
     "x": -703,
     "y": 450,
-    "items": [4, 858, 863],
+    "items": [
+      4,
+      858,
+      863
+    ],
     "tp": "gotocoords -703 103 450",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
@@ -939,7 +1078,11 @@
     "description": "With save point",
     "x": -1028,
     "y": -623,
-    "items": [428, 77, 902],
+    "items": [
+      428,
+      77,
+      902
+    ],
     "tp": "gotocoords -1028 226 -623",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
@@ -1069,7 +1212,9 @@
     "x": -914,
     "y": 1010,
     "isUnderground": true,
-    "requirements": [19],
+    "requirements": [
+      19
+    ],
     "screenshot": "dress.webp"
   },
   {
@@ -1109,7 +1254,9 @@
     "x": -1141,
     "y": 6,
     "isUnderground": true,
-    "requirements": [17],
+    "requirements": [
+      17
+    ],
     "screenshot": "track_suit.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Track_Suit"
   },
@@ -1120,7 +1267,9 @@
     "x": -1116,
     "y": -18,
     "isUnderground": true,
-    "requirements": [17],
+    "requirements": [
+      17
+    ],
     "screenshot": "pajamas_1.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Pajamas"
   },
@@ -1132,7 +1281,9 @@
     "x": -416.78,
     "y": 696.21,
     "isUnderground": true,
-    "requirements": [15],
+    "requirements": [
+      15
+    ],
     "screenshot": "tuxedo.webp",
     "tp": "gotocoords -416,8 76,1 695,5",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Tuxedo"
@@ -1144,7 +1295,9 @@
     "x": 1166,
     "y": -647,
     "isUnderground": true,
-    "requirements": [17],
+    "requirements": [
+      17
+    ],
     "screenshot": "leather_suit_2.webp"
   },
   {
@@ -1154,7 +1307,9 @@
     "x": 1139,
     "y": -616,
     "isUnderground": true,
-    "requirements": [17],
+    "requirements": [
+      17
+    ],
     "screenshot": "golden_mask.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Gold_Mask"
   },
@@ -1173,7 +1328,9 @@
     "x": -509,
     "y": 128,
     "isUnderground": true,
-    "requirements": [11],
+    "requirements": [
+      11
+    ],
     "screenshot": "wetsuit.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Wetsuit"
   },
@@ -1194,7 +1351,9 @@
     "description": "Inside grave",
     "x": -1341,
     "y": 1411,
-    "requirements": [15],
+    "requirements": [
+      15
+    ],
     "screenshot": "gps_locator_3.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/GPS_Locator"
   },
@@ -1227,7 +1386,9 @@
     "x": -416.92,
     "y": 694.58,
     "isUnderground": true,
-    "requirements": [15],
+    "requirements": [
+      15
+    ],
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Books#Pennant_Line_Book"
   },
   {
@@ -1277,7 +1438,9 @@
     "x": -1125,
     "y": 110,
     "isUnderground": true,
-    "requirements": [17],
+    "requirements": [
+      17
+    ],
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Artifact_Emails"
   },
   {
@@ -1288,7 +1451,9 @@
     "x": -424.48,
     "y": 702.20,
     "isUnderground": true,
-    "requirements": [15],
+    "requirements": [
+      15
+    ],
     "tp": "-425,2 76,1 702,1",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Painting_Email"
   },
@@ -1300,7 +1465,9 @@
     "x": -1178,
     "y": 27,
     "isUnderground": true,
-    "requirements": [17]
+    "requirements": [
+      17
+    ]
   },
   {
     "id": 95,
@@ -1355,7 +1522,9 @@
     "x": -432.40,
     "y": 705.39,
     "isUnderground": true,
-    "requirements": [15],
+    "requirements": [
+      15
+    ],
     "tp": "gotocoords -431,6 76,1 705,4"
   },
   {
@@ -1366,7 +1535,9 @@
     "x": -1157,
     "y": 29,
     "isUnderground": true,
-    "requirements": [17]
+    "requirements": [
+      17
+    ]
   },
   {
     "id": 101,
@@ -1429,7 +1600,9 @@
     "x": -975,
     "y": 1036,
     "isUnderground": true,
-    "requirements": [17],
+    "requirements": [
+      17
+    ],
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Artifact_Emails"
   },
   {
@@ -1440,7 +1613,9 @@
     "x": -913,
     "y": 1036,
     "isUnderground": true,
-    "requirements": [19],
+    "requirements": [
+      19
+    ],
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Balls_Emails"
   },
   {
@@ -1451,7 +1626,9 @@
     "x": -915,
     "y": 1037,
     "isUnderground": true,
-    "requirements": [19]
+    "requirements": [
+      19
+    ]
   },
   {
     "id": 316,
@@ -1461,7 +1638,9 @@
     "x": -914,
     "y": 1038,
     "isUnderground": true,
-    "requirements": [19]
+    "requirements": [
+      19
+    ]
   },
   {
     "id": 333,
@@ -1471,7 +1650,9 @@
     "x": -1120,
     "y": 18,
     "isUnderground": true,
-    "requirements": [17],
+    "requirements": [
+      17
+    ],
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Barbara_Email"
   },
   {
@@ -1482,7 +1663,9 @@
     "x": -1191,
     "y": 35,
     "isUnderground": true,
-    "requirements": [17],
+    "requirements": [
+      17
+    ],
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Balls_Emails"
   },
   {
@@ -1527,7 +1710,9 @@
     "x": 1156,
     "y": -654,
     "isUnderground": true,
-    "requirements": [17]
+    "requirements": [
+      17
+    ]
   },
   {
     "id": 829,
@@ -1563,7 +1748,9 @@
     "x": 1333,
     "y": 700,
     "isUnderground": true,
-    "requirements": [11],
+    "requirements": [
+      11
+    ],
     "screenshot": "item_plating_machine.webp",
     "tp": "gotocoords -417,5 76,1 694,5"
   },
@@ -1788,7 +1975,9 @@
     "x": 1124,
     "y": -605,
     "isUnderground": true,
-    "requirements": [17],
+    "requirements": [
+      17
+    ],
     "screenshot": "putter_2.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Putter"
   },
@@ -2162,7 +2351,9 @@
     "x": -1009,
     "y": 954,
     "isUnderground": true,
-    "requirements": [17]
+    "requirements": [
+      17
+    ]
   },
   {
     "id": 319,
@@ -2171,7 +2362,9 @@
     "x": -488,
     "y": 8,
     "isUnderground": true,
-    "requirements": [11]
+    "requirements": [
+      11
+    ]
   },
   {
     "id": 326,
@@ -2180,7 +2373,9 @@
     "x": -524,
     "y": -17,
     "isUnderground": true,
-    "requirements": [11]
+    "requirements": [
+      11
+    ]
   },
   {
     "id": 328,
@@ -2189,7 +2384,9 @@
     "x": -580,
     "y": -95,
     "isUnderground": true,
-    "requirements": [11]
+    "requirements": [
+      11
+    ]
   },
   {
     "id": 329,
@@ -2213,7 +2410,9 @@
     "x": -1183,
     "y": 28,
     "isUnderground": true,
-    "requirements": [17]
+    "requirements": [
+      17
+    ]
   },
   {
     "id": 141,
@@ -2515,7 +2714,9 @@
     "x": -486,
     "y": 9,
     "isUnderground": true,
-    "requirements": [11]
+    "requirements": [
+      11
+    ]
   },
   {
     "id": 322,
@@ -2524,7 +2725,9 @@
     "x": -518,
     "y": 11,
     "isUnderground": true,
-    "requirements": [11]
+    "requirements": [
+      11
+    ]
   },
   {
     "id": 323,
@@ -2533,7 +2736,9 @@
     "x": -563,
     "y": -65,
     "isUnderground": true,
-    "requirements": [11]
+    "requirements": [
+      11
+    ]
   },
   {
     "id": 324,
@@ -2542,7 +2747,9 @@
     "x": -564,
     "y": -98,
     "isUnderground": true,
-    "requirements": [11]
+    "requirements": [
+      11
+    ]
   },
   {
     "id": 337,
@@ -2551,7 +2758,9 @@
     "x": -1182,
     "y": 25,
     "isUnderground": true,
-    "requirements": [17]
+    "requirements": [
+      17
+    ]
   },
   {
     "id": 455,
@@ -2703,7 +2912,9 @@
     "x": -490,
     "y": 6,
     "isUnderground": true,
-    "requirements": [11]
+    "requirements": [
+      11
+    ]
   },
   {
     "id": 325,
@@ -2712,7 +2923,9 @@
     "x": -566,
     "y": -98,
     "isUnderground": true,
-    "requirements": [11]
+    "requirements": [
+      11
+    ]
   },
   {
     "id": 331,
@@ -3259,7 +3472,10 @@
     "title": "Plane Crash Site",
     "x": -970.64,
     "y": -1061.47,
-    "items": [76, 908],
+    "items": [
+      76,
+      908
+    ],
     "screenshot": "plane_crash_site.webp",
     "tp": "goto PlaneWreck (2)",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Plane_Runway"
@@ -4380,7 +4596,7 @@
     "description": "Medium Village",
     "x": -1777,
     "y": -1601,
-    "tp": "goto Village34", 
+    "tp": "goto Village34",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
   },
   {
@@ -4480,7 +4696,7 @@
     "description": "Medium Village",
     "x": 1747,
     "y": 807,
-    "tp": "goto Village44", 
+    "tp": "goto Village44",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
   },
   {
@@ -4561,7 +4777,7 @@
     "title": "Abandoned Cannibal Village",
     "x": 1386,
     "y": -689,
-    "tp": "goto AbandonedVillage-5", 
+    "tp": "goto AbandonedVillage-5",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
   },
   {
@@ -4580,7 +4796,9 @@
     "x": -424.63,
     "y": 702.06,
     "isUnderground": true,
-    "requirements": [15],
+    "requirements": [
+      15
+    ],
     "screenshot": "laser_sight.webp",
     "tp": "gotocoords -425,2 76,1 702,1",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Laser_Sight"
@@ -4593,7 +4811,9 @@
     "x": -1175,
     "y": 26,
     "isUnderground": true,
-    "requirements": [17],
+    "requirements": [
+      17
+    ],
     "screenshot": "shotgun_rail_2.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Shotgun_Rail"
   },
@@ -4613,7 +4833,9 @@
     "x": 1143,
     "y": -639,
     "isUnderground": true,
-    "requirements": [17],
+    "requirements": [
+      17
+    ],
     "screenshot": "shotgun_rail_3.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Shotgun_Rail"
   },
@@ -4662,7 +4884,9 @@
     "x": 1154,
     "y": -606,
     "isUnderground": true,
-    "requirements": [17],
+    "requirements": [
+      17
+    ],
     "screenshot": "pistol_rail_3.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Pistol_Rail"
   },
@@ -4674,7 +4898,9 @@
     "x": -580,
     "y": -69,
     "isUnderground": true,
-    "requirements": [11],
+    "requirements": [
+      11
+    ],
     "screenshot": "flashlight_attachment_1.webp"
   },
   {
@@ -4684,7 +4910,9 @@
     "x": 1154,
     "y": -604,
     "isUnderground": true,
-    "requirements": [17],
+    "requirements": [
+      17
+    ],
     "screenshot": "flashlight_attachment_2.webp"
   },
   {
@@ -4704,7 +4932,9 @@
     "x": -1126,
     "y": -1050,
     "isUnderground": true,
-    "requirements": [15],
+    "requirements": [
+      15
+    ],
     "screenshot": "pistol_suppressor_2.webp",
     "tp": "gotocoords -1126.3 270 -1050,2",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Silencer"
@@ -4717,7 +4947,9 @@
     "x": -1018,
     "y": 1030,
     "isUnderground": true,
-    "requirements": [17]
+    "requirements": [
+      17
+    ]
   },
   {
     "id": 313,
@@ -4727,7 +4959,9 @@
     "x": -930,
     "y": 1024,
     "isUnderground": true,
-    "requirements": [19]
+    "requirements": [
+      19
+    ]
   },
   {
     "id": 332,
@@ -4737,7 +4971,9 @@
     "x": -1149,
     "y": 51,
     "isUnderground": true,
-    "requirements": [17]
+    "requirements": [
+      17
+    ]
   },
   {
     "id": 338,
@@ -4747,7 +4983,9 @@
     "x": -1170,
     "y": 26,
     "isUnderground": true,
-    "requirements": [17]
+    "requirements": [
+      17
+    ]
   },
   {
     "id": 339,
@@ -4757,7 +4995,9 @@
     "x": -1139,
     "y": 26,
     "isUnderground": true,
-    "requirements": [17]
+    "requirements": [
+      17
+    ]
   },
   {
     "id": 433,
@@ -4766,7 +5006,9 @@
     "x": 1142,
     "y": -608,
     "isUnderground": true,
-    "requirements": [21]
+    "requirements": [
+      21
+    ]
   },
   {
     "id": 428,
@@ -4859,7 +5101,9 @@
     "x": -150,
     "y": -420,
     "isUnderground": true,
-    "requirements": [11],
+    "requirements": [
+      11
+    ],
     "screenshot": "night_vision_1.webp"
   },
   {
@@ -4942,7 +5186,7 @@
   },
   {
     "id": 888,
-    "type": "large-battery", 
+    "type": "large-battery",
     "title": "Golf Cart Battery",
     "x": 1905,
     "y": 466,
@@ -5003,7 +5247,7 @@
     "x": -893.24,
     "y": -945.45,
     "screenshot": "large_battery_9.webp",
-    "tp":"goto GolfCartBatteryPickup (15) / (16)",
+    "tp": "goto GolfCartBatteryPickup (15) / (16)",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
   {
@@ -5014,7 +5258,9 @@
     "x": -1140.77,
     "y": -1038.60,
     "isUnderground": true,
-    "requirements": [15],
+    "requirements": [
+      15
+    ],
     "screenshot": "large_battery_10.webp",
     "tp": "gotocoords -1140,7 270 -1039,5",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
@@ -5027,7 +5273,9 @@
     "x": -419.08,
     "y": 716.35,
     "isUnderground": true,
-    "requirements": [15],
+    "requirements": [
+      15
+    ],
     "screenshot": "large_battery_11.webp",
     "tp": "gotocoords -419 76,1 715,4",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
