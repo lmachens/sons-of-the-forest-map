@@ -181,9 +181,9 @@ export function getTypes(): NodeType[] {
     },
     {
       value: "camp",
-      title: t("Point of Interest"),
+      title: t("Abandoned"),
       icon: icons.camp,
-      filter: "poi",
+      filter: "abandoned-camp",
     },
     {
       value: "village",
@@ -271,7 +271,7 @@ export function getTypes(): NodeType[] {
     },
     {
       value: "can",
-      title: t("Cannibal Camp"),
+      title: t("Enemies"),
       icon: icons.can,
       filter: "village",
     },
@@ -339,37 +339,73 @@ export function getTypes(): NodeType[] {
       value: "laptop",
       title: t("Upload location to GPS Tracker"),
       icon: icons.laptop,
-      filter: "laptop"
+      filter: "laptop",
     },
     {
       value: "go-pro",
       title: t("Watch pre-made videos"),
-      icon: icons["go-pro"] ,
-      filter: "tools"
+      icon: icons["go-pro"],
+      filter: "tools",
     },
     {
       value: "golf-cart",
       title: t("Drive around the map"),
       icon: icons.uni,
-      filter: "vehicle"
+      filter: "vehicle",
     },
     {
       value: "rifle",
       title: t("Ranged type of weapon"),
       icon: icons["sawed-off-shotgun"],
-      filter: "weapons"
+      filter: "weapons",
     },
     {
       value: "stream",
       title: t("River"),
       icon: icons.info,
-      filter: "lake"
+      filter: "water",
     },
     {
       value: "waterfall",
       title: t("Waterfall"),
       icon: icons.info,
-      filter: "lake"
+      filter: "lake",
+    },
+    {
+      value: "cooking-pot",
+      title: t("Food"),
+      icon: icons.info,
+      filter: "tools",
+    },
+    {
+      value: "large-battery",
+      title: t("Electricity"),
+      icon: icons.info,
+      filter: "tools",
+    },
+    {
+      value: "pickaxe",
+      title: t("Tool"),
+      icon: icons.info,
+      filter: "tools",
+    },
+    {
+      value: "artifact",
+      title: t("Artifact"),
+      icon: icons.info,
+      filter: "tools",
+    },
+    {
+      value: "pond",
+      title: t("Water Body"),
+      icon: icons.info,
+      filter: "pond",
+    },
+    {
+      value: "radio",
+      title: t("Tool"),
+      icon: icons.info,
+      filter: "tools",
     },
   ];
 }
@@ -474,8 +510,18 @@ export function getFilters(): Filter[] {
       color: "rgb(255 0 0)",
     },
     {
+      value: "abandoned-camp",
+      title: t("Abandoned Camps"),
+      color: "rgb(152 251 152)",
+    },
+    {
       value: "lake",
       title: t("Lakes"),
+      color: "rgb(29 222 255)",
+    },
+    {
+      value: "pond",
+      title: t("Ponds"),
       color: "rgb(29 222 255)",
     },
   ];

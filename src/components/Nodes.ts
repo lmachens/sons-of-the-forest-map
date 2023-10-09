@@ -211,7 +211,6 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       innerHTML: `
       <p class="bold">${mapLocation.title ?? ""}</p>
       <p class="italic">${isCustom ? t("Custom Node") : type.title}</p>
-      <p>${mapLocation.description || ""}</p>
       ${
         mapLocation.isUnderground
           ? `<p class="info italic">${t("Underground")}</p>`
@@ -220,17 +219,12 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       `,
     });
 
-    if (mapLocation.wiki) {
+    if (mapLocation.description) {
       tooltipContent.append(
-        createElement("a", {
-          href: mapLocation.wiki,
-          className: "external-link",
-          innerText: t("Wiki"),
-          target: "_blank",
-        })
+        createElement("p", { className: "bold", innerText: t("Description:") }),
+        createElement("p", { innerText: mapLocation.description })
       );
     }
-
     if (requirements) {
       tooltipContent.append(
         createElement("p", { className: "bold", innerText: t("Requirements") }),
@@ -241,6 +235,45 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       tooltipContent.append(
         createElement("p", { className: "bold", innerText: t("Items") }),
         ...items
+      );
+    }
+    if (mapLocation.tp) {
+      let copyTimeout: NodeJS.Timeout | undefined = undefined;
+      const copyStatus = createElement("button", {
+        className: "copy-button",
+        innerText: t("📋 Copy"),
+        onclick: () => {
+          clearTimeout(copyTimeout);
+          navigator.clipboard.writeText(mapLocation.tp!);
+          copyStatus.innerText = t("✔ Copied!");
+          copyTimeout = setTimeout(() => {
+            copyStatus.innerText = t("📋 Copy");
+          }, 3000);
+        },
+      });
+      const tpTitle = createElement(
+        "p",
+        {
+          className: "bold tp-title",
+          innerText: t("Teleport here:"),
+        },
+        [copyStatus]
+      );
+
+      const coordsContent = createElement("code", {
+        innerText: mapLocation.tp,
+      });
+      tooltipContent.append(tpTitle, coordsContent);
+    }
+    if (mapLocation.wiki) {
+      tooltipContent.append(
+        createElement("p", { className: "bold", innerText: t("More info:") }),
+        createElement("a", {
+          href: mapLocation.wiki,
+          className: "external-link",
+          innerText: t("Wiki"),
+          target: "_blank",
+        })
       );
     }
 

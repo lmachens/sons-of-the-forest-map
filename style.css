@@ -35,6 +35,10 @@ code {
   color: rgb(112, 180, 202);
 }
 
+.tooltip-content code {
+  color: rgb(72, 126, 145);
+}
+
 button,
 input[type="submit"],
 .button {
@@ -958,4 +962,21 @@ a.external-link:after {
   width: 1px;
   background-color: orangered;
   height: 100%;
+}
+
+.layout .copy-button {
+  color: #18181b;
+  background: none;
+  padding: 0;
+  border: none;
+  text-align: left;
+  font-weight: 400;
+  font-size: 11px;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.tp-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
