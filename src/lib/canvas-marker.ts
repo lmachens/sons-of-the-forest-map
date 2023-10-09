@@ -1,4 +1,5 @@
 import leaflet from "leaflet";
+import { PIN_PATH } from "./icons";
 
 const cachedImages: Record<string, HTMLImageElement> = {};
 leaflet.Canvas.include({
@@ -11,13 +12,14 @@ leaflet.Canvas.include({
       isDiscovered,
       isUnderground,
       isHighlighted,
+      showIconBackground,
     } = layer.options;
     const imageSize = radius * 2;
     const p = layer._point.round();
     const dx = p.x - radius;
     const dy = p.y - radius;
 
-    const key = `${type}-${isDiscovered}-${isHighlighted}-${isUnderground}`;
+    const key = `${type}-${isDiscovered}-${isHighlighted}-${isUnderground}-${showIconBackground}`;
     if (cachedImages[key]) {
       if (cachedImages[key].complete) {
         this._ctx.drawImage(cachedImages[key], dx, dy);
@@ -48,28 +50,46 @@ leaflet.Canvas.include({
 
     ctx.scale(scale, scale);
     const path2D = new Path2D(path);
-
     const globalAlpha = isDiscovered ? 0.1 : 1;
     ctx.globalAlpha = globalAlpha;
-
     ctx.strokeStyle = "#000";
     ctx.shadowColor = "rgba(0, 0, 0, 0.75)";
     ctx.shadowBlur = 3;
-
     ctx.lineWidth = 15;
-    ctx.stroke(path2D);
-    ctx.fillStyle = "#ffffff";
-    ctx.fill(path2D);
+    if (showIconBackground) {
+      const pinPath2D = new Path2D(PIN_PATH);
 
-    ctx.fillStyle = color;
-    ctx.globalAlpha = 0.15;
-    ctx.shadowColor = color;
-    ctx.shadowOffsetX = 0;
-    ctx.shadowOffsetY = 0;
-    ctx.shadowBlur = 3;
-    ctx.stroke(path2D);
-    ctx.stroke(path2D);
-    ctx.fill(path2D);
+      ctx.fillStyle = color;
+      ctx.stroke(pinPath2D);
+      ctx.fill(pinPath2D);
+
+      // ctx.stroke(path2D);
+      // ctx.globalAlpha = 0.15;
+      ctx.shadowColor = color;
+      ctx.shadowOffsetX = 0;
+      ctx.shadowOffsetY = 0;
+      ctx.shadowBlur = 3;
+      ctx.scale(0.6, 0.6);
+      ctx.translate(170, 78);
+
+      ctx.fillStyle = "#ffffff";
+
+      ctx.stroke(path2D);
+      ctx.fill(path2D);
+    } else {
+      ctx.fillStyle = "#ffffff";
+      ctx.fill(path2D);
+
+      ctx.fillStyle = color;
+      ctx.globalAlpha = 0.15;
+      ctx.shadowColor = color;
+      ctx.shadowOffsetX = 0;
+      ctx.shadowOffsetY = 0;
+      ctx.shadowBlur = 3;
+      ctx.stroke(path2D);
+      ctx.stroke(path2D);
+      ctx.fill(path2D);
+    }
     ctx.globalAlpha = globalAlpha;
 
     if (isUnderground) {
@@ -106,6 +126,7 @@ export type CanvasMarkerOptions = {
   isDiscovered?: boolean;
   isHighlighted?: boolean;
   tooltipContent: string | HTMLElement;
+  showIconBackground?: boolean;
 };
 
 class CanvasMarker extends leaflet.CircleMarker {

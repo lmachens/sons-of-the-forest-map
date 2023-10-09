@@ -20,9 +20,23 @@ import {
 } from "../lib/nodes";
 import { getMapLocationId, setMapLocationId } from "../lib/router";
 
-const ICON_RADIUS = 16;
+const ICON_RADIUS = 18;
 const HIGHLIGHTED_ICON_RADIUS = ICON_RADIUS * 1.5;
 export default function Nodes({ map }: { map: leaflet.Map }) {
+  const showIconBackground = document.querySelector<HTMLInputElement>(
+    "#show_icon_background"
+  )!;
+  showIconBackground.checked =
+    localStorage.getItem("show_icon_background") === "true";
+
+  showIconBackground.onchange = () => {
+    refresh();
+    localStorage.setItem(
+      "show_icon_background",
+      showIconBackground.checked ? "true" : "false"
+    );
+  };
+
   const types = getTypes();
   const filters = getFilters();
   const group = new leaflet.LayerGroup();
@@ -359,6 +373,7 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       pmIgnore: true,
       isHighlighted,
       tooltipContent: tooltipContainer,
+      showIconBackground: showIconBackground.checked,
     });
 
     marker.bindTooltip(tooltipContainer, {
