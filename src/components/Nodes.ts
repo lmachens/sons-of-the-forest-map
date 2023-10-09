@@ -1,4 +1,4 @@
-import leaflet, { tooltip } from "leaflet";
+import leaflet from "leaflet";
 import CanvasMarker from "../lib/canvas-marker";
 import { createElement } from "../lib/elements";
 import { t } from "../lib/i18n";
@@ -238,26 +238,36 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       );
     }
     if (mapLocation.tp) {
-      let originalTp = mapLocation.tp;
-      const coordsSpan = createElement("span", { innerText: mapLocation.tp, contentEditable: "true" });
-      coordsSpan.addEventListener("click", () => {
-        const range = document.createRange();
-        range.selectNode(coordsSpan);
-        window.getSelection()?.removeAllRanges();
-        window.getSelection()?.addRange(range);
-        document.execCommand("copy");
+      let copyTimeout: NodeJS.Timeout | undefined = undefined;
+      const copyStatus = createElement("button", {
+        className: "copy-button",
+        innerText: t("📋 Copy"),
+        onclick: () => {
+          clearTimeout(copyTimeout);
+          navigator.clipboard.writeText(mapLocation.tp!);
+          copyStatus.innerText = t("✔ Copied!");
+          copyTimeout = setTimeout(() => {
+            copyStatus.innerText = t("📋 Copy");
+          }, 3000);
+        },
       });
-      coordsSpan.addEventListener("input", () => {
-        coordsSpan.innerText = originalTp;
-      });
-      tooltipContent.append(
-        createElement("p", { className: "bold", innerText: t("Teleport here:") }),
-        coordsSpan
+      const tpTitle = createElement(
+        "p",
+        {
+          className: "bold tp-title",
+          innerText: t("Teleport here:"),
+        },
+        [copyStatus]
       );
+
+      const coordsContent = createElement("code", {
+        innerText: mapLocation.tp,
+      });
+      tooltipContent.append(tpTitle, coordsContent);
     }
     if (mapLocation.wiki) {
       tooltipContent.append(
-        createElement("p", {className: "bold", innerText: t("More info:") }),
+        createElement("p", { className: "bold", innerText: t("More info:") }),
         createElement("a", {
           href: mapLocation.wiki,
           className: "external-link",
