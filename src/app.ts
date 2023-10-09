@@ -26,172 +26,170 @@ import {
   setFeatures,
 } from "./lib/games";
 import { loadDictionary, translateHTML } from "./lib/i18n";
-import { waitForOverwolf } from "./lib/overwolf";
+import { initPlausible } from "./lib/plausible";
 import { initWakelock } from "./lib/wakelock";
 import { closeWindow, getCurrentWindow } from "./lib/windows";
 
-waitForOverwolf().then(async () => {
-  console.log("Init main");
+console.log("Init main");
 
-  await loadDictionary();
-  translateHTML();
-  LocaleSelector();
+await loadDictionary();
+translateHTML();
+LocaleSelector();
 
-  const mapElement = document.querySelector<HTMLDivElement>(".map")!;
-  const map = Map(mapElement);
-  TileLayer({ map });
-  initAppHeader({ map });
-  initResizeBorders();
+const mapElement = document.querySelector<HTMLDivElement>(".map")!;
+const map = Map(mapElement);
+TileLayer({ map });
+initAppHeader({ map });
+initResizeBorders();
 
-  let lastLocation = { x: 0, y: 0, z: 0 };
-  let lastRotation = 0;
+let lastLocation = { x: 0, y: 0, z: 0 };
+let lastRotation = 0;
 
-  function getLastPosition() {
-    return { location: lastLocation, rotation: lastRotation };
-  }
+function getLastPosition() {
+  return { location: lastLocation, rotation: lastRotation };
+}
 
-  const { setLocation } = Status();
-  const { updatePosition: updateMultiplayerPosition } = Multiplayer({
-    map,
-    getLastPosition,
-  });
-  const { panTo, updatePosition: updatePlayerPosition } = Player({ map });
-  const { updatePosition: updateKelvinPosition } = Kelvin({ map });
-  const showOnMap = document.querySelector<HTMLButtonElement>(".show-on-map")!;
-  showOnMap.onclick = () => {
-    panTo();
-  };
-  const { isFollowing } = FollowLocation();
-
-  const { updatePosition: updateDirectionLinePosition } = DirectionLine({
-    map,
-  });
-  const {
-    updatePosition: updateTraceLinePosition,
-    showSession,
-    hideSession,
-  } = TraceLine({
-    map,
-  });
-  const { updateRotation } = Compass();
-
-  function updatePlayer(location: { x: number; y: number; z: number }) {
-    lastRotation =
-      (Math.atan2(
-        location.y - (lastLocation.y || location.y),
-        location.x - (lastLocation.x || location.x)
-      ) *
-        180) /
-      Math.PI;
-
-    lastLocation = location;
-
-    setLocation(lastLocation);
-    const lastPosition = getLastPosition();
-    updatePlayerPosition(lastPosition);
-    if (isFollowing()) {
-      panTo();
-    }
-    updateDirectionLinePosition(lastPosition);
-    updateTraceLinePosition(lastPosition);
-    updateMultiplayerPosition(lastPosition);
-    updateRotation(lastRotation);
-  }
-
-  const ads = document.querySelector<HTMLDivElement>(".ads")!;
-  OverwolfAds(ads);
-
-  function onError(info: overwolf.games.events.ErrorEvent) {
-    console.error(info);
-  }
-  function onInfoUpdates2(
-    info: overwolf.games.events.InfoUpdates2Event<
-      string,
-      overwolf.games.events.InfoUpdate2
-    >
-  ) {
-    // https://overwolf.github.io/api/games/events/sons-of-the-forest#location
-    if (info.feature === "location") {
-      const payload = info.info as unknown as {
-        match_info: { location?: string; npc_location?: string };
-      };
-      try {
-        if (payload.match_info.location) {
-          const { loc_x, loc_y, loc_z } = JSON.parse(
-            payload.match_info.location
-          ) as {
-            loc_x: number;
-            loc_y: number;
-            loc_z: number;
-          };
-          updatePlayer({ x: loc_x, y: loc_y, z: loc_z });
-        }
-        if (payload.match_info.npc_location) {
-          const { loc_x, loc_y } = JSON.parse(
-            payload.match_info.npc_location
-          ) as {
-            loc_x: number;
-            loc_y: number;
-            loc_z: number;
-          };
-          updateKelvinPosition(loc_x, loc_y);
-        }
-      } catch (error) {
-        //
-      }
-    }
-  }
-  function onNewEvents(info: overwolf.games.events.NewGameEvents) {
-    // https://overwolf.github.io/api/games/events/sons-of-the-forest#match_info
-    if (info.events.some((event) => event.name === "match_start")) {
-    }
-    if (info.events.some((event) => event.name === "match_end")) {
-    }
-    if (info.events.some((event) => event.name === "death")) {
-    }
-  }
-
-  function registerEvents() {
-    overwolf.games.events.onError.addListener(onError);
-    overwolf.games.events.onInfoUpdates2.addListener(onInfoUpdates2);
-    overwolf.games.events.onNewEvents.addListener(onNewEvents);
-  }
-
-  function unregisterEvents() {
-    overwolf.games.events.onError.removeListener(onError);
-    overwolf.games.events.onInfoUpdates2.removeListener(onInfoUpdates2);
-    overwolf.games.events.onNewEvents.removeListener(onNewEvents);
-  }
-
-  listenToGameLaunched(() => {
-    unregisterEvents();
-    registerEvents();
-    setTimeout(setFeatures, 1000);
-  });
-
-  listenToOverlayEnablement((enabled) => {
-    const gameOverlayWarning = document.querySelector(".game-overlay")!;
-    if (enabled) {
-      gameOverlayWarning.classList.add("hidden");
-    } else {
-      gameOverlayWarning.classList.remove("hidden");
-    }
-  });
-
-  const { refresh, panToMarker } = Nodes({ map });
-  CustomNode({
-    element: document.querySelector<HTMLButtonElement>("#add_custom_node")!,
-    map,
-    getLastPosition,
-    onAdd: refresh,
-  });
-  ContextMenu({ map, onAdd: refresh });
-  Filters({ onChange: refresh });
-  JoinCommunity();
-  GameSessions({ showSession, hideSession });
-  Zones({ map });
-  Search({ panToMarker });
+const { setLocation } = Status();
+const { updatePosition: updateMultiplayerPosition } = Multiplayer({
+  map,
+  getLastPosition,
 });
+const { panTo, updatePosition: updatePlayerPosition } = Player({ map });
+const { updatePosition: updateKelvinPosition } = Kelvin({ map });
+const showOnMap = document.querySelector<HTMLButtonElement>(".show-on-map")!;
+showOnMap.onclick = () => {
+  panTo();
+};
+const { isFollowing } = FollowLocation();
+
+const { updatePosition: updateDirectionLinePosition } = DirectionLine({
+  map,
+});
+const {
+  updatePosition: updateTraceLinePosition,
+  showSession,
+  hideSession,
+} = TraceLine({
+  map,
+});
+const { updateRotation } = Compass();
+
+function updatePlayer(location: { x: number; y: number; z: number }) {
+  lastRotation =
+    (Math.atan2(
+      location.y - (lastLocation.y || location.y),
+      location.x - (lastLocation.x || location.x)
+    ) *
+      180) /
+    Math.PI;
+
+  lastLocation = location;
+
+  setLocation(lastLocation);
+  const lastPosition = getLastPosition();
+  updatePlayerPosition(lastPosition);
+  if (isFollowing()) {
+    panTo();
+  }
+  updateDirectionLinePosition(lastPosition);
+  updateTraceLinePosition(lastPosition);
+  updateMultiplayerPosition(lastPosition);
+  updateRotation(lastRotation);
+}
+
+const ads = document.querySelector<HTMLDivElement>(".ads")!;
+OverwolfAds(ads);
+
+function onError(info: overwolf.games.events.ErrorEvent) {
+  console.error(info);
+}
+function onInfoUpdates2(
+  info: overwolf.games.events.InfoUpdates2Event<
+    string,
+    overwolf.games.events.InfoUpdate2
+  >
+) {
+  // https://overwolf.github.io/api/games/events/sons-of-the-forest#location
+  if (info.feature === "location") {
+    const payload = info.info as unknown as {
+      match_info: { location?: string; npc_location?: string };
+    };
+    try {
+      if (payload.match_info.location) {
+        const { loc_x, loc_y, loc_z } = JSON.parse(
+          payload.match_info.location
+        ) as {
+          loc_x: number;
+          loc_y: number;
+          loc_z: number;
+        };
+        updatePlayer({ x: loc_x, y: loc_y, z: loc_z });
+      }
+      if (payload.match_info.npc_location) {
+        const { loc_x, loc_y } = JSON.parse(
+          payload.match_info.npc_location
+        ) as {
+          loc_x: number;
+          loc_y: number;
+          loc_z: number;
+        };
+        updateKelvinPosition(loc_x, loc_y);
+      }
+    } catch (error) {
+      //
+    }
+  }
+}
+function onNewEvents(info: overwolf.games.events.NewGameEvents) {
+  // https://overwolf.github.io/api/games/events/sons-of-the-forest#match_info
+  if (info.events.some((event) => event.name === "match_start")) {
+  }
+  if (info.events.some((event) => event.name === "match_end")) {
+  }
+  if (info.events.some((event) => event.name === "death")) {
+  }
+}
+
+function registerEvents() {
+  overwolf.games.events.onError.addListener(onError);
+  overwolf.games.events.onInfoUpdates2.addListener(onInfoUpdates2);
+  overwolf.games.events.onNewEvents.addListener(onNewEvents);
+}
+
+function unregisterEvents() {
+  overwolf.games.events.onError.removeListener(onError);
+  overwolf.games.events.onInfoUpdates2.removeListener(onInfoUpdates2);
+  overwolf.games.events.onNewEvents.removeListener(onNewEvents);
+}
+
+listenToGameLaunched(() => {
+  unregisterEvents();
+  registerEvents();
+  setTimeout(setFeatures, 1000);
+});
+
+listenToOverlayEnablement((enabled) => {
+  const gameOverlayWarning = document.querySelector(".game-overlay")!;
+  if (enabled) {
+    gameOverlayWarning.classList.add("hidden");
+  } else {
+    gameOverlayWarning.classList.remove("hidden");
+  }
+});
+
+const { refresh, panToMarker } = Nodes({ map });
+CustomNode({
+  element: document.querySelector<HTMLButtonElement>("#add_custom_node")!,
+  map,
+  getLastPosition,
+  onAdd: refresh,
+});
+ContextMenu({ map, onAdd: refresh });
+Filters({ onChange: refresh });
+JoinCommunity();
+GameSessions({ showSession, hideSession });
+Zones({ map });
+Search({ panToMarker });
 
 async function initAppHeader({ map }: { map: leaflet.Map }) {
   const currentWindow = await getCurrentWindow();
@@ -313,3 +311,8 @@ async function initResizeBorders() {
 
   initWakelock();
 }
+
+initPlausible(
+  import.meta.env.VITE_PLAUSIBLE_OVERWOLF_DOMAIN,
+  import.meta.env.VITE_PLAUSIBLE_API_HOST
+);

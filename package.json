@@ -29,6 +29,7 @@
     "@geoman-io/leaflet-geoman-free": "2.14.2",
     "leaflet": "1.9.3",
     "peerjs": "1.4.7",
+    "plausible-tracker": "0.3.8",
     "qrcode": "1.5.3",
     "throttle-debounce": "5.0.0"
   }

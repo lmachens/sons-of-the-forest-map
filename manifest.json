@@ -25,7 +25,8 @@
       "controller": {
         "file": "controller.html",
         "debug_url": "http://localhost:3033/controller.html",
-        "is_background_page": true
+        "is_background_page": true,
+        "block_top_window_navigation": false
       },
       "desktop": {
         "file": "app.html",
@@ -45,7 +46,8 @@
         },
         "allow_local_file_access": true,
         "popup_blocker": true,
-        "mute": true
+        "mute": true,
+        "block_top_window_navigation": false
       },
       "overlay": {
         "file": "app.html",
@@ -66,19 +68,26 @@
         },
         "allow_local_file_access": true,
         "popup_blocker": true,
-        "mute": true
+        "mute": true,
+        "block_top_window_navigation": false
       }
     },
     "game_targeting": {
       "type": "dedicated",
-      "game_ids": [22638]
+      "game_ids": [
+        22638
+      ]
     },
-    "game_events": [22638],
+    "game_events": [
+      22638
+    ],
     "launch_events": [
       {
         "event": "GameLaunch",
         "event_data": {
-          "game_ids": [22638]
+          "game_ids": [
+            22638
+          ]
         },
         "start_minimized": false
       }

@@ -1,7 +1,6 @@
 import { GAME_CLASS_ID, WINDOWS } from "./lib/config";
 import { startNewGameSession } from "./lib/game-sessions";
 import { getRunningGameInfo } from "./lib/games";
-import { waitForOverwolf } from "./lib/overwolf";
 import {
   closeMainWindow,
   closeWindow,
@@ -11,10 +10,8 @@ import {
   toggleWindow,
 } from "./lib/windows";
 
-waitForOverwolf().then(() => {
-  initController();
-  startNewGameSession();
-});
+initController();
+startNewGameSession();
 
 async function initController() {
   console.log("Init controller");

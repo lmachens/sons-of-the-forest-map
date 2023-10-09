@@ -11,6 +11,7 @@ import Search from "./components/Search";
 import TileLayer from "./components/TileLayer";
 import Zones from "./components/Zones";
 import { loadDictionary, translateHTML } from "./lib/i18n";
+import { initPlausible } from "./lib/plausible";
 import { initWakelock } from "./lib/wakelock";
 
 let lastLocation = { x: 0, y: 0, z: 0 };
@@ -64,3 +65,8 @@ loadDictionary().then(() => {
   Search({ panToMarker });
   NitroPay();
 });
+
+initPlausible(
+  import.meta.env.VITE_PLAUSIBLE_WEB_DOMAIN,
+  import.meta.env.VITE_PLAUSIBLE_API_HOST
+);
