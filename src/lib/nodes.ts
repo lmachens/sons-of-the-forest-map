@@ -49,7 +49,7 @@ export function getTypes(): NodeType[] {
     },
     {
       value: "pistol",
-      title: t("Gun"),
+      title: t("Weapon"),
       icon: icons["pistol-gun"],
       filter: "weapons",
     },
@@ -133,7 +133,7 @@ export function getTypes(): NodeType[] {
     },
     {
       value: "revolver",
-      title: t("Gun"),
+      title: t("Weapon"),
       icon: icons.revolver,
       filter: "weapons",
     },
@@ -181,7 +181,7 @@ export function getTypes(): NodeType[] {
     },
     {
       value: "camp",
-      title: t("Abandoned"),
+      title: t("Point of Interest"),
       icon: icons.camp,
       filter: "abandoned-camp",
     },
@@ -199,7 +199,7 @@ export function getTypes(): NodeType[] {
     },
     {
       value: "compass",
-      title: t("Compass"),
+      title: t("Tool"),
       icon: icons.compass,
       filter: "tools",
     },
@@ -307,7 +307,7 @@ export function getTypes(): NodeType[] {
     },
     {
       value: "srail",
-      title: t("Shotgun Rail"),
+      title: t("Weapon Attachment"),
       icon: icons["shotgun-rail"],
       filter: "mod",
     },
@@ -347,7 +347,7 @@ export function getTypes(): NodeType[] {
       icon: icons["go-pro"],
       filter: "tools",
     },
-    {
+    { 
       value: "golf-cart",
       title: t("Drive around the map"),
       icon: icons.uni,
@@ -373,15 +373,15 @@ export function getTypes(): NodeType[] {
     },
     {
       value: "cooking-pot",
-      title: t("Food"),
+      title: t("Tool"),
       icon: icons.info,
       filter: "tools",
     },
     {
       value: "large-battery",
-      title: t("Electricity"),
+      title: t("Electronics"),
       icon: icons.info,
-      filter: "tools",
+      filter: "electronics",
     },
     {
       value: "pickaxe",
@@ -406,6 +406,12 @@ export function getTypes(): NodeType[] {
       title: t("Tool"),
       icon: icons.info,
       filter: "tools",
+    },
+    {
+      value: "solar-panel",
+      title: t("Electronics"),
+      icon: icons.info,
+      filter: "electronics",
     },
   ];
 }
@@ -455,8 +461,8 @@ export function getFilters(): Filter[] {
       color: "rgb(255 215 0)",
     },
     {
-      value: "door",
-      title: t("Locked Doors"),
+      value: "electronics",
+      title: t("Electronics"),
       color: "rgb(176 196 222)",
     },
     {

@@ -13,6 +13,7 @@ export type MapLocation = {
   requirements?: number[];
   items?: number[];
   screenshot?: string;
+  warning?: string;
   tp?: string;
   wiki?: string;
 };

@@ -1,26 +1,29 @@
-[
-  {
+[ 
+ {
     "id": 1,
     "type": "spawnPoint",
-    "title": "SnowCrash",
+    "title": "Mountain Crash Site",
     "x": -225,
     "y": -12,
+    "tp": "goto SnowCrash",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Helicopter_Crash_Site"
   },
   {
     "id": 2,
     "type": "spawnPoint",
-    "title": "OceanCrash",
+    "title": "Beach Crash Site",
     "x": -426,
     "y": 1603,
+    "tp": "goto OceanCrash",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Helicopter_Crash_Site"
   },
   {
     "id": 3,
     "type": "spawnPoint",
-    "title": "TreeCrash",
+    "title": "Forest Crash Site",
     "x": -1141,
     "y": -216,
+    "tp": "goto TreeCrash",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Helicopter_Crash_Site"
   },
   {
@@ -31,7 +34,7 @@
     "x": -703,
     "y": 445,
     "screenshot": "modern_axe.webp",
-    "tp": "ModeAxePickup",
+    "tp": "goto ModernAxePickup",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Modern_Axe"
   },
   {
@@ -50,9 +53,10 @@
     "type": "machete",
     "title": "Machete",
     "description": "On the deflated boat",
-    "x": -68,
-    "y": 1459,
+    "x": -68.75,
+    "y": 1459.22,
     "screenshot": "machete.webp",
+    "tp": "goto -67,8 14 1460",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Machete"
   },
   {
@@ -70,9 +74,10 @@
     "type": "pistol",
     "title": "Pistol",
     "description": "On Emergency Raft",
-    "x": -1797,
-    "y": 578,
+    "x": -1797.30,
+    "y": 578.73,
     "screenshot": "pistol_1.webp",
+    "tp": "goto RaftDiorama",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Pistol"
   },
   {
@@ -93,10 +98,12 @@
     "type": "stunGun",
     "title": "Stun Gun",
     "description": "Inside the right tunnel",
-    "x": -647,
-    "y": 1514,
+    "x": -647.31,
+    "y": 1514.32,
     "isUnderground": true,
     "screenshot": "stun_gun.webp",
+    "warning": "Teleport only after you get inside the cave, otherwise you fall under map",
+    "tp": "goto -646,7 16 1513,3",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Stun_Gun"
   },
   {
@@ -104,10 +111,12 @@
     "type": "rebreather",
     "title": "Rebreather",
     "description": "Inside the left tunnel",
-    "x": -422,
-    "y": 1477,
+    "x": -422.94,
+    "y": 1477.02,
     "isUnderground": true,
     "screenshot": "rebreather.webp",
+    "warning": "Teleport only after you get inside the cave, otherwise you fall under map",
+    "tp": "goto -422,1 10 1478",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Rebreather"
   },
   {
@@ -136,10 +145,11 @@
     "id": 14,
     "type": "slingshot",
     "title": "Slingshot",
-    "description": "On one of soldiers bodies",
-    "x": -533,
-    "y": 120,
+    "description": "On middle mercenary corpse",
+    "x": -531.85,
+    "y": 121.55,
     "screenshot": "slingshot.webp",
+    "tp": "goto TactiCoolDeadF (1)",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Slingshot"
   },
   {
@@ -178,7 +188,8 @@
     "x": 674,
     "y": -273,
     "isUnderground": true,
-    "screenshot": "rifle.webp"
+    "screenshot": "rifle.webp",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Rifle"
   },
   {
     "id": 17,
@@ -188,15 +199,19 @@
     "x": -427.82,
     "y": 699.42,
     "isUnderground": true,
+    "requirements": [
+      15
+    ],
     "screenshot": "maintenance_card.webp",
-    "tp": "gotocoords -427,8 76,1 700,2",
+    "warning": "Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto -427,8 76,1 700,2",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Maintenance_Keycard"
   },
   {
     "id": 18,
     "type": "fireAxe",
     "title": "Firefighter Axe",
-    "description": "Inside the bunker room at the end of a hallway",
+    "description": "At the end of the hallway",
     "x": -415.00,
     "y": 712.26,
     "isUnderground": true,
@@ -204,7 +219,8 @@
       15
     ],
     "screenshot": "firefighter_axe.webp",
-    "tp": "gotocoords -416 76,1 711,8",
+    "warning": "Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto -416 76,1 711,8",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Firefighter_Axe"
   },
   {
@@ -235,17 +251,19 @@
     "screenshot": "crossbow.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Crossbow"
   },
-  {
+  { 
     "id": 21,
     "type": "keycard",
     "title": "Guest Card",
-    "x": -1184,
-    "y": 41,
+    "x": -1184.09,
+    "y": 41.71,
     "isUnderground": true,
     "requirements": [
       17
     ],
     "screenshot": "guest_keycard.webp",
+    "warning": "Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto -1184 66 40,9",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Guest_Keycard"
   },
   {
@@ -253,13 +271,15 @@
     "type": "guitar",
     "title": "Guitar",
     "description": "On bar stand top",
-    "x": -1158,
-    "y": 17,
+    "x": -1157.58,
+    "y": 17.77,
     "isUnderground": true,
     "requirements": [
       17
     ],
     "screenshot": "guitar.webp",
+    "warning": "Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto -1158,4 66 17",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Guitar"
   },
   {
@@ -267,13 +287,15 @@
     "type": "chainsaw",
     "title": "Chainsaw",
     "description": "In the Theater room",
-    "x": -1151,
-    "y": 116,
+    "x": -1151.17,
+    "y": 116.06,
     "isUnderground": true,
     "requirements": [
       17
     ],
     "screenshot": "chainsaw.webp",
+    "warning": "Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto -1152 65 116",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Chainsaw"
   },
   {
@@ -288,17 +310,20 @@
       15
     ],
     "screenshot": "compound_bow.webp",
-    "tp": "gotocoords -1120,6 270 -1039,8",
+    "warning": "Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto -1120,6 270 -1039,8",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Compound_Bow"
   },
   {
     "id": 25,
     "type": "revolver",
     "title": "Revolver",
-    "x": 1140,
-    "y": 1048,
+    "x": 1140.69,
+    "y": 1048.70,
     "isUnderground": true,
     "screenshot": "revolver.webp",
+    "warning":"Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto 1140 119 1049,2",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Revolver"
   },
   {
@@ -318,13 +343,15 @@
     "id": 27,
     "type": "goldenArmor",
     "title": "Golden Armor",
-    "x": 181,
-    "y": -664,
+    "x": 188.09,
+    "y": -668.96,
     "isUnderground": true,
     "requirements": [
       11
     ],
     "screenshot": "golden_armor.webp",
+    "warning": "Teleport only after you get inside the cave, otherwise you fall under map",
+    "tp": "goto 186,2 137,5 -667,4",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golden_Armor"
   },
   {
@@ -356,9 +383,10 @@
     "type": "opener",
     "title": "Can Opener",
     "description": "On rocks",
-    "x": -315,
-    "y": 1612,
+    "x": -315.71,
+    "y": 1611.97,
     "screenshot": "can_opener_1.webp",
+    "tp": "goto -315,2 14 1611,5",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Can_Opener"
   },
   {
@@ -380,6 +408,17 @@
     "y": -110,
     "screenshot": "can_opener_3.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Can_Opener"
+  },
+  {
+    "id": 380,
+    "type": "artifact",
+    "title": "Artifact A",
+    "x": -628.94,
+    "y": 1399.58,
+    "isUnderground": true,
+    "screenshot": "artifact_a.webp",
+    "warning":"Teleport only after you get inside the cave, otherwise you fall under map",
+    "tp": "goto -627,5 -25 1399"
   },
   {
     "id": 895,
@@ -419,6 +458,7 @@
       17,
       18,
       434,
+      433,
       306,
       81,
       89,
@@ -453,17 +493,19 @@
   {
     "id": 32,
     "type": "hatch",
-    "title": "BunkerC",
+    "title": "Maintenance C",
     "description": "Dig out the hatch",
-    "x": 1110,
-    "y": 1007,
+    "x": 1109.68,
+    "y": 1007.58,
     "requirements": [
       15
     ],
     "items": [
-      25
+      25,
+      309
     ],
     "screenshot": "maintenance_c.webp",
+    "tp": "goto BunkerCHatch",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Bunkers#Maintenance_C_Check_on_map"
   },
   {
@@ -524,16 +566,19 @@
     "requirements": [
       15
     ],
-    "tp": "gotocoords -426,9 76,1 700,2",
+    "warning": "Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto -426,9 76,1 700,2",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/3D_Printer"
   },
   {
     "id": 35,
     "type": "3Dprinter",
     "title": "3D Printer",
-    "x": -1195,
-    "y": 78,
+    "x": -1195.58,
+    "y": 77.93,
     "isUnderground": true,
+    "warning": "Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto -1196,2 60 79",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/3D_Printer"
   },
   {
@@ -546,7 +591,8 @@
     "requirements": [
       15
     ],
-    "tp": "gotocoords -1126,3 270 -1049,6",
+    "warning": "Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto -1126,3 270 -1049,6",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/3D_Printer"
   },
   {
@@ -563,10 +609,12 @@
     "type": "laptop",
     "title": "Laptop no.1",
     "description": "Entertainment Bunker Location",
-    "x": -422,
-    "y": 1494,
+    "x": -422.32,
+    "y": 1495.35,
     "isUnderground": true,
-    "screenshot": "laptop_rebreather_cave.webp"
+    "screenshot": "laptop_rebreather_cave.webp",
+    "warning": "Teleport only after you get inside the cave, otherwise you fall under map",
+    "tp": "goto -422,4 14 1496,8"
   },
   {
     "id": 588,
@@ -593,7 +641,8 @@
     "requirements": [
       15
     ],
-    "tp": "gotocoords -425,2 76,1 703,4",
+    "warning": "Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto -425,2 76,1 703,4",
     "screenshot": "laptop_bunker_b.webp"
   },
   {
@@ -614,13 +663,15 @@
     "type": "laptop",
     "title": "Laptop no.5",
     "description": "Bunker B Location",
-    "x": -1179,
-    "y": 27,
+    "x": -1179.18,
+    "y": 27.76,
     "isUnderground": true,
     "requirements": [
       17
     ],
-    "screenshot": "laptop_entertainment_bunker.webp"
+    "screenshot": "laptop_entertainment_bunker.webp",
+    "warning": "Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto -1179,5 66 26,8"
   },
   {
     "id": 591,
@@ -634,7 +685,8 @@
       15
     ],
     "screenshot": "laptop_bunker_b.webp",
-    "tp": "gotocoords -1127,8 270 -1047,8"
+    "warning": "Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto -1127,8 270 -1047,8"
   },
   {
     "id": 585,
@@ -659,7 +711,8 @@
     "requirements": [
       21
     ],
-    "screenshot": "action_camera_1.webp"
+    "screenshot": "action_camera_1.webp",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Action_Camera"
   },
   {
     "id": 824,
@@ -667,15 +720,23 @@
     "title": "Action Camera",
     "x": 467,
     "y": 1215,
-    "screenshot": "action_camera_2.webp"
+    "screenshot": "action_camera_2.webp",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Action_Camera"
   },
   {
     "id": 825,
     "type": "go-pro",
     "title": "Action Camera",
-    "x": -1119,
-    "y": 7,
-    "screenshot": "action_camera_3.webp"
+    "x": -1095.15,
+    "y": -10.46,
+    "isUnderground": true,
+    "requirements": [
+      17
+    ],
+    "screenshot": "action_camera_3.webp",
+    "warning": "Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto -1095,8 59 10,6",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Action_Camera"
   },
   {
     "id": 38,
@@ -783,6 +844,11 @@
     "title": "Pickaxe Cave",
     "x": 1289,
     "y": 588,
+    "items": [
+      894,
+      895,
+      896
+    ],
     "screenshot": "pickaxe_cave.webp"
   },
   {
@@ -796,6 +862,8 @@
       21,
       23,
       22,
+      483,
+      922,
       80,
       79,
       88,
@@ -803,7 +871,8 @@
       91,
       333,
       334,
-      94
+      94,
+      923
     ],
     "screenshot": "cave_leading_to_entertainment_bunker.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Bunkers#Entertainment_Bunker_Check_on_map"
@@ -836,131 +905,145 @@
     "id": 50,
     "type": "cave",
     "title": "Rebreather Cave",
+    "description": "Cave A",
     "x": -423,
     "y": 1512,
     "items": [
       11,
       10,
+      380,
       71,
+      379,
       99
     ],
     "screenshot": "rebreather_cave.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Caves#Beach/Rebreather_Cave_Check_on_map"
   },
   {
-    "id": 317,
-    "type": "zip",
-    "title": "Zip Line",
-    "x": -547,
-    "y": 144,
-    "isUnderground": true,
-    "requirements": [
-      13
-    ]
-  },
-  {
     "id": 66,
     "type": "camp",
-    "title": "Camp",
+    "title": "Abandoned Camp",
     "description": "Whithout save point",
-    "x": -1659,
-    "y": 1191,
+    "x": -1655.25,
+    "y": 1185.98,
+    "tp": "goto TentTornAModel (5)",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 65,
     "type": "camp",
-    "title": "Camp",
+    "title": "Abandoned Camp",
     "description": "Whithout save point",
-    "x": -1436,
-    "y": 1214,
+    "x": -1438.21,
+    "y": 1216.44,
+    "tp": "goto TentTornAModel (2)",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 63,
     "type": "camp",
-    "title": "Camp",
+    "title": "Abandoned Camp",
     "description": "Whithout save point",
-    "x": -1362,
-    "y": 1667,
+    "x": -1363.90,
+    "y": 1661.99,
+    "items": [
+      847
+    ],
+    "tp": "goto TentTornAModel (1)",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 61,
     "type": "camp",
-    "title": "Camp",
+    "title": "Abandoned Camp",
     "description": "Whithout save point",
-    "x": -750,
-    "y": 1276,
+    "x": -752.56,
+    "y": 1278.54,
+    "tp": "goto TentTornAModel (6)",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 57,
     "type": "camp",
-    "title": "Camp",
+    "title": "Abandoned Camp",
     "description": "Whith save point",
-    "x": -237,
-    "y": 945,
+    "x": -242.21,
+    "y": 941.33,
+    "items": [
+      575,
+      859
+    ],
+    "tp": "goto Tent (9)",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 58,
     "type": "camp",
-    "title": "Camp",
+    "title": "Abandoned Camp",
     "description": "Whithout save point",
-    "x": -262,
-    "y": 1075,
+    "x": -255.35,
+    "y": 1071.43,
+    "tp": "goto TentTornAModel (8)",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 191,
     "type": "camp",
-    "title": "Camp",
+    "title": "Abandoned Camp",
     "description": "Whithout save point",
-    "x": -129,
-    "y": -1038,
+    "x": -132.00,
+    "y": -1036.21,
+    "tp": "goto TentTornAModel (27)",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 51,
     "type": "camp",
-    "title": "Camp",
+    "title": "Abandoned Camp",
     "description": "Without save point",
-    "x": 1283,
-    "y": -727,
+    "x": 1286.02,
+    "y": -728.77,
+    "items": [
+      573,
+      897
+    ],
+    "tp": "goto TentDark (1)",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 52,
     "type": "camp",
-    "title": "Camp",
+    "title": "Abandoned Camp",
     "description": "Without save point",
-    "x": 1698,
-    "y": 33,
+    "x": 1695.50,
+    "y": 36.00,
+    "tp": "goto TentTornAModel (24)",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 53,
     "type": "camp",
-    "title": "Camp",
+    "title": "Abandoned Camp",
     "description": "Without save point",
-    "x": 1263,
-    "y": 494,
+    "x": 1260.68,
+    "y": 498.86,
+    "tp": "goto TentTornAModel (20)",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 54,
     "type": "camp",
-    "title": "Camp",
+    "title": "Abandoned Camp",
     "description": "Without save point",
-    "x": 725,
-    "y": 738,
+    "x": 721.09,
+    "y": 736.98,
+    "tp": "goto TentTornAModel (26)",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 55,
     "type": "camp",
-    "title": "Camp",
+    "title": "Abandoned Camp",
     "description": "With save point",
     "x": 799,
     "y": 975,
@@ -969,16 +1052,20 @@
   {
     "id": 56,
     "type": "camp",
-    "title": "Camp",
+    "title": "Abandoned Camp",
     "description": "With save point",
-    "x": -29,
-    "y": 667,
+    "x": -27.90,
+    "y": 665.79,
+    "items": [
+      112
+    ],
+    "tp": "goto TentDark (7)",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 59,
     "type": "camp",
-    "title": "Camp",
+    "title": "Abandoned Camp",
     "description": "With save point",
     "x": 61,
     "y": 1247,
@@ -987,16 +1074,22 @@
   {
     "id": 60,
     "type": "camp",
-    "title": "Camp",
+    "title": "Abandoned Camp",
     "description": "With save point",
-    "x": -47,
-    "y": 1456,
+    "x": -44.96,
+    "y": 1457.21,
+    "items": [
+      6,
+      341,
+      881
+    ],
+    "tp": "goto TentDark",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 62,
     "type": "camp",
-    "title": "Camp",
+    "title": "Abandoned Camp",
     "description": "With save point",
     "x": -1121,
     "y": 1628,
@@ -1005,7 +1098,7 @@
   {
     "id": 64,
     "type": "camp",
-    "title": "Camp",
+    "title": "Abandoned Camp",
     "description": "With save point",
     "x": -1255,
     "y": 1397,
@@ -1014,7 +1107,7 @@
   {
     "id": 145,
     "type": "camp",
-    "title": "Camp",
+    "title": "Abandoned Camp",
     "description": "With save point",
     "x": -1388,
     "y": -217,
@@ -1023,7 +1116,7 @@
   {
     "id": 146,
     "type": "camp",
-    "title": "Camp",
+    "title": "Abandoned Camp",
     "description": "With save point",
     "x": -1722,
     "y": 59,
@@ -1032,7 +1125,7 @@
   {
     "id": 180,
     "type": "camp",
-    "title": "Camp",
+    "title": "Abandoned Camp",
     "description": "With save point",
     "x": -703,
     "y": 450,
@@ -1041,22 +1134,23 @@
       858,
       863
     ],
-    "tp": "gotocoords -703 103 450",
+    "tp": "goto -703 103 450",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 181,
     "type": "camp",
-    "title": "Camp",
+    "title": "Abandoned Camp",
     "description": "Without save point",
-    "x": -1095,
-    "y": 87,
+    "x": -1098.64,
+    "y": 87.15,
+    "tp": "goto TentTornAModel (10)",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 182,
     "type": "camp",
-    "title": "Camp",
+    "title": "Abandoned Camp",
     "description": "With save point",
     "x": -1268,
     "y": -11,
@@ -1065,7 +1159,7 @@
   {
     "id": 184,
     "type": "camp",
-    "title": "Camp",
+    "title": "Abandoned Camp",
     "description": "With save point",
     "x": -1257,
     "y": -597,
@@ -1074,7 +1168,7 @@
   {
     "id": 185,
     "type": "camp",
-    "title": "Camp",
+    "title": "Abandoned Camp",
     "description": "With save point",
     "x": -1028,
     "y": -623,
@@ -1083,22 +1177,23 @@
       77,
       902
     ],
-    "tp": "gotocoords -1028 226 -623",
+    "tp": "goto -1028 226 -623",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 186,
     "type": "camp",
-    "title": "Camp",
+    "title": "Abandoned Camp",
     "description": "Without save point",
-    "x": -703,
-    "y": -663,
+    "x": -705.54,
+    "y": -661.60,
+    "tp": "goto TentTornAModel (30)",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 187,
     "type": "camp",
-    "title": "Camp",
+    "title": "Abandoned Camp",
     "description": "With save point",
     "x": -474,
     "y": -335,
@@ -1107,7 +1202,7 @@
   {
     "id": 188,
     "type": "camp",
-    "title": "Camp",
+    "title": "Abandoned Camp",
     "description": "With save point",
     "x": -156,
     "y": -110,
@@ -1116,7 +1211,7 @@
   {
     "id": 189,
     "type": "camp",
-    "title": "Camp",
+    "title": "Abandoned Camp",
     "description": "With save point",
     "x": 363,
     "y": -170,
@@ -1125,7 +1220,7 @@
   {
     "id": 190,
     "type": "camp",
-    "title": "Camp",
+    "title": "Abandoned Camp",
     "description": "With save point",
     "x": 402,
     "y": -182,
@@ -1142,17 +1237,19 @@
   {
     "id": 69,
     "type": "village",
-    "title": "AbandonedBuildings2",
-    "x": 1459,
-    "y": 747,
+    "title": "Fishing Village",
+    "x": 1461.84,
+    "y": 749.52,
+    "tp": "goto AbandonedBuildings2",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 67,
     "type": "village",
-    "title": "AbandonedBuildings3",
-    "x": 1824,
-    "y": -512,
+    "title": "Fishing Village",
+    "x": 1824.84,
+    "y": -512.55,
+    "tp": "goto AbandonedBuildings3",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
@@ -1168,11 +1265,13 @@
   {
     "id": 71,
     "type": "cloth",
-    "title": "Hoodie or Tactical/Leather Jacket",
-    "x": -645,
-    "y": 1511,
+    "title": "Leather Jacket",
+    "x": -646.00,
+    "y": 1510.95,
     "isUnderground": true,
     "screenshot": "hoodie_3.webp",
+    "warning": "Teleport only after you get inside the cave, otherwise you fall under map",
+    "tp": "goto -644,8 16 1511,5",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hoodie"
   },
   {
@@ -1215,7 +1314,8 @@
     "requirements": [
       19
     ],
-    "screenshot": "dress.webp"
+    "screenshot": "dress.webp",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Dress"
   },
   {
     "id": 76,
@@ -1225,7 +1325,7 @@
     "x": -971.44,
     "y": -1061.75,
     "screenshot": "leather_jacket.webp",
-    "tp": "goto LeatherJacketPickup (1)",
+    "tp": "goto -972 251 -1060,9",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Leather_Jacket"
   },
   {
@@ -1251,26 +1351,30 @@
     "id": 79,
     "type": "cloth",
     "title": "Track Suit",
-    "x": -1141,
-    "y": 6,
+    "x": -1141.52,
+    "y": 6.08,
     "isUnderground": true,
     "requirements": [
       17
     ],
     "screenshot": "track_suit.webp",
+    "warning": "Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto -1141,5 59 6,9",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Track_Suit"
   },
   {
     "id": 80,
     "type": "cloth",
     "title": "Pajamas",
-    "x": -1116,
-    "y": -18,
+    "x": -1116.21,
+    "y": -18.46,
     "isUnderground": true,
     "requirements": [
       17
     ],
     "screenshot": "pajamas_1.webp",
+    "warning":"Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto -1116,9 59 -19,1",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Pajamas"
   },
   {
@@ -1285,7 +1389,8 @@
       15
     ],
     "screenshot": "tuxedo.webp",
-    "tp": "gotocoords -416,8 76,1 695,5",
+    "warning": "Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto -416,8 76,1 695,5",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Tuxedo"
   },
   {
@@ -1298,7 +1403,8 @@
     "requirements": [
       17
     ],
-    "screenshot": "leather_suit_2.webp"
+    "screenshot": "leather_suit_2.webp",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Leather_Suit"
   },
   {
     "id": 83,
@@ -1319,7 +1425,8 @@
     "title": "Leather Suit",
     "x": -888,
     "y": 769,
-    "screenshot": "leather_suit_1.webp"
+    "screenshot": "leather_suit_1.webp",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Leather_Suit"
   },
   {
     "id": 318,
@@ -1339,9 +1446,10 @@
     "type": "compass",
     "title": "GPS Locator",
     "description": "On Emergency Raft",
-    "x": -1797,
-    "y": 577,
+    "x": -1797.65,
+    "y": 577.03,
     "screenshot": "gps_locator_2.webp",
+    "tp": "goto RaftDiorama",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/GPS_Locator"
   },
   {
@@ -1365,7 +1473,7 @@
     "x": -628.88,
     "y": 386.58,
     "screenshot": "gps_locator_1.webp",
-    "tp": "gotocoords -625,6 138 386",
+    "tp": "goto -625,6 138 386",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/GPS_Locator"
   },
   {
@@ -1373,9 +1481,11 @@
     "type": "book",
     "title": "Parallel Universes and Travel Between Them Book",
     "description": "Next to 3D Printer inside the bunker",
-    "x": -1196,
-    "y": 78,
+    "x": -1198.88,
+    "y": 78.20,
     "isUnderground": true,
+    "warning": "Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto -1196.8 60 79",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Books#Parallel_Universes_Book"
   },
   {
@@ -1389,6 +1499,8 @@
     "requirements": [
       15
     ],
+    "warning": "Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto -417,5 76,1 694,6",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Books#Pennant_Line_Book"
   },
   {
@@ -1422,25 +1534,19 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Books#Rescued_Book"
   },
   {
-    "id": 91,
-    "type": "document",
-    "title": "Email - RE: GOLF BALLS",
-    "x": -1142,
-    "y": 2,
-    "isUnderground": true,
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Balls_Emails"
-  },
-  {
     "id": 92,
     "type": "document",
-    "title": "Email - ANOTHER ONE",
-    "description": "On the table",
-    "x": -1125,
-    "y": 110,
+    "title": "Email - Another one",
+    "description": "Artifact 2",
+    "x": -1126.14,
+    "y": 111.14,
     "isUnderground": true,
     "requirements": [
       17
     ],
+    "screenshot": "email_artifact_2.webp",
+    "warning": "Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto -1125,4 65 110,6",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Artifact_Emails"
   },
   {
@@ -1454,20 +1560,24 @@
     "requirements": [
       15
     ],
-    "tp": "-425,2 76,1 702,1",
+    "warning": "Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto -425,2 76,1 702,1",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Painting_Email"
   },
   {
     "id": 94,
     "type": "document",
-    "title": "LAST WILL AND TESTAMENT OF EDWART PUFFTON",
+    "title": "Last will and testament of Edward Puffton",
     "description": "On second table behind doors",
-    "x": -1178,
-    "y": 27,
+    "x": -1178.63,
+    "y": 27.70,
     "isUnderground": true,
     "requirements": [
       17
-    ]
+    ],
+    "screenshot": "email_last_will_and_testament.webp",
+    "warning": "Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto -1178,8 66 26,8"
   },
   {
     "id": 95,
@@ -1510,9 +1620,11 @@
     "type": "document",
     "title": "Newspaper Page - Puffcorp outbids Sahara Terapeutics for remote island",
     "description": "Next to second dead soldier near entrance",
-    "x": -428,
-    "y": 1497,
-    "isUnderground": true
+    "x": -428.74,
+    "y": 1497.67,
+    "isUnderground": true,
+    "warning": "Teleport only after you get inside the cave, otherwise you fall under map",
+    "tp": "goto -428,2 14 1497"
   },
   {
     "id": 100,
@@ -1525,19 +1637,23 @@
     "requirements": [
       15
     ],
-    "tp": "gotocoords -431,6 76,1 705,4"
+    "warning": "Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto -431,6 76,1 705,4"
   },
   {
     "id": 335,
     "type": "document",
     "title": "Music Album Cover",
     "description": "Next to corpse with stuck guitar inside it",
-    "x": -1157,
-    "y": 29,
+    "x": -1157.62,
+    "y": 29.89,
     "isUnderground": true,
     "requirements": [
       17
-    ]
+    ],
+    "screenshot": "music_album_cover_1.webp",
+    "warning": "Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto -1157,5 65 29,2"
   },
   {
     "id": 101,
@@ -1647,26 +1763,81 @@
     "type": "document",
     "title": "Email - Note to all employees",
     "description": "Beside sunbed in the room with big tree",
-    "x": -1120,
-    "y": 18,
+    "x": -1120.05,
+    "y": 18.71,
     "isUnderground": true,
     "requirements": [
       17
     ],
+    "screenshot": "email_note_to_all_employees_1.webp",
+    "warning": "Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto -1119,5 66 18,6",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Barbara_Email"
+  },
+  {
+    "id": 924,
+    "type": "document",
+    "title": "Email - Note to all employees",
+    "x": -1158.80,
+    "y": 30.45,
+    "isUnderground": true,
+    "requirements": [
+      17
+    ],
+    "screenshot": "email_note_to_all_employees_2.webp",
+    "warning": "Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto -1156,2 65 30"
+  },
+  {
+    "id": 389,
+    "type": "document",
+    "title": "Old Note",
+    "description": "I haven't slept in 3 months",
+    "x": 1702.82,
+    "y": 1014.23,
+    "screenshot": "old_note_1.webp",
+    "tp": "goto 1702,9 28,4 1014,8"
+  },
+  {
+    "id": 441,
+    "type": "document",
+    "title": "Old Note",
+    "description": "Today is 1979",
+    "x": 1832.23,
+    "y": -475.64,
+    "screenshot": "old_note_2.webp",
+    "tp": "goto 1832,8 49 -475,8"
   },
   {
     "id": 334,
     "type": "document",
-    "title": "Email - RE:RE: GOLF BALLS",
+    "title": "Email - RE: RE: Golf Balls",
     "description": "In the room with couches, at the end turn to left table",
-    "x": -1191,
-    "y": 35,
+    "x": -1192.04,
+    "y": 35.17,
     "isUnderground": true,
     "requirements": [
       17
     ],
+    "screenshot": "email_re_re_golf_balls.webp",
+    "warning": "Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto -1191,5 66 35,7",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Balls_Emails"
+  },
+  {
+    "id": 923,
+    "type": "document",
+    "title": "Personal Note",
+    "description": "Message for Doris",
+    "x": -1130.62,
+    "y": 79.08,
+    "isUnderground": true,
+    "requirements": [
+      17
+    ],
+    "screenshot": "personal_note_1.webp",
+    "warning": "Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto -1129,8 66,5 78,9"
   },
   {
     "id": 475,
@@ -1693,7 +1864,7 @@
     "x": -972.21,
     "y": -1059.99,
     "screenshot": "pamphlet_holospring.webp",
-    "tp": "goto BunkerPamphletPickup"
+    "tp": "goto -972,3 251 -1059,3"
   },
   {
     "id": 915,
@@ -1701,6 +1872,7 @@
     "title": "Cult Pamphlet - You will find meaning in life again",
     "x": -258,
     "y": 1141,
+    "tp": "goto -257,7 49 1141,6",
     "screenshot": "pamphlet_you_will_find_meaning_in_life_again_3.webp"
   },
   {
@@ -1744,59 +1916,93 @@
   {
     "id": 896,
     "type": "document",
-    "title": "Item Plating Machine",
+    "title": "Blueprint Item Plating Machine",
     "x": 1333,
     "y": 700,
     "isUnderground": true,
     "requirements": [
       11
     ],
-    "screenshot": "item_plating_machine.webp",
-    "tp": "gotocoords -417,5 76,1 694,5"
+    "screenshot": "blueprint_item_plating_machine.webp",
+    "tp": "goto -417,5 76,1 694,5"
+  },
+  {
+    "id": 379,
+    "type": "document",
+    "title": "Blueprint Powered Cross",
+    "x": -648.78,
+    "y": 1388.92,
+    "isUnderground": true,
+    "screenshot": "blueprint_powered_cross.webp",
+    "warning":"Teleport only after you get inside the cave, otherwise you fall under map",
+    "tp": "goto -648,7 -17 1389,5"
+  },
+  {
+    "id": 387,
+    "type": "document",
+    "title": "Blueprint Gore Couch",
+    "x": 1694.03,
+    "y": 1037.15,
+    "screenshot": "blueprint_gore_couch.webp",
+    "tp": "goto 1694,6 28,4 1036,8"
+  },
+  {
+    "id": 439,
+    "type": "document",
+    "title": "Blueprint Gore Chair",
+    "x": 1823.00,
+    "y": -495.64,
+    "screenshot": "blueprint_gore_chair.webp",
+    "tp": "goto 1822,5 49 -496,2"
   },
   {
     "id": 106,
     "type": "hang-glider",
     "title": "Hang Glider",
-    "x": -798,
-    "y": -281,
+    "x": -799.53,
+    "y": -281.76,
     "screenshot": "hang_glider_3.webp",
+    "tp": "goto WorldHangGlider13",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hang_Glider"
   },
   {
     "id": 107,
     "type": "hang-glider",
     "title": "Hang Glider",
-    "x": -504,
-    "y": -308,
+    "x": -504.43,
+    "y": -307.39,
     "screenshot": "hang_glider_4.webp",
+    "tp": "goto WorldHangGlider01",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hang_Glider"
   },
   {
     "id": 108,
     "type": "hang-glider",
     "title": "Hang Glider",
-    "x": -131,
-    "y": -1029,
+    "x": -129.59,
+    "y": -1028.08,
     "screenshot": "hang_glider_12.webp",
+    "tp": "goto WorldHangGlider02",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hang_Glider"
   },
   {
     "id": 109,
     "type": "hang-glider",
     "title": "Hang Glider",
-    "x": -1181,
-    "y": -1724,
+    "x": -1184.10,
+    "y": -1728.82,
     "screenshot": "hang_glider_13.webp",
+    "tp": "goto WorldHangGlider04",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hang_Glider"
   },
   {
     "id": 110,
     "type": "hang-glider",
     "title": "Hang Glider",
-    "x": -1769,
-    "y": 1168,
+    "x": -1772.03,
+    "y": 1171.02,
     "screenshot": "hang_glider_2.webp",
+    "tp": "goto WorldHangGlider11",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hang_Glider"
   },
   {
@@ -1812,98 +2018,117 @@
     "id": 112,
     "type": "hang-glider",
     "title": "Hang Glider",
-    "x": -31,
-    "y": 666,
+    "x": -30.42,
+    "y": 665.78,
     "screenshot": "hang_glider_5.webp",
+    "tp": "goto WorldHangGlider08",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hang_Glider"
   },
   {
     "id": 174,
     "type": "hang-glider",
     "title": "Hang Glider",
-    "x": 365,
-    "y": -161,
+    "x": 366.28,
+    "y": -160.22,
     "screenshot": "hang_glider_9.webp",
+    "tp": "goto WorldHangGlider03",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hang_Glider"
   },
   {
     "id": 175,
     "type": "hang-glider",
     "title": "Hang Glider",
-    "x": 1081,
-    "y": -108,
+    "x": 1083.82,
+    "y": -108.44,
     "screenshot": "hang_glider_10.webp",
+    "tp": "goto WorldHangGlider06",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hang_Glider"
   },
   {
     "id": 176,
     "type": "hang-glider",
     "title": "Hang Glider",
-    "x": 1296,
-    "y": -29,
+    "x": 1297.53,
+    "y": -30.13,
     "screenshot": "hang_glider_11.webp",
+    "tp": "goto WorldHangGlider09",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hang_Glider"
   },
   {
     "id": 177,
     "type": "hang-glider",
     "title": "Hang Glider",
-    "x": 733,
-    "y": 739,
+    "x": 733.15,
+    "y": 740.77,
     "screenshot": "hang_glider_8.webp",
+    "tp": "goto WorldHangGlider05",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hang_Glider"
   },
   {
     "id": 178,
     "type": "hang-glider",
     "title": "Hang Glider",
-    "x": 796,
-    "y": 974,
+    "x": 797.90,
+    "y": 974.66,
     "screenshot": "hang_glider_7.webp",
+    "tp": "goto WorldHangGlider07",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hang_Glider"
   },
   {
     "id": 179,
     "type": "hang-glider",
     "title": "Hang Glider",
-    "x": 845,
-    "y": 1104,
+    "x": 846.10,
+    "y": 1105.33,
     "screenshot": "hang_glider_6.webp",
+    "tp": "goto WorldHangGlider14",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hang_Glider"
+  },
+  {
+    "id": 385,
+    "type": "hang-glider",
+    "title": "Hang Glider",
+    "x": 789.73,
+    "y": 273.90,
+    "screenshot": "hang_glider_14.webp",
+    "tp": "goto WorldHangGlider10",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hang_Glider"
   },
   {
     "id": 812,
     "type": "golf-cart",
     "title": "Golf Cart",
-    "description": "Crouch after teleporting",
     "x": -1134.20,
     "y": -1106.35,
+    "warning": "Crouch after teleporting",
     "tp": "goto WorldGolfCart10"
   },
   {
     "id": 813,
     "type": "golf-cart",
     "title": "Golf Cart",
-    "description": "Crouch after teleporting",
     "x": -928.46,
     "y": -995.35,
+    "warning":"Crouch after teleporting",
     "tp": "goto WorldGolfCart11"
   },
   {
     "id": 814,
     "type": "golf-cart",
     "title": "Golf Cart",
-    "description": "Crouch after teleporting",
     "x": -891.30,
     "y": -918.24,
+    "warning": "Crouch after teleporting",
     "tp": "goto WorldGolfCart12"
   },
   {
     "id": 815,
     "type": "golf-cart",
     "title": "Golf Cart",
-    "x": 1815,
-    "y": -508
+    "x": 1815.72,
+    "y": -509.15,
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart09"
   },
   {
     "id": 815,
@@ -1930,8 +2155,10 @@
     "id": 818,
     "type": "golf-cart",
     "title": "Golf Cart",
-    "x": 1691,
-    "y": 1027
+    "x": 1691.49,
+    "y": 1027.62,
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart07"
   },
   {
     "id": 819,
@@ -1967,6 +2194,15 @@
     "title": "Golf Cart",
     "x": 1014,
     "y": 1222
+  },
+  {
+    "id": 442,
+    "type": "golf-cart",
+    "title": "Golf Cart",
+    "x": 1828.62,
+    "y": -484.03,
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart08"
   },
   {
     "id": 113,
@@ -3464,7 +3700,9 @@
     "title": "Wall Painting",
     "x": -461,
     "y": -556,
-    "isUnderground": true
+    "isUnderground": true,
+    "warning": "Teleport only after you get inside the cave, otherwise you fall under map",
+    "tp": "goto -461,8 283 -557,7"
   },
   {
     "id": 245,
@@ -3485,28 +3723,37 @@
     "type": "info",
     "title": "Occultists corpses",
     "x": -425,
-    "y": 830
+    "y": 830,
+    "tp": "goto -424,6 89 831,9",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Occultists_corpses"
   },
   {
     "id": 474,
     "type": "info",
     "title": "Occultists corpses",
     "x": -630,
-    "y": 1270
+    "y": 1270,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Occultists_corpses"
   },
   {
     "id": 909,
     "type": "info",
     "title": "Occultists corpses",
     "x": 793,
-    "y": 1523
+    "y": 1523,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Occultists_corpses"
   },
   {
     "id": 860,
     "type": "info",
     "title": "Occultists corpses",
-    "x": -257,
-    "y": 1143
+    "x": -257.4,
+    "y": 1142.1,
+    "items": [
+      915
+    ],
+    "tp": "goto -257,4 49 1142,1",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Occultists_corpses"
   },
   {
     "id": 271,
@@ -3584,16 +3831,29 @@
   {
     "id": 353,
     "type": "info",
-    "title": "Dead Soldier Effigy",
-    "x": -420,
-    "y": 1643
+    "title": "Dead Mercenary",
+    "x": -420.21,
+    "y": 1644.02,
+    "tp": "goto TactiCoolDeadH (3)",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Mercenaries_Corpses"
   },
   {
     "id": 354,
     "type": "info",
-    "title": "Dead Soldier Effigy",
-    "x": -400,
-    "y": 1645
+    "title": "Dead Mercenary",
+    "x": -401.16,
+    "y": 1646.03,
+    "tp": "goto TactiCoolDeadH (4)",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Mercenaries_Corpses"
+  },
+  {
+    "id": 376,
+    "type": "info",
+    "title": "Dead Mercenary",
+    "x": -530.49,
+    "y": 120.76,
+    "tp": "goto TactiCoolDeadH (1)",
+    "wiki":"https://sonsoftheforest.wiki.gg/wiki/Locations#Mercenaries_Corpses"
   },
   {
     "id": 355,
@@ -3754,28 +4014,32 @@
     "type": "info",
     "title": "Boat",
     "x": -1665,
-    "y": 785
+    "y": 785,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Shipwrecks"
   },
   {
     "id": 183,
     "type": "info",
     "title": "Drifting Boat",
     "x": -1261,
-    "y": -658
+    "y": -658,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Drifting_Boat"
   },
   {
     "id": 857,
     "type": "info",
     "title": "Boat",
     "x": -1040,
-    "y": 814
+    "y": 814,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Drifting_Boat"
   },
   {
     "id": 917,
     "type": "info",
     "title": "2x Boats",
     "x": -606,
-    "y": -105
+    "y": -105,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Drifting_Boat"
   },
   {
     "id": 371,
@@ -3834,11 +4098,20 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Golf_Course"
   },
   {
+    "id": 338,
+    "type": "info",
+    "title": "Golf Cart Wreckage",
+    "description": "Second Wreckage is near the bunker entrance",
+    "x": -487,
+    "y": 722
+  },
+  {
     "id": 473,
     "type": "info",
     "title": "2x Golf Carts Wreckages",
     "x": -978,
     "y": 134,
+    "tp": "goto -977,6 96 134,4",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Golf_Course"
   },
   {
@@ -3848,48 +4121,6 @@
     "x": -1016,
     "y": 1019,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Golf_Course"
-  },
-  {
-    "id": 376,
-    "type": "info",
-    "title": "Mutant",
-    "x": 209,
-    "y": 1457
-  },
-  {
-    "id": 377,
-    "type": "info",
-    "title": "Mutant",
-    "x": 1812,
-    "y": 142
-  },
-  {
-    "id": 378,
-    "type": "info",
-    "title": "Mutant",
-    "x": 1799,
-    "y": -54
-  },
-  {
-    "id": 379,
-    "type": "info",
-    "title": "Mutant",
-    "x": -1762,
-    "y": -1596
-  },
-  {
-    "id": 380,
-    "type": "info",
-    "title": "Mutant",
-    "x": -1494,
-    "y": 820
-  },
-  {
-    "id": 483,
-    "type": "info",
-    "title": "Mutant",
-    "x": -1065,
-    "y": 1295
   },
   {
     "id": 381,
@@ -3911,8 +4142,9 @@
     "id": 383,
     "type": "info",
     "title": "2x Dead Killer Whales",
-    "x": -237,
-    "y": 1425,
+    "x": -234.65,
+    "y": 1421.32,
+    "tp": "goto -234,6 14 1421,3",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Killer_Whale"
   },
   {
@@ -3926,9 +4158,11 @@
   {
     "id": 851,
     "type": "info",
-    "title": "Grave2",
+    "title": "Graves",
+    "description": "3x Graves",
     "x": -286,
     "y": 637,
+    "tp": "goto Grave2",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Gravesites"
   },
   {
@@ -4235,23 +4469,26 @@
   {
     "id": 848,
     "type": "info",
-    "title": "DeadDeer",
+    "title": "Deer corpse",
     "x": -1298,
-    "y": 233
+    "y": 233,
+    "tp": "goto DeadDeer"
   },
   {
     "id": 849,
     "type": "info",
-    "title": "DeadDeer2",
+    "title": "Deer corpse",
     "x": -789,
-    "y": -123
+    "y": -123,
+    "tp": "goto DeadDeer2"
   },
   {
     "id": 850,
     "type": "info",
-    "title": "DeadDeer3",
+    "title": "Deer corpse",
     "x": -1299,
-    "y": 191
+    "y": 191,
+    "tp": "goto DeadDeer3"
   },
   {
     "id": 879,
@@ -4268,6 +4505,37 @@
     "x": 466,
     "y": 1217,
     "screenshot": "yacht_evening_star.webp"
+  },
+  {
+    "id": 920,
+    "type": "info",
+    "title": "Dirt Runway for Aircraft",
+    "x": -894.00,
+    "y": -938.00,
+    "tp": "goto Airstrip"
+  },
+  {
+    "id": 921,
+    "type": "info",
+    "title": "Emergency Raft",
+    "x": -1796.5,
+    "y": 578.4,
+    "items": [
+      8,
+      85
+    ],
+    "tp": "goto RaftDiorama",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Life_Raft"
+  },
+  {
+    "id": 377,
+    "type": "info",
+    "title": "Spaceship",
+    "description": "Might need double teleport",
+    "x": 188.84,
+    "y": -665.57,
+    "warning": "Teleport only after you get inside the cave, otherwise you fall under map",
+    "tp": "goto Spaceship"
   },
   {
     "id": 236,
@@ -4800,7 +5068,8 @@
       15
     ],
     "screenshot": "laser_sight.webp",
-    "tp": "gotocoords -425,2 76,1 702,1",
+    "warning": "Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto -425,2 76,1 702,1",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Laser_Sight"
   },
   {
@@ -4808,22 +5077,26 @@
     "type": "srail",
     "title": "Shotgun Rail",
     "description": "In the right corner of the room",
-    "x": -1175,
-    "y": 26,
+    "x": -1181.75,
+    "y": 28.36,
     "isUnderground": true,
     "requirements": [
       17
     ],
     "screenshot": "shotgun_rail_2.webp",
+    "warning": "Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto -1181,9 66 27,7",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Shotgun_Rail"
   },
   {
     "id": 341,
     "type": "srail",
     "title": "Shotgun Rail",
-    "x": -47,
-    "y": 1454,
+    "description": "Main component for shotgun",
+    "x": -47.62,
+    "y": 1454.07,
     "screenshot": "shotgun_rail_1.webp",
+    "tp": "goto -48,3 17 1454,4",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Shotgun_Rail"
   },
   {
@@ -4853,9 +5126,10 @@
     "id": 847,
     "type": "srail",
     "title": "Shotgun Rail",
-    "x": -1362,
-    "y": 1662,
+    "x": -1362.05,
+    "y": 1662.91,
     "screenshot": "shotgun_rail_5.webp",
+    "tp": "goto -1361,7 91 1663,6",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Shotgun_Rail"
   },
   {
@@ -4863,9 +5137,10 @@
     "type": "prail",
     "title": "Pistol Rail",
     "description": "In hand of dead soldier",
-    "x": -1609,
-    "y": 486,
+    "x": -1609.84,
+    "y": 486.00,
     "screenshot": "pistol_rail_2.webp",
+    "tp": "goto -1610,4 14 486,5",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Pistol_Rail"
   },
   {
@@ -4901,7 +5176,8 @@
     "requirements": [
       11
     ],
-    "screenshot": "flashlight_attachment_1.webp"
+    "screenshot": "flashlight_attachment_1.webp",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Flashlight_Attachment"
   },
   {
     "id": 569,
@@ -4913,7 +5189,8 @@
     "requirements": [
       17
     ],
-    "screenshot": "flashlight_attachment_2.webp"
+    "screenshot": "flashlight_attachment_2.webp",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Flashlight_Attachment"
   },
   {
     "id": 430,
@@ -4936,79 +5213,9 @@
       15
     ],
     "screenshot": "pistol_suppressor_2.webp",
-    "tp": "gotocoords -1126.3 270 -1050,2",
+    "warning": "Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto -1126.3 270 -1050,2",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Silencer"
-  },
-  {
-    "id": 309,
-    "type": "door",
-    "title": "Locked Door",
-    "description": "On the right side in first room",
-    "x": -1018,
-    "y": 1030,
-    "isUnderground": true,
-    "requirements": [
-      17
-    ]
-  },
-  {
-    "id": 313,
-    "type": "door",
-    "title": "Locked Door",
-    "description": "At the end of the flooded corridor",
-    "x": -930,
-    "y": 1024,
-    "isUnderground": true,
-    "requirements": [
-      19
-    ]
-  },
-  {
-    "id": 332,
-    "type": "door",
-    "title": "Locked Door",
-    "description": "At the end of the main corridor",
-    "x": -1149,
-    "y": 51,
-    "isUnderground": true,
-    "requirements": [
-      17
-    ]
-  },
-  {
-    "id": 338,
-    "type": "door",
-    "title": "Locked Door",
-    "description": "At the end of a bar section in Night Club room",
-    "x": -1170,
-    "y": 26,
-    "isUnderground": true,
-    "requirements": [
-      17
-    ]
-  },
-  {
-    "id": 339,
-    "type": "door",
-    "title": "Locked Door",
-    "description": "In the right corner of the pool",
-    "x": -1139,
-    "y": 26,
-    "isUnderground": true,
-    "requirements": [
-      17
-    ]
-  },
-  {
-    "id": 433,
-    "type": "door",
-    "title": "Locked Door",
-    "x": 1142,
-    "y": -608,
-    "isUnderground": true,
-    "requirements": [
-      21
-    ]
   },
   {
     "id": 428,
@@ -5017,7 +5224,7 @@
     "x": -1031.79,
     "y": -625.11,
     "screenshot": "knight_v_1.webp",
-    "tp": "gotocoords -1031 227 -624,8"
+    "tp": "goto -1031 227 -624,8"
   },
   {
     "id": 462,
@@ -5058,7 +5265,7 @@
     "x": -973,
     "y": -783,
     "screenshot": "knight_v_6.webp",
-    "tp": "gotocoords -973 273 -783"
+    "tp": "goto -973 273 -783"
   },
   {
     "id": 572,
@@ -5067,15 +5274,16 @@
     "x": -1132.82,
     "y": -1086.89,
     "screenshot": "knight_v_7.webp",
-    "tp": "gotocoords -1133,2 278,4 -1087,6"
+    "tp": "goto -1133,2 278,4 -1087,6"
   },
   {
     "id": 573,
     "type": "uni",
     "title": "Knight V",
-    "x": 1285,
-    "y": -725,
-    "screenshot": "knight_v_8.webp"
+    "x": 1285.29,
+    "y": -725.34,
+    "screenshot": "knight_v_8.webp",
+    "tp": "goto 846,10 228 -725,7"
   },
   {
     "id": 574,
@@ -5089,8 +5297,9 @@
     "id": 575,
     "type": "uni",
     "title": "Knight V",
-    "x": -238,
-    "y": 951,
+    "x": -238.12,
+    "y": 950.96,
+    "tp": "goto -238 97 950",
     "screenshot": "knight_v_10.webp"
   },
   {
@@ -5098,13 +5307,16 @@
     "type": "vision",
     "title": "Night Vision",
     "description": "On the head of Occultist",
-    "x": -150,
-    "y": -420,
+    "x": -72.21,
+    "y": -471.37,
     "isUnderground": true,
     "requirements": [
       11
     ],
-    "screenshot": "night_vision_1.webp"
+    "screenshot": "night_vision_1.webp",
+    "warning": "Teleport only after you get inside the cave, otherwise you fall under map",
+    "tp": "goto -71,4 149 -470,8",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Night_Vision_Goggles"
   },
   {
     "id": 449,
@@ -5121,9 +5333,10 @@
     "type": "cooking-pot",
     "title": "Cooking Pot",
     "description": "Between Tents",
-    "x": -46,
-    "y": 1456,
+    "x": -46.68,
+    "y": 1456.53,
     "screenshot": "cooking_pot_1.webp",
+    "tp": "goto -47,3 17 1456,1",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Cooking_Pot"
   },
   {
@@ -5141,9 +5354,10 @@
     "type": "cooking-pot",
     "title": "Cooking Pot",
     "description": "Inside campfire",
-    "x": 1283,
-    "y": -727,
+    "x": 1283.00,
+    "y": -727.37,
     "screenshot": "cooking_pot_3.webp",
+    "tp": "goto CookingPotPickup (3)",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Cooking_Pot"
   },
   {
@@ -5236,7 +5450,7 @@
     "x": -931.21,
     "y": -986.96,
     "screenshot": "large_battery_8.webp",
-    "tp": "goto GolfCartBatteryPickup (17)",
+    "tp": "goto -930,2 251 -986,5",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
   {
@@ -5247,7 +5461,7 @@
     "x": -893.24,
     "y": -945.45,
     "screenshot": "large_battery_9.webp",
-    "tp": "goto GolfCartBatteryPickup (15) / (16)",
+    "tp": "goto -894,2 251 -945,6",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
   {
@@ -5262,7 +5476,8 @@
       15
     ],
     "screenshot": "large_battery_10.webp",
-    "tp": "gotocoords -1140,7 270 -1039,5",
+    "warning": "Teleporting to this battery will teleport you to the generator, not the battery!",
+    "tp": "goto -1140,7 270 -1039,5",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
   {
@@ -5277,29 +5492,173 @@
       15
     ],
     "screenshot": "large_battery_11.webp",
-    "tp": "gotocoords -419 76,1 715,4",
+    "warning": "Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto -419 76,1 715,4",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
+  },
+  {
+    "id": 339,
+    "type": "large-battery",
+    "title": "2x Golf Cart Batteries",
+    "x": -480.30,
+    "y": 706.72,
+    "screenshot": "large_battery_12.webp",
+    "tp": "goto -481 86 706,5",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
+  },
+  {
+    "id": 332,
+    "type": "large-battery",
+    "title": "Golf Cart Battery",
+    "x": -486.14,
+    "y": 720.87,
+    "screenshot": "large_battery_13.webp",
+    "tp": "goto -486,5 86 720,2",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
+  },
+  {
+    "id": 317,
+    "type": "large-battery",
+    "title": "Golf Cart Battery",
+    "x": 1109.56,
+    "y": 1013.41,
+    "screenshot": "large_battery_14.webp",
+    "tp": "goto 1110,7 128 1013,7",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
+  },
+  {
+    "id": 313,
+    "type": "large-battery",
+    "title": "Golf Cart Battery",
+    "x": 1109.26,
+    "y": 1000.20,
+    "screenshot": "large_battery_15.webp",
+    "tp": "goto 1108 128 1000,4",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
+  },
+  {
+    "id": 309,
+    "type": "large-battery",
+    "title": "Golf Cart Battery",
+    "x": 1139.52,
+    "y": 1062.08,
+    "isUnderground": true,
+    "requirements": [
+      15
+    ],
+    "screenshot": "large_battery_16.webp",
+    "warning": "Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto 1139,6 119 1061,1",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
+  },
+  {
+    "id": 91,
+    "type": "large-battery",
+    "title": "Golf Cart Battery",
+    "x": -974.52,
+    "y": 133.49,
+    "screenshot": "large_battery_17.webp",
+    "tp": "goto -973,8 96 134,3",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
+  },
+  {
+    "id": 925,
+    "type": "large-battery",
+    "title": "Golf Cart Battery",
+    "x": -981.15,
+    "y": 135.76,
+    "screenshot": "large_battery_18.webp",
+    "tp": "goto -981,9 95 135,1",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
+  },
+  {
+    "id": 856,
+    "type": "large-battery",
+    "title": "Golf Cart Battery",
+    "x": -1013,
+    "y": 1018,
+    "screenshot": "large_battery_19.webp",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
+  },
+  {
+    "id": 386,
+    "type": "large-battery",
+    "title": "Golf Cart Battery",
+    "x": 1683.96,
+    "y": 1013.50,
+    "screenshot": "large_battery_20.webp",
+    "tp": "goto 1684,9 28,4 1013,4",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
+  },
+  {
+    "id": 388,
+    "type": "large-battery",
+    "title": "Golf Cart Battery",
+    "x": 1690.74,
+    "y": 1038.19,
+    "screenshot": "large_battery_21.webp",
+    "tp": "goto 1691,6 28,4 1038,2",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
+  },
+  {
+    "id": 438,
+    "type": "large-battery",
+    "title": "2x Golf Cart Batteries",
+    "x": 1823.38,
+    "y": -492.37,
+    "screenshot": "large_battery_22.webp",
+    "tp": "goto 1823,4 49 -492,4",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
+  },
+  {
+    "id": 433,
+    "type": "solar-panel",
+    "title": "2x Solar Panels",
+    "description": "Two solar pannels on opposite corners each",
+    "x": -415.51,
+    "y": 709.07,
+    "isUnderground": true,
+    "requirements": [
+      15
+    ],
+    "warning":"Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto -416,1 76,1 709",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Solar_Panel"
+  },
+  {
+    "id": 483,
+    "type": "solar-panel",
+    "title": "Solar Panel",
+    "x": -1194.03,
+    "y": 79.91,
+    "isUnderground": true,
+    "warning": "Teleport only after you get inside the bunker, otherwise you fall under map",
+    "tp": "goto -1194,8 270 79",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Solar_Panel"
   },
   {
     "id": 902,
     "type": "radio",
     "title": "Radio",
     "x": -1030,
-    "y": -621
+    "y": -621,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
   {
     "id": 903,
     "type": "radio",
     "title": "Radio",
     "x": -1255,
-    "y": -597
+    "y": -597,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
   {
     "id": 905,
     "type": "radio",
     "title": "Radio",
     "x": -1388,
-    "y": -220
+    "y": -220,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
   {
     "id": 911,
@@ -5307,7 +5666,8 @@
     "title": "Radio",
     "x": -1120,
     "y": 1629,
-    "screenshot": "radio_4.webp"
+    "screenshot": "radio_4.webp",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
   {
     "id": 913,
@@ -5315,31 +5675,28 @@
     "title": "Radio",
     "x": -1085,
     "y": 1281,
-    "screenshot": "radio_5.webp"
+    "screenshot": "radio_5.webp",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
   {
     "id": 914,
     "type": "radio",
     "title": "Radio",
-    "x": -1608,
-    "y": 487,
-    "screenshot": "radio_6.webp"
+    "x": -1607.93,
+    "y": 487.31,
+    "screenshot": "radio_6.webp",
+    "tp": "goto -1608,8 14 488,1",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
   {
     "id": 862,
     "type": "radio",
     "title": "Radio",
+    "description": "8x pcs.",
     "x": -1208,
     "y": 659,
-    "screenshot": "radio_7.webp"
-  },
-  {
-    "id": 856,
-    "type": "radio",
-    "title": "Radio",
-    "x": -1013,
-    "y": 1018,
-    "screenshot": "radio_8.webp"
+    "screenshot": "radio_7.webp",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
   {
     "id": 863,
@@ -5348,15 +5705,18 @@
     "x": -700,
     "y": 448,
     "screenshot": "radio_9.webp",
-    "tp": "goto Radio (2)"
+    "tp": "goto Radio (2)",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
   {
     "id": 859,
     "type": "radio",
     "title": "Radio",
-    "x": -235,
-    "y": 947,
-    "screenshot": "radio_10.webp"
+    "x": -235.56,
+    "y": 946.67,
+    "screenshot": "radio_10.webp",
+    "tp": "goto -236,6 97 946,8",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
   {
     "id": 918,
@@ -5364,1579 +5724,1823 @@
     "title": "3x Radios",
     "x": -734,
     "y": 30,
-    "screenshot": "radio_11.webp"
+    "screenshot": "radio_11.webp",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
+  },
+  {
+    "id": 378,
+    "type": "radio",
+    "title": "Radio",
+    "x": -598.86,
+    "y": 1448.47,
+    "isUnderground": true,
+    "screenshot": "radio_12.webp",
+    "warning": "Teleport only after you get inside the cave, otherwise you fall under map",
+    "tp": "goto -598,6 23 1447,4",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
+  },
+  {
+    "id": 922,
+    "type": "radio",
+    "title": "Radio",
+    "x": -1117.67,
+    "y": 7.83,
+    "isUnderground": true,
+    "requirements": [
+      17
+    ],
+    "screenshot": "radio_13.webp",
+    "warning": "Teleport only after you get inside the cave, otherwise you fall under map",
+    "tp": "goto -1117 59 7,2",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
   {
     "id": 597,
     "type": "lake",
-    "title": "FrozenLake",
+    "title": "Lake",
     "x": -162.53,
-    "y": -87.16
+    "y": -87.16,
+    "tp": "goto FrozenLake"
   },
   {
     "id": 598,
     "type": "lake",
-    "title": "GolfPondA",
+    "title": "Lake",
     "x": 813.12,
-    "y": 1345.84
+    "y": 1345.84,
+    "tp": "goto GolfPondA"
   },
   {
     "id": 599,
     "type": "lake",
-    "title": "GolfPondB",
+    "title": "Lake",
     "x": 799.19,
-    "y": 1516.01
+    "y": 1516.01,
+    "tp": "goto GolfPondB"
   },
   {
     "id": 600,
     "type": "lake",
-    "title": "GolfPondC",
+    "title": "Lake",
     "x": 1027.02,
-    "y": 1609.61
+    "y": 1609.61,
+    "tp": "goto GolfPondC"
   },
   {
     "id": 601,
     "type": "lake",
-    "title": "GolfPondD",
+    "title": "Lake",
     "x": 1427.23,
-    "y": 1741.26
+    "y": 1741.26,
+    "tp": "goto GolfPondD"
   },
   {
     "id": 602,
     "type": "lake",
-    "title": "GolfPondE",
+    "title": "Lake",
     "x": 1242.23,
-    "y": 1200.8
+    "y": 1200.8,
+    "tp": "goto GolfPondE"
   },
   {
     "id": 603,
     "type": "lake",
-    "title": "GolfPondF",
+    "title": "Lake",
     "x": 1364.2,
-    "y": 1559.41
+    "y": 1559.41,
+    "tp": "goto GolfPondF"
   },
   {
     "id": 604,
     "type": "lake",
-    "title": "LakeAA",
+    "title": "Lake",
     "x": 654.97,
-    "y": -758.16
+    "y": -758.16,
+    "tp": "goto LakeAA"
   },
   {
     "id": 605,
     "type": "lake",
-    "title": "LakeAB",
+    "title": "Lake",
     "x": 753.95,
-    "y": -870.09
+    "y": -870.09,
+    "tp": "goto LakeAB"
   },
   {
     "id": 606,
     "type": "lake",
-    "title": "LakeAC",
+    "title": "Lake",
     "x": 1399.55,
-    "y": -1533.64
+    "y": -1533.64,
+    "tp": "goto LakeAC"
   },
   {
     "id": 607,
     "type": "lake",
-    "title": "LakeAD",
+    "title": "Lake",
     "x": 1260.26,
-    "y": -1468.7
+    "y": -1468.7,
+    "tp": "goto LakeAD"
   },
   {
     "id": 608,
     "type": "lake",
-    "title": "LakeAE",
+    "title": "Lake",
     "x": 1551.52,
-    "y": 989.79
+    "y": 989.79,
+    "tp": "goto LakeAE"
   },
   {
     "id": 609,
     "type": "lake",
-    "title": "LakeAF",
+    "title": "Lake",
     "description": "Home for Turtles, Salmon and frogs",
     "x": 197.3,
-    "y": 1336.33
+    "y": 1336.33,
+    "tp": "goto LakeAF"
   },
   {
     "id": 610,
     "type": "lake",
-    "title": "LakeAG",
+    "title": "Lake",
     "x": 693.66,
-    "y": 1098.77
+    "y": 1098.77,
+    "tp": "goto LakeAG"
   },
   {
     "id": 611,
     "type": "lake",
-    "title": "LakeAGroup",
+    "title": "Lake",
     "x": -954.22,
-    "y": -27.52
+    "y": -27.52,
+    "tp": "goto LakeAGroup"
   },
   {
     "id": 612,
     "type": "lake",
-    "title": "LakeBA",
+    "title": "Lake",
     "x": 1609.14,
-    "y": 769.88
+    "y": 769.88,
+    "tp": "goto LakeBA"
   },
   {
     "id": 613,
     "type": "lake",
-    "title": "LakeBB",
+    "title": "Lake",
     "x": 1310.96,
-    "y": 515.91
+    "y": 515.91,
+    "tp": "goto LakeBB"
   },
   {
     "id": 614,
     "type": "lake",
-    "title": "LakeBC",
+    "title": "Lake",
     "x": -7.5,
-    "y": 1303.31
+    "y": 1303.31,
+    "tp": "goto LakeBC"
   },
   {
     "id": 615,
     "type": "lake",
-    "title": "LakeBD",
+    "title": "Lake",
     "description": "Home for Salmon",
     "x": 66.1,
-    "y": 897.08
+    "y": 897.08,
+    "tp": "goto LakeBD"
   },
   {
     "id": 616,
     "type": "lake",
-    "title": "LakeBE",
+    "title": "Lake",
     "description": "Home for Turtles and Salmon",
     "x": -234.56,
-    "y": 726.6
+    "y": 726.6,
+    "tp": "goto LakeBE"
   },
   {
     "id": 617,
     "type": "lake",
-    "title": "LakeC",
+    "title": "Lake",
     "description": "Home for Salmon",
     "x": 9.82,
-    "y": 1096.42
+    "y": 1096.42,
+    "tp": "goto LakeC"
   },
   {
     "id": 618,
     "type": "lake",
-    "title": "LakeDA",
+    "title": "Lake",
     "x": -1390.05,
-    "y": -1207.09
+    "y": -1207.09,
+    "tp": "goto LakeDA"
   },
   {
     "id": 619,
     "type": "lake",
-    "title": "LakeDB",
+    "title": "Lake",
     "x": -1311.06,
-    "y": -1039.48
+    "y": -1039.48,
+    "tp": "goto LakeDB"
   },
   {
     "id": 620,
     "type": "lake",
-    "title": "LakeDC",
+    "title": "Lake",
     "description": "Home for Salmon",
     "x": -799.01,
-    "y": -1598.41
+    "y": -1598.41,
+    "tp": "goto LakeDC"
   },
   {
     "id": 621,
     "type": "lake",
-    "title": "LakeDD",
+    "title": "Lake",
     "description": "Home for Salmon",
     "x": -1013.07,
-    "y": -1309.91
+    "y": -1309.91,
+    "tp": "goto LakeDD"
   },
   {
     "id": 622,
     "type": "lake",
-    "title": "LakeDE",
+    "title": "Lake",
     "x": -933.6,
-    "y": -1328.28
+    "y": -1328.28,
+    "tp": "goto LakeDE"
   },
   {
     "id": 623,
     "type": "lake",
-    "title": "LakeDF",
+    "title": "Lake",
     "description": "Home for Salmon and frogs",
     "x": -854.49,
-    "y": -1363.6
+    "y": -1363.6,
+    "tp": "goto LakeDF"
   },
   {
     "id": 624,
     "type": "lake",
-    "title": "LakeDG",
+    "title": "Lake",
     "x": -1808.12,
-    "y": -288.01
+    "y": -288.01,
+    "tp": "goto LakeDG"
   },
   {
     "id": 625,
     "type": "lake",
-    "title": "LakeDH",
+    "title": "Lake",
     "x": -1644.46,
-    "y": -801.71
+    "y": -801.71,
+    "tp": "goto LakeDH"
   },
   {
     "id": 626,
     "type": "lake",
-    "title": "LakeDI",
+    "title": "Lake",
     "x": -1632.31,
-    "y": -318.23
+    "y": -318.23,
+    "tp": "goto LakeDI"
   },
   {
     "id": 627,
     "type": "lake",
-    "title": "LakeDJ",
+    "title": "Lake",
     "x": -1648.49,
-    "y": -19.18
+    "y": -19.18,
+    "tp": "goto LakeDJ"
   },
   {
     "id": 628,
     "type": "lake",
-    "title": "LakeDK",
+    "title": "Lake",
     "x": -1250.37,
-    "y": -1201.05
+    "y": -1201.05,
+    "tp": "goto LakeDK"
   },
   {
     "id": 629,
     "type": "lake",
-    "title": "LakeDL",
+    "title": "Lake",
     "description": "Home for Turtles, Salmon and frogs",
     "x": -1340.91,
-    "y": -1625.27
+    "y": -1625.27,
+    "tp": "goto LakeDL"
   },
   {
     "id": 630,
     "type": "lake",
-    "title": "LakeDM",
+    "title": "Lake",
     "x": -1128.36,
-    "y": -932.28
+    "y": -932.28,
+    "tp": "goto LakeDM"
   },
   {
     "id": 631,
     "type": "lake",
-    "title": "LakeDN",
+    "title": "Lake",
     "description": "Home for frogs",
     "x": -931.29,
-    "y": 1724.73
+    "y": 1724.73,
+    "tp": "goto LakeDN"
   },
   {
     "id": 632,
     "type": "lake",
-    "title": "LakeDO",
+    "title": "Lake",
     "description": "Home for Turtles, Salmon and frogs",
     "x": -1054.41,
-    "y": -1573.08
+    "y": -1573.08,
+    "tp": "goto LakeDO"
   },
   {
     "id": 633,
     "type": "pond",
-    "title": "LakeDP",
+    "title": "Pond",
     "x": -446.6,
-    "y": -885.85
+    "y": -885.85,
+    "tp": "goto LakeDP"
   },
   {
     "id": 634,
     "type": "lake",
-    "title": "LakeDQ",
+    "title": "Lake",
     "x": -730.05,
-    "y": -730.17
+    "y": -730.17,
+    "tp": "goto LakeDQ"
   },
   {
     "id": 635,
     "type": "lake",
-    "title": "LakeDR",
+    "title": "Lake",
     "description": "home to Salmon and frogs",
     "x": -1062.17,
-    "y": 1428.28
+    "y": 1428.28,
+    "tp": "goto LakeDR"
   },
   {
     "id": 636,
     "type": "lake",
-    "title": "LakeDS",
+    "title": "Lake",
     "x": -840.85,
-    "y": 1294.58
+    "y": 1294.58,
+    "tp": "goto LakeDS"
   },
   {
     "id": 637,
     "type": "lake",
-    "title": "LakeDT",
+    "title": "Lake",
     "x": -1422.38,
-    "y": 1644.3
+    "y": 1644.3,
+    "tp": "goto LakeDT"
   },
   {
     "id": 638,
     "type": "lake",
-    "title": "LakeDU",
+    "title": "Lake",
     "description": "Home for Salmon",
     "x": -1550.93,
-    "y": 1199.56
+    "y": 1199.56,
+    "tp": "goto LakeDU"
   },
   {
     "id": 639,
     "type": "lake",
-    "title": "LakeDV",
+    "title": "Lake",
     "x": -994.94,
-    "y": 387.67
+    "y": 387.67,
+    "tp": "goto LakeDV"
   },
   {
     "id": 640,
     "type": "lake",
-    "title": "LakeDW",
+    "title": "Lake",
     "description": "Home for Salmon",
     "x": -1240.23,
-    "y": 890.52
+    "y": 890.52,
+    "tp": "goto LakeDW"
   },
   {
     "id": 641,
     "type": "lake",
-    "title": "LakeDX",
+    "title": "Lake",
     "x": 1722.39,
-    "y": -97.81
+    "y": -97.81,
+    "tp": "goto LakeDX"
   },
   {
     "id": 642,
     "type": "lake",
-    "title": "LakeDY",
+    "title": "Lake",
     "x": 1194.86,
-    "y": -20.77
+    "y": -20.77,
+    "tp": "goto LakeDY"
   },
   {
     "id": 643,
     "type": "lake",
-    "title": "LakeDZ",
+    "title": "Lake",
     "x": 973.8,
-    "y": -1007.91
+    "y": -1007.91,
+    "tp": "goto LakeDZ"
   },
   {
     "id": 644,
     "type": "lake",
-    "title": "LakeE",
+    "title": "Lake",
     "x": 275.55,
-    "y": -308.87
+    "y": -308.87,
+    "tp": "goto LakeE"
   },
   {
     "id": 872,
     "type": "lake",
-    "title": "LakeEA",
+    "title": "Lake",
     "x": 1128,
-    "y": 797
+    "y": 797,
+    "tp": "goto LakeEA"
   },
   {
     "id": 873,
     "type": "lake",
-    "title": "LakeEB",
+    "title": "Lake",
     "x": 1232,
-    "y": 870
+    "y": 870,
+    "tp": "goto LakeEB"
   },
   {
     "id": 874,
     "type": "lake",
-    "title": "LakeEC",
+    "title": "Lake",
     "x": 1624,
-    "y": 250
+    "y": 250,
+    "tp": "goto LakeEC"
   },
   {
     "id": 874,
     "type": "lake",
-    "title": "LakeED",
+    "title": "Lake",
     "description": "Hot Spring",
     "x": 897,
-    "y": 377
+    "y": 377,
+    "tp": "goto LakeED"
   },
   {
     "id": 842,
     "type": "lake",
-    "title": "LakeEE",
+    "title": "Lake",
     "description": "Hot Spring",
     "x": 458.6,
-    "y": 518.4
+    "y": 518.4,
+    "tp": "goto LakeEE"
   },
   {
     "id": 843,
     "type": "lake",
-    "title": "LakeEF",
+    "title": "Lake",
     "description": "Hot Spring",
     "x": 1716,
-    "y": 419
+    "y": 419,
+    "tp": "goto LakeEF"
   },
   {
     "id": 844,
     "type": "lake",
-    "title": "LakeEG",
+    "title": "Lake",
     "description": "Hot Spring",
     "x": 209,
-    "y": -914
+    "y": -914,
+    "tp": "goto LakeEG"
   },
   {
     "id": 645,
     "type": "lake",
-    "title": "LakeF",
+    "title": "Lake",
     "x": -979.93,
-    "y": -733.51
+    "y": -733.51,
+    "tp": "goto LakeF"
   },
   {
     "id": 646,
     "type": "lake",
-    "title": "LakeG",
+    "title": "Lake",
     "description": "Home for frogs",
     "x": -1274.55,
-    "y": -643.26
+    "y": -643.26,
+    "tp": "goto LakeG"
   },
   {
     "id": 647,
     "type": "lake",
-    "title": "LakeH",
+    "title": "Lake",
     "description": "home to Salmon and frogs",
     "x": -984.47,
-    "y": 762.61
+    "y": 762.61,
+    "tp": "goto LakeH"
   },
   {
     "id": 648,
     "type": "lake",
-    "title": "LakeI",
+    "title": "Lake",
     "x": 565.67,
-    "y": -1485.55
+    "y": -1485.55,
+    "tp": "goto LakeI"
   },
   {
     "id": 649,
     "type": "lake",
-    "title": "LakeJ",
+    "title": "Lake",
     "x": 569.81,
-    "y": -1225.34
+    "y": -1225.34,
+    "tp": "goto LakeJ"
   },
   {
     "id": 650,
     "type": "lake",
-    "title": "LakeK",
+    "title": "Lake",
     "x": 1585.71,
-    "y": -1135.85
+    "y": -1135.85,
+    "tp": "goto LakeK"
   },
   {
     "id": 651,
     "type": "lake",
-    "title": "LakeL",
+    "title": "Lake",
     "x": -667.54,
-    "y": -632.04
+    "y": -632.04,
+    "tp": "goto LakeL"
   },
   {
     "id": 652,
     "type": "lake",
-    "title": "LakeM",
+    "title": "Lake",
     "description": "Home for Salmon",
     "x": -1178.61,
-    "y": -1353.56
+    "y": -1353.56,
+    "tp": "goto LakeM"
   },
   {
     "id": 653,
     "type": "lake",
-    "title": "LakeMAA",
+    "title": "Lake",
     "x": 713.93,
-    "y": -1657.23
+    "y": -1657.23,
+    "tp": "goto LakeMAA"
   },
   {
     "id": 654,
     "type": "lake",
-    "title": "LakeMAB",
+    "title": "Lake",
     "x": 1212.75,
-    "y": -1609.02
+    "y": -1609.02,
+    "tp": "goto LakeMAB"
   },
   {
     "id": 655,
     "type": "lake",
-    "title": "LakeMAC",
+    "title": "Lake",
     "x": -941.41,
-    "y": 152.04
+    "y": 152.04,
+    "tp": "goto LakeMAC"
   },
   {
     "id": 656,
     "type": "lake",
-    "title": "LakeN",
+    "title": "Lake",
     "x": 1005.66,
-    "y": -573.35
+    "y": -573.35,
+    "tp": "goto LakeN"
   },
   {
     "id": 657,
     "type": "lake",
-    "title": "LakeO",
+    "title": "Lake",
     "x": 1332.07,
-    "y": -101.38
+    "y": -101.38,
+    "tp": "goto LakeO"
   },
   {
     "id": 658,
     "type": "pond",
-    "title": "LakeP",
+    "title": "Pond",
     "x": -1317.15,
-    "y": 1297.25
+    "y": 1297.25,
+    "tp": "goto LakeP"
   },
   {
     "id": 659,
     "type": "pond",
-    "title": "LakePAA",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": -1587.69,
-    "y": 248.1
+    "y": 248.1,
+    "tp": "goto LakePAA"
   },
   {
     "id": 660,
     "type": "pond",
-    "title": "LakePAB",
+    "title": "Pond",
     "description": "home for Turtles",
     "x": -1718.8,
-    "y": 67.67
+    "y": 67.67,
+    "tp": "goto LakePAB"
   },
   {
     "id": 661,
     "type": "pond",
-    "title": "LakePAC",
+    "title": "Pond",
     "x": -1473.42,
-    "y": 856.22
+    "y": 856.22,
+    "tp": "goto LakePAC"
   },
   {
     "id": 662,
     "type": "pond",
-    "title": "LakePAD",
+    "title": "Pond",
     "x": -1728.95,
-    "y": -271.79
+    "y": -271.79,
+    "tp": "goto LakePAD"
   },
   {
     "id": 663,
     "type": "pond",
-    "title": "LakePAE",
+    "title": "Pond",
     "x": -1382.02,
-    "y": 1496.44
+    "y": 1496.44,
+    "tp": "goto LakePAE"
   },
   {
     "id": 664,
     "type": "pond",
-    "title": "LakePAF",
+    "title": "Pond",
     "x": -1471.94,
-    "y": 1117.37
+    "y": 1117.37,
+    "tp": "goto LakePAF"
   },
   {
     "id": 665,
     "type": "pond",
-    "title": "LakePAG",
+    "title": "Pond",
     "x": -238.32,
-    "y": -1662.32
+    "y": -1662.32,
+    "tp": "goto LakePAG"
   },
   {
     "id": 666,
     "type": "pond",
-    "title": "LakePAH",
+    "title": "Pond",
     "x": -285,
-    "y": -1469.2
+    "y": -1469.2,
+    "tp": "goto LakePAH"
   },
   {
     "id": 667,
     "type": "pond",
-    "title": "LakePAI",
+    "title": "Pond",
     "x": 147.65,
-    "y": -1589.94
+    "y": -1589.94,
+    "tp": "goto LakePAI"
   },
   {
     "id": 668,
     "type": "pond",
-    "title": "LakePAJ",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": -1113.34,
-    "y": -1088.08
+    "y": -1088.08,
+    "tp": "goto LakePAJ"
   },
   {
     "id": 669,
     "type": "pond",
-    "title": "LakePAK",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": -1182.17,
-    "y": -1589.47
+    "y": -1589.47,
+    "tp": "goto LakePAK"
   },
   {
     "id": 670,
     "type": "pond",
-    "title": "LakePAL",
+    "title": "Pond",
     "x": 274.8,
-    "y": -1748.2
+    "y": -1748.2,
+    "tp": "goto LakePAL"
   },
   {
     "id": 671,
     "type": "pond",
-    "title": "LakePAM",
+    "title": "Pond",
     "x": 261.9,
-    "y": -1777.5
+    "y": -1777.5,
+    "tp": "goto LakePAM"
   },
   {
     "id": 672,
     "type": "pond",
-    "title": "LakePAN",
+    "title": "Pond",
     "x": 292,
-    "y": -1786.4
+    "y": -1786.4,
+    "tp": "goto LakePAN"
   },
   {
     "id": 673,
     "type": "pond",
-    "title": "LakePAO",
+    "title": "Pond",
     "x": 720.8,
-    "y": 829.9
+    "y": 829.9,
+    "tp": "goto LakePAO"
   },
   {
     "id": 674,
     "type": "pond",
-    "title": "LakePAP",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": 191.3,
-    "y": 1262.4
+    "y": 1262.4,
+    "tp": "goto LakePAP"
   },
   {
     "id": 675,
     "type": "pond",
-    "title": "LakePAQ",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": -299.64,
-    "y": 962.66
+    "y": 962.66,
+    "tp": "goto LakePAQ"
   },
   {
     "id": 676,
     "type": "pond",
-    "title": "LakePAR",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": -157.78,
-    "y": 1195.66
+    "y": 1195.66,
+    "tp": "goto LakePAR"
   },
   {
     "id": 677,
     "type": "pond",
-    "title": "LakePAS",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": -175.3,
-    "y": 935.77
+    "y": 935.77,
+    "tp": "goto LakePAS"
   },
   {
     "id": 678,
     "type": "pond",
-    "title": "LakePAT",
+    "title": "Pond",
     "x": -37.96,
-    "y": 672.56
+    "y": 672.56,
+    "tp": "goto LakePAT"
   },
   {
     "id": 679,
     "type": "pond",
-    "title": "LakePAU",
+    "title": "Pond",
     "x": -385.68,
-    "y": 522.41
+    "y": 522.41,
+    "tp": "goto LakePAU"
   },
   {
     "id": 680,
     "type": "pond",
-    "title": "LakePAV",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": -330.5,
-    "y": 897.7
+    "y": 897.7,
+    "tp": "goto LakePAV"
   },
   {
     "id": 681,
     "type": "pond",
-    "title": "LakePAW",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": -329.45,
-    "y": 1136.49
+    "y": 1136.49,
+    "tp": "goto LakePAW"
   },
   {
     "id": 682,
     "type": "pond",
-    "title": "LakePAX",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": -204.12,
-    "y": 1094.43
+    "y": 1094.43,
+    "tp": "goto LakePAX"
   },
   {
     "id": 683,
     "type": "pond",
-    "title": "LakePAY",
+    "title": "Pond",
     "x": 1296.21,
-    "y": -801.79
+    "y": -801.79,
+    "tp": "goto LakePAY"
   },
   {
     "id": 684,
     "type": "pond",
-    "title": "LakePAZ",
+    "title": "Pond",
     "x": 1451.41,
-    "y": -423.99
+    "y": -423.99,
+    "tp": "goto LakePAZ"
   },
   {
     "id": 685,
     "type": "pond",
-    "title": "LakePBA",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": -886.78,
-    "y": -1648.89
+    "y": -1648.89,
+    "tp": "goto LakePBA"
   },
   {
     "id": 686,
     "type": "pond",
-    "title": "LakePBB",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": -840.46,
-    "y": -1171.62
+    "y": -1171.62,
+    "tp": "goto LakePBB"
   },
   {
     "id": 687,
     "type": "pond",
-    "title": "LakePBC",
+    "title": "Pond",
     "x": -775.6,
-    "y": -918.3
+    "y": -918.3,
+    "tp": "goto LakePBC"
   },
   {
     "id": 688,
     "type": "pond",
-    "title": "LakePBD",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": -878.13,
-    "y": -1018.59
+    "y": -1018.59,
+    "tp": "goto LakePBD"
   },
   {
     "id": 689,
     "type": "pond",
-    "title": "LakePBE",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": -1058.75,
-    "y": -1483.12
+    "y": -1483.12,
+    "tp": "goto LakePBE"
   },
   {
     "id": 690,
     "type": "pond",
-    "title": "LakePBF",
+    "title": "Pond",
     "x": -1413.58,
-    "y": -1352.36
+    "y": -1352.36,
+    "tp": "goto LakePBF"
   },
   {
     "id": 691,
     "type": "pond",
-    "title": "LakePBG",
+    "title": "Pond",
     "x": -885.04,
-    "y": -1470.41
+    "y": -1470.41,
+    "tp": "goto LakePBG"
   },
   {
     "id": 692,
     "type": "pond",
-    "title": "LakePBH",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": -1094.88,
-    "y": -1657.38
+    "y": -1657.38,
+    "tp": "goto LakePBH"
   },
   {
     "id": 693,
     "type": "pond",
-    "title": "LakePBI",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": -1626.58,
-    "y": -1620.02
+    "y": -1620.02,
+    "tp": "goto LakePBI"
   },
   {
     "id": 694,
     "type": "pond",
-    "title": "LakePBJ",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": -1620.41,
-    "y": -1265.03
+    "y": -1265.03,
+    "tp": "goto LakePBJ"
   },
   {
     "id": 695,
     "type": "pond",
-    "title": "LakePBK",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": -1619.37,
-    "y": -963.14
+    "y": -963.14,
+    "tp": "goto LakePBK"
   },
   {
     "id": 696,
     "type": "pond",
-    "title": "LakePBL",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": -1681.02,
-    "y": -557.94
+    "y": -557.94,
+    "tp": "goto LakePBL"
   },
   {
     "id": 697,
     "type": "pond",
-    "title": "LakePBM",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": -1318.15,
-    "y": -1848.16
+    "y": -1848.16,
+    "tp": "goto LakePBM"
   },
   {
     "id": 698,
     "type": "pond",
-    "title": "LakePBN",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": -899.94,
-    "y": -1858.41
+    "y": -1858.41,
+    "tp": "goto LakePBN"
   },
   {
     "id": 699,
     "type": "pond",
-    "title": "LakePBO",
+    "title": "Pond",
     "x": -802.94,
-    "y": -829.4
+    "y": -829.4,
+    "tp": "goto LakePBO"
   },
   {
     "id": 700,
     "type": "pond",
-    "title": "LakePBP",
+    "title": "Pond",
     "x": -991.65,
-    "y": -926.74
+    "y": -926.74,
+    "tp": "goto LakePBP"
   },
   {
     "id": 701,
     "type": "pond",
-    "title": "LakePBQ",
+    "title": "Pond",
     "x": -524.72,
-    "y": -1586.94
+    "y": -1586.94,
+    "tp": "goto LakePBQ"
   },
   {
     "id": 702,
     "type": "pond",
-    "title": "LakePBR",
+    "title": "Pond",
     "x": -528.4,
-    "y": -1444.87
+    "y": -1444.87,
+    "tp": "goto LakePBR"
   },
   {
     "id": 703,
     "type": "pond",
-    "title": "LakePBS",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": -857.5,
-    "y": 1569
+    "y": 1569,
+    "tp": "goto LakePBS"
   },
   {
     "id": 704,
     "type": "pond",
-    "title": "LakePBT",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": -847.09,
-    "y": 1440.49
+    "y": 1440.49,
+    "tp": "goto LakePBT"
   },
   {
     "id": 705,
     "type": "pond",
-    "title": "LakePBU",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": -719.94,
-    "y": 882.1
+    "y": 882.1,
+    "tp": "goto LakePBU"
   },
   {
     "id": 706,
     "type": "pond",
-    "title": "LakePBV",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": -788.19,
-    "y": 615.93
+    "y": 615.93,
+    "tp": "goto LakePBV"
   },
   {
     "id": 707,
     "type": "pond",
-    "title": "LakePBW",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": -616.84,
-    "y": 1205.04
+    "y": 1205.04,
+    "tp": "goto LakePBW"
   },
   {
     "id": 708,
     "type": "pond",
-    "title": "LakePBX",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": -1307.47,
-    "y": 1101.91
+    "y": 1101.91,
+    "tp": "goto LakePBX"
   },
   {
     "id": 709,
     "type": "pond",
-    "title": "LakePBY",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": -878.3,
-    "y": 949
+    "y": 949,
+    "tp": "goto LakePBY"
   },
   {
     "id": 710,
     "type": "pond",
-    "title": "LakePBZ",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": -1198.04,
-    "y": 439.72
+    "y": 439.72,
+    "tp": "goto LakePBZ"
   },
   {
     "id": 711,
     "type": "pond",
-    "title": "LakePCA",
+    "title": "Pond",
     "x": 1561.9,
-    "y": -514.8
+    "y": -514.8,
+    "tp": "goto LakePCA"
   },
   {
     "id": 712,
     "type": "pond",
-    "title": "LakePCB",
+    "title": "Pond",
     "x": 1552.38,
-    "y": -398.3
+    "y": -398.3,
+    "tp": "goto LakePCB"
   },
   {
     "id": 713,
     "type": "pond",
-    "title": "LakePCC",
+    "title": "Pond",
     "x": 1630.12,
-    "y": 26.41
+    "y": 26.41,
+    "tp": "goto LakePCC"
   },
   {
     "id": 714,
     "type": "pond",
-    "title": "LakePCD",
+    "title": "Pond",
     "x": 1831.09,
-    "y": -447.59
+    "y": -447.59,
+    "tp": "goto LakePCD"
   },
   {
     "id": 715,
     "type": "pond",
-    "title": "LakePCE",
+    "title": "Pond",
     "x": 1660.48,
-    "y": 377.71
+    "y": 377.71,
+    "tp": "goto LakePCE"
   },
   {
     "id": 716,
     "type": "pond",
-    "title": "LakePCF",
+    "title": "Pond",
     "x": 1193.6,
-    "y": 804.2
+    "y": 804.2,
+    "tp": "goto LakePCF"
   },
   {
     "id": 717,
     "type": "pond",
-    "title": "LakePCG",
+    "title": "Pond",
     "x": 1173.91,
-    "y": 653.56
+    "y": 653.56,
+    "tp": "goto LakePCG"
   },
   {
     "id": 718,
     "type": "lake",
-    "title": "LakePCH",
+    "title": "Lake",
     "x": 1552.9,
-    "y": 516.5
+    "y": 516.5,
+    "tp": "goto LakePCH"
   },
   {
     "id": 719,
     "type": "pond",
-    "title": "LakePCI",
+    "title": "Pond",
     "x": 1725.49,
-    "y": -287.78
+    "y": -287.78,
+    "tp": "goto LakePCI"
   },
   {
     "id": 720,
     "type": "pond",
-    "title": "LakePCJ",
+    "title": "Pond",
     "x": 1562.09,
-    "y": -272.39
+    "y": -272.39,
+    "tp": "goto LakePCJ"
   },
   {
     "id": 721,
     "type": "pond",
-    "title": "LakePCK",
+    "title": "Pond",
     "x": 1468.9,
-    "y": -597
+    "y": -597,
+    "tp": "goto LakePCK"
   },
   {
     "id": 722,
     "type": "pond",
-    "title": "LakePCL",
+    "title": "Pond",
     "x": 1064.3,
-    "y": -107.6
+    "y": -107.6,
+    "tp": "goto LakePCL"
   },
   {
     "id": 723,
     "type": "pond",
-    "title": "LakePCM",
+    "title": "Pond",
     "x": 607.7,
-    "y": -1010.4
+    "y": -1010.4,
+    "tp": "goto LakePCM"
   },
   {
     "id": 724,
     "type": "pond",
-    "title": "LakePCN",
+    "title": "Pond",
     "x": 933.37,
-    "y": -1249.18
+    "y": -1249.18,
+    "tp": "goto LakePCN"
   },
   {
     "id": 725,
     "type": "pond",
-    "title": "LakePCO",
+    "title": "Pond",
     "x": 1671.64,
-    "y": 947.39
+    "y": 947.39,
+    "tp": "goto LakePCO"
   },
   {
     "id": 726,
     "type": "pond",
-    "title": "LakePCP",
+    "title": "Pond",
     "x": 1703.33,
-    "y": 553.4
+    "y": 553.4,
+    "tp": "goto LakePCP"
   },
   {
     "id": 727,
     "type": "pond",
-    "title": "LakePCQ",
+    "title": "Pond",
     "x": 1528,
-    "y": 362.8
+    "y": 362.8,
+    "tp": "goto LakePCQ"
   },
   {
     "id": 728,
     "type": "pond",
-    "title": "LakePCR",
+    "title": "Pond",
     "x": 881.97,
-    "y": -956.38
+    "y": -956.38,
+    "tp": "goto LakePCR"
   },
   {
     "id": 729,
     "type": "pond",
-    "title": "LakePCS",
+    "title": "Pond",
     "x": 1379.63,
-    "y": 70.57
+    "y": 70.57,
+    "tp": "goto LakePCS"
   },
   {
     "id": 730,
     "type": "pond",
-    "title": "LakePCT",
+    "title": "Pond",
     "x": 1239,
-    "y": 269.9
+    "y": 269.9,
+    "tp": "goto LakePCT"
   },
   {
     "id": 731,
     "type": "pond",
-    "title": "LakePCU",
+    "title": "Pond",
     "x": -1243.57,
-    "y": -1078.56
+    "y": -1078.56,
+    "tp": "goto LakePCU"
   },
   {
     "id": 732,
     "type": "pond",
-    "title": "LakePCV",
+    "title": "Pond",
     "x": -1282.82,
-    "y": -887.19
+    "y": -887.19,
+    "tp": "goto LakePCV"
   },
   {
     "id": 733,
     "type": "pond",
-    "title": "LakePCW",
+    "title": "Pond",
     "description": "home for Turtles",
     "x": -1135.77,
-    "y": 1626.41
+    "y": 1626.41,
+    "tp": "goto LakePCW"
   },
   {
     "id": 734,
     "type": "pond",
-    "title": "LakePCX",
+    "title": "Pond",
     "x": -1252.28,
-    "y": 1400.62
+    "y": 1400.62,
+    "tp": "goto LakePCX"
   },
   {
     "id": 735,
     "type": "pond",
-    "title": "LakePCY",
+    "title": "Pond",
     "x": -1037.91,
-    "y": 1297.16
+    "y": 1297.16,
+    "tp": "goto LakePCY"
   },
   {
     "id": 736,
     "type": "pond",
-    "title": "LakePCZ",
+    "title": "Pond",
     "x": -1666.54,
-    "y": 1097.19
+    "y": 1097.19,
+    "tp": "goto LakePCZ"
   },
   {
     "id": 737,
     "type": "pond",
-    "title": "LakePDA",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": -766.72,
-    "y": -1482.14
+    "y": -1482.14,
+    "tp": "goto LakePDA"
   },
   {
     "id": 738,
     "type": "pond",
-    "title": "LakePDA",
+    "title": "Pond",
     "x": -1067.78,
-    "y": 1117.6
+    "y": 1117.6,
+    "tp": "goto LakePDA"
   },
   {
     "id": 739,
     "type": "pond",
-    "title": "LakePDB",
+    "title": "Pond",
     "x": -703.91,
-    "y": 458.34
+    "y": 458.34,
+    "tp": "goto LakePDB"
   },
   {
     "id": 740,
     "type": "pond",
-    "title": "LakePDB",
+    "title": "Pond",
     "x": 1216.1,
-    "y": -880.74
+    "y": -880.74,
+    "tp": "goto LakePDB"
   },
   {
     "id": 741,
     "type": "pond",
-    "title": "LakePDC",
+    "title": "Pond",
     "x": 797.56,
-    "y": -570.14
+    "y": -570.14,
+    "tp": "goto LakePDC"
   },
   {
     "id": 742,
     "type": "pond",
-    "title": "LakePDD",
+    "title": "Pond",
     "x": 709.27,
-    "y": -919.77
+    "y": -919.77,
+    "tp": "goto LakePDD"
   },
   {
     "id": 743,
     "type": "pond",
-    "title": "LakePDE",
+    "title": "Pond",
     "x": 1682.17,
-    "y": 20.7
+    "y": 20.7,
+    "tp": "goto LakePDE"
   },
   {
     "id": 744,
     "type": "pond",
-    "title": "LakePDF",
+    "title": "Pond",
     "x": 1747.68,
-    "y": 35.44
+    "y": 35.44,
+    "tp": "goto LakePDF"
   },
   {
     "id": 745,
     "type": "pond",
-    "title": "LakePDG",
+    "title": "Pond",
     "x": 1516.29,
-    "y": 30.66
+    "y": 30.66,
+    "tp": "goto LakePDG"
   },
   {
     "id": 746,
     "type": "pond",
-    "title": "LakePDH",
+    "title": "Pond",
     "x": 1615.64,
-    "y": -75.36
+    "y": -75.36,
+    "tp": "goto LakePDH"
   },
   {
     "id": 747,
     "type": "pond",
-    "title": "LakePDI",
+    "title": "Pond",
     "x": 1415.84,
-    "y": 13.8
+    "y": 13.8,
+    "tp": "goto LakePDI"
   },
   {
     "id": 748,
     "type": "pond",
-    "title": "LakePDJ",
+    "title": "Pond",
     "x": 809.43,
-    "y": -997
+    "y": -997,
+    "tp": "goto LakePDJ"
   },
   {
     "id": 749,
     "type": "pond",
-    "title": "LakePDK",
+    "title": "Pond",
     "x": 296.42,
-    "y": -1221.52
+    "y": -1221.52,
+    "tp": "goto LakePDK"
   },
   {
     "id": 750,
     "type": "pond",
-    "title": "LakePDL",
+    "title": "Pond",
     "x": 1672.19,
-    "y": -1252.93
+    "y": -1252.93,
+    "tp": "goto LakePDL"
   },
   {
     "id": 751,
     "type": "pond",
-    "title": "LakePDM",
+    "title": "Pond",
     "x": 1456.18,
-    "y": -1317.81
+    "y": -1317.81,
+    "tp": "goto LakePDM"
   },
   {
     "id": 752,
     "type": "pond",
-    "title": "LakePDN",
+    "title": "Pond",
     "x": 1502.7,
-    "y": -1061.43
+    "y": -1061.43,
+    "tp": "goto LakePDN"
   },
   {
     "id": 753,
     "type": "pond",
-    "title": "LakePDO",
+    "title": "Pond",
     "x": 1721.4,
-    "y": -1057.37
+    "y": -1057.37,
+    "tp": "goto LakePDO"
   },
   {
     "id": 754,
     "type": "pond",
-    "title": "LakePDP",
+    "title": "Pond",
     "x": 1518.36,
-    "y": -879.24
+    "y": -879.24,
+    "tp": "goto LakePDP"
   },
   {
     "id": 755,
     "type": "pond",
-    "title": "LakePDQ",
+    "title": "Pond",
     "x": 1477.66,
-    "y": 958.05
+    "y": 958.05,
+    "tp": "goto LakePDQ"
   },
   {
     "id": 756,
     "type": "pond",
-    "title": "LakePDR",
+    "title": "Pond",
     "x": 1296.7,
-    "y": -552.65
+    "y": -552.65,
+    "tp": "goto LakePDR"
   },
   {
     "id": 757,
     "type": "pond",
-    "title": "LakePDS",
+    "title": "Pond",
     "x": 1383.56,
-    "y": -474.15
+    "y": -474.15,
+    "tp": "goto LakePDS"
   },
   {
     "id": 758,
     "type": "pond",
-    "title": "LakePDT",
+    "title": "Pond",
     "x": 1157.15,
-    "y": -996.25
+    "y": -996.25,
+    "tp": "goto LakePDT"
   },
   {
     "id": 759,
     "type": "pond",
-    "title": "LakePDU",
+    "title": "Pond",
     "x": 1577.22,
-    "y": -1667.12
+    "y": -1667.12,
+    "tp": "goto LakePDU"
   },
   {
     "id": 760,
     "type": "pond",
-    "title": "LakePDV",
+    "title": "Pond",
     "x": 1068.94,
-    "y": -1616.22
+    "y": -1616.22,
+    "tp": "goto LakePDV"
   },
   {
     "id": 761,
     "type": "pond",
-    "title": "LakePDW",
+    "title": "Pond",
     "x": 1563.65,
-    "y": 235.22
+    "y": 235.22,
+    "tp": "goto LakePDW"
   },
   {
     "id": 762,
     "type": "pond",
-    "title": "LakePDX",
+    "title": "Pond",
     "x": 1351.35,
-    "y": 814.56
+    "y": 814.56,
+    "tp": "goto LakePDX"
   },
   {
     "id": 763,
     "type": "pond",
-    "title": "LakePDY",
+    "title": "Pond",
     "x": -2.09,
-    "y": -1501.51
+    "y": -1501.51,
+    "tp": "goto LakePDY"
   },
   {
     "id": 764,
     "type": "pond",
-    "title": "LakePDZ",
+    "title": "Pond",
     "x": -99.47,
-    "y": -1344.41
+    "y": -1344.41,
+    "tp": "goto LakePDZ"
   },
   {
     "id": 765,
     "type": "pond",
-    "title": "LakePEA",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": 583.03,
-    "y": 1108.94
+    "y": 1108.94,
+    "tp": "goto LakePEA"
   },
   {
     "id": 766,
     "type": "pond",
-    "title": "LakePEB",
+    "title": "Pond",
     "x": 787.59,
-    "y": 959.93
+    "y": 959.93,
+    "tp": "goto LakePEB"
   },
   {
     "id": 767,
     "type": "pond",
-    "title": "LakePEC",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": 596.6,
-    "y": 1336.53
+    "y": 1336.53,
+    "tp": "goto LakePEC"
   },
   {
     "id": 768,
     "type": "pond",
-    "title": "LakePED",
+    "title": "Pond",
     "x": 751.73,
-    "y": 1653.83
+    "y": 1653.83,
+    "tp": "goto LakePED"
   },
   {
     "id": 769,
     "type": "pond",
-    "title": "LakePEE",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": 451.42,
-    "y": 965.38
+    "y": 965.38,
+    "tp": "goto LakePEE"
   },
   {
     "id": 770,
     "type": "pond",
-    "title": "LakePEF",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": 302.59,
-    "y": 831.6
+    "y": 831.6,
+    "tp": "goto LakePEF"
   },
   {
     "id": 771,
     "type": "pond",
-    "title": "LakePEG",
+    "title": "Pond",
     "x": -968.54,
-    "y": -829.88
+    "y": -829.88,
+    "tp": "goto LakePEG"
   },
   {
     "id": 772,
     "type": "pond",
-    "title": "LakePEH",
+    "title": "Pond",
     "x": -768.19,
-    "y": -675.16
+    "y": -675.16,
+    "tp": "goto LakePEH"
   },
   {
     "id": 773,
     "type": "pond",
-    "title": "LakePEI",
+    "title": "Pond",
     "x": -879.96,
-    "y": -769.27
+    "y": -769.27,
+    "tp": "goto LakePEI"
   },
   {
     "id": 774,
     "type": "pond",
-    "title": "LakePEJ",
+    "title": "Pond",
     "x": -1035.1,
-    "y": -1237.3
+    "y": -1237.3,
+    "tp": "goto LakePEJ"
   },
   {
     "id": 775,
     "type": "pond",
-    "title": "LakePEK",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": -1175.4,
-    "y": -1490.7
+    "y": -1490.7,
+    "tp": "goto LakePEK"
   },
   {
     "id": 776,
     "type": "pond",
-    "title": "LakePEL",
+    "title": "Pond",
     "x": -1286.5,
-    "y": -781.8
+    "y": -781.8,
+    "tp": "goto LakePEL"
   },
   {
     "id": 777,
     "type": "pond",
-    "title": "LakePEM",
+    "title": "Pond",
     "x": -1387.58,
-    "y": -807.29
+    "y": -807.29,
+    "tp": "goto LakePEM"
   },
   {
     "id": 778,
     "type": "pond",
-    "title": "LakePEN",
+    "title": "Pond",
     "x": -1354.44,
-    "y": -950.78
+    "y": -950.78,
+    "tp": "goto LakePEN"
   },
   {
     "id": 779,
     "type": "pond",
-    "title": "LakePEO",
+    "title": "Pond",
     "x": -1155.25,
-    "y": -784.36
+    "y": -784.36,
+    "tp": "goto LakePEO"
   },
   {
     "id": 780,
     "type": "pond",
-    "title": "LakePEP",
+    "title": "Pond",
     "x": -1121.05,
-    "y": -1146.26
+    "y": -1146.26,
+    "tp": "goto LakePEP"
   },
   {
     "id": 781,
     "type": "pond",
-    "title": "LakePEQ",
+    "title": "Pond",
     "x": -1291.93,
-    "y": -1287.45
+    "y": -1287.45,
+    "tp": "goto LakePEQ"
   },
   {
     "id": 782,
     "type": "pond",
-    "title": "LakePER",
+    "title": "Pond",
     "x": -1389.92,
-    "y": -1041.46
+    "y": -1041.46,
+    "tp": "goto LakePER"
   },
   {
     "id": 783,
     "type": "pond",
-    "title": "LakePES",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": -1296.78,
-    "y": -1538.66
+    "y": -1538.66,
+    "tp": "goto LakePES"
   },
   {
     "id": 784,
     "type": "pond",
-    "title": "LakePET",
+    "title": "Pond",
     "description": "Home for frogs",
     "x": -922.42,
-    "y": -1150.45
+    "y": -1150.45,
+    "tp": "goto LakePET"
   },
   {
     "id": 785,
     "type": "pond",
-    "title": "LakePEU",
+    "title": "Pond",
     "x": -603.8,
-    "y": -1195.2
+    "y": -1195.2,
+    "tp": "goto LakePEU"
   },
   {
     "id": 786,
     "type": "pond",
-    "title": "LakePEV",
+    "title": "Pond",
     "x": -495.72,
-    "y": -767.06
+    "y": -767.06,
+    "tp": "goto LakePEV"
   },
   {
     "id": 787,
     "type": "pond",
-    "title": "LakePEW",
+    "title": "Pond",
     "x": 1576.29,
-    "y": 344.42
+    "y": 344.42,
+    "tp": "goto LakePEW"
   },
   {
     "id": 788,
     "type": "pond",
-    "title": "LakePEX",
+    "title": "Pond",
     "x": 1687.32,
-    "y": 286.03
+    "y": 286.03,
+    "tp": "goto LakePEX"
   },
   {
     "id": 789,
     "type": "pond",
-    "title": "LakePEY",
+    "title": "Pond",
     "x": 1741,
-    "y": 917.77
+    "y": 917.77,
+    "tp": "goto LakePEY"
   },
   {
     "id": 875,
     "type": "pond",
-    "title": "LakePFA",
+    "title": "Pond",
     "x": 1664,
-    "y": 641
+    "y": 641,
+    "tp": "goto LakePFA"
   },
   {
     "id": 876,
     "type": "pond",
-    "title": "LakePFB",
+    "title": "Pond",
     "x": 1372,
-    "y": 289
+    "y": 289,
+    "tp": "goto LakePFB"
   },
   {
     "id": 877,
     "type": "pond",
-    "title": "LakePFC",
+    "title": "Pond",
     "x": 1380,
-    "y": 960
+    "y": 960,
+    "tp": "goto LakePFC"
   },
   {
     "id": 878,
     "type": "pond",
-    "title": "LakePFD",
+    "title": "Pond",
     "x": 1549,
-    "y": 1064
+    "y": 1064,
+    "tp": "goto LakePFD"
   },
   {
     "id": 790,
     "type": "pond",
-    "title": "LakeQ",
+    "title": "Pond",
     "x": -1252.29,
-    "y": -37.01
+    "y": -37.01,
+    "tp": "goto LakeQ"
   },
   {
     "id": 791,
     "type": "lake",
-    "title": "LakeR",
+    "title": "Lake",
     "x": -1293.17,
-    "y": 10.74
+    "y": 10.74,
+    "tp": "goto LakeR"
   },
   {
     "id": 792,
     "type": "lake",
-    "title": "LakeS",
+    "title": "Lake",
     "x": -1119.33,
-    "y": -140.27
+    "y": -140.27,
+    "tp": "goto LakeS"
   },
   {
     "id": 793,
     "type": "lake",
-    "title": "LakeT",
+    "title": "Lake",
     "x": -1155.62,
-    "y": -190.23
+    "y": -190.23,
+    "tp": "goto LakeT"
   },
   {
     "id": 794,
     "type": "lake",
-    "title": "LakeU",
+    "title": "Lake",
     "x": -1173.56,
-    "y": -245.42
+    "y": -245.42,
+    "tp": "goto LakeU"
   },
   {
     "id": 795,
     "type": "lake",
-    "title": "LakeV",
+    "title": "Lake",
     "x": -645.3,
-    "y": -1063.03
+    "y": -1063.03,
+    "tp": "goto LakeV"
   },
   {
     "id": 796,
     "type": "lake",
-    "title": "LakeW",
+    "title": "Lake",
     "x": -536.01,
-    "y": 121.32
+    "y": 121.32,
+    "tp": "goto LakeW"
   },
   {
     "id": 797,
     "type": "lake",
-    "title": "LakeX",
+    "title": "Lake",
     "description": "Home for Salmon and skeletons",
     "x": -719.42,
-    "y": 8
+    "y": 8,
+    "tp": "goto LakeX"
   },
   {
     "id": 798,
     "type": "lake",
-    "title": "LakeY",
+    "title": "Lake",
     "x": -590.61,
-    "y": -119.61
+    "y": -119.61,
+    "tp": "goto LakeY"
   },
   {
     "id": 799,
     "type": "lake",
-    "title": "LakeZ",
+    "title": "Lake",
     "x": -783.55,
-    "y": -252.51
+    "y": -252.51,
+    "tp": "goto LakeZ"
   },
   {
     "id": 800,
     "type": "lake",
-    "title": "LakeZAA",
+    "title": "Lake",
     "x": 484.2,
-    "y": -1670.7
+    "y": -1670.7,
+    "tp": "goto LakeZAA"
   },
   {
     "id": 801,
     "type": "lake",
-    "title": "Lake Virginia",
+    "title": "Lake",
     "x": -577.852,
-    "y": 562.8575
+    "y": 562.8575,
+    "tp": "goto LakeVirginia"
   },
   {
     "id": 866,
