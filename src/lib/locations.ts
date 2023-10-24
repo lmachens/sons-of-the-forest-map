@@ -13,6 +13,7 @@ export type MapLocation = {
   requirements?: number[];
   items?: number[];
   screenshot?: string;
+  warning?: string;
   tp?: string;
   wiki?: string;
 };
@@ -22,6 +23,7 @@ export function getMapLocations(): MapLocation[] {
     ...mapLocation,
     title: t(mapLocation.title),
     description: mapLocation.description && t(mapLocation.description),
+    warning: mapLocation.warning && t(mapLocation.warning),
   }));
 }
 
@@ -33,6 +35,7 @@ export function getMapLocationById(id: number): MapLocation | null {
       ...mapLocation,
       title: t(mapLocation.title),
       description: mapLocation.description && t(mapLocation.description),
+      warning: mapLocation.warning && t(mapLocation.warning),
     };
   }
   return null;

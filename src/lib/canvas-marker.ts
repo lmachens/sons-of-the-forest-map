@@ -7,6 +7,7 @@ leaflet.Canvas.include({
     const {
       type,
       path,
+      src,
       color,
       radius,
       isDiscovered,
@@ -18,16 +19,63 @@ leaflet.Canvas.include({
     const p = layer._point.round();
     const dx = p.x - radius;
     const dy = p.y - radius;
+    const layerContext = this._ctx as CanvasRenderingContext2D;
 
+    layerContext.save();
+
+    const globalAlpha = isDiscovered ? 0.1 : 1;
+
+    if (src && showIconBackground) {
+      layerContext.globalAlpha = globalAlpha;
+      layerContext.strokeStyle = "#000";
+      layerContext.shadowColor = "rgba(0, 0, 0, 0.75)";
+      layerContext.shadowBlur = 3;
+      layerContext.lineWidth = 15;
+      const scale = imageSize / 512;
+
+      layerContext.translate(dx, dy);
+      layerContext.scale(scale, scale);
+      const pinPath2D = new Path2D(PIN_PATH);
+
+      layerContext.fillStyle = color;
+
+      layerContext.shadowColor = "#000";
+      layerContext.shadowOffsetX = 0;
+      layerContext.shadowOffsetY = 0;
+      layerContext.shadowBlur = 3;
+
+      layerContext.stroke(pinPath2D);
+      layerContext.fill(pinPath2D);
+      layerContext.restore();
+
+      layerContext.globalAlpha = globalAlpha;
+      layerContext.shadowColor = "#000";
+      layerContext.shadowOffsetX = 0;
+      layerContext.shadowOffsetY = 0;
+      layerContext.shadowBlur = 3;
+      layerContext.drawImage(
+        layer.imageElement,
+        dx + 7,
+        dy + 5,
+        imageSize * 0.6,
+        imageSize * 0.6
+      );
+
+      layerContext.restore();
+
+      return;
+    }
     const key = `${type}-${isDiscovered}-${isHighlighted}-${isUnderground}-${showIconBackground}`;
     if (cachedImages[key]) {
       if (cachedImages[key].complete) {
-        this._ctx.drawImage(cachedImages[key], dx, dy);
+        layerContext.drawImage(cachedImages[key], dx, dy);
       } else {
         cachedImages[key].addEventListener("load", () => {
-          this._ctx.drawImage(cachedImages[key], dx, dy);
+          layerContext.drawImage(cachedImages[key], dx, dy);
         });
       }
+      layerContext.restore();
+
       return;
     }
 
@@ -50,7 +98,6 @@ leaflet.Canvas.include({
 
     ctx.scale(scale, scale);
     const path2D = new Path2D(path);
-    const globalAlpha = isDiscovered ? 0.1 : 1;
     ctx.globalAlpha = globalAlpha;
     ctx.strokeStyle = "#000";
     ctx.shadowColor = "rgba(0, 0, 0, 0.75)";
@@ -108,8 +155,9 @@ leaflet.Canvas.include({
     img.src = ctx.canvas.toDataURL("image/webp");
     cachedImages[key] = img;
     img.addEventListener("load", () => {
-      this._ctx.drawImage(img, dx, dy);
+      layerContext.drawImage(img, dx, dy);
     });
+    layerContext.restore();
   },
 });
 const renderer = leaflet.canvas() as leaflet.Canvas & {
@@ -118,7 +166,8 @@ const renderer = leaflet.canvas() as leaflet.Canvas & {
 
 export type CanvasMarkerOptions = {
   id: number;
-  path: string;
+  path?: string;
+  src?: string;
   type: string;
   color: string;
   radius: number;
@@ -129,10 +178,15 @@ export type CanvasMarkerOptions = {
   showIconBackground?: boolean;
 };
 
+const imageElements: {
+  [src: string]: HTMLImageElement;
+} = {};
 class CanvasMarker extends leaflet.CircleMarker {
   declare options: leaflet.CircleMarkerOptions & CanvasMarkerOptions;
   private _renderer: typeof renderer;
   declare _point: any;
+  declare imageElement: HTMLImageElement;
+  private _onImageLoad: (() => void) | undefined = undefined;
 
   constructor(
     latLng: leaflet.LatLngExpression,
@@ -141,6 +195,13 @@ class CanvasMarker extends leaflet.CircleMarker {
     options.renderer = renderer;
     super(latLng, options);
     this._renderer = renderer;
+    if (options.src) {
+      if (!imageElements[options.src]) {
+        imageElements[options.src] = document.createElement("img");
+        imageElements[options.src].src = options.src;
+      }
+      this.imageElement = imageElements[options.src];
+    }
   }
 
   _redraw() {
@@ -152,7 +213,15 @@ class CanvasMarker extends leaflet.CircleMarker {
   }
 
   _updatePath() {
-    this._renderer.updateCanvasImg(this);
+    if (!this.imageElement || this.imageElement.complete) {
+      this._renderer.updateCanvasImg(this);
+    } else if (!this._onImageLoad) {
+      this._onImageLoad = () => {
+        this.imageElement.removeEventListener("load", this._onImageLoad!);
+        this._renderer.updateCanvasImg(this);
+      };
+      this.imageElement.addEventListener("load", this._onImageLoad);
+    }
   }
 }
 

@@ -235,7 +235,7 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
 
     if (mapLocation.description) {
       tooltipContent.append(
-        createElement("p", { className: "bold", innerText: t("Description:") }),
+        createElement("p", { className: "bold", innerText: t("Description") }),
         createElement("p", { innerText: mapLocation.description })
       );
     }
@@ -249,6 +249,15 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       tooltipContent.append(
         createElement("p", { className: "bold", innerText: t("Items") }),
         ...items
+      );
+    }
+    if (mapLocation.warning) {
+      tooltipContent.append(
+        createElement("p", { className: "bold", innerText: t("Warning!") }),
+        createElement("p", {
+          className: "warning-content",
+          innerText: mapLocation.warning,
+        })
       );
     }
     if (mapLocation.tp) {
@@ -269,7 +278,7 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
         "p",
         {
           className: "bold tp-title",
-          innerText: t("Teleport here:"),
+          innerText: t("Teleport here"),
         },
         [copyStatus]
       );
@@ -365,6 +374,7 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
     const marker = new CanvasMarker([mapLocation.y, mapLocation.x], {
       id: mapLocation.id,
       type: type.value,
+      src: type.src,
       path: type.icon,
       color: mapLocation.color || filter.color || "#ffffff",
       radius: isHighlighted ? HIGHLIGHTED_ICON_RADIUS : ICON_RADIUS,
