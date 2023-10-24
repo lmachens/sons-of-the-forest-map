@@ -7,6 +7,7 @@ export type NodeType = {
   value: string;
   title: string;
   icon: string;
+  src?: string;
   filter?: string;
 };
 
@@ -27,12 +28,14 @@ export function getTypes(): NodeType[] {
       value: "modernAxe",
       title: t("Tool"),
       icon: icons["fire-axe"],
+      src: "/icons/modern-axe.webp",
       filter: "tools",
     },
     {
       value: "flashlight",
       title: t("Tool"),
       icon: icons.flashlight,
+      src: "/icons/flashlight.webp",
       filter: "tools",
     },
     {
@@ -303,6 +306,7 @@ export function getTypes(): NodeType[] {
       value: "prail",
       title: t("Weapon Attachment"),
       icon: icons["pistol-rail"],
+      src: "/icons/pistol-rail.webp",
       filter: "mod",
     },
     {
@@ -347,7 +351,7 @@ export function getTypes(): NodeType[] {
       icon: icons["go-pro"],
       filter: "tools",
     },
-    { 
+    {
       value: "golf-cart",
       title: t("Drive around the map"),
       icon: icons.uni,

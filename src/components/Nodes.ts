@@ -254,7 +254,10 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
     if (mapLocation.warning) {
       tooltipContent.append(
         createElement("p", { className: "bold", innerText: t("Warning!") }),
-        createElement("p", { className: "warning-content", innerText: mapLocation.warning })
+        createElement("p", {
+          className: "warning-content",
+          innerText: mapLocation.warning,
+        })
       );
     }
     if (mapLocation.tp) {
@@ -371,6 +374,7 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
     const marker = new CanvasMarker([mapLocation.y, mapLocation.x], {
       id: mapLocation.id,
       type: type.value,
+      src: type.src,
       path: type.icon,
       color: mapLocation.color || filter.color || "#ffffff",
       radius: isHighlighted ? HIGHLIGHTED_ICON_RADIUS : ICON_RADIUS,
@@ -533,4 +537,3 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
     panToMarker,
   };
 }
-
