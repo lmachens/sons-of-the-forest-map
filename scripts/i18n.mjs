@@ -79,6 +79,9 @@ locations.forEach((location) => {
   if (location.description) {
     keys.push(location.description);
   }
+  if (location.warning) {
+    keys.push(location.warning);
+  }
 });
 
 keys.filter((key, index) => keys.indexOf(key) === index);

@@ -608,16 +608,22 @@ select {
   height: 0;
   width: 0;
 }
+
 .type-label > span {
   display: flex;
   align-items: center;
   gap: 0.25rem;
   padding: 0rem 0.5rem;
   border-radius: 10px;
-  border: 1px solid #77777e;
+  border: 2px solid #77777e;
+  transition: border-color 0.4s;
   font-family: monospace;
   color: #b3b3b4;
   cursor: pointer;
+}
+
+.filter > input:checked + .type-label > span {
+  border-color: var(--color);
 }
 
 .type-label > span::before {
@@ -979,4 +985,13 @@ a.external-link:after {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.warning-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.warning-content {
+  color: rgb(241, 4, 4);
 }
