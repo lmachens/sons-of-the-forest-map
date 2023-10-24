@@ -601,24 +601,6 @@ select {
   color: #ffffff;
 }
 
-@keyframes swipeIn {
-  0% {
-    border-color: transparent;
-  }
-  100% {
-    border-color: var(--color);
-  }
-}
-
-@keyframes swipeOut {
-  0% {
-    border-color: var(--color);
-  }
-  100% {
-    border-color: transparent;
-  }
-}
-
 .filter > input {
   position: absolute;
   opacity: 0;
@@ -1013,4 +995,3 @@ a.external-link:after {
 .warning-content {
   color: rgb(241, 4, 4);
 }
-
