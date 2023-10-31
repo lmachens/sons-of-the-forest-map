@@ -8,6 +8,9 @@ dependencies:
   '@geoman-io/leaflet-geoman-free':
     specifier: 2.14.2
     version: 2.14.2(leaflet@1.9.3)
+  js-cookie:
+    specifier: 3.0.5
+    version: 3.0.5
   leaflet:
     specifier: 1.9.3
     version: 1.9.3
@@ -37,6 +40,9 @@ devDependencies:
   '@translate-tools/core':
     specifier: 0.2.14
     version: 0.2.14
+  '@types/js-cookie':
+    specifier: 3.0.5
+    version: 3.0.5
   '@types/leaflet':
     specifier: 1.9.3
     version: 1.9.3
@@ -1850,6 +1856,10 @@ packages:
     resolution: {integrity: sha512-1rkryxURpr6aWP7R786/UQOkJ3PcpQiWkAXBmdWc7ryFWqN6a4xfK7BtjXvFBKO9LjQ+MWQSWxYeZX1OApnArA==}
     dev: false
 
+  /@types/js-cookie@3.0.5:
+    resolution: {integrity: sha512-dtLshqoiGRDHbHueIT9sjkd2F4tW1qPSX2xKAQK8p1e6pM+Z913GM1shv7dOqqasEMYbC5zEaClJomQe8OtQLA==}
+    dev: true
+
   /@types/leaflet@1.9.3:
     resolution: {integrity: sha512-Caa1lYOgKVqDkDZVWkto2Z5JtVo09spEaUt2S69LiugbBpoqQu92HYFMGUbYezZbnBkyOxMNPXHSgRrRY5UyIA==}
     dependencies:
@@ -3166,6 +3176,11 @@ packages:
       merge-stream: 2.0.0
       supports-color: 7.2.0
     dev: true
+
+  /js-cookie@3.0.5:
+    resolution: {integrity: sha512-cEiJEAEoIbWfCZYKWhVwFuvPX1gETRYPw6LlaTKoxD3s2AkXzkCjnp6h0V77ozyqj0jakteJ4YqDJT830+lVGw==}
+    engines: {node: '>=14'}
+    dev: false
 
   /js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}

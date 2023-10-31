@@ -1,3 +1,4 @@
+import Cookies from "js-cookie";
 import AppStatus from "./components/AppStatus";
 import ContextMenu from "./components/ContextMenu";
 import CustomNode from "./components/CustomNode";
@@ -81,6 +82,50 @@ loadDictionary().then(() => {
       isPatron = state.isPatron;
       container?.remove();
       adNote?.remove();
+    }
+  });
+
+  let userId = Cookies.get("userId");
+  const refreshState = async () => {
+    if (!userId) {
+      const state = useAccountStore.getState();
+      if (state.isPatron) {
+        state.setIsPatron(false);
+      }
+      return;
+    }
+
+    const response = await fetch(
+      `${
+        import.meta.env.VITE_PATREON_BASE_URI
+      }/api/patreon?appId=bemfloapmmjpmdmjfjgegnacdlgeapmkcmcmceei`,
+      { credentials: "include" }
+    );
+    const state = useAccountStore.getState();
+    try {
+      const body = await response.json();
+
+      if (!response.ok) {
+        console.warn(body);
+        state.setIsPatron(false);
+      } else {
+        console.log(`Patreon successfully activated`);
+        state.setIsPatron(true, userId);
+      }
+    } catch (err) {
+      console.error(err);
+      state.setIsPatron(false);
+    }
+  };
+  refreshState();
+
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible") {
+      const newUserId = Cookies.get("userId");
+      if (newUserId !== userId) {
+        userId = newUserId;
+        refreshState();
+      }
     }
   });
 });
