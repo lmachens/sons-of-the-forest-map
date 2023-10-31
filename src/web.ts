@@ -10,6 +10,7 @@ import Nodes from "./components/Nodes";
 import Search from "./components/Search";
 import TileLayer from "./components/TileLayer";
 import Zones from "./components/Zones";
+import { useAccountStore } from "./lib/account";
 import { loadDictionary, translateHTML } from "./lib/i18n";
 import { initPlausible } from "./lib/plausible";
 import { initWakelock } from "./lib/wakelock";
@@ -63,7 +64,25 @@ loadDictionary().then(() => {
   Zones({ map });
   initWakelock();
   Search({ panToMarker });
-  NitroPay();
+
+  const container = document.querySelector("#sotf-video")!;
+  const adNote = document.querySelector(".ad-note")!;
+  let isPatron = useAccountStore.getState().isPatron;
+
+  if (!isPatron) {
+    NitroPay();
+  } else {
+    container.remove();
+    adNote.remove();
+  }
+
+  useAccountStore.subscribe((state) => {
+    if (isPatron !== state.isPatron && state.isPatron) {
+      isPatron = state.isPatron;
+      container?.remove();
+      adNote?.remove();
+    }
+  });
 });
 
 initPlausible(

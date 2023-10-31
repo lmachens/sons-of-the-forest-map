@@ -314,7 +314,6 @@ select {
   background-position: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 1rem;
   text-align: center;
   font-size: 2rem;
@@ -322,8 +321,17 @@ select {
   text-transform: uppercase;
 }
 
-.web .banner {
-  max-width: 100%;
+.banner a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+
+.ad-note {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #b9b9bd;
+  text-align: center;
 }
 
 .ads {

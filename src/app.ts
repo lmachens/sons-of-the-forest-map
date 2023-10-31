@@ -19,6 +19,7 @@ import Status from "./components/Status";
 import TileLayer from "./components/TileLayer";
 import TraceLine from "./components/TraceLine";
 import Zones from "./components/Zones";
+import { useAccountStore } from "./lib/account";
 import { WINDOWS } from "./lib/config";
 import {
   listenToGameLaunched,
@@ -98,7 +99,23 @@ function updatePlayer(location: { x: number; y: number; z: number }) {
 }
 
 const ads = document.querySelector<HTMLDivElement>(".ads")!;
-OverwolfAds(ads);
+const banner = document.querySelector<HTMLDivElement>(".banner")!;
+let isPatron = useAccountStore.getState().isPatron;
+
+if (!isPatron) {
+  OverwolfAds(ads);
+} else {
+  ads.remove();
+  banner.remove();
+}
+
+useAccountStore.subscribe((state) => {
+  if (isPatron !== state.isPatron && state.isPatron) {
+    isPatron = state.isPatron;
+    ads?.remove();
+    banner?.remove();
+  }
+});
 
 function onError(info: overwolf.games.events.ErrorEvent) {
   console.error(info);

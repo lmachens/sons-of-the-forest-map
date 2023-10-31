@@ -4,7 +4,7 @@
   "meta": {
     "name": "Sons Of The Forest Map-DEV",
     "author": "Leon Machens",
-    "version": "0.31.0",
+    "version": "0.32.0",
     "minimum-overwolf-version": "0.218.0",
     "description": "Sons Of The Forest Map",
     "dock_button_title": "Sons Of The Forest",
@@ -113,6 +113,9 @@
         "action-type": "custom",
         "default": "F9"
       }
+    },
+    "url_protocol": {
+      "scheme": "thgl-sotf-map"
     },
     "protocol_override_domains": {
       "googlesyndication": "http"
