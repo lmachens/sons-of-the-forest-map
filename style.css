@@ -13,6 +13,10 @@
   opacity: 0.5;
 }
 
+:root {
+  --icon-size: 30px;
+}
+
 body {
   margin: 0;
   background: black;
@@ -153,8 +157,8 @@ select {
 
 .icon {
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: var(--icon-size);
+  height: var(--icon-size);
   transition: 0.15s;
 }
 
