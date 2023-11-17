@@ -8,11 +8,27 @@ export default function Compass() {
   const compass = createElement(
     "div",
     {
-      className: "compass",
+      className: "compass hidden",
     },
     [compassNeedle]
   );
   main.append(compass);
+
+  const compassToggle = document.querySelector<HTMLInputElement>("#compass_toggle")!;
+  compassToggle.checked = localStorage.getItem("hide_compass") !== "true";
+  if (compassToggle.checked) {
+    compass.classList.remove("hidden");
+  }
+
+  compassToggle.onchange = () => {
+    if (compassToggle.checked) {
+      localStorage.removeItem("hide_compass");
+      compass.classList.remove("hidden");
+    } else {
+      localStorage.setItem("hide_compass", "true");
+      compass.classList.add("hidden");
+    }
+  }
 
   return {
     updateRotation: (rotation: number) => {

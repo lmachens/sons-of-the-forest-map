@@ -15,6 +15,8 @@ export type MapLocation = {
   screenshot?: string;
   warning?: string;
   tp?: string;
+  tg?: string;
+  itemid?: string;
   wiki?: string;
 };
 

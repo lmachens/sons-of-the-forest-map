@@ -20,9 +20,16 @@ import {
 } from "../lib/nodes";
 import { getMapLocationId, setMapLocationId } from "../lib/router";
 
-const ICON_RADIUS = 18;
-const HIGHLIGHTED_ICON_RADIUS = ICON_RADIUS * 1.5;
 export default function Nodes({ map }: { map: leaflet.Map }) {
+
+  const iconSizeSlider = document.querySelector<HTMLInputElement>("#iconSizeSlider")!;
+  let iconRadius = parseInt(iconSizeSlider.value);
+
+  iconSizeSlider.addEventListener("input", () => {
+    iconRadius = parseInt(iconSizeSlider.value);
+    refresh();
+  });
+
   const showIconBackground = document.querySelector<HTMLInputElement>(
     "#show_icon_background"
   )!;
@@ -36,6 +43,54 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       showIconBackground.checked ? "true" : "false"
     );
   };
+
+  const showImagesSwitch = document.querySelector<HTMLInputElement>("#images_toggle")!;
+  let showImages = showImagesSwitch.checked;
+
+    showImagesSwitch.addEventListener("change", () => {
+      showImages = showImagesSwitch.checked;
+      refresh();
+  });
+
+  const showDescriptionSwitch = document.querySelector<HTMLInputElement>("#description_toggle")!;
+  let showDescription = showDescriptionSwitch.checked;
+
+    showDescriptionSwitch.addEventListener("change", () => {
+      showDescription = showDescriptionSwitch.checked;
+      refresh();
+  });
+
+  const showRequirementsInfoSwitch = document.querySelector<HTMLInputElement>("#rq_toggle")!;
+  let showRequirementsInfo = showRequirementsInfoSwitch.checked;
+
+    showRequirementsInfoSwitch.addEventListener("change", () => {
+      showRequirementsInfo = showRequirementsInfoSwitch.checked;
+      refresh();
+  });
+
+  const showTeleportingInfoSwitch = document.querySelector<HTMLInputElement>("#tp_toggle")!;
+  let showTeleportingInfo = showTeleportingInfoSwitch.checked;
+
+    showTeleportingInfoSwitch.addEventListener("change", () => {
+      showTeleportingInfo = showTeleportingInfoSwitch.checked;
+      refresh();
+  });
+
+  const showTogglegoInfoSwitch = document.querySelector<HTMLInputElement>("#tg_toggle")!;
+  let showTogglegoInfo = showTogglegoInfoSwitch.checked;
+
+    showTogglegoInfoSwitch.addEventListener("change", () => {
+      showTogglegoInfo = showTogglegoInfoSwitch.checked;
+      refresh();
+  });
+
+  const showItemIDSwitch = document.querySelector<HTMLInputElement>("#itemid_toggle")!;
+  let showItemIDInfo = showItemIDSwitch.checked;
+
+    showItemIDSwitch.addEventListener("change", () => {
+      showItemIDInfo = showItemIDSwitch.checked;
+      refresh();
+  });
 
   const types = getTypes();
   const filters = getFilters();
@@ -154,7 +209,7 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
   function unselectMarker() {
     if (selectedMarker) {
       selectedMarker.options.isHighlighted = false;
-      selectedMarker.setRadius(ICON_RADIUS);
+      selectedMarker.setRadius(iconRadius);
       selectedMarker.closePopup();
       selectedMarker.bindTooltip(selectedMarker.options.tooltipContent, {
         direction: "top",
@@ -177,7 +232,7 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
         marker.addTo(group);
       }
       selectedMarker = marker;
-      selectedMarker.setRadius(HIGHLIGHTED_ICON_RADIUS);
+      selectedMarker.setRadius(iconRadius);
       selectedMarker.options.isHighlighted = true;
       selectedMarker.redraw();
       displaySelectedMarker();
@@ -233,24 +288,27 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       `,
     });
 
+  if (showDescription) {
     if (mapLocation.description) {
       tooltipContent.append(
         createElement("p", { className: "bold", innerText: t("Description") }),
         createElement("p", { innerText: mapLocation.description })
       );
-    }
+    }}
+  if (showRequirementsInfo) {
     if (requirements) {
       tooltipContent.append(
         createElement("p", { className: "bold", innerText: t("Requirements") }),
         ...requirements
       );
-    }
+    }}
     if (items) {
       tooltipContent.append(
         createElement("p", { className: "bold", innerText: t("Items") }),
         ...items
       );
     }
+  if (showTeleportingInfo) {
     if (mapLocation.warning) {
       tooltipContent.append(
         createElement("p", { className: "bold", innerText: t("Warning!") }),
@@ -260,7 +318,7 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
         })
       );
     }
-    if (mapLocation.tp) {
+      if (mapLocation.tp) {
       let copyTimeout: NodeJS.Timeout | undefined = undefined;
       const copyStatus = createElement("button", {
         className: "copy-button",
@@ -287,7 +345,65 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
         innerText: mapLocation.tp,
       });
       tooltipContent.append(tpTitle, coordsContent);
-    }
+    }}
+  if (showTogglegoInfo) {
+    if (mapLocation.tg) {
+      let copyTimeout: NodeJS.Timeout | undefined = undefined;
+      const copyStatus = createElement("button", {
+        className: "copy-button",
+        innerText: "📋 Copy",
+        onclick: () => {
+          clearTimeout(copyTimeout);
+          navigator.clipboard.writeText(mapLocation.tg!);
+          copyStatus.innerText = t("✔ Copied!");
+          copyTimeout = setTimeout(() => {
+            copyStatus.innerText = t("📋 Copy");
+          }, 3000);
+        },
+      });
+      const tgTitle = createElement(
+        "p",
+        {
+          className: "bold tg-title",
+          innerText: t("Hide / Show"),
+        },
+        [copyStatus]
+      );
+
+      const coordsContent = createElement("code", {
+        innerText: mapLocation.tg,
+      });
+      tooltipContent.append(tgTitle, coordsContent);
+    }}
+    if (showItemIDInfo) {
+      if (mapLocation.itemid) {
+        let copyTimeout: NodeJS.Timeout | undefined = undefined;
+        const copyStatus = createElement("button", {
+          className: "copy-button",
+          innerText: "📋 Copy",
+          onclick: () => {
+            clearTimeout(copyTimeout);
+            navigator.clipboard.writeText(mapLocation.itemid!);
+            copyStatus.innerText = t("✔ Copied!");
+            copyTimeout = setTimeout(() => {
+              copyStatus.innerText = t("📋 Copy");
+            }, 3000);
+          },
+        });
+        const itemidTitle = createElement(
+          "p",
+          {
+            className: "bold itemid-title",
+            innerText: t("Spawn item"),
+          },
+          [copyStatus]
+        );
+  
+        const coordsContent = createElement("code", {
+          innerText: mapLocation.itemid,
+        });
+        tooltipContent.append(itemidTitle, coordsContent);
+      }}
     if (mapLocation.wiki) {
       tooltipContent.append(
         createElement("p", { className: "bold", innerText: t("More info:") }),
@@ -299,6 +415,7 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
         })
       );
     }
+  
 
     const hideElement = createElement("button", {
       className: "tooltip-button",
@@ -341,6 +458,7 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       },
       [tooltipContent, actionsContainer]
     );
+  if (showImages) {
     if (mapLocation.screenshot) {
       const screenshot = createElement("img", {
         className: "screenshot-preview",
@@ -369,7 +487,9 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
         },
       });
       tooltipContainer.prepend(screenshot);
-    }
+    }}
+
+    const markerRadius = isHighlighted ? iconRadius * 1.5 : iconRadius;
 
     const marker = new CanvasMarker([mapLocation.y, mapLocation.x], {
       id: mapLocation.id,
@@ -377,7 +497,7 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       src: type.src,
       path: type.icon,
       color: mapLocation.color || filter.color || "#ffffff",
-      radius: isHighlighted ? HIGHLIGHTED_ICON_RADIUS : ICON_RADIUS,
+      radius: markerRadius,
       isDiscovered,
       isUnderground: mapLocation.isUnderground,
       pmIgnore: true,
@@ -500,18 +620,13 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       marker.pm.enableLayerDrag();
     }
 
-    if (isHighlighted) {
-      marker.bindPopup(tooltipContainer);
-      marker.openPopup();
-    }
-
     marker.on("click", () => {
       // if (marker.pm?.layerDragEnabled()) {
       //   return;
       // }
       unselectMarker();
       selectedMarker = marker;
-      selectedMarker.setRadius(HIGHLIGHTED_ICON_RADIUS);
+      selectedMarker.setRadius(markerRadius * 1.5);
       selectedMarker.options.isHighlighted = true;
       selectedMarker.redraw();
       displaySelectedMarker();

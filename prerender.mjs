@@ -28,7 +28,7 @@ const template = fs.readFileSync(toAbsolute("./out/index.html"), "utf-8");
 const indexMeta = generateMeta({
   title: "Sons Of The Forest Map",
   description:
-    "Stay on top of your game with real-time position tracking, nodes of weapons & points of interest, and overlay mode for seamless progress tracking.",
+  "Take your gaming to new heights with accurate tracking, richly detailed waypoints, and a sleek overlay for real-time progress.",
   url: "https://sotf.th.gl",
   image: "https://sotf.th.gl/index.webp",
 });
@@ -47,7 +47,7 @@ for (const mapLocation of mapLocations) {
     title: `${mapLocation.title} - Sons Of The Forest Map`,
     description:
       mapLocation.description ||
-      "Stay on top of your game with real-time position tracking, nodes of weapons & points of interest, and overlay mode for seamless progress tracking.",
+      "Take your gaming to new heights with accurate tracking, richly detailed waypoints, and a sleek overlay for real-time progress.",
     url: `https://sotf.th.gl/locations/${mapLocation.id}`,
     image: `https://sotf.th.gl/locations/${mapLocation.id}.webp`,
   });

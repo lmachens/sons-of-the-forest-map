@@ -243,6 +243,20 @@ export function getTypes(): NodeType[] {
       filter: "documents",
     },
     {
+      value: "email",
+      title: t("Email"),
+      icon: icons.document,
+      src: "/icons/email.webp",
+      filter: "documents",
+    },
+    {
+      value: "pamphlet",
+      title: t("Pamphlet"),
+      icon: icons.document,
+      src: "/icons/pamphlet.webp",
+      filter: "documents",
+    },
+    {
       value: "hang-glider",
       title: t("Aircarft"),
       icon: icons["hang-glider"],
@@ -370,6 +384,7 @@ export function getTypes(): NodeType[] {
       value: "laptop",
       title: t("Upload location to GPS Tracker"),
       icon: icons.laptop,
+      src: "/icons/laptop.webp",
       filter: "laptop",
     },
     {
@@ -430,10 +445,10 @@ export function getTypes(): NodeType[] {
     },
     {
       value: "radio",
-      title: t("Tool"),
+      title: t("Entertainment"),
       icon: icons.poi,
       src: "/icons/radio.webp",
-      filter: "tools",
+      filter: "electronics",
     },
     {
       value: "solar-panel",
