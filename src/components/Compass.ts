@@ -1,4 +1,5 @@
 import { createElement } from "../lib/elements";
+import { useSettingsStore } from "../lib/stores/settings";
 
 export default function Compass() {
   const main = document.querySelector<HTMLElement>(".main")!;
@@ -14,21 +15,22 @@ export default function Compass() {
   );
   main.append(compass);
 
-  const compassToggle = document.querySelector<HTMLInputElement>("#compass_toggle")!;
-  compassToggle.checked = localStorage.getItem("hide_compass") !== "true";
+  const settings = useSettingsStore.getState();
+  const compassToggle =
+    document.querySelector<HTMLInputElement>("#compass_toggle")!;
+  compassToggle.checked = settings.showCompass;
   if (compassToggle.checked) {
     compass.classList.remove("hidden");
   }
-
   compassToggle.onchange = () => {
     if (compassToggle.checked) {
-      localStorage.removeItem("hide_compass");
+      settings.setValue("showCompass", true);
       compass.classList.remove("hidden");
     } else {
-      localStorage.setItem("hide_compass", "true");
+      settings.setValue("showCompass", false);
       compass.classList.add("hidden");
     }
-  }
+  };
 
   return {
     updateRotation: (rotation: number) => {
