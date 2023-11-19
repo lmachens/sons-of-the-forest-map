@@ -19,7 +19,6 @@ import Status from "./components/Status";
 import TileLayer from "./components/TileLayer";
 import TraceLine from "./components/TraceLine";
 import Zones from "./components/Zones";
-import { useAccountStore } from "./lib/account";
 import { WINDOWS } from "./lib/config";
 import {
   listenToGameLaunched,
@@ -28,6 +27,7 @@ import {
 } from "./lib/games";
 import { loadDictionary, translateHTML } from "./lib/i18n";
 import { initPlausible } from "./lib/plausible";
+import { useAccountStore } from "./lib/stores/account";
 import { initWakelock } from "./lib/wakelock";
 import { closeWindow, getCurrentWindow } from "./lib/windows";
 

@@ -1,7 +1,7 @@
-import { useAccountStore } from "./lib/account";
 import { GAME_CLASS_ID, WINDOWS } from "./lib/config";
 import { startNewGameSession } from "./lib/game-sessions";
 import { getRunningGameInfo } from "./lib/games";
+import { useAccountStore } from "./lib/stores/account";
 import {
   closeMainWindow,
   closeWindow,
