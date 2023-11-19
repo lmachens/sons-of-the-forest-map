@@ -3,10 +3,10 @@ export async function initWakelock() {
 
   const requestWakeLock = async () => {
     try {
-      if (!('wakeLock' in navigator)) {
+      if (!("wakeLock" in navigator)) {
         return;
       }
-      wakeLock = await (navigator.wakeLock as any).request('screen');
+      wakeLock = await (navigator.wakeLock as any).request("screen");
     } catch (err) {
       //
     }
@@ -14,15 +14,15 @@ export async function initWakelock() {
 
   await requestWakeLock();
   setTimeout(() => {
-    wakeLock.release();
+    wakeLock?.release();
     wakeLock = null;
   }, 5000);
 
   const handleVisibilityChange = async () => {
-    if (wakeLock !== null && document.visibilityState === 'visible') {
+    if (wakeLock !== null && document.visibilityState === "visible") {
       await requestWakeLock();
     }
   };
 
-  document.addEventListener('visibilitychange', handleVisibilityChange);
+  document.addEventListener("visibilitychange", handleVisibilityChange);
 }
