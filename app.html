@@ -195,9 +195,8 @@
           <section class="paper">
             <h2 data-i18n>Game sessions</h2>
             <p class="description" data-i18n>
-              Your current game session is automatically saved. You can load
-              saved game sessions to trace your path. The last 5 sessions are
-              saved.
+              Game sessions are auto-saved, allowing you to reload and track
+              your paths. Up to 5 recent sessions are saved.
             </p>
             <div id="game_sessions"></div>
           </section>
@@ -212,11 +211,10 @@
             <button class="show-on-map" data-i18n>Show on map</button>
             <label class="group">
               <input type="checkbox" id="follow_location" />
-              <span data-i18n>Follow location</span>
+              <span data-i18n>Follow Location</span>
             </label>
             <p class="description" data-i18n>
-              The player marker will be automatically centered if the location
-              is updated.
+              Player marker auto-centers whenever it gets updated.
             </p>
             <div class="game-overlay hidden">
               <span class="warning" data-i18n>Game is disabled!</span>
@@ -288,130 +286,176 @@
               <button class="hotkey" id="toggle_zones_grid_hotkey"></button>
             </div>
             <label class="group">
-              <input type="checkbox" id="overlay" />
-              <span data-i18n>Activate Overlay</span>
+              <input type="checkbox" id="images_toggle" class="toggle-switch" />
+              <label for="images_toggle"></label>
+              <span data-i18n>Show Images</span>
             </label>
             <p class="description" data-i18n>
-              This window is only visible as overlay in-game. Deactive it, if
-              you like to move this window to second screen or to ALT+TAB it.
+              Displays items images either on or under ground.
             </p>
             <label class="group">
-              <input type="checkbox" id="direction_line" />
+              <input
+                type="checkbox"
+                id="description_toggle"
+                class="toggle-switch"
+              />
+              <label for="description_toggle"></label>
+              <span data-i18n>Show Description</span>
+            </label>
+            <p class="description" data-i18n>
+              Displays items description for more information.
+            </p>
+            <label class="group">
+              <input type="checkbox" id="rq_toggle" class="toggle-switch" />
+              <label for="rq_toggle"></label>
+              <span data-i18n>Show Requirements</span>
+            </label>
+            <p class="description" data-i18n>
+              Displays list of required items in order to obtain them.
+            </p>
+            <label class="group">
+              <input type="checkbox" id="tp_toggle" class="toggle-switch" />
+              <label for="tp_toggle"></label>
+              <span data-i18n>Show Teleporting</span>
+            </label>
+            <p class="description" data-i18n>
+              Displays command for teleporting to the nodes.
+            </p>
+            <label class="group">
+              <input type="checkbox" id="tg_toggle" class="toggle-switch" />
+              <label for="tg_toggle"></label>
+              <span data-i18n>Show Togglego</span>
+            </label>
+            <p class="description" data-i18n>
+              Displays command for hiding or showing water bodies.
+            </p>
+            <label class="group">
+              <input type="checkbox" id="itemid_toggle" class="toggle-switch" />
+              <label for="itemid_toggle"></label>
+              <span data-i18n>Show Item ID</span>
+            </label>
+            <p class="description" data-i18n>
+              Displays command for spawning items.
+            </p>
+            <label class="group">
+              <input
+                type="checkbox"
+                id="compass_toggle"
+                class="toggle-switch"
+              />
+              <label for="compass_toggle"></label>
+              <span data-i18n>Show Compass</span>
+            </label>
+            <p class="description" data-i18n>
+              Displays a compass on top of the map.
+            </p>
+            <label class="group">
+              <input type="checkbox" id="trace_line" class="toggle-switch" />
+              <label for="trace_line"></label>
+              <span data-i18n>Show Trace Line</span>
+            </label>
+            <p class="description" data-i18n>
+              Displays small dots behind you, saving your paths.
+            </p>
+            <label class="group">
+              <input
+                type="checkbox"
+                id="direction_line"
+                class="toggle-switch"
+              />
+              <label for="direction_line"></label>
               <span data-i18n>Show Direction Line</span>
             </label>
             <p class="description" data-i18n>
               Displays a line in walking direction.
             </p>
             <label class="group">
-              <input type="checkbox" id="trace_line" />
-              <span data-i18n>Show Trace Line</span>
-            </label>
-            <p class="description" data-i18n>
-              Small dots will display the path you were walking.
-            </p>
-            <label class="group">
-              <input type="checkbox" id="zones_grid" />
-              <span data-i18n>Show Zones</span>
-            </label>
-            <p class="description">
-              <span data-i18n
-                >A grid for the in-game zones are displayed on the map to help
-                teleporting to this zone. Type</span
-              >
-              <code>cheatstick</code>
-              <span data-i18n>while in game (blindly) and press</span>
-              <code>F1</code> <span data-i18n>to open the prompt. Enter</span>
-              <code>gotozone TH</code>
-              <span data-i18n>as example to teleport to this zone.</span>
-            </p>
-            <label class="group">
-              <input type="checkbox" id="show_icon_background" />
+              <input
+                type="checkbox"
+                id="show_icon_background"
+                class="toggle-switch"
+              />
               <span data-i18n>Show Icon Background</span>
             </label>
             <p class="description" data-i18n>
-              Displays a background behind the icons to improve the visibility.
+              Enhances icon visibility with a background.
             </p>
+            <label class="group">
+              <input type="checkbox" id="zones_grid" class="toggle-switch" />
+              <label for="zones_grid"></label>
+              <span data-i18n>Show Zones</span>
+            </label>
+            <p class="description">
+              <span data-i18n>
+                Shows a map grid for teleporting to in-game zones. Use</span
+              >
+              <code>cheatstick</code>
+              <span data-i18n>in game press</span>
+              <code>F1</code> <span data-i18n>and type desired zone name.</span>
+            </p>
+            <label class="group">
+              <input type="checkbox" id="overlay" class="toggle-switch" />
+              <label for="overlay"></label>
+              <span data-i18n>Activate Overlay</span>
+            </label>
+            <p class="description" data-i18n>
+              Use this window exclusively as an in-game overlay. For
+              muliti-screen setups or to switch using ALT+TAB, disable this
+              option.
+            </p>
+            <span data-i18n>Change Icons Size</span>
+            <p class="description" data-i18n>
+              It is not advisable to change the size when all icons are active.
+            </p>
+            <div class="slidecontainer">
+              <input
+                type="range"
+                min="10"
+                max="26"
+                value="18"
+                class="slider"
+                id="iconSizeSlider"
+              />
+            </div>
           </section>
           <section class="links">
             <p>
-              Stay on top of your game with real-time position tracking, nodes
-              of weapons and points of interest, and overlay mode for seamless
-              progress tracking.<br />There are more apps on the games you love:
+              Take your gaming to new heights with accurate tracking, richly
+              detailed waypoints, and a sleek overlay for real-time progress.<br />
+              Ensure your privacy by reviewing our:
+              <a href="https://sotf.th.gl/privacy-policy.html" target="_blank"
+                >Privacy Policy</a
+              >
+              <br />
+              Find more gaming enchancements at:
             </p>
-            <a href="https://sotf.th.gl/privacy-policy.html" target="_blank">
-              Privacy Policy</a
+            <a href="https://www.th/gl/" target="_blank"
+              >The Hidden Gaming Lair</a
             >
-            <a href="https://palia.th.gl/" title="Palia Map" target="_blank">
-              Palia Map
-            </a>
-            <a
-              href="https://diablo4.th.gl/"
-              title="Diablo 4 Map"
-              target="_blank"
+            <a href="https://palia.th.gl/" target="_blank">Palia Map</a>
+            <a href="https://diablo4.th.gl/" target="_blank">Diablo 4 Map</a>
+            <a href="https://aeternum-map.th.gl/" target="_blank"
+              >New Wolrd Interactice Map</a
             >
-              Diablo 4 Map
-            </a>
-            <a
-              href="https://aeternum-map.th.gl/"
-              title="Aeternum Map - New World Map"
-              target="_blank"
+            <a href="https://www.nwmap.info/" target="_blank"
+              >New World Territory Map</a
             >
-              New World Interactive Map
-            </a>
-            <a
-              href="https://www.nwmap.info/"
-              title="New World Faction Territory Map"
-              target="_blank"
+            <a href="https://www.hogwarts.th.gl/" target="_blank"
+              >Hogwarts Legacy</a
             >
-              New World Territory Map
-            </a>
-            <a
-              href="https://www.hogwarts.th.gl/"
-              title="Hogwarts Legacy fansite"
-              target="_blank"
+            <a href="https://www.arkesia.th.gl/" target="_blank">Lost Ark</a>
+            <a href="https://lol.th.gl/" target="_blank">League of Legend</a>
+            <a href="https://www.soc.th.gl/" target="_blank"
+              >Songs of Conquest</a
             >
-              Hogwarts Legacy
-            </a>
-            <a
-              href="https://www.arkesia.th.gl/"
-              title="Interactive map for Lost Ark"
-              target="_blank"
+            <a href="https://github.com/lmachens/skeleton" target="_blank"
+              >Customizable Overlays</a
             >
-              Lost Ark
-            </a>
-            <a
-              href="https://lol.th.gl/"
-              title="Trophies app for League of Legends"
-              target="_blank"
-            >
-              League of Legends
-            </a>
-            <a
-              href="https://www.soc.th.gl/"
-              title="A Songs of Conquest fansite"
-              target="_blank"
-            >
-              Songs of Conquest
-            </a>
-            <a
-              href="https://github.com/lmachens/skeleton"
-              title="Simply display any website as customizable Overlay"
-              target="_blank"
-            >
-              Customizable Overlays
-            </a>
-            <a
-              href="https://www.th.gl/"
-              title="The Hidden Gaming Lair"
-              target="_blank"
-            >
-              The Hidden Gaming Lair
-            </a>
           </section>
         </div>
         <div class="banner">
           <a href="https://www.th.gl/support-me" target="_blank" data-i18n
-            >Get rid of ads and support me on Patreon</a
+            >Unlock our hidden treasury with your generous Patronage</a
           >
         </div>
       </aside>

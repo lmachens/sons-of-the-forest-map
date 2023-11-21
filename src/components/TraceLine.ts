@@ -5,24 +5,26 @@ import {
   addTraceLineItem,
   getLatestGameSession,
 } from "../lib/game-sessions";
+import { useSettingsStore } from "../lib/stores/settings";
 
 export default function TraceLine({ map }: { map: leaflet.Map }) {
   const latestGameSession = getLatestGameSession();
 
   const layerGroup = new leaflet.LayerGroup();
+  const settings = useSettingsStore.getState();
 
   const traceLine = document.querySelector<HTMLInputElement>("#trace_line")!;
-  traceLine.checked = localStorage.getItem("hide_trace_line") !== "true";
+  traceLine.checked = settings.showTraceLine;
   if (traceLine.checked) {
     layerGroup.addTo(map);
   }
 
   traceLine.onchange = () => {
     if (traceLine.checked) {
-      localStorage.removeItem("hide_trace_line");
+      settings.setValue("showTraceLine", true);
       layerGroup.addTo(map);
     } else {
-      localStorage.setItem("hide_trace_line", "true");
+      settings.setValue("showTraceLine", false);
       layerGroup.removeFrom(map);
     }
   };

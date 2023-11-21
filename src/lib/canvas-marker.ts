@@ -65,7 +65,7 @@ leaflet.Canvas.include({
 
       return;
     }
-    const key = `${type}-${isDiscovered}-${isHighlighted}-${isUnderground}-${showIconBackground}`;
+    const key = `${type}-${isDiscovered}-${isHighlighted}-${isUnderground}-${showIconBackground}-${radius}`;
     if (cachedImages[key]) {
       if (cachedImages[key].complete) {
         layerContext.drawImage(cachedImages[key], dx, dy);

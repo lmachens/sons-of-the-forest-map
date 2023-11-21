@@ -19,23 +19,79 @@ import {
   setDiscoveredNodeIDs,
 } from "../lib/nodes";
 import { getMapLocationId, setMapLocationId } from "../lib/router";
+import { useSettingsStore } from "../lib/stores/settings";
 
-const ICON_RADIUS = 18;
-const HIGHLIGHTED_ICON_RADIUS = ICON_RADIUS * 1.5;
 export default function Nodes({ map }: { map: leaflet.Map }) {
+  let settings = useSettingsStore.getState();
+  useSettingsStore.subscribe((state) => {
+    settings = state;
+    refresh();
+  });
+
+  const iconSizeSlider =
+    document.querySelector<HTMLInputElement>("#iconSizeSlider")!;
+  let iconSizeSliderTimeout: NodeJS.Timeout | undefined = undefined;
+  iconSizeSlider.addEventListener("input", () => {
+    if (iconSizeSliderTimeout) {
+      clearTimeout(iconSizeSliderTimeout);
+    }
+    setTimeout(() => {
+      settings.setValue("iconSize", parseInt(iconSizeSlider.value));
+    }, 500);
+  });
+
   const showIconBackground = document.querySelector<HTMLInputElement>(
     "#show_icon_background"
   )!;
-  showIconBackground.checked =
-    localStorage.getItem("show_icon_background") === "true";
-
   showIconBackground.onchange = () => {
-    refresh();
-    localStorage.setItem(
-      "show_icon_background",
-      showIconBackground.checked ? "true" : "false"
-    );
+    settings.setValue("showIconBackground", showIconBackground.checked);
   };
+
+  const showImagesSwitch =
+    document.querySelector<HTMLInputElement>("#images_toggle")!;
+  showImagesSwitch.addEventListener("change", () => {
+    settings.setValue("showImages", showImagesSwitch.checked);
+  });
+
+  const showDescriptionSwitch = document.querySelector<HTMLInputElement>(
+    "#description_toggle"
+  )!;
+  showDescriptionSwitch.addEventListener("change", () => {
+    settings.setValue("showDescriptions", showDescriptionSwitch.checked);
+  });
+
+  const showRequirementsInfoSwitch =
+    document.querySelector<HTMLInputElement>("#rq_toggle")!;
+  showRequirementsInfoSwitch.addEventListener("change", () => {
+    settings.setValue("showRequirements", showRequirementsInfoSwitch.checked);
+  });
+
+  const showTeleportingInfoSwitch =
+    document.querySelector<HTMLInputElement>("#tp_toggle")!;
+  showTeleportingInfoSwitch.addEventListener("change", () => {
+    settings.setValue("showTeleporting", showTeleportingInfoSwitch.checked);
+  });
+
+  const showTogglegoInfoSwitch =
+    document.querySelector<HTMLInputElement>("#tg_toggle")!;
+  showTogglegoInfoSwitch.addEventListener("change", () => {
+    settings.setValue("showTogglego", showTogglegoInfoSwitch.checked);
+  });
+
+  const showItemIDSwitch =
+    document.querySelector<HTMLInputElement>("#itemid_toggle")!;
+  showItemIDSwitch.addEventListener("change", () => {
+    settings.setValue("showItemId", showItemIDSwitch.checked);
+  });
+
+  iconSizeSlider.value = settings.iconSize.toString();
+  showIconBackground.checked = settings.showIconBackground;
+  showImagesSwitch.checked = settings.showImages;
+  showDescriptionSwitch.checked = settings.showDescriptions;
+  showRequirementsInfoSwitch.checked = settings.showRequirements;
+  showTeleportingInfoSwitch.checked = settings.showTeleporting;
+  showTogglegoInfoSwitch.checked = settings.showTogglego;
+  showItemIDSwitch.checked = settings.showItemId;
 
   const types = getTypes();
   const filters = getFilters();
@@ -154,7 +210,7 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
   function unselectMarker() {
     if (selectedMarker) {
       selectedMarker.options.isHighlighted = false;
-      selectedMarker.setRadius(ICON_RADIUS);
+      selectedMarker.setRadius(settings.iconSize);
       selectedMarker.closePopup();
       selectedMarker.bindTooltip(selectedMarker.options.tooltipContent, {
         direction: "top",
@@ -177,7 +233,7 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
         marker.addTo(group);
       }
       selectedMarker = marker;
-      selectedMarker.setRadius(HIGHLIGHTED_ICON_RADIUS);
+      selectedMarker.setRadius(settings.iconSize);
       selectedMarker.options.isHighlighted = true;
       selectedMarker.redraw();
       displaySelectedMarker();
@@ -233,17 +289,27 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       `,
     });
 
-    if (mapLocation.description) {
-      tooltipContent.append(
-        createElement("p", { className: "bold", innerText: t("Description") }),
-        createElement("p", { innerText: mapLocation.description })
-      );
+    if (settings.showDescriptions) {
+      if (mapLocation.description) {
+        tooltipContent.append(
+          createElement("p", {
+            className: "bold",
+            innerText: t("Description"),
+          }),
+          createElement("p", { innerText: mapLocation.description })
+        );
+      }
     }
-    if (requirements) {
-      tooltipContent.append(
-        createElement("p", { className: "bold", innerText: t("Requirements") }),
-        ...requirements
-      );
+    if (settings.showRequirements) {
+      if (requirements) {
+        tooltipContent.append(
+          createElement("p", {
+            className: "bold",
+            innerText: t("Requirements"),
+          }),
+          ...requirements
+        );
+      }
     }
     if (items) {
       tooltipContent.append(
@@ -251,42 +317,104 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
         ...items
       );
     }
-    if (mapLocation.warning) {
-      tooltipContent.append(
-        createElement("p", { className: "bold", innerText: t("Warning!") }),
-        createElement("p", {
-          className: "warning-content",
-          innerText: mapLocation.warning,
-        })
-      );
-    }
-    if (mapLocation.tp) {
-      let copyTimeout: NodeJS.Timeout | undefined = undefined;
-      const copyStatus = createElement("button", {
-        className: "copy-button",
-        innerText: t("📋 Copy"),
-        onclick: () => {
-          clearTimeout(copyTimeout);
-          navigator.clipboard.writeText(mapLocation.tp!);
-          copyStatus.innerText = t("✔ Copied!");
-          copyTimeout = setTimeout(() => {
-            copyStatus.innerText = t("📋 Copy");
-          }, 3000);
-        },
-      });
-      const tpTitle = createElement(
-        "p",
-        {
-          className: "bold tp-title",
-          innerText: t("Teleport here"),
-        },
-        [copyStatus]
-      );
+    if (settings.showTeleporting) {
+      if (mapLocation.warning) {
+        tooltipContent.append(
+          createElement("p", { className: "bold", innerText: t("Warning!") }),
+          createElement("p", {
+            className: "warning-content",
+            innerText: mapLocation.warning,
+          })
+        );
+      }
+      if (mapLocation.tp) {
+        let copyTimeout: NodeJS.Timeout | undefined = undefined;
+        const copyStatus = createElement("button", {
+          className: "copy-button",
+          innerText: t("📋 Copy"),
+          onclick: () => {
+            clearTimeout(copyTimeout);
+            navigator.clipboard.writeText(mapLocation.tp!);
+            copyStatus.innerText = t("✔ Copied!");
+            copyTimeout = setTimeout(() => {
+              copyStatus.innerText = t("📋 Copy");
+            }, 3000);
+          },
+        });
+        const tpTitle = createElement(
+          "p",
+          {
+            className: "bold tp-title",
+            innerText: t("Teleport here"),
+          },
+          [copyStatus]
+        );
 
-      const coordsContent = createElement("code", {
-        innerText: mapLocation.tp,
-      });
-      tooltipContent.append(tpTitle, coordsContent);
+        const coordsContent = createElement("code", {
+          innerText: mapLocation.tp,
+        });
+        tooltipContent.append(tpTitle, coordsContent);
+      }
+    }
+    if (settings.showTogglego) {
+      if (mapLocation.tg) {
+        let copyTimeout: NodeJS.Timeout | undefined = undefined;
+        const copyStatus = createElement("button", {
+          className: "copy-button",
+          innerText: "📋 Copy",
+          onclick: () => {
+            clearTimeout(copyTimeout);
+            navigator.clipboard.writeText(mapLocation.tg!);
+            copyStatus.innerText = t("✔ Copied!");
+            copyTimeout = setTimeout(() => {
+              copyStatus.innerText = t("📋 Copy");
+            }, 3000);
+          },
+        });
+        const tgTitle = createElement(
+          "p",
+          {
+            className: "bold tg-title",
+            innerText: t("Hide / Show"),
+          },
+          [copyStatus]
+        );
+
+        const coordsContent = createElement("code", {
+          innerText: mapLocation.tg,
+        });
+        tooltipContent.append(tgTitle, coordsContent);
+      }
+    }
+    if (settings.showItemId) {
+      if (mapLocation.itemid) {
+        let copyTimeout: NodeJS.Timeout | undefined = undefined;
+        const copyStatus = createElement("button", {
+          className: "copy-button",
+          innerText: "📋 Copy",
+          onclick: () => {
+            clearTimeout(copyTimeout);
+            navigator.clipboard.writeText(mapLocation.itemid!);
+            copyStatus.innerText = t("✔ Copied!");
+            copyTimeout = setTimeout(() => {
+              copyStatus.innerText = t("📋 Copy");
+            }, 3000);
+          },
+        });
+        const itemidTitle = createElement(
+          "p",
+          {
+            className: "bold itemid-title",
+            innerText: t("Spawn item"),
+          },
+          [copyStatus]
+        );
+
+        const coordsContent = createElement("code", {
+          innerText: mapLocation.itemid,
+        });
+        tooltipContent.append(itemidTitle, coordsContent);
+      }
     }
     if (mapLocation.wiki) {
       tooltipContent.append(
@@ -341,35 +469,41 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       },
       [tooltipContent, actionsContainer]
     );
-    if (mapLocation.screenshot) {
-      const screenshot = createElement("img", {
-        className: "screenshot-preview",
-        src: `/screenshots/${mapLocation.screenshot}`,
-        alt: "",
-        loading: "lazy",
-        onclick: () => {
-          const container = createElement(
-            "div",
-            {
-              className: "screenshot-container",
-              onclick: () => {
-                container.remove();
+    if (settings.showImages) {
+      if (mapLocation.screenshot) {
+        const screenshot = createElement("img", {
+          className: "screenshot-preview",
+          src: `/screenshots/${mapLocation.screenshot}`,
+          alt: "",
+          loading: "lazy",
+          onclick: () => {
+            const container = createElement(
+              "div",
+              {
+                className: "screenshot-container",
+                onclick: () => {
+                  container.remove();
+                },
               },
-            },
-            [
-              createElement("img", {
-                className: "screenshot-full",
-                src: `/screenshots/${mapLocation.screenshot}`,
-                alt: "",
-                loading: "lazy",
-              }),
-            ]
-          );
-          document.body.appendChild(container);
-        },
-      });
-      tooltipContainer.prepend(screenshot);
+              [
+                createElement("img", {
+                  className: "screenshot-full",
+                  src: `/screenshots/${mapLocation.screenshot}`,
+                  alt: "",
+                  loading: "lazy",
+                }),
+              ]
+            );
+            document.body.appendChild(container);
+          },
+        });
+        tooltipContainer.prepend(screenshot);
+      }
     }
+
+    const markerRadius = isHighlighted
+      ? settings.iconSize * 1.5
+      : settings.iconSize;
 
     const marker = new CanvasMarker([mapLocation.y, mapLocation.x], {
       id: mapLocation.id,
@@ -377,7 +511,7 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       src: type.src,
       path: type.icon,
       color: mapLocation.color || filter.color || "#ffffff",
-      radius: isHighlighted ? HIGHLIGHTED_ICON_RADIUS : ICON_RADIUS,
+      radius: markerRadius,
       isDiscovered,
       isUnderground: mapLocation.isUnderground,
       pmIgnore: true,
@@ -500,18 +634,13 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       marker.pm.enableLayerDrag();
     }
 
-    if (isHighlighted) {
-      marker.bindPopup(tooltipContainer);
-      marker.openPopup();
-    }
-
     marker.on("click", () => {
       // if (marker.pm?.layerDragEnabled()) {
       //   return;
       // }
       unselectMarker();
       selectedMarker = marker;
-      selectedMarker.setRadius(HIGHLIGHTED_ICON_RADIUS);
+      selectedMarker.setRadius(markerRadius * 1.5);
       selectedMarker.options.isHighlighted = true;
       selectedMarker.redraw();
       displaySelectedMarker();

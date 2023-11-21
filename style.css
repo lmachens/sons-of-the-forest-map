@@ -603,7 +603,7 @@ select {
 }
 
 .info {
-  color: rgb(112, 180, 202);
+  color: rgb(24, 154, 166);
 }
 
 .filter-icon {
@@ -999,6 +999,12 @@ a.external-link:after {
   align-items: center;
 }
 
+.tg-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .warning-title {
   display: flex;
   justify-content: space-between;
@@ -1006,4 +1012,98 @@ a.external-link:after {
 }
 .warning-content {
   color: rgb(241, 4, 4);
+}
+
+.itemid-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle-switch {
+  position: absolute;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.toggle-switch + label {
+  cursor: pointer;
+  display: block;
+  width: 40px;
+  height: 12px;
+  background: #8b8b8b;
+  border-radius: 12px;
+  transition: all 0.2s ease-out;
+  line-height: 12px;
+  box-shadow: 0px 0.5px 2.5px #6f6f6f;
+  position: relative;
+}
+
+.toggle-switch + label:before {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  top: 1px;
+  left: 2px;
+  background: #eee;
+  border-radius: 10px;
+  box-shadow: 1px 0 2px #6f6f6f;
+  transition: all 0.2s ease-out;
+}
+
+.toggle-switch:checked + label {
+  background: #123dc9;
+}
+
+.toggle-switch:checked + label:before {
+  left: calc(100% - 12px);
+  box-shadow: -2.5px 0px 5px #6f6f6f;
+}
+
+.toggle-switch + label:hover {
+  background: #9e9e9e; 
+}
+
+.toggle-switch:checked + label:hover {
+  background: #1b50ff; 
+}
+
+.slidecontainer {
+  width: calc(100% - 5px); 
+}
+
+.slider {
+  -webkit-appearance: none;  
+  appearance: none;
+  width: calc(100% - 5px); 
+  height: 10px; 
+  background: #d3d3d3; 
+  outline: none; 
+  opacity: 0.7; 
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px; 
+  height: 24px; 
+  background: #1b50ff; 
+  cursor: pointer; 
+  transition: background-color .2s ease-in-out;
+}
+
+.slider::-moz-range-thumb {
+  width: calc(10% - 2px); 
+  height: 14px; 
+  background: #1b50ff; 
+  cursor: pointer; 
+  transition: background-color .2s ease-in-out;
 }

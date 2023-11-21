@@ -11,9 +11,9 @@ import Nodes from "./components/Nodes";
 import Search from "./components/Search";
 import TileLayer from "./components/TileLayer";
 import Zones from "./components/Zones";
-import { useAccountStore } from "./lib/account";
 import { loadDictionary, translateHTML } from "./lib/i18n";
 import { initPlausible } from "./lib/plausible";
+import { useAccountStore } from "./lib/stores/account";
 import { initWakelock } from "./lib/wakelock";
 
 let lastLocation = { x: 0, y: 0, z: 0 };

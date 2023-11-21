@@ -1,4 +1,5 @@
 import leaflet from "leaflet";
+import { useSettingsStore } from "../lib/stores/settings";
 
 const ZONE_SIZE = 160;
 const OFFSET = -13 * ZONE_SIZE + ZONE_SIZE / 2;
@@ -6,19 +7,20 @@ export default function Zones({ map }: { map: leaflet.Map }) {
   const layerGroup = new leaflet.LayerGroup();
   layerGroup.addTo(map);
 
+  const settings = useSettingsStore.getState();
   const showZones = document.querySelector<HTMLInputElement>("#zones_grid")!;
-  showZones.checked = localStorage.getItem("show_zones") === "true";
+  showZones.checked = settings.showZones;
   if (showZones.checked) {
     drawZones();
   }
 
   showZones.onchange = () => {
     if (showZones.checked) {
-      localStorage.setItem("show_zones", "true");
+      settings.setValue("showZones", true);
       drawZones();
       layerGroup.addTo(map);
     } else {
-      localStorage.removeItem("show_zones");
+      settings.setValue("showZones", false);
       removeZones();
       layerGroup.removeFrom(map);
     }
@@ -29,12 +31,12 @@ export default function Zones({ map }: { map: leaflet.Map }) {
       if (event.name === "toggle_zones_grid") {
         if (showZones.checked) {
           showZones.checked = false;
-          localStorage.removeItem("show_zones");
+          settings.setValue("showZones", false);
           removeZones();
           layerGroup.removeFrom(map);
         } else {
           showZones.checked = true;
-          localStorage.setItem("show_zones", "true");
+          settings.setValue("showZones", true);
           drawZones();
           layerGroup.addTo(map);
         }

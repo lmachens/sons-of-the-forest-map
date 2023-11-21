@@ -1,5 +1,6 @@
 import leaflet from "leaflet";
 import { PlayerPosition } from "../lib/player-marker";
+import { useSettingsStore } from "../lib/stores/settings";
 
 export default function DirectionLine({ map }: { map: leaflet.Map }) {
   const polyline = leaflet.polyline([], {
@@ -7,20 +8,20 @@ export default function DirectionLine({ map }: { map: leaflet.Map }) {
     dashArray: "5",
   });
 
+  const settings = useSettingsStore.getState();
   const directionLine =
     document.querySelector<HTMLInputElement>("#direction_line")!;
-  directionLine.checked =
-    localStorage.getItem("hide_direction_line") !== "true";
+  directionLine.checked = settings.showDirectionLine;
   if (directionLine.checked) {
     polyline.addTo(map);
   }
 
   directionLine.onchange = () => {
     if (directionLine.checked) {
-      localStorage.removeItem("hide_direction_line");
+      settings.setValue("showDirectionLine", true);
       polyline.addTo(map);
     } else {
-      localStorage.setItem("hide_direction_line", "true");
+      settings.setValue("showDirectionLine", false);
       polyline.removeFrom(map);
     }
   };
