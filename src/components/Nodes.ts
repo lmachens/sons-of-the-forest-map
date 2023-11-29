@@ -116,9 +116,14 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
 
     getMapLocations().forEach((mapLocation) => {
       const type = types.find((type) => type.value === mapLocation.type)!;
-      const isVisible =
-        mapLocation.id === mapLocationId ||
-        !deselectedFilters.includes(type.filter!);
+
+      let isVisible = mapLocation.id === mapLocationId;
+      if (!isVisible && type.filter !== undefined) {
+        if (Array.isArray(type.filter)) {
+          isVisible = type.filter.some(filter => !deselectedFilters.includes(filter));
+        } else {
+          isVisible = !deselectedFilters.includes(type.filter);
+        }}
 
       const marker = latestMarkers.find(
         (marker) => marker.options.id === mapLocation.id
@@ -249,8 +254,14 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
   ) {
     const type =
       types.find((type) => type.value === mapLocation.type) || types[0];
-    const filter =
-      filters.find((filter) => filter.value === type.filter) || filters[0];
+    let primaryFilterColor = "#ffffff";
+    if (type.filter) {
+      const primaryFilterValue = Array.isArray(type.filter) ? type.filter[0] : type.filter;
+      const primaryFilter = filters.find(filter => filter.value === primaryFilterValue);
+      if (primaryFilter) {
+        primaryFilterColor = primaryFilter.color;
+      }
+    }
 
     const requirements = mapLocation.requirements?.map((requirementId) => {
       const mapLocation = getMapLocationById(requirementId);
@@ -510,7 +521,7 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       type: type.value,
       src: type.src,
       path: type.icon,
-      color: mapLocation.color || filter.color || "#ffffff",
+      color: primaryFilterColor,
       radius: markerRadius,
       isDiscovered,
       isUnderground: mapLocation.isUnderground,

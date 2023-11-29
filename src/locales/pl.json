@@ -399,7 +399,6 @@
   "Abandoned": "Opuszczony",
   "POI": "Poi",
   "Outfits": "Stroje",
-  "Loot cases": "Z łupy",
   "Blueprints": "Plany",
   "Artifacts": "Artefakty",
   "Fishing Huts": "Łowotworowe chaty",
@@ -706,5 +705,13 @@
   "Pond PFB": "Pond PFB",
   "Pond PFC": "Pond PFC",
   "Pond PFD": "Pond Pfd",
-  "Pond Q": "Staw q"
+  "Pond Q": "Staw q",
+  "Cave Loot": "Łup jaskiniowy",
+  "Bunker Loot": "Zabrania bunkra",
+  "Loot Cases": "Z łupy",
+  "Cave D": "Jaskinia d",
+  "Cave B": "Jaskinia b",
+  "Cave F": "Jaskinia f",
+  "Artifact Cave": "Jaskinia artefaktowa",
+  "Cave G": "Jaskinia g"
 }

@@ -8,7 +8,7 @@ export type NodeType = {
   title: string;
   icon: string;
   src?: string;
-  filter?: string;
+  filter?: string | string[];
 };
 
 export function getTypes(): NodeType[] {
@@ -61,32 +61,39 @@ export function getTypes(): NodeType[] {
       filter: "weapons",
     },
     {
+      value: "pistol-bunker",
+      title: t("Weapon"),
+      icon: icons.pistol,
+      src: "/icons/pistol.webp",
+      filter: ["weapons", "bunker-loot"],
+    },
+    {
       value: "stun-gun",
       title: t("Weapon"),
       icon: icons["stun-gun"],
       src: "/icons/stun-gun.webp",
-      filter: "weapons",
+      filter: ["weapons", "cave-loot"],
     },
     {
       value: "rebreather",
       title: t("Tool"),
       icon: icons.rebreather,
       src: "/icons/rebreather.webp",
-      filter: "tools",
+      filter: ["tools", "cave-loot"],
     },
     {
       value: "cross",
       title: t("Weapon"),
       icon: icons.cross,
       src: "/icons/cross.webp",
-      filter: "weapons",
+      filter: ["weapons", "bunker-loot"],
     },
     {
       value: "rope-gun",
       title: t("Tool"),
       icon: icons["rope-gun"],
       src: "/icons/rope-gun.webp",
-      filter: "tools",
+      filter: ["tools", "cave-loot"],
     },
     {
       value: "slingshot",
@@ -100,7 +107,7 @@ export function getTypes(): NodeType[] {
       title: t("Tool"),
       icon: icons.shovel,
       src: "/icons/shovel.webp",
-      filter: "tools",
+      filter: ["tools", "cave-loot"],
     },
     {
       value: "shotgun",
@@ -114,63 +121,56 @@ export function getTypes(): NodeType[] {
       title: t("Keycard"),
       icon: icons.keycard,
       src: "/icons/keycard.webp",
-      filter: "tools",
+      filter: ["tools", "bunker-loot"],
     },
     {
       value: "crossbow",
       title: t("Weapon"),
       icon: icons.crossbow,
       src: "/icons/crossbow.webp",
-      filter: "weapons",
+      filter: ["weapons", "bunker-loot"],
     },
     {
       value: "firefighter-axe",
       title: t("Tool"),
       icon: icons["firefighter-axe"],
       src: "/icons/firefighter-axe.webp",
-      filter: "tools",
+      filter: ["tools", "bunker-loot"],
     },
     {
       value: "guitar",
       title: t("Weapon"),
       icon: icons.guitar,
       src: "/icons/guitar.webp",
-      filter: "weapons",
+      filter: ["weapons", "bunker-loot"],
     },
     {
       value: "chainsaw",
       title: t("Tool"),
       icon: icons.chainsaw,
       src: "/icons/chainsaw.webp",
-      filter: "tools",
+      filter: ["tools", "bunker-loot"],
     },
     {
       value: "compound-bow",
       title: t("Weapon"),
       icon: icons["compound-bow"],
       src: "/icons/compound-bow.webp",
-      filter: "weapons",
+      filter: ["weapons", "bunker-loot"],
     },
     {
       value: "revolver",
       title: t("Weapon"),
       icon: icons.revolver,
       src: "/icons/revolver.webp",
-      filter: "weapons",
+      filter: ["weapons", "bunker-loot"],
     },
     {
       value: "katana",
       title: t("Weapon"),
       icon: icons.katana,
       src: "/icons/katana.webp",
-      filter: "weapons",
-    },
-    {
-      value: "golden-armor",
-      title: t("Player Gear"),
-      icon: icons["golden-armor"],
-      src: "/icons/golden-armor.webp",
-      filter: "outfits",
+      filter: ["weapons", "bunker-loot"],
     },
     {
       value: "binoculars",
@@ -198,7 +198,7 @@ export function getTypes(): NodeType[] {
       title: t("3D Printer"),
       icon: icons.printer,
       src: "/icons/printer.webp",
-      filter: "printer",
+      filter: ["printer", "bunker-loot"],
     },
     {
       value: "cave",
@@ -222,6 +222,34 @@ export function getTypes(): NodeType[] {
       filter: "outfits",
     },
     {
+      value: "golden-armor",
+      title: t("Player Gear"),
+      icon: icons["golden-armor"],
+      src: "/icons/golden-armor.webp",
+      filter: ["outfits", "cave-loot"],
+    },
+    {
+      value: "golden-mask",
+      title: t("Player Gear"),
+      icon: icons.outfit,
+      src: "/icons/golden-mask.webp",
+      filter: ["outfits", "bunker-loot"],
+    },
+    {
+      value: "outfit-cave",
+      title: t("Outfit"),
+      icon: icons.outfit,
+      src: "/icons/outfit.webp",
+      filter: ["outfits", "cave-loot"],
+    },
+    {
+      value: "outfit-bunker",
+      title: t("Outfit"),
+      icon: icons.outfit,
+      src: "/icons/outfit.webp",
+      filter: ["outfits", "bunker-loot"],
+    },
+    {
       value: "gps-locator",
       title: t("Tool"),
       icon: icons["gps-locator"],
@@ -236,11 +264,32 @@ export function getTypes(): NodeType[] {
       filter: "documents",
     },
     {
+      value: "book-bunker",
+      title: t("Book"),
+      icon: icons.book,
+      src: "/icons/book.webp",
+      filter: ["documents", "bunker-loot"],
+    },
+    {
       value: "document",
       title: t("Document"),
       icon: icons.document,
       src: "/icons/document.webp",
       filter: "documents",
+    },
+    {
+      value: "document-cave",
+      title: t("Document"),
+      icon: icons.document,
+      src: "/icons/document.webp",
+      filter: ["documents", "cave-loot"],
+    },
+    {
+      value: "document-bunker",
+      title: t("Document"),
+      icon: icons.document,
+      src: "/icons/document.webp",
+      filter: ["documents", "bunker-loot"],
     },
     {
       value: "email",
@@ -269,6 +318,13 @@ export function getTypes(): NodeType[] {
       icon: icons.putter,
       src: "/icons/putter.webp",
       filter: "weapons",
+    },
+    {
+      value: "putter-bunker",
+      title: t("Weapon"),
+      icon: icons.putter,
+      src: "/icons/putter.webp",
+      filter: ["weapons", "bunker-loot"],
     },
     {
       value: "wooden-crate",
@@ -336,7 +392,7 @@ export function getTypes(): NodeType[] {
       title: t("Googles"),
       icon: icons["night-vision"],
       src: "/icons/night-vision.webp",
-      filter: "tools",
+      filter: ["tools", "cave-loot"],
     },
     {
       value: "pistol-rail",
@@ -346,11 +402,25 @@ export function getTypes(): NodeType[] {
       filter: "attachments",
     },
     {
+      value: "pistol-rail-bunker",
+      title: t("Weapon Attachment"),
+      icon: icons["pistol-rail"],
+      src: "/icons/pistol-rail.webp",
+      filter: ["attachments", "bunker-loot"],
+    },
+    {
       value: "shotgun-rail",
       title: t("Weapon Attachment"),
       icon: icons["shotgun-rail"],
       src: "/icons/shotgun-rail.webp",
       filter: "attachments",
+    },
+    {
+      value: "shotgun-rail-bunker",
+      title: t("Weapon Attachment"),
+      icon: icons["shotgun-rail"],
+      src: "/icons/shotgun-rail.webp",
+      filter: ["attachments", "bunker-loot"],
     },
     {
       value: "flashlight-attachment",
@@ -360,6 +430,20 @@ export function getTypes(): NodeType[] {
       filter: "attachments",
     },
     {
+      value: "flashlight-attachment-cave",
+      title: t("Weapon Attachment"),
+      icon: icons["flashlight-attachment"],
+      src: "/icons/flashlight-attachment.webp",
+      filter: ["attachments", "cave-loot"],
+    },
+    {
+      value: "flashlight-attachment-bunker",
+      title: t("Weapon Attachment"),
+      icon: icons["flashlight-attachment"],
+      src: "/icons/flashlight-attachment.webp",
+      filter: ["attachments", "bunker-loot"],
+    },
+    {
       value: "suppressor",
       title: t("Weapon Attachment"),
       icon: icons.suppressor,
@@ -367,11 +451,18 @@ export function getTypes(): NodeType[] {
       filter: "attachments",
     },
     {
+      value: "suppressor-bunker",
+      title: t("Weapon Attachment"),
+      icon: icons.suppressor,
+      src: "/icons/suppressor.webp",
+      filter: ["attachments", "bunker-loot"],
+    },
+    {
       value: "laser-attachment",
       title: t("Weapon Attachment"),
       icon: icons["laser-sight"],
       src: "/icons/laser-sight.webp",
-      filter: "attachments",
+      filter: ["attachments", "bunker-loot"],
     },
     {
       value: "lake",
@@ -381,7 +472,14 @@ export function getTypes(): NodeType[] {
       filter: "lake",
     },
     {
-      value: "laptop",
+      value: "laptop-cave",
+      title: t("Upload location to GPS Tracker"),
+      icon: icons.laptop,
+      src: "/icons/laptop.webp",
+      filter: "laptop",
+    },
+    {
+      value: "laptop-bunker",
       title: t("Upload location to GPS Tracker"),
       icon: icons.laptop,
       src: "/icons/laptop.webp",
@@ -395,6 +493,13 @@ export function getTypes(): NodeType[] {
       filter: "tools",
     },
     {
+      value: "action-camera-bunker",
+      title: t("Watch pre-made videos"),
+      icon: icons["action-camera"],
+      src: "/icons/action-camera.webp",
+      filter: ["tools", "bunker-loot"],
+    },
+    {
       value: "golf-cart",
       title: t("Drive around the map"),
       icon: icons.unicycle,
@@ -406,7 +511,7 @@ export function getTypes(): NodeType[] {
       title: t("Ranged type of weapon"),
       icon: icons.shotgun,
       src: "/icons/rifle.webp",
-      filter: "weapons",
+      filter: ["weapons", "cave-loot"],
     },
     {
       value: "waterfall",
@@ -423,6 +528,13 @@ export function getTypes(): NodeType[] {
       filter: "tools",
     },
     {
+      value: "cooking-pot-bunker",
+      title: t("Tool"),
+      icon: icons.poi,
+      src: "/icons/cooking-pot.webp",
+      filter: ["tools", "bunker-loot"],
+    },
+    {
       value: "large-battery",
       title: t("Electronics"),
       icon: icons.poi,
@@ -434,7 +546,7 @@ export function getTypes(): NodeType[] {
       title: t("Tool"),
       icon: icons.poi,
       src: "/icons/pickaxe.webp",
-      filter: "tools",
+      filter: ["tools", "cave-loot"],
     },
     {
       value: "pond",
@@ -465,6 +577,13 @@ export function getTypes(): NodeType[] {
       filter: "blueprint",
     },
     {
+      value: "blueprint-cave",
+      title: t("Blueprint"),
+      icon: icons.document,
+      src: "/icons/document.webp",
+      filter: ["blueprint", "cave-loot"],
+    },
+    {
       value: "fishing-hut",
       title: t("Abandoned"),
       icon: icons["fishing-hut"],
@@ -476,35 +595,42 @@ export function getTypes(): NodeType[] {
       title: t("Artifact"),
       icon: icons.poi,
       src: "/icons/artifact-a.webp",
-      filter: "artifact",
+      filter: ["artifact", "cave-loot"],
     },
     {
       value: "artifact-b",
       title: t("Artifact"),
       icon: icons.poi,
       src: "/icons/artifact-b.webp",
-      filter: "artifact",
+      filter: ["artifact", "cave-loot"],
     },
     {
       value: "artifact-c",
       title: t("Artifact"),
       icon: icons.poi,
       src: "/icons/artifact-c.webp",
-      filter: "artifact",
+      filter: ["artifact", "cave-loot"],
     },
     {
       value: "artifact-d",
       title: t("Artifact"),
       icon: icons.poi,
       src: "/icons/artifact-d.webp",
-      filter: "artifact",
+      filter: ["artifact", "cave-loot"],
     },
     {
       value: "artifact-e",
       title: t("Artifact"),
       icon: icons.poi,
       src: "/icons/artifact-d.webp",
-      filter: "artifact",
+      filter: ["artifact", "cave-loot"],
+    },
+    {
+      value: "grave",
+      title: t("Grave"),
+      icon: icons.poi,
+      src: "/icons/grave.webp",
+      filter: "poi",
     },
   ];
 }
@@ -541,77 +667,52 @@ export function getFilters(): Filter[] {
     {
       value: "poi",
       title: t("POI"),
-      color: "rgb(152 251 152)",
-    },
-    {
-      value: "cave",
-      title: t("Caves"),
-      color: "rgb(173 216 230)",
-    },
-    {
-      value: "bunker-hatch",
-      title: t("Bunkers"),
-      color: "rgb(255 215 0)",
-    },
-    {
-      value: "electronics",
-      title: t("Electronics"),
-      color: "rgb(176 196 222)",
-    },
-    {
-      value: "printer",
-      title: t("3D Printers"),
-      color: "rgb(255 105 180)",
-    },
-    {
-      value: "weapons",
-      title: t("Weapons"),
-      color: "rgb(195, 22, 22)",
-    },
-    {
-      value: "attachments",
-      title: t("Attachments"),
-      color: "rgb(255 182 193)",
-    },
-    {
-      value: "laptop",
-      title: t("Laptops"),
-      color: "rgb(255 140 0)",
-    },
-    {
-      value: "tools",
-      title: t("Tools"),
-      color: "rgb(0, 128, 0)",
-    },
-    {
-      value: "outfits",
-      title: t("Outfits"),
-      color: "rgb(186 85 211)",
-    },
-    {
-      value: "documents",
-      title: t("Documents"),
-      color: "rgb(240 125 138)",
-    },
-    {
-      value: "loot",
-      title: t("Loot cases"),
-      color: "rgb(123 104 238)",
-    },
-    {
-      value: "blueprint",
-      title: t("Blueprints"),
-      color: "rgb(255 20 147)",
+      color: "rgb(153, 201, 210)",
     },
     {
       value: "vehicle",
       title: t("Transportation"),
-      color: "rgb(65 105 225)",
+      color: "rgb(192, 192, 255)",
     },
     {
-      value: "artifact",
-      title: t("Artifacts"),
-      color: "rgb(255 0 255)",
+      value: "cave",
+      title: t("Caves"),
+      color: "rgb(191, 230, 255)",
+    },
+    {
+      value: "weapons",
+      title: t("Weapons"),
+      color: "rgb(136, 55, 156)",
+    },
+    {
+      value: "cave-loot",
+      title: t("Cave Loot"),
+      color: "rgb(173 216 230)",
+    },
+    {
+      value: "attachments",
+      title: t("Attachments"),
+      color: "rgb(186, 85, 236)",
+    },
+    {
+      value: "bunker-hatch",
+      title: t("Bunkers"),
+      color: "rgb(191, 230, 255)",
+    },
+    {
+      value: "outfits",
+      title: t("Outfits"),
+      color: "rgb(206, 105, 231)",
+    },
+    {
+      value: "bunker-loot",
+      title: t("Bunker Loot"),
+      color: "rgb(173 216 230)",
+    },
+    {
+      value: "tools",
+      title: t("Tools"),
+      color: "rgb(96, 160, 96)",
     },
     {
       value: "village",
@@ -619,24 +720,59 @@ export function getFilters(): Filter[] {
       color: "rgb(255 0 0)",
     },
     {
-      value: "abandoned-camp",
-      title: t("Abandoned Camps"),
-      color: "rgb(152 251 152)",
+      value: "electronics",
+      title: t("Electronics"),
+      color: "rgb(128, 200, 128)",
     },
     {
-      value: "lake",
-      title: t("Lakes"),
-      color: "rgb(29 222 255)",
+      value: "abandoned-camp",
+      title: t("Abandoned Camps"),
+      color: "rgb(152, 251, 152)",
+    },
+    {
+      value: "laptop",
+      title: t("Laptops"),
+      color: "rgb(153, 230, 153)",
     },
     {
       value: "fishing-hut",
       title: t("Fishing Huts"),
-      color: "rgb(152 251 152)",
+      color: "rgb(122, 221, 122)",
+    },
+    {
+      value: "printer",
+      title: t("3D Printers"),
+      color: "rgb(179, 255, 179)",
     },
     {
       value: "pond",
       title: t("Ponds"),
-      color: "rgb(29 222 255)",
+      color: "rgb(44, 44, 255)",
+    },
+    {
+      value: "documents",
+      title: t("Documents"),
+      color: "rgb(255, 210, 0)",
+    },
+    {
+      value: "lake",
+      title: t("Lakes"),
+      color: "rgb(44, 44, 175)",
+    },
+    {
+      value: "blueprint",
+      title: t("Blueprints"),
+      color: "rgb(255, 180, 0)",
+    },
+    {
+      value: "loot",
+      title: t("Loot Cases"),
+      color: "rgb(170, 120, 70)",
+    },
+    {
+      value: "artifact",
+      title: t("Artifacts"),
+      color: "rgb(255, 150, 0)",
     },
   ];
 }

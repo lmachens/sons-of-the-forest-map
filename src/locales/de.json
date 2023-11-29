@@ -399,7 +399,6 @@
   "Abandoned": "Verlassen",
   "POI": "Poi",
   "Outfits": "Outfits",
-  "Loot cases": "Beutefälle",
   "Blueprints": "Blaupausen",
   "Artifacts": "Artefakte",
   "Fishing Huts": "Angelhütten",
@@ -706,5 +705,13 @@
   "Pond PFB": "Teich PFB",
   "Pond PFC": "Teich PFC",
   "Pond PFD": "Pond PFD",
-  "Pond Q": "Teich q"
+  "Pond Q": "Teich q",
+  "Cave Loot": "Höhlengebäude",
+  "Bunker Loot": "Bunker -Beute",
+  "Loot Cases": "Beutefälle",
+  "Cave D": "Höhle d",
+  "Cave B": "Höhle b",
+  "Cave F": "Höhle f",
+  "Artifact Cave": "Artefakthöhle",
+  "Cave G": "Höhle g"
 }

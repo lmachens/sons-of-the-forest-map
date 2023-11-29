@@ -86,7 +86,7 @@
   },
   {
     "id": 9,
-    "type": "pistol",
+    "type": "pistol-bunker",
     "title": "Pistol",
     "description": "On 1st bunker floor",
     "x": 1153.76,
@@ -459,7 +459,7 @@
     "isUnderground": true,
     "screenshot": "artifact_a.webp",
     "warning":"Double use the command in orded to teleport underground",
-    "tp": "goto -ArtifactPieceAPickup",
+    "tp": "goto ArtifactPieceAPickup",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Artifact#Artifact_Piece_A"
   },
   {
@@ -740,7 +740,7 @@
   },
   {
     "id": 587,
-    "type": "laptop",
+    "type": "laptop-cave",
     "title": "Laptop no.1",
     "description": "Entertainment Bunker Location",
     "x": -422.32,
@@ -752,7 +752,7 @@
   },
   {
     "id": 588,
-    "type": "laptop",
+    "type": "laptop-cave",
     "title": "Laptop no.2",
     "description": "Bunker A Location",
     "x": -581,
@@ -766,7 +766,7 @@
   },
   {
     "id": 592,
-    "type": "laptop",
+    "type": "laptop-bunker",
     "title": "Laptop no.3",
     "description": "Food and Dining Bunker Location",
     "x": -424.42,
@@ -781,7 +781,7 @@
   },
   {
     "id": 589,
-    "type": "laptop",
+    "type": "laptop-bunker",
     "title": "Laptop no.4",
     "description": "Residential Bunker Location",
     "x": -971,
@@ -794,7 +794,7 @@
   },
   {
     "id": 590,
-    "type": "laptop",
+    "type": "laptop-bunker",
     "title": "Laptop no.5",
     "description": "Bunker B Location",
     "x": -1179.18,
@@ -809,7 +809,7 @@
   },
   {
     "id": 591,
-    "type": "laptop",
+    "type": "laptop-bunker",
     "title": "Laptop no.6",
     "description": "Bunker C Location",
     "x": -1127.82,
@@ -824,7 +824,7 @@
   },
   {
     "id": 585,
-    "type": "laptop",
+    "type": "laptop-bunker",
     "title": "Laptop no.7",
     "description": "Luxury Bunker Location",
     "x": 1176.95,
@@ -839,7 +839,7 @@
   },
   {
     "id": 586,
-    "type": "action-camera",
+    "type": "action-camera-bunker",
     "title": "Action Camera",
     "description": "Cultist1",
     "x": 1137.45,
@@ -867,7 +867,7 @@
   },
   {
     "id": 825,
-    "type": "action-camera",
+    "type": "action-camera-bunker",
     "title": "Action Camera",
     "description": "Sahara Confidential",
     "x": -1095.15,
@@ -884,7 +884,7 @@
   },
   {
     "id": 516,
-    "type": "action-camera",
+    "type": "action-camera-bunker",
     "title": "Action Camera",
     "description": "Estate Agent",
     "x": 1620.60,
@@ -952,6 +952,7 @@
     "id": 42,
     "type": "cave",
     "title": "Golden Armor Cave",
+    "description": "Cave D",
     "x": -530,
     "y": -627,
     "items": [
@@ -990,11 +991,13 @@
     "id": 45,
     "type": "cave",
     "title": "Rope Gun Cave Main Entrance",
+    "description": "Cave B",
     "x": -1104,
     "y": -179,
     "items": [
       13,
       12,
+      499,
       96,
       98
     ],
@@ -1018,6 +1021,7 @@
     "id": 893,
     "type": "cave",
     "title": "Pickaxe Cave",
+    "description": "Cave F",
     "x": 1289,
     "y": 588,
     "items": [
@@ -1060,7 +1064,6 @@
     "x": -530,
     "y": 132,
     "items": [
-      14,
       588,
       15,
       327,
@@ -1098,6 +1101,18 @@
     ],
     "screenshot": "rebreather_cave.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Caves#Beach/Rebreather_Cave"
+  },
+  {
+    "id": 517,
+    "type": "cave",
+    "title": "Artifact Cave",
+    "description": "Cave G",
+    "x": 1694.64,
+    "y": 1042.21,
+    "items": [
+      501,
+      502
+    ]
   },
   {
     "id": 66,
@@ -1417,8 +1432,6 @@
     "items": [
       388,
       386,
-      501,
-      502,
       389,
       503
     ],
@@ -1440,6 +1453,10 @@
     "title": "Fishing Huts",
     "x": 1824.84,
     "y": -512.55,
+    "items": [
+      496,
+      439
+    ],
     "tp": "goto AbandonedBuildings3",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
@@ -1471,7 +1488,7 @@
   },
   {
     "id": 71,
-    "type": "outfit",
+    "type": "outfit-cave",
     "title": "Leather Jacket",
     "x": -646.00,
     "y": 1510.95,
@@ -1527,7 +1544,7 @@
   },
   {
     "id": 75,
-    "type": "outfit",
+    "type": "outfit-bunker",
     "title": "Dress for Virginia",
     "description": "On the right side from entrance",
     "x": -914,
@@ -1561,7 +1578,7 @@
   },
   {
     "id": 79,
-    "type": "outfit",
+    "type": "outfit-bunker",
     "title": "Track Suit",
     "x": -1141.52,
     "y": 6.08,
@@ -1577,7 +1594,7 @@
   },
   {
     "id": 81,
-    "type": "outfit",
+    "type": "outfit-bunker",
     "title": "Tuxedo",
     "description": "On cabinet in the bathroom",
     "x": -416.78,
@@ -1594,7 +1611,7 @@
   },
   {
     "id": 82,
-    "type": "outfit",
+    "type": "outfit-bunker",
     "title": "Leather Suit for Virginia",
     "description":"On 2nd bunker floor",
     "x": 1166.92,
@@ -1621,7 +1638,7 @@
   },
   {
     "id": 83,
-    "type": "outfit",
+    "type": "golden-mask",
     "title": "Golden Mask",
     "description": "On 5th bunker floor",
     "x": 1139.09,
@@ -1638,7 +1655,7 @@
   },
   {
     "id": 318,
-    "type": "outfit",
+    "type": "outfit-cave",
     "title": "Wetsuit",
     "x": -509,
     "y": 128,
@@ -1652,7 +1669,7 @@
   },
   {
     "id": 505,
-    "type": "outfit",
+    "type": "outfit-bunker",
     "title": "Space Suit",
     "description": "On 2nd bunker floor",
     "x": 1175.79,
@@ -1707,7 +1724,7 @@
   },
   {
     "id": 88,
-    "type": "book",
+    "type": "book-bunker",
     "title": "Parallel Universes and Travel Between Them Book",
     "description": "Next to 3D Printer inside the bunker",
     "x": -1198.88,
@@ -1734,7 +1751,7 @@
   },
   {
     "id": 90,
-    "type": "book",
+    "type": "book-bunker",
     "title": "Deep Sleep Book",
     "description": "On 5th bunker floor",
     "x": 1139.16,
@@ -1760,7 +1777,7 @@
   },
   {
     "id": 828,
-    "type": "book",
+    "type": "book-bunker",
     "title": "Rescued",
     "x": 1623.26,
     "y": 504.56,
@@ -2297,7 +2314,7 @@
   },
   {
     "id": 896,
-    "type": "blueprint",
+    "type": "blueprint-cave",
     "title": "Item Plating Machine",
     "description": "Item upgrading machine",
     "x": 1333,
@@ -2308,11 +2325,11 @@
     ],
     "screenshot": "blueprint_item_plating_machine.webp",
     "warning":"Teleport after entering the cave to avoid falling under the map",
-    "tp": "goto -417,5 76,1 694,5"
+    "tp": "goto BlueprintItemPlatingMachinePickup"
   },
   {
     "id": 379,
-    "type": "blueprint",
+    "type": "blueprint-cave",
     "title": "Powered Cross",
     "description": "Unlockable new decoration",
     "x": -648.78,
@@ -2320,7 +2337,7 @@
     "isUnderground": true,
     "screenshot": "blueprint_powered_cross.webp",
     "warning":"Teleport after entering the cave to avoid falling under the map",
-    "tp": "goto -648,7 -17 1389,5"
+    "tp": "goto BlueprintPoweredCrossPickup"
   },
   {
     "id": 387,
@@ -2344,7 +2361,7 @@
   },
   {
     "id": 494,
-    "type": "blueprint",
+    "type": "blueprint-cave",
     "title": "Clock",
     "description": "Unlockable new decoration",
     "x": 461.08,
@@ -2366,17 +2383,16 @@
   },
   {
     "id": 497,
-    "type": "blueprint",
+    "type": "blueprint-cave",
     "title": "Spin Trap",
     "description": "Unlockable new trap",
     "x": 1453,
     "y": 752.82,
-    "screenshot": "blueprint_spin_trap.webp",
     "tp": "goto BlueprintSpinTrapPickup"
   },
   {
     "id": 498,
-    "type": "blueprint",
+    "type": "blueprint-cave",
     "title": "Uber Trap",
     "description": "Unlockable new trap",
     "x": -413.53,
@@ -2388,7 +2404,7 @@
   },
   {
     "id": 502,
-    "type": "blueprint",
+    "type": "blueprint-cave",
     "title": "Grind Trap",
     "description": "Unlockable new trap",
     "x": 1719.68,
@@ -2400,7 +2416,7 @@
   },
   {
     "id": 504,
-    "type": "blueprint",
+    "type": "blueprint-cave",
     "title": "Spear Thrower Trap",
     "description": "Unlockable new trap",
     "x": -115.44,
@@ -2777,7 +2793,7 @@
   },
   {
     "id": 113,
-    "type": "putter",
+    "type": "putter-bunker",
     "title": "Putter",
     "description": "On 1st bunker floor",
     "x": 1124.75,
@@ -4770,7 +4786,7 @@
   },
   {
     "id": 851,
-    "type": "poi",
+    "type": "grave",
     "title": "Graves",
     "description": "3x Graves",
     "x": -286,
@@ -4780,7 +4796,7 @@
   },
   {
     "id": 852,
-    "type": "poi",
+    "type": "grave",
     "title": "Grave3",
     "description": "5x Graves",
     "x": -1633,
@@ -4789,7 +4805,7 @@
   },
   {
     "id": 853,
-    "type": "poi",
+    "type": "grave",
     "title": "Grave4",
     "description": "1x Grave",
     "x": -1046,
@@ -4798,7 +4814,7 @@
   },
   {
     "id": 393,
-    "type": "poi",
+    "type": "grave",
     "title": "Grave5",
     "description": "4x Graves",
     "x": -1314,
@@ -4807,7 +4823,7 @@
   },
   {
     "id": 398,
-    "type": "poi",
+    "type": "grave",
     "title": "Graves6",
     "description": "3x Graves",
     "x": -1455,
@@ -4816,7 +4832,7 @@
   },
   {
     "id": 390,
-    "type": "poi",
+    "type": "grave",
     "title": "4x Graves",
     "x": 1711,
     "y": -1217,
@@ -4824,7 +4840,7 @@
   },
   {
     "id": 391,
-    "type": "poi",
+    "type": "grave",
     "title": "2x Graves",
     "x": 287,
     "y": -1643,
@@ -4832,7 +4848,7 @@
   },
   {
     "id": 392,
-    "type": "poi",
+    "type": "grave",
     "title": "4x Graves",
     "x": -842,
     "y": 1716,
@@ -4840,7 +4856,7 @@
   },
   {
     "id": 394,
-    "type": "poi",
+    "type": "grave",
     "title": "Grave",
     "x": -1340,
     "y": 1412,
@@ -4848,7 +4864,7 @@
   },
   {
     "id": 395,
-    "type": "poi",
+    "type": "grave",
     "title": "Grave",
     "x": -1455,
     "y": 1415,
@@ -4856,7 +4872,7 @@
   },
   {
     "id": 396,
-    "type": "poi",
+    "type": "grave",
     "title": "Grave",
     "x": -1595,
     "y": 763,
@@ -4864,7 +4880,7 @@
   },
   {
     "id": 397,
-    "type": "poi",
+    "type": "grave",
     "title": "3x Graves",
     "x": -1789,
     "y": 22,
@@ -4872,7 +4888,7 @@
   },
   {
     "id": 399,
-    "type": "poi",
+    "type": "grave",
     "title": "2x Graves",
     "x": -1596,
     "y": -1131,
@@ -4880,7 +4896,7 @@
   },
   {
     "id": 400,
-    "type": "poi",
+    "type": "grave",
     "title": "2x Graves",
     "x": -1611,
     "y": -1151,
@@ -4888,7 +4904,7 @@
   },
   {
     "id": 401,
-    "type": "poi",
+    "type": "grave",
     "title": "2x Graves",
     "x": -1628,
     "y": 1503,
@@ -4896,7 +4912,7 @@
   },
   {
     "id": 402,
-    "type": "poi",
+    "type": "grave",
     "title": "3x Graves",
     "x": -1634,
     "y": -1508,
@@ -4904,7 +4920,7 @@
   },
   {
     "id": 403,
-    "type": "poi",
+    "type": "grave",
     "title": "2x Graves",
     "x": 1818,
     "y": -488,
@@ -4912,7 +4928,7 @@
   },
   {
     "id": 404,
-    "type": "poi",
+    "type": "grave",
     "title": "3x Graves",
     "x": 1616,
     "y": 194,
@@ -4920,7 +4936,7 @@
   },
   {
     "id": 405,
-    "type": "poi",
+    "type": "grave",
     "title": "2x Graves",
     "x": 1249,
     "y": 763,
@@ -4928,7 +4944,7 @@
   },
   {
     "id": 406,
-    "type": "poi",
+    "type": "grave",
     "title": "3x Graves",
     "x": 1430,
     "y": 861,
@@ -4936,7 +4952,7 @@
   },
   {
     "id": 407,
-    "type": "poi",
+    "type": "grave",
     "title": "3x Graves",
     "x": 1666,
     "y": 964,
@@ -4944,7 +4960,7 @@
   },
   {
     "id": 408,
-    "type": "poi",
+    "type": "grave",
     "title": "3x Graves",
     "x": 1667,
     "y": 958,
@@ -4952,7 +4968,7 @@
   },
   {
     "id": 409,
-    "type": "poi",
+    "type": "grave",
     "title": "Grave",
     "x": 1296,
     "y": 1073,
@@ -4960,7 +4976,7 @@
   },
   {
     "id": 410,
-    "type": "poi",
+    "type": "grave",
     "title": "2x Graves",
     "x": 1271,
     "y": 1161,
@@ -4968,7 +4984,7 @@
   },
   {
     "id": 411,
-    "type": "poi",
+    "type": "grave",
     "title": "2x Graves",
     "x": 891,
     "y": 1361,
@@ -4976,7 +4992,7 @@
   },
   {
     "id": 412,
-    "type": "poi",
+    "type": "grave",
     "title": "3x Graves",
     "x": 1255,
     "y": 1690,
@@ -4984,7 +5000,7 @@
   },
   {
     "id": 413,
-    "type": "poi",
+    "type": "grave",
     "title": "3x Graves",
     "x": 527,
     "y": 1046,
@@ -4992,7 +5008,7 @@
   },
   {
     "id": 414,
-    "type": "poi",
+    "type": "grave",
     "title": "2x Graves",
     "x": 122,
     "y": 1152,
@@ -5000,7 +5016,7 @@
   },
   {
     "id": 415,
-    "type": "poi",
+    "type": "grave",
     "title": "4x Graves",
     "x": 64,
     "y": 1322,
@@ -5008,7 +5024,7 @@
   },
   {
     "id": 464,
-    "type": "poi",
+    "type": "grave",
     "title": "3x Graves",
     "x": -1000,
     "y": 210,
@@ -5016,7 +5032,7 @@
   },
   {
     "id": 898,
-    "type": "poi",
+    "type": "grave",
     "title": "4x Graves",
     "x": 1720,
     "y": -1210,
@@ -5024,7 +5040,7 @@
   },
   {
     "id": 899,
-    "type": "poi",
+    "type": "grave",
     "title": "4x Graves",
     "x": 1713,
     "y": -1198,
@@ -5032,7 +5048,7 @@
   },
   {
     "id": 900,
-    "type": "poi",
+    "type": "grave",
     "title": "4x Graves",
     "x": 1702,
     "y": -1203,
@@ -5701,7 +5717,7 @@
   },
   {
     "id": 311,
-    "type": "shotgun-rail",
+    "type": "shotgun-rail-bunker",
     "title": "Shotgun Rail",
     "description": "In the right corner of the room",
     "x": -1181.75,
@@ -5730,7 +5746,7 @@
   },
   {
     "id": 432,
-    "type": "shotgun-rail",
+    "type": "shotgun-rail-bunker",
     "title": "Shotgun Rail",
     "description": "On 2nd bunker floor",
     "x": 1144.27,
@@ -5745,7 +5761,7 @@
   },
   {
     "id": 826,
-    "type": "shotgun-rail",
+    "type": "shotgun-rail-bunker",
     "title": "Shotgun Rail",
     "x": 1613.28,
     "y": 480.42,
@@ -5791,7 +5807,7 @@
   },
   {
     "id": 443,
-    "type": "pistol-rail",
+    "type": "pistol-rail-bunker",
     "title": "Pistol Rail",
     "description": "On 1st bunker floor",
     "x": 1153.76,
@@ -5808,7 +5824,7 @@
   },
   {
     "id": 327,
-    "type": "flashlight-attachment",
+    "type": "flashlight-attachment-cave",
     "title": "Flashlight Attachment",
     "description": "In the hand of dead soldier",
     "x": -580,
@@ -5825,8 +5841,9 @@
   },
   {
     "id": 569,
-    "type": "flashlight-attachment",
+    "type": "flashlight-attachment-bunker",
     "title": "Flashlight Attachment",
+    "description": "On 1st bunker floor",
     "x": 1154.19,
     "y": -604.55,
     "isUnderground": true,
@@ -5851,7 +5868,7 @@
   },
   {
     "id": 567,
-    "type": "suppressor",
+    "type": "suppressor-bunker",
     "title": "Pistol Suppressor",
     "description": "Next to 3D Printer",
     "x": -1126,
@@ -5953,7 +5970,7 @@
   },
   {
     "id": 509,
-    "type": "cooking-pot",
+    "type": "cooking-pot-bunker",
     "title": "Cooking Pot",
     "description": "On 2nd bunker floor",
     "x": 1138.21,
@@ -5968,7 +5985,7 @@
   },
   {
     "id": 512,
-    "type": "cooking-pot",
+    "type": "cooking-pot-bunker",
     "title": "Cooking Pot",
     "x": 1614.59,
     "y": 480.40,
