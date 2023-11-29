@@ -399,7 +399,6 @@
   "Abandoned": "Abandonado",
   "POI": "Poi",
   "Outfits": "Roupas",
-  "Loot cases": "Casos de pilhagem",
   "Blueprints": "Blueprints",
   "Artifacts": "Artefatos",
   "Fishing Huts": "Cabanas de pesca",
@@ -706,5 +705,13 @@
   "Pond PFB": "Pond Pfb",
   "Pond PFC": "Pond Pfc",
   "Pond PFD": "Pond Pfd",
-  "Pond Q": "Lago q"
+  "Pond Q": "Lago q",
+  "Cave Loot": "Itens de caverna",
+  "Bunker Loot": "Índice de bunker",
+  "Loot Cases": "Casos de pilhagem",
+  "Cave D": "Caverna d",
+  "Cave B": "Caverna b",
+  "Cave F": "Caverna f",
+  "Artifact Cave": "Artefato Cave",
+  "Cave G": "Caverna g"
 }
