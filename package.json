@@ -29,7 +29,7 @@
   "dependencies": {
     "@geoman-io/leaflet-geoman-free": "2.14.2",
     "js-cookie": "3.0.5",
-    "leaflet": "1.9.3",
+    "leaflet": "1.9.4",
     "peerjs": "1.4.7",
     "plausible-tracker": "0.3.8",
     "qrcode": "1.5.3",
