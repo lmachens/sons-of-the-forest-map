@@ -34,6 +34,6 @@
     "plausible-tracker": "0.3.8",
     "qrcode": "1.5.3",
     "throttle-debounce": "5.0.0",
-    "zustand": "4.4.4"
+    "zustand": "4.4.6"
   }
 }
