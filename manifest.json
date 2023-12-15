@@ -4,7 +4,7 @@
   "meta": {
     "name": "Sons Of The Forest Map-DEV",
     "author": "Leon Machens",
-    "version": "0.35.0",
+    "version": "0.36.0",
     "minimum-overwolf-version": "0.218.0",
     "description": "Sons Of The Forest Map",
     "dock_button_title": "Sons Of The Forest",
@@ -74,20 +74,14 @@
     },
     "game_targeting": {
       "type": "dedicated",
-      "game_ids": [
-        22638
-      ]
+      "game_ids": [22638]
     },
-    "game_events": [
-      22638
-    ],
+    "game_events": [22638],
     "launch_events": [
       {
         "event": "GameLaunch",
         "event_data": {
-          "game_ids": [
-            22638
-          ]
+          "game_ids": [22638]
         },
         "start_minimized": false
       }
