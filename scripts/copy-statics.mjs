@@ -10,8 +10,15 @@ manifest.data.windows.desktop.block_top_window_navigation = true;
 delete manifest.data.windows.overlay.debug_url;
 manifest.data.windows.overlay.block_top_window_navigation = true;
 
-await fs.writeFile("../dist/manifest.json", JSON.stringify(manifest));
-await fs.cp("../icons/", "../dist/icons/", { recursive: true });
+await fs.writeFile(
+  path.resolve(__dirname, "../dist/manifest.json"),
+  JSON.stringify(manifest)
+);
+await fs.cp(
+  path.resolve(__dirname, "../icons/"),
+  path.resolve(__dirname, "../dist/icons/"),
+  { recursive: true }
+);
 await fs.cp(
   path.resolve(__dirname, "../plugins/"),
   path.resolve(__dirname, "../dist/plugins/"),
