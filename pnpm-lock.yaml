@@ -11,6 +11,9 @@ dependencies:
   async:
     specifier: 3.2.5
     version: 3.2.5
+  dotenv:
+    specifier: 16.3.1
+    version: 16.3.1
   js-cookie:
     specifier: 3.0.5
     version: 3.0.5
@@ -1620,7 +1623,7 @@ packages:
       class-transformer: 0.5.1
       class-validator: 0.13.2
       commander: 9.5.0
-      dotenv: 16.0.3
+      dotenv: 16.3.1
       form-data: 4.0.0
       inquirer: 8.2.5
       reflect-metadata: 0.1.13
@@ -2632,10 +2635,9 @@ packages:
       domhandler: 5.0.3
     dev: true
 
-  /dotenv@16.0.3:
-    resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==}
+  /dotenv@16.3.1:
+    resolution: {integrity: sha512-IPzF4w4/Rd94bA9imS68tZBaYyBWSCE47V1RGuMrB94iyTOIEwRmVL2x/4An+6mETpLrKJ5hQkB8W4kFAadeIQ==}
     engines: {node: '>=12'}
-    dev: true
 
   /ejs@3.1.9:
     resolution: {integrity: sha512-rC+QVNMJWv+MtPgkt0y+0rVEIdbtxVADApW9JXrUVlzHetgcyczP/E7DJmWJ4fJCZF2cPcBk0laWO9ZHMG3DmQ==}
