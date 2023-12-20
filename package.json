@@ -36,6 +36,7 @@
     "peerjs": "1.5.2",
     "plausible-tracker": "0.3.8",
     "qrcode": "1.5.3",
+    "reflect-metadata": "0.2.1",
     "throttle-debounce": "5.0.0",
     "zustand": "4.4.7"
   }
