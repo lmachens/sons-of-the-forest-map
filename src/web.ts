@@ -96,21 +96,18 @@ loadDictionary().then(() => {
     }
 
     const response = await fetch(
-      `${
-        import.meta.env.VITE_PATREON_BASE_URI
-      }/api/patreon?appId=bemfloapmmjpmdmjfjgegnacdlgeapmkcmcmceei`,
+      `https://www.th.gl/api/patreon?appId=bemfloapmmjpmdmjfjgegnacdlgeapmkcmcmceei`,
       { credentials: "include" }
     );
     const state = useAccountStore.getState();
     try {
-      const body = await response.json();
-
+      const body = (await response.json()) as { previewAccess: boolean };
       if (!response.ok) {
         console.warn(body);
         state.setIsPatron(false);
       } else {
         console.log(`Patreon successfully activated`);
-        state.setIsPatron(true, userId);
+        state.setIsPatron(true, userId, body.previewAccess);
       }
     } catch (err) {
       console.error(err);

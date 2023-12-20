@@ -33,27 +33,24 @@ async function initController() {
     }
     if (userId) {
       const accountStore = useAccountStore.getState();
-      const response = await fetch(
-        `${import.meta.env.VITE_PATREON_BASE_URI}/api/patreon/overwolf`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            appId: "kkgfkggfpkmndnadgkegoheijamdjkeagojfbbfn",
-            userId,
-          }),
-        }
-      );
+      const response = await fetch(`https://www.th.gl/api/patreon/overwolf`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          appId: "kkgfkggfpkmndnadgkegoheijamdjkeagojfbbfn",
+          userId,
+        }),
+      });
       try {
-        const body = await response.json();
+        const body = (await response.json()) as { previewAccess: boolean };
         if (!response.ok) {
           console.warn(body);
           accountStore.setIsPatron(false);
         } else {
           console.log(`Patreon successfully activated`);
-          accountStore.setIsPatron(true, userId);
+          accountStore.setIsPatron(true, userId, body.previewAccess);
         }
       } catch (err) {
         console.error(err);
