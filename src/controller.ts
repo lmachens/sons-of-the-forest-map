@@ -1,4 +1,5 @@
 import { GAME_CLASS_ID, WINDOWS } from "./lib/config";
+import { loadDiscordRPCPlugin } from "./lib/discord-rpc";
 import { startNewGameSession } from "./lib/game-sessions";
 import { getRunningGameInfo } from "./lib/games";
 import { useAccountStore } from "./lib/stores/account";
@@ -10,6 +11,7 @@ import {
   restoreWindow,
   toggleWindow,
 } from "./lib/windows";
+import { promisifyOverwolf } from "./lib/wrapper";
 
 initController();
 startNewGameSession();
@@ -81,6 +83,8 @@ async function initController() {
     }
   });
 
+  const discordRPCPlugin = await loadDiscordRPCPlugin("1187047215986909267");
+
   overwolf.games.onGameInfoUpdated.addListener(async (event) => {
     if (event.runningChanged && event.gameInfo?.classId === GAME_CLASS_ID) {
       const preferedWindowName = await getPreferedWindowName();
@@ -92,8 +96,11 @@ async function initController() {
           restoreWindow(WINDOWS.DESKTOP);
           closeWindow(WINDOWS.OVERLAY);
         }
-      } else if (preferedWindowName === WINDOWS.OVERLAY) {
-        closeMainWindow();
+      } else {
+        await promisifyOverwolf(discordRPCPlugin.dispose)();
+        if (preferedWindowName === WINDOWS.OVERLAY) {
+          closeMainWindow();
+        }
       }
     }
   });

@@ -16,6 +16,7 @@
     "Hotkeys",
     "GameInfo",
     "FileSystem",
+    "Extensions",
     "DesktopStreaming",
     "Clipboard"
   ],
@@ -74,14 +75,20 @@
     },
     "game_targeting": {
       "type": "dedicated",
-      "game_ids": [22638]
+      "game_ids": [
+        22638
+      ]
     },
-    "game_events": [22638],
+    "game_events": [
+      22638
+    ],
     "launch_events": [
       {
         "event": "GameLaunch",
         "event_data": {
-          "game_ids": [22638]
+          "game_ids": [
+            22638
+          ]
         },
         "start_minimized": false
       }
@@ -119,6 +126,12 @@
       "enable_auto_refresh": true,
       "reload_delay": 1000,
       "filter": "*.*"
+    },
+    "extra-objects": {
+      "discord": {
+        "file": "plugins/DiscordRPCPlugin.dll",
+        "class": "overwolf.plugins.DiscordRPCPlugin"
+      }
     }
   }
 }

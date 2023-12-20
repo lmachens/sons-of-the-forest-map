@@ -3,6 +3,7 @@ import Compass from "./components/Compass";
 import ContextMenu from "./components/ContextMenu";
 import CustomNode from "./components/CustomNode";
 import DirectionLine from "./components/DirectionLine";
+import DiscordRPC from "./components/DiscordRPC";
 import Filters from "./components/Filters";
 import FollowLocation from "./components/FollowLocation";
 import GameSessions from "./components/GameSessions";
@@ -74,6 +75,7 @@ const {
   map,
 });
 const { updateRotation } = Compass();
+const { updatePosition: updateDiscordRPCPosition } = DiscordRPC();
 
 function updatePlayer(location: { x: number; y: number; z: number }) {
   lastRotation =
@@ -96,6 +98,7 @@ function updatePlayer(location: { x: number; y: number; z: number }) {
   updateTraceLinePosition(lastPosition);
   updateMultiplayerPosition(lastPosition);
   updateRotation(lastRotation);
+  updateDiscordRPCPosition(lastPosition);
 }
 
 const ads = document.querySelector<HTMLDivElement>(".ads")!;
