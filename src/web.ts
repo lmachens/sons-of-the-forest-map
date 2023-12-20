@@ -70,7 +70,7 @@ loadDictionary().then(() => {
   const adNote = document.querySelector(".ad-note")!;
   let isPatron = useAccountStore.getState().isPatron;
 
-  if (!isPatron) {
+  if (!isPatron && !matchMedia("print").matches) {
     NitroPay();
   } else {
     container.remove();

@@ -11,8 +11,8 @@ const toAbsolute = (p) => path.resolve(__dirname, p);
 
 const server = await createServer({
   // any valid user config options, plus `mode` and `configFile`
-  configFile: toAbsolute("../vite-web.config.ts"),
-  root: __dirname,
+  configFile: "vite-web.config.ts",
+  root: toAbsolute("../"),
   mode: "production",
   server: {
     port: 1337,
@@ -20,11 +20,11 @@ const server = await createServer({
 });
 await server.listen();
 
-const browser = await puppeteer.launch();
+const browser = await puppeteer.launch({ headless: "new" });
 const page = await browser.newPage();
 await page.setViewport({ width: 1200, height: 628 });
 
-const template = fs.readFileSync(toAbsolute("../out/index.html"), "utf-8");
+const template = fs.readFileSync(toAbsolute("../index.html"), "utf-8");
 
 const indexMeta = generateMeta({
   title: "Sons Of The Forest Map",
@@ -35,9 +35,9 @@ const indexMeta = generateMeta({
 });
 const indexHTML = template.replace(`<!--PRELOAD_TEMPLATE-->`, indexMeta);
 fs.writeFileSync(toAbsolute(`../out/index.html`), indexHTML);
-
+await page.emulateMediaType("print");
 await page.goto(`http://localhost:1337`, {
-  waitUntil: "networkidle0",
+  waitUntil: "networkidle2",
 });
 await page.emulateMediaType("print");
 await page.screenshot({ path: "./out/index.webp", fullPage: true });
@@ -66,9 +66,8 @@ await async.eachLimit(mapLocations, 5, async (mapLocation) => {
     toAbsolute(`../out/locations/${mapLocation.id}/index.html`),
     html
   );
-
   await locationPage.goto(`http://localhost:1337/locations/${mapLocation.id}`, {
-    waitUntil: "networkidle0",
+    waitUntil: "networkidle2",
   });
   await locationPage.screenshot({
     path: `./out/locations/${mapLocation.id}.webp`,
