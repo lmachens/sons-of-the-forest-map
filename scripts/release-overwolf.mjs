@@ -21,7 +21,10 @@ const signOpkCmd = OwCliContainer.resolve(SignOpkCommand);
 const uploadOpkCmd = OwCliContainer.resolve(UploadOpkCommand);
 const releaseOpkCmd = OwCliContainer.resolve(ReleaseOpkCommand);
 
-await packOpkCmd.handler({ folderPath: "out", outputFile: `${FILE_NAME}.opk` });
+await packOpkCmd.handler({
+  folderPath: "dist",
+  outputFile: `${FILE_NAME}.opk`,
+});
 await signOpkCmd.handler({
   filePath: `${FILE_NAME}.opk`,
   outputFile: `${FILE_NAME}.signed.opk`,
