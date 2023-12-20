@@ -22,7 +22,7 @@
     "@types/qrcode": "1.5.5",
     "@types/throttle-debounce": "5.0.2",
     "html-to-text": "9.0.5",
-    "puppeteer": "21.6.1",
+    "puppeteer": "19.9.0",
     "typescript": "5.3.3",
     "vite": "5.0.10",
     "vite-plugin-pwa": "0.17.4"

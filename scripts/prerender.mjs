@@ -20,7 +20,7 @@ const server = await createServer({
 });
 await server.listen();
 
-const browser = await puppeteer.launch({ headless: "new" });
+const browser = await puppeteer.launch();
 const page = await browser.newPage();
 await page.setViewport({ width: 1200, height: 628 });
 
@@ -44,7 +44,7 @@ await page.screenshot({ path: "./out/index.webp", fullPage: true });
 await page.close();
 
 // pre-render each route...
-await async.eachLimit(mapLocations, 2, async (mapLocation) => {
+await async.eachLimit(mapLocations, 5, async (mapLocation) => {
   const locationPage = await browser.newPage();
   await locationPage.setViewport({ width: 1200, height: 628 });
   await locationPage.emulateMediaType("print");
