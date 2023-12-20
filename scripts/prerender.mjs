@@ -44,7 +44,7 @@ await page.screenshot({ path: "./out/index.webp", fullPage: true });
 await page.close();
 
 // pre-render each route...
-await async.eachLimit(mapLocations, 5, async (mapLocation) => {
+await async.eachLimit(mapLocations, 2, async (mapLocation) => {
   const locationPage = await browser.newPage();
   await locationPage.setViewport({ width: 1200, height: 628 });
   await locationPage.emulateMediaType("print");
@@ -69,10 +69,14 @@ await async.eachLimit(mapLocations, 5, async (mapLocation) => {
   await locationPage.goto(`http://localhost:1337/locations/${mapLocation.id}`, {
     waitUntil: "networkidle2",
   });
-  await locationPage.screenshot({
-    path: `./out/locations/${mapLocation.id}.webp`,
-    fullPage: true,
-  });
+  await locationPage
+    .screenshot({
+      path: `./out/locations/${mapLocation.id}.webp`,
+      fullPage: true,
+    })
+    .catch(() => {
+      console.warn("failed to screenshot:", mapLocation.title);
+    });
 
   await locationPage.close();
   console.log("pre-rendered:", mapLocation.title);
