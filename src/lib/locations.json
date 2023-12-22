@@ -31,8 +31,8 @@
     "type": "modernAxe",
     "title": "Modern Axe",
     "description": "In the chest of a dead soldier",
-    "x": -703,
-    "y": 445,
+    "x": -703.85,
+    "y": 445.88,
     "screenshot": "modern_axe.webp",
     "tp": "goto ModernAxePickup",
     "itemid": "additem 356",
@@ -46,6 +46,7 @@
     "x": -626,
     "y": 387,
     "screenshot": "flashlight.webp",
+    "warning": "You will be under it!",
     "tp": "goto FlashlightPickup",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Flashlight"
   },
@@ -69,6 +70,7 @@
     "x": -1145,
     "y": -161,
     "screenshot": "stun_baton.webp",
+    "tp": "goto TaserStickPickup",
     "itemid": "additem 396",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Stun_Baton"
   },
@@ -96,7 +98,7 @@
       17
     ],
     "screenshot": "pistol_2.webp",
-    "warning": "Teleport only after entering the bunker otherwise you won't teleport here",
+    "warning": "Teleport after entering the bunker!",
     "tp": "goto CompactPistolPickup",
     "itemid": "additem 355",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Pistol"
@@ -110,7 +112,7 @@
     "y": 1514.32,
     "isUnderground": true,
     "screenshot": "stun_gun.webp",
-    "warning":"Double use the command in orded to teleport underground",
+    "warning": "Double use the command!",
     "tp": "goto StunGunPickup",
     "itemid": "additem 353",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Stun_Gun"
@@ -124,8 +126,8 @@
     "y": 1477.02,
     "isUnderground": true,
     "screenshot": "rebreather.webp",
-    "warning":"TTeleport after entering the cave to avoid falling under the map",
-    "tp": "goto -422,1 10 1478",
+    "warning":"Double use the command!",
+    "tp": "goto RebreatherPickup",
     "itemid": "additem 444",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Rebreather"
   },
@@ -137,7 +139,7 @@
     "y": 484.21,
     "isUnderground": true,
     "screenshot": "cross.webp",
-    "warning": "Double use the command in orded to teleport underground",
+    "warning": "Double use the command!",
     "tp": "goto CrossPickup",
     "itemid": "additem 468",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Cross"
@@ -151,6 +153,8 @@
     "y": -277,
     "isUnderground": true,
     "screenshot": "rope_gun.webp",
+    "warning": "Double use the command!",
+    "tp": "goto RopeGunPickup",
     "itemid": "additem 522",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Rope_Gun"
   },
@@ -162,7 +166,7 @@
     "x": -531.85,
     "y": 121.55,
     "screenshot": "slingshot.webp",
-    "tp": "goto TactiCoolDeadF (1)",
+    "tp": "goto SlingshotPickup",
     "itemid": "additem 459",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Slingshot"
   },
@@ -179,6 +183,8 @@
       11
     ],
     "screenshot": "shovel.webp",
+    "warning": "Double use the command!",
+    "tp": "goto ShovelPickup",
     "itemid": "additem 485",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Shovel"
   },
@@ -194,6 +200,7 @@
     ],
     "screenshot": "shotgun.webp",
     "itemid": "additem 358",
+    "tp": "goto -1341,3 95,7 1411,5",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Shotgun"
   },
   {
@@ -205,7 +212,7 @@
     "y": -281.81,
     "isUnderground": true,
     "screenshot": "rifle.webp",
-    "warning": "Double use the command in orded to teleport underground",
+    "warning": "Double use the command!",
     "tp": "goto RiflePickup",
     "itemid": "additem 361",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Rifle"
@@ -222,8 +229,9 @@
       15
     ],
     "screenshot": "maintenance_card.webp",
-    "warning":"Teleport after entering the cave to avoid falling under the map",
-    "tp": "goto -427,8 76,1 700,2",
+    "warning":"Teleport after entering the bunker!",
+    "tp": "goto KeyCardMaintenancePickup",
+    "itemid": "additem 566",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Maintenance_Keycard"
   },
   {
@@ -238,8 +246,8 @@
       15
     ],
     "screenshot": "firefighter_axe.webp",
-    "warning": "Teleport after entering the bunker to avoid falling under the map",
-    "tp": "goto -416 76,1 711,8",
+    "warning": "Teleport after entering the bunker!",
+    "tp": "goto FireAxePickup",
     "itemid": "additem 431",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Firefighter_Axe"
   },
@@ -255,6 +263,8 @@
       17
     ],
     "screenshot": "vip_card.webp",
+    "warning": "Double use the command!",
+    "tp": "goto KeyCardVIPPickup",
     "itemid": "additem 568",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/VIP_Keycard"
   },
@@ -270,7 +280,7 @@
       17
     ],
     "screenshot": "crossbow.webp",
-    "warning":"Double use the command in orded to teleport underground",
+    "warning": "Double use the command!",
     "tp": "goto CrossbowPickup",
     "itemid": "additem 365",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Crossbow"
@@ -287,7 +297,7 @@
       17
     ],
     "screenshot": "guest_keycard.webp",
-    "warning": "Double use the command in orded to teleport underground",
+    "warning": "Double use the command!",
     "tp": "goto KeyCardGuestPickup",
     "itemid": "additem 567",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Guest_Keycard"
@@ -304,8 +314,8 @@
       17
     ],
     "screenshot": "guitar.webp",
-    "warning": "Teleport after entering the bunker to avoid falling under the map",
-    "tp": "goto -1158,4 66 17",
+    "warning": "Double use the command!",
+    "tp": "goto GuitarPickup",
     "itemid": "additem 340",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Guitar"
   },
@@ -321,8 +331,8 @@
       17
     ],
     "screenshot": "chainsaw.webp",
-    "warning": "Teleport after entering the bunker to avoid falling under the map",
-    "tp": "goto -1152 65 116",
+    "warning": "Double use the command!",
+    "tp": "goto TacticalChainsawPickup",
     "itemid": "additem 394",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Chainsaw"
   },
@@ -338,8 +348,8 @@
       15
     ],
     "screenshot": "compound_bow.webp",
-    "warning": "Teleport after entering the bunker to avoid falling under the map",
-    "tp": "goto -1120,6 270 -1039,8",
+    "warning": "Double use the command!",
+    "tp": "goto TacticalBowPickup",
     "itemid": "additem 360",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Compound_Bow"
   },
@@ -352,8 +362,8 @@
     "y": 1048.70,
     "isUnderground": true,
     "screenshot": "revolver.webp",
-    "warning":"Teleport after entering the bunker to avoid falling under the map",
-    "tp": "goto 1140 119 1049,2",
+    "warning":"Teleport after entering the bunker!",
+    "tp": "goto RevolverPickup",
     "itemid": "additem 386",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Revolver"
   },
@@ -369,7 +379,7 @@
       17
     ],
     "screenshot": "katana.webp",
-    "warning": "Double use the command in orded to teleport underground",
+    "warning": "Double use the command!",
     "tp": "goto KatanaPickup",
     "itemid": "additem 367",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Katana"
@@ -385,7 +395,7 @@
       11
     ],
     "screenshot": "golden_armor.webp",
-    "warning": "Teleport after entering the cave to avoid falling under the map",
+    "warning": "Teleport after entering the cave!",
     "tp": "goto 186,2 137,5 -667,4",
     "itemid": "additem 572",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golden_Armor"
@@ -398,6 +408,7 @@
     "x": -1112,
     "y": 1721,
     "screenshot": "binoculars.webp",
+    "tp": "goto BinocularsPickup",
     "itemid": "additem 341",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Binoculars"
   },
@@ -413,6 +424,8 @@
       11
     ],
     "screenshot": "pickaxe.webp",
+    "warning": "Double use the command!",
+    "tp": "goto PickaxePickup",
     "itemid": "additem 663",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Pickaxe"
   },
@@ -458,7 +471,7 @@
     "y": 1399.58,
     "isUnderground": true,
     "screenshot": "artifact_a.webp",
-    "warning":"Double use the command in orded to teleport underground",
+    "warning": "Double use the command!",
     "tp": "goto ArtifactPieceAPickup",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Artifact#Artifact_Piece_A"
   },
@@ -474,7 +487,7 @@
       11
     ],
     "screenshot": "artifact_b.webp",
-    "warning": "Double use the command in orded to teleport underground",
+    "warning": "Double use the command!",
     "tp": "goto ArtifactPieceBPickup",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Artifact#Artifact_Piece_B"
   },
@@ -489,7 +502,7 @@
       11
     ],
     "screenshot": "artifact_c.webp",
-    "warning": "Double use the command in orded to teleport underground",
+    "warning": "Double use the command!",
     "tp": "goto ArtifactPieceCPickup",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Artifact#Artifact_Piece_C"
   },
@@ -497,14 +510,14 @@
     "id": 500,
     "type": "artifact-d",
     "title": "Artifact D",
-    "x": -405.63,
-    "y": -979.48,
+    "x": -413.53,
+    "y": -876.22,
     "isUnderground": true,
     "requirements": [
       11
     ],
     "screenshot": "artifact_d.webp",
-    "warning": "Double use the command in orded to teleport underground",
+    "warning": "Double use the command!",
     "tp": "goto ArtifactPieceDPickup",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Artifact#Artifact_Piece_D"
   },
@@ -516,7 +529,7 @@
     "y": 1049.61,
     "isUnderground": true,
     "screenshot": "artifact_e.webp",
-    "warning": "Double use the command in orded to teleport underground",
+    "warning": "Double use the command!",
     "tp": "goto ArtifactPieceDPickup",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Artifact#Artifact_Piece_D"
   },
@@ -583,7 +596,6 @@
     ],
     "screenshot": "maintenance_a.webp",
     "tp": "goto BunkerAHatch",
-    "itemid": "additem 566",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Bunkers#Maintenance_A"
   },
   {
@@ -640,6 +652,7 @@
       19,
       20,
       311,
+      75,
       312,
       315,
       316,
@@ -694,8 +707,6 @@
     "requirements": [
       15
     ],
-    "warning": "Teleport after entering the bunker to avoid falling under the map",
-    "tp": "goto -426,9 76,1 700,2",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/3D_Printer"
   },
   {
@@ -705,8 +716,6 @@
     "x": -1195.58,
     "y": 77.93,
     "isUnderground": true,
-    "warning": "Teleport after entering the bunker to avoid falling under the map",
-    "tp": "goto -1196,2 60 79",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/3D_Printer"
   },
   {
@@ -719,8 +728,6 @@
     "requirements": [
       15
     ],
-    "warning": "Teleport after entering the bunker to avoid falling under the map",
-    "tp": "goto -1126,3 270 -1049,6",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/3D_Printer"
   },
   {
@@ -734,8 +741,6 @@
     "requirements": [
       17
     ],
-    "warning": "Teleport only after entering the bunker to avoid falling under the map",
-    "tp": "goto 1122 217 -603,3",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/3D_Printer"
   },
   {
@@ -746,9 +751,7 @@
     "x": -422.32,
     "y": 1495.35,
     "isUnderground": true,
-    "screenshot": "laptop_rebreather_cave.webp",
-    "warning": "Teleport after entering the cave to avoid falling under the map",
-    "tp": "goto -422,4 14 1496,8"
+    "screenshot": "laptop_rebreather_cave.webp"
   },
   {
     "id": 588,
@@ -775,8 +778,6 @@
     "requirements": [
       15
     ],
-    "warning": "Teleport after entering the bunker to avoid falling under the map",
-    "tp": "goto -425,2 76,1 703,4",
     "screenshot": "laptop_bunker_b.webp"
   },
   {
@@ -803,9 +804,7 @@
     "requirements": [
       17
     ],
-    "screenshot": "laptop_entertainment_bunker.webp",
-    "warning": "Teleport after entering the bunker to avoid falling under the map",
-    "tp": "goto -1179,5 66 26,8"
+    "screenshot": "laptop_entertainment_bunker.webp"
   },
   {
     "id": 591,
@@ -818,9 +817,7 @@
     "requirements": [
       15
     ],
-    "screenshot": "laptop_bunker_b.webp",
-    "warning": "Teleport after entering the bunker to avoid falling under the map",
-    "tp": "goto -1127,8 270 -1047,8"
+    "screenshot": "laptop_bunker_b.webp"
   },
   {
     "id": 585,
@@ -833,9 +830,7 @@
     "requirements": [
       21
     ],
-    "screenshot": "laptop_residential_bunker.webp",
-    "warning": "Teleport only after entering the bunker otherwise you won't teleport here",
-    "tp": "goto LaptopLocationLocator"
+    "screenshot": "laptop_residential_bunker.webp"
   },
   {
     "id": 586,
@@ -849,7 +844,7 @@
       17
     ],
     "screenshot": "action_camera_1.webp",
-    "warning": "Teleport only after entering the bunker otherwise you won't teleport here",
+    "warning": "Teleport after entering the bunker!",
     "tp": "goto ActionCameraPickup",
     "itemid": "additem 637",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Action_Camera"
@@ -862,6 +857,7 @@
     "x": 468.02,
     "y": 1215.91,
     "screenshot": "action_camera_2.webp",
+    "tp": "goto ActionCameraPickup",
     "itemid": "additem 637",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Action_Camera"
   },
@@ -877,8 +873,8 @@
       17
     ],
     "screenshot": "action_camera_3.webp",
-    "warning": "Teleport after entering the bunker to avoid falling under the map",
-    "tp": "goto -1095,8 59 10,6",
+    "warning": "Teleport after entering the bunker!",
+    "tp": "goto ActionCameraPickup",
     "itemid": "additem 637",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Action_Camera"
   },
@@ -894,10 +890,124 @@
       17
     ],
     "screenshot": "action_camera_4.webp",
-    "warning": "Teleport only after entering the bunker otherwise you won't teleport here",
+    "warning": "Teleport after entering the bunker!",
     "tp": "goto ActionCameraPickup",
     "itemid": "additem 637",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Action_Camera"
+  },
+  {
+    "id": 50,
+    "type": "cave",
+    "title": "Rebreather Cave",
+    "description": "Cave A",
+    "x": -423,
+    "y": 1512,
+    "items": [
+      11,
+      10,
+      380,
+      378,
+      71,
+      379,
+      99
+    ],
+    "screenshot": "cave_a.webp",
+    "tp": "goto CaveAEntrance",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Caves#Beach/Rebreather_Cave"
+  },
+  {
+    "id": 45,
+    "type": "cave",
+    "title": "Rope Gun Cave Main Entrance",
+    "description": "Cave B",
+    "x": -1104,
+    "y": -179,
+    "items": [
+      13,
+      12,
+      499,
+      96,
+      98
+    ],
+    "screenshot": "cave_b_main.webp",
+    "tp": "goto CaveBEntrance",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Caves#Lakeside/Rope_Gun_Cave"
+  },
+  {
+    "id": 46,
+    "type": "cave",
+    "title": "Rope Gun Cave Second Entrance",
+    "x": -1234,
+    "y": -302,
+    "requirements": [
+      13
+    ],
+    "screenshot": "cave_b_second.webp",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Caves#Lakeside/Rope_Gun_Cave"
+  },
+  {
+    "id": 48,
+    "type": "cave",
+    "title": "Shovel Cave",
+    "description": "Cave C",
+    "x": -530,
+    "y": 132,
+    "items": [
+      588,
+      15,
+      327,
+      318
+    ],
+    "screenshot": "cave_c.webp",
+    "tp": "goto CaveCEntrance",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Caves#Flooded/Shovel_Cave"
+  },
+  {
+    "id": 42,
+    "type": "cave",
+    "title": "Golden Armor Cave",
+    "description": "Cave D",
+    "x": -530,
+    "y": -627,
+    "items": [
+      845,
+      449,
+      500,
+      27,
+      498
+    ],
+    "screenshot": "cave_d.webp",
+    "tp": "goto CaveDEntrance",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Caves#Lake/Golden_Armor_Cave"
+  },
+  {
+    "id": 893,
+    "type": "cave",
+    "title": "Pickaxe Cave",
+    "description": "Cave F",
+    "x": 1289,
+    "y": 588,
+    "items": [
+      894,
+      895,
+      896
+    ],
+    "screenshot": "cave_f.webp",
+    "tp": "goto CaveFEntrance"
+  },
+  {
+    "id": 517,
+    "type": "cave",
+    "title": "Artifact Cave",
+    "description": "Cave G",
+    "x": 1694.64,
+    "y": 1042.21,
+    "items": [
+      501,
+      502
+    ],
+    "screenshot": "cave_g.webp",
+    "tp": "goto CaveGEntrance"
   },
   {
     "id": 38,
@@ -949,23 +1059,6 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Caves#Frozen_Lake_Grotto"
   },
   {
-    "id": 42,
-    "type": "cave",
-    "title": "Golden Armor Cave",
-    "description": "Cave D",
-    "x": -530,
-    "y": -627,
-    "items": [
-      845,
-      449,
-      500,
-      27,
-      498
-    ],
-    "screenshot": "golden_armor_cave.webp",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Caves#Lake/Golden_Armor_Cave"
-  },
-  {
     "id": 43,
     "type": "cave",
     "title": "Pond Grotto",
@@ -986,50 +1079,6 @@
     "screenshot": "mountainside_grotto.webp",
     "tp": "goto IceCaveB",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Caves#Mountainside_Grotto"
-  },
-  {
-    "id": 45,
-    "type": "cave",
-    "title": "Rope Gun Cave Main Entrance",
-    "description": "Cave B",
-    "x": -1104,
-    "y": -179,
-    "items": [
-      13,
-      12,
-      499,
-      96,
-      98
-    ],
-    "screenshot": "rope_gun_cave_main_entrance.webp",
-    "itemid": "additem 522",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Caves#Lakeside/Rope_Gun_Cave"
-  },
-  {
-    "id": 46,
-    "type": "cave",
-    "title": "Rope Gun Cave Second Entrance",
-    "x": -1234,
-    "y": -302,
-    "requirements": [
-      13
-    ],
-    "screenshot": "rope_gun_cave_second_entrance.webp",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Caves#Lakeside/Rope_Gun_Cave"
-  },
-  {
-    "id": 893,
-    "type": "cave",
-    "title": "Pickaxe Cave",
-    "description": "Cave F",
-    "x": 1289,
-    "y": 588,
-    "items": [
-      894,
-      895,
-      896
-    ],
-    "screenshot": "pickaxe_cave.webp"
   },
   {
     "id": 47,
@@ -1058,21 +1107,6 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Bunkers#Entertainment_Bunker"
   },
   {
-    "id": 48,
-    "type": "cave",
-    "title": "Shovel Cave",
-    "x": -530,
-    "y": 132,
-    "items": [
-      588,
-      15,
-      327,
-      318
-    ],
-    "screenshot": "shovel_cave.webp",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Caves#Flooded/Shovel_Cave"
-  },
-  {
     "id": 49,
     "type": "cave",
     "title": "FoodHatch",
@@ -1083,36 +1117,6 @@
     ],
     "screenshot": "food_and_dining_cave.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Bunkers#Food_and_Dining_Bunker"
-  },
-  {
-    "id": 50,
-    "type": "cave",
-    "title": "Rebreather Cave",
-    "description": "Cave A",
-    "x": -423,
-    "y": 1512,
-    "items": [
-      11,
-      10,
-      380,
-      71,
-      379,
-      99
-    ],
-    "screenshot": "rebreather_cave.webp",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Caves#Beach/Rebreather_Cave"
-  },
-  {
-    "id": 517,
-    "type": "cave",
-    "title": "Artifact Cave",
-    "description": "Cave G",
-    "x": 1694.64,
-    "y": 1042.21,
-    "items": [
-      501,
-      502
-    ]
   },
   {
     "id": 66,
@@ -1188,6 +1192,9 @@
     "description": "Whithout save point",
     "x": -132.00,
     "y": -1036.21,
+    "items": [
+      108
+    ],
     "tp": "goto TentTornAModel (27)",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
@@ -1232,6 +1239,9 @@
     "description": "Without save point",
     "x": 721.09,
     "y": 736.98,
+    "items": [
+      177
+    ],
     "tp": "goto TentTornAModel (26)",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
@@ -1242,6 +1252,10 @@
     "description": "With save point",
     "x": 799,
     "y": 975,
+    "items": [
+      178
+    ],
+    "tp": "goto TentDark (9)",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
@@ -1278,7 +1292,7 @@
       341,
       881
     ],
-    "tp": "goto TentDark",
+    "tp": "goto TentDark (2)",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
@@ -1288,6 +1302,7 @@
     "description": "With save point",
     "x": -1121,
     "y": 1628,
+    "tp": "goto Tent (3)",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
@@ -1297,6 +1312,7 @@
     "description": "With save point",
     "x": -1255,
     "y": 1397,
+    "tp": "goto Tent (4)",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
@@ -1315,6 +1331,7 @@
     "description": "With save point",
     "x": -1722,
     "y": 59,
+    "tp": "goto TentDark (4)",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
@@ -1327,9 +1344,11 @@
     "items": [
       4,
       858,
-      863
+      543,
+      863,
+      531
     ],
-    "tp": "goto -703 103 450",
+    "tp": "goto Tent (1)",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
@@ -1349,6 +1368,7 @@
     "description": "With save point",
     "x": -1268,
     "y": -11,
+    "tp": "goto Tent (7)",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
@@ -1358,6 +1378,7 @@
     "description": "With save point",
     "x": -1257,
     "y": -597,
+    "tp": "goto TentDark (3)",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
@@ -1392,6 +1413,7 @@
     "description": "With save point",
     "x": -474,
     "y": -335,
+    "tp": "goto Tent (15)",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
@@ -1421,6 +1443,46 @@
     "x": 400.81,
     "y": -182.38,
     "tp": "goto Tent (10)",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 518,
+    "type": "abandoned-camp",
+    "title": "Abandoned Camp",
+    "description": "With save point",
+    "x": -1347.69,
+    "y": -1854.49,
+    "tp": "goto Tent (10)",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 519,
+    "type": "abandoned-camp",
+    "title": "Abandoned Camp",
+    "description": "With save point",
+    "x": 1456.76,
+    "y": -417.45,
+    "tp": "goto Tent (8)",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 520,
+    "type": "abandoned-camp",
+    "title": "Abandoned Camp",
+    "description": "With save point",
+    "x": 820.42,
+    "y": -996.05,
+    "tp": "goto Tent (10)",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 521,
+    "type": "abandoned-camp",
+    "title": "Abandoned Camp",
+    "description": "With save point",
+    "x": -142.90,
+    "y": -85.58,
+    "tp": "goto Tent (12)",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
@@ -1490,12 +1552,13 @@
     "id": 71,
     "type": "outfit-cave",
     "title": "Leather Jacket",
+    "description": "Inside the right tunnel",
     "x": -646.00,
     "y": 1510.95,
     "isUnderground": true,
     "screenshot": "hoodie_3.webp",
-    "warning": "Teleport after entering the cave to avoid falling under the map",
-    "tp": "goto -644,8 16 1511,5",
+    "warning": "Double use the command!",
+    "tp": "goto LeatherJacketPickup",
     "itemid": "additem 493",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hoodie"
   },
@@ -1507,7 +1570,7 @@
     "x": -971.44,
     "y": -1061.75,
     "screenshot": "leather_jacket.webp",
-    "tp": "goto -972 251 -1060,9",
+    "tp": "goto LeatherJacketPickup (1)",
     "itemid": "additem 493",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Leather_Jacket"
   },
@@ -1516,20 +1579,22 @@
     "type": "outfit",
     "title": "Blazer",
     "description": "Inside open coffin",
-    "x": -922,
-    "y": 1454,
+    "x": -922.48,
+    "y": 1454.95,
     "screenshot": "blazer.webp",
+    "tp": "goto OldJacketPickup (1)",
     "itemid": "additem 491",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Blazer"
   },
   {
     "id": 73,
     "type": "outfit",
-    "title": "Camouflage Suit",
+    "title": "Virginia Camouflage Suit",
     "description": "Inside Kayak",
-    "x": -1111,
-    "y": 1723,
+    "x": -1112.38,
+    "y": 1722.76,
     "screenshot": "camouflage_suit.webp",
+    "tp": "goto VirginiaCamoSuitPickup",
     "itemid": "additem 558",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Camouflage_Suit"
   },
@@ -1537,23 +1602,27 @@
     "id": 74,
     "type": "outfit",
     "title": "Hoodie or Tactical/Leather Jacket",
-    "x": -1084,
-    "y": 1282,
+    "x": -1083.25,
+    "y": 1282.87,
     "screenshot": "hoodie_2.webp",
+    "tp": "goto HoodiePickup (1)",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hoodie"
   },
   {
     "id": 75,
     "type": "outfit-bunker",
-    "title": "Dress for Virginia",
+    "title": "Virginia Dress",
     "description": "On the right side from entrance",
-    "x": -914,
-    "y": 1010,
+    "x": -913.05,
+    "y": 1010.61,
     "isUnderground": true,
     "requirements": [
       19
     ],
     "screenshot": "dress.webp",
+    "warning": "Double use the command!",
+    "tp": "goto VirginiaDressPickup",
+    "itemid": "additem 556",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Dress"
   },
   {
@@ -1570,16 +1639,18 @@
   {
     "id": 78,
     "type": "outfit",
-    "title": "Hoodie or Tactical/Leather Jacket",
-    "x": -743,
-    "y": 20,
+    "title": "Hoodie",
+    "x": -744.25,
+    "y": 20.40,
     "screenshot": "hoodie_1.webp",
+    "tp": "goto HoodiePickup",
+    "itemid": "additem 490",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hoodie"
   },
   {
     "id": 79,
     "type": "outfit-bunker",
-    "title": "Track Suit",
+    "title": "Virginia Track Suit",
     "x": -1141.52,
     "y": 6.08,
     "isUnderground": true,
@@ -1587,8 +1658,8 @@
       17
     ],
     "screenshot": "track_suit.webp",
-    "warning": "Teleport after entering the bunker to avoid falling under the map",
-    "tp": "goto -1141,5 59 6,9",
+    "warning": "Double use the command!",
+    "tp": "goto VirginiaTrackSuitPickup",
     "itemid": "additem 555",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Track_Suit"
   },
@@ -1604,15 +1675,15 @@
       15
     ],
     "screenshot": "tuxedo.webp",
-    "warning": "Teleport after entering the bunker to avoid falling under the map",
-    "tp": "goto -416,8 76,1 695,5",
+    "warning": "Teleport after entering the bunker!",
+    "tp": "goto TuxedoPickup",
     "itemid": "additem 492",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Tuxedo"
   },
   {
     "id": 82,
     "type": "outfit-bunker",
-    "title": "Leather Suit for Virginia",
+    "title": "Virginia Leather Suit",
     "description":"On 2nd bunker floor",
     "x": 1166.92,
     "y": -647.65,
@@ -1621,7 +1692,7 @@
       17
     ],
     "screenshot": "leather_suit_2.webp",
-    "warning": "Teleport only after entering the bunker otherwise you won't teleport here",
+    "warning": "Double use the command!",
     "tp": "goto VirginiaLeatherSuitPickup",
     "itemid": "additem 557",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Leather_Suit"
@@ -1630,9 +1701,10 @@
     "id": 84,
     "type": "outfit",
     "title": "Leather Suit for Virginia",
-    "x": -888,
-    "y": 769,
+    "x": -887.70,
+    "y": 770.03,
     "screenshot": "leather_suit_1.webp",
+    "tp": "goto -888,3 95 768,9",
     "itemid": "additem 557",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Leather_Suit"
   },
@@ -1648,7 +1720,7 @@
       17
     ],
     "screenshot": "gold_mask.webp",
-    "warning": "Double use the command in orded to teleport underground",
+    "warning": "Double use the command!",
     "tp": "goto GoldMaskPickup",
     "itemid": "additem 435",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Gold_Mask"
@@ -1657,13 +1729,15 @@
     "id": 318,
     "type": "outfit-cave",
     "title": "Wetsuit",
-    "x": -509,
-    "y": 128,
+    "x": -509.26,
+    "y": 128.13,
     "isUnderground": true,
     "requirements": [
       11
     ],
     "screenshot": "wetsuit.webp",
+    "warning": "Double use the command!",
+    "tp": "goto WetsuitPickup",
     "itemid": "additem 499",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Wetsuit"
   },
@@ -1679,10 +1753,19 @@
       17
     ],
     "screenshot": "space_suit.webp",
-    "warning": "Double use the command in orded to teleport underground",
+    "warning": "Double use the command!",
     "tp": "goto SpaceSuitPickup",
     "itemid": "additem 639",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Space_Suit"
+  },
+  {
+    "id": 536,
+    "type": "outfit",
+    "title": "Priest Outfit",
+    "x": 185.79,
+    "y": -331.95,
+    "screenshot": "priest_outfit.webp",
+    "tp": "goto PriestOutfitPickup"
   },
   {
     "id": 85,
@@ -1745,8 +1828,10 @@
     "requirements": [
       15
     ],
-    "warning": "Teleport after entering the bunker to avoid falling under the map",
-    "tp": "goto -417,5 76,1 694,6",
+    "screenshot": "novel_a.webp",
+    "warning": "Teleport after entering the bunker!",
+    "tp": "goto NovelAPickup",
+    "itemid": "additem 423",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Books#Pennant_Line_Book"
   },
   {
@@ -1761,7 +1846,7 @@
       17
     ],
     "screenshot": "novel_b.webp",
-    "warning": "Double use the command in orded to teleport underground",
+    "warning": "Double use the command!",
     "tp": "goto NovelBPickup",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Books#Deep_Sleep_Book"
   },
@@ -1805,17 +1890,18 @@
   },
   {
     "id": 93,
-    "type": "document",
-    "title": "Email - ATTENTION ALL",
-    "description": "Next to PC on the left",
+    "type": "email",
+    "title": "Attention All",
+    "description": "Next to Laptop with location",
     "x": -424.48,
     "y": 702.20,
     "isUnderground": true,
     "requirements": [
       15
     ],
-    "warning": "Teleport after entering the bunker to avoid falling under the map",
-    "tp": "goto -425,2 76,1 702,1",
+    "screenshot": "email_attention_all_1.webp",
+    "warning": "Teleport after entering the bunker!",
+    "tp": "goto EmailPrintoutPaintingAPickup",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Painting_Email"
   },
   {
@@ -1892,7 +1978,8 @@
     "requirements": [
       15
     ],
-    "warning": "Teleport after entering the bunker to avoid falling under the map",
+    "screenshot": "music_album_cover_2.webp",
+    "warning": "Teleport after entering the bunker!",
     "tp": "goto -431,6 76,1 705,4"
   },
   {
@@ -1907,8 +1994,8 @@
       17
     ],
     "screenshot": "music_album_cover_1.webp",
-    "warning": "Teleport after entering the bunker to avoid falling under the map",
-    "tp": "goto -1157,5 65 29,2"
+    "warning": "Double use the command!",
+    "tp": "goto AlbumCoverPickup"
   },
   {
     "id": 101,
@@ -1922,7 +2009,7 @@
       17
     ],
     "screenshot": "preliminary_findings.webp",
-    "warning": "Double use the command in orded to teleport underground",
+    "warning": "Double use the command!",
     "tp": "goto EmailPrintoutGovernmentAPickup"
   },
   {
@@ -1937,7 +2024,7 @@
       17
     ],
     "screenshot": "scientific_data_2.webp",
-    "warning": "Double use the command in orded to teleport underground",
+    "warning": "Double use the command!",
     "tp": "goto EmailPrintoutGovernmentBPickup"
   },
   {
@@ -1952,7 +2039,7 @@
       17
     ],
     "screenshot": "safe_in_cube.webp",
-    "warning": "Double use the command in orded to teleport underground",
+    "warning": "Double use the command!",
     "tp": "goto EmailPrintoutSqueakyShoesBPickup"
   },
   {
@@ -1967,7 +2054,7 @@
       17
     ],
     "screenshot": "numbers_translation.webp",
-    "warning": "Double use the command in orded to teleport underground",
+    "warning": "Double use the command!",
     "tp": "goto NumbersPrintoutPickup"
   },
   {
@@ -1982,9 +2069,19 @@
       17
     ],
     "screenshot": "email_printout_golf_4.webp",
-    "warning": "Double use the command in orded to teleport underground",
+    "warning": "Double use the command!",
     "tp": "goto EmailPrintoutGolfDPickup",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Balls_Emails"
+  },
+  {
+    "id": 531,
+    "type": "email",
+    "title": "Again voicing my concerns",
+    "description": "Next to Modern Axe",
+    "x": -704.09,
+    "y": 445.92,
+    "screenshot": "jianyu_email_printout_1.webp",
+    "tp": "goto JianyuEmailPrintoutAPickup"
   },
   {
     "id": 308,
@@ -2172,7 +2269,7 @@
       17
     ],
     "screenshot": "stock_price_printout.webp",
-    "warning": "Double use the command in orded to teleport underground",
+    "warning": "Double use the command!",
     "tp": "goto StockPricePrintoutPickup"
   },
   {
@@ -2183,7 +2280,7 @@
     "y": 523.05,
     "isUnderground": true,
     "screenshot": "printout_astrology_1.webp",
-    "warning":"Double use the command in orded to teleport underground",
+    "warning": "Double use the command!",
     "tp": "goto EmailPrintoutAstrologyAPickup"
   },
   {
@@ -2194,7 +2291,7 @@
     "y": 483.71,
     "isUnderground": true,
     "screenshot": "printout_astrology_2.webp",
-    "warning": "Double use the command in orded to teleport underground",
+    "warning": "Double use the command!",
     "tp": "goto EmailPrintoutAstrologyBPickup"
   },
   {
@@ -2205,7 +2302,7 @@
     "y": 634.28,
     "isUnderground": true,
     "screenshot": "printout_astrology_3.webp",
-    "warning": "Double use the command in orded to teleport underground",
+    "warning": "Double use the command!",
     "tp": "goto EmailPrintoutAstrologyCPickup"
   },
   {
@@ -2216,7 +2313,7 @@
     "y": 522.74,
     "isUnderground": true,
     "screenshot": "the_cube.webp",
-    "warning":"Double use the command in orded to teleport underground",
+    "warning": "Double use the command!",
     "tp": "goto EmailPrintoutSqueakyShoesCPickup"
   },
   {
@@ -2231,7 +2328,7 @@
       17
     ],
     "screenshot": "fishing_email_2.webp",
-    "warning": "Double use the command in orded to teleport underground",
+    "warning": "Double use the command!",
     "tp": "goto FishingEmailBPickup"
   },
   {
@@ -2246,7 +2343,7 @@
       15
     ],
     "screenshot": "fishing_email_3.webp",
-    "warning": "Double use the command in orded to teleport underground",
+    "warning": "Double use the command!",
     "tp": "goto FishingEmailCPickup"
   },
   {
@@ -2261,7 +2358,7 @@
       17
     ],
     "screenshot": "puffton_email_1.webp", 
-    "warning":"Double use the command in orded to teleport underground",
+    "warning": "Double use the command!",
     "tp": "goto PufftonEmailAPickup"
   },
   {
@@ -2325,7 +2422,7 @@
     ],
     "screenshot": "blueprint_item_plating_machine.webp",
     "warning":"Teleport after entering the cave to avoid falling under the map",
-    "tp": "goto BlueprintItemPlatingMachinePickup"
+    "tp": "goto BlueprintItemPlatingPickup"
   },
   {
     "id": 379,
@@ -2395,10 +2492,10 @@
     "type": "blueprint-cave",
     "title": "Uber Trap",
     "description": "Unlockable new trap",
-    "x": -413.53,
-    "y": -876.22,
+    "x": -405.63,
+    "y": -979.48,
     "isUnderground": true,
-    "warning": "Double use the command in orded to teleport underground",
+    "warning": "Double use the command!",
     "screenshot": "blueprint_uber_trap.webp",
     "tp": "goto BlueprintUberTrapPickup"
   },
@@ -2411,7 +2508,7 @@
     "y": 1065.28,
     "isUnderground": true,
     "screenshot": "blueprint_grind_trap.webp",
-    "warning":"Double use the command in orded to teleport underground",
+    "warning": "Double use the command!",
     "tp": "goto BlueprintGrindTrapPickup"
   },
   {
@@ -2423,7 +2520,7 @@
     "y": -1038.39,
     "isUnderground": true,
     "screenshot": "blueprint_spear_thrower_trap.webp",
-    "warning":"Double use the command in orded to teleport underground",
+    "warning": "Double use the command!",
     "tp": "goto BlueprintSpearThrowerTrapPickup"
   },
   {
@@ -2580,18 +2677,99 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hang_Glider"
   },
   {
+    "id": 822,
+    "type": "golf-cart",
+    "title": "Golf Cart 1",
+    "x": 736,
+    "y": 1493,
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart01"
+  },
+  {
+    "id": 820,
+    "type": "golf-cart",
+    "title": "Golf Cart 2",
+    "x": 1031,
+    "y": 1523,
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart02"
+  },
+  {
+    "id": 819,
+    "type": "golf-cart",
+    "title": "Golf Cart 3",
+    "x": 1582.85,
+    "y": 1340.58,
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart03"
+  },
+  {
+    "id": 823,
+    "type": "golf-cart",
+    "title": "Golf Cart 4",
+    "x": 1014.10,
+    "y": 1223.05,
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart04"
+  },
+  {
+    "id": 817,
+    "type": "golf-cart",
+    "title": "Golf Cart 5",
+    "x": 1904,
+    "y": 461,
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart05"
+  },
+  {
+    "id": 816,
+    "type": "golf-cart",
+    "title": "Golf Cart 6",
+    "x": 1840,
+    "y": 355,
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart06"
+  },
+  {
+    "id": 818,
+    "type": "golf-cart",
+    "title": "Golf Cart 7",
+    "x": 1707.11,
+    "y": 561.66,
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart07"
+  },
+  {
+    "id": 442,
+    "type": "golf-cart",
+    "title": "Golf Cart 8",
+    "x": 897.70,
+    "y": 927.81,
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart08"
+  },
+  {
+    "id": 815,
+    "type": "golf-cart",
+    "title": "Golf Cart 9",
+    "x": 1185.27,
+    "y": 800.57,
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart09"
+  },
+  {
     "id": 812,
     "type": "golf-cart",
-    "title": "Golf Cart",
-    "x": -1134.20,
-    "y": -1106.35,
+    "title": "Golf Cart 10",
+    "x": -847.97,
+    "y": -1337.76,
     "warning": "Crouch after teleporting",
     "tp": "goto WorldGolfCart10"
   },
   {
     "id": 813,
     "type": "golf-cart",
-    "title": "Golf Cart",
+    "title": "Golf Cart 11",
     "x": -928.46,
     "y": -995.35,
     "warning":"Crouch after teleporting",
@@ -2600,100 +2778,38 @@
   {
     "id": 814,
     "type": "golf-cart",
-    "title": "Golf Cart",
+    "title": "Golf Cart 12",
     "x": -891.30,
     "y": -918.24,
     "warning": "Crouch after teleporting",
     "tp": "goto WorldGolfCart12"
   },
   {
-    "id": 815,
-    "type": "golf-cart",
-    "title": "Golf Cart",
-    "x": 1815.72,
-    "y": -509.15,
-    "warning": "Crouch after teleporting",
-    "tp": "goto WorldGolfCart09"
-  },
-  {
-    "id": 815,
-    "type": "golf-cart",
-    "title": "Golf Cart",
-    "x": 1828,
-    "y": -484
-  },
-  {
-    "id": 816,
-    "type": "golf-cart",
-    "title": "Golf Cart",
-    "x": 1840,
-    "y": 355
-  },
-  {
-    "id": 817,
-    "type": "golf-cart",
-    "title": "Golf Cart",
-    "x": 1904,
-    "y": 461
-  },
-  {
-    "id": 818,
-    "type": "golf-cart",
-    "title": "Golf Cart",
-    "x": 1691.49,
-    "y": 1027.62,
-    "warning": "Crouch after teleporting",
-    "tp": "goto WorldGolfCart07"
-  },
-  {
-    "id": 819,
-    "type": "golf-cart",
-    "title": "Golf Cart",
-    "x": 1582.85,
-    "y": 1340.58,
-    "warning": "Crouch after teleporting",
-    "tp": "goto WorldGolfCart03"
-  },
-  {
-    "id": 820,
-    "type": "golf-cart",
-    "title": "Golf Cart",
-    "x": 1031,
-    "y": 1523
-  },
-  {
     "id": 821,
     "type": "golf-cart",
-    "title": "Golf Cart",
+    "title": "Golf Cart 13",
     "x": 1044.50,
     "y": 1825.06,
     "warning": "Crouch after teleporting",
     "tp": "goto WorldGolfCart13"
   },
   {
-    "id": 822,
+    "id": 523,
     "type": "golf-cart",
-    "title": "Golf Cart",
-    "x": 736,
-    "y": 1493
+    "title": "Golf Cart 14",
+    "x": -716.73,
+    "y": -1227.74,
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart14"
   },
   {
-    "id": 823,
+    "id": 815,
     "type": "golf-cart",
-    "title": "Golf Cart",
-    "x": 1014.10,
-    "y": 1223.05,
+    "title": "Golf Cart 15",
+    "x": -623.90,
+    "y": -1044.91,
     "warning": "Crouch after teleporting",
-    "tp": "goto WorldGolfCart04"
-  },
-  {
-    "id": 442,
-    "type": "golf-cart",
-    "title": "Golf Cart",
-    "x": 1828.62,
-    "y": -484.03,
-    "warning": "Crouch after teleporting",
-    "tp": "goto WorldGolfCart08"
+    "tp": "goto WorldGolfCart15"
   },
   {
     "id": 428,
@@ -2702,7 +2818,15 @@
     "x": -1031.79,
     "y": -625.11,
     "screenshot": "knight_v_1.webp",
-    "tp": "goto -1031 227 -624,8",
+    "itemid": "spawnitem 630"
+  },
+  {
+    "id": 568,
+    "type": "unicycle",
+    "title": "Knight V",
+    "x": -1271.26,
+    "y": -14.91,
+    "screenshot": "knight_v_2.webp",
     "itemid": "spawnitem 630"
   },
   {
@@ -2724,16 +2848,6 @@
     "itemid": "spawnitem 630"
   },
   {
-    "id": 568,
-    "type": "unicycle",
-    "title": "Knight V",
-    "x": -1271.26,
-    "y": -14.91,
-    "screenshot": "knight_v_2.webp",
-    "tp": "goto -1271,2 103 -13,9",
-    "itemid": "spawnitem 630"
-  },
-  {
     "id": 570,
     "type": "unicycle",
     "title": "Knight V",
@@ -2749,7 +2863,6 @@
     "x": -973,
     "y": -783,
     "screenshot": "knight_v_6.webp",
-    "tp": "goto -973 273 -783",
     "itemid": "spawnitem 630"
   },
   {
@@ -2759,7 +2872,6 @@
     "x": -1132.82,
     "y": -1086.89,
     "screenshot": "knight_v_7.webp",
-    "tp": "goto -1133,2 278,4 -1087,6",
     "itemid": "spawnitem 630"
   },
   {
@@ -2769,7 +2881,6 @@
     "x": 1285.29,
     "y": -725.34,
     "screenshot": "knight_v_8.webp",
-    "tp": "goto 846,10 228 -725,7",
     "itemid": "spawnitem 630"
   },
   {
@@ -2787,8 +2898,16 @@
     "title": "Knight V",
     "x": -238.12,
     "y": 950.96,
-    "tp": "goto -238 97 950",
     "screenshot": "knight_v_10.webp",
+    "itemid": "spawnitem 630"
+  },
+  {
+    "id": 548,
+    "type": "unicycle",
+    "title": "Knight V",
+    "x": -1177.63,
+    "y": -1697.91,
+    "screenshot": "knight_v_11.webp",
     "itemid": "spawnitem 630"
   },
   {
@@ -2803,7 +2922,7 @@
       17
     ],
     "screenshot": "putter_2.webp",
-    "warning": "Teleport only after entering the bunker otherwise you won't teleport here",
+    "warning": "Teleport after entering the bunker!",
     "tp": "goto GolfPutterPickup",
     "itemid": "additem 525",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Putter"
@@ -2840,6 +2959,7 @@
     "x": 1025,
     "y": 1640,
     "screenshot": "putter_4.webp",
+    "tp": "goto 1025,8 84,7 1642,9",
     "itemid": "additem 525",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Putter"
   },
@@ -4321,6 +4441,7 @@
     "x": -461,
     "y": -556,
     "isUnderground": true,
+    "screenshot": "cave_drawing_a.webp",
     "warning": "Teleport after entering the cave to avoid falling under the map",
     "tp": "goto -461,8 283 -557,7"
   },
@@ -4518,6 +4639,14 @@
     "y": 1296
   },
   {
+    "id": 532,
+    "type": "poi",
+    "title": "Effigies",
+    "description": "Twins mutant emerging point",
+    "x": 733.44,
+    "y": -952.27
+  },
+  {
     "id": 357,
     "type": "poi",
     "title": "Kayak",
@@ -4552,7 +4681,7 @@
   {
     "id": 361,
     "type": "poi",
-    "title": "Boat",
+    "title": "Boat Wreckage",
     "x": 1861,
     "y": 750,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Shipwrecks"
@@ -4560,7 +4689,7 @@
   {
     "id": 362,
     "type": "poi",
-    "title": "Boat",
+    "title": "Boat Wreckage",
     "x": 631,
     "y": -1827,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Shipwrecks"
@@ -4568,7 +4697,7 @@
   {
     "id": 363,
     "type": "poi",
-    "title": "3x Boats",
+    "title": "3x Boats Wreckages",
     "x": 1848,
     "y": 774,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Shipwrecks"
@@ -4576,7 +4705,7 @@
   {
     "id": 364,
     "type": "poi",
-    "title": "Boat",
+    "title": "Boat Wreckage",
     "x": -512,
     "y": -1851,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Shipwrecks"
@@ -4584,7 +4713,7 @@
   {
     "id": 365,
     "type": "poi",
-    "title": "2x Boats",
+    "title": "2x Boats Wreckages",
     "x": -529,
     "y": -1899,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Shipwrecks"
@@ -4592,7 +4721,7 @@
   {
     "id": 366,
     "type": "poi",
-    "title": "2x Boats",
+    "title": "2x Boats Wreckages",
     "x": -1059,
     "y": -1872,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Shipwrecks"
@@ -4600,7 +4729,7 @@
   {
     "id": 367,
     "type": "poi",
-    "title": "2x Boats",
+    "title": "2x Boats Wreckages",
     "x": -1789,
     "y": -1591,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Shipwrecks"
@@ -4608,7 +4737,7 @@
   {
     "id": 368,
     "type": "poi",
-    "title": "3x Boats",
+    "title": "3x Boats Wreckages",
     "x": -1761,
     "y": -1093,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Shipwrecks"
@@ -4616,7 +4745,7 @@
   {
     "id": 369,
     "type": "poi",
-    "title": "Boat",
+    "title": "Boat Wreckage",
     "x": -1784,
     "y": -754,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Shipwrecks"
@@ -4624,7 +4753,7 @@
   {
     "id": 370,
     "type": "poi",
-    "title": "2x Boats",
+    "title": "2x Boats Wreckages",
     "x": -1397,
     "y": 604,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Shipwrecks"
@@ -4632,7 +4761,7 @@
   {
     "id": 861,
     "type": "poi",
-    "title": "Boat",
+    "title": "Boat Wreckage",
     "x": -1665,
     "y": 785,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Shipwrecks"
@@ -4640,7 +4769,7 @@
   {
     "id": 486,
     "type": "poi",
-    "title": "Boat",
+    "title": "Boat Wreckage",
     "x": 1878.91,
     "y": -483.70,
     "tp": "goto 1879,4 29,1 -484,7",
@@ -4657,7 +4786,7 @@
   {
     "id": 857,
     "type": "poi",
-    "title": "Boat",
+    "title": "Boat Wreckage",
     "x": -1040,
     "y": 814,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Drifting_Boat"
@@ -4665,9 +4794,25 @@
   {
     "id": 917,
     "type": "poi",
-    "title": "2x Boats",
+    "title": "2x Boats Wreckages",
     "x": -606,
     "y": -105,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Drifting_Boat"
+  },
+  {
+    "id": 542,
+    "type": "poi",
+    "title": "2x Boats Wreckages",
+    "x": -1465.79,
+    "y": -319.02,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Drifting_Boat"
+  },
+  {
+    "id": 547,
+    "type": "poi",
+    "title": "Boat Wreckage",
+    "x": 1526.88,
+    "y": -1568.07,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Drifting_Boat"
   },
   {
@@ -4782,6 +4927,22 @@
     "title": "2x Dead Killer Whales",
     "x": -1764,
     "y": -977,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Killer_Whale"
+  },
+  {
+    "id": 533,
+    "type": "poi",
+    "title": "2x Dead Killer Whales",
+    "x": 1451.25,
+    "y": -1653.64,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Killer_Whale"
+  },
+  {
+    "id": 535,
+    "type": "poi",
+    "title": "2x Dead Killer Whales",
+    "x": 1505.40,
+    "y": -1628.29,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Killer_Whale"
   },
   {
@@ -5055,6 +5216,14 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Gravesites"
   },
   {
+    "id": 538,
+    "type": "grave",
+    "title": "4x Graves",
+    "x": 600.70,
+    "y": -1152.37,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Gravesites"
+  },
+  {
     "id": 422,
     "type": "poi",
     "title": "Astronaut Corpse",
@@ -5180,19 +5349,72 @@
     "tp": "goto Spaceship"
   },
   {
+    "id": 527,
+    "type": "poi",
+    "title": "Bridge",
+    "description": "Rope Bridge",
+    "x": -1062.16,
+    "y": -421.18
+  },
+  {
+    "id": 528,
+    "type": "poi",
+    "title": "Bridge",
+    "description": "Rope Bridge",
+    "x": 641.06,
+    "y": -1304.77
+  },
+  {
+    "id": 539,
+    "type": "poi",
+    "title": "Bridge",
+    "description": "Rope Bridge",
+    "x": 1104.10,
+    "y": 70.84
+  },
+  {
+    "id": 540,
+    "type": "poi",
+    "title": "Bridge",
+    "description": "Rope Bridge",
+    "x": 581.42,
+    "y": -1283.72
+  },
+  {
+    "id": 541,
+    "type": "poi",
+    "title": "Bridge",
+    "description": "Rope Bridge",
+    "x": -1044.29,
+    "y": -308.13
+  },
+  {
+    "id": 537,
+    "type": "poi",
+    "title": "Climbing Rope",
+    "description": "Mountain Climbing Rope",
+    "x": 376.97,
+    "y": -1449.63
+  },
+  {
     "id": 236,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Medium Village",
+    "type": "village",
+    "title": "Village 01",
+    "description": "Village with 5 structures",
     "x": -738,
     "y": 27,
+    "items": [
+      462,
+      78,
+      918
+    ],
     "tp": "goto Village1",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
   },
   {
     "id": 234,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
+    "type": "village",
+    "title": "Village 02",
     "description": "Abandoned Village",
     "x": -1056,
     "y": -257,
@@ -5201,39 +5423,50 @@
   },
   {
     "id": 230,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Big Village",
+    "type": "village",
+    "title": "Village 03",
+    "description": "Village with 9 structures",
     "x": -969,
     "y": -777,
+    "items": [
+      571
+    ],
     "tp": "goto Village3",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
   },
   {
     "id": 248,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Small Village",
+    "type": "village",
+    "title": "Village 04",
+    "description": "Village with 4 structures",
     "x": -1207,
     "y": 657,
+    "items": [
+      862
+    ],
     "tp": "goto Village4",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
   },
   {
     "id": 251,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Large Village",
+    "type": "village",
+    "title": "Village 05",
+    "description": "Village with 9 structures",
     "x": -1090,
     "y": 1281,
+    "items": [
+      485,
+      913,
+      74
+    ],
     "tp": "goto Village5",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
   },
   {
     "id": 252,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Small Village",
+    "type": "village",
+    "title": "Village 06",
+    "description": "Village with 4 structures",
     "x": -652,
     "y": 1495,
     "tp": "goto Village6",
@@ -5241,8 +5474,8 @@
   },
   {
     "id": 255,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
+    "type": "village",
+    "title": "Village 07",
     "description": "Small Village",
     "x": -602,
     "y": 880,
@@ -5251,29 +5484,36 @@
   },
   {
     "id": 229,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Big Village",
+    "type": "village",
+    "title": "Village 08",
+    "description": "Village with 7 structures",
     "x": -1131,
     "y": -1083,
+    "items": [
+      572
+    ],
     "tp": "goto Village8",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
   },
   {
     "id": 225,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Small Village",
+    "type": "village",
+    "title": "Village 09",
+    "description": "Village with 4 structures",
     "x": -1173,
     "y": -1697,
+    "items": [
+      548,
+      549
+    ],
     "tp": "goto Village9",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
   },
   {
     "id": 223,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Small Village",
+    "type": "village",
+    "title": "Village 10",
+    "description": "Village with 4 structures",
     "x": -1572,
     "y": -1660,
     "tp": "goto Village10",
@@ -5281,9 +5521,9 @@
   },
   {
     "id": 231,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Small Village",
+    "type": "village",
+    "title": "Village 11",
+    "description": "Village with 3 structures",
     "x": -1322,
     "y": -484,
     "tp": "goto Village11",
@@ -5291,9 +5531,9 @@
   },
   {
     "id": 246,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Medium Village",
+    "type": "village",
+    "title": "Village 12",
+    "description": "Village with 5 structures",
     "x": -482,
     "y": 489,
     "tp": "goto Village12",
@@ -5301,9 +5541,9 @@
   },
   {
     "id": 250,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Small Village",
+    "type": "village",
+    "title": "Village 13",
+    "description": "Village with 3 structures",
     "x": -1470,
     "y": 1121,
     "tp": "goto Village13",
@@ -5311,9 +5551,9 @@
   },
   {
     "id": 226,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Small Village",
+    "type": "village",
+    "title": "Village 14",
+    "description": "Village with 4 structures",
     "x": -1575,
     "y": -818,
     "tp": "goto Village14",
@@ -5321,19 +5561,22 @@
   },
   {
     "id": 254,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Small Village",
+    "type": "village",
+    "title": "Village 15",
+    "description": "Village with 5 structures",
     "x": -763,
     "y": 765,
+    "items": [
+      544
+    ],
     "tp": "goto Village15",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
   },
   {
     "id": 249,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Medium Village",
+    "type": "village",
+    "title": "Village 16",
+    "description": "Village with 6 structures",
     "x": -1513,
     "y": 824,
     "tp": "goto Village16",
@@ -5341,9 +5584,9 @@
   },
   {
     "id": 253,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Medium Village",
+    "type": "village",
+    "title": "Village 17",
+    "description": "Village with 5 structures",
     "x": -844,
     "y": 1019,
     "tp": "goto Village17",
@@ -5351,9 +5594,9 @@
   },
   {
     "id": 258,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Medium Village",
+    "type": "village",
+    "title": "Village 18",
+    "description": "Village with 5 structures",
     "x": 219,
     "y": 1136,
     "tp": "goto Village18",
@@ -5361,9 +5604,9 @@
   },
   {
     "id": 259,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Medium Village",
+    "type": "village",
+    "title": "Village 19",
+    "description": "Village with 5 structures",
     "x": 43,
     "y": 1378,
     "tp": "goto Village19",
@@ -5371,9 +5614,9 @@
   },
   {
     "id": 256,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Medium Village",
+    "type": "village",
+    "title": "Village 20",
+    "description": "Village with 5 structures",
     "x": -203,
     "y": 878,
     "tp": "goto Village20",
@@ -5381,9 +5624,9 @@
   },
   {
     "id": 247,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Medium Village",
+    "type": "village",
+    "title": "Village 21",
+    "description": "Village with 5 structures",
     "x": -1147,
     "y": 452,
     "tp": "goto Village21",
@@ -5391,9 +5634,9 @@
   },
   {
     "id": 233,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Medium Village",
+    "type": "village",
+    "title": "Village 22",
+    "description": "Village with 5 structures",
     "x": -1640,
     "y": -177,
     "tp": "goto Village22",
@@ -5401,9 +5644,9 @@
   },
   {
     "id": 232,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Medium Village",
+    "type": "village",
+    "title": "Village 23",
+    "description": "Village with 5 structures",
     "x": -1395,
     "y": -459,
     "tp": "goto Village23",
@@ -5411,19 +5654,22 @@
   },
   {
     "id": 227,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Small Village",
+    "type": "village",
+    "title": "Village 24",
+    "description": "Village with 5 structures",
     "x": -1350,
     "y": -835,
+    "items": [
+      545
+    ],
     "tp": "goto Village24",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
   },
   {
     "id": 228,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Small Village",
+    "type": "village",
+    "title": "Village 25",
+    "description": "Village with 4 structures",
     "x": -1155,
     "y": -1208,
     "tp": "goto Village25",
@@ -5431,9 +5677,9 @@
   },
   {
     "id": 279,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Abandoned Village",
+    "type": "village",
+    "title": "Village 26",
+    "description": "Village with 7 structures",
     "x": 1779,
     "y": -28,
     "tp": "goto Village26",
@@ -5441,9 +5687,9 @@
   },
   {
     "id": 280,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Abandoned Village",
+    "type": "village",
+    "title": "Village 27",
+    "description": "Village with 5 structures",
     "x": 1802,
     "y": -67,
     "tp": "goto Village27",
@@ -5451,9 +5697,9 @@
   },
   {
     "id": 278,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Medium Village",
+    "type": "village",
+    "title": "Village 28",
+    "description": "Village with 7 structures",
     "x": 1851,
     "y": 136,
     "tp": "goto Village28",
@@ -5461,9 +5707,9 @@
   },
   {
     "id": 260,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Medium Village",
+    "type": "village",
+    "title": "Village 30",
+    "description": "Village with 5 structures",
     "x": 257,
     "y": 1478,
     "tp": "goto Village30",
@@ -5471,9 +5717,9 @@
   },
   {
     "id": 282,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Medium Village",
+    "type": "village",
+    "title": "Village 31",
+    "description": "Village with 5 structures",
     "x": 1356,
     "y": -153,
     "tp": "goto Village31",
@@ -5481,9 +5727,9 @@
   },
   {
     "id": 281,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Small Village",
+    "type": "village",
+    "title": "Village 32",
+    "description": "Village with 4 structures",
     "x": 1401,
     "y": -122,
     "tp": "goto Village32",
@@ -5491,9 +5737,9 @@
   },
   {
     "id": 284,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Medium Village",
+    "type": "village",
+    "title": "Village 33",
+    "description": "Village with 5 structures",
     "x": 1056,
     "y": -922,
     "tp": "goto Village33",
@@ -5501,19 +5747,22 @@
   },
   {
     "id": 224,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Medium Village",
+    "type": "village",
+    "title": "Village 34",
+    "description": "Village with 5 structures",
     "x": -1777,
     "y": -1601,
+    "items": [
+      546
+    ],
     "tp": "goto Village34",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
   },
   {
     "id": 235,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Small Village",
+    "type": "village",
+    "title": "Village 35",
+    "description": "Village with 4 structures",
     "x": -845,
     "y": 150,
     "tp": "goto Village35",
@@ -5521,9 +5770,9 @@
   },
   {
     "id": 257,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Medium Village",
+    "type": "village",
+    "title": "Village 36",
+    "description": "Village with 6 structures",
     "x": -162,
     "y": 1052,
     "tp": "goto Village36",
@@ -5531,9 +5780,9 @@
   },
   {
     "id": 802,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Medium Village",
+    "type": "village",
+    "title": "Village 37",
+    "description": "Village with 4 structures",
     "x": 600,
     "y": -1014,
     "tp": "goto Village37",
@@ -5541,9 +5790,9 @@
   },
   {
     "id": 803,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Small Village",
+    "type": "village",
+    "title": "Village 38",
+    "description": "Village with 3 structures",
     "x": 1568,
     "y": -633,
     "tp": "goto Village38",
@@ -5551,9 +5800,9 @@
   },
   {
     "id": 804,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Small Village",
+    "type": "village",
+    "title": "Village 39",
+    "description": "Village with 3 structures",
     "x": 482,
     "y": -1705,
     "tp": "goto Village39",
@@ -5561,9 +5810,9 @@
   },
   {
     "id": 805,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Big Village",
+    "type": "village",
+    "title": "Village 40",
+    "description": "Village with 7 structures",
     "x": 1234,
     "y": -1650,
     "tp": "goto Village40",
@@ -5571,9 +5820,9 @@
   },
   {
     "id": 806,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Big Village",
+    "type": "village",
+    "title": "Village 41",
+    "description": "Village with 9 structures",
     "x": 1521,
     "y": -1587,
     "tp": "goto Village41",
@@ -5581,9 +5830,9 @@
   },
   {
     "id": 807,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Small Village",
+    "type": "village",
+    "title": "Village 42",
+    "description": "Village with 2 structures",
     "x": 1492,
     "y": 947,
     "tp": "goto Village42",
@@ -5591,9 +5840,9 @@
   },
   {
     "id": 808,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Medium Village",
+    "type": "village",
+    "title": "Village 43",
+    "description": "Village with 5 structures",
     "x": 1149,
     "y": 705,
     "tp": "goto Village43",
@@ -5601,9 +5850,9 @@
   },
   {
     "id": 809,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Medium Village",
+    "type": "village",
+    "title": "Village 44",
+    "description": "Village with 5 structures",
     "x": 1747,
     "y": 807,
     "tp": "goto Village44",
@@ -5611,9 +5860,9 @@
   },
   {
     "id": 810,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Medium Village",
+    "type": "village",
+    "title": "Village 45",
+    "description": "Village with 5 structures",
     "x": 705,
     "y": 824,
     "tp": "goto Village45",
@@ -5621,17 +5870,57 @@
   },
   {
     "id": 811,
-    "type": "cannibal-camp",
-    "title": "Cannibal Camp",
-    "description": "Small Village",
+    "type": "village",
+    "title": "Village 46",
+    "description": "Village with 2 structures",
     "x": 631,
     "y": -1657,
     "tp": "goto Village46",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
   },
   {
+    "id": 522,
+    "type": "village",
+    "title": "Village 47",
+    "description": "Village with 5 structures",
+    "x": 941.97,
+    "y": -1250.32,
+    "tp": "goto Village47",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
+  },
+  {
+    "id": 524,
+    "type": "village",
+    "title": "Village 48",
+    "description": "Village with 6 structures",
+    "x": 886.77,
+    "y": -1209.78,
+    "tp": "goto Village48",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
+  },
+  {
+    "id": 529,
+    "type": "village",
+    "title": "Village 49",
+    "description": "Village with 3 structures",
+    "x": 1462.42,
+    "y": -1327.81,
+    "tp": "goto Village49",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
+  },
+  {
+    "id": 530,
+    "type": "village",
+    "title": "Village 51",
+    "description": "Village with 2 structures",
+    "x": 639.83,
+    "y": -791.90,
+    "tp": "goto Village51",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
+  },
+  {
     "id": 277,
-    "type": "cannibal-camp",
+    "type": "village",
     "title": "Abandoned Cannibal Village",
     "x": 1430,
     "y": 844,
@@ -5640,7 +5929,7 @@
   },
   {
     "id": 275,
-    "type": "cannibal-camp",
+    "type": "village",
     "title": "Abandoned Cannibal Village",
     "x": 1468,
     "y": 672,
@@ -5649,7 +5938,7 @@
   },
   {
     "id": 274,
-    "type": "cannibal-camp",
+    "type": "village",
     "title": "Abandoned Cannibal Village",
     "x": 1511,
     "y": 672,
@@ -5657,7 +5946,7 @@
   },
   {
     "id": 276,
-    "type": "cannibal-camp",
+    "type": "village",
     "title": "Abandoned Cannibal Village",
     "x": 1478,
     "y": 703,
@@ -5665,7 +5954,7 @@
   },
   {
     "id": 273,
-    "type": "cannibal-camp",
+    "type": "village",
     "title": "Abandoned Cannibal Village",
     "x": 1568,
     "y": 890,
@@ -5674,7 +5963,7 @@
   },
   {
     "id": 347,
-    "type": "cannibal-camp",
+    "type": "village",
     "title": "Abandoned Cannibal Village",
     "x": 1733,
     "y": -1218,
@@ -5683,7 +5972,7 @@
   },
   {
     "id": 283,
-    "type": "cannibal-camp",
+    "type": "village",
     "title": "Abandoned Cannibal Village",
     "x": 1386,
     "y": -689,
@@ -5692,17 +5981,26 @@
   },
   {
     "id": 348,
-    "type": "cannibal-camp",
-    "title": "Cannibal building",
-    "x": -1684,
-    "y": 906,
+    "type": "village",
+    "title": "Abandoned Cannibal Village",
+    "description": "Twins mutant emerging point",
+    "x": 712.06,
+    "y": -1536.52,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
+  },
+  {
+    "id": 534,
+    "type": "village",
+    "title": "Abandoned Cannibal Village",
+    "x": 1600.47,
+    "y": -1702.18,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
   },
   {
     "id": 306,
     "type": "laser-attachment",
     "title": "Laser Sight",
-    "description": "Next to the laptop on the left",
+    "description": "Next to Email and Laptop",
     "x": -424.63,
     "y": 702.06,
     "isUnderground": true,
@@ -5710,8 +6008,8 @@
       15
     ],
     "screenshot": "laser_sight.webp",
-    "warning": "Teleport after entering the bunker to avoid falling under the map",
-    "tp": "goto -425,2 76,1 702,1",
+    "warning": "Teleport after entering the bunker!",
+    "tp": "goto LaserSightMod",
     "itemid": "additem 375",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Laser_Sight"
   },
@@ -5727,7 +6025,7 @@
       17
     ],
     "screenshot": "shotgun_rail_2.webp",
-    "warning": "Teleport after entering the bunker to avoid falling under the map",
+    "warning": "Teleport after entering the bunker!",
     "tp": "goto -1181,9 66 27,7",
     "itemid": "additem 346",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Shotgun_Rail"
@@ -5736,11 +6034,11 @@
     "id": 341,
     "type": "shotgun-rail",
     "title": "Shotgun Rail",
-    "description": "Main component for shotgun",
+    "description": "Near Machete",
     "x": -47.62,
     "y": 1454.07,
     "screenshot": "shotgun_rail_1.webp",
-    "tp": "goto -48,3 17 1454,4",
+    "tp": "goto ShtogunRailPickup",
     "itemid": "additem 346",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Shotgun_Rail"
   },
@@ -5756,6 +6054,8 @@
       17
     ],
     "screenshot": "shotgun_rail_3.webp",
+    "warning": "Teleport after entering the bunker!",
+    "tp": "goto ShotgunRailPickup",
     "itemid": "additem 346",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Shotgun_Rail"
   },
@@ -5767,7 +6067,7 @@
     "y": 480.42,
     "isUnderground": true,
     "screenshot": "shotgun_rail_4.webp",
-    "warning":"Teleport only after entering the bunker otherwise you won't teleport here",
+    "warning":"Teleport after entering the bunker!",
     "tp": "goto ShotgunRailPickup",
     "itemid": "additem 346",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Shotgun_Rail"
@@ -5776,10 +6076,11 @@
     "id": 847,
     "type": "shotgun-rail",
     "title": "Shotgun Rail",
+    "description": "Inside red case",
     "x": -1362.05,
     "y": 1662.91,
     "screenshot": "shotgun_rail_5.webp",
-    "tp": "goto -1361,7 91 1663,6",
+    "tp": "goto ShotgunRailPickup (1)",
     "itemid": "additem 346",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Shotgun_Rail"
   },
@@ -5791,7 +6092,7 @@
     "x": -1609.84,
     "y": 486.00,
     "screenshot": "pistol_rail_2.webp",
-    "tp": "goto -1610,4 14 486,5",
+    "tp": "goto CompactPistolPickup",
     "itemid": "additem 376",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Pistol_Rail"
   },
@@ -5799,9 +6100,11 @@
     "id": 431,
     "type": "pistol-rail",
     "title": "Pistol Rail",
-    "x": -807,
-    "y": -220,
+    "description": "Near crashed helicopter",
+    "x": -807.23,
+    "y": -220.04,
     "screenshot": "pistol_rail_1.webp",
+    "tp": "goto CompactPistolRailPickup (1)",
     "itemid": "additem 376",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Pistol_Rail"
   },
@@ -5817,7 +6120,7 @@
       17
     ],
     "screenshot": "pistol_rail_3.webp",
-    "warning": "Teleport only after entering the bunker otherwise you won't teleport here",
+    "warning": "Teleport after entering the bunker!",
     "tp": "goto CompactPistolRailPickup",
     "itemid": "additem 376",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Pistol_Rail"
@@ -5826,15 +6129,15 @@
     "id": 327,
     "type": "flashlight-attachment-cave",
     "title": "Flashlight Attachment",
-    "description": "In the hand of dead soldier",
-    "x": -580,
-    "y": -69,
+    "description": "In hand of dead soldier",
+    "x": -580.72,
+    "y": -69.44,
     "isUnderground": true,
     "requirements": [
       11
     ],
     "screenshot": "flashlight_attachment_1.webp",
-    "warning": "Double use the command in orded to teleport underground",
+    "warning": "Double use the command!",
     "tp": "goto FlashlightModPickup",
     "itemid": "additem 378",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Flashlight_Attachment"
@@ -5851,7 +6154,7 @@
       17
     ],
     "screenshot": "flashlight_attachment_2.webp",
-    "warning": "Teleport only after entering the bunker otherwise you won't teleport here",
+    "warning": "Teleport only after entering the bunker!",
     "tp": "goto FlashlightModPickup",
     "itemid": "additem 378",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Flashlight_Attachment"
@@ -5860,9 +6163,11 @@
     "id": 430,
     "type": "suppressor",
     "title": "Pistol Suppressor",
-    "x": -808,
-    "y": -217,
+    "description": "Near crashed helicopter",
+    "x": -808.38,
+    "y": -218.64,
     "screenshot": "pistol_suppressor_1.webp",
+    "tp": "goto PistolSuppressor(clone)",
     "itemid": "additem 374",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Silencer"
   },
@@ -5878,7 +6183,7 @@
       15
     ],
     "screenshot": "pistol_suppressor_2.webp",
-    "warning": "Teleport after entering the bunker to avoid falling under the map",
+    "warning": "Teleport after entering the bunker!",
     "tp": "goto -1126.3 270 -1050,2",
     "itemid": "additem 374",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Silencer"
@@ -5908,7 +6213,6 @@
     "x": -46.68,
     "y": 1456.53,
     "screenshot": "cooking_pot_1.webp",
-    "tp": "goto -47,3 17 1456,1",
     "itemid": "additem 517",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Cooking_Pot"
   },
@@ -5931,7 +6235,6 @@
     "x": 1283.00,
     "y": -727.37,
     "screenshot": "cooking_pot_3.webp",
-    "tp": "goto CookingPotPickup (3)",
     "itemid": "additem 517",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Cooking_Pot"
   },
@@ -5950,10 +6253,9 @@
     "id": 858,
     "type": "cooking-pot",
     "title": "Cooking Pot",
-    "x": -703,
-    "y": 449,
+    "x": -703.04,
+    "y": 449.07,
     "screenshot": "cooking_pot_5.webp",
-    "tp": "goto CooingPotPickup (1)",
     "itemid": "additem 517",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Cooking_Pot"
   },
@@ -5964,7 +6266,6 @@
     "x": -1269.61,
     "y": -11.19,
     "screenshot": "cooking_pot_6.webp",
-    "tp": "goto CookingPotPickup (2)",
     "itemid": "additem 517",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Cooking_Pot"
   },
@@ -5991,8 +6292,6 @@
     "y": 480.40,
     "isUnderground": true,
     "screenshot": "cooking_pot_8.webp",
-    "warning": "Teleport only after entering the bunker otherwise you won't teleport here",
-    "tp": "goto CookingPotPickup",
     "itemid": "additem 517",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Cooking_Pot"
   },
@@ -6002,7 +6301,6 @@
     "title": "Golf Cart Battery",
     "x": 887,
     "y": 1532,
-    "screenshot": "large_battery_1.webp",
     "itemid": "additem 661",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
@@ -6012,7 +6310,6 @@
     "title": "Golf Cart Battery",
     "x": 1024,
     "y": 1640,
-    "screenshot": "large_battery_2.webp",
     "itemid": "additem 661",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
@@ -6022,7 +6319,6 @@
     "title": "Golf Cart Battery",
     "x": 1905,
     "y": 466,
-    "screenshot": "large_battery_3.webp",
     "itemid": "additem 661",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
@@ -6032,7 +6328,6 @@
     "title": "Golf Cart Battery",
     "x": 1908,
     "y": 454,
-    "screenshot": "large_battery_4.webp",
     "itemid": "additem 661",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
@@ -6042,7 +6337,6 @@
     "title": "Golf Cart Battery",
     "x": 1902,
     "y": 410,
-    "screenshot": "large_battery_5.webp",
     "itemid": "additem 661",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
@@ -6052,7 +6346,6 @@
     "title": "Golf Cart Battery",
     "x": 1909,
     "y": 398,
-    "screenshot": "large_battery_6.webp",
     "itemid": "additem 661",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
@@ -6062,7 +6355,6 @@
     "title": "2x Golf Cart Batteries",
     "x": 1946,
     "y": 398,
-    "screenshot": "large_battery_7.webp",
     "itemid": "additem 661",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
@@ -6072,8 +6364,6 @@
     "title": "Golf Cart Battery",
     "x": -931.21,
     "y": -986.96,
-    "screenshot": "large_battery_8.webp",
-    "tp": "goto -930,2 251 -986,5",
     "itemid": "additem 661",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
@@ -6084,8 +6374,6 @@
     "description": "When teleporting type either (15) or (16) not both at the same time",
     "x": -893.24,
     "y": -945.45,
-    "screenshot": "large_battery_9.webp",
-    "tp": "goto -894,2 251 -945,6",
     "itemid": "additem 661",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
@@ -6100,9 +6388,6 @@
     "requirements": [
       15
     ],
-    "screenshot": "large_battery_10.webp",
-    "warning": "Teleporting to this battery will teleport you to the generator, not the battery!",
-    "tp": "goto -1140,7 270 -1039,5",
     "itemid": "additem 661",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
@@ -6117,9 +6402,6 @@
     "requirements": [
       15
     ],
-    "screenshot": "large_battery_11.webp",
-    "warning": "Teleport after entering the bunker to avoid falling under the map",
-    "tp": "goto -419 76,1 715,4",
     "itemid": "additem 661",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
@@ -6127,10 +6409,9 @@
     "id": 339,
     "type": "large-battery",
     "title": "2x Golf Cart Batteries",
+    "description": "Next to golf cart wreckage",
     "x": -480.30,
     "y": 706.72,
-    "screenshot": "large_battery_12.webp",
-    "tp": "goto -481 86 706,5",
     "itemid": "additem 661",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
@@ -6140,8 +6421,6 @@
     "title": "Golf Cart Battery",
     "x": -486.14,
     "y": 720.87,
-    "screenshot": "large_battery_13.webp",
-    "tp": "goto -486,5 86 720,2",
     "itemid": "additem 661",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
@@ -6151,8 +6430,6 @@
     "title": "Golf Cart Battery",
     "x": 1109.56,
     "y": 1013.41,
-    "screenshot": "large_battery_14.webp",
-    "tp": "goto 1110,7 128 1013,7",
     "itemid": "additem 661",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
@@ -6162,8 +6439,6 @@
     "title": "Golf Cart Battery",
     "x": 1109.26,
     "y": 1000.20,
-    "screenshot": "large_battery_15.webp",
-    "tp": "goto 1108 128 1000,4",
     "itemid": "additem 661",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
@@ -6177,9 +6452,6 @@
     "requirements": [
       15
     ],
-    "screenshot": "large_battery_16.webp",
-    "warning": "Teleport after entering the bunker to avoid falling under the map",
-    "tp": "goto 1139,6 119 1061,1",
     "itemid": "additem 661",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
@@ -6189,8 +6461,6 @@
     "title": "Golf Cart Battery",
     "x": -974.52,
     "y": 133.49,
-    "screenshot": "large_battery_17.webp",
-    "tp": "goto -973,8 96 134,3",
     "itemid": "additem 661",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
@@ -6200,8 +6470,6 @@
     "title": "Golf Cart Battery",
     "x": -981.15,
     "y": 135.76,
-    "screenshot": "large_battery_18.webp",
-    "tp": "goto -981,9 95 135,1",
     "itemid": "additem 661",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
@@ -6211,7 +6479,6 @@
     "title": "Golf Cart Battery",
     "x": -1013,
     "y": 1018,
-    "screenshot": "large_battery_19.webp",
     "itemid": "additem 661",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
@@ -6221,8 +6488,6 @@
     "title": "Golf Cart Battery",
     "x": 1683.96,
     "y": 1013.50,
-    "screenshot": "large_battery_20.webp",
-    "tp": "goto 1684,9 28,4 1013,4",
     "itemid": "additem 661",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
@@ -6232,8 +6497,6 @@
     "title": "Golf Cart Battery",
     "x": 1690.74,
     "y": 1038.19,
-    "screenshot": "large_battery_21.webp",
-    "tp": "goto 1691,6 28,4 1038,2",
     "itemid": "additem 661",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
@@ -6243,8 +6506,6 @@
     "title": "2x Golf Cart Batteries",
     "x": 1823.38,
     "y": -492.37,
-    "screenshot": "large_battery_22.webp",
-    "tp": "goto 1823,4 49 -492,4",
     "itemid": "additem 661",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
@@ -6254,8 +6515,6 @@
     "title": "Golf Cart Battery",
     "x": 1027.40,
     "y": 1216.73,
-    "screenshot": "large_battery_23.webp",
-    "tp": "goto 1028,5 139,1 1216,4",
     "itemid": "additem 661",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
@@ -6265,8 +6524,6 @@
     "title": "2x Golf Cart Batteries",
     "x": 187.97,
     "y": -332.73,
-    "screenshot": "large_battery_24.webp",
-    "tp": "goto 188,2 524 -333,3",
     "itemid": "additem 661",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
@@ -6277,9 +6534,15 @@
     "x": 460.14,
     "y": -228.41,
     "isUnderground": true,
-    "screenshot": "large_battery_25.webp", 
-    "warning": "Teleport after entering the cave to avoid falling under the map",
-    "tp": "goto 460,5 500 -227,1",
+    "itemid": "additem 661",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
+  },
+  {
+    "id": 544,
+    "type": "large-battery",
+    "title": "Golf Cart Battery",
+    "x": -767.04,
+    "y": 764.73,
     "itemid": "additem 661",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
@@ -6287,15 +6550,13 @@
     "id": 433,
     "type": "solar-panel",
     "title": "2x Solar Panels",
-    "description": "Two solar pannels on opposite corners each",
+    "description": "Each in opposite corner",
     "x": -415.51,
     "y": 709.07,
     "isUnderground": true,
     "requirements": [
       15
     ],
-    "warning":"Teleport after entering the bunker to avoid falling under the map",
-    "tp": "goto -416,1 76,1 709",
     "itemid": "additem 634",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Solar_Panel"
   },
@@ -6306,8 +6567,15 @@
     "x": -1194.03,
     "y": 79.91,
     "isUnderground": true,
-    "warning": "Teleport after entering the bunker to avoid falling under the map",
-    "tp": "goto -1194,8 270 79",
+    "itemid": "additem 634",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Solar_Panel"
+  },
+  {
+    "id": 543,
+    "type": "solar-panel",
+    "title": "Solar Panel",
+    "x": -700.82,
+    "y": 451.24,
     "itemid": "additem 634",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Solar_Panel"
   },
@@ -6354,7 +6622,6 @@
     "title": "Radio",
     "x": -1085,
     "y": 1281,
-    "screenshot": "radio_5.webp",
     "itemid": "additem 590",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
@@ -6364,8 +6631,6 @@
     "title": "Radio",
     "x": -1607.93,
     "y": 487.31,
-    "screenshot": "radio_6.webp",
-    "tp": "goto -1608,8 14 488,1",
     "itemid": "additem 590",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
@@ -6376,7 +6641,6 @@
     "description": "8x pcs.",
     "x": -1208,
     "y": 659,
-    "screenshot": "radio_7.webp",
     "itemid": "additem 590",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
@@ -6386,7 +6650,6 @@
     "title": "Radio",
     "x": -700,
     "y": 448,
-    "screenshot": "radio_9.webp",
     "itemid": "additem 590",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
@@ -6396,8 +6659,6 @@
     "title": "Radio",
     "x": -235.56,
     "y": 946.67,
-    "screenshot": "radio_10.webp",
-    "tp": "goto -236,6 97 946,8",
     "itemid": "additem 590",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
@@ -6407,7 +6668,6 @@
     "title": "3x Radios",
     "x": -734,
     "y": 30,
-    "screenshot": "radio_11.webp",
     "itemid": "additem 590",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
@@ -6419,8 +6679,6 @@
     "y": 1448.47,
     "isUnderground": true,
     "screenshot": "radio_12.webp",
-    "warning": "Teleport after entering the cave to avoid falling under the map",
-    "tp": "goto -598,6 23 1447,4",
     "itemid": "additem 590",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
@@ -6434,9 +6692,6 @@
     "requirements": [
       17
     ],
-    "screenshot": "radio_13.webp",
-    "warning": "Teleport after entering the cave to avoid falling under the map",
-    "tp": "goto -1117 59 7,2",
     "itemid": "additem 590",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
@@ -6450,9 +6705,6 @@
     "requirements": [
       17
     ],
-    "screenshot": "radio_14.webp",
-    "warning": "Teleport only after entering the bunker otherwise you won't teleport here",
-    "tp": "goto Radio",
     "itemid": "additem 590",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
@@ -6463,9 +6715,33 @@
     "x": 1609.46,
     "y": 514.95,
     "isUnderground": true,
-    "screenshot": "radio_15.webp",
-    "warning": "Teleport only after entering the bunker otherwise you won't teleport here",
-    "tp": "goto Radio (1)",
+    "itemid": "additem 590",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
+  },
+  {
+    "id": 545,
+    "type": "radio",
+    "title": "Radio",
+    "x": -1345.08,
+    "y": -854.81,
+    "itemid": "additem 590",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
+  },
+  {
+    "id": 546,
+    "type": "radio",
+    "title": "Radio",
+    "x": -1779.79,
+    "y": -1613.91,
+    "itemid": "additem 590",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
+  },
+  {
+    "id": 549,
+    "type": "radio",
+    "title": "Radio",
+    "x": -1169.78,
+    "y": -1700.11,
     "itemid": "additem 590",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
@@ -7833,6 +8109,24 @@
     "y": -1249.18,
     "tp": "goto LakePCN",
     "tg": "togglego LakePCN"
+  },
+  {
+    "id": 525,
+    "type": "pond",
+    "title": "Pond PCN (1)",
+    "x": 869.53,
+    "y": -1183.06,
+    "tp": "goto LakePCN (1)",
+    "tg": "togglego LakePCN (1)"
+  },
+  {
+    "id": 526,
+    "type": "pond",
+    "title": "Pond PCN (2)",
+    "x": 777.20,
+    "y": -1237.76,
+    "tp": "goto LakePCN (2)",
+    "tg": "togglego LakePCN (2)"
   },
   {
     "id": 725,

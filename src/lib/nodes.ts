@@ -374,10 +374,10 @@ export function getTypes(): NodeType[] {
       filter: "poi",
     },
     {
-      value: "cannibal-camp",
+      value: "village",
       title: t("Enemies"),
-      icon: icons["cannibal-camp"],
-      src: "/icons/cannibal-camp.webp",
+      icon: icons.village,
+      src: "/icons/village.webp",
       filter: "village",
     },
     {
@@ -468,8 +468,22 @@ export function getTypes(): NodeType[] {
       value: "lake",
       title: t("Water Body"),
       icon: icons.poi,
-      src: "/icons/lake.webp",
+      src: "/icons/water.webp",
       filter: "lake",
+    },
+    {
+      value: "waterfall",
+      title: t("Waterfall"),
+      icon: icons.poi,
+      src: "/icons/water.webp",
+      filter: "lake",
+    },
+    {
+      value: "pond",
+      title: t("Water Body"),
+      icon: icons.poi,
+      src: "/icons/water.webp",
+      filter: "pond",
     },
     {
       value: "laptop-cave",
@@ -514,13 +528,6 @@ export function getTypes(): NodeType[] {
       filter: ["weapons", "cave-loot"],
     },
     {
-      value: "waterfall",
-      title: t("Waterfall"),
-      icon: icons.poi,
-      src: "/icons/waterfall.webp",
-      filter: "lake",
-    },
-    {
       value: "cooking-pot",
       title: t("Tool"),
       icon: icons.poi,
@@ -547,13 +554,6 @@ export function getTypes(): NodeType[] {
       icon: icons.poi,
       src: "/icons/pickaxe.webp",
       filter: ["tools", "cave-loot"],
-    },
-    {
-      value: "pond",
-      title: t("Water Body"),
-      icon: icons.poi,
-      src: "/icons/pond.webp",
-      filter: "pond",
     },
     {
       value: "radio",
@@ -622,7 +622,7 @@ export function getTypes(): NodeType[] {
       value: "artifact-e",
       title: t("Artifact"),
       icon: icons.poi,
-      src: "/icons/artifact-d.webp",
+      src: "/icons/artifact-e.webp",
       filter: ["artifact", "cave-loot"],
     },
     {

@@ -23,7 +23,7 @@ export type MapLocation = {
 export function getMapLocations(): MapLocation[] {
   return mapLocations.map((mapLocation) => ({
     ...mapLocation,
-    title: t(mapLocation.title),
+    title: t(mapLocation.title ?? ""),
     description: mapLocation.description && t(mapLocation.description),
     warning: mapLocation.warning && t(mapLocation.warning),
   }));
@@ -35,7 +35,7 @@ export function getMapLocationById(id: number): MapLocation | null {
   if (mapLocation) {
     return {
       ...mapLocation,
-      title: t(mapLocation.title),
+      title: t(mapLocation.title ?? ""),
       description: mapLocation.description && t(mapLocation.description),
       warning: mapLocation.warning && t(mapLocation.warning),
     };
