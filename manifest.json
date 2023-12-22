@@ -4,7 +4,7 @@
   "meta": {
     "name": "Sons Of The Forest Map-DEV",
     "author": "Leon Machens",
-    "version": "0.34.1",
+    "version": "0.37.6",
     "minimum-overwolf-version": "0.218.0",
     "description": "Sons Of The Forest Map",
     "dock_button_title": "Sons Of The Forest",
@@ -16,6 +16,7 @@
     "Hotkeys",
     "GameInfo",
     "FileSystem",
+    "Extensions",
     "DesktopStreaming",
     "Clipboard"
   ],
@@ -125,6 +126,12 @@
       "enable_auto_refresh": true,
       "reload_delay": 1000,
       "filter": "*.*"
+    },
+    "extra-objects": {
+      "discord": {
+        "file": "plugins/DiscordRPCPlugin.dll",
+        "class": "overwolf.plugins.DiscordRPCPlugin"
+      }
     }
   }
 }

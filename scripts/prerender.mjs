@@ -1,17 +1,18 @@
+import async from "async";
 import fs from "node:fs";
 import path from "node:path";
 import puppeteer from "puppeteer";
 import { fileURLToPath } from "url";
 import { createServer } from "vite";
-import mapLocations from "./src/lib/locations.json" assert { type: "json" };
+import mapLocations from "../src/lib/locations.json" assert { type: "json" };
 
 const __dirname = fileURLToPath(new URL(".", import.meta.url));
 const toAbsolute = (p) => path.resolve(__dirname, p);
 
 const server = await createServer({
   // any valid user config options, plus `mode` and `configFile`
-  configFile: toAbsolute("./vite-web.config.ts"),
-  root: __dirname,
+  configFile: "vite-web.config.ts",
+  root: toAbsolute("../"),
   mode: "production",
   server: {
     port: 1337,
@@ -23,26 +24,31 @@ const browser = await puppeteer.launch();
 const page = await browser.newPage();
 await page.setViewport({ width: 1200, height: 628 });
 
-const template = fs.readFileSync(toAbsolute("./out/index.html"), "utf-8");
+const template = fs.readFileSync(toAbsolute("../index.html"), "utf-8");
 
 const indexMeta = generateMeta({
   title: "Sons Of The Forest Map",
   description:
-  "Take your gaming to new heights with accurate tracking, richly detailed waypoints, and a sleek overlay for real-time progress.",
+    "Take your gaming to new heights with accurate tracking, richly detailed waypoints, and a sleek overlay for real-time progress.",
   url: "https://sotf.th.gl",
   image: "https://sotf.th.gl/index.webp",
 });
 const indexHTML = template.replace(`<!--PRELOAD_TEMPLATE-->`, indexMeta);
-fs.writeFileSync(toAbsolute(`./out/index.html`), indexHTML);
-
+fs.writeFileSync(toAbsolute(`../out/index.html`), indexHTML);
+await page.emulateMediaType("print");
 await page.goto(`http://localhost:1337`, {
-  waitUntil: "networkidle0",
+  waitUntil: "networkidle2",
 });
 await page.emulateMediaType("print");
-await page.screenshot({ path: "out/index.webp", fullPage: true });
+await page.screenshot({ path: "./out/index.webp", fullPage: true });
+await page.close();
 
 // pre-render each route...
-for (const mapLocation of mapLocations) {
+await async.eachLimit(mapLocations, 5, async (mapLocation) => {
+  const locationPage = await browser.newPage();
+  await locationPage.setViewport({ width: 1200, height: 628 });
+  await locationPage.emulateMediaType("print");
+
   let meta = generateMeta({
     title: `${mapLocation.title} - Sons Of The Forest Map`,
     description:
@@ -53,24 +59,28 @@ for (const mapLocation of mapLocations) {
   });
   const html = template.replace(`<!--PRELOAD_TEMPLATE-->`, meta);
 
-  fs.mkdirSync(toAbsolute(`./out/locations/${mapLocation.id}`), {
+  fs.mkdirSync(toAbsolute(`../out/locations/${mapLocation.id}`), {
     recursive: true,
   });
   fs.writeFileSync(
-    toAbsolute(`./out/locations/${mapLocation.id}/index.html`),
+    toAbsolute(`../out/locations/${mapLocation.id}/index.html`),
     html
   );
-
-  await page.goto(`http://localhost:1337/locations/${mapLocation.id}`, {
-    waitUntil: "networkidle0",
+  await locationPage.goto(`http://localhost:1337/locations/${mapLocation.id}`, {
+    waitUntil: "networkidle2",
   });
-  await page.screenshot({
-    path: `out/locations/${mapLocation.id}.webp`,
-    fullPage: true,
-  });
+  await locationPage
+    .screenshot({
+      path: `./out/locations/${mapLocation.id}.webp`,
+      fullPage: true,
+    })
+    .catch(() => {
+      console.warn("failed to screenshot:", mapLocation.title);
+    });
 
+  await locationPage.close();
   console.log("pre-rendered:", mapLocation.title);
-}
+});
 
 await browser.close();
 await server.close();
@@ -111,6 +121,6 @@ function generateSitemap() {
   }
 
   sitemap += `</urlset>`;
-  fs.writeFileSync(toAbsolute(`./out/sitemap.xml`), sitemap);
+  fs.writeFileSync(toAbsolute(`../out/sitemap.xml`), sitemap);
 }
 generateSitemap();

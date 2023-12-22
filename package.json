@@ -6,34 +6,38 @@
   "scripts": {
     "dev:overwolf": "vite -c vite-overwolf.config.ts",
     "dev:web": "vite -c vite-web.config.ts",
-    "build": "tsc && vite build -c vite-overwolf.config.ts && node copy-statics.mjs && ow opk pack dist -o sotf.opk && ow opk sign sotf.opk",
-    "web": "tsc && vite build -c vite-web.config.ts && node prerender.mjs",
+    "build": "tsc && vite build -c vite-overwolf.config.ts && node scripts/copy-statics.mjs",
+    "web": "tsc && vite build -c vite-web.config.ts && node scripts/prerender.mjs",
     "preview": "vite preview -c vite-web.config.ts",
-    "release": "ow opk upload sotf.signed.opk",
+    "release": "node scripts/release-overwolf.mjs",
     "i18n": "node scripts/i18n.mjs"
   },
   "devDependencies": {
-    "@overwolf/ow-cli": "0.0.5-0",
-    "@overwolf/types": "3.23.1",
-    "@translate-tools/core": "0.2.14",
-    "@types/js-cookie": "3.0.5",
-    "@types/leaflet": "1.9.3",
-    "@types/qrcode": "1.5.0",
-    "@types/throttle-debounce": "5.0.0",
+    "@overwolf/ow-cli": "0.0.5-1",
+    "@overwolf/types": "3.24.3",
+    "@translate-tools/core": "1.0.0",
+    "@types/async": "3.2.24",
+    "@types/js-cookie": "3.0.6",
+    "@types/leaflet": "1.9.8",
+    "@types/qrcode": "1.5.5",
+    "@types/throttle-debounce": "5.0.2",
     "html-to-text": "9.0.5",
     "puppeteer": "19.9.0",
-    "typescript": "5.0.4",
-    "vite": "4.3.5",
-    "vite-plugin-pwa": "0.14.7"
+    "typescript": "5.3.3",
+    "vite": "5.0.10",
+    "vite-plugin-pwa": "0.17.4"
   },
   "dependencies": {
-    "@geoman-io/leaflet-geoman-free": "2.14.2",
+    "@geoman-io/leaflet-geoman-free": "2.15.0",
+    "async": "3.2.5",
+    "dotenv": "16.3.1",
     "js-cookie": "3.0.5",
-    "leaflet": "1.9.3",
-    "peerjs": "1.4.7",
+    "leaflet": "1.9.4",
+    "peerjs": "1.5.2",
     "plausible-tracker": "0.3.8",
     "qrcode": "1.5.3",
+    "reflect-metadata": "0.2.1",
     "throttle-debounce": "5.0.0",
-    "zustand": "4.4.4"
+    "zustand": "4.4.7"
   }
 }

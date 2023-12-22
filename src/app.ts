@@ -3,6 +3,7 @@ import Compass from "./components/Compass";
 import ContextMenu from "./components/ContextMenu";
 import CustomNode from "./components/CustomNode";
 import DirectionLine from "./components/DirectionLine";
+import DiscordRPC from "./components/DiscordRPC";
 import Filters from "./components/Filters";
 import FollowLocation from "./components/FollowLocation";
 import GameSessions from "./components/GameSessions";
@@ -28,6 +29,7 @@ import {
 import { loadDictionary, translateHTML } from "./lib/i18n";
 import { initPlausible } from "./lib/plausible";
 import { useAccountStore } from "./lib/stores/account";
+import { updateVersion } from "./lib/version";
 import { initWakelock } from "./lib/wakelock";
 import { closeWindow, getCurrentWindow } from "./lib/windows";
 
@@ -74,6 +76,7 @@ const {
   map,
 });
 const { updateRotation } = Compass();
+const { updatePosition: updateDiscordRPCPosition } = DiscordRPC();
 
 function updatePlayer(location: { x: number; y: number; z: number }) {
   lastRotation =
@@ -96,6 +99,7 @@ function updatePlayer(location: { x: number; y: number; z: number }) {
   updateTraceLinePosition(lastPosition);
   updateMultiplayerPosition(lastPosition);
   updateRotation(lastRotation);
+  updateDiscordRPCPosition(lastPosition);
 }
 
 const ads = document.querySelector<HTMLDivElement>(".ads")!;
@@ -220,10 +224,7 @@ async function initAppHeader({ map }: { map: leaflet.Map }) {
   header.onmousedown = () => {
     overwolf.windows.dragMove(currentWindow.id);
   };
-  const version = document.querySelector<HTMLElement>(".version")!;
-  overwolf.extensions.current.getManifest((manifest) => {
-    version.innerText += ` v${manifest.meta.version}`;
-  });
+  updateVersion();
 
   const minimize = document.querySelector<HTMLButtonElement>("#minimize")!;
   minimize.onclick = () => overwolf.windows.minimize(currentWindow.id);
