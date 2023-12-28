@@ -33,6 +33,7 @@ jobs:
         with:
           path: .cache/puppeteer
           key: ${{ runner.os }}-puppeteer
+      - run: npx puppeteer browsers install chrome
       - run: pnpm install
       - name: Build Web
         run: pnpm web
