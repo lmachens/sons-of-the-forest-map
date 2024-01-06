@@ -208,8 +208,15 @@ export function getTypes(): NodeType[] {
       filter: "cave",
     },
     {
-      value: "abandoned-camp",
-      title: t("Point of Interest"),
+      value: "abandoned-camp-y",
+      title: t("With save point"),
+      icon: icons["abandoned-camp"],
+      src: "/icons/abandoned-camp.webp",
+      filter: "abandoned-camp",
+    },
+    {
+      value: "abandoned-camp-n",
+      title: t("Without save point"),
       icon: icons["abandoned-camp"],
       src: "/icons/abandoned-camp.webp",
       filter: "abandoned-camp",
@@ -375,7 +382,7 @@ export function getTypes(): NodeType[] {
     },
     {
       value: "village",
-      title: t("Enemies"),
+      title: t("Cannibals living space"),
       icon: icons.village,
       src: "/icons/village.webp",
       filter: "village",

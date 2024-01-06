@@ -3,28 +3,31 @@
     "id": 1,
     "type": "spawnPoint",
     "title": "Mountain Crash Site",
+    "description": "Spawn Point",
     "x": -225,
     "y": -12,
     "tp": "goto SnowCrash",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Helicopter_Crash_Site"
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Starting_Points#Mountain_Peak_Crash_Landing"
   },
   {
     "id": 2,
     "type": "spawnPoint",
     "title": "Beach Crash Site",
+    "description": "Spawn Point",
     "x": -426,
     "y": 1603,
     "tp": "goto OceanCrash",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Helicopter_Crash_Site"
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Starting_Points#Oceanfront_Wreckage_Zone"
   },
   {
     "id": 3,
     "type": "spawnPoint",
     "title": "Forest Crash Site",
+    "description": "Spawn Point",
     "x": -1141,
     "y": -216,
     "tp": "goto TreeCrash",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Helicopter_Crash_Site"
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Starting_Points#Deep_Woods_Impact_Area"
   },
   {
     "id": 4,
@@ -437,7 +440,7 @@
     "x": -315.71,
     "y": 1611.97,
     "screenshot": "can_opener_1.webp",
-    "tp": "goto -315,2 14 1611,5",
+    "tp": "goto CanOpenerPickup (2)",
     "itemid": "additem 432",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Can_Opener"
   },
@@ -449,6 +452,7 @@
     "x": -1267,
     "y": -6,
     "screenshot": "can_opener_2.webp",
+    "tp": "goto CanOpenerPickup (1)",
     "itemid": "additem 432",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Can_Opener"
   },
@@ -460,6 +464,7 @@
     "x": -154,
     "y": -110,
     "screenshot": "can_opener_3.webp",
+    "tp": "goto CanOpenerPickup",
     "itemid": "additem 432",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Can_Opener"
   },
@@ -1119,88 +1124,143 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Bunkers#Food_and_Dining_Bunker"
   },
   {
-    "id": 66,
-    "type": "abandoned-camp",
-    "title": "Abandoned Camp",
-    "description": "Whithout save point",
-    "x": -1655.25,
-    "y": 1185.98,
-    "tp": "goto TentTornAModel (5)",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
-  },
-  {
-    "id": 65,
-    "type": "abandoned-camp",
-    "title": "Abandoned Camp",
-    "description": "Whithout save point",
-    "x": -1438.21,
-    "y": 1216.44,
-    "tp": "goto TentTornAModel (2)",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
-  },
-  {
     "id": 63,
-    "type": "abandoned-camp",
-    "title": "Abandoned Camp",
-    "description": "Whithout save point",
+    "type": "abandoned-camp-n",
+    "title": "Torn Tents 01",
+    "description": "Camp site with 2 tents",
     "x": -1363.90,
     "y": 1661.99,
     "items": [
       847
     ],
-    "tp": "goto TentTornAModel (1)",
+    "tp": "goto -1362,2 91,7 1665,2",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 61,
-    "type": "abandoned-camp",
-    "title": "Abandoned Camp",
-    "description": "Whithout save point",
+    "type": "abandoned-camp-n",
+    "title": "Torn Tents 02",
+    "description": "Camp site with 2 tents",
     "x": -752.56,
     "y": 1278.54,
-    "tp": "goto TentTornAModel (6)",
+    "tp": "goto -749,1 55,7 1277,1",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
-    "id": 57,
-    "type": "abandoned-camp",
-    "title": "Abandoned Camp",
-    "description": "Whith save point",
-    "x": -242.21,
-    "y": 941.33,
-    "items": [
-      575,
-      859
-    ],
-    "tp": "goto Tent (9)",
+    "id": 65,
+    "type": "abandoned-camp-n",
+    "title": "Torn Tents 03",
+    "description": "Camp site with 2 tents",
+    "x": -1438.21,
+    "y": 1216.44,
+    "tp": "goto -1435,6 93,5 1214,0",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 66,
+    "type": "abandoned-camp-n",
+    "title": "Torn Tents 04",
+    "description": "Camp site with 4 tents",
+    "x": -1655.25,
+    "y": 1185.98,
+    "tp": "goto -1650,3 83,9 1188,9",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 58,
-    "type": "abandoned-camp",
-    "title": "Abandoned Camp",
-    "description": "Whithout save point",
+    "type": "abandoned-camp-n",
+    "title": "Torn Tents 05",
+    "description": "Camp site with 2 tents",
     "x": -255.35,
     "y": 1071.43,
-    "tp": "goto TentTornAModel (8)",
+    "tp": "goto -258,1 73,3 1073,9",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 54,
+    "type": "abandoned-camp-n",
+    "title": "Torn Tents 06",
+    "description": "Camp site with 2 tents",
+    "x": 721.09,
+    "y": 736.98,
+    "items": [
+      177
+    ],
+    "tp": "goto 724,9 370 737,1",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 53,
+    "type": "abandoned-camp-n",
+    "title": "Torn Tents 07",
+    "description": "Camp site with 4 tents",
+    "x": 1260.68,
+    "y": 498.86,
+    "tp": "goto 1263,2 179,5 494,2",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 52,
+    "type": "abandoned-camp-n",
+    "title": "Torn Tents 08",
+    "description": "Camp site with 2 tents",
+    "x": 1695.50,
+    "y": 36.00,
+    "tp": "goto 1698,7 22,2 33,4",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 181,
+    "type": "abandoned-camp-n",
+    "title": "Torn Tents 09",
+    "description": "Camp site with 3 tents",
+    "x": -1098.64,
+    "y": 87.15,
+    "tp": "goto -1095,5 101 88",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 186,
+    "type": "abandoned-camp-n",
+    "title": "Torn Tents 10",
+    "description": "Camp site with 3 tents",
+    "x": -705.54,
+    "y": -661.60,
+    "tp": "goto -702,9 289,7 -664",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 191,
-    "type": "abandoned-camp",
-    "title": "Abandoned Camp",
-    "description": "Whithout save point",
+    "type": "abandoned-camp-n",
+    "title": "Torn Tents 11",
+    "description": "Camp site with 3 tents",
     "x": -132.00,
     "y": -1036.21,
     "items": [
       108
     ],
-    "tp": "goto TentTornAModel (27)",
+    "tp": "goto -129,9 408,9 -1037,",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 57,
+    "type": "abandoned-camp-y",
+    "title": "Orange Tents 05",
+    "description": "Camp site with 3 tents",
+    "x": -242.21,
+    "y": 941.33,
+    "items": [
+      575,
+      859,
+      553,
+      554
+    ],
+    "tp": "goto -237,3 97 944,5",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 51,
-    "type": "abandoned-camp",
+    "type": "abandoned-camp-y",
     "title": "Abandoned Camp",
     "description": "Without save point",
     "x": 1286.02,
@@ -1213,132 +1273,115 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
-    "id": 52,
-    "type": "abandoned-camp",
-    "title": "Abandoned Camp",
-    "description": "Without save point",
-    "x": 1695.50,
-    "y": 36.00,
-    "tp": "goto TentTornAModel (24)",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
-  },
-  {
-    "id": 53,
-    "type": "abandoned-camp",
-    "title": "Abandoned Camp",
-    "description": "Without save point",
-    "x": 1260.68,
-    "y": 498.86,
-    "tp": "goto TentTornAModel (20)",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
-  },
-  {
-    "id": 54,
-    "type": "abandoned-camp",
-    "title": "Abandoned Camp",
-    "description": "Without save point",
-    "x": 721.09,
-    "y": 736.98,
-    "items": [
-      177
-    ],
-    "tp": "goto TentTornAModel (26)",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
-  },
-  {
     "id": 55,
-    "type": "abandoned-camp",
-    "title": "Abandoned Camp",
-    "description": "With save point",
+    "type": "abandoned-camp-y",
+    "title": "Black Tents 07",
+    "description": "Camp site with 2 tents",
     "x": 799,
     "y": 975,
     "items": [
       178
     ],
-    "tp": "goto TentDark (9)",
+    "tp": "goto 799,3 227,7 975,3",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 56,
-    "type": "abandoned-camp",
-    "title": "Abandoned Camp",
-    "description": "With save point",
+    "type": "abandoned-camp-y",
+    "title": "Black Tents 06",
+    "description": "Camp site with 2 tents",
     "x": -27.90,
     "y": 665.79,
     "items": [
-      112
+      112,
+      555
     ],
-    "tp": "goto TentDark (7)",
+    "tp": "goto -29,7 251,0 668,3",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 59,
-    "type": "abandoned-camp",
-    "title": "Abandoned Camp",
-    "description": "With save point",
+    "type": "abandoned-camp-y",
+    "title": "Black Tents 04",
+    "description": "Camp site with 2 tents",
     "x": 61,
     "y": 1247,
+    "tp": "goto 63,3 87,8 1247,9",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 60,
-    "type": "abandoned-camp",
-    "title": "Abandoned Camp",
-    "description": "With save point",
+    "type": "abandoned-camp-y",
+    "title": "Black Tents 03",
+    "description": "Camp site with 2 tents",
     "x": -44.96,
     "y": 1457.21,
     "items": [
       6,
       341,
-      881
+      881,
+      551,
+      552
     ],
-    "tp": "goto TentDark (2)",
+    "tp": "goto -47,5 16,8 1455,7",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 62,
-    "type": "abandoned-camp",
-    "title": "Abandoned Camp",
-    "description": "With save point",
+    "type": "abandoned-camp-y",
+    "title": "Orange Tent 01",
+    "description": "Camp site with 1 tent",
     "x": -1121,
     "y": 1628,
-    "tp": "goto Tent (3)",
+    "items": [
+      570,
+      911
+    ],
+    "tp": "goto -1120,8 37 1629,8",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 64,
-    "type": "abandoned-camp",
-    "title": "Abandoned Camp",
-    "description": "With save point",
+    "type": "abandoned-camp-y",
+    "title": "Blue Tents 02",
+    "description": "Camp site with 2 tents",
     "x": -1255,
     "y": 1397,
-    "tp": "goto Tent (4)",
+    "items": [
+      912
+    ],
+    "tp": "goto -1256,9 100,4 1397,0",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 145,
-    "type": "abandoned-camp",
-    "title": "Abandoned Camp",
-    "description": "With save point",
+    "type": "abandoned-camp-y",
+    "title": "Orange Tent 09",
+    "description": "Camp site with 1 tent",
     "x": -1388,
     "y": -217,
+    "items": [
+      905,
+      557
+    ],
+    "tp": "goto -1389,2 116,7 -218,7",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 146,
-    "type": "abandoned-camp",
-    "title": "Abandoned Camp",
-    "description": "With save point",
+    "type": "abandoned-camp-y",
+    "title": "Black Tents 12",
+    "description": "Camp site with 2 tents",
     "x": -1722,
     "y": 59,
-    "tp": "goto TentDark (4)",
+    "tp": "goto -1721,6 88,1 59",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 180,
-    "type": "abandoned-camp",
-    "title": "Abandoned Camp",
-    "description": "With save point",
+    "type": "abandoned-camp-y",
+    "title": "Black Tents 08",
+    "description": "Camp site with 3 tents",
     "x": -703,
     "y": 450,
     "items": [
@@ -1348,106 +1391,104 @@
       863,
       531
     ],
-    "tp": "goto Tent (1)",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
-  },
-  {
-    "id": 181,
-    "type": "abandoned-camp",
-    "title": "Abandoned Camp",
-    "description": "Without save point",
-    "x": -1098.64,
-    "y": 87.15,
-    "tp": "goto TentTornAModel (10)",
+    "tp": "goto -703 102,9 449",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 182,
-    "type": "abandoned-camp",
-    "title": "Abandoned Camp",
-    "description": "With save point",
+    "type": "abandoned-camp-y",
+    "title": "Orange Tent 10",
+    "description": "Camp site with 2 tents",
     "x": -1268,
     "y": -11,
-    "tp": "goto Tent (7)",
+    "items": [
+      568,
+      556,
+      490,
+      340,
+      95
+    ],
+    "tp": "goto -1269,6 103,6 -11,1",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 184,
-    "type": "abandoned-camp",
-    "title": "Abandoned Camp",
-    "description": "With save point",
+    "type": "abandoned-camp-y",
+    "title": "Black Tents 11",
+    "description": "Camp site with 2 tents",
     "x": -1257,
     "y": -597,
-    "tp": "goto TentDark (3)",
+    "items": [
+      903
+    ],
+    "tp": "goto -1258,5 211,6 -599,1",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 185,
-    "type": "abandoned-camp",
-    "title": "Abandoned Camp",
-    "description": "With save point",
+    "type": "abandoned-camp-y",
+    "title": "Orange Tents 12",
+    "description": "Camp site with 2 tents",
     "x": -1028,
     "y": -623,
     "items": [
       428,
-      77,
-      902
+      902,
+      558,
+      77
     ],
     "tp": "goto -1028 226 -623",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
-    "id": 186,
-    "type": "abandoned-camp",
-    "title": "Abandoned Camp",
-    "description": "Without save point",
-    "x": -705.54,
-    "y": -661.60,
-    "tp": "goto TentTornAModel (30)",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
-  },
-  {
     "id": 187,
-    "type": "abandoned-camp",
-    "title": "Abandoned Camp",
-    "description": "With save point",
+    "type": "abandoned-camp-y",
+    "title": "Orange Tents 13",
+    "description": "Camp site with 2 tents",
     "x": -474,
     "y": -335,
-    "tp": "goto Tent (15)",
+    "tp": "goto -473,7 323,3 -336",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 188,
-    "type": "abandoned-camp",
-    "title": "Abandoned Camp",
-    "description": "With save point",
+    "type": "abandoned-camp-y",
+    "title": "Orange Tent 14",
+    "description": "Camp site with 1 tent",
     "x": -156,
     "y": -110,
+    "items": [
+      827
+    ],
+    "tp": "goto -157,1 405,7 -110,4",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 189,
-    "type": "abandoned-camp",
-    "title": "Abandoned Camp",
-    "description": "With save point",
+    "type": "abandoned-camp-y",
+    "title": "Orange Tents 17",
+    "description": "Camp site with 2 tents",
     "x": 363.19,
     "y": -166.97,
-    "tp": "goto Tent (14)",
+    "items": [
+      174
+    ],
+    "tp": "goto 364,8 527,3 -170,9",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 190,
-    "type": "abandoned-camp",
-    "title": "Abandoned Camp",
-    "description": "With save point",
+    "type": "abandoned-camp-y",
+    "title": "Orange Tent 18",
+    "description": "Camp site with 1 tent",
     "x": 400.81,
     "y": -182.38,
-    "tp": "goto Tent (10)",
+    "tp": "goto 403,9 513,7 -182,9",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 518,
-    "type": "abandoned-camp",
+    "type": "abandoned-camp-y",
     "title": "Abandoned Camp",
     "description": "With save point",
     "x": -1347.69,
@@ -1457,7 +1498,7 @@
   },
   {
     "id": 519,
-    "type": "abandoned-camp",
+    "type": "abandoned-camp-y",
     "title": "Abandoned Camp",
     "description": "With save point",
     "x": 1456.76,
@@ -1467,22 +1508,22 @@
   },
   {
     "id": 520,
-    "type": "abandoned-camp",
-    "title": "Abandoned Camp",
-    "description": "With save point",
+    "type": "abandoned-camp-y",
+    "title": "Black Tent 16",
+    "description": "Camp site with 1 tent",
     "x": 820.42,
     "y": -996.05,
-    "tp": "goto Tent (10)",
+    "tp": "goto 817,7 264,3 -995,9",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 521,
-    "type": "abandoned-camp",
-    "title": "Abandoned Camp",
-    "description": "With save point",
+    "type": "abandoned-camp-y",
+    "title": "Orange Tent 15",
+    "description": "Camp site with 1 tent",
     "x": -142.90,
     "y": -85.58,
-    "tp": "goto Tent (12)",
+    "tp": "goto -144 405,5 -87,3",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
@@ -1920,15 +1961,6 @@
     "tp": "goto -1178,8 66 26,8"
   },
   {
-    "id": 95,
-    "type": "document",
-    "title": "Email - RE: GOLF BALLS",
-    "description": "Held by the deceased near the tent",
-    "x": -1269,
-    "y": -14,
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Balls_Emails"
-  },
-  {
     "id": 96,
     "type": "document",
     "title": "Email - Photo Reference",
@@ -2360,6 +2392,17 @@
     "screenshot": "puffton_email_1.webp", 
     "warning": "Double use the command!",
     "tp": "goto PufftonEmailAPickup"
+  },
+  {
+    "id": 95,
+    "type": "email",
+    "title": "RE: GOLF BALLS",
+    "description": "Golf Balls Email no.1",
+    "x": -1269.55,
+    "y": -13.91,
+    "screenshot": "email_printout_golf_balls_1.webp",
+    "tp": "goto EmailPrintoutGolfAPickup",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Balls_Emails"
   },
   {
     "id": 389,
@@ -5019,9 +5062,14 @@
     "id": 394,
     "type": "grave",
     "title": "Grave",
+    "description": "Buried Mercenary",
     "x": -1340,
     "y": 1412,
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Gravesites"
+    "items": [
+      16,
+      86
+    ],
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Team_B#Buried_Mercenary"
   },
   {
     "id": 395,
@@ -5224,6 +5272,14 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Gravesites"
   },
   {
+    "id": 550,
+    "type": "grave",
+    "title": "4x Graves",
+    "x": 1280.49,
+    "y": 478.89,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Gravesites"
+  },
+  {
     "id": 422,
     "type": "poi",
     "title": "Astronaut Corpse",
@@ -5329,6 +5385,7 @@
     "id": 921,
     "type": "poi",
     "title": "Emergency Raft",
+    "description": "Floating Mercenary",
     "x": -1796.5,
     "y": 578.4,
     "items": [
@@ -5336,7 +5393,7 @@
       85
     ],
     "tp": "goto RaftDiorama",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Life_Raft"
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Team_B#Floating_Mercenary"
   },
   {
     "id": 377,
@@ -6580,6 +6637,78 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Solar_Panel"
   },
   {
+    "id": 551,
+    "type": "solar-panel",
+    "title": "Solar Panel",
+    "x": -57.82,
+    "y": 1457.96,
+    "itemid": "additem 634",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Solar_Panel"
+  },
+  {
+    "id": 552,
+    "type": "solar-panel",
+    "title": "Solar Panel",
+    "x": -53.34,
+    "y": 1463.11,
+    "itemid": "additem 634",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Solar_Panel"
+  },
+  {
+    "id": 553,
+    "type": "solar-panel",
+    "title": "Solar Panel",
+    "x": -243.33,
+    "y": 944.53,
+    "itemid": "additem 634",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Solar_Panel"
+  },
+  {
+    "id": 554,
+    "type": "solar-panel",
+    "title": "Solar Panel",
+    "x": -236.98,
+    "y": 953.28,
+    "itemid": "additem 634",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Solar_Panel"
+  },
+  {
+    "id": 555,
+    "type": "solar-panel",
+    "title": "Solar Panel",
+    "x": -30.39,
+    "y": 672.90,
+    "itemid": "additem 634",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Solar_Panel"
+  },
+  {
+    "id": 556,
+    "type": "solar-panel",
+    "title": "Solar Panel",
+    "x": -1266.26,
+    "y": -10.49,
+    "itemid": "additem 634",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Solar_Panel"
+  },
+  {
+    "id": 557,
+    "type": "solar-panel",
+    "title": "Solar Panel",
+    "x": -1389.41,
+    "y": -217.41,
+    "itemid": "additem 634",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Solar_Panel"
+  },
+  {
+    "id": 558,
+    "type": "solar-panel",
+    "title": "Solar Panel",
+    "x": -1032.13,
+    "y": -620.75,
+    "itemid": "additem 634",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Solar_Panel"
+  },
+  {
     "id": 902,
     "type": "radio",
     "title": "Radio",
@@ -6612,7 +6741,6 @@
     "title": "Radio",
     "x": -1120,
     "y": 1629,
-    "screenshot": "radio_4.webp",
     "itemid": "additem 590",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
