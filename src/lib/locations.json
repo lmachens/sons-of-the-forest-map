@@ -433,14 +433,14 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Pickaxe"
   },
   {
-    "id": 115,
+    "id": 827,
     "type": "can-opener",
     "title": "Can Opener",
-    "description": "On rocks",
-    "x": -315.71,
-    "y": 1611.97,
-    "screenshot": "can_opener_1.webp",
-    "tp": "goto CanOpenerPickup (2)",
+    "description": "Next to a tent",
+    "x": -154,
+    "y": -110,
+    "screenshot": "can_opener_3.webp",
+    "tp": "goto CanOpenerPickup",
     "itemid": "additem 432",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Can_Opener"
   },
@@ -457,14 +457,26 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Can_Opener"
   },
   {
-    "id": 827,
+    "id": 115,
     "type": "can-opener",
     "title": "Can Opener",
-    "description": "Next to a tent",
-    "x": -154,
-    "y": -110,
-    "screenshot": "can_opener_3.webp",
-    "tp": "goto CanOpenerPickup",
+    "description": "On rocks",
+    "x": -315.71,
+    "y": 1611.97,
+    "screenshot": "can_opener_1.webp",
+    "tp": "goto CanOpenerPickup (2)",
+    "itemid": "additem 432",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Can_Opener"
+  },
+  {
+    "id": 559,
+    "type": "can-opener",
+    "title": "Can Opener",
+    "description": "On campfire rocks",
+    "x": 1283.09,
+    "y": -728.56,
+    "screenshot": "can_opener_4.webp",
+    "tp": "goto CanOpenerPickup (3)",
     "itemid": "additem 432",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Can_Opener"
   },
@@ -1261,15 +1273,16 @@
   {
     "id": 51,
     "type": "abandoned-camp-y",
-    "title": "Abandoned Camp",
-    "description": "Without save point",
+    "title": "Black Tent 19",
+    "description": "Camp site with 2 tents",
     "x": 1286.02,
     "y": -728.77,
     "items": [
       573,
-      897
+      897,
+      559
     ],
-    "tp": "goto TentDark (1)",
+    "tp": "goto 1283,2 228,1 -727,7",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
@@ -1489,21 +1502,25 @@
   {
     "id": 518,
     "type": "abandoned-camp-y",
-    "title": "Abandoned Camp",
-    "description": "With save point",
+    "title": "Orange Tent 21",
+    "description": "Camp site with 1 tent",
     "x": -1347.69,
     "y": -1854.49,
-    "tp": "goto Tent (10)",
+    "tp": "goto -1344,6 18,1 -1855",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 519,
     "type": "abandoned-camp-y",
-    "title": "Abandoned Camp",
+    "title": "Orange Tent 20",
     "description": "With save point",
     "x": 1456.76,
     "y": -417.45,
-    "tp": "goto Tent (8)",
+    "items": [
+      574,
+      560
+    ],
+    "tp": "goto 1454 192,2 -418,2",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
@@ -1909,7 +1926,7 @@
     "y": 504.56,
     "isUnderground": true,
     "screenshot": "novel_c.webp",
-    "warning":"Teleport only after entering the bunker otherwise you won't teleport here",
+    "warning":"Teleport after entering the bunker!",
     "tp": "goto NovelCPickup",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Books#Rescued_Book"
   },
@@ -1982,7 +1999,6 @@
     "id": 98,
     "type": "document",
     "title": "Newspaper Cutout Missing CEO",
-    "description": "Inside the right cave tunnel",
     "x": 416.67,
     "y": 1170.59,
     "screenshot": "newspaper_cutout_1.webp",
@@ -1996,7 +2012,7 @@
     "x": -428.74,
     "y": 1497.67,
     "isUnderground": true,
-    "warning": "Teleport after entering the cave to avoid falling under the map",
+    "warning": "Teleport after entering the cave!",
     "tp": "goto -428,2 14 1497"
   },
   {
@@ -2464,7 +2480,7 @@
       11
     ],
     "screenshot": "blueprint_item_plating_machine.webp",
-    "warning":"Teleport after entering the cave to avoid falling under the map",
+    "warning":"Teleport after entering the cave!",
     "tp": "goto BlueprintItemPlatingPickup"
   },
   {
@@ -2476,7 +2492,7 @@
     "y": 1388.92,
     "isUnderground": true,
     "screenshot": "blueprint_powered_cross.webp",
-    "warning":"Teleport after entering the cave to avoid falling under the map",
+    "warning":"Teleport after entering the cave!",
     "tp": "goto BlueprintPoweredCrossPickup"
   },
   {
@@ -2508,7 +2524,7 @@
     "y": -227.88,
     "isUnderground": true,
     "screenshot": "blueprint_clock.webp",
-    "warning": "Teleport after entering the cave to avoid falling under the map",
+    "warning": "Teleport after entering the cave!",
     "tp": "goto BlueprintClockPickup"
   },
   {
@@ -2526,8 +2542,9 @@
     "type": "blueprint-cave",
     "title": "Spin Trap",
     "description": "Unlockable new trap",
-    "x": 1453,
+    "x": 1453.53,
     "y": 752.82,
+    "screenshot": "blueprint_spin_trap.webp",
     "tp": "goto BlueprintSpinTrapPickup"
   },
   {
@@ -6870,6 +6887,15 @@
     "title": "Radio",
     "x": -1169.78,
     "y": -1700.11,
+    "itemid": "additem 590",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
+  },
+  {
+    "id": 560,
+    "type": "radio",
+    "title": "Radio",
+    "x": 1456.98,
+    "y": -419.53,
     "itemid": "additem 590",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },

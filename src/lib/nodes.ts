@@ -723,7 +723,7 @@ export function getFilters(): Filter[] {
     },
     {
       value: "village",
-      title: t("Cannibal Camps"),
+      title: t("Villages"),
       color: "rgb(255 0 0)",
     },
     {
@@ -733,7 +733,7 @@ export function getFilters(): Filter[] {
     },
     {
       value: "abandoned-camp",
-      title: t("Abandoned Camps"),
+      title: t("Campsites"),
       color: "rgb(152, 251, 152)",
     },
     {
