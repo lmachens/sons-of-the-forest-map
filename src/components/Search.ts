@@ -1,7 +1,6 @@
 import { createElement } from "../lib/elements";
 import { t } from "../lib/i18n";
 import { getMapLocations } from "../lib/locations";
-import { getTypes } from "../lib/nodes";
 
 export default function Search({
   panToMarker,
@@ -14,7 +13,6 @@ export default function Search({
     document.querySelector<HTMLDivElement>(".search-results")!;
 
   const locations = getMapLocations();
-  const types = getTypes();
 
   searchInput.onfocus = () => {
     if (searchInput.value.trim().length > 0) {
@@ -37,14 +35,26 @@ export default function Search({
       return;
     }
     searchResults.classList.add("visible");
-
+  
     const regExp = new RegExp(search, "i");
-
+  
     const result = locations
-      .filter((location) => location.title.match(regExp))
+      .filter((location) =>
+        location.title.match(regExp) || (location.description && location.description.match(regExp)))
       .map((location) => {
-        const type =
-          types.find((type) => type.value === location.type) || types[0];
+        const resultElements = [
+          createElement("span", {
+            className: "bold",
+            innerText: location.title,
+          })
+        ];
+
+        if (location.description) {
+          resultElements.push(createElement("span", {
+            className: "italic",
+            innerText: location.description,
+          }));
+        }
 
         return createElement(
           "a",
@@ -58,16 +68,7 @@ export default function Search({
               searchInput.value = "";
             },
           },
-          [
-            createElement("span", {
-              className: "bold",
-              innerText: location.title,
-            }),
-            createElement("span", {
-              className: "italic",
-              innerText: type.title,
-            }),
-          ]
+          resultElements
         );
       })
       .slice(0, 10);
@@ -82,5 +83,5 @@ export default function Search({
       return;
     }
     searchResults.append(...result);
-  };
-}
+  }
+}  
