@@ -330,7 +330,4 @@ async function initResizeBorders() {
   initWakelock();
 }
 
-initPlausible(
-  import.meta.env.VITE_PLAUSIBLE_OVERWOLF_DOMAIN,
-  import.meta.env.VITE_PLAUSIBLE_API_HOST
-);
+initPlausible("sotf.th.gl-app", "https://metrics.th.gl");

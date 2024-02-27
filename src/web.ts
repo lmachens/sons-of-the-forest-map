@@ -127,7 +127,4 @@ loadDictionary().then(() => {
   });
 });
 
-initPlausible(
-  import.meta.env.VITE_PLAUSIBLE_WEB_DOMAIN,
-  import.meta.env.VITE_PLAUSIBLE_API_HOST
-);
+initPlausible("sotf.th.gl", "https://metrics.th.gl");

@@ -12,7 +12,7 @@ export function JoinCommunity() {
     {
       className: "group",
       innerHTML: `
-    <a href="https://discord.com/invite/NTZu8Px" target="_blank" class="button discord">
+    <a href="https://th.gl/discord" target="_blank" class="button discord">
         ${t("Join our Discord")}
       </a>
       <a href="https://discord.gg/6JFVjYjrF4" target="_blank" class="button discord">

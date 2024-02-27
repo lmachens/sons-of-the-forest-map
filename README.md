@@ -10,7 +10,7 @@ Head over to the [Sons Of The Forest Map](https://www.overwolf.com/app/Leon_Mach
 
 You can also use the web-version of the app [here](https://sotf.th.gl), but you will not be able to use the position syncing feature.
 
-Join the [Discord](https://discord.com/invite/NTZu8Px) to get the latest news and updates.
+Join the [Discord](https://th.gl/discord) to get the latest news and updates.
 
 ## Features
 
@@ -33,7 +33,7 @@ Join the [Discord](https://discord.com/invite/NTZu8Px) to get the latest news an
 
 ## Contributing
 
-If you want to contribute to this project, please join the [Discord](https://discord.com/invite/NTZu8Px) and contact me (DevLeon#4001). I will be happy to help you get started.
+If you want to contribute to this project, please join the [Discord](https://th.gl/discord) and contact me (DevLeon#4001). I will be happy to help you get started.
 
 ## Development
 
