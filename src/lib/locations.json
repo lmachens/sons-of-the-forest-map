@@ -34,8 +34,8 @@
     "type": "modernAxe",
     "title": "Modern Axe",
     "description": "In the chest of a dead soldier",
-    "x": -703.85,
-    "y": 445.88,
+    "x": -703.72,
+    "y": 446.04,
     "screenshot": "modern_axe.webp",
     "tp": "goto ModernAxePickup",
     "itemid": "additem 356",
@@ -46,11 +46,12 @@
     "type": "flashlight",
     "title": "Flashlight",
     "description": "On hanging soldier",
-    "x": -626,
-    "y": 387,
+    "x": -626.05,
+    "y": 386.43,
     "screenshot": "flashlight.webp",
     "warning": "You will be under it!",
     "tp": "goto FlashlightPickup",
+    "itemid": "471",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Flashlight"
   },
   {
@@ -58,8 +59,8 @@
     "type": "machete",
     "title": "Machete",
     "description": "On the deflated boat",
-    "x": -68.75,
-    "y": 1459.22,
+    "x": -46.78,
+    "y": 1457.58,
     "screenshot": "machete.webp",
     "tp": "goto Machete2Pickup",
     "itemid": "additem 359",
@@ -70,8 +71,8 @@
     "type": "stun-baton",
     "title": "Stun Baton",
     "description": "In the pile of skulls",
-    "x": -1145,
-    "y": -161,
+    "x": -1143.84,
+    "y": -162.33,
     "screenshot": "stun_baton.webp",
     "tp": "goto TaserStickPickup",
     "itemid": "additem 396",
@@ -80,7 +81,7 @@
   {
     "id": 8,
     "type": "pistol",
-    "title": "Pistol",
+    "title": "Compact Pistol",
     "description": "On Emergency Raft",
     "x": -1797.30,
     "y": 578.73,
@@ -92,7 +93,7 @@
   {
     "id": 9,
     "type": "pistol-bunker",
-    "title": "Pistol",
+    "title": "Compact Pistol",
     "description": "On 1st bunker floor",
     "x": 1153.76,
     "y": -606.79,
@@ -152,8 +153,8 @@
     "type": "rope-gun",
     "title": "Rope Gun",
     "description": "Near the cave exit in the left tunnel",
-    "x": -1204,
-    "y": -277,
+    "x": -1204.71,
+    "y": -277.52,
     "isUnderground": true,
     "screenshot": "rope_gun.webp",
     "warning": "Double use the command!",
@@ -166,8 +167,8 @@
     "type": "slingshot",
     "title": "Slingshot",
     "description": "On middle mercenary corpse",
-    "x": -531.85,
-    "y": 121.55,
+    "x": -532.05,
+    "y": 121.64,
     "screenshot": "slingshot.webp",
     "tp": "goto SlingshotPickup",
     "itemid": "additem 459",
@@ -178,8 +179,8 @@
     "type": "shovel",
     "title": "Shovel",
     "description": "In hands of dead worker inside cave",
-    "x": -429,
-    "y": -103,
+    "x": -429.4,
+    "y": -103.3,
     "isUnderground": true,
     "requirements": [
       13,
@@ -196,8 +197,8 @@
     "type": "shotgun",
     "title": "Shotgun",
     "description": "Inside grave",
-    "x": -1341,
-    "y": 1410,
+    "x": -1340.69,
+    "y": 1412.2,
     "requirements": [
       15
     ],
@@ -242,7 +243,7 @@
     "type": "firefighter-axe",
     "title": "Firefighter Axe",
     "description": "At the end of the hallway",
-    "x": -415.00,
+    "x": -415.01,
     "y": 712.26,
     "isUnderground": true,
     "requirements": [
@@ -259,8 +260,8 @@
     "type": "keycard",
     "title": "VIP Card",
     "description": "On desk in Security room",
-    "x": -977,
-    "y": 1039,
+    "x": -978.11,
+    "y": 1038.64,
     "isUnderground": true,
     "requirements": [
       17
@@ -275,9 +276,9 @@
     "id": 20,
     "type": "crossbow",
     "title": "Crossbow",
-    "description": "Inside second hydroponic room",
-    "x": -1022,
-    "y": 986,
+    "description": "Next to the projector",
+    "x": -1174.6,
+    "y": -217.69,
     "isUnderground": true,
     "requirements": [
       17
@@ -294,7 +295,7 @@
     "title": "Guest Card",
     "description": "On 5th bunker floor",
     "x": 1140.92,
-    "y": -615.23,
+    "y": -612.99,
     "isUnderground": true,
     "requirements": [
       17
@@ -390,7 +391,7 @@
   {
     "id": 27,
     "type": "golden-armor",
-    "title": "Golden Armor",
+    "title": "Ancient Armor",
     "x": 188.09,
     "y": -668.96,
     "isUnderground": true,
@@ -408,8 +409,8 @@
     "type": "binoculars",
     "title": "Binoculars",
     "description": "On top of the kayak",
-    "x": -1112,
-    "y": 1721,
+    "x": -1112.67,
+    "y": 1720.7,
     "screenshot": "binoculars.webp",
     "tp": "goto BinocularsPickup",
     "itemid": "additem 341",
@@ -420,8 +421,8 @@
     "type": "pickaxe",
     "title": "Pickaxe",
     "description": "Stuck in the Solafite Ore on the wall",
-    "x": 1414,
-    "y": 735,
+    "x": 1413.59,
+    "y": 735.17,
     "isUnderground": true,
     "requirements": [
       11
@@ -437,8 +438,8 @@
     "type": "can-opener",
     "title": "Can Opener",
     "description": "Next to a tent",
-    "x": -154,
-    "y": -110,
+    "x": -154.82,
+    "y": -110.79,
     "screenshot": "can_opener_3.webp",
     "tp": "goto CanOpenerPickup",
     "itemid": "additem 432",
@@ -449,8 +450,8 @@
     "type": "can-opener",
     "title": "Can Opener",
     "description": "Next to campfire",
-    "x": -1267,
-    "y": -6,
+    "x": -1269.18,
+    "y": -12.39,
     "screenshot": "can_opener_2.webp",
     "tp": "goto CanOpenerPickup (1)",
     "itemid": "additem 432",
@@ -473,7 +474,7 @@
     "type": "can-opener",
     "title": "Can Opener",
     "description": "On campfire rocks",
-    "x": 1283.09,
+    "x": 1283.1,
     "y": -728.56,
     "screenshot": "can_opener_4.webp",
     "tp": "goto CanOpenerPickup (3)",
@@ -490,6 +491,7 @@
     "screenshot": "artifact_a.webp",
     "warning": "Double use the command!",
     "tp": "goto ArtifactPieceAPickup",
+    "itemid": "additem 662",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Artifact#Artifact_Piece_A"
   },
   {
@@ -497,8 +499,8 @@
     "type": "artifact-b",
     "title": "Artifact B",
     "description": "Second pice of the Artifact",
-    "x": 1289,
-    "y": 640,
+    "x": 1289.04,
+    "y": 640.1,
     "isUnderground": true,
     "requirements": [
       11
@@ -506,6 +508,7 @@
     "screenshot": "artifact_b.webp",
     "warning": "Double use the command!",
     "tp": "goto ArtifactPieceBPickup",
+    "itemid": "additem 667",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Artifact#Artifact_Piece_B"
   },
   {
@@ -521,14 +524,15 @@
     "screenshot": "artifact_c.webp",
     "warning": "Double use the command!",
     "tp": "goto ArtifactPieceCPickup",
+    "itemid": "additem 668",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Artifact#Artifact_Piece_C"
   },
   {
     "id": 500,
     "type": "artifact-d",
     "title": "Artifact D",
-    "x": -413.53,
-    "y": -876.22,
+    "x": -405.64,
+    "y": -878.48,
     "isUnderground": true,
     "requirements": [
       11
@@ -536,6 +540,7 @@
     "screenshot": "artifact_d.webp",
     "warning": "Double use the command!",
     "tp": "goto ArtifactPieceDPickup",
+    "itemid": "additem 669",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Artifact#Artifact_Piece_D"
   },
   {
@@ -547,8 +552,30 @@
     "isUnderground": true,
     "screenshot": "artifact_e.webp",
     "warning": "Double use the command!",
-    "tp": "goto ArtifactPieceDPickup",
+    "tp": "goto ArtifactPieceEPickup",
+    "itemid": "additem 689",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Artifact#Artifact_Piece_D"
+  },
+  {
+    "id": 562,
+    "type": "artifact-e",
+    "title": "Artifact F",
+    "x": 1247.45,
+    "y": 304.51,
+    "isUnderground": true,
+    "warning":"Double use the command!",
+    "tp": "goto ArtifactPieceFPickup",
+    "itemid": "additem 708",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Artifact"
+  },
+  {
+    "id": 566,
+    "type": "artifact-e",
+    "title": "Artifact G",
+    "x": 186.19,
+    "y": -668.46,
+    "isUnderground": true,
+    "itemid": "additem 712"
   },
   {
     "id": 29,
@@ -641,8 +668,8 @@
     "type": "bunker-hatch",
     "title": "Maintenance C",
     "description": "Dig out the hatch",
-    "x": 1109.68,
-    "y": 1007.58,
+    "x": 1110,
+    "y": 1007,
     "requirements": [
       15
     ],
@@ -1637,8 +1664,8 @@
     "type": "outfit",
     "title": "Blazer",
     "description": "Inside open coffin",
-    "x": -922.48,
-    "y": 1454.95,
+    "x": 419.21,
+    "y": -1803.1,
     "screenshot": "blazer.webp",
     "tp": "goto OldJacketPickup (1)",
     "itemid": "additem 491",
@@ -1649,8 +1676,8 @@
     "type": "outfit",
     "title": "Virginia Camouflage Suit",
     "description": "Inside Kayak",
-    "x": -1112.38,
-    "y": 1722.76,
+    "x": 1246.24,
+    "y": -666.75,
     "screenshot": "camouflage_suit.webp",
     "tp": "goto VirginiaCamoSuitPickup",
     "itemid": "additem 558",
@@ -1671,8 +1698,8 @@
     "type": "outfit-bunker",
     "title": "Virginia Dress",
     "description": "On the right side from entrance",
-    "x": -913.05,
-    "y": 1010.61,
+    "x": 1623.12,
+    "y": 568.18,
     "isUnderground": true,
     "requirements": [
       19
@@ -1687,8 +1714,8 @@
     "id": 77,
     "type": "outfit",
     "title": "Winter Jacket",
-    "x": -1032.11,
-    "y": -625.91,
+    "x": 1082.35,
+    "y": 1572.68,
     "screenshot": "winter_jacket.webp",
     "tp": "goto PuffyJacketPickup",
     "itemid": "additem 500",
@@ -1709,8 +1736,8 @@
     "id": 79,
     "type": "outfit-bunker",
     "title": "Virginia Track Suit",
-    "x": -1141.52,
-    "y": 6.08,
+    "x": -1194.12,
+    "y": 38.23,
     "isUnderground": true,
     "requirements": [
       17
@@ -1743,8 +1770,8 @@
     "type": "outfit-bunker",
     "title": "Virginia Leather Suit",
     "description":"On 2nd bunker floor",
-    "x": 1166.92,
-    "y": -647.65,
+    "x": 1144.33,
+    "y": -640.11,
     "isUnderground": true,
     "requirements": [
       17
@@ -1771,7 +1798,7 @@
     "type": "golden-mask",
     "title": "Golden Mask",
     "description": "On 5th bunker floor",
-    "x": 1139.09,
+    "x": 1139.1,
     "y": -615.59,
     "isUnderground": true,
     "requirements": [
@@ -1842,8 +1869,8 @@
     "type": "gps-locator",
     "title": "GPS Locator",
     "description": "Inside grave",
-    "x": -1341,
-    "y": 1411,
+    "x": -1340.96,
+    "y": 1411.98,
     "requirements": [
       15
     ],
@@ -1856,8 +1883,8 @@
     "type": "gps-locator",
     "title": "GPS Locator",
     "description": "On hanging soldier",
-    "x": -628.88,
-    "y": 386.58,
+    "x": -626.31,
+    "y": 386.16,
     "screenshot": "gps_locator_1.webp",
     "tp": "goto -625,6 138 386",
     "itemid": "additem 529",
@@ -1880,7 +1907,7 @@
     "type": "book",
     "title": "Pennant Line Book",
     "description": "On the floor, next to bathtube",
-    "x": -416.92,
+    "x": -416.8,
     "y": 694.58,
     "isUnderground": true,
     "requirements": [
@@ -1897,8 +1924,8 @@
     "type": "book-bunker",
     "title": "Deep Sleep Book",
     "description": "On 5th bunker floor",
-    "x": 1139.16,
-    "y": -613.14,
+    "x": 1161,
+    "y": -602.75,
     "isUnderground": true,
     "requirements": [
       17
@@ -1981,8 +2008,8 @@
     "id": 96,
     "type": "document",
     "title": "Email - Photo Reference",
-    "x": -1139,
-    "y": -234,
+    "x": -1139.6,
+    "y": -234.44,
     "isUnderground": true,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Photo_Reference_Email"
   },
@@ -1990,8 +2017,8 @@
     "id": 97,
     "type": "document",
     "title": "Email - More Lightning",
-    "x": -1017,
-    "y": -264,
+    "x": -1017.05,
+    "y": -264.34,
     "isUnderground": true,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/More_Lighting_Email"
   },
@@ -2028,7 +2055,9 @@
     ],
     "screenshot": "music_album_cover_2.webp",
     "warning": "Teleport after entering the bunker!",
-    "tp": "goto -431,6 76,1 705,4"
+    "tp": "goto -431,6 76,1 705,4",
+    "itemid": "467",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Album_Cover"
   },
   {
     "id": 335,
@@ -2043,7 +2072,9 @@
     ],
     "screenshot": "music_album_cover_1.webp",
     "warning": "Double use the command!",
-    "tp": "goto AlbumCoverPickup"
+    "tp": "goto AlbumCoverPickup",
+    "itemid": "additem 467",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Album_Cover"
   },
   {
     "id": 101,
@@ -2266,8 +2297,8 @@
     "type": "pamphlet",
     "title": "Cult Pamphlet no.2",
     "description": "Between corpses",
-    "x": -633,
-    "y": 1279,
+    "x": -633.11,
+    "y": 1279.41,
     "screenshot": "pamphlet_2_1.webp"
   },
   {
@@ -2282,7 +2313,7 @@
     "id": 908,
     "type": "pamphlet",
     "title": "Cult Pamphlet - Holosprings",
-    "description": "After teleporting you will look at sky",
+    "description": "On the right wing of the plane",
     "x": -972.21,
     "y": -1059.99,
     "screenshot": "pamphlet_holospring.webp",
@@ -2473,8 +2504,8 @@
     "type": "blueprint-cave",
     "title": "Item Plating Machine",
     "description": "Item upgrading machine",
-    "x": 1333,
-    "y": 700,
+    "x": 1333.13,
+    "y": 699.42,
     "isUnderground": true,
     "requirements": [
       11
@@ -2482,6 +2513,15 @@
     "screenshot": "blueprint_item_plating_machine.webp",
     "warning":"Teleport after entering the cave!",
     "tp": "goto BlueprintItemPlatingPickup"
+  },
+  {
+    "id": 567,
+    "type": "blueprint",
+    "title": "Armor Plating Machine",
+    "description": "Armor upgrading machine",
+    "x": 1598.33,
+    "y": 486.42,
+    "isUnderground": true
   },
   {
     "id": 379,
@@ -2493,7 +2533,9 @@
     "isUnderground": true,
     "screenshot": "blueprint_powered_cross.webp",
     "warning":"Teleport after entering the cave!",
-    "tp": "goto BlueprintPoweredCrossPickup"
+    "tp": "goto BlueprintPoweredCrossPickup",
+    "itemid": "468",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Cross"
   },
   {
     "id": 387,
@@ -2510,7 +2552,7 @@
     "type": "blueprint",
     "title": "Gore Chair",
     "description": "Unlockable new decoration",
-    "x": 1823.00,
+    "x": 1823.01,
     "y": -495.64,
     "screenshot": "blueprint_gore_chair.webp",
     "tp": "goto BlueprintGoreChairPickup"
@@ -2528,12 +2570,29 @@
     "tp": "goto BlueprintClockPickup"
   },
   {
+    "id": 561,
+    "type": "blueprint",
+    "title": "Leg Lamp",
+    "description": "Unlockable new decoration",
+    "x": 1474.47,
+    "y": 71.51,
+    "tp": "goto BlueprintLegLampPickup"
+  },
+  {
+    "id": 568,
+    "type": "blueprint",
+    "title": "Hang Glider Launcher",
+    "x": -954.87,
+    "y": 161.72,
+    "isUnderground": "true"
+  },
+  {
     "id": 496,
     "type": "blueprint",
     "title": "Spotlight",
     "description": "Unlockable new decoration",
-    "x": 1820.94,
-    "y": -498.00,
+    "x": 1457.36,
+    "y": -614.63,
     "screenshot": "blueprint_spotlight.webp",
     "tp": "goto BlueprintSpotlightPickup"
   },
@@ -2552,8 +2611,8 @@
     "type": "blueprint-cave",
     "title": "Uber Trap",
     "description": "Unlockable new trap",
-    "x": -405.63,
-    "y": -979.48,
+    "x": -963.8,
+    "y": -1486.19,
     "isUnderground": true,
     "warning": "Double use the command!",
     "screenshot": "blueprint_uber_trap.webp",
@@ -2577,11 +2636,34 @@
     "title": "Spear Thrower Trap",
     "description": "Unlockable new trap",
     "x": -115.44,
-    "y": -1038.39,
+    "y": -1038.4,
     "isUnderground": true,
     "screenshot": "blueprint_spear_thrower_trap.webp",
     "warning": "Double use the command!",
     "tp": "goto BlueprintSpearThrowerTrapPickup"
+  },
+  {
+    "id": 563,
+    "type": "blueprint",
+    "x": -1151.12,
+    "y": -1608.09,
+    "isUnderground": true
+  },
+  {
+    "id": 564,
+    "type": "blueprint",
+    "title": "Repel Shrine",
+    "x": 1505.11,
+    "y": -448.46,
+    "isUnderground": true
+  },
+  {
+    "id": 565,
+    "type": "blueprint",
+    "title": "Attract Shrine",
+    "x": -1648.54,
+    "y": -951.13,
+    "isUnderground": true
   },
   {
     "id": 106,
@@ -6163,8 +6245,8 @@
     "type": "pistol-rail",
     "title": "Pistol Rail",
     "description": "In hand of dead soldier",
-    "x": -1609.84,
-    "y": 486.00,
+    "x": 1085.09,
+    "y": 1571.92,
     "screenshot": "pistol_rail_2.webp",
     "tp": "goto CompactPistolPickup",
     "itemid": "additem 376",
@@ -6175,8 +6257,8 @@
     "type": "pistol-rail",
     "title": "Pistol Rail",
     "description": "Near crashed helicopter",
-    "x": -807.23,
-    "y": -220.04,
+    "x": -424.72,
+    "y": 702.88,
     "screenshot": "pistol_rail_1.webp",
     "tp": "goto CompactPistolRailPickup (1)",
     "itemid": "additem 376",
@@ -6187,8 +6269,8 @@
     "type": "pistol-rail-bunker",
     "title": "Pistol Rail",
     "description": "On 1st bunker floor",
-    "x": 1153.76,
-    "y": -606.75,
+    "x": 1056.95,
+    "y": 1022.79,
     "isUnderground": true,
     "requirements": [
       17
@@ -6221,8 +6303,8 @@
     "type": "flashlight-attachment-bunker",
     "title": "Flashlight Attachment",
     "description": "On 1st bunker floor",
-    "x": 1154.19,
-    "y": -604.55,
+    "x": 1154.35,
+    "y": -604.58,
     "isUnderground": true,
     "requirements": [
       17
@@ -6238,8 +6320,8 @@
     "type": "suppressor",
     "title": "Pistol Suppressor",
     "description": "Near crashed helicopter",
-    "x": -808.38,
-    "y": -218.64,
+    "x": -1396.97,
+    "y": -1128.06,
     "screenshot": "pistol_suppressor_1.webp",
     "tp": "goto PistolSuppressor(clone)",
     "itemid": "additem 374",
@@ -6250,8 +6332,8 @@
     "type": "suppressor-bunker",
     "title": "Pistol Suppressor",
     "description": "Next to 3D Printer",
-    "x": -1126,
-    "y": -1050,
+    "x": -1125.58,
+    "y": -1050.17,
     "isUnderground": true,
     "requirements": [
       15
@@ -6266,9 +6348,9 @@
     "id": 449,
     "type": "night-vision",
     "title": "Night Vision",
-    "description": "On the head of Occultist",
-    "x": -72.21,
-    "y": -471.37,
+    "description": "",
+    "x": -1133.87,
+    "y": -1604.05,
     "isUnderground": true,
     "requirements": [
       11
@@ -6295,8 +6377,8 @@
     "type": "cooking-pot",
     "title": "Cooking Pot",
     "description": "On Good Times Yacht",
-    "x": 414,
-    "y": 1177,
+    "x": 414.44,
+    "y": 1177.21,
     "screenshot": "cooking_pot_2.webp",
     "itemid": "additem 517",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Cooking_Pot"
