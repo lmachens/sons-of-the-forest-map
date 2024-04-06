@@ -27,7 +27,15 @@
     "x": -436.28,
     "y": 1594.22,
 	"screenshot": "black-yellow-crate.webp",
-  },  
+  },
+  {
+    "id": 20002,
+    "type": "supply",
+    "title": "black/yellow crate",
+    "x": -430.5,
+    "y": 1589,
+	"screenshot": "black-yellow-crate.webp",
+  },
   {
     "id": 3,
     "type": "spawnPoint",
@@ -2677,7 +2685,7 @@
   {
     "id": 106,
     "type": "hang-glider",
-    "title": "Hang Glider",
+    "title": "Folding Glider",
     "x": -799.53,
     "y": -281.76,
     "screenshot": "hang_glider_3.webp",
@@ -2688,7 +2696,7 @@
   {
     "id": 107,
     "type": "hang-glider",
-    "title": "Hang Glider",
+    "title": "Folding Glider",
     "x": -504.43,
     "y": -307.39,
     "screenshot": "hang_glider_4.webp",
@@ -2699,7 +2707,7 @@
   {
     "id": 108,
     "type": "hang-glider",
-    "title": "Hang Glider",
+    "title": "Folding Glider",
     "x": -129.59,
     "y": -1028.08,
     "screenshot": "hang_glider_12.webp",
@@ -2710,7 +2718,7 @@
   {
     "id": 109,
     "type": "hang-glider",
-    "title": "Hang Glider",
+    "title": "Folding Glider",
     "x": -1184.10,
     "y": -1728.82,
     "screenshot": "hang_glider_13.webp",
@@ -2721,7 +2729,7 @@
   {
     "id": 110,
     "type": "hang-glider",
-    "title": "Hang Glider",
+    "title": "Folding Glider",
     "x": -1772.03,
     "y": 1171.02,
     "screenshot": "hang_glider_2.webp",
@@ -2732,7 +2740,7 @@
   {
     "id": 111,
     "type": "hang-glider",
-    "title": "Hang Glider",
+    "title": "Folding Glider",
     "x": -1298,
     "y": 1737,
     "screenshot": "hang_glider_1.webp",
@@ -2742,7 +2750,7 @@
   {
     "id": 112,
     "type": "hang-glider",
-    "title": "Hang Glider",
+    "title": "Folding Glider",
     "x": -30.42,
     "y": 665.78,
     "screenshot": "hang_glider_5.webp",
@@ -2753,7 +2761,7 @@
   {
     "id": 174,
     "type": "hang-glider",
-    "title": "Hang Glider",
+    "title": "Folding Glider",
     "x": 366.28,
     "y": -160.22,
     "screenshot": "hang_glider_9.webp",
@@ -2764,7 +2772,7 @@
   {
     "id": 175,
     "type": "hang-glider",
-    "title": "Hang Glider",
+    "title": "Folding Glider",
     "x": 1083.82,
     "y": -108.44,
     "screenshot": "hang_glider_10.webp",
@@ -2775,7 +2783,7 @@
   {
     "id": 176,
     "type": "hang-glider",
-    "title": "Hang Glider",
+    "title": "Folding Glider",
     "x": 1297.53,
     "y": -30.13,
     "screenshot": "hang_glider_11.webp",
@@ -2786,7 +2794,7 @@
   {
     "id": 177,
     "type": "hang-glider",
-    "title": "Hang Glider",
+    "title": "Folding Glider",
     "x": 733.15,
     "y": 740.77,
     "screenshot": "hang_glider_8.webp",
@@ -2797,7 +2805,7 @@
   {
     "id": 178,
     "type": "hang-glider",
-    "title": "Hang Glider",
+    "title": "Folding Glider",
     "x": 797.90,
     "y": 974.66,
     "screenshot": "hang_glider_7.webp",
@@ -2808,7 +2816,7 @@
   {
     "id": 179,
     "type": "hang-glider",
-    "title": "Hang Glider",
+    "title": "Folding Glider",
     "x": 846.10,
     "y": 1105.33,
     "screenshot": "hang_glider_6.webp",
@@ -2819,7 +2827,7 @@
   {
     "id": 385,
     "type": "hang-glider",
-    "title": "Hang Glider",
+    "title": "Folding Glider",
     "x": 789.73,
     "y": 273.90,
     "screenshot": "hang_glider_14.webp",
@@ -3724,117 +3732,124 @@
     "y": 445
   },
   {
-    "id": 118,
-    "type": "supply",
-    "title": "black/yellow crate",
-    "x": -430.5,
-    "y": 1589,
-	"screenshot": "black-yellow-crate.webp",
-  },
-  {
     "id": 124,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": -1119,
-    "y": 1630
+    "y": 1630,
+	"screenshot": "green-case.webp"
   },
   {
     "id": 129,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": -1254,
-    "y": 1395
+    "y": 1395,
+	"screenshot": "green-case.webp"
   },
   {
     "id": 595,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": -1146,
-    "y": -234
+    "y": -234,
+	"screenshot": "green-case.webp"
   },
   {
     "id": 148,
     "type": "dark-green-suitcase",
     "title": "2x Ammo Cases",
     "x": -1726,
-    "y": 62
+    "y": 62,
+	"screenshot": "green-case.webp"
   },
   {
     "id": 154,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": -1612,
-    "y": 490
+    "y": 490,
+	"screenshot": "green-case.webp"
   },
   {
     "id": 155,
     "type": "dark-green-suitcase",
     "title": "2x Ammo Cases",
     "x": -1249,
-    "y": 217
+    "y": 217,
+	"screenshot": "green-case.webp"
   },
   {
     "id": 156,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": -1218,
-    "y": 662
+    "y": 662,
+	"screenshot": "green-case.webp"
   },
   {
     "id": 163,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": -887,
-    "y": 767
+    "y": 767,
+	"screenshot": "green-case.webp"
   },
   {
     "id": 164,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": -844,
-    "y": 1011
+    "y": 1011,
+	"screenshot": "green-case.webp"
   },
   {
     "id": 166,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": -1141,
-    "y": 1127
+    "y": 1127,
+	"screenshot": "green-case.webp"
   },
   {
     "id": 244,
     "type": "dark-green-suitcase",
     "title": "2x Ammo Cases",
     "x": -1322,
-    "y": -490
+    "y": -490,
+	"screenshot": "green-case.webp"
   },
   {
     "id": 262,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": -205,
-    "y": 878
+    "y": 878,
+	"screenshot": "green-case.webp"
   },
   {
     "id": 263,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": 42,
-    "y": 1371
+    "y": 1371,
+	"screenshot": "green-case.webp"
   },
   {
     "id": 286,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": 1805,
-    "y": -67
+    "y": -67,
+	"screenshot": "green-case.webp"
   },
   {
     "id": 287,
     "type": "dark-green-suitcase",
     "title": "2x Ammo Cases",
     "x": 1780,
-    "y": -34
+    "y": -34,
+	"screenshot": "green-case.webp"
   },
   {
     "id": 320,
@@ -3842,6 +3857,7 @@
     "title": "Ammo Case",
     "x": -486,
     "y": 9,
+	"screenshot": "green-case.webp",
     "isUnderground": true,
     "requirements": [
       11
@@ -3853,6 +3869,7 @@
     "title": "2x Ammo Cases",
     "x": -518,
     "y": 11,
+	"screenshot": "green-case.webp",
     "isUnderground": true,
     "requirements": [
       11
@@ -3864,6 +3881,7 @@
     "title": "Ammo Case",
     "x": -563,
     "y": -65,
+	"screenshot": "green-case.webp",
     "isUnderground": true,
     "requirements": [
       11
@@ -3875,6 +3893,7 @@
     "title": "Ammo Case",
     "x": -564,
     "y": -98,
+	"screenshot": "green-case.webp",
     "isUnderground": true,
     "requirements": [
       11
@@ -3886,6 +3905,7 @@
     "title": "Ammo Case",
     "x": -1182,
     "y": 25,
+	"screenshot": "green-case.webp",
     "isUnderground": true,
     "requirements": [
       17
@@ -3896,63 +3916,72 @@
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": -256,
-    "y": -16
+    "y": -16,
+	"screenshot": "green-case.webp"
   },
   {
     "id": 456,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": -258,
-    "y": -6
+    "y": -6,
+	"screenshot": "green-case.webp"
   },
   {
     "id": 457,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": -250,
-    "y": 1
+    "y": 1,
+	"screenshot": "green-case.webp"
   },
   {
     "id": 458,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": -238,
-    "y": -10
+    "y": -10,
+	"screenshot": "green-case.webp"
   },
   {
     "id": 470,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": -238,
-    "y": -9
+    "y": -9,
+	"screenshot": "green-case.webp"
   },
   {
     "id": 471,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": -45,
-    "y": 1453
+    "y": 1453,
+	"screenshot": "green-case.webp"
   },
   {
     "id": 472,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": -64,
-    "y": 1459
+    "y": 1459,
+	"screenshot": "green-case.webp"
   },
   {
     "id": 478,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": -706,
-    "y": 451
+    "y": 451,
+	"screenshot": "green-case.webp"
   },
   {
     "id": 479,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": -707,
-    "y": 457
+    "y": 457,
+	"screenshot": "green-case.webp"
   },
   {
     "id": 580,
@@ -3960,6 +3989,7 @@
     "title": "Ammo Case",
     "x": -1133,
     "y": -282,
+	"screenshot": "green-case.webp",
     "isUnderground": true
   },
   {
@@ -3968,6 +3998,7 @@
     "title": "Ammo Case",
     "x": -1205,
     "y": -277,
+	"screenshot": "green-case.webp",
     "isUnderground": true
   },
   {
