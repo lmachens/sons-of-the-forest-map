@@ -14,11 +14,20 @@
     "type": "spawnPoint",
     "title": "Beach Crash Site",
     "description": "Spawn Point",
-    "x": -426,
-    "y": 1603,
+    "x": -426.28,
+    "y": 1601.90,
+	"screenshot": "ocean_crash.webp",
     "tp": "goto OceanCrash",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Starting_Points#Oceanfront_Wreckage_Zone"
   },
+  {
+    "id": 20001,
+    "type": "supply",
+    "title": "black/yellow crate",
+    "x": -436.28,
+    "y": 1594.22,
+	"screenshot": "black-yellow-crate.webp",
+  },  
   {
     "id": 3,
     "type": "spawnPoint",
@@ -3149,9 +3158,10 @@
   {
     "id": 116,
     "type": "supply",
-    "title": "4x Supply Suitcases",
-    "x": -428,
-    "y": 1594
+    "title": "Red Case",
+    "x": -425.19,
+    "y": 1597.16,
+	"screenshot": "red-case.webp"
   },
   {
     "id": 117,
@@ -3715,120 +3725,121 @@
   },
   {
     "id": 118,
-    "type": "dark-green-suitcase",
-    "title": "3x Ammo Suitcases",
-    "x": -435,
-    "y": 1589
+    "type": "supply",
+    "title": "black/yellow crate",
+    "x": -430.5,
+    "y": 1589,
+	"screenshot": "black-yellow-crate.webp",
   },
   {
     "id": 124,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -1119,
     "y": 1630
   },
   {
     "id": 129,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -1254,
     "y": 1395
   },
   {
     "id": 595,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -1146,
     "y": -234
   },
   {
     "id": 148,
     "type": "dark-green-suitcase",
-    "title": "2x Ammo Suitcases",
+    "title": "2x Ammo Cases",
     "x": -1726,
     "y": 62
   },
   {
     "id": 154,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -1612,
     "y": 490
   },
   {
     "id": 155,
     "type": "dark-green-suitcase",
-    "title": "2x Ammo Suitcases",
+    "title": "2x Ammo Cases",
     "x": -1249,
     "y": 217
   },
   {
     "id": 156,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -1218,
     "y": 662
   },
   {
     "id": 163,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -887,
     "y": 767
   },
   {
     "id": 164,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -844,
     "y": 1011
   },
   {
     "id": 166,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -1141,
     "y": 1127
   },
   {
     "id": 244,
     "type": "dark-green-suitcase",
-    "title": "2x Ammo Suitcases",
+    "title": "2x Ammo Cases",
     "x": -1322,
     "y": -490
   },
   {
     "id": 262,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -205,
     "y": 878
   },
   {
     "id": 263,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": 42,
     "y": 1371
   },
   {
     "id": 286,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": 1805,
     "y": -67
   },
   {
     "id": 287,
     "type": "dark-green-suitcase",
-    "title": "2x Ammo Suitcases",
+    "title": "2x Ammo Cases",
     "x": 1780,
     "y": -34
   },
   {
     "id": 320,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -486,
     "y": 9,
     "isUnderground": true,
@@ -3839,7 +3850,7 @@
   {
     "id": 322,
     "type": "dark-green-suitcase",
-    "title": "2x Ammo Suitcases",
+    "title": "2x Ammo Cases",
     "x": -518,
     "y": 11,
     "isUnderground": true,
@@ -3850,7 +3861,7 @@
   {
     "id": 323,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -563,
     "y": -65,
     "isUnderground": true,
@@ -3861,7 +3872,7 @@
   {
     "id": 324,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -564,
     "y": -98,
     "isUnderground": true,
@@ -3872,7 +3883,7 @@
   {
     "id": 337,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -1182,
     "y": 25,
     "isUnderground": true,
@@ -3883,70 +3894,70 @@
   {
     "id": 455,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -256,
     "y": -16
   },
   {
     "id": 456,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -258,
     "y": -6
   },
   {
     "id": 457,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -250,
     "y": 1
   },
   {
     "id": 458,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -238,
     "y": -10
   },
   {
     "id": 470,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -238,
     "y": -9
   },
   {
     "id": 471,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -45,
     "y": 1453
   },
   {
     "id": 472,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -64,
     "y": 1459
   },
   {
     "id": 478,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -706,
     "y": 451
   },
   {
     "id": 479,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -707,
     "y": 457
   },
   {
     "id": 580,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -1133,
     "y": -282,
     "isUnderground": true
@@ -3954,7 +3965,7 @@
   {
     "id": 581,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -1205,
     "y": -277,
     "isUnderground": true
@@ -3962,73 +3973,83 @@
   {
     "id": 119,
     "type": "orange-suitcase",
-    "title": "Flare Suitcase",
+    "title": "Flare Case",
     "x": -434,
-    "y": 1597
+    "y": 1597,
+	"screenshot": "orange-case.webp"
   },
   {
     "id": 120,
     "type": "orange-suitcase",
-    "title": "Flare Suitcase",
+    "title": "Flare Case",
     "x": -422,
     "y": 1496,
+	"screenshot": "orange-case.webp",
     "isUnderground": true
   },
   {
     "id": 125,
     "type": "orange-suitcase",
-    "title": "Flare Suitcase",
+    "title": "Flare Case",
     "x": -1360,
-    "y": 1667
+    "y": 1667,
+	"screenshot": "orange-case.webp"
   },
   {
     "id": 131,
     "type": "orange-suitcase",
-    "title": "Flare Suitcase",
+    "title": "Flare Case",
     "x": -1651,
-    "y": 1193
+    "y": 1193,
+	"screenshot": "orange-case.webp"
   },
   {
     "id": 134,
     "type": "orange-suitcase",
-    "title": "Flare Suitcase",
+    "title": "Flare Case",
     "x": -1436,
-    "y": 1217
+    "y": 1217,
+	"screenshot": "orange-case.webp"
   },
   {
     "id": 138,
     "type": "orange-suitcase",
-    "title": "Flare Suitcase",
+    "title": "Flare Case",
     "x": -1148,
-    "y": -240
+    "y": -240,
+	"screenshot": "orange-case.webp"
   },
   {
     "id": 149,
     "type": "orange-suitcase",
-    "title": "Flare Suitcase",
+    "title": "Flare Case",
     "x": -1723,
-    "y": 57
+    "y": 57,
+	"screenshot": "orange-case.webp"
   },
   {
     "id": 261,
     "type": "orange-suitcase",
-    "title": "Flare Suitcase",
+    "title": "Flare Case",
     "x": -808,
-    "y": -216
+    "y": -216,
+	"screenshot": "orange-case.webp"
   },
   {
     "id": 288,
     "type": "orange-suitcase",
-    "title": "Flare Suitcase",
+    "title": "Flare Case",
     "x": 1066,
-    "y": -920
+    "y": -920,
+	"screenshot": "orange-case.webp"
   },
   {
     "id": 321,
     "type": "orange-suitcase",
-    "title": "Flare Suitcase",
+    "title": "Flare Case",
     "x": -490,
     "y": 6,
+	"screenshot": "orange-case.webp",
     "isUnderground": true,
     "requirements": [
       11
@@ -4037,9 +4058,10 @@
   {
     "id": 325,
     "type": "orange-suitcase",
-    "title": "Flare Suitcase",
+    "title": "Flare Case",
     "x": -566,
     "y": -98,
+	"screenshot": "orange-case.webp",
     "isUnderground": true,
     "requirements": [
       11
@@ -4048,32 +4070,36 @@
   {
     "id": 331,
     "type": "orange-suitcase",
-    "title": "Flare Suitcase",
+    "title": "Flare Case",
     "x": -1093,
-    "y": 84
+    "y": 84,
+	"screenshot": "orange-case.webp"
   },
   {
     "id": 420,
     "type": "orange-suitcase",
-    "title": "Flare Suitcase",
+    "title": "Flare Case",
     "x": -150,
     "y": -418,
+	"screenshot": "orange-case.webp",
     "isUnderground": true
   },
   {
     "id": 421,
     "type": "orange-suitcase",
-    "title": "Flare Suitcase",
+    "title": "Flare Case",
     "x": -42,
     "y": -344,
+	"screenshot": "orange-case.webp",
     "isUnderground": true
   },
   {
     "id": 471,
     "type": "orange-suitcase",
-    "title": "Flare Suitcase",
+    "title": "Flare Case",
     "x": -710,
-    "y": 461
+    "y": 461,
+	"screenshot": "orange-case.webp"
   },
   {
     "id": 130,
