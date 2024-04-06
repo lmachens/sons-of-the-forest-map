@@ -16,7 +16,7 @@
     "description": "Spawn Point",
     "x": -426.28,
     "y": 1601.90,
-	"screenshot": "ocean_crash.webp",
+    "screenshot": "ocean_crash.webp",
     "tp": "goto OceanCrash",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Starting_Points#Oceanfront_Wreckage_Zone"
   },
@@ -26,7 +26,7 @@
     "title": "black/yellow crate",
     "x": -436.28,
     "y": 1594.22,
-	"screenshot": "black-yellow-crate.webp",
+    "screenshot": "black-yellow-crate.webp",
   },
   {
     "id": 20002,
@@ -34,7 +34,7 @@
     "title": "black/yellow crate",
     "x": -430.5,
     "y": 1589,
-	"screenshot": "black-yellow-crate.webp",
+    "screenshot": "black-yellow-crate.webp",
   },
   {
     "id": 3,
@@ -3169,7 +3169,7 @@
     "title": "Red Case",
     "x": -425.19,
     "y": 1597.16,
-	"screenshot": "red-case.webp"
+    "screenshot": "red-case.webp"
   },
   {
     "id": 117,
@@ -3737,7 +3737,7 @@
     "title": "Ammo Case",
     "x": -1119,
     "y": 1630,
-	"screenshot": "green-case.webp"
+    "screenshot": "green-case.webp"
   },
   {
     "id": 129,
@@ -3745,7 +3745,7 @@
     "title": "Ammo Case",
     "x": -1254,
     "y": 1395,
-	"screenshot": "green-case.webp"
+    "screenshot": "green-case.webp"
   },
   {
     "id": 595,
@@ -3753,7 +3753,7 @@
     "title": "Ammo Case",
     "x": -1146,
     "y": -234,
-	"screenshot": "green-case.webp"
+    "screenshot": "green-case.webp"
   },
   {
     "id": 148,
@@ -3761,7 +3761,7 @@
     "title": "2x Ammo Cases",
     "x": -1726,
     "y": 62,
-	"screenshot": "green-case.webp"
+    "screenshot": "green-case.webp"
   },
   {
     "id": 154,
@@ -3769,7 +3769,7 @@
     "title": "Ammo Case",
     "x": -1612,
     "y": 490,
-	"screenshot": "green-case.webp"
+    "screenshot": "green-case.webp"
   },
   {
     "id": 155,
@@ -3777,7 +3777,7 @@
     "title": "2x Ammo Cases",
     "x": -1249,
     "y": 217,
-	"screenshot": "green-case.webp"
+    "screenshot": "green-case.webp"
   },
   {
     "id": 156,
@@ -3785,7 +3785,7 @@
     "title": "Ammo Case",
     "x": -1218,
     "y": 662,
-	"screenshot": "green-case.webp"
+    "screenshot": "green-case.webp"
   },
   {
     "id": 163,
@@ -3793,7 +3793,7 @@
     "title": "Ammo Case",
     "x": -887,
     "y": 767,
-	"screenshot": "green-case.webp"
+    "screenshot": "green-case.webp"
   },
   {
     "id": 164,
@@ -3801,7 +3801,7 @@
     "title": "Ammo Case",
     "x": -844,
     "y": 1011,
-	"screenshot": "green-case.webp"
+    "screenshot": "green-case.webp"
   },
   {
     "id": 166,
@@ -3809,7 +3809,7 @@
     "title": "Ammo Case",
     "x": -1141,
     "y": 1127,
-	"screenshot": "green-case.webp"
+    "screenshot": "green-case.webp"
   },
   {
     "id": 244,
@@ -3817,7 +3817,7 @@
     "title": "2x Ammo Cases",
     "x": -1322,
     "y": -490,
-	"screenshot": "green-case.webp"
+    "screenshot": "green-case.webp"
   },
   {
     "id": 262,
@@ -3825,7 +3825,7 @@
     "title": "Ammo Case",
     "x": -205,
     "y": 878,
-	"screenshot": "green-case.webp"
+    "screenshot": "green-case.webp"
   },
   {
     "id": 263,
@@ -3833,7 +3833,7 @@
     "title": "Ammo Case",
     "x": 42,
     "y": 1371,
-	"screenshot": "green-case.webp"
+    "screenshot": "green-case.webp"
   },
   {
     "id": 286,
@@ -3841,7 +3841,7 @@
     "title": "Ammo Case",
     "x": 1805,
     "y": -67,
-	"screenshot": "green-case.webp"
+    "screenshot": "green-case.webp"
   },
   {
     "id": 287,
@@ -3849,7 +3849,7 @@
     "title": "2x Ammo Cases",
     "x": 1780,
     "y": -34,
-	"screenshot": "green-case.webp"
+    "screenshot": "green-case.webp"
   },
   {
     "id": 320,
@@ -3857,7 +3857,7 @@
     "title": "Ammo Case",
     "x": -486,
     "y": 9,
-	"screenshot": "green-case.webp",
+    "screenshot": "green-case.webp",
     "isUnderground": true,
     "requirements": [
       11
@@ -3869,7 +3869,7 @@
     "title": "2x Ammo Cases",
     "x": -518,
     "y": 11,
-	"screenshot": "green-case.webp",
+    "screenshot": "green-case.webp",
     "isUnderground": true,
     "requirements": [
       11
@@ -3881,7 +3881,7 @@
     "title": "Ammo Case",
     "x": -563,
     "y": -65,
-	"screenshot": "green-case.webp",
+    "screenshot": "green-case.webp",
     "isUnderground": true,
     "requirements": [
       11
@@ -3893,7 +3893,7 @@
     "title": "Ammo Case",
     "x": -564,
     "y": -98,
-	"screenshot": "green-case.webp",
+    "screenshot": "green-case.webp",
     "isUnderground": true,
     "requirements": [
       11
@@ -3905,7 +3905,7 @@
     "title": "Ammo Case",
     "x": -1182,
     "y": 25,
-	"screenshot": "green-case.webp",
+    "screenshot": "green-case.webp",
     "isUnderground": true,
     "requirements": [
       17
@@ -3917,7 +3917,7 @@
     "title": "Ammo Case",
     "x": -256,
     "y": -16,
-	"screenshot": "green-case.webp"
+    "screenshot": "green-case.webp"
   },
   {
     "id": 456,
@@ -3925,7 +3925,7 @@
     "title": "Ammo Case",
     "x": -258,
     "y": -6,
-	"screenshot": "green-case.webp"
+    "screenshot": "green-case.webp"
   },
   {
     "id": 457,
@@ -3933,7 +3933,7 @@
     "title": "Ammo Case",
     "x": -250,
     "y": 1,
-	"screenshot": "green-case.webp"
+    "screenshot": "green-case.webp"
   },
   {
     "id": 458,
@@ -3941,7 +3941,7 @@
     "title": "Ammo Case",
     "x": -238,
     "y": -10,
-	"screenshot": "green-case.webp"
+    "screenshot": "green-case.webp"
   },
   {
     "id": 470,
@@ -3949,7 +3949,7 @@
     "title": "Ammo Case",
     "x": -238,
     "y": -9,
-	"screenshot": "green-case.webp"
+    "screenshot": "green-case.webp"
   },
   {
     "id": 471,
@@ -3957,7 +3957,7 @@
     "title": "Ammo Case",
     "x": -45,
     "y": 1453,
-	"screenshot": "green-case.webp"
+    "screenshot": "green-case.webp"
   },
   {
     "id": 472,
@@ -3965,7 +3965,7 @@
     "title": "Ammo Case",
     "x": -64,
     "y": 1459,
-	"screenshot": "green-case.webp"
+    "screenshot": "green-case.webp"
   },
   {
     "id": 478,
@@ -3973,7 +3973,7 @@
     "title": "Ammo Case",
     "x": -706,
     "y": 451,
-	"screenshot": "green-case.webp"
+    "screenshot": "green-case.webp"
   },
   {
     "id": 479,
@@ -3981,7 +3981,7 @@
     "title": "Ammo Case",
     "x": -707,
     "y": 457,
-	"screenshot": "green-case.webp"
+    "screenshot": "green-case.webp"
   },
   {
     "id": 580,
@@ -3989,7 +3989,7 @@
     "title": "Ammo Case",
     "x": -1133,
     "y": -282,
-	"screenshot": "green-case.webp",
+    "screenshot": "green-case.webp",
     "isUnderground": true
   },
   {
@@ -3998,7 +3998,7 @@
     "title": "Ammo Case",
     "x": -1205,
     "y": -277,
-	"screenshot": "green-case.webp",
+    "screenshot": "green-case.webp",
     "isUnderground": true
   },
   {
@@ -4007,7 +4007,7 @@
     "title": "Flare Case",
     "x": -434,
     "y": 1597,
-	"screenshot": "orange-case.webp"
+    "screenshot": "orange-case.webp"
   },
   {
     "id": 120,
@@ -4015,7 +4015,7 @@
     "title": "Flare Case",
     "x": -422,
     "y": 1496,
-	"screenshot": "orange-case.webp",
+    "screenshot": "orange-case.webp",
     "isUnderground": true
   },
   {
@@ -4024,7 +4024,7 @@
     "title": "Flare Case",
     "x": -1360,
     "y": 1667,
-	"screenshot": "orange-case.webp"
+    "screenshot": "orange-case.webp"
   },
   {
     "id": 131,
@@ -4032,7 +4032,7 @@
     "title": "Flare Case",
     "x": -1651,
     "y": 1193,
-	"screenshot": "orange-case.webp"
+    "screenshot": "orange-case.webp"
   },
   {
     "id": 134,
@@ -4040,7 +4040,7 @@
     "title": "Flare Case",
     "x": -1436,
     "y": 1217,
-	"screenshot": "orange-case.webp"
+    "screenshot": "orange-case.webp"
   },
   {
     "id": 138,
@@ -4048,7 +4048,7 @@
     "title": "Flare Case",
     "x": -1148,
     "y": -240,
-	"screenshot": "orange-case.webp"
+    "screenshot": "orange-case.webp"
   },
   {
     "id": 149,
@@ -4056,7 +4056,7 @@
     "title": "Flare Case",
     "x": -1723,
     "y": 57,
-	"screenshot": "orange-case.webp"
+    "screenshot": "orange-case.webp"
   },
   {
     "id": 261,
@@ -4064,7 +4064,7 @@
     "title": "Flare Case",
     "x": -808,
     "y": -216,
-	"screenshot": "orange-case.webp"
+    "screenshot": "orange-case.webp"
   },
   {
     "id": 288,
@@ -4072,7 +4072,7 @@
     "title": "Flare Case",
     "x": 1066,
     "y": -920,
-	"screenshot": "orange-case.webp"
+    "screenshot": "orange-case.webp"
   },
   {
     "id": 321,
@@ -4080,7 +4080,7 @@
     "title": "Flare Case",
     "x": -490,
     "y": 6,
-	"screenshot": "orange-case.webp",
+    "screenshot": "orange-case.webp",
     "isUnderground": true,
     "requirements": [
       11
@@ -4092,7 +4092,7 @@
     "title": "Flare Case",
     "x": -566,
     "y": -98,
-	"screenshot": "orange-case.webp",
+    "screenshot": "orange-case.webp",
     "isUnderground": true,
     "requirements": [
       11
@@ -4104,7 +4104,7 @@
     "title": "Flare Case",
     "x": -1093,
     "y": 84,
-	"screenshot": "orange-case.webp"
+    "screenshot": "orange-case.webp"
   },
   {
     "id": 420,
@@ -4112,7 +4112,7 @@
     "title": "Flare Case",
     "x": -150,
     "y": -418,
-	"screenshot": "orange-case.webp",
+    "screenshot": "orange-case.webp",
     "isUnderground": true
   },
   {
@@ -4121,7 +4121,7 @@
     "title": "Flare Case",
     "x": -42,
     "y": -344,
-	"screenshot": "orange-case.webp",
+    "screenshot": "orange-case.webp",
     "isUnderground": true
   },
   {
@@ -4130,7 +4130,7 @@
     "title": "Flare Case",
     "x": -710,
     "y": 461,
-	"screenshot": "orange-case.webp"
+    "screenshot": "orange-case.webp"
   },
   {
     "id": 130,
