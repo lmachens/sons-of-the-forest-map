@@ -4,10 +4,82 @@
     "type": "spawnPoint",
     "title": "Mountain Crash Site",
     "description": "Spawn Point",
-    "x": -225,
-    "y": -12,
+    "x": -228.38,
+    "y": -13.75,
+    "screenshot": "mountain_crash.webp",
     "tp": "goto SnowCrash",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Starting_Points#Mountain_Peak_Crash_Landing"
+  },
+  {
+    "id": 10001,
+    "type": "supply",
+    "title": "Supply Case",
+    "description": "Part of the mountain crash site.",
+    "x": -236,
+    "y": -23,
+    "screenshot": "red_case.webp"
+  },
+  {
+    "id": 10002,
+    "type": "dark-green-suitcase",
+    "title": "Explosives Case",
+    "description": "Part of the mountain crash site.",
+    "x": -238.50,
+    "y": -9.75,
+    "screenshot": "black_case.webp"
+  },
+  {
+    "id": 10003,
+    "type": "supply",
+    "title": "Supply Case",
+    "description": "Part of the mountain crash site.",
+    "x": -252.50,
+    "y": -11.47,
+    "screenshot": "red_case.webp"
+  },
+  {
+    "id": 10004,
+    "type": "dark-green-suitcase",
+    "title": "Ammo Case",
+    "description": "Part of the mountain crash site.",
+    "x": -255.16,
+    "y": -17.31,
+    "screenshot": "green_case.webp"
+  },
+  {
+    "id": 10005,
+    "type": "supply",
+    "title": "black/yellow crate",
+    "description": "Part of the mountain crash site.",
+    "x": -254.50,
+    "y": -6.03,
+    "screenshot": "black_yellow_crate.webp",
+  },
+  {
+    "id": 10006,
+    "type": "dark-green-suitcase",
+    "title": "Ammo Case",
+    "description": "Part of the mountain crash site.",
+    "x": -258.41,
+    "y": -6.81,
+    "screenshot": "green_case.webp"
+  },
+  {
+    "id": 10007,
+    "type": "supply",
+    "title": "black/yellow crate",
+    "description": "Part of the mountain crash site.",
+    "x": -258.44,
+    "y": -1.81,
+    "screenshot": "black_yellow_crate.webp",
+  },
+  {
+    "id": 10008,
+    "type": "dark-green-suitcase",
+    "title": "Ammo Case",
+    "x": -249.22,
+    "y": 0.66,
+    "screenshot": "green_case.webp"
   },
   {
     "id": 2,
@@ -26,7 +98,7 @@
     "title": "black/yellow crate",
     "x": -436.28,
     "y": 1594.22,
-    "screenshot": "black-yellow-crate.webp",
+    "screenshot": "black_yellow_crate.webp",
   },
   {
     "id": 20002,
@@ -34,7 +106,7 @@
     "title": "black/yellow crate",
     "x": -430.5,
     "y": 1589,
-    "screenshot": "black-yellow-crate.webp",
+    "screenshot": "black_yellow_crate.webp",
   },
   {
     "id": 3,
@@ -42,9 +114,91 @@
     "title": "Forest Crash Site",
     "description": "Spawn Point",
     "x": -1141,
-    "y": -216,
+    "y": -218,
     "tp": "goto TreeCrash",
+    "screenshot": "forest_crash.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Starting_Points#Deep_Woods_Impact_Area"
+  },
+  {
+    "id": 30001,
+    "type": "supply",
+    "title": "Supply Case",
+    "description": "Part of the forest crash site.",
+    "x": -1137.56,
+    "y": -220.72,
+    "screenshot": "red_case.webp",
+  },
+  {
+    "id": 30002,
+    "type": "supply",
+    "title": "Explosives Case",
+    "description": "Part of the forest crash site.",
+    "x": -1146.81,
+    "y": -232.00,
+    "screenshot": "black_case.webp",
+  },
+  {
+    "id": 30003,
+    "type": "supply",
+    "title": "Supply Case",
+    "description": "Part of the forest crash site.",
+    "x": -1147.38,
+    "y": -232.88,
+    "screenshot": "red_case.webp",
+  },
+  {
+    "id": 30004,
+    "type": "dark-green-suitcase",
+    "title": "Ammo Case",
+    "description": "Part of the forest crash site.",
+    "x": -1146,
+    "y": -234,
+    "screenshot": "green_case.webp"
+  },
+  {
+    "id": 30005,
+    "type": "supply",
+    "title": "black/yellow Crate",
+    "description": "Part of the forest crash site.",
+    "x": -1139,
+    "y": -236,
+    "screenshot": "black_yellow_crate.webp"
+  },
+  {
+    "id": 30006,
+    "type": "orange-suitcase",
+    "title": "Flare Case",
+    "description": "Part of the forest crash site.",
+    "x": -1147.50,
+    "y": -240.69,
+    "screenshot": "orange_case.webp"
+  },
+  {
+    "id": 30007,
+    "type": "supply",
+    "title": "black/yellow Crate",
+    "description": "Part of the forest crash site.",
+    "x": -1150.50,
+    "y": -233.63,
+    "screenshot": "black_yellow_crate.webp"
+  },
+  {
+    "id": 30008,
+    "type": "supply",
+    "title": "black/yellow Crate",
+    "description": "Part of the forest crash site.",
+    "x": -1153.13,
+    "y": -233.50,
+    "screenshot": "black_yellow_crate.webp"
+  },
+  {
+    "id": 30009,
+    "type": "dark-green-suitcase",
+    "title": "Ammo Case",
+    "description": "Part of the forest crash site.",
+    "x": -1139,
+    "y": -230.44,
+    "screenshot": "green_case.webp"
   },
   {
     "id": 4,
@@ -1113,8 +1267,8 @@
     "id": 41,
     "type": "cave",
     "title": "Frozen Lake Grotto",
-    "x": -136,
-    "y": -90,
+    "x": -135.16,
+    "y": -90.97,
     "screenshot": "frozen_lake_grotto.webp",
     "tp": "goto IceCaveA",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Caves#Frozen_Lake_Grotto"
@@ -1512,8 +1666,8 @@
     "type": "abandoned-camp-y",
     "title": "Orange Tent 14",
     "description": "Camp site with 1 tent",
-    "x": -156,
-    "y": -110,
+    "x": -156.27,
+    "y": -112.61,
     "items": [
       827
     ],
@@ -1581,7 +1735,7 @@
     "id": 521,
     "type": "abandoned-camp-y",
     "title": "Orange Tent 15",
-    "description": "Camp site with 1 tent",
+    "description": "Camp site next to ice cave entrance with 1 tent.",
     "x": -142.90,
     "y": -85.58,
     "tp": "goto -144 405,5 -87,3",
@@ -2469,6 +2623,15 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Balls_Emails"
   },
   {
+    "id": 3333,
+    "type": "document",
+    "title": "Inversion A/B",
+    "description": "Found in the hands of a frozen skeleton",
+    "x": 110.97,
+    "y": 91.41,
+    "screenshot": "inversion_ab.webp"
+  },
+  {
     "id": 389,
     "type": "document",
     "title": "Old Note no.1",
@@ -3169,7 +3332,7 @@
     "title": "Red Case",
     "x": -425.19,
     "y": 1597.16,
-    "screenshot": "red-case.webp"
+    "screenshot": "red_case.webp"
   },
   {
     "id": 117,
@@ -3233,27 +3396,6 @@
     "title": "Supply Suitcase",
     "x": -1437,
     "y": 1213
-  },
-  {
-    "id": 137,
-    "type": "supply",
-    "title": "Supply Suitcase",
-    "x": -1137,
-    "y": -221
-  },
-  {
-    "id": 139,
-    "type": "supply",
-    "title": "3x Supply Suitcases",
-    "x": -1150,
-    "y": -234
-  },
-  {
-    "id": 140,
-    "type": "supply",
-    "title": "Supply Suitcase",
-    "x": -1137,
-    "y": -236
   },
   {
     "id": 142,
@@ -3648,39 +3790,11 @@
     "isUnderground": true
   },
   {
-    "id": 450,
-    "type": "supply",
-    "title": "Supply Suitcase",
-    "x": -258,
-    "y": -1
-  },
-  {
     "id": 451,
     "type": "supply",
     "title": "Supply Suitcase",
     "x": -254,
     "y": -16
-  },
-  {
-    "id": 452,
-    "type": "supply",
-    "title": "Supply Suitcase",
-    "x": -254,
-    "y": -5
-  },
-  {
-    "id": 453,
-    "type": "supply",
-    "title": "Supply Suitcase",
-    "x": -252,
-    "y": -11
-  },
-  {
-    "id": 454,
-    "type": "supply",
-    "title": "Supply Suitcase",
-    "x": -236,
-    "y": -23
   },
   {
     "id": 465,
@@ -3737,7 +3851,7 @@
     "title": "Ammo Case",
     "x": -1119,
     "y": 1630,
-    "screenshot": "green-case.webp"
+    "screenshot": "green_case.webp"
   },
   {
     "id": 129,
@@ -3745,15 +3859,7 @@
     "title": "Ammo Case",
     "x": -1254,
     "y": 1395,
-    "screenshot": "green-case.webp"
-  },
-  {
-    "id": 595,
-    "type": "dark-green-suitcase",
-    "title": "Ammo Case",
-    "x": -1146,
-    "y": -234,
-    "screenshot": "green-case.webp"
+    "screenshot": "green_case.webp"
   },
   {
     "id": 148,
@@ -3761,7 +3867,7 @@
     "title": "2x Ammo Cases",
     "x": -1726,
     "y": 62,
-    "screenshot": "green-case.webp"
+    "screenshot": "green_case.webp"
   },
   {
     "id": 154,
@@ -3769,7 +3875,7 @@
     "title": "Ammo Case",
     "x": -1612,
     "y": 490,
-    "screenshot": "green-case.webp"
+    "screenshot": "green_case.webp"
   },
   {
     "id": 155,
@@ -3777,7 +3883,7 @@
     "title": "2x Ammo Cases",
     "x": -1249,
     "y": 217,
-    "screenshot": "green-case.webp"
+    "screenshot": "green_case.webp"
   },
   {
     "id": 156,
@@ -3785,7 +3891,7 @@
     "title": "Ammo Case",
     "x": -1218,
     "y": 662,
-    "screenshot": "green-case.webp"
+    "screenshot": "green_case.webp"
   },
   {
     "id": 163,
@@ -3793,7 +3899,7 @@
     "title": "Ammo Case",
     "x": -887,
     "y": 767,
-    "screenshot": "green-case.webp"
+    "screenshot": "green_case.webp"
   },
   {
     "id": 164,
@@ -3801,7 +3907,7 @@
     "title": "Ammo Case",
     "x": -844,
     "y": 1011,
-    "screenshot": "green-case.webp"
+    "screenshot": "green_case.webp"
   },
   {
     "id": 166,
@@ -3809,7 +3915,7 @@
     "title": "Ammo Case",
     "x": -1141,
     "y": 1127,
-    "screenshot": "green-case.webp"
+    "screenshot": "green_case.webp"
   },
   {
     "id": 244,
@@ -3817,7 +3923,7 @@
     "title": "2x Ammo Cases",
     "x": -1322,
     "y": -490,
-    "screenshot": "green-case.webp"
+    "screenshot": "green_case.webp"
   },
   {
     "id": 262,
@@ -3825,7 +3931,7 @@
     "title": "Ammo Case",
     "x": -205,
     "y": 878,
-    "screenshot": "green-case.webp"
+    "screenshot": "green_case.webp"
   },
   {
     "id": 263,
@@ -3833,7 +3939,7 @@
     "title": "Ammo Case",
     "x": 42,
     "y": 1371,
-    "screenshot": "green-case.webp"
+    "screenshot": "green_case.webp"
   },
   {
     "id": 286,
@@ -3841,7 +3947,7 @@
     "title": "Ammo Case",
     "x": 1805,
     "y": -67,
-    "screenshot": "green-case.webp"
+    "screenshot": "green_case.webp"
   },
   {
     "id": 287,
@@ -3849,7 +3955,7 @@
     "title": "2x Ammo Cases",
     "x": 1780,
     "y": -34,
-    "screenshot": "green-case.webp"
+    "screenshot": "green_case.webp"
   },
   {
     "id": 320,
@@ -3857,7 +3963,7 @@
     "title": "Ammo Case",
     "x": -486,
     "y": 9,
-    "screenshot": "green-case.webp",
+    "screenshot": "green_case.webp",
     "isUnderground": true,
     "requirements": [
       11
@@ -3869,7 +3975,7 @@
     "title": "2x Ammo Cases",
     "x": -518,
     "y": 11,
-    "screenshot": "green-case.webp",
+    "screenshot": "green_case.webp",
     "isUnderground": true,
     "requirements": [
       11
@@ -3881,7 +3987,7 @@
     "title": "Ammo Case",
     "x": -563,
     "y": -65,
-    "screenshot": "green-case.webp",
+    "screenshot": "green_case.webp",
     "isUnderground": true,
     "requirements": [
       11
@@ -3893,7 +3999,7 @@
     "title": "Ammo Case",
     "x": -564,
     "y": -98,
-    "screenshot": "green-case.webp",
+    "screenshot": "green_case.webp",
     "isUnderground": true,
     "requirements": [
       11
@@ -3905,43 +4011,11 @@
     "title": "Ammo Case",
     "x": -1182,
     "y": 25,
-    "screenshot": "green-case.webp",
+    "screenshot": "green_case.webp",
     "isUnderground": true,
     "requirements": [
       17
     ]
-  },
-  {
-    "id": 455,
-    "type": "dark-green-suitcase",
-    "title": "Ammo Case",
-    "x": -256,
-    "y": -16,
-    "screenshot": "green-case.webp"
-  },
-  {
-    "id": 456,
-    "type": "dark-green-suitcase",
-    "title": "Ammo Case",
-    "x": -258,
-    "y": -6,
-    "screenshot": "green-case.webp"
-  },
-  {
-    "id": 457,
-    "type": "dark-green-suitcase",
-    "title": "Ammo Case",
-    "x": -250,
-    "y": 1,
-    "screenshot": "green-case.webp"
-  },
-  {
-    "id": 458,
-    "type": "dark-green-suitcase",
-    "title": "Ammo Case",
-    "x": -238,
-    "y": -10,
-    "screenshot": "green-case.webp"
   },
   {
     "id": 470,
@@ -3949,7 +4023,7 @@
     "title": "Ammo Case",
     "x": -238,
     "y": -9,
-    "screenshot": "green-case.webp"
+    "screenshot": "green_case.webp"
   },
   {
     "id": 471,
@@ -3957,7 +4031,7 @@
     "title": "Ammo Case",
     "x": -45,
     "y": 1453,
-    "screenshot": "green-case.webp"
+    "screenshot": "green_case.webp"
   },
   {
     "id": 472,
@@ -3965,7 +4039,7 @@
     "title": "Ammo Case",
     "x": -64,
     "y": 1459,
-    "screenshot": "green-case.webp"
+    "screenshot": "green_case.webp"
   },
   {
     "id": 478,
@@ -3973,7 +4047,7 @@
     "title": "Ammo Case",
     "x": -706,
     "y": 451,
-    "screenshot": "green-case.webp"
+    "screenshot": "green_case.webp"
   },
   {
     "id": 479,
@@ -3981,7 +4055,7 @@
     "title": "Ammo Case",
     "x": -707,
     "y": 457,
-    "screenshot": "green-case.webp"
+    "screenshot": "green_case.webp"
   },
   {
     "id": 580,
@@ -3989,7 +4063,7 @@
     "title": "Ammo Case",
     "x": -1133,
     "y": -282,
-    "screenshot": "green-case.webp",
+    "screenshot": "green_case.webp",
     "isUnderground": true
   },
   {
@@ -3998,7 +4072,7 @@
     "title": "Ammo Case",
     "x": -1205,
     "y": -277,
-    "screenshot": "green-case.webp",
+    "screenshot": "green_case.webp",
     "isUnderground": true
   },
   {
@@ -4007,7 +4081,7 @@
     "title": "Flare Case",
     "x": -434,
     "y": 1597,
-    "screenshot": "orange-case.webp"
+    "screenshot": "orange_case.webp"
   },
   {
     "id": 120,
@@ -4015,7 +4089,7 @@
     "title": "Flare Case",
     "x": -422,
     "y": 1496,
-    "screenshot": "orange-case.webp",
+    "screenshot": "orange_case.webp",
     "isUnderground": true
   },
   {
@@ -4024,7 +4098,7 @@
     "title": "Flare Case",
     "x": -1360,
     "y": 1667,
-    "screenshot": "orange-case.webp"
+    "screenshot": "orange_case.webp"
   },
   {
     "id": 131,
@@ -4032,7 +4106,7 @@
     "title": "Flare Case",
     "x": -1651,
     "y": 1193,
-    "screenshot": "orange-case.webp"
+    "screenshot": "orange_case.webp"
   },
   {
     "id": 134,
@@ -4040,15 +4114,7 @@
     "title": "Flare Case",
     "x": -1436,
     "y": 1217,
-    "screenshot": "orange-case.webp"
-  },
-  {
-    "id": 138,
-    "type": "orange-suitcase",
-    "title": "Flare Case",
-    "x": -1148,
-    "y": -240,
-    "screenshot": "orange-case.webp"
+    "screenshot": "orange_case.webp"
   },
   {
     "id": 149,
@@ -4056,7 +4122,7 @@
     "title": "Flare Case",
     "x": -1723,
     "y": 57,
-    "screenshot": "orange-case.webp"
+    "screenshot": "orange_case.webp"
   },
   {
     "id": 261,
@@ -4064,7 +4130,7 @@
     "title": "Flare Case",
     "x": -808,
     "y": -216,
-    "screenshot": "orange-case.webp"
+    "screenshot": "orange_case.webp"
   },
   {
     "id": 288,
@@ -4072,7 +4138,7 @@
     "title": "Flare Case",
     "x": 1066,
     "y": -920,
-    "screenshot": "orange-case.webp"
+    "screenshot": "orange_case.webp"
   },
   {
     "id": 321,
@@ -4080,7 +4146,7 @@
     "title": "Flare Case",
     "x": -490,
     "y": 6,
-    "screenshot": "orange-case.webp",
+    "screenshot": "orange_case.webp",
     "isUnderground": true,
     "requirements": [
       11
@@ -4092,7 +4158,7 @@
     "title": "Flare Case",
     "x": -566,
     "y": -98,
-    "screenshot": "orange-case.webp",
+    "screenshot": "orange_case.webp",
     "isUnderground": true,
     "requirements": [
       11
@@ -4104,7 +4170,7 @@
     "title": "Flare Case",
     "x": -1093,
     "y": 84,
-    "screenshot": "orange-case.webp"
+    "screenshot": "orange_case.webp"
   },
   {
     "id": 420,
@@ -4112,7 +4178,7 @@
     "title": "Flare Case",
     "x": -150,
     "y": -418,
-    "screenshot": "orange-case.webp",
+    "screenshot": "orange_case.webp",
     "isUnderground": true
   },
   {
@@ -4121,7 +4187,7 @@
     "title": "Flare Case",
     "x": -42,
     "y": -344,
-    "screenshot": "orange-case.webp",
+    "screenshot": "orange_case.webp",
     "isUnderground": true
   },
   {
@@ -4130,7 +4196,7 @@
     "title": "Flare Case",
     "x": -710,
     "y": 461,
-    "screenshot": "orange-case.webp"
+    "screenshot": "orange_case.webp"
   },
   {
     "id": 130,
@@ -4513,9 +4579,9 @@
   {
     "id": 461,
     "type": "wooden-crate",
-    "title": "3x Crates",
-    "x": -112,
-    "y": -103
+    "title": "3x Wood Crates",
+    "x": -112.66,
+    "y": -103.94
   },
   {
     "id": 577,
@@ -7036,6 +7102,15 @@
     "y": -419.53,
     "itemid": "additem 590",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
+  },
+  {
+    "id": 118,
+    "type": "poi",
+    "title": "Broken Sleds",
+    "description": "Broken sleds with loose items."
+    "x": -160.25,
+    "y": -91.75,
+    "screenshot": "broken_sled_ice.webp"
   },
   {
     "id": 597,
