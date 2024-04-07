@@ -53,7 +53,7 @@
     "description": "Part of the mountain crash site.",
     "x": -254.50,
     "y": -6.03,
-    "screenshot": "black_yellow_crate.webp",
+    "screenshot": "black_yellow_crate.webp"
   },
   {
     "id": 10006,
@@ -71,7 +71,7 @@
     "description": "Part of the mountain crash site.",
     "x": -258.44,
     "y": -1.81,
-    "screenshot": "black_yellow_crate.webp",
+    "screenshot": "black_yellow_crate.webp"
   },
   {
     "id": 10008,
@@ -98,7 +98,7 @@
     "title": "black/yellow crate",
     "x": -436.28,
     "y": 1594.22,
-    "screenshot": "black_yellow_crate.webp",
+    "screenshot": "black_yellow_crate.webp"
   },
   {
     "id": 20002,
@@ -106,7 +106,7 @@
     "title": "black/yellow crate",
     "x": -430.5,
     "y": 1589,
-    "screenshot": "black_yellow_crate.webp",
+    "screenshot": "black_yellow_crate.webp"
   },
   {
     "id": 3,
@@ -126,7 +126,7 @@
     "description": "Part of the forest crash site.",
     "x": -1137.56,
     "y": -220.72,
-    "screenshot": "red_case.webp",
+    "screenshot": "red_case.webp"
   },
   {
     "id": 30002,
@@ -135,7 +135,7 @@
     "description": "Part of the forest crash site.",
     "x": -1146.81,
     "y": -232.00,
-    "screenshot": "black_case.webp",
+    "screenshot": "black_case.webp"
   },
   {
     "id": 30003,
@@ -144,7 +144,7 @@
     "description": "Part of the forest crash site.",
     "x": -1147.38,
     "y": -232.88,
-    "screenshot": "red_case.webp",
+    "screenshot": "red_case.webp"
   },
   {
     "id": 30004,
@@ -297,8 +297,8 @@
     "type": "rebreather",
     "title": "Rebreather",
     "description": "Inside the left tunnel",
-    "x": -422.94,
-    "y": 1477.02,
+    "x": -421.94,
+    "y": 1477.25,
     "isUnderground": true,
     "screenshot": "rebreather.webp",
     "warning":"Double use the command!",
@@ -1525,11 +1525,11 @@
     "type": "abandoned-camp-y",
     "title": "Black Tents 03",
     "description": "Camp site with 2 tents",
-    "x": -44.96,
-    "y": 1457.21,
+    "x": -47.63,
+    "y": 1456,
+    "screenshot": "black_tents_03.webp"
     "items": [
       6,
-      341,
       881,
       551,
       552
@@ -1803,20 +1803,6 @@
     "tp": "goto SilkPyjamasPickup",
     "itemid": "additem 487",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Pajamas"
-  },
-  {
-    "id": 71,
-    "type": "outfit-cave",
-    "title": "Leather Jacket",
-    "description": "Inside the right tunnel",
-    "x": -646.00,
-    "y": 1510.95,
-    "isUnderground": true,
-    "screenshot": "hoodie_3.webp",
-    "warning": "Double use the command!",
-    "tp": "goto LeatherJacketPickup",
-    "itemid": "additem 493",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hoodie"
   },
   {
     "id": 76,
@@ -2205,10 +2191,11 @@
   {
     "id": 99,
     "type": "document",
-    "title": "Newspaper Page - Puffcorp outbids Sahara Terapeutics for remote island",
-    "description": "Next to second dead soldier near entrance",
+    "title": "The Sunset Times",
+    "description": "Next to second dead soldier near entrance - Puffcorp outbids Sahara Terapeutics for remote island",
     "x": -428.74,
     "y": 1497.67,
+    "screenshot": "the_sunset_times.webp",
     "isUnderground": true,
     "warning": "Teleport after entering the cave!",
     "tp": "goto -428,2 14 1497"
@@ -3807,22 +3794,26 @@
     "id": 466,
     "type": "supply",
     "title": "Supply Suitcase",
-    "x": -49,
-    "y": 1451
+    "x": -50.78,
+    "y": 1453.28,
+    "screenshot": "red_case.webp"
   },
   {
     "id": 467,
     "type": "supply",
-    "title": "2x Supply Suitcases",
-    "x": -45,
-    "y": 1454
+    "title": "2x black/yellow Crate",
+    "description": "Between two tent up against the cliff wall."
+    "x": -45.59,
+    "y": 1454.69
+    "screenshot": "black_yellow_crate.webp"
   },
   {
     "id": 468,
     "type": "supply",
-    "title": "Supply Suitcase",
-    "x": -50,
-    "y": 1453
+    "title": "Flare Case",
+    "x": -49.97,
+    "y": 1452.19
+    "screenshot": "red_case.webp"
   },
   {
     "id": 469,
@@ -4035,11 +4026,11 @@
   },
   {
     "id": 472,
-    "type": "dark-green-suitcase",
-    "title": "Ammo Case",
-    "x": -64,
-    "y": 1459,
-    "screenshot": "green_case.webp"
+    "type": "black-case",
+    "title": "Explosives Case",
+    "x": -64.72,
+    "y": 1459.47,
+    "screenshot": "black_case.webp"
   },
   {
     "id": 478,
@@ -4087,8 +4078,8 @@
     "id": 120,
     "type": "orange-suitcase",
     "title": "Flare Case",
-    "x": -422,
-    "y": 1496,
+    "x": -422.13,
+    "y": 1496.44,
     "screenshot": "orange_case.webp",
     "isUnderground": true
   },
@@ -4199,347 +4190,431 @@
     "screenshot": "orange_case.webp"
   },
   {
+    "id": 13333,
+    "type": "wooden-crate",
+    "title": "5x Wood Crates",
+    "x": -572.58,
+    "y": 1380.27,
+    "screenshot": "wood_crate.webp"
+  },
+  {
+    "id": 13334,
+    "type": "wooden-crate",
+    "title": "4x Wood Crates",
+    "description": "At the bottom of a climb down rope."
+    "x": -615.34,
+    "y": 1412.45,
+    "screenshot": "wood_crate.webp"
+  },
+  {
+    "id": 13335,
+    "type": "wooden-crate",
+    "title": "4x Wood Crates",
+    "description": "At the end of a downward dead end tunnel."
+    "x": -631.80,
+    "y": 1422.27,
+    "screenshot": "wood_crate.webp"
+  },
+  {
+    "id": 13336,
+    "type": "wooden-crate",
+    "title": "Wood Crate",
+    "description": "Just before the breakable wood door with a cross."
+    "x": -646.30,
+    "y": 1384.69,
+    "screenshot": "wood_crate.webp"
+  },
+  {
     "id": 130,
     "type": "wooden-crate",
-    "title": "3x Crates",
+    "title": "3x Wood Crates",
     "x": -1775,
-    "y": 1365
+    "y": 1365,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 135,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -1467,
-    "y": 1111
+    "y": 1111,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 136,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -1369,
-    "y": 803
+    "y": 803,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 147,
     "type": "wooden-crate",
-    "title": "3x Crates",
+    "title": "3x Wood Crates",
     "x": -1639,
-    "y": -170
+    "y": -170,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 160,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -1215,
-    "y": 651
+    "y": 651,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 165,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -843,
-    "y": 1016
+    "y": 1016,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 167,
     "type": "wooden-crate",
-    "title": "3x Crates",
+    "title": "3x Wood Crates",
     "x": -1079,
-    "y": 1269
+    "y": 1269,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 168,
     "type": "wooden-crate",
-    "title": "4x Crates",
+    "title": "4x Wood Crates",
     "x": -914,
-    "y": 1450
+    "y": 1450,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 171,
     "type": "wooden-crate",
-    "title": "3x Crates",
+    "title": "3x Wood Crates",
     "x": -1353,
-    "y": -835
+    "y": -835,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 172,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -1130,
-    "y": -1106
+    "y": -1106,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 173,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -1138,
-    "y": -1092
+    "y": -1092,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 193,
     "type": "wooden-crate",
-    "title": "3x Crates",
+    "title": "3x Wood Crates",
     "x": 1747,
-    "y": -1209
+    "y": -1209,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 194,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": 1734,
-    "y": -1219
+    "y": -1219,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 195,
     "type": "wooden-crate",
-    "title": "4x Crates",
+    "title": "4x Wood Crates",
     "x": 931,
-    "y": -389
+    "y": -389,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 196,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": 1361,
-    "y": -163
+    "y": -163,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 197,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": 1352,
-    "y": -156
+    "y": -156,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 198,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": 1397,
-    "y": -121
+    "y": -121,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 199,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": 1853,
-    "y": 126
+    "y": 126,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 200,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": 1782,
-    "y": -37
+    "y": -37,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 201,
     "type": "wooden-crate",
-    "title": "wooden-crate",
+    "title": "Wood Crate",
     "x": 1808,
-    "y": -60
+    "y": -60,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 202,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": 1804,
-    "y": -78
+    "y": -78,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 203,
     "type": "wooden-crate",
-    "title": "wooden-crate",
+    "title": "Wood Crate",
     "x": 1465,
-    "y": 679
+    "y": 679,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 205,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": 1506,
-    "y": 670
+    "y": 670,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 206,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": 1503,
-    "y": 684
+    "y": 684,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 207,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": 1570,
-    "y": 894
+    "y": 894,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 208,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": 33,
-    "y": 1374
+    "y": 1374,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 209,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": 50,
-    "y": 1371
+    "y": 1371,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 210,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": 260,
-    "y": 1467
+    "y": 1467,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 211,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": 251,
-    "y": 1490
+    "y": 1490,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 212,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -771,
-    "y": 762
+    "y": 762,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 213,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -758,
-    "y": 755
+    "y": 755,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 214,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -478,
-    "y": 482
+    "y": 482,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 215,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -1141,
-    "y": 444
+    "y": 444,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 217,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -1325,
-    "y": -488
+    "y": -488,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 218,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -967,
-    "y": -792
+    "y": -792,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 219,
     "type": "wooden-crate",
-    "title": "4x Crates",
+    "title": "4x Wood Crates",
     "x": -610,
-    "y": -1042
+    "y": -1042,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 220,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -1155,
-    "y": -1202
+    "y": -1202,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 221,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -1775,
-    "y": -1603
+    "y": -1603,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 222,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -1566,
-    "y": -1655
+    "y": -1655,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 240,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -1571,
-    "y": -821
+    "y": -821,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 241,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -1138,
-    "y": -1082
+    "y": -1082,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 242,
     "type": "wooden-crate",
-    "title": "3x Crates",
+    "title": "3x Wood Crates",
     "x": -1153,
-    "y": -1203
+    "y": -1203,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 243,
     "type": "wooden-crate",
     "title": "3x Crates",
     "x": -1351,
-    "y": -830
+    "y": -830,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 289,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": 1375,
-    "y": -690
+    "y": -690,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 290,
     "type": "wooden-crate",
-    "title": "3x Crates",
+    "title": "3x Wood Crates",
     "x": 1390,
-    "y": -699
+    "y": -699,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 291,
     "type": "wooden-crate",
-    "title": "Crate",
+    "title": "Wood Crate",
     "x": 1061,
-    "y": -928
+    "y": -928,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 292,
     "type": "wooden-crate",
-    "title": "Crate",
+    "title": "Wood Crate",
     "x": 1478,
-    "y": 707
+    "y": 707,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 293,
     "type": "wooden-crate",
-    "title": "Crate",
+    "title": "Wood Crate",
     "x": 1424,
-    "y": 851
+    "y": 851,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 294,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": 1430,
-    "y": 834
+    "y": 834,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 349,
@@ -4565,53 +4640,60 @@
   {
     "id": 459,
     "type": "wooden-crate",
-    "title": "Crate",
+    "title": "Wood Crate",
     "x": -1152,
-    "y": 455
+    "y": 455,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 460,
     "type": "wooden-crate",
-    "title": "Crate",
+    "title": "Wood Crate",
     "x": -747,
-    "y": 28
+    "y": 28,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 461,
     "type": "wooden-crate",
     "title": "3x Wood Crates",
     "x": -112.66,
-    "y": -103.94
+    "y": -103.94,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 577,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -1006,
-    "y": -391
+    "y": -391,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 578,
     "type": "wooden-crate",
-    "title": "Crate",
+    "title": "Wood Crate",
     "x": -518,
     "y": -598,
+    "screenshot": "wood_crate.webp",
     "isUnderground": true
   },
   {
     "id": 579,
     "type": "wooden-crate",
-    "title": "5x Crates",
+    "title": "5x Wood Crates",
     "x": -507,
     "y": -618,
+    "screenshot": "wood_crate.webp",
     "isUnderground": true
   },
   {
     "id": 832,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": 625,
-    "y": -1661
+    "y": -1661,
+    "screenshot": "wood_crate.webp"
   },
   {
     "id": 833,
@@ -6310,18 +6392,6 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Shotgun_Rail"
   },
   {
-    "id": 341,
-    "type": "shotgun-rail",
-    "title": "Shotgun Rail",
-    "description": "Near Machete",
-    "x": -47.62,
-    "y": 1454.07,
-    "screenshot": "shotgun_rail_1.webp",
-    "tp": "goto ShtogunRailPickup",
-    "itemid": "additem 346",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Shotgun_Rail"
-  },
-  {
     "id": 432,
     "type": "shotgun-rail-bunker",
     "title": "Shotgun Rail",
@@ -7024,6 +7094,7 @@
     "id": 378,
     "type": "radio",
     "title": "Radio",
+    "description": "Radio is hanging from the ceiling with a smashable laptop on the floor."
     "x": -598.86,
     "y": 1448.47,
     "isUnderground": true,
