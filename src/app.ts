@@ -32,7 +32,8 @@ import { useAccountStore } from "./lib/stores/account";
 import { updateVersion } from "./lib/version";
 import { initWakelock } from "./lib/wakelock";
 import { closeWindow, getCurrentWindow } from "./lib/windows";
-import { getCustomNodes } from "./lib/nodes";
+import { getCustomNodes, setCustomNodes } from "./lib/nodes";
+import { openFileOrFiles } from "./lib/storage";
 
 console.log("Init main");
 
