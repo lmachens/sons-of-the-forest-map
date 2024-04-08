@@ -16,8 +16,7 @@
     "title": "Supply Case",
     "description": "Part of the mountain crash site.",
     "x": -236,
-    "y": -23,
-    "screenshot": "red_case.webp"
+    "y": -23
   },
   {
     "id": 10002,
@@ -25,8 +24,7 @@
     "title": "Explosives Case",
     "description": "Part of the mountain crash site.",
     "x": -238.50,
-    "y": -9.75,
-    "screenshot": "black_case.webp"
+    "y": -9.75
   },
   {
     "id": 10003,
@@ -34,8 +32,7 @@
     "title": "Supply Case",
     "description": "Part of the mountain crash site.",
     "x": -252.50,
-    "y": -11.47,
-    "screenshot": "red_case.webp"
+    "y": -11.47
   },
   {
     "id": 10004,
@@ -43,8 +40,7 @@
     "title": "Ammo Case",
     "description": "Part of the mountain crash site.",
     "x": -255.16,
-    "y": -17.31,
-    "screenshot": "green_case.webp"
+    "y": -17.31
   },
   {
     "id": 10005,
@@ -52,8 +48,7 @@
     "title": "black/yellow crate",
     "description": "Part of the mountain crash site.",
     "x": -254.50,
-    "y": -6.03,
-    "screenshot": "black_yellow_crate.webp"
+    "y": -6.03
   },
   {
     "id": 10006,
@@ -61,8 +56,7 @@
     "title": "Ammo Case",
     "description": "Part of the mountain crash site.",
     "x": -258.41,
-    "y": -6.81,
-    "screenshot": "green_case.webp"
+    "y": -6.81
   },
   {
     "id": 10007,
@@ -70,16 +64,14 @@
     "title": "black/yellow crate",
     "description": "Part of the mountain crash site.",
     "x": -258.44,
-    "y": -1.81,
-    "screenshot": "black_yellow_crate.webp"
+    "y": -1.81
   },
   {
     "id": 10008,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": -249.22,
-    "y": 0.66,
-    "screenshot": "green_case.webp"
+    "y": 0.66
   },
   {
     "id": 2,
@@ -97,16 +89,14 @@
     "type": "supply",
     "title": "black/yellow crate",
     "x": -436.28,
-    "y": 1594.22,
-    "screenshot": "black_yellow_crate.webp"
+    "y": 1594.22
   },
   {
     "id": 20002,
     "type": "supply",
     "title": "black/yellow crate",
     "x": -430.5,
-    "y": 1589,
-    "screenshot": "black_yellow_crate.webp"
+    "y": 1589
   },
   {
     "id": 3,
@@ -125,8 +115,7 @@
     "title": "Supply Case",
     "description": "Part of the forest crash site.",
     "x": -1137.56,
-    "y": -220.72,
-    "screenshot": "red_case.webp"
+    "y": -220.72
   },
   {
     "id": 30002,
@@ -134,8 +123,7 @@
     "title": "Explosives Case",
     "description": "Part of the forest crash site.",
     "x": -1146.81,
-    "y": -232.00,
-    "screenshot": "black_case.webp"
+    "y": -232.00
   },
   {
     "id": 30003,
@@ -143,8 +131,7 @@
     "title": "Supply Case",
     "description": "Part of the forest crash site.",
     "x": -1147.38,
-    "y": -232.88,
-    "screenshot": "red_case.webp"
+    "y": -232.88
   },
   {
     "id": 30004,
@@ -152,8 +139,7 @@
     "title": "Ammo Case",
     "description": "Part of the forest crash site.",
     "x": -1146,
-    "y": -234,
-    "screenshot": "green_case.webp"
+    "y": -234
   },
   {
     "id": 30005,
@@ -161,8 +147,7 @@
     "title": "black/yellow Crate",
     "description": "Part of the forest crash site.",
     "x": -1139,
-    "y": -236,
-    "screenshot": "black_yellow_crate.webp"
+    "y": -236
   },
   {
     "id": 30006,
@@ -170,8 +155,7 @@
     "title": "Flare Case",
     "description": "Part of the forest crash site.",
     "x": -1147.50,
-    "y": -240.69,
-    "screenshot": "orange_case.webp"
+    "y": -240.69
   },
   {
     "id": 30007,
@@ -179,8 +163,7 @@
     "title": "black/yellow Crate",
     "description": "Part of the forest crash site.",
     "x": -1150.50,
-    "y": -233.63,
-    "screenshot": "black_yellow_crate.webp"
+    "y": -233.63
   },
   {
     "id": 30008,
@@ -188,8 +171,7 @@
     "title": "black/yellow Crate",
     "description": "Part of the forest crash site.",
     "x": -1153.13,
-    "y": -233.50,
-    "screenshot": "black_yellow_crate.webp"
+    "y": -233.50
   },
   {
     "id": 30009,
@@ -197,8 +179,7 @@
     "title": "Ammo Case",
     "description": "Part of the forest crash site.",
     "x": -1139,
-    "y": -230.44,
-    "screenshot": "green_case.webp"
+    "y": -230.44
   },
   {
     "id": 4,
@@ -3318,8 +3299,7 @@
     "type": "supply",
     "title": "Red Case",
     "x": -425.19,
-    "y": 1597.16,
-    "screenshot": "red_case.webp"
+    "y": 1597.16
   },
   {
     "id": 117,
@@ -3795,8 +3775,7 @@
     "type": "supply",
     "title": "Supply Suitcase",
     "x": -50.78,
-    "y": 1453.28,
-    "screenshot": "red_case.webp"
+    "y": 1453.28
   },
   {
     "id": 467,
@@ -3804,16 +3783,14 @@
     "title": "2x black/yellow Crate",
     "description": "Between two tent up against the cliff wall.",
     "x": -45.59,
-    "y": 1454.69,
-    "screenshot": "black_yellow_crate.webp"
+    "y": 1454.69
   },
   {
     "id": 468,
     "type": "supply",
     "title": "Flare Case",
     "x": -49.97,
-    "y": 1452.19,
-    "screenshot": "red_case.webp"
+    "y": 1452.19
   },
   {
     "id": 469,
@@ -3841,112 +3818,98 @@
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": -1119,
-    "y": 1630,
-    "screenshot": "green_case.webp"
+    "y": 1630
   },
   {
     "id": 129,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": -1254,
-    "y": 1395,
-    "screenshot": "green_case.webp"
+    "y": 1395
   },
   {
     "id": 148,
     "type": "dark-green-suitcase",
     "title": "2x Ammo Cases",
     "x": -1726,
-    "y": 62,
-    "screenshot": "green_case.webp"
+    "y": 62
   },
   {
     "id": 154,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": -1612,
-    "y": 490,
-    "screenshot": "green_case.webp"
+    "y": 490
   },
   {
     "id": 155,
     "type": "dark-green-suitcase",
     "title": "2x Ammo Cases",
     "x": -1249,
-    "y": 217,
-    "screenshot": "green_case.webp"
+    "y": 217
   },
   {
     "id": 156,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": -1218,
-    "y": 662,
-    "screenshot": "green_case.webp"
+    "y": 662
   },
   {
     "id": 163,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": -887,
-    "y": 767,
-    "screenshot": "green_case.webp"
+    "y": 767
   },
   {
     "id": 164,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": -844,
-    "y": 1011,
-    "screenshot": "green_case.webp"
+    "y": 1011
   },
   {
     "id": 166,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": -1141,
-    "y": 1127,
-    "screenshot": "green_case.webp"
+    "y": 1127
   },
   {
     "id": 244,
     "type": "dark-green-suitcase",
     "title": "2x Ammo Cases",
     "x": -1322,
-    "y": -490,
-    "screenshot": "green_case.webp"
+    "y": -490
   },
   {
     "id": 262,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": -205,
-    "y": 878,
-    "screenshot": "green_case.webp"
+    "y": 878
   },
   {
     "id": 263,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": 42,
-    "y": 1371,
-    "screenshot": "green_case.webp"
+    "y": 1371
   },
   {
     "id": 286,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": 1805,
-    "y": -67,
-    "screenshot": "green_case.webp"
+    "y": -67
   },
   {
     "id": 287,
     "type": "dark-green-suitcase",
     "title": "2x Ammo Cases",
     "x": 1780,
-    "y": -34,
-    "screenshot": "green_case.webp"
+    "y": -34
   },
   {
     "id": 320,
@@ -3954,7 +3917,6 @@
     "title": "Ammo Case",
     "x": -486,
     "y": 9,
-    "screenshot": "green_case.webp",
     "isUnderground": true,
     "requirements": [
       11
@@ -3966,7 +3928,6 @@
     "title": "2x Ammo Cases",
     "x": -518,
     "y": 11,
-    "screenshot": "green_case.webp",
     "isUnderground": true,
     "requirements": [
       11
@@ -3978,7 +3939,6 @@
     "title": "Ammo Case",
     "x": -563,
     "y": -65,
-    "screenshot": "green_case.webp",
     "isUnderground": true,
     "requirements": [
       11
@@ -3990,7 +3950,6 @@
     "title": "Ammo Case",
     "x": -564,
     "y": -98,
-    "screenshot": "green_case.webp",
     "isUnderground": true,
     "requirements": [
       11
@@ -4002,7 +3961,6 @@
     "title": "Ammo Case",
     "x": -1182,
     "y": 25,
-    "screenshot": "green_case.webp",
     "isUnderground": true,
     "requirements": [
       17
@@ -4013,40 +3971,35 @@
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": -238,
-    "y": -9,
-    "screenshot": "green_case.webp"
+    "y": -9
   },
   {
     "id": 471,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": -45,
-    "y": 1453,
-    "screenshot": "green_case.webp"
+    "y": 1453
   },
   {
     "id": 472,
     "type": "black-case",
     "title": "Explosives Case",
     "x": -64.72,
-    "y": 1459.47,
-    "screenshot": "black_case.webp"
+    "y": 1459.47
   },
   {
     "id": 478,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": -706,
-    "y": 451,
-    "screenshot": "green_case.webp"
+    "y": 451
   },
   {
     "id": 479,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
     "x": -707,
-    "y": 457,
-    "screenshot": "green_case.webp"
+    "y": 457
   },
   {
     "id": 580,
@@ -4054,7 +4007,6 @@
     "title": "Ammo Case",
     "x": -1133,
     "y": -282,
-    "screenshot": "green_case.webp",
     "isUnderground": true
   },
   {
@@ -4063,7 +4015,6 @@
     "title": "Ammo Case",
     "x": -1205,
     "y": -277,
-    "screenshot": "green_case.webp",
     "isUnderground": true
   },
   {
@@ -4071,8 +4022,7 @@
     "type": "orange-suitcase",
     "title": "Flare Case",
     "x": -434,
-    "y": 1597,
-    "screenshot": "orange_case.webp"
+    "y": 1597
   },
   {
     "id": 120,
@@ -4080,7 +4030,6 @@
     "title": "Flare Case",
     "x": -422.13,
     "y": 1496.44,
-    "screenshot": "orange_case.webp",
     "isUnderground": true
   },
   {
@@ -4088,48 +4037,42 @@
     "type": "orange-suitcase",
     "title": "Flare Case",
     "x": -1360,
-    "y": 1667,
-    "screenshot": "orange_case.webp"
+    "y": 1667
   },
   {
     "id": 131,
     "type": "orange-suitcase",
     "title": "Flare Case",
     "x": -1651,
-    "y": 1193,
-    "screenshot": "orange_case.webp"
+    "y": 1193
   },
   {
     "id": 134,
     "type": "orange-suitcase",
     "title": "Flare Case",
     "x": -1436,
-    "y": 1217,
-    "screenshot": "orange_case.webp"
+    "y": 1217
   },
   {
     "id": 149,
     "type": "orange-suitcase",
     "title": "Flare Case",
     "x": -1723,
-    "y": 57,
-    "screenshot": "orange_case.webp"
+    "y": 57
   },
   {
     "id": 261,
     "type": "orange-suitcase",
     "title": "Flare Case",
     "x": -808,
-    "y": -216,
-    "screenshot": "orange_case.webp"
+    "y": -216
   },
   {
     "id": 288,
     "type": "orange-suitcase",
     "title": "Flare Case",
     "x": 1066,
-    "y": -920,
-    "screenshot": "orange_case.webp"
+    "y": -920
   },
   {
     "id": 321,
@@ -4137,7 +4080,6 @@
     "title": "Flare Case",
     "x": -490,
     "y": 6,
-    "screenshot": "orange_case.webp",
     "isUnderground": true,
     "requirements": [
       11
@@ -4149,7 +4091,6 @@
     "title": "Flare Case",
     "x": -566,
     "y": -98,
-    "screenshot": "orange_case.webp",
     "isUnderground": true,
     "requirements": [
       11
@@ -4160,8 +4101,7 @@
     "type": "orange-suitcase",
     "title": "Flare Case",
     "x": -1093,
-    "y": 84,
-    "screenshot": "orange_case.webp"
+    "y": 84
   },
   {
     "id": 420,
@@ -4169,7 +4109,6 @@
     "title": "Flare Case",
     "x": -150,
     "y": -418,
-    "screenshot": "orange_case.webp",
     "isUnderground": true
   },
   {
@@ -4178,7 +4117,6 @@
     "title": "Flare Case",
     "x": -42,
     "y": -344,
-    "screenshot": "orange_case.webp",
     "isUnderground": true
   },
   {
@@ -4186,16 +4124,14 @@
     "type": "orange-suitcase",
     "title": "Flare Case",
     "x": -710,
-    "y": 461,
-    "screenshot": "orange_case.webp"
+    "y": 461
   },
   {
     "id": 13333,
     "type": "wooden-crate",
     "title": "5x Wood Crates",
     "x": -572.58,
-    "y": 1380.27,
-    "screenshot": "wood_crate.webp"
+    "y": 1380.27
   },
   {
     "id": 13334,
@@ -4203,8 +4139,7 @@
     "title": "4x Wood Crates",
     "description": "At the bottom of a climb down rope.",
     "x": -615.34,
-    "y": 1412.45,
-    "screenshot": "wood_crate.webp"
+    "y": 1412.45
   },
   {
     "id": 13335,
@@ -4212,8 +4147,7 @@
     "title": "4x Wood Crates",
     "description": "At the end of a downward dead end tunnel.",
     "x": -631.80,
-    "y": 1422.27,
-    "screenshot": "wood_crate.webp"
+    "y": 1422.27
   },
   {
     "id": 13336,
@@ -4221,400 +4155,350 @@
     "title": "Wood Crate",
     "description": "Just before the breakable wood door with a cross.",
     "x": -646.30,
-    "y": 1384.69,
-    "screenshot": "wood_crate.webp"
+    "y": 1384.69
   },
   {
     "id": 130,
     "type": "wooden-crate",
     "title": "3x Wood Crates",
     "x": -1775,
-    "y": 1365,
-    "screenshot": "wood_crate.webp"
+    "y": 1365
   },
   {
     "id": 135,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": -1467,
-    "y": 1111,
-    "screenshot": "wood_crate.webp"
+    "y": 1111
   },
   {
     "id": 136,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": -1369,
-    "y": 803,
-    "screenshot": "wood_crate.webp"
+    "y": 803
   },
   {
     "id": 147,
     "type": "wooden-crate",
     "title": "3x Wood Crates",
     "x": -1639,
-    "y": -170,
-    "screenshot": "wood_crate.webp"
+    "y": -170
   },
   {
     "id": 160,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": -1215,
-    "y": 651,
-    "screenshot": "wood_crate.webp"
+    "y": 651
   },
   {
     "id": 165,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": -843,
-    "y": 1016,
-    "screenshot": "wood_crate.webp"
+    "y": 1016
   },
   {
     "id": 167,
     "type": "wooden-crate",
     "title": "3x Wood Crates",
     "x": -1079,
-    "y": 1269,
-    "screenshot": "wood_crate.webp"
+    "y": 1269
   },
   {
     "id": 168,
     "type": "wooden-crate",
     "title": "4x Wood Crates",
     "x": -914,
-    "y": 1450,
-    "screenshot": "wood_crate.webp"
+    "y": 1450
   },
   {
     "id": 171,
     "type": "wooden-crate",
     "title": "3x Wood Crates",
     "x": -1353,
-    "y": -835,
-    "screenshot": "wood_crate.webp"
+    "y": -835
   },
   {
     "id": 172,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": -1130,
-    "y": -1106,
-    "screenshot": "wood_crate.webp"
+    "y": -1106
   },
   {
     "id": 173,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": -1138,
-    "y": -1092,
-    "screenshot": "wood_crate.webp"
+    "y": -1092
   },
   {
     "id": 193,
     "type": "wooden-crate",
     "title": "3x Wood Crates",
     "x": 1747,
-    "y": -1209,
-    "screenshot": "wood_crate.webp"
+    "y": -1209
   },
   {
     "id": 194,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": 1734,
-    "y": -1219,
-    "screenshot": "wood_crate.webp"
+    "y": -1219
   },
   {
     "id": 195,
     "type": "wooden-crate",
     "title": "4x Wood Crates",
     "x": 931,
-    "y": -389,
-    "screenshot": "wood_crate.webp"
+    "y": -389
   },
   {
     "id": 196,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": 1361,
-    "y": -163,
-    "screenshot": "wood_crate.webp"
+    "y": -163
   },
   {
     "id": 197,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": 1352,
-    "y": -156,
-    "screenshot": "wood_crate.webp"
+    "y": -156
   },
   {
     "id": 198,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": 1397,
-    "y": -121,
-    "screenshot": "wood_crate.webp"
+    "y": -121
   },
   {
     "id": 199,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": 1853,
-    "y": 126,
-    "screenshot": "wood_crate.webp"
+    "y": 126
   },
   {
     "id": 200,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": 1782,
-    "y": -37,
-    "screenshot": "wood_crate.webp"
+    "y": -37
   },
   {
     "id": 201,
     "type": "wooden-crate",
     "title": "Wood Crate",
     "x": 1808,
-    "y": -60,
-    "screenshot": "wood_crate.webp"
+    "y": -60
   },
   {
     "id": 202,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": 1804,
-    "y": -78,
-    "screenshot": "wood_crate.webp"
+    "y": -78
   },
   {
     "id": 203,
     "type": "wooden-crate",
     "title": "Wood Crate",
     "x": 1465,
-    "y": 679,
-    "screenshot": "wood_crate.webp"
+    "y": 679
   },
   {
     "id": 205,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": 1506,
-    "y": 670,
-    "screenshot": "wood_crate.webp"
+    "y": 670
   },
   {
     "id": 206,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": 1503,
-    "y": 684,
-    "screenshot": "wood_crate.webp"
+    "y": 684
   },
   {
     "id": 207,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": 1570,
-    "y": 894,
-    "screenshot": "wood_crate.webp"
+    "y": 894
   },
   {
     "id": 208,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": 33,
-    "y": 1374,
-    "screenshot": "wood_crate.webp"
+    "y": 1374
   },
   {
     "id": 209,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": 50,
-    "y": 1371,
-    "screenshot": "wood_crate.webp"
+    "y": 1371
   },
   {
     "id": 210,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": 260,
-    "y": 1467,
-    "screenshot": "wood_crate.webp"
+    "y": 1467
   },
   {
     "id": 211,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": 251,
-    "y": 1490,
-    "screenshot": "wood_crate.webp"
+    "y": 1490
   },
   {
     "id": 212,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": -771,
-    "y": 762,
-    "screenshot": "wood_crate.webp"
+    "y": 762
   },
   {
     "id": 213,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": -758,
-    "y": 755,
-    "screenshot": "wood_crate.webp"
+    "y": 755
   },
   {
     "id": 214,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": -478,
-    "y": 482,
-    "screenshot": "wood_crate.webp"
+    "y": 482
   },
   {
     "id": 215,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": -1141,
-    "y": 444,
-    "screenshot": "wood_crate.webp"
+    "y": 444
   },
   {
     "id": 217,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": -1325,
-    "y": -488,
-    "screenshot": "wood_crate.webp"
+    "y": -488
   },
   {
     "id": 218,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": -967,
-    "y": -792,
-    "screenshot": "wood_crate.webp"
+    "y": -792
   },
   {
     "id": 219,
     "type": "wooden-crate",
     "title": "4x Wood Crates",
     "x": -610,
-    "y": -1042,
-    "screenshot": "wood_crate.webp"
+    "y": -1042
   },
   {
     "id": 220,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": -1155,
-    "y": -1202,
-    "screenshot": "wood_crate.webp"
+    "y": -1202
   },
   {
     "id": 221,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": -1775,
-    "y": -1603,
-    "screenshot": "wood_crate.webp"
+    "y": -1603
   },
   {
     "id": 222,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": -1566,
-    "y": -1655,
-    "screenshot": "wood_crate.webp"
+    "y": -1655
   },
   {
     "id": 240,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": -1571,
-    "y": -821,
-    "screenshot": "wood_crate.webp"
+    "y": -821
   },
   {
     "id": 241,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": -1138,
-    "y": -1082,
-    "screenshot": "wood_crate.webp"
+    "y": -1082
   },
   {
     "id": 242,
     "type": "wooden-crate",
     "title": "3x Wood Crates",
     "x": -1153,
-    "y": -1203,
-    "screenshot": "wood_crate.webp"
+    "y": -1203
   },
   {
     "id": 243,
     "type": "wooden-crate",
     "title": "3x Crates",
     "x": -1351,
-    "y": -830,
-    "screenshot": "wood_crate.webp"
+    "y": -830
   },
   {
     "id": 289,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": 1375,
-    "y": -690,
-    "screenshot": "wood_crate.webp"
+    "y": -690
   },
   {
     "id": 290,
     "type": "wooden-crate",
     "title": "3x Wood Crates",
     "x": 1390,
-    "y": -699,
-    "screenshot": "wood_crate.webp"
+    "y": -699
   },
   {
     "id": 291,
     "type": "wooden-crate",
     "title": "Wood Crate",
     "x": 1061,
-    "y": -928,
-    "screenshot": "wood_crate.webp"
+    "y": -928
   },
   {
     "id": 292,
     "type": "wooden-crate",
     "title": "Wood Crate",
     "x": 1478,
-    "y": 707,
-    "screenshot": "wood_crate.webp"
+    "y": 707
   },
   {
     "id": 293,
     "type": "wooden-crate",
     "title": "Wood Crate",
     "x": 1424,
-    "y": 851,
-    "screenshot": "wood_crate.webp"
+    "y": 851
   },
   {
     "id": 294,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": 1430,
-    "y": 834,
-    "screenshot": "wood_crate.webp"
+    "y": 834
   },
   {
     "id": 349,
@@ -4642,32 +4526,28 @@
     "type": "wooden-crate",
     "title": "Wood Crate",
     "x": -1152,
-    "y": 455,
-    "screenshot": "wood_crate.webp"
+    "y": 455
   },
   {
     "id": 460,
     "type": "wooden-crate",
     "title": "Wood Crate",
     "x": -747,
-    "y": 28,
-    "screenshot": "wood_crate.webp"
+    "y": 28
   },
   {
     "id": 461,
     "type": "wooden-crate",
     "title": "3x Wood Crates",
     "x": -112.66,
-    "y": -103.94,
-    "screenshot": "wood_crate.webp"
+    "y": -103.94
   },
   {
     "id": 577,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": -1006,
-    "y": -391,
-    "screenshot": "wood_crate.webp"
+    "y": -391
   },
   {
     "id": 578,
@@ -4675,7 +4555,6 @@
     "title": "Wood Crate",
     "x": -518,
     "y": -598,
-    "screenshot": "wood_crate.webp",
     "isUnderground": true
   },
   {
@@ -4684,7 +4563,6 @@
     "title": "5x Wood Crates",
     "x": -507,
     "y": -618,
-    "screenshot": "wood_crate.webp",
     "isUnderground": true
   },
   {
@@ -4692,8 +4570,7 @@
     "type": "wooden-crate",
     "title": "2x Wood Crates",
     "x": 625,
-    "y": -1661,
-    "screenshot": "wood_crate.webp"
+    "y": -1661
   },
   {
     "id": 833,
