@@ -639,6 +639,12 @@ export function getTypes(): NodeType[] {
       src: "/icons/grave.webp",
       filter: "poi",
     },
+    {
+      value: "black-case",
+      title: t("Grave"),
+      icon: icons.case,
+      filter: "loot",
+    },
   ];
 }
 

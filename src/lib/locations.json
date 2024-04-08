@@ -1,23 +1,102 @@
-[ 
- {
+[
+  {
     "id": 1,
     "type": "spawnPoint",
     "title": "Mountain Crash Site",
     "description": "Spawn Point",
-    "x": -225,
-    "y": -12,
+    "x": -228.38,
+    "y": -13.75,
+    "screenshot": "mountain_crash.webp",
     "tp": "goto SnowCrash",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Starting_Points#Mountain_Peak_Crash_Landing"
+  },
+  {
+    "id": 10001,
+    "type": "supply",
+    "title": "Supply Case",
+    "description": "Part of the mountain crash site.",
+    "x": -236,
+    "y": -23
+  },
+  {
+    "id": 10002,
+    "type": "dark-green-suitcase",
+    "title": "Explosives Case",
+    "description": "Part of the mountain crash site.",
+    "x": -238.50,
+    "y": -9.75
+  },
+  {
+    "id": 10003,
+    "type": "supply",
+    "title": "Supply Case",
+    "description": "Part of the mountain crash site.",
+    "x": -252.50,
+    "y": -11.47
+  },
+  {
+    "id": 10004,
+    "type": "dark-green-suitcase",
+    "title": "Ammo Case",
+    "description": "Part of the mountain crash site.",
+    "x": -255.16,
+    "y": -17.31
+  },
+  {
+    "id": 10005,
+    "type": "supply",
+    "title": "black/yellow crate",
+    "description": "Part of the mountain crash site.",
+    "x": -254.50,
+    "y": -6.03
+  },
+  {
+    "id": 10006,
+    "type": "dark-green-suitcase",
+    "title": "Ammo Case",
+    "description": "Part of the mountain crash site.",
+    "x": -258.41,
+    "y": -6.81
+  },
+  {
+    "id": 10007,
+    "type": "supply",
+    "title": "black/yellow crate",
+    "description": "Part of the mountain crash site.",
+    "x": -258.44,
+    "y": -1.81
+  },
+  {
+    "id": 10008,
+    "type": "dark-green-suitcase",
+    "title": "Ammo Case",
+    "x": -249.22,
+    "y": 0.66
   },
   {
     "id": 2,
     "type": "spawnPoint",
     "title": "Beach Crash Site",
     "description": "Spawn Point",
-    "x": -426,
-    "y": 1603,
+    "x": -426.28,
+    "y": 1601.90,
+    "screenshot": "ocean_crash.webp",
     "tp": "goto OceanCrash",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Starting_Points#Oceanfront_Wreckage_Zone"
+  },
+  {
+    "id": 20001,
+    "type": "supply",
+    "title": "black/yellow crate",
+    "x": -436.28,
+    "y": 1594.22
+  },
+  {
+    "id": 20002,
+    "type": "supply",
+    "title": "black/yellow crate",
+    "x": -430.5,
+    "y": 1589
   },
   {
     "id": 3,
@@ -25,9 +104,82 @@
     "title": "Forest Crash Site",
     "description": "Spawn Point",
     "x": -1141,
-    "y": -216,
+    "y": -218,
     "tp": "goto TreeCrash",
+    "screenshot": "forest_crash.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Starting_Points#Deep_Woods_Impact_Area"
+  },
+  {
+    "id": 30001,
+    "type": "supply",
+    "title": "Supply Case",
+    "description": "Part of the forest crash site.",
+    "x": -1137.56,
+    "y": -220.72
+  },
+  {
+    "id": 30002,
+    "type": "supply",
+    "title": "Explosives Case",
+    "description": "Part of the forest crash site.",
+    "x": -1146.81,
+    "y": -232.00
+  },
+  {
+    "id": 30003,
+    "type": "supply",
+    "title": "Supply Case",
+    "description": "Part of the forest crash site.",
+    "x": -1147.38,
+    "y": -232.88
+  },
+  {
+    "id": 30004,
+    "type": "dark-green-suitcase",
+    "title": "Ammo Case",
+    "description": "Part of the forest crash site.",
+    "x": -1146,
+    "y": -234
+  },
+  {
+    "id": 30005,
+    "type": "supply",
+    "title": "black/yellow Crate",
+    "description": "Part of the forest crash site.",
+    "x": -1139,
+    "y": -236
+  },
+  {
+    "id": 30006,
+    "type": "orange-suitcase",
+    "title": "Flare Case",
+    "description": "Part of the forest crash site.",
+    "x": -1147.50,
+    "y": -240.69
+  },
+  {
+    "id": 30007,
+    "type": "supply",
+    "title": "black/yellow Crate",
+    "description": "Part of the forest crash site.",
+    "x": -1150.50,
+    "y": -233.63
+  },
+  {
+    "id": 30008,
+    "type": "supply",
+    "title": "black/yellow Crate",
+    "description": "Part of the forest crash site.",
+    "x": -1153.13,
+    "y": -233.50
+  },
+  {
+    "id": 30009,
+    "type": "dark-green-suitcase",
+    "title": "Ammo Case",
+    "description": "Part of the forest crash site.",
+    "x": -1139,
+    "y": -230.44
   },
   {
     "id": 4,
@@ -126,11 +278,11 @@
     "type": "rebreather",
     "title": "Rebreather",
     "description": "Inside the left tunnel",
-    "x": -422.94,
-    "y": 1477.02,
+    "x": -421.94,
+    "y": 1477.25,
     "isUnderground": true,
     "screenshot": "rebreather.webp",
-    "warning":"Double use the command!",
+    "warning": "Double use the command!",
     "tp": "goto RebreatherPickup",
     "itemid": "additem 444",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Rebreather"
@@ -233,7 +385,7 @@
       15
     ],
     "screenshot": "maintenance_card.webp",
-    "warning":"Teleport after entering the bunker!",
+    "warning": "Teleport after entering the bunker!",
     "tp": "goto KeyCardMaintenancePickup",
     "itemid": "additem 566",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Maintenance_Keycard"
@@ -289,7 +441,7 @@
     "itemid": "additem 365",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Crossbow"
   },
-  { 
+  {
     "id": 21,
     "type": "keycard",
     "title": "Guest Card",
@@ -366,7 +518,7 @@
     "y": 1048.70,
     "isUnderground": true,
     "screenshot": "revolver.webp",
-    "warning":"Teleport after entering the bunker!",
+    "warning": "Teleport after entering the bunker!",
     "tp": "goto RevolverPickup",
     "itemid": "additem 386",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Revolver"
@@ -563,7 +715,7 @@
     "x": 1247.45,
     "y": 304.51,
     "isUnderground": true,
-    "warning":"Double use the command!",
+    "warning": "Double use the command!",
     "tp": "goto ArtifactPieceFPickup",
     "itemid": "additem 708",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Artifact"
@@ -1096,8 +1248,8 @@
     "id": 41,
     "type": "cave",
     "title": "Frozen Lake Grotto",
-    "x": -136,
-    "y": -90,
+    "x": -135.16,
+    "y": -90.97,
     "screenshot": "frozen_lake_grotto.webp",
     "tp": "goto IceCaveA",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Caves#Frozen_Lake_Grotto"
@@ -1354,11 +1506,11 @@
     "type": "abandoned-camp-y",
     "title": "Black Tents 03",
     "description": "Camp site with 2 tents",
-    "x": -44.96,
-    "y": 1457.21,
+    "x": -47.63,
+    "y": 1456,
+    "screenshot": "black_tents_03.webp",
     "items": [
       6,
-      341,
       881,
       551,
       552
@@ -1495,8 +1647,8 @@
     "type": "abandoned-camp-y",
     "title": "Orange Tent 14",
     "description": "Camp site with 1 tent",
-    "x": -156,
-    "y": -110,
+    "x": -156.27,
+    "y": -112.61,
     "items": [
       827
     ],
@@ -1564,7 +1716,7 @@
     "id": 521,
     "type": "abandoned-camp-y",
     "title": "Orange Tent 15",
-    "description": "Camp site with 1 tent",
+    "description": "Camp site next to ice cave entrance with 1 tent.",
     "x": -142.90,
     "y": -85.58,
     "tp": "goto -144 405,5 -87,3",
@@ -1632,20 +1784,6 @@
     "tp": "goto SilkPyjamasPickup",
     "itemid": "additem 487",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Pajamas"
-  },
-  {
-    "id": 71,
-    "type": "outfit-cave",
-    "title": "Leather Jacket",
-    "description": "Inside the right tunnel",
-    "x": -646.00,
-    "y": 1510.95,
-    "isUnderground": true,
-    "screenshot": "hoodie_3.webp",
-    "warning": "Double use the command!",
-    "tp": "goto LeatherJacketPickup",
-    "itemid": "additem 493",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hoodie"
   },
   {
     "id": 76,
@@ -1769,7 +1907,7 @@
     "id": 82,
     "type": "outfit-bunker",
     "title": "Virginia Leather Suit",
-    "description":"On 2nd bunker floor",
+    "description": "On 2nd bunker floor",
     "x": 1144.33,
     "y": -640.11,
     "isUnderground": true,
@@ -1953,7 +2091,7 @@
     "y": 504.56,
     "isUnderground": true,
     "screenshot": "novel_c.webp",
-    "warning":"Teleport after entering the bunker!",
+    "warning": "Teleport after entering the bunker!",
     "tp": "goto NovelCPickup",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Books#Rescued_Book"
   },
@@ -2034,10 +2172,11 @@
   {
     "id": 99,
     "type": "document",
-    "title": "Newspaper Page - Puffcorp outbids Sahara Terapeutics for remote island",
-    "description": "Next to second dead soldier near entrance",
+    "title": "The Sunset Times",
+    "description": "Next to second dead soldier near entrance - Puffcorp outbids Sahara Terapeutics for remote island",
     "x": -428.74,
     "y": 1497.67,
+    "screenshot": "the_sunset_times.webp",
     "isUnderground": true,
     "warning": "Teleport after entering the cave!",
     "tp": "goto -428,2 14 1497"
@@ -2436,7 +2575,7 @@
     "requirements": [
       17
     ],
-    "screenshot": "puffton_email_1.webp", 
+    "screenshot": "puffton_email_1.webp",
     "warning": "Double use the command!",
     "tp": "goto PufftonEmailAPickup"
   },
@@ -2450,6 +2589,15 @@
     "screenshot": "email_printout_golf_balls_1.webp",
     "tp": "goto EmailPrintoutGolfAPickup",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Balls_Emails"
+  },
+  {
+    "id": 3333,
+    "type": "document",
+    "title": "Inversion A/B",
+    "description": "Found in the hands of a frozen skeleton",
+    "x": 110.97,
+    "y": 91.41,
+    "screenshot": "inversion_ab.webp"
   },
   {
     "id": 389,
@@ -2511,7 +2659,7 @@
       11
     ],
     "screenshot": "blueprint_item_plating_machine.webp",
-    "warning":"Teleport after entering the cave!",
+    "warning": "Teleport after entering the cave!",
     "tp": "goto BlueprintItemPlatingPickup"
   },
   {
@@ -2532,7 +2680,7 @@
     "y": 1388.92,
     "isUnderground": true,
     "screenshot": "blueprint_powered_cross.webp",
-    "warning":"Teleport after entering the cave!",
+    "warning": "Teleport after entering the cave!",
     "tp": "goto BlueprintPoweredCrossPickup",
     "itemid": "468",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Cross"
@@ -2668,7 +2816,7 @@
   {
     "id": 106,
     "type": "hang-glider",
-    "title": "Hang Glider",
+    "title": "Folding Glider",
     "x": -799.53,
     "y": -281.76,
     "screenshot": "hang_glider_3.webp",
@@ -2679,7 +2827,7 @@
   {
     "id": 107,
     "type": "hang-glider",
-    "title": "Hang Glider",
+    "title": "Folding Glider",
     "x": -504.43,
     "y": -307.39,
     "screenshot": "hang_glider_4.webp",
@@ -2690,7 +2838,7 @@
   {
     "id": 108,
     "type": "hang-glider",
-    "title": "Hang Glider",
+    "title": "Folding Glider",
     "x": -129.59,
     "y": -1028.08,
     "screenshot": "hang_glider_12.webp",
@@ -2701,7 +2849,7 @@
   {
     "id": 109,
     "type": "hang-glider",
-    "title": "Hang Glider",
+    "title": "Folding Glider",
     "x": -1184.10,
     "y": -1728.82,
     "screenshot": "hang_glider_13.webp",
@@ -2712,7 +2860,7 @@
   {
     "id": 110,
     "type": "hang-glider",
-    "title": "Hang Glider",
+    "title": "Folding Glider",
     "x": -1772.03,
     "y": 1171.02,
     "screenshot": "hang_glider_2.webp",
@@ -2723,7 +2871,7 @@
   {
     "id": 111,
     "type": "hang-glider",
-    "title": "Hang Glider",
+    "title": "Folding Glider",
     "x": -1298,
     "y": 1737,
     "screenshot": "hang_glider_1.webp",
@@ -2733,7 +2881,7 @@
   {
     "id": 112,
     "type": "hang-glider",
-    "title": "Hang Glider",
+    "title": "Folding Glider",
     "x": -30.42,
     "y": 665.78,
     "screenshot": "hang_glider_5.webp",
@@ -2744,7 +2892,7 @@
   {
     "id": 174,
     "type": "hang-glider",
-    "title": "Hang Glider",
+    "title": "Folding Glider",
     "x": 366.28,
     "y": -160.22,
     "screenshot": "hang_glider_9.webp",
@@ -2755,7 +2903,7 @@
   {
     "id": 175,
     "type": "hang-glider",
-    "title": "Hang Glider",
+    "title": "Folding Glider",
     "x": 1083.82,
     "y": -108.44,
     "screenshot": "hang_glider_10.webp",
@@ -2766,7 +2914,7 @@
   {
     "id": 176,
     "type": "hang-glider",
-    "title": "Hang Glider",
+    "title": "Folding Glider",
     "x": 1297.53,
     "y": -30.13,
     "screenshot": "hang_glider_11.webp",
@@ -2777,7 +2925,7 @@
   {
     "id": 177,
     "type": "hang-glider",
-    "title": "Hang Glider",
+    "title": "Folding Glider",
     "x": 733.15,
     "y": 740.77,
     "screenshot": "hang_glider_8.webp",
@@ -2788,7 +2936,7 @@
   {
     "id": 178,
     "type": "hang-glider",
-    "title": "Hang Glider",
+    "title": "Folding Glider",
     "x": 797.90,
     "y": 974.66,
     "screenshot": "hang_glider_7.webp",
@@ -2799,7 +2947,7 @@
   {
     "id": 179,
     "type": "hang-glider",
-    "title": "Hang Glider",
+    "title": "Folding Glider",
     "x": 846.10,
     "y": 1105.33,
     "screenshot": "hang_glider_6.webp",
@@ -2810,7 +2958,7 @@
   {
     "id": 385,
     "type": "hang-glider",
-    "title": "Hang Glider",
+    "title": "Folding Glider",
     "x": 789.73,
     "y": 273.90,
     "screenshot": "hang_glider_14.webp",
@@ -2914,7 +3062,7 @@
     "title": "Golf Cart 11",
     "x": -928.46,
     "y": -995.35,
-    "warning":"Crouch after teleporting",
+    "warning": "Crouch after teleporting",
     "tp": "goto WorldGolfCart11"
   },
   {
@@ -3113,7 +3261,7 @@
     "x": 1024.65,
     "y": 1216.186,
     "screenshot": "putter_5.webp",
-    "tp":"goto 1025,1 139,1 1215,4",
+    "tp": "goto 1025,1 139,1 1215,4",
     "itemid": "additem 525",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Putter"
   },
@@ -3149,9 +3297,9 @@
   {
     "id": 116,
     "type": "supply",
-    "title": "4x Supply Suitcases",
-    "x": -428,
-    "y": 1594
+    "title": "Red Case",
+    "x": -425.19,
+    "y": 1597.16
   },
   {
     "id": 117,
@@ -3215,27 +3363,6 @@
     "title": "Supply Suitcase",
     "x": -1437,
     "y": 1213
-  },
-  {
-    "id": 137,
-    "type": "supply",
-    "title": "Supply Suitcase",
-    "x": -1137,
-    "y": -221
-  },
-  {
-    "id": 139,
-    "type": "supply",
-    "title": "3x Supply Suitcases",
-    "x": -1150,
-    "y": -234
-  },
-  {
-    "id": 140,
-    "type": "supply",
-    "title": "Supply Suitcase",
-    "x": -1137,
-    "y": -236
   },
   {
     "id": 142,
@@ -3630,39 +3757,11 @@
     "isUnderground": true
   },
   {
-    "id": 450,
-    "type": "supply",
-    "title": "Supply Suitcase",
-    "x": -258,
-    "y": -1
-  },
-  {
     "id": 451,
     "type": "supply",
     "title": "Supply Suitcase",
     "x": -254,
     "y": -16
-  },
-  {
-    "id": 452,
-    "type": "supply",
-    "title": "Supply Suitcase",
-    "x": -254,
-    "y": -5
-  },
-  {
-    "id": 453,
-    "type": "supply",
-    "title": "Supply Suitcase",
-    "x": -252,
-    "y": -11
-  },
-  {
-    "id": 454,
-    "type": "supply",
-    "title": "Supply Suitcase",
-    "x": -236,
-    "y": -23
   },
   {
     "id": 465,
@@ -3675,22 +3774,23 @@
     "id": 466,
     "type": "supply",
     "title": "Supply Suitcase",
-    "x": -49,
-    "y": 1451
+    "x": -50.78,
+    "y": 1453.28
   },
   {
     "id": 467,
     "type": "supply",
-    "title": "2x Supply Suitcases",
-    "x": -45,
-    "y": 1454
+    "title": "2x black/yellow Crate",
+    "description": "Between two tent up against the cliff wall.",
+    "x": -45.59,
+    "y": 1454.69
   },
   {
     "id": 468,
     "type": "supply",
-    "title": "Supply Suitcase",
-    "x": -50,
-    "y": 1453
+    "title": "Flare Case",
+    "x": -49.97,
+    "y": 1452.19
   },
   {
     "id": 469,
@@ -3714,121 +3814,107 @@
     "y": 445
   },
   {
-    "id": 118,
-    "type": "dark-green-suitcase",
-    "title": "3x Ammo Suitcases",
-    "x": -435,
-    "y": 1589
-  },
-  {
     "id": 124,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -1119,
     "y": 1630
   },
   {
     "id": 129,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -1254,
     "y": 1395
   },
   {
-    "id": 595,
-    "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
-    "x": -1146,
-    "y": -234
-  },
-  {
     "id": 148,
     "type": "dark-green-suitcase",
-    "title": "2x Ammo Suitcases",
+    "title": "2x Ammo Cases",
     "x": -1726,
     "y": 62
   },
   {
     "id": 154,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -1612,
     "y": 490
   },
   {
     "id": 155,
     "type": "dark-green-suitcase",
-    "title": "2x Ammo Suitcases",
+    "title": "2x Ammo Cases",
     "x": -1249,
     "y": 217
   },
   {
     "id": 156,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -1218,
     "y": 662
   },
   {
     "id": 163,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -887,
     "y": 767
   },
   {
     "id": 164,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -844,
     "y": 1011
   },
   {
     "id": 166,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -1141,
     "y": 1127
   },
   {
     "id": 244,
     "type": "dark-green-suitcase",
-    "title": "2x Ammo Suitcases",
+    "title": "2x Ammo Cases",
     "x": -1322,
     "y": -490
   },
   {
     "id": 262,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -205,
     "y": 878
   },
   {
     "id": 263,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": 42,
     "y": 1371
   },
   {
     "id": 286,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": 1805,
     "y": -67
   },
   {
     "id": 287,
     "type": "dark-green-suitcase",
-    "title": "2x Ammo Suitcases",
+    "title": "2x Ammo Cases",
     "x": 1780,
     "y": -34
   },
   {
     "id": 320,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -486,
     "y": 9,
     "isUnderground": true,
@@ -3839,7 +3925,7 @@
   {
     "id": 322,
     "type": "dark-green-suitcase",
-    "title": "2x Ammo Suitcases",
+    "title": "2x Ammo Cases",
     "x": -518,
     "y": 11,
     "isUnderground": true,
@@ -3850,7 +3936,7 @@
   {
     "id": 323,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -563,
     "y": -65,
     "isUnderground": true,
@@ -3861,7 +3947,7 @@
   {
     "id": 324,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -564,
     "y": -98,
     "isUnderground": true,
@@ -3872,7 +3958,7 @@
   {
     "id": 337,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -1182,
     "y": 25,
     "isUnderground": true,
@@ -3881,72 +3967,44 @@
     ]
   },
   {
-    "id": 455,
-    "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
-    "x": -256,
-    "y": -16
-  },
-  {
-    "id": 456,
-    "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
-    "x": -258,
-    "y": -6
-  },
-  {
-    "id": 457,
-    "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
-    "x": -250,
-    "y": 1
-  },
-  {
-    "id": 458,
-    "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
-    "x": -238,
-    "y": -10
-  },
-  {
     "id": 470,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -238,
     "y": -9
   },
   {
     "id": 471,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -45,
     "y": 1453
   },
   {
     "id": 472,
-    "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
-    "x": -64,
-    "y": 1459
+    "type": "black-case",
+    "title": "Explosives Case",
+    "x": -64.72,
+    "y": 1459.47
   },
   {
     "id": 478,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -706,
     "y": 451
   },
   {
     "id": 479,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -707,
     "y": 457
   },
   {
     "id": 580,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -1133,
     "y": -282,
     "isUnderground": true
@@ -3954,7 +4012,7 @@
   {
     "id": 581,
     "type": "dark-green-suitcase",
-    "title": "Ammo Suitcase",
+    "title": "Ammo Case",
     "x": -1205,
     "y": -277,
     "isUnderground": true
@@ -3962,71 +4020,64 @@
   {
     "id": 119,
     "type": "orange-suitcase",
-    "title": "Flare Suitcase",
+    "title": "Flare Case",
     "x": -434,
     "y": 1597
   },
   {
     "id": 120,
     "type": "orange-suitcase",
-    "title": "Flare Suitcase",
-    "x": -422,
-    "y": 1496,
+    "title": "Flare Case",
+    "x": -422.13,
+    "y": 1496.44,
     "isUnderground": true
   },
   {
     "id": 125,
     "type": "orange-suitcase",
-    "title": "Flare Suitcase",
+    "title": "Flare Case",
     "x": -1360,
     "y": 1667
   },
   {
     "id": 131,
     "type": "orange-suitcase",
-    "title": "Flare Suitcase",
+    "title": "Flare Case",
     "x": -1651,
     "y": 1193
   },
   {
     "id": 134,
     "type": "orange-suitcase",
-    "title": "Flare Suitcase",
+    "title": "Flare Case",
     "x": -1436,
     "y": 1217
   },
   {
-    "id": 138,
-    "type": "orange-suitcase",
-    "title": "Flare Suitcase",
-    "x": -1148,
-    "y": -240
-  },
-  {
     "id": 149,
     "type": "orange-suitcase",
-    "title": "Flare Suitcase",
+    "title": "Flare Case",
     "x": -1723,
     "y": 57
   },
   {
     "id": 261,
     "type": "orange-suitcase",
-    "title": "Flare Suitcase",
+    "title": "Flare Case",
     "x": -808,
     "y": -216
   },
   {
     "id": 288,
     "type": "orange-suitcase",
-    "title": "Flare Suitcase",
+    "title": "Flare Case",
     "x": 1066,
     "y": -920
   },
   {
     "id": 321,
     "type": "orange-suitcase",
-    "title": "Flare Suitcase",
+    "title": "Flare Case",
     "x": -490,
     "y": 6,
     "isUnderground": true,
@@ -4037,7 +4088,7 @@
   {
     "id": 325,
     "type": "orange-suitcase",
-    "title": "Flare Suitcase",
+    "title": "Flare Case",
     "x": -566,
     "y": -98,
     "isUnderground": true,
@@ -4048,14 +4099,14 @@
   {
     "id": 331,
     "type": "orange-suitcase",
-    "title": "Flare Suitcase",
+    "title": "Flare Case",
     "x": -1093,
     "y": 84
   },
   {
     "id": 420,
     "type": "orange-suitcase",
-    "title": "Flare Suitcase",
+    "title": "Flare Case",
     "x": -150,
     "y": -418,
     "isUnderground": true
@@ -4063,7 +4114,7 @@
   {
     "id": 421,
     "type": "orange-suitcase",
-    "title": "Flare Suitcase",
+    "title": "Flare Case",
     "x": -42,
     "y": -344,
     "isUnderground": true
@@ -4071,301 +4122,332 @@
   {
     "id": 471,
     "type": "orange-suitcase",
-    "title": "Flare Suitcase",
+    "title": "Flare Case",
     "x": -710,
     "y": 461
   },
   {
+    "id": 13333,
+    "type": "wooden-crate",
+    "title": "5x Wood Crates",
+    "x": -572.58,
+    "y": 1380.27
+  },
+  {
+    "id": 13334,
+    "type": "wooden-crate",
+    "title": "4x Wood Crates",
+    "description": "At the bottom of a climb down rope.",
+    "x": -615.34,
+    "y": 1412.45
+  },
+  {
+    "id": 13335,
+    "type": "wooden-crate",
+    "title": "4x Wood Crates",
+    "description": "At the end of a downward dead end tunnel.",
+    "x": -631.80,
+    "y": 1422.27
+  },
+  {
+    "id": 13336,
+    "type": "wooden-crate",
+    "title": "Wood Crate",
+    "description": "Just before the breakable wood door with a cross.",
+    "x": -646.30,
+    "y": 1384.69
+  },
+  {
     "id": 130,
     "type": "wooden-crate",
-    "title": "3x Crates",
+    "title": "3x Wood Crates",
     "x": -1775,
     "y": 1365
   },
   {
     "id": 135,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -1467,
     "y": 1111
   },
   {
     "id": 136,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -1369,
     "y": 803
   },
   {
     "id": 147,
     "type": "wooden-crate",
-    "title": "3x Crates",
+    "title": "3x Wood Crates",
     "x": -1639,
     "y": -170
   },
   {
     "id": 160,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -1215,
     "y": 651
   },
   {
     "id": 165,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -843,
     "y": 1016
   },
   {
     "id": 167,
     "type": "wooden-crate",
-    "title": "3x Crates",
+    "title": "3x Wood Crates",
     "x": -1079,
     "y": 1269
   },
   {
     "id": 168,
     "type": "wooden-crate",
-    "title": "4x Crates",
+    "title": "4x Wood Crates",
     "x": -914,
     "y": 1450
   },
   {
     "id": 171,
     "type": "wooden-crate",
-    "title": "3x Crates",
+    "title": "3x Wood Crates",
     "x": -1353,
     "y": -835
   },
   {
     "id": 172,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -1130,
     "y": -1106
   },
   {
     "id": 173,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -1138,
     "y": -1092
   },
   {
     "id": 193,
     "type": "wooden-crate",
-    "title": "3x Crates",
+    "title": "3x Wood Crates",
     "x": 1747,
     "y": -1209
   },
   {
     "id": 194,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": 1734,
     "y": -1219
   },
   {
     "id": 195,
     "type": "wooden-crate",
-    "title": "4x Crates",
+    "title": "4x Wood Crates",
     "x": 931,
     "y": -389
   },
   {
     "id": 196,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": 1361,
     "y": -163
   },
   {
     "id": 197,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": 1352,
     "y": -156
   },
   {
     "id": 198,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": 1397,
     "y": -121
   },
   {
     "id": 199,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": 1853,
     "y": 126
   },
   {
     "id": 200,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": 1782,
     "y": -37
   },
   {
     "id": 201,
     "type": "wooden-crate",
-    "title": "wooden-crate",
+    "title": "Wood Crate",
     "x": 1808,
     "y": -60
   },
   {
     "id": 202,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": 1804,
     "y": -78
   },
   {
     "id": 203,
     "type": "wooden-crate",
-    "title": "wooden-crate",
+    "title": "Wood Crate",
     "x": 1465,
     "y": 679
   },
   {
     "id": 205,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": 1506,
     "y": 670
   },
   {
     "id": 206,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": 1503,
     "y": 684
   },
   {
     "id": 207,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": 1570,
     "y": 894
   },
   {
     "id": 208,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": 33,
     "y": 1374
   },
   {
     "id": 209,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": 50,
     "y": 1371
   },
   {
     "id": 210,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": 260,
     "y": 1467
   },
   {
     "id": 211,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": 251,
     "y": 1490
   },
   {
     "id": 212,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -771,
     "y": 762
   },
   {
     "id": 213,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -758,
     "y": 755
   },
   {
     "id": 214,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -478,
     "y": 482
   },
   {
     "id": 215,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -1141,
     "y": 444
   },
   {
     "id": 217,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -1325,
     "y": -488
   },
   {
     "id": 218,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -967,
     "y": -792
   },
   {
     "id": 219,
     "type": "wooden-crate",
-    "title": "4x Crates",
+    "title": "4x Wood Crates",
     "x": -610,
     "y": -1042
   },
   {
     "id": 220,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -1155,
     "y": -1202
   },
   {
     "id": 221,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -1775,
     "y": -1603
   },
   {
     "id": 222,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -1566,
     "y": -1655
   },
   {
     "id": 240,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -1571,
     "y": -821
   },
   {
     "id": 241,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -1138,
     "y": -1082
   },
   {
     "id": 242,
     "type": "wooden-crate",
-    "title": "3x Crates",
+    "title": "3x Wood Crates",
     "x": -1153,
     "y": -1203
   },
@@ -4379,42 +4461,42 @@
   {
     "id": 289,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": 1375,
     "y": -690
   },
   {
     "id": 290,
     "type": "wooden-crate",
-    "title": "3x Crates",
+    "title": "3x Wood Crates",
     "x": 1390,
     "y": -699
   },
   {
     "id": 291,
     "type": "wooden-crate",
-    "title": "Crate",
+    "title": "Wood Crate",
     "x": 1061,
     "y": -928
   },
   {
     "id": 292,
     "type": "wooden-crate",
-    "title": "Crate",
+    "title": "Wood Crate",
     "x": 1478,
     "y": 707
   },
   {
     "id": 293,
     "type": "wooden-crate",
-    "title": "Crate",
+    "title": "Wood Crate",
     "x": 1424,
     "y": 851
   },
   {
     "id": 294,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": 1430,
     "y": 834
   },
@@ -4442,35 +4524,35 @@
   {
     "id": 459,
     "type": "wooden-crate",
-    "title": "Crate",
+    "title": "Wood Crate",
     "x": -1152,
     "y": 455
   },
   {
     "id": 460,
     "type": "wooden-crate",
-    "title": "Crate",
+    "title": "Wood Crate",
     "x": -747,
     "y": 28
   },
   {
     "id": 461,
     "type": "wooden-crate",
-    "title": "3x Crates",
-    "x": -112,
-    "y": -103
+    "title": "3x Wood Crates",
+    "x": -112.66,
+    "y": -103.94
   },
   {
     "id": 577,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": -1006,
     "y": -391
   },
   {
     "id": 578,
     "type": "wooden-crate",
-    "title": "Crate",
+    "title": "Wood Crate",
     "x": -518,
     "y": -598,
     "isUnderground": true
@@ -4478,7 +4560,7 @@
   {
     "id": 579,
     "type": "wooden-crate",
-    "title": "5x Crates",
+    "title": "5x Wood Crates",
     "x": -507,
     "y": -618,
     "isUnderground": true
@@ -4486,7 +4568,7 @@
   {
     "id": 832,
     "type": "wooden-crate",
-    "title": "2x Crates",
+    "title": "2x Wood Crates",
     "x": 625,
     "y": -1661
   },
@@ -4736,7 +4818,7 @@
     "x": -530.49,
     "y": 120.76,
     "tp": "goto TactiCoolDeadH (1)",
-    "wiki":"https://sonsoftheforest.wiki.gg/wiki/Locations#Mercenaries_Corpses"
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Mercenaries_Corpses"
   },
   {
     "id": 355,
@@ -6187,18 +6269,6 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Shotgun_Rail"
   },
   {
-    "id": 341,
-    "type": "shotgun-rail",
-    "title": "Shotgun Rail",
-    "description": "Near Machete",
-    "x": -47.62,
-    "y": 1454.07,
-    "screenshot": "shotgun_rail_1.webp",
-    "tp": "goto ShtogunRailPickup",
-    "itemid": "additem 346",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Shotgun_Rail"
-  },
-  {
     "id": 432,
     "type": "shotgun-rail-bunker",
     "title": "Shotgun Rail",
@@ -6223,7 +6293,7 @@
     "y": 480.42,
     "isUnderground": true,
     "screenshot": "shotgun_rail_4.webp",
-    "warning":"Teleport after entering the bunker!",
+    "warning": "Teleport after entering the bunker!",
     "tp": "goto ShotgunRailPickup",
     "itemid": "additem 346",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Shotgun_Rail"
@@ -6901,6 +6971,7 @@
     "id": 378,
     "type": "radio",
     "title": "Radio",
+    "description": "Radio is hanging from the ceiling with a smashable laptop on the floor.",
     "x": -598.86,
     "y": 1448.47,
     "isUnderground": true,
@@ -6981,13 +7052,22 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
   {
+    "id": 118,
+    "type": "poi",
+    "title": "Broken Sleds",
+    "description": "Broken sleds with loose items.",
+    "x": -160.25,
+    "y": -91.75,
+    "screenshot": "broken_sled_ice.webp"
+  },
+  {
     "id": 597,
     "type": "lake",
     "title": "Frozen Lake",
     "x": -162.53,
     "y": -87.16,
     "tp": "goto FrozenLake",
-    "tg":"togglego FrozenLake"
+    "tg": "togglego FrozenLake"
   },
   {
     "id": 598,
