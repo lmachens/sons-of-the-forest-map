@@ -115,15 +115,21 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
     const mapLocationId = getMapLocationId();
 
     getMapLocations().forEach((mapLocation) => {
-      const type = types.find((type) => type.value === mapLocation.type)!;
+      const type = types.find((type) => type.value === mapLocation.type);
+      if (!type) {
+        throw new Error(`Type not found for location ${mapLocation.id}`);
+      }
 
       let isVisible = mapLocation.id === mapLocationId;
       if (!isVisible && type.filter !== undefined) {
         if (Array.isArray(type.filter)) {
-          isVisible = type.filter.some(filter => !deselectedFilters.includes(filter));
+          isVisible = type.filter.some(
+            (filter) => !deselectedFilters.includes(filter)
+          );
         } else {
           isVisible = !deselectedFilters.includes(type.filter);
-        }}
+        }
+      }
 
       const marker = latestMarkers.find(
         (marker) => marker.options.id === mapLocation.id
@@ -256,8 +262,12 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       types.find((type) => type.value === mapLocation.type) || types[0];
     let primaryFilterColor = "#ffffff";
     if (type.filter) {
-      const primaryFilterValue = Array.isArray(type.filter) ? type.filter[0] : type.filter;
-      const primaryFilter = filters.find(filter => filter.value === primaryFilterValue);
+      const primaryFilterValue = Array.isArray(type.filter)
+        ? type.filter[0]
+        : type.filter;
+      const primaryFilter = filters.find(
+        (filter) => filter.value === primaryFilterValue
+      );
       if (primaryFilter) {
         primaryFilterColor = primaryFilter.color;
       }
