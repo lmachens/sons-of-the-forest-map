@@ -32,6 +32,7 @@ import { useAccountStore } from "./lib/stores/account";
 import { updateVersion } from "./lib/version";
 import { initWakelock } from "./lib/wakelock";
 import { closeWindow, getCurrentWindow } from "./lib/windows";
+import { getCustomNodes } from "./lib/nodes";
 
 console.log("Init main");
 
@@ -205,6 +206,49 @@ CustomNode({
   getLastPosition,
   onAdd: refresh,
 });
+document
+  .querySelector<HTMLButtonElement>("#backup_custom_node")!
+  .addEventListener("click", () => {
+    const customNodes = getCustomNodes();
+    const folder = overwolf.io.paths.documents + "\\sons-of-the-forest-map";
+    const fileName = `Discovered_Nodes_${Date.now()}.json`;
+    overwolf.io.writeFileContents(
+      `${folder}\\${fileName}`,
+      JSON.stringify(customNodes),
+      "UTF8" as overwolf.io.enums.eEncoding.UTF8,
+      true,
+      () => console.log
+    );
+    overwolf.utils.openWindowsExplorer(folder, console.log);
+  });
+document
+  .querySelector<HTMLButtonElement>("#restore_custom_node")!
+  .addEventListener("click", async () => {
+    const file = await openFileOrFiles();
+    if (!file) {
+      return;
+    }
+    const reader = new FileReader();
+    reader.addEventListener("load", (loadEvent) => {
+      const text = loadEvent.target?.result;
+      if (!text || typeof text !== "string") {
+        return;
+      }
+      try {
+        let customNodes = JSON.parse(text);
+        if (!Array.isArray(customNodes)) {
+          customNodes = [];
+        }
+
+        setCustomNodes(customNodes);
+        refresh();
+      } catch (error) {
+        // Do nothing
+      }
+    });
+    reader.readAsText(file);
+  });
+
 ContextMenu({ map, onAdd: refresh });
 Filters({ onChange: refresh });
 JoinCommunity();

@@ -15,6 +15,8 @@ import { loadDictionary, translateHTML } from "./lib/i18n";
 import { initPlausible } from "./lib/plausible";
 import { useAccountStore } from "./lib/stores/account";
 import { initWakelock } from "./lib/wakelock";
+import { getCustomNodes, setCustomNodes } from "./lib/nodes";
+import { openFileOrFiles, saveFile } from "./lib/storage";
 
 let lastLocation = { x: 0, y: 0, z: 0 };
 let lastRotation = 0;
@@ -42,6 +44,43 @@ loadDictionary().then(() => {
     getLastPosition,
     onAdd: refresh,
   });
+  document
+    .querySelector<HTMLButtonElement>("#backup_custom_node")!
+    .addEventListener("click", () => {
+      const customNodes = getCustomNodes();
+      const fileName = `Discovered_Nodes_${Date.now()}.json`;
+      const blob = new Blob([JSON.stringify(customNodes)], {
+        type: "text/json",
+      });
+      saveFile(blob, fileName);
+    });
+  document
+    .querySelector<HTMLButtonElement>("#restore_custom_node")!
+    .addEventListener("click", async () => {
+      const file = await openFileOrFiles();
+      if (!file) {
+        return;
+      }
+      const reader = new FileReader();
+      reader.addEventListener("load", (loadEvent) => {
+        const text = loadEvent.target?.result;
+        if (!text || typeof text !== "string") {
+          return;
+        }
+        try {
+          let customNodes = JSON.parse(text);
+          if (!Array.isArray(customNodes)) {
+            customNodes = [];
+          }
+          setCustomNodes(customNodes);
+          refresh();
+        } catch (error) {
+          // Do nothing
+        }
+      });
+      reader.readAsText(file);
+    });
+
   ContextMenu({ map, onAdd: refresh });
   Filters({ onChange: refresh });
 
