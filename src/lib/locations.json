@@ -1,5 +1,5 @@
-[ 
- {
+[
+  {
     "id": 1,
     "type": "spawnPoint",
     "title": "Mountain Crash Site",
@@ -301,7 +301,7 @@
     "y": 1477.25,
     "isUnderground": true,
     "screenshot": "rebreather.webp",
-    "warning":"Double use the command!",
+    "warning": "Double use the command!",
     "tp": "goto RebreatherPickup",
     "itemid": "additem 444",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Rebreather"
@@ -404,7 +404,7 @@
       15
     ],
     "screenshot": "maintenance_card.webp",
-    "warning":"Teleport after entering the bunker!",
+    "warning": "Teleport after entering the bunker!",
     "tp": "goto KeyCardMaintenancePickup",
     "itemid": "additem 566",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Maintenance_Keycard"
@@ -460,7 +460,7 @@
     "itemid": "additem 365",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Crossbow"
   },
-  { 
+  {
     "id": 21,
     "type": "keycard",
     "title": "Guest Card",
@@ -537,7 +537,7 @@
     "y": 1048.70,
     "isUnderground": true,
     "screenshot": "revolver.webp",
-    "warning":"Teleport after entering the bunker!",
+    "warning": "Teleport after entering the bunker!",
     "tp": "goto RevolverPickup",
     "itemid": "additem 386",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Revolver"
@@ -734,7 +734,7 @@
     "x": 1247.45,
     "y": 304.51,
     "isUnderground": true,
-    "warning":"Double use the command!",
+    "warning": "Double use the command!",
     "tp": "goto ArtifactPieceFPickup",
     "itemid": "additem 708",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Artifact"
@@ -1527,7 +1527,7 @@
     "description": "Camp site with 2 tents",
     "x": -47.63,
     "y": 1456,
-    "screenshot": "black_tents_03.webp"
+    "screenshot": "black_tents_03.webp",
     "items": [
       6,
       881,
@@ -1926,7 +1926,7 @@
     "id": 82,
     "type": "outfit-bunker",
     "title": "Virginia Leather Suit",
-    "description":"On 2nd bunker floor",
+    "description": "On 2nd bunker floor",
     "x": 1144.33,
     "y": -640.11,
     "isUnderground": true,
@@ -2110,7 +2110,7 @@
     "y": 504.56,
     "isUnderground": true,
     "screenshot": "novel_c.webp",
-    "warning":"Teleport after entering the bunker!",
+    "warning": "Teleport after entering the bunker!",
     "tp": "goto NovelCPickup",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Books#Rescued_Book"
   },
@@ -2594,7 +2594,7 @@
     "requirements": [
       17
     ],
-    "screenshot": "puffton_email_1.webp", 
+    "screenshot": "puffton_email_1.webp",
     "warning": "Double use the command!",
     "tp": "goto PufftonEmailAPickup"
   },
@@ -2678,7 +2678,7 @@
       11
     ],
     "screenshot": "blueprint_item_plating_machine.webp",
-    "warning":"Teleport after entering the cave!",
+    "warning": "Teleport after entering the cave!",
     "tp": "goto BlueprintItemPlatingPickup"
   },
   {
@@ -2699,7 +2699,7 @@
     "y": 1388.92,
     "isUnderground": true,
     "screenshot": "blueprint_powered_cross.webp",
-    "warning":"Teleport after entering the cave!",
+    "warning": "Teleport after entering the cave!",
     "tp": "goto BlueprintPoweredCrossPickup",
     "itemid": "468",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Cross"
@@ -3081,7 +3081,7 @@
     "title": "Golf Cart 11",
     "x": -928.46,
     "y": -995.35,
-    "warning":"Crouch after teleporting",
+    "warning": "Crouch after teleporting",
     "tp": "goto WorldGolfCart11"
   },
   {
@@ -3280,7 +3280,7 @@
     "x": 1024.65,
     "y": 1216.186,
     "screenshot": "putter_5.webp",
-    "tp":"goto 1025,1 139,1 1215,4",
+    "tp": "goto 1025,1 139,1 1215,4",
     "itemid": "additem 525",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Putter"
   },
@@ -3802,9 +3802,9 @@
     "id": 467,
     "type": "supply",
     "title": "2x black/yellow Crate",
-    "description": "Between two tent up against the cliff wall."
+    "description": "Between two tent up against the cliff wall.",
     "x": -45.59,
-    "y": 1454.69
+    "y": 1454.69,
     "screenshot": "black_yellow_crate.webp"
   },
   {
@@ -3812,7 +3812,7 @@
     "type": "supply",
     "title": "Flare Case",
     "x": -49.97,
-    "y": 1452.19
+    "y": 1452.19,
     "screenshot": "red_case.webp"
   },
   {
@@ -4201,7 +4201,7 @@
     "id": 13334,
     "type": "wooden-crate",
     "title": "4x Wood Crates",
-    "description": "At the bottom of a climb down rope."
+    "description": "At the bottom of a climb down rope.",
     "x": -615.34,
     "y": 1412.45,
     "screenshot": "wood_crate.webp"
@@ -4210,7 +4210,7 @@
     "id": 13335,
     "type": "wooden-crate",
     "title": "4x Wood Crates",
-    "description": "At the end of a downward dead end tunnel."
+    "description": "At the end of a downward dead end tunnel.",
     "x": -631.80,
     "y": 1422.27,
     "screenshot": "wood_crate.webp"
@@ -4219,7 +4219,7 @@
     "id": 13336,
     "type": "wooden-crate",
     "title": "Wood Crate",
-    "description": "Just before the breakable wood door with a cross."
+    "description": "Just before the breakable wood door with a cross.",
     "x": -646.30,
     "y": 1384.69,
     "screenshot": "wood_crate.webp"
@@ -4941,7 +4941,7 @@
     "x": -530.49,
     "y": 120.76,
     "tp": "goto TactiCoolDeadH (1)",
-    "wiki":"https://sonsoftheforest.wiki.gg/wiki/Locations#Mercenaries_Corpses"
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Mercenaries_Corpses"
   },
   {
     "id": 355,
@@ -6416,7 +6416,7 @@
     "y": 480.42,
     "isUnderground": true,
     "screenshot": "shotgun_rail_4.webp",
-    "warning":"Teleport after entering the bunker!",
+    "warning": "Teleport after entering the bunker!",
     "tp": "goto ShotgunRailPickup",
     "itemid": "additem 346",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Shotgun_Rail"
@@ -7094,7 +7094,7 @@
     "id": 378,
     "type": "radio",
     "title": "Radio",
-    "description": "Radio is hanging from the ceiling with a smashable laptop on the floor."
+    "description": "Radio is hanging from the ceiling with a smashable laptop on the floor.",
     "x": -598.86,
     "y": 1448.47,
     "isUnderground": true,
@@ -7178,7 +7178,7 @@
     "id": 118,
     "type": "poi",
     "title": "Broken Sleds",
-    "description": "Broken sleds with loose items."
+    "description": "Broken sleds with loose items.",
     "x": -160.25,
     "y": -91.75,
     "screenshot": "broken_sled_ice.webp"
@@ -7190,7 +7190,7 @@
     "x": -162.53,
     "y": -87.16,
     "tp": "goto FrozenLake",
-    "tg":"togglego FrozenLake"
+    "tg": "togglego FrozenLake"
   },
   {
     "id": 598,
