@@ -855,5 +855,7 @@
   "2x Wood Crates": "2x skrzynie z drewna",
   "Radio is hanging from the ceiling with a smashable laptop on the floor.": "Radio wisi z sufitu z rozbitym laptopem na podłodze.",
   "Broken Sleds": "Złamane sanki",
-  "Broken sleds with loose items.": "Złamane sanki z luźnymi przedmiotami."
+  "Broken sleds with loose items.": "Złamane sanki z luźnymi przedmiotami.",
+  "Backup": "Kopia zapasowa",
+  "Restore": "Przywrócić"
 }
