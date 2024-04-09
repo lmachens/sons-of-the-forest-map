@@ -76,7 +76,7 @@
   {
     "id": 2,
     "type": "spawnPoint",
-    "title": "Beach Crash Site",
+    "title": "Ocean Crash Site",
     "description": "Spawn Point",
     "x": -426.28,
     "y": 1601.90,
@@ -87,16 +87,74 @@
   {
     "id": 20001,
     "type": "supply",
-    "title": "black/yellow crate",
-    "x": -436.28,
-    "y": 1594.22
+    "title":"Black/yellow crate",
+    "description":"Part of ocean crash site",
+    "type":"supply",
+    "x":-437.162628,
+    "y":1594.540283
   },
   {
     "id": 20002,
     "type": "supply",
     "title": "black/yellow crate",
+    "description": "Part of the ocean crash site.",
     "x": -430.5,
     "y": 1589
+  },
+  {
+    "id": 20003,
+    "title":"Ammo case",
+    "description":"Tucked into the rocks at the waters edge. Part of ocean crash site set",
+    "type":"dark-green-suitcase",
+    "x":-454.968506,
+    "y":1607.327271
+  },
+  {
+    "id": 20004,
+    "title":"Ammo case",
+    "description":"Part of the ocean crash site",
+    "type":"dark-green-suitcase",
+    "x":-433.130127,
+    "y":1594.998047
+  },
+  {
+    "id": 20005,
+    "type": "supply",
+    "title": "Red Case",
+    "description":"Part of the ocean crash site",
+    "x": -425.19,
+    "y": 1597.16
+  },
+  {
+    "id": 20006,
+    "type": "orange-suitcase",
+    "title": "Flare Case",
+    "x": -434,
+    "y": 1597
+  },
+  {
+    "id": 20007,
+    "title":"Red Case",
+    "description":"part of ocean crash site set",
+    "type":"dark-green-suitcase",
+    "x":-421.464447,
+    "y":1590.869019
+  },
+  {
+    "id": 20008,
+    "title":"Explosives case",
+    "description":"Part of the ocean crash site",
+    "type":"dark-green-suitcase",
+    "x":-434.39325,
+    "y":1589.469727
+  },
+  {
+    "id": 20009,
+    "title":"Ammo case",
+    "description":"Part of the ocean crash site",
+    "type":"dark-green-suitcase",
+    "x":-432.111664,
+    "y":1585.65332
   },
   {
     "id": 3,
@@ -3295,13 +3353,6 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Helicopter_Crash_Sites"
   },
   {
-    "id": 116,
-    "type": "supply",
-    "title": "Red Case",
-    "x": -425.19,
-    "y": 1597.16
-  },
-  {
     "id": 117,
     "type": "supply",
     "title": "Supply Suitcase",
@@ -4016,13 +4067,6 @@
     "x": -1205,
     "y": -277,
     "isUnderground": true
-  },
-  {
-    "id": 119,
-    "type": "orange-suitcase",
-    "title": "Flare Case",
-    "x": -434,
-    "y": 1597
   },
   {
     "id": 120,
