@@ -45,7 +45,7 @@
   {
     "id": 10005,
     "type": "supply",
-    "title": "black/yellow crate",
+    "title": "Black and Yellow Crate",
     "description": "Part of the mountain crash site.",
     "x": -254.50,
     "y": -6.03
@@ -61,7 +61,7 @@
   {
     "id": 10007,
     "type": "supply",
-    "title": "black/yellow crate",
+    "title": "Black and Yellow Crate",
     "description": "Part of the mountain crash site.",
     "x": -258.44,
     "y": -1.81
@@ -87,7 +87,7 @@
   {
     "id": 20001,
     "type": "supply",
-    "title":"Black/yellow crate",
+    "title":"Black and Yellow Crate",
     "description":"Part of ocean crash site",
     "x":-437.162628,
     "y":1594.540283
@@ -95,7 +95,7 @@
   {
     "id": 20002,
     "type": "supply",
-    "title": "black/yellow crate",
+    "title": "Black and Yellow Crate",
     "description": "Part of the ocean crash site.",
     "x": -430.5,
     "y": 1589
@@ -202,7 +202,7 @@
   {
     "id": 30005,
     "type": "supply",
-    "title": "black/yellow Crate",
+    "title": "Black and Yellow Crate",
     "description": "Part of the forest crash site.",
     "x": -1139,
     "y": -236
@@ -218,7 +218,7 @@
   {
     "id": 30007,
     "type": "supply",
-    "title": "black/yellow Crate",
+    "title": "Black and Yellow Crate",
     "description": "Part of the forest crash site.",
     "x": -1150.50,
     "y": -233.63
@@ -226,7 +226,7 @@
   {
     "id": 30008,
     "type": "supply",
-    "title": "black/yellow Crate",
+    "title": "Black and Yellow Crate",
     "description": "Part of the forest crash site.",
     "x": -1153.13,
     "y": -233.50
@@ -3851,7 +3851,7 @@
   {
     "id": 467,
     "type": "supply",
-    "title": "2x black/yellow Crate",
+    "title": "2x Black and Yellow Crates",
     "description": "Between two tent up against the cliff wall.",
     "x": -45.59,
     "y": 1454.69
