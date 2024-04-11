@@ -20,7 +20,7 @@
   },
   {
     "id": 10002,
-    "type": "dark-green-suitcase",
+    "type": "utility-case",
     "title": "Explosives Case",
     "description": "Part of the mountain crash site.",
     "x": -238.50,
@@ -44,7 +44,7 @@
   },
   {
     "id": 10005,
-    "type": "supply",
+    "type": "utility-crate",
     "title": "Black and Yellow Crate",
     "description": "Part of the mountain crash site.",
     "x": -254.50,
@@ -60,7 +60,7 @@
   },
   {
     "id": 10007,
-    "type": "supply",
+    "type": "utility-crate",
     "title": "Black and Yellow Crate",
     "description": "Part of the mountain crash site.",
     "x": -258.44,
@@ -86,7 +86,7 @@
   },
   {
     "id": 20001,
-    "type": "supply",
+    "type": "utility-crate",
     "title":"Black and Yellow Crate",
     "description":"Part of ocean crash site",
     "x":-437.162628,
@@ -94,7 +94,7 @@
   },
   {
     "id": 20002,
-    "type": "supply",
+    "type": "utility-crate",
     "title": "Black and Yellow Crate",
     "description": "Part of the ocean crash site.",
     "x": -430.5,
@@ -142,7 +142,7 @@
   },
   {
     "id": 20008,
-    "type":"dark-green-suitcase",
+    "type":"utility-case",
     "title":"Explosives case",
     "description":"Part of the ocean crash site",
     "x":-434.39325,
@@ -177,7 +177,7 @@
   },
   {
     "id": 30002,
-    "type": "supply",
+    "type": "utility-case",
     "title": "Explosives Case",
     "description": "Part of the forest crash site.",
     "x": -1146.81,
@@ -201,7 +201,7 @@
   },
   {
     "id": 30005,
-    "type": "supply",
+    "type": "utility-crate",
     "title": "Black and Yellow Crate",
     "description": "Part of the forest crash site.",
     "x": -1139,
@@ -217,7 +217,7 @@
   },
   {
     "id": 30007,
-    "type": "supply",
+    "type": "utility-crate",
     "title": "Black and Yellow Crate",
     "description": "Part of the forest crash site.",
     "x": -1150.50,
@@ -225,7 +225,7 @@
   },
   {
     "id": 30008,
-    "type": "supply",
+    "type": "utility-crate",
     "title": "Black and Yellow Crate",
     "description": "Part of the forest crash site.",
     "x": -1153.13,
@@ -3364,7 +3364,7 @@
   },
   {
     "id": 121,
-    "type": "supply",
+    "type": "utility-crate",
     "title": "2x Black and Yellow Crates",
     "x": -651.69,
     "y": 1488
@@ -3470,10 +3470,10 @@
   },
   {
     "id": 152,
-    "type": "supply",
-    "title": "2x Supply Suitcases",
-    "x": -1606,
-    "y": 488
+    "type":"utility-crate",
+    "title":"2x Black and yellow Crates",
+    "x":-1606.791504,
+    "y":488.999451
   },
   {
     "id": 153,
@@ -3569,14 +3569,14 @@
   },
   {
     "id": 265,
-    "type": "supply",
+    "type": "utility-crate",
     "title": "Black and Yellow Crate",
     "x":-654.920471,
     "y":1497.939941
   },
   {
     "id": 266,
-    "type":"supply",
+    "type":"utility-crate",
     "title":"Black and Yellow Crate",
     "description":"",
     "x":-1099.905884,
@@ -3857,7 +3857,7 @@
   },
   {
     "id": 467,
-    "type": "supply",
+    "type": "utility-crate",
     "title": "2x Black and Yellow Crates",
     "description": "Between two tent up against the cliff wall.",
     "x": -45.59,
@@ -3922,10 +3922,10 @@
   },
   {
     "id": 154,
-    "type": "dark-green-suitcase",
-    "title": "Ammo Case",
-    "x": -1612,
-    "y": 490
+    "type": "utility-case",
+    "title": "Explosives Case",
+    "x":-1612.600098,
+    "y":490.338074
   },
   {
     "id": 155,
@@ -3957,7 +3957,7 @@
   },
   {
     "id": 166,
-    "type": "dark-green-suitcase",
+    "type": "utility-case",
     "title": "Explosives Case",
     "x": -1141,
     "y": 1127
@@ -5352,8 +5352,8 @@
     "id": 396,
     "type": "grave",
     "title": "Grave",
-    "x": -1595,
-    "y": 763,
+    "x":-1596.21814,
+    "y":763.426147,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Gravesites"
   },
   {
@@ -6606,6 +6606,14 @@
     "screenshot": "cooking_pot_8.webp",
     "itemid": "additem 517",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Cooking_Pot"
+  },
+  {
+    "id":1712816841957,
+    "type":"cooking-pot",
+    "title":"Cooking Pot",
+    "description":"",
+    "x":-1609.150513,
+    "y":488.138885
   },
   {
     "id": 884,
