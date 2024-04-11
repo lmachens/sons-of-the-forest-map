@@ -20,7 +20,7 @@
   },
   {
     "id": 10002,
-    "type": "dark-green-suitcase",
+    "type": "utility-case",
     "title": "Explosives Case",
     "description": "Part of the mountain crash site.",
     "x": -238.50,
@@ -44,8 +44,8 @@
   },
   {
     "id": 10005,
-    "type": "supply",
-    "title": "black/yellow crate",
+    "type": "utility-crate",
+    "title": "Black and Yellow Crate",
     "description": "Part of the mountain crash site.",
     "x": -254.50,
     "y": -6.03
@@ -60,8 +60,8 @@
   },
   {
     "id": 10007,
-    "type": "supply",
-    "title": "black/yellow crate",
+    "type": "utility-crate",
+    "title": "Black and Yellow Crate",
     "description": "Part of the mountain crash site.",
     "x": -258.44,
     "y": -1.81
@@ -76,7 +76,7 @@
   {
     "id": 2,
     "type": "spawnPoint",
-    "title": "Beach Crash Site",
+    "title": "Ocean Crash Site",
     "description": "Spawn Point",
     "x": -426.28,
     "y": 1601.90,
@@ -86,17 +86,75 @@
   },
   {
     "id": 20001,
-    "type": "supply",
-    "title": "black/yellow crate",
-    "x": -436.28,
-    "y": 1594.22
+    "type": "utility-crate",
+    "title": "Black and Yellow Crate",
+    "description": "Part of ocean crash site",
+    "x": -437.162628,
+    "y": 1594.540283
   },
   {
     "id": 20002,
-    "type": "supply",
-    "title": "black/yellow crate",
+    "type": "utility-crate",
+    "title": "Black and Yellow Crate",
+    "description": "Part of the ocean crash site.",
     "x": -430.5,
     "y": 1589
+  },
+  {
+    "id": 20003,
+    "type": "dark-green-suitcase",
+    "title": "Ammo case",
+    "description": "Tucked into the rocks at the waters edge. Part of ocean crash site set",
+    "x": -454.968506,
+    "y": 1607.327271
+  },
+  {
+    "id": 20004,
+    "type": "dark-green-suitcase",
+    "title": "Ammo case",
+    "description": "Part of the ocean crash site",
+    "x": -433.130127,
+    "y": 1594.998047
+  },
+  {
+    "id": 20005,
+    "type": "supply",
+    "title": "Red Case",
+    "description": "Part of the ocean crash site",
+    "x": -425.19,
+    "y": 1597.16
+  },
+  {
+    "id": 20006,
+    "type": "orange-suitcase",
+    "title": "Flare Case",
+    "description": "Part of the ocean crash site",
+    "x": -434,
+    "y": 1597
+  },
+  {
+    "id": 20007,
+    "type": "dark-green-suitcase",
+    "title": "Red Case",
+    "description": "part of ocean crash site set",
+    "x": -421.464447,
+    "y": 1590.869019
+  },
+  {
+    "id": 20008,
+    "type": "utility-case",
+    "title": "Explosives case",
+    "description": "Part of the ocean crash site",
+    "x": -434.39325,
+    "y": 1589.469727
+  },
+  {
+    "id": 20009,
+    "type": "dark-green-suitcase",
+    "title": "Ammo case",
+    "description": "Part of the ocean crash site",
+    "x": -432.111664,
+    "y": 1585.65332
   },
   {
     "id": 3,
@@ -119,7 +177,7 @@
   },
   {
     "id": 30002,
-    "type": "supply",
+    "type": "utility-case",
     "title": "Explosives Case",
     "description": "Part of the forest crash site.",
     "x": -1146.81,
@@ -143,8 +201,8 @@
   },
   {
     "id": 30005,
-    "type": "supply",
-    "title": "black/yellow Crate",
+    "type": "utility-crate",
+    "title": "Black and Yellow Crate",
     "description": "Part of the forest crash site.",
     "x": -1139,
     "y": -236
@@ -159,16 +217,16 @@
   },
   {
     "id": 30007,
-    "type": "supply",
-    "title": "black/yellow Crate",
+    "type": "utility-crate",
+    "title": "Black and Yellow Crate",
     "description": "Part of the forest crash site.",
     "x": -1150.50,
     "y": -233.63
   },
   {
     "id": 30008,
-    "type": "supply",
-    "title": "black/yellow Crate",
+    "type": "utility-crate",
+    "title": "Black and Yellow Crate",
     "description": "Part of the forest crash site.",
     "x": -1153.13,
     "y": -233.50
@@ -1315,6 +1373,14 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Bunkers#Food_and_Dining_Bunker"
   },
   {
+    "id": 1712715396888,
+    "type": "cave",
+    "title": "Cave",
+    "description": "",
+    "x": -674.78009,
+    "y": 1149.506348
+  },
+  {
     "id": 63,
     "type": "abandoned-camp-n",
     "title": "Torn Tents 01",
@@ -1331,9 +1397,9 @@
     "id": 61,
     "type": "abandoned-camp-n",
     "title": "Torn Tents 02",
-    "description": "Camp site with 2 tents",
-    "x": -752.56,
-    "y": 1278.54,
+    "description": "Camp site with 2 tents 1 grey crate 3 damaged laptops",
+    "x": -748.975769,
+    "y": 1277.4646,
     "tp": "goto -749,1 55,7 1277,1",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
@@ -1342,8 +1408,8 @@
     "type": "abandoned-camp-n",
     "title": "Torn Tents 03",
     "description": "Camp site with 2 tents",
-    "x": -1438.21,
-    "y": 1216.44,
+    "x": -1435.192627,
+    "y": 1214.059814,
     "tp": "goto -1435,6 93,5 1214,0",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
@@ -1352,8 +1418,8 @@
     "type": "abandoned-camp-n",
     "title": "Torn Tents 04",
     "description": "Camp site with 4 tents",
-    "x": -1655.25,
-    "y": 1185.98,
+    "x": -1651.407471,
+    "y": 1188.27832,
     "tp": "goto -1650,3 83,9 1188,9",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
@@ -1522,11 +1588,10 @@
     "id": 62,
     "type": "abandoned-camp-y",
     "title": "Orange Tent 01",
-    "description": "Camp site with 1 tent",
+    "description": "Camp site with 1 tent, mylar tarps, rope, noodles",
     "x": -1121,
     "y": 1628,
     "items": [
-      570,
       911
     ],
     "tp": "goto -1120,8 37 1629,8",
@@ -1820,16 +1885,6 @@
     "tp": "goto VirginiaCamoSuitPickup",
     "itemid": "additem 558",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Camouflage_Suit"
-  },
-  {
-    "id": 74,
-    "type": "outfit",
-    "title": "Hoodie or Tactical/Leather Jacket",
-    "x": -1083.25,
-    "y": 1282.87,
-    "screenshot": "hoodie_2.webp",
-    "tp": "goto HoodiePickup (1)",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hoodie"
   },
   {
     "id": 75,
@@ -2434,7 +2489,7 @@
   {
     "id": 475,
     "type": "pamphlet",
-    "title": "Cult Pamphlet no.2",
+    "title": "You will find meaning is life again",
     "description": "Between corpses",
     "x": -633.11,
     "y": 1279.41,
@@ -3102,6 +3157,14 @@
     "tp": "goto WorldGolfCart15"
   },
   {
+    "id": 1712715470320,
+    "type": "golf-cart",
+    "title": "Golf cart 16",
+    "description": "Just outside a cave opening with two dead workers",
+    "x": -672.470642,
+    "y": 1153.743408
+  },
+  {
     "id": 428,
     "type": "unicycle",
     "title": "Knight V",
@@ -3126,24 +3189,6 @@
     "x": -743,
     "y": 28,
     "screenshot": "knight_v_3.webp",
-    "itemid": "spawnitem 630"
-  },
-  {
-    "id": 485,
-    "type": "unicycle",
-    "title": "Knight V",
-    "x": -1092,
-    "y": 1277,
-    "screenshot": "knight_v_4.webp",
-    "itemid": "spawnitem 630"
-  },
-  {
-    "id": 570,
-    "type": "unicycle",
-    "title": "Knight V",
-    "x": -1121,
-    "y": 1627,
-    "screenshot": "knight_v_5.webp",
     "itemid": "spawnitem 630"
   },
   {
@@ -3295,11 +3340,20 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Helicopter_Crash_Sites"
   },
   {
-    "id": 116,
-    "type": "supply",
-    "title": "Red Case",
-    "x": -425.19,
-    "y": 1597.16
+    "id": 1702953428827,
+    "type": "machete",
+    "title": "pick-able plants",
+    "description": "mushrooms, fireweed, devil's club and aloe",
+    "x": -1269.9637790110394,
+    "y": 1410.6780284671622
+  },
+  {
+    "id": 1702952620951,
+    "type": "machete",
+    "title": "Aloe and Devil's club",
+    "description": "",
+    "x": -1166.7261889578033,
+    "y": 1316.6328265693514
   },
   {
     "id": 117,
@@ -3310,59 +3364,74 @@
   },
   {
     "id": 121,
-    "type": "supply",
-    "title": "2x Supply Suitcases",
-    "x": -651,
-    "y": 1487
+    "type": "utility-crate",
+    "title": "2x Black and Yellow Crates",
+    "x": -651.69,
+    "y": 1488
   },
   {
     "id": 122,
     "type": "supply",
-    "title": "2x Supply Suitcases",
-    "x": -1114,
-    "y": 1690
+    "title": "2x Grey Crates",
+    "description": "Two tarps and a canned drink are on the ground",
+    "x": -1114.766235,
+    "y": 1690.256226
   },
   {
     "id": 123,
     "type": "supply",
-    "title": "2x Supply Suitcases",
-    "x": -1121,
-    "y": 1626
+    "title": "Red Travel Suitcase",
+    "x": -1123.495239,
+    "y": 1627.207764
   },
   {
     "id": 126,
     "type": "supply",
-    "title": "2x Supply Suitcases",
-    "x": -1364,
-    "y": 1665
+    "title": "Grey Crate",
+    "x": -1364.363892,
+    "y": 1663.96582
+  },
+  {
+    "id": 1712124048476,
+    "type": "supply",
+    "title": "Grey crate",
+    "x": -1362.646118,
+    "y": 1668.175537
   },
   {
     "id": 127,
     "type": "supply",
-    "title": "2x Supply Suitcases",
-    "x": -1430,
-    "y": 1710
+    "title": "2x Grey crates",
+    "x": -1431.594849,
+    "y": 1714.640503
   },
   {
     "id": 128,
     "type": "supply",
-    "title": "2x Supply Suitcases",
-    "x": -1258,
-    "y": 1400
+    "title": "Grey crate",
+    "x": -1259.519409,
+    "y": 1400.530518
   },
   {
     "id": 132,
     "type": "supply",
-    "title": "2x Supply Suitcases",
-    "x": -1652,
-    "y": 1185
+    "title": "grey crates",
+    "x": -1653.191895,
+    "y": 1185.944336
   },
   {
     "id": 133,
     "type": "supply",
-    "title": "Supply Suitcase",
-    "x": -1437,
-    "y": 1213
+    "title": "Grey Case",
+    "x": -1438.519287,
+    "y": 1213.343262
+  },
+  {
+    "id": 1712120600750,
+    "type": "supply",
+    "title": "Grey crate",
+    "x": -1645.103027,
+    "y": 1187.315552
   },
   {
     "id": 142,
@@ -3401,10 +3470,10 @@
   },
   {
     "id": 152,
-    "type": "supply",
-    "title": "2x Supply Suitcases",
-    "x": -1606,
-    "y": 488
+    "type": "utility-crate",
+    "title": "2x Black and yellow Crates",
+    "x": -1606.791504,
+    "y": 488.999451
   },
   {
     "id": 153,
@@ -3451,16 +3520,24 @@
   {
     "id": 169,
     "type": "supply",
-    "title": "2x Supply Suitcases",
-    "x": -1096,
-    "y": 1278
+    "title": "Blue Travel Suitcase",
+    "x": -1091.412109,
+    "y": 1277.760132
   },
   {
     "id": 170,
     "type": "supply",
-    "title": "Supply Suitcase",
+    "title": "Grey Crate",
     "x": -751,
     "y": 1276
+  },
+  {
+    "id": 1712721447033,
+    "type": "supply",
+    "title": "Grey Crate",
+    "description": "",
+    "x": -1119.555298,
+    "y": 1625.414795
   },
   {
     "id": 237,
@@ -3492,17 +3569,18 @@
   },
   {
     "id": 265,
-    "type": "supply",
-    "title": "Supply Suitcase",
-    "x": -655,
-    "y": 1497
+    "type": "utility-crate",
+    "title": "Black and Yellow Crate",
+    "x": -654.920471,
+    "y": 1497.939941
   },
   {
     "id": 266,
-    "type": "supply",
-    "title": "2x Supply Suitcases",
-    "x": -1098,
-    "y": 1280
+    "type": "utility-crate",
+    "title": "Black and Yellow Crate",
+    "description": "",
+    "x": -1099.905884,
+    "y": 1280.482056
   },
   {
     "id": 267,
@@ -3779,8 +3857,8 @@
   },
   {
     "id": 467,
-    "type": "supply",
-    "title": "2x black/yellow Crate",
+    "type": "utility-crate",
+    "title": "2x Black and Yellow Crates",
     "description": "Between two tent up against the cliff wall.",
     "x": -45.59,
     "y": 1454.69
@@ -3814,6 +3892,13 @@
     "y": 445
   },
   {
+    "id": 1711529061128,
+    "type": "supply",
+    "title": "Grey Crate",
+    "x": -1496.2379489907346,
+    "y": 1233.5477797799322
+  },
+  {
     "id": 124,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
@@ -3836,10 +3921,10 @@
   },
   {
     "id": 154,
-    "type": "dark-green-suitcase",
-    "title": "Ammo Case",
-    "x": -1612,
-    "y": 490
+    "type": "utility-case",
+    "title": "Explosives Case",
+    "x": -1612.600098,
+    "y": 490.338074
   },
   {
     "id": 155,
@@ -3871,8 +3956,8 @@
   },
   {
     "id": 166,
-    "type": "dark-green-suitcase",
-    "title": "Ammo Case",
+    "type": "utility-case",
+    "title": "Explosives Case",
     "x": -1141,
     "y": 1127
   },
@@ -3982,7 +4067,7 @@
   },
   {
     "id": 472,
-    "type": "black-case",
+    "type": "utility-case",
     "title": "Explosives Case",
     "x": -64.72,
     "y": 1459.47
@@ -4016,13 +4101,6 @@
     "x": -1205,
     "y": -277,
     "isUnderground": true
-  },
-  {
-    "id": 119,
-    "type": "orange-suitcase",
-    "title": "Flare Case",
-    "x": -434,
-    "y": 1597
   },
   {
     "id": 120,
@@ -4160,9 +4238,18 @@
   {
     "id": 130,
     "type": "wooden-crate",
-    "title": "3x Wood Crates",
-    "x": -1775,
-    "y": 1365
+    "title": "2x Wood crates",
+    "description": "In shallow water next to a reef jut",
+    "x": -1775.898315,
+    "y": 1364.667236
+  },
+  {
+    "id": 1712122159045,
+    "type": "wooden-crate",
+    "title": "Wood Crate",
+    "description": "In shallow water next to a reef jut",
+    "x": -1771.697998,
+    "y": 1373.29248
   },
   {
     "id": 135,
@@ -4696,8 +4783,8 @@
     "id": 474,
     "type": "poi",
     "title": "Occultists corpses",
-    "x": -630,
-    "y": 1270,
+    "x": -631.597412,
+    "y": 1278.752319,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Occultists_corpses"
   },
   {
@@ -5264,8 +5351,8 @@
     "id": 396,
     "type": "grave",
     "title": "Grave",
-    "x": -1595,
-    "y": 763,
+    "x": -1596.21814,
+    "y": 763.426147,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Gravesites"
   },
   {
@@ -5290,14 +5377,6 @@
     "title": "2x Graves",
     "x": -1611,
     "y": -1151,
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Gravesites"
-  },
-  {
-    "id": 401,
-    "type": "grave",
-    "title": "2x Graves",
-    "x": -1628,
-    "y": 1503,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Gravesites"
   },
   {
@@ -5459,6 +5538,14 @@
     "x": 1280.49,
     "y": 478.89,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Gravesites"
+  },
+  {
+    "id": 1712107394913,
+    "type": "grave",
+    "title": "5x graves",
+    "description": "",
+    "x": -891.373108,
+    "y": 1181.138306
   },
   {
     "id": 422,
@@ -5689,13 +5776,11 @@
     "id": 251,
     "type": "village",
     "title": "Village 05",
-    "description": "Village with 9 structures",
-    "x": -1090,
-    "y": 1281,
+    "description": "Large village with 11 structures",
+    "x": -1087.342529,
+    "y": 1278.549805,
     "items": [
-      485,
-      913,
-      74
+      913
     ],
     "tp": "goto Village5",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
@@ -6302,7 +6387,7 @@
     "id": 847,
     "type": "shotgun-rail",
     "title": "Shotgun Rail",
-    "description": "Inside red case",
+    "description": "In the black briefcase with red interior.",
     "x": -1362.05,
     "y": 1662.91,
     "screenshot": "shotgun_rail_5.webp",
@@ -6468,7 +6553,7 @@
     "id": 912,
     "type": "cooking-pot",
     "title": "Cooking Pot",
-    "description": "Between Tents",
+    "description": "beside fire ring",
     "x": -1255,
     "y": 1396,
     "screenshot": "cooking_pot_4.webp",
@@ -6520,6 +6605,14 @@
     "screenshot": "cooking_pot_8.webp",
     "itemid": "additem 517",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Cooking_Pot"
+  },
+  {
+    "id": 1712816841957,
+    "type": "cooking-pot",
+    "title": "Cooking Pot",
+    "description": "",
+    "x": -1609.150513,
+    "y": 488.138885
   },
   {
     "id": 884,
@@ -6916,8 +7009,8 @@
     "id": 913,
     "type": "radio",
     "title": "Radio",
-    "x": -1085,
-    "y": 1281,
+    "x": -1090.108032,
+    "y": 1273.424072,
     "itemid": "additem 590",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
@@ -7059,6 +7152,14 @@
     "x": -160.25,
     "y": -91.75,
     "screenshot": "broken_sled_ice.webp"
+  },
+  {
+    "id": 1712103913230,
+    "type": "grave",
+    "title": "Open mass grave",
+    "description": "open pit with several coffins and wood crates",
+    "x": -920.940247,
+    "y": 1454.61499
   },
   {
     "id": 597,
