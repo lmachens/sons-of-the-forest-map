@@ -1408,8 +1408,8 @@
     "type": "abandoned-camp-n",
     "title": "Torn Tents 03",
     "description": "Camp site with 2 tents",
-    "x": -1438.21,
-    "y": 1216.44,
+    "x":-1435.192627,
+    "y":1214.059814,
     "tp": "goto -1435,6 93,5 1214,0",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
@@ -1418,8 +1418,8 @@
     "type": "abandoned-camp-n",
     "title": "Torn Tents 04",
     "description": "Camp site with 4 tents",
-    "x": -1655.25,
-    "y": 1185.98,
+    "x":-1651.407471,
+    "y":1188.27832,
     "tp": "goto -1650,3 83,9 1188,9",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
@@ -3365,7 +3365,7 @@
   {
     "id": 121,
     "type": "supply",
-    "title": "2x Black/Yellow Case",
+    "title": "2x Black and Yellow Crates",
     "x": -651.69,
     "y": 1488
   },
@@ -3415,16 +3415,23 @@
   {
     "id": 132,
     "type": "supply",
-    "title": "2x Supply Suitcases",
-    "x": -1652,
-    "y": 1185
+    "title":"grey crates",
+    "x":-1653.191895,
+    "y":1185.944336
   },
   {
     "id": 133,
-    "type": "supply",
-    "title": "Supply Suitcase",
-    "x": -1437,
-    "y": 1213
+    "type":"supply",
+    "title":"Grey Case",
+    "x":-1438.519287,
+    "y":1213.343262
+  },
+  {
+    "id":1712120600750,
+    "type":"supply",
+    "title":"Grey crate",
+    "x":-1645.103027,
+    "y":1187.315552
   },
   {
     "id": 142,
@@ -3563,14 +3570,14 @@
   {
     "id": 265,
     "type": "supply",
-    "title": "Black/Yellow Case",
+    "title": "Black and Yellow Crate",
     "x":-654.920471,
     "y":1497.939941
   },
   {
     "id": 266,
     "type":"supply",
-    "title":"Black and yellow Case",
+    "title":"Black and Yellow Crate",
     "description":"",
     "x":-1099.905884,
     "y":1280.482056
@@ -3885,6 +3892,14 @@
     "y": 445
   },
   {
+    "id":1711529061128,
+    "type":"supply",
+    "title":"Grey Crate",
+    "x":-1496.2379489907346,
+    "y":1233.5477797799322
+  },
+
+  {
     "id": 124,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
@@ -3943,7 +3958,7 @@
   {
     "id": 166,
     "type": "dark-green-suitcase",
-    "title": "Ammo Case",
+    "title": "Explosives Case",
     "x": -1141,
     "y": 1127
   },
@@ -4053,7 +4068,7 @@
   },
   {
     "id": 472,
-    "type": "black-case",
+    "type": "utility-case",
     "title": "Explosives Case",
     "x": -64.72,
     "y": 1459.47

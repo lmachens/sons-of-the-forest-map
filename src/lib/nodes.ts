@@ -640,9 +640,17 @@ export function getTypes(): NodeType[] {
       filter: "poi",
     },
     {
-      value: "black-case",
-      title: t("Grave"),
+      value: "utility-case",
+      title: t("Utility Case"),
       icon: icons.case,
+      src: "/icons/utility-case.webp",
+      filter: "loot",
+    },
+    {
+      value: "utility-crate",
+      title: t("Utility Crate"),
+      icon: icons.case,
+      src: "/icons/utility-crate.webp",
       filter: "loot",
     },
   ];
