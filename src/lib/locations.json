@@ -307,7 +307,7 @@
     "description": "On 1st bunker floor",
     "x": 1153.76,
     "y": -606.79,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -324,7 +324,7 @@
     "description": "Inside the right tunnel",
     "x": -647.31,
     "y": 1514.32,
-    "isUnderground": true,
+    "inCave": true,
     "screenshot": "stun_gun.webp",
     "warning": "Double use the command!",
     "tp": "goto StunGunPickup",
@@ -338,7 +338,7 @@
     "description": "Inside the left tunnel",
     "x": -421.94,
     "y": 1477.25,
-    "isUnderground": true,
+    "inCave": true,
     "screenshot": "rebreather.webp",
     "warning": "Double use the command!",
     "tp": "goto RebreatherPickup",
@@ -351,7 +351,7 @@
     "title": "Cross",
     "x": 1622.62,
     "y": 484.21,
-    "isUnderground": true,
+    "inBunker": true,
     "screenshot": "cross.webp",
     "warning": "Double use the command!",
     "tp": "goto CrossPickup",
@@ -365,7 +365,7 @@
     "description": "Near the cave exit in the left tunnel",
     "x": -1204.71,
     "y": -277.52,
-    "isUnderground": true,
+    "inCave": true,
     "screenshot": "rope_gun.webp",
     "warning": "Double use the command!",
     "tp": "goto RopeGunPickup",
@@ -391,7 +391,7 @@
     "description": "In hands of dead worker inside cave",
     "x": -429.4,
     "y": -103.3,
-    "isUnderground": true,
+    "inCave": true,
     "requirements": [
       13,
       11
@@ -424,7 +424,7 @@
     "description": "In hands of dead soldier",
     "x": 677.56,
     "y": -281.81,
-    "isUnderground": true,
+    "inCave": true,
     "screenshot": "rifle.webp",
     "warning": "Double use the command!",
     "tp": "goto RiflePickup",
@@ -438,7 +438,7 @@
     "description": "Next to 3D Printer in the bunker",
     "x": -427.82,
     "y": 699.42,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       15
     ],
@@ -455,7 +455,7 @@
     "description": "At the end of the hallway",
     "x": -415.01,
     "y": 712.26,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       15
     ],
@@ -472,7 +472,7 @@
     "description": "On desk in Security room",
     "x": -978.11,
     "y": 1038.64,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -489,7 +489,7 @@
     "description": "Next to the projector",
     "x": -1174.6,
     "y": -217.69,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -506,7 +506,7 @@
     "description": "On 5th bunker floor",
     "x": 1140.92,
     "y": -612.99,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -523,7 +523,7 @@
     "description": "On bar stand top",
     "x": -1157.58,
     "y": 17.77,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -540,7 +540,7 @@
     "description": "In the Theater room",
     "x": -1151.17,
     "y": 116.06,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -557,7 +557,7 @@
     "description": "Inside the bathroom",
     "x": -1120.68,
     "y": -1039.18,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       15
     ],
@@ -574,7 +574,7 @@
     "description": "In hand of dead worker",
     "x": 1140.69,
     "y": 1048.70,
-    "isUnderground": true,
+    "inBunker": true,
     "screenshot": "revolver.webp",
     "warning": "Teleport after entering the bunker!",
     "tp": "goto RevolverPickup",
@@ -588,7 +588,7 @@
     "description": "On 2nd bunker floor",
     "x": 1160.53,
     "y": -651.97,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -604,7 +604,7 @@
     "title": "Ancient Armor",
     "x": 188.09,
     "y": -668.96,
-    "isUnderground": true,
+    "inCave": true,
     "requirements": [
       11
     ],
@@ -633,7 +633,7 @@
     "description": "Stuck in the Solafite Ore on the wall",
     "x": 1413.59,
     "y": 735.17,
-    "isUnderground": true,
+    "inCave": true,
     "requirements": [
       11
     ],
@@ -697,7 +697,7 @@
     "title": "Artifact A",
     "x": -628.94,
     "y": 1399.58,
-    "isUnderground": true,
+    "inCave": true,
     "screenshot": "artifact_a.webp",
     "warning": "Double use the command!",
     "tp": "goto ArtifactPieceAPickup",
@@ -711,7 +711,7 @@
     "description": "Second pice of the Artifact",
     "x": 1289.04,
     "y": 640.1,
-    "isUnderground": true,
+    "inCave": true,
     "requirements": [
       11
     ],
@@ -727,7 +727,7 @@
     "title": "Artifact C",
     "x": -1089.28,
     "y": -129.56,
-    "isUnderground": true,
+    "inCave": true,
     "requirements": [
       11
     ],
@@ -743,7 +743,7 @@
     "title": "Artifact D",
     "x": -405.64,
     "y": -878.48,
-    "isUnderground": true,
+    "inCave": true,
     "requirements": [
       11
     ],
@@ -759,7 +759,7 @@
     "title": "Artifact E",
     "x": 1729.93,
     "y": 1049.61,
-    "isUnderground": true,
+    "inCave": true,
     "screenshot": "artifact_e.webp",
     "warning": "Double use the command!",
     "tp": "goto ArtifactPieceEPickup",
@@ -772,7 +772,7 @@
     "title": "Artifact F",
     "x": 1247.45,
     "y": 304.51,
-    "isUnderground": true,
+    "inCave": true,
     "warning": "Double use the command!",
     "tp": "goto ArtifactPieceFPickup",
     "itemid": "additem 708",
@@ -784,7 +784,7 @@
     "title": "Artifact G",
     "x": 186.19,
     "y": -668.46,
-    "isUnderground": true,
+    "inCave": true,
     "itemid": "additem 712"
   },
   {
@@ -811,7 +811,7 @@
     "title": "Hell Cave Entrance",
     "x": 1597.10,
     "y": 485.16,
-    "isUnderground": true,
+    "inCave": true,
     "requirements": [
       27
     ],
@@ -898,7 +898,7 @@
     "title": "BunkerFood",
     "x": -1027,
     "y": 1036,
-    "isUnderground": true,
+    "inCave": true,
     "requirements": [
       49
     ],
@@ -922,7 +922,7 @@
     "title": "BunkerResidential",
     "x": 1214,
     "y": -638,
-    "isUnderground": true,
+    "inCave": true,
     "items": [
       37,
       585,
@@ -957,7 +957,7 @@
     "title": "3D Printer",
     "x": -418.46,
     "y": 700.50,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       15
     ],
@@ -969,7 +969,7 @@
     "title": "3D Printer",
     "x": -1195.58,
     "y": 77.93,
-    "isUnderground": true,
+    "inBunker": true,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/3D_Printer"
   },
   {
@@ -978,7 +978,7 @@
     "title": "3D Printer",
     "x": -1125.49,
     "y": -1048.59,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       15
     ],
@@ -991,7 +991,7 @@
     "description": "On 1st bunker floor",
     "x": 1121.58,
     "y": -602.13,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -1004,7 +1004,7 @@
     "description": "Entertainment Bunker Location",
     "x": -422.32,
     "y": 1495.35,
-    "isUnderground": true,
+    "inCave": true,
     "screenshot": "laptop_rebreather_cave.webp"
   },
   {
@@ -1014,7 +1014,7 @@
     "description": "Bunker A Location",
     "x": -581,
     "y": -69,
-    "isUnderground": true,
+    "inCave": true,
     "requirements": [
       13,
       11
@@ -1028,7 +1028,7 @@
     "description": "Food and Dining Bunker Location",
     "x": -424.42,
     "y": 703.43,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       15
     ],
@@ -1041,7 +1041,7 @@
     "description": "Residential Bunker Location",
     "x": -971,
     "y": 1036,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -1054,7 +1054,7 @@
     "description": "Bunker B Location",
     "x": -1179.18,
     "y": 27.76,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -1067,7 +1067,7 @@
     "description": "Bunker C Location",
     "x": -1127.82,
     "y": -1047.01,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       15
     ],
@@ -1080,7 +1080,7 @@
     "description": "Luxury Bunker Location",
     "x": 1176.95,
     "y": -646.12,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       21
     ],
@@ -1093,7 +1093,7 @@
     "description": "Cultist1",
     "x": 1137.45,
     "y": -621.13,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -1122,7 +1122,7 @@
     "description": "Sahara Confidential",
     "x": -1095.15,
     "y": -10.46,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -1139,7 +1139,7 @@
     "description": "Estate Agent",
     "x": 1620.60,
     "y": 498.79,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -1893,7 +1893,7 @@
     "description": "On the right side from entrance",
     "x": 1623.12,
     "y": 568.18,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       19
     ],
@@ -1931,7 +1931,7 @@
     "title": "Virginia Track Suit",
     "x": -1194.12,
     "y": 38.23,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -1948,7 +1948,7 @@
     "description": "On cabinet in the bathroom",
     "x": -416.78,
     "y": 696.21,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       15
     ],
@@ -1965,7 +1965,7 @@
     "description": "On 2nd bunker floor",
     "x": 1144.33,
     "y": -640.11,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -1993,7 +1993,7 @@
     "description": "On 5th bunker floor",
     "x": 1139.1,
     "y": -615.59,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -2009,7 +2009,7 @@
     "title": "Wetsuit",
     "x": -509.26,
     "y": 128.13,
-    "isUnderground": true,
+    "inCave": true,
     "requirements": [
       11
     ],
@@ -2026,7 +2026,7 @@
     "description": "On 2nd bunker floor",
     "x": 1175.79,
     "y": -646.15,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -2090,19 +2090,19 @@
     "description": "Next to 3D Printer inside the bunker",
     "x": -1198.88,
     "y": 78.20,
-    "isUnderground": true,
+    "inBunker": true,
     "warning": "Teleport after entering the bunker to avoid falling under the map",
     "tp": "goto -1196.8 60 79",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Books#Parallel_Universes_Book"
   },
   {
     "id": 89,
-    "type": "book",
+    "type": "book-bunker",
     "title": "Pennant Line Book",
     "description": "On the floor, next to bathtube",
     "x": -416.8,
     "y": 694.58,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       15
     ],
@@ -2119,7 +2119,7 @@
     "description": "On 5th bunker floor",
     "x": 1161,
     "y": -602.75,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -2144,7 +2144,7 @@
     "title": "Rescued",
     "x": 1623.26,
     "y": 504.56,
-    "isUnderground": true,
+    "inBunker": true,
     "screenshot": "novel_c.webp",
     "warning": "Teleport after entering the bunker!",
     "tp": "goto NovelCPickup",
@@ -2152,12 +2152,12 @@
   },
   {
     "id": 92,
-    "type": "document",
+    "type": "document-bunker",
     "title": "Email - Another one",
     "description": "Artifact 2",
     "x": -1126.14,
     "y": 111.14,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -2168,12 +2168,12 @@
   },
   {
     "id": 93,
-    "type": "email",
+    "type": "email-bunker",
     "title": "Attention All",
     "description": "Next to Laptop with location",
     "x": -424.48,
     "y": 702.20,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       15
     ],
@@ -2184,12 +2184,12 @@
   },
   {
     "id": 94,
-    "type": "document",
+    "type": "document-bunker",
     "title": "Last will and testament of Edward Puffton",
     "description": "On second table behind doors",
     "x": -1178.63,
     "y": 27.70,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -2199,30 +2199,30 @@
   },
   {
     "id": 96,
-    "type": "document",
+    "type": "document-cave",
     "title": "Email - Photo Reference",
     "x": -1139.6,
     "y": -234.44,
-    "isUnderground": true,
+    "inCave": true,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Photo_Reference_Email"
   },
   {
     "id": 97,
-    "type": "document",
+    "type": "document-cave",
     "title": "Email - More Lightning",
     "x": -1017.05,
     "y": -264.34,
-    "isUnderground": true,
+    "inCave": true,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/More_Lighting_Email"
   },
   {
     "id": 98,
-    "type": "document",
+    "type": "document-bunker",
     "title": "Newspaper Cutout Missing CEO",
     "x": 416.67,
     "y": 1170.59,
     "screenshot": "newspaper_cutout_1.webp",
-    "isUnderground": true
+    "inBunker": true
   },
   {
     "id": 99,
@@ -2232,7 +2232,6 @@
     "x": -428.74,
     "y": 1497.67,
     "screenshot": "the_sunset_times.webp",
-    "isUnderground": true,
     "warning": "Teleport after entering the cave!",
     "tp": "goto -428,2 14 1497"
   },
@@ -2243,7 +2242,7 @@
     "description": "Next to TV",
     "x": -432.40,
     "y": 705.39,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       15
     ],
@@ -2260,7 +2259,7 @@
     "description": "Next to corpse with stuck guitar inside it",
     "x": -1157.62,
     "y": 29.89,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -2277,7 +2276,7 @@
     "description": "On 1st bunker floor",
     "x": 1154.15,
     "y": -607.01,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -2292,7 +2291,7 @@
     "description": "On 1st bunker floor",
     "x": 1151.61,
     "y": -619.97,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -2307,7 +2306,7 @@
     "description": "On 1st bunker floor",
     "x": 1149.82,
     "y": -602.34,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -2322,7 +2321,7 @@
     "description": "On 1st bunker floor",
     "x": 1125.42,
     "y": -606.36,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -2337,7 +2336,7 @@
     "description": "On 1st bunker floor",
     "x": 1126.39,
     "y": -604.85,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -2358,22 +2357,22 @@
   },
   {
     "id": 308,
-    "type": "document",
+    "type": "document-bunker",
     "title": "Email - THOUGHT YOU MIGHT FIND THIS INTERESTING",
     "description": "Next to dead person on the floor",
     "x": -1021,
     "y": 1036,
-    "isUnderground": true,
+    "inBunker": true,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Artifact_Emails"
   },
   {
     "id": 312,
-    "type": "document",
+    "type": "document-bunker",
     "title": "Email - ONE MORE",
     "description": "On desk to the left side",
     "x": -975,
     "y": 1036,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -2381,12 +2380,12 @@
   },
   {
     "id": 314,
-    "type": "document",
+    "type": "document-bunker",
     "title": "Email - RE:RE:RE: GOLF BALLS",
     "description": "On the table with mutant",
     "x": -913,
     "y": 1036,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       19
     ],
@@ -2394,36 +2393,36 @@
   },
   {
     "id": 315,
-    "type": "document",
+    "type": "document-bunker",
     "title": "Barbara's Reservation Card",
     "description": "On the table with mutant",
     "x": -915,
     "y": 1037,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       19
     ]
   },
   {
     "id": 316,
-    "type": "document",
+    "type": "document-bunker",
     "title": "Edward's Reservation Card",
     "description": "On the table with mutant",
     "x": -914,
     "y": 1038,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       19
     ]
   },
   {
     "id": 333,
-    "type": "document",
+    "type": "document-bunker",
     "title": "Email - Note to all employees",
     "description": "Beside sunbed in the room with big tree",
     "x": -1120.05,
     "y": 18.71,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -2434,11 +2433,11 @@
   },
   {
     "id": 924,
-    "type": "document",
+    "type": "document-bunker",
     "title": "Email - Note to all employees",
     "x": -1158.80,
     "y": 30.45,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -2448,12 +2447,12 @@
   },
   {
     "id": 334,
-    "type": "document",
+    "type": "document-bunker",
     "title": "Email - RE: RE: Golf Balls",
     "description": "In the room with couches, at the end turn to left table",
     "x": -1192.04,
     "y": 35.17,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -2464,12 +2463,12 @@
   },
   {
     "id": 923,
-    "type": "document",
+    "type": "document-bunker",
     "title": "Personal Note",
     "description": "Message for Doris",
     "x": -1130.62,
     "y": 79.08,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -2532,12 +2531,12 @@
   },
   {
     "id": 576,
-    "type": "document",
+    "type": "document-bunker",
     "title": "Stock Price Printout",
     "description": "On 2nd bunker floor",
     "x": 1156.44,
     "y": -654.40,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -2547,56 +2546,56 @@
   },
   {
     "id": 830,
-    "type": "document",
+    "type": "document-cave",
     "title": "Astrology no.1",
     "x": 1154.24,
     "y": 523.05,
-    "isUnderground": true,
+    "inCave": true,
     "screenshot": "printout_astrology_1.webp",
     "warning": "Double use the command!",
     "tp": "goto EmailPrintoutAstrologyAPickup"
   },
   {
     "id": 829,
-    "type": "document",
+    "type": "document-bunker",
     "title": "Astrology no.2",
     "x": 1615.85,
     "y": 483.71,
-    "isUnderground": true,
+    "inBunker": true,
     "screenshot": "printout_astrology_2.webp",
     "warning": "Double use the command!",
     "tp": "goto EmailPrintoutAstrologyBPickup"
   },
   {
     "id": 514,
-    "type": "document",
+    "type": "document-cave",
     "title": "Astrology no.3",
     "x": 1212.23,
     "y": 634.28,
-    "isUnderground": true,
+    "inCave": true,
     "screenshot": "printout_astrology_3.webp",
     "warning": "Double use the command!",
     "tp": "goto EmailPrintoutAstrologyCPickup"
   },
   {
     "id": 831,
-    "type": "document",
+    "type": "document-cave",
     "title": "The Cube",
     "x": 1153.69,
     "y": 522.74,
-    "isUnderground": true,
+    "inBunker": true,
     "screenshot": "the_cube.webp",
     "warning": "Double use the command!",
     "tp": "goto EmailPrintoutSqueakyShoesCPickup"
   },
   {
     "id": 506,
-    "type": "email",
+    "type": "email-bunker",
     "title": "FISHING VILLAGES",
     "description": "On 2nd bunker floor",
     "x": 1165.60,
     "y": -654.36,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -2606,12 +2605,12 @@
   },
   {
     "id": 507,
-    "type": "email",
+    "type": "email-bunker",
     "title": "MORE BODIES",
     "description": "Fishing Email no.3",
     "x": 1140.14,
     "y": 1048.67,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       15
     ],
@@ -2621,12 +2620,12 @@
   },
   {
     "id": 508,
-    "type": "email",
+    "type": "email-bunker",
     "title": "Please meet me at the bar at 2pm",
     "description": "On 2nd bunker floor",
     "x": 1133.76,
     "y": -646.11,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -2685,11 +2684,11 @@
   },
   {
     "id": 503,
-    "type": "document",
+    "type": "document-cave",
     "title": "Old Note no.5",
     "x": 1693.66,
     "y": 1032.73,
-    "isUnderground": true,
+    "inCave": true,
     "screenshot": "old_note_e.webp",
     "tp": "goto OldNoteEPickup"
   },
@@ -2709,7 +2708,7 @@
     "description": "Item upgrading machine",
     "x": 1333.13,
     "y": 699.42,
-    "isUnderground": true,
+    "inCave": true,
     "requirements": [
       11
     ],
@@ -2719,12 +2718,12 @@
   },
   {
     "id": 567,
-    "type": "blueprint",
+    "type": "blueprint-cave",
     "title": "Armor Plating Machine",
     "description": "Armor upgrading machine",
     "x": 1598.33,
     "y": 486.42,
-    "isUnderground": true
+    "inCave": true
   },
   {
     "id": 379,
@@ -2733,7 +2732,7 @@
     "description": "Unlockable new decoration",
     "x": -648.78,
     "y": 1388.92,
-    "isUnderground": true,
+    "inCave": true,
     "screenshot": "blueprint_powered_cross.webp",
     "warning": "Teleport after entering the cave!",
     "tp": "goto BlueprintPoweredCrossPickup",
@@ -2767,7 +2766,7 @@
     "description": "Unlockable new decoration",
     "x": 461.08,
     "y": -227.88,
-    "isUnderground": true,
+    "inCave": true,
     "screenshot": "blueprint_clock.webp",
     "warning": "Teleport after entering the cave!",
     "tp": "goto BlueprintClockPickup"
@@ -2783,11 +2782,11 @@
   },
   {
     "id": 568,
-    "type": "blueprint",
+    "type": "blueprint-cave",
     "title": "Hang Glider Launcher",
     "x": -954.87,
     "y": 161.72,
-    "isUnderground": "true"
+    "inCave": true
   },
   {
     "id": 496,
@@ -2816,7 +2815,7 @@
     "description": "Unlockable new trap",
     "x": -963.8,
     "y": -1486.19,
-    "isUnderground": true,
+    "inCave": true,
     "warning": "Double use the command!",
     "screenshot": "blueprint_uber_trap.webp",
     "tp": "goto BlueprintUberTrapPickup"
@@ -2828,7 +2827,7 @@
     "description": "Unlockable new trap",
     "x": 1719.68,
     "y": 1065.28,
-    "isUnderground": true,
+    "inCave": true,
     "screenshot": "blueprint_grind_trap.webp",
     "warning": "Double use the command!",
     "tp": "goto BlueprintGrindTrapPickup"
@@ -2840,33 +2839,33 @@
     "description": "Unlockable new trap",
     "x": -115.44,
     "y": -1038.4,
-    "isUnderground": true,
+    "inCave": true,
     "screenshot": "blueprint_spear_thrower_trap.webp",
     "warning": "Double use the command!",
     "tp": "goto BlueprintSpearThrowerTrapPickup"
   },
   {
     "id": 563,
-    "type": "blueprint",
+    "type": "blueprint-cave",
     "x": -1151.12,
     "y": -1608.09,
-    "isUnderground": true
+    "inCave": true
   },
   {
     "id": 564,
-    "type": "blueprint",
+    "type": "blueprint-cave",
     "title": "Repel Shrine",
     "x": 1505.11,
     "y": -448.46,
-    "isUnderground": true
+    "inCave": true
   },
   {
     "id": 565,
-    "type": "blueprint",
+    "type": "blueprint-cave",
     "title": "Attract Shrine",
     "x": -1648.54,
     "y": -951.13,
-    "isUnderground": true
+    "inCave": true
   },
   {
     "id": 106,
@@ -3252,7 +3251,7 @@
     "description": "On 1st bunker floor",
     "x": 1124.75,
     "y": -605.83,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -4642,7 +4641,7 @@
     "title": "Wood Crate",
     "x": -518,
     "y": -598,
-    "isUnderground": true
+    "inCave": true
   },
   {
     "id": 579,
@@ -4650,7 +4649,7 @@
     "title": "5x Wood Crates",
     "x": -507,
     "y": -618,
-    "isUnderground": true
+    "inCave": true
   },
   {
     "id": 832,
@@ -4735,7 +4734,7 @@
     "title": "Wall Painting",
     "x": 870,
     "y": -379,
-    "isUnderground": true
+    "inCave": true
   },
   {
     "id": 582,
@@ -4743,7 +4742,7 @@
     "title": "Wall Painting",
     "x": -989,
     "y": -248,
-    "isUnderground": true
+    "inCave": true
   },
   {
     "id": 583,
@@ -4751,7 +4750,7 @@
     "title": "Wall Painting",
     "x": -461,
     "y": -556,
-    "isUnderground": true,
+    "inCave": true,
     "screenshot": "cave_drawing_a.webp",
     "warning": "Teleport after entering the cave to avoid falling under the map",
     "tp": "goto -461,8 283 -557,7"
@@ -5553,7 +5552,7 @@
     "title": "Astronaut Corpse",
     "x": 148,
     "y": -643,
-    "isUnderground": true
+    "inCave": true
   },
   {
     "id": 423,
@@ -5561,7 +5560,7 @@
     "title": "Astronaut Corpse",
     "x": 174,
     "y": -658,
-    "isUnderground": true
+    "inCave": true
   },
   {
     "id": 424,
@@ -5569,7 +5568,7 @@
     "title": "3x Astronaut Corpses",
     "x": 182,
     "y": -671,
-    "isUnderground": true
+    "inCave": true
   },
   {
     "id": 425,
@@ -5577,7 +5576,7 @@
     "title": "3x Astronaut Corpses",
     "x": 175,
     "y": -666,
-    "isUnderground": true
+    "inCave": true
   },
   {
     "id": 846,
@@ -5585,7 +5584,7 @@
     "title": "Wall Painting",
     "x": -149,
     "y": -420,
-    "isUnderground": true,
+    "inCave": true,
     "screenshot": "wall_painting_1.webp"
   },
   {
@@ -6326,7 +6325,7 @@
     "description": "Next to Email and Laptop",
     "x": -424.63,
     "y": 702.06,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       15
     ],
@@ -6343,7 +6342,7 @@
     "description": "In the right corner of the room",
     "x": -1181.75,
     "y": 28.36,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -6360,7 +6359,7 @@
     "description": "On 2nd bunker floor",
     "x": 1144.27,
     "y": -639.34,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -6376,7 +6375,7 @@
     "title": "Shotgun Rail",
     "x": 1613.28,
     "y": 480.42,
-    "isUnderground": true,
+    "inBunker": true,
     "screenshot": "shotgun_rail_4.webp",
     "warning": "Teleport after entering the bunker!",
     "tp": "goto ShotgunRailPickup",
@@ -6426,7 +6425,7 @@
     "description": "On 1st bunker floor",
     "x": 1056.95,
     "y": 1022.79,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -6443,7 +6442,7 @@
     "description": "In hand of dead soldier",
     "x": -580.72,
     "y": -69.44,
-    "isUnderground": true,
+    "inCave": true,
     "requirements": [
       11
     ],
@@ -6460,7 +6459,7 @@
     "description": "On 1st bunker floor",
     "x": 1154.35,
     "y": -604.58,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -6489,7 +6488,7 @@
     "description": "Next to 3D Printer",
     "x": -1125.58,
     "y": -1050.17,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       15
     ],
@@ -6506,7 +6505,7 @@
     "description": "",
     "x": -1133.87,
     "y": -1604.05,
-    "isUnderground": true,
+    "inCave": true,
     "requirements": [
       11
     ],
@@ -6587,7 +6586,7 @@
     "description": "On 2nd bunker floor",
     "x": 1138.21,
     "y": -638.19,
-    "isUnderground": true,
+    "inBunker": true,
     "requirements": [
       17
     ],
@@ -6601,7 +6600,7 @@
     "title": "Cooking Pot",
     "x": 1614.59,
     "y": 480.40,
-    "isUnderground": true,
+    "inBunker": true,
     "screenshot": "cooking_pot_8.webp",
     "itemid": "additem 517",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Cooking_Pot"

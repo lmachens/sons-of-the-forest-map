@@ -24,7 +24,7 @@ export default function CustomNode({
   onAdd: () => void;
   onOpen?: () => void;
 }) {
-  const types = getTypes();
+  const baseTypes = getTypes(true);
   let isAdding = false;
   element.onclick = (event) => {
     event.stopPropagation();
@@ -37,12 +37,14 @@ export default function CustomNode({
     isAdding = true;
     const playerPosition = getLastPosition();
 
+    const defaultType = baseTypes[0];
+
     const marker = new CanvasMarker(
       [playerPosition.location.y, playerPosition.location.x],
       {
         id: Date.now(),
-        type: types[0].value,
-        path: types[0].icon,
+        path: defaultType.icon,
+        type: defaultType.value,
         color: "#ffffff",
         radius: 16,
         interactive: true,
@@ -87,7 +89,7 @@ export default function CustomNode({
       innerHTML: `
     <label><span>Description</span><textarea name="description"></textarea></label>
     <label><span>Color</span><input type="color" name="color" value="#ffffff"/></label>
-    <label><span>Type</span><div class="types">${types
+    <label><span>Type</span><div class="types">${baseTypes
       .map(
         (type, index) =>
           `<label class="type-label"><input name="type" type="radio" value="${
@@ -111,9 +113,9 @@ export default function CustomNode({
     form.onsubmit = (event) => {
       event.preventDefault();
       const formData = new FormData(form);
+      const type = formData.get("type") as string;
       const title = formData.get("title") as string;
       const description = formData.get("description") as string;
-      const type = formData.get("type") as string;
       const color = formData.get("color") as string;
       const latLng = marker.getLatLng();
       const x = latLng.lng;
@@ -122,9 +124,9 @@ export default function CustomNode({
       const customNodes = getCustomNodes();
       customNodes.push({
         id: Date.now(),
+        type,
         title,
         description,
-        type,
         x,
         y,
         color,
