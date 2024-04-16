@@ -172,6 +172,8 @@ export type CanvasMarkerOptions = {
   color: string;
   radius: number;
   isUnderground?: boolean;
+  inBunker?: boolean;
+  inCave?: boolean;
   isDiscovered?: boolean;
   isHighlighted?: boolean;
   tooltipContent: string | HTMLElement;

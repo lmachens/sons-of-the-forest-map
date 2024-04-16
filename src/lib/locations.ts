@@ -9,6 +9,8 @@ export type MapLocation = {
   y: number;
   color?: string;
   isUnderground?: boolean;
+  inBunker?: boolean;
+  inCave?: boolean;
   requirements?: number[];
   items?: number[];
   screenshot?: string;

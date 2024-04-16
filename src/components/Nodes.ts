@@ -307,6 +307,16 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
           ? `<p class="info italic">${t("Underground")}</p>`
           : ""
       }
+      ${
+        mapLocation.inBunker
+          ? `<p class="info italic">${t("Inside Bunker")}</p>`
+          : ""
+      }
+      ${
+        mapLocation.inCave
+          ? `<p class="info italic">${t("Inside Cave")}</p>`
+          : ""
+      }
       `,
     });
 
