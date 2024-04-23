@@ -12,7 +12,7 @@
   },
   {
     "id": 10001,
-    "type": "supply",
+    "type": "utility-case",
     "title": "Supply Case",
     "description": "Part of the mountain crash site.",
     "x": -236,
@@ -28,7 +28,7 @@
   },
   {
     "id": 10003,
-    "type": "supply",
+    "type": "utility-case",
     "title": "Supply Case",
     "description": "Part of the mountain crash site.",
     "x": -252.50,
@@ -118,7 +118,7 @@
   },
   {
     "id": 20005,
-    "type": "supply",
+    "type": "utility-case",
     "title": "Red Case",
     "description": "Part of the ocean crash site",
     "x": -425.19,
@@ -157,6 +157,14 @@
     "y": 1585.65332
   },
   {
+    "id": 20010,
+    "type": "utility-case",
+    "title": "Supply Case",
+    "description": "Part of the ocean crash site",
+    "x": -423,
+    "y": 1613
+  },
+  {
     "id": 3,
     "type": "spawnPoint",
     "title": "Forest Crash Site",
@@ -169,7 +177,7 @@
   },
   {
     "id": 30001,
-    "type": "supply",
+    "type": "utility-case",
     "title": "Supply Case",
     "description": "Part of the forest crash site.",
     "x": -1137.56,
@@ -185,7 +193,7 @@
   },
   {
     "id": 30003,
-    "type": "supply",
+    "type": "utility-case",
     "title": "Supply Case",
     "description": "Part of the forest crash site.",
     "x": -1147.38,
@@ -344,6 +352,15 @@
     "tp": "goto RebreatherPickup",
     "itemid": "additem 444",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Rebreather"
+  },
+  {
+    "id":1713841340991,
+    "type": "rebreather",
+    "title": "Air-tank",
+    "description": "",
+    "x":-424.90332,
+    "y":1495.965088,
+    "inCave": true
   },
   {
     "id": 12,
@@ -1087,6 +1104,24 @@
     "screenshot": "laptop_residential_bunker.webp"
   },
   {
+    "id":1712088096993,
+    "type": "laptop-cave",
+    "title": "Damaged laptop",
+    "description": "",
+    "x":-597.260193,
+    "y":1450.916992,
+    "inCave": true
+  },
+  {
+    "id":1713844128416,
+    "type": "laptop-cave",
+    "title": "Damaged Laptop",
+    "description": "",
+    "x":-424.245605,
+    "y":1478.341675,
+    "inCave": true
+  },
+  {
     "id": 586,
     "type": "action-camera-bunker",
     "title": "Action Camera",
@@ -1168,6 +1203,32 @@
     "screenshot": "cave_a.webp",
     "tp": "goto CaveAEntrance",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Caves#Beach/Rebreather_Cave"
+  },
+  {
+    "id":1713842326161,
+    "type": "cave",
+    "title": "Destructable Door",
+    "description": "InCave",
+    "x":-612.686157,
+    "y":1416.595703,
+    "inCave": true
+  },
+  {
+    "id":1713843104164,
+    "type": "cave",
+    "title": "Destructable Wood Door",
+    "description": "",
+    "x":-643.631104,
+    "y":1385.073853,
+    "inCave": true
+  },
+  {
+    "id":1713844482626,
+    "type": "cave",
+    "title": "Underwater cave",
+    "description": "Danger: Must have rebreather",
+    "x":-323.67812908814216,
+    "y":1512.0594632197838
   },
   {
     "id": 45,
@@ -2233,7 +2294,8 @@
     "y": 1497.67,
     "screenshot": "the_sunset_times.webp",
     "warning": "Teleport after entering the cave!",
-    "tp": "goto -428,2 14 1497"
+    "tp": "goto -428,2 14 1497",
+    "inCave": true
   },
   {
     "id": 100,
@@ -2651,6 +2713,7 @@
     "description": "Found in the hands of a frozen skeleton",
     "x": 110.97,
     "y": 91.41,
+    "inCave": true,
     "screenshot": "inversion_ab.webp"
   },
   {
@@ -3355,13 +3418,6 @@
     "y": 1316.6328265693514
   },
   {
-    "id": 117,
-    "type": "supply",
-    "title": "Supply Suitcase",
-    "x": -423,
-    "y": 1613
-  },
-  {
     "id": 121,
     "type": "utility-crate",
     "title": "2x Black and Yellow Crates",
@@ -3370,7 +3426,7 @@
   },
   {
     "id": 122,
-    "type": "supply",
+    "type": "utility-crate",
     "title": "2x Grey Crates",
     "description": "Two tarps and a canned drink are on the ground",
     "x": -1114.766235,
@@ -3385,49 +3441,49 @@
   },
   {
     "id": 126,
-    "type": "supply",
+    "type": "utility-crate",
     "title": "Grey Crate",
     "x": -1364.363892,
     "y": 1663.96582
   },
   {
     "id": 1712124048476,
-    "type": "supply",
+    "type": "utility-crate",
     "title": "Grey crate",
     "x": -1362.646118,
     "y": 1668.175537
   },
   {
     "id": 127,
-    "type": "supply",
+    "type": "utility-crate",
     "title": "2x Grey crates",
     "x": -1431.594849,
     "y": 1714.640503
   },
   {
     "id": 128,
-    "type": "supply",
+    "type": "utility-crate",
     "title": "Grey crate",
     "x": -1259.519409,
     "y": 1400.530518
   },
   {
     "id": 132,
-    "type": "supply",
+    "type": "utility-crate",
     "title": "grey crates",
     "x": -1653.191895,
     "y": 1185.944336
   },
   {
     "id": 133,
-    "type": "supply",
+    "type": "utility-crate",
     "title": "Grey Case",
     "x": -1438.519287,
     "y": 1213.343262
   },
   {
     "id": 1712120600750,
-    "type": "supply",
+    "type": "utility-crate",
     "title": "Grey crate",
     "x": -1645.103027,
     "y": 1187.315552
@@ -3525,14 +3581,14 @@
   },
   {
     "id": 170,
-    "type": "supply",
+    "type": "utility-crate",
     "title": "Grey Crate",
     "x": -751,
     "y": 1276
   },
   {
     "id": 1712721447033,
-    "type": "supply",
+    "type": "utility-crate",
     "title": "Grey Crate",
     "description": "",
     "x": -1119.555298,
@@ -3898,6 +3954,42 @@
     "y": 1233.5477797799322
   },
   {
+    "id":1713843825222,
+    "type": "supply",
+    "title": "2x spools of wire",
+    "description": "",
+    "x":-439.429932,
+    "y":1475.907959,
+    "inCave": true
+  },
+  {
+    "id":1713843944677,
+    "type": "supply",
+    "title": "2x cloth",
+    "description": "",
+    "x":-413.669617,
+    "y":1474.393188,
+    "inCave": true
+  },
+  {
+    "id":1713844021040,
+    "type": "supply",
+    "title": "Bones, flares, vodka, cloth, MRE, watch, Soda",
+    "description": "",
+    "x":-422.403107,
+    "y":1480.699463,
+    "inCave": true
+  },
+  {
+    "id":1713843879036,
+    "type": "supply",
+    "title": "2x Soda cans",
+    "description": "",
+    "x":-439.301422,
+    "y":1469.314087,
+    "inCave": true
+  },
+  {
     "id": 124,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
@@ -4107,7 +4199,7 @@
     "title": "Flare Case",
     "x": -422.13,
     "y": 1496.44,
-    "isUnderground": true
+    "inCave": true
   },
   {
     "id": 125,
@@ -4207,8 +4299,10 @@
     "id": 13333,
     "type": "wooden-crate",
     "title": "5x Wood Crates",
+    "description": "Down the right hand path in the room with the hanging skeletons",
     "x": -572.58,
-    "y": 1380.27
+    "y": 1378.69,
+    "inCave": true
   },
   {
     "id": 13334,
@@ -4216,7 +4310,8 @@
     "title": "4x Wood Crates",
     "description": "At the bottom of a climb down rope.",
     "x": -615.34,
-    "y": 1412.45
+    "y": 1412.45,
+    "inCave": true
   },
   {
     "id": 13335,
@@ -4224,7 +4319,8 @@
     "title": "4x Wood Crates",
     "description": "At the end of a downward dead end tunnel.",
     "x": -631.80,
-    "y": 1422.27
+    "y": 1422.27,
+    "inCave": true
   },
   {
     "id": 13336,
@@ -4232,7 +4328,8 @@
     "title": "Wood Crate",
     "description": "Just before the breakable wood door with a cross.",
     "x": -646.30,
-    "y": 1384.69
+    "y": 1384.69,
+    "inCave": true
   },
   {
     "id": 130,
@@ -5547,6 +5644,15 @@
     "y": 1181.138306
   },
   {
+    "id":1711949383177,
+    "type": "grave",
+    "title": "Vodka, 2x stun ammo",
+    "description": "Beneath hanging worker",
+    "x":-645.125,
+    "y":1512.875,
+    "inCave": true
+  },
+  {
     "id": 422,
     "type": "poi",
     "title": "Astronaut Corpse",
@@ -5719,6 +5825,33 @@
     "description": "Mountain Climbing Rope",
     "x": 376.97,
     "y": -1449.63
+  },
+  {
+    "id":1713843735747,
+    "type": "poi",
+    "title": "Severed arms and legs",
+    "description": "Throw them in the water to distract the sharks",
+    "x":-432.70108,
+    "y":1457.525391,
+    "inCave": true
+  },
+  {
+    "id": 118,
+    "type": "poi",
+    "title": "Broken Sleds",
+    "description": "Broken sleds with loose items.",
+    "x": -160.25,
+    "y": -91.75,
+    "screenshot": "broken_sled_ice.webp"
+  },
+  {
+    "id":1713841698125,
+    "type": "poi",
+    "title": "Fish and Bones",
+    "description": "Where the cave path splits",
+    "x":-537.689636,
+    "y":1440.217773,
+    "inCave": true
   },
   {
     "id": 236,
@@ -7063,7 +7196,7 @@
     "id": 378,
     "type": "radio",
     "title": "Radio",
-    "description": "Radio is hanging from the ceiling with a smashable laptop on the floor.",
+    "description": "Radio is hanging from the ceiling with a damaged laptop on the floor.",
     "x": -598.86,
     "y": 1448.47,
     "isUnderground": true,
@@ -7142,15 +7275,6 @@
     "y": -419.53,
     "itemid": "additem 590",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
-  },
-  {
-    "id": 118,
-    "type": "poi",
-    "title": "Broken Sleds",
-    "description": "Broken sleds with loose items.",
-    "x": -160.25,
-    "y": -91.75,
-    "screenshot": "broken_sled_ice.webp"
   },
   {
     "id": 1712103913230,
