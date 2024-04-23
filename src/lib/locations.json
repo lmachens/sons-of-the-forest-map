@@ -12,7 +12,7 @@
   },
   {
     "id": 10001,
-    "type": "supply",
+    "type": "utility-case",
     "title": "Supply Case",
     "description": "Part of the mountain crash site.",
     "x": -236,
@@ -28,7 +28,7 @@
   },
   {
     "id": 10003,
-    "type": "supply",
+    "type": "utility-case",
     "title": "Supply Case",
     "description": "Part of the mountain crash site.",
     "x": -252.50,
@@ -118,7 +118,7 @@
   },
   {
     "id": 20005,
-    "type": "supply",
+    "type": "utility-case",
     "title": "Red Case",
     "description": "Part of the ocean crash site",
     "x": -425.19,
@@ -157,6 +157,14 @@
     "y": 1585.65332
   },
   {
+    "id": 20010,
+    "type": "utility-case",
+    "title": "Supply Case",
+    "description": "Part of the ocean crash site",
+    "x": -423,
+    "y": 1613
+  },
+  {
     "id": 3,
     "type": "spawnPoint",
     "title": "Forest Crash Site",
@@ -169,7 +177,7 @@
   },
   {
     "id": 30001,
-    "type": "supply",
+    "type": "utility-case",
     "title": "Supply Case",
     "description": "Part of the forest crash site.",
     "x": -1137.56,
@@ -185,7 +193,7 @@
   },
   {
     "id": 30003,
-    "type": "supply",
+    "type": "utility-case",
     "title": "Supply Case",
     "description": "Part of the forest crash site.",
     "x": -1147.38,
@@ -344,6 +352,14 @@
     "tp": "goto RebreatherPickup",
     "itemid": "additem 444",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Rebreather"
+  },
+  {
+    "id":1713841340991,
+    "type": "rebreather",
+    "title": "Air-tank",
+    "x":-424.90332,
+    "y":1495.965088,
+    "inCave": true
   },
   {
     "id": 12,
@@ -999,7 +1015,7 @@
   },
   {
     "id": 587,
-    "type": "laptop-cave",
+    "type": "laptop",
     "title": "Laptop no.1",
     "description": "Entertainment Bunker Location",
     "x": -422.32,
@@ -1009,7 +1025,7 @@
   },
   {
     "id": 588,
-    "type": "laptop-cave",
+    "type": "laptop",
     "title": "Laptop no.2",
     "description": "Bunker A Location",
     "x": -581,
@@ -1085,6 +1101,31 @@
       21
     ],
     "screenshot": "laptop_residential_bunker.webp"
+  },
+  {
+    "id":1712088096993,
+    "type": "laptop",
+    "title": "Damaged laptop",
+    "x":-597.260193,
+    "y":1450.916992,
+    "inCave": true
+  },
+  {
+    "id":1713844128416,
+    "type": "laptop",
+    "title": "Damaged Laptop",
+    "x":-424.245605,
+    "y":1478.341675,
+    "inCave": true
+  },
+  {
+    "id":1713858317296,
+    "type":"laptop",
+    "title":"Damaged Laptop",
+    "description":"Strike to get a circuit board",
+    "x":-1198.463867,
+    "y":78.688484,
+    "inBunker": true
   },
   {
     "id": 586,
@@ -1168,6 +1209,31 @@
     "screenshot": "cave_a.webp",
     "tp": "goto CaveAEntrance",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Caves#Beach/Rebreather_Cave"
+  },
+  {
+    "id":1713842326161,
+    "type": "cave",
+    "title": "Destructable Door",
+    "description": "InCave",
+    "x":-612.686157,
+    "y":1416.595703,
+    "inCave": true
+  },
+  {
+    "id":1713843104164,
+    "type": "cave",
+    "title": "Destructable Wood Door",
+    "x":-643.631104,
+    "y":1385.073853,
+    "inCave": true
+  },
+  {
+    "id":1713844482626,
+    "type": "cave",
+    "title": "Underwater cave",
+    "description": "Danger: Must have rebreather",
+    "x":-323.67812908814216,
+    "y":1512.0594632197838
   },
   {
     "id": 45,
@@ -1376,9 +1442,15 @@
     "id": 1712715396888,
     "type": "cave",
     "title": "Cave",
-    "description": "",
     "x": -674.78009,
     "y": 1149.506348
+  },
+  {
+    "id":1713855480345,
+    "type": "cave",
+    "title": "Surface Cave",
+    "x":-947.177979,
+    "y":206.469223
   },
   {
     "id": 63,
@@ -2084,12 +2156,20 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/GPS_Locator"
   },
   {
+    "id":1713855243882,
+    "type": "gps-locator",
+    "title": "Worker GPS Locator",
+    "description": "In the hand of the dead worker",
+    "x":-949.433472,
+    "y":217.765778
+  },
+  {
     "id": 88,
-    "type": "book-bunker",
-    "title": "Parallel Universes and Travel Between Them Book",
+    "type": "book",
+    "title": "Book - Parallel Universes and Travel Between Them",
     "description": "Next to 3D Printer inside the bunker",
-    "x": -1198.88,
-    "y": 78.20,
+    "x":-1196.857544,
+    "y":78.635384,
     "inBunker": true,
     "warning": "Teleport after entering the bunker to avoid falling under the map",
     "tp": "goto -1196.8 60 79",
@@ -2097,7 +2177,7 @@
   },
   {
     "id": 89,
-    "type": "book-bunker",
+    "type": "book",
     "title": "Pennant Line Book",
     "description": "On the floor, next to bathtube",
     "x": -416.8,
@@ -2114,7 +2194,7 @@
   },
   {
     "id": 90,
-    "type": "book-bunker",
+    "type": "book",
     "title": "Deep Sleep Book",
     "description": "On 5th bunker floor",
     "x": 1161,
@@ -2140,7 +2220,7 @@
   },
   {
     "id": 828,
-    "type": "book-bunker",
+    "type": "book",
     "title": "Rescued",
     "x": 1623.26,
     "y": 504.56,
@@ -2152,7 +2232,7 @@
   },
   {
     "id": 92,
-    "type": "document-bunker",
+    "type": "document",
     "title": "Email - Another one",
     "description": "Artifact 2",
     "x": -1126.14,
@@ -2184,7 +2264,7 @@
   },
   {
     "id": 94,
-    "type": "document-bunker",
+    "type": "document",
     "title": "Last will and testament of Edward Puffton",
     "description": "On second table behind doors",
     "x": -1178.63,
@@ -2199,7 +2279,7 @@
   },
   {
     "id": 96,
-    "type": "document-cave",
+    "type": "document",
     "title": "Email - Photo Reference",
     "x": -1139.6,
     "y": -234.44,
@@ -2208,7 +2288,7 @@
   },
   {
     "id": 97,
-    "type": "document-cave",
+    "type": "document",
     "title": "Email - More Lightning",
     "x": -1017.05,
     "y": -264.34,
@@ -2217,7 +2297,7 @@
   },
   {
     "id": 98,
-    "type": "document-bunker",
+    "type": "document",
     "title": "Newspaper Cutout Missing CEO",
     "x": 416.67,
     "y": 1170.59,
@@ -2233,7 +2313,8 @@
     "y": 1497.67,
     "screenshot": "the_sunset_times.webp",
     "warning": "Teleport after entering the cave!",
-    "tp": "goto -428,2 14 1497"
+    "tp": "goto -428,2 14 1497",
+    "inCave": true
   },
   {
     "id": 100,
@@ -2348,16 +2429,16 @@
   {
     "id": 531,
     "type": "email",
-    "title": "Again voicing my concerns",
-    "description": "Next to Modern Axe",
-    "x": -704.09,
-    "y": 445.92,
+    "title": "Email: Again voicing my concerns",
+    "description": "Next to the dead worker with the GPS beacon",
+    "x":-949.080322,
+    "y":217.74649,
     "screenshot": "jianyu_email_printout_1.webp",
     "tp": "goto JianyuEmailPrintoutAPickup"
   },
   {
     "id": 308,
-    "type": "document-bunker",
+    "type": "document",
     "title": "Email - THOUGHT YOU MIGHT FIND THIS INTERESTING",
     "description": "Next to dead person on the floor",
     "x": -1021,
@@ -2367,7 +2448,7 @@
   },
   {
     "id": 312,
-    "type": "document-bunker",
+    "type": "document",
     "title": "Email - ONE MORE",
     "description": "On desk to the left side",
     "x": -975,
@@ -2380,7 +2461,7 @@
   },
   {
     "id": 314,
-    "type": "document-bunker",
+    "type": "document",
     "title": "Email - RE:RE:RE: GOLF BALLS",
     "description": "On the table with mutant",
     "x": -913,
@@ -2393,7 +2474,7 @@
   },
   {
     "id": 315,
-    "type": "document-bunker",
+    "type": "document",
     "title": "Barbara's Reservation Card",
     "description": "On the table with mutant",
     "x": -915,
@@ -2405,7 +2486,7 @@
   },
   {
     "id": 316,
-    "type": "document-bunker",
+    "type": "document",
     "title": "Edward's Reservation Card",
     "description": "On the table with mutant",
     "x": -914,
@@ -2417,7 +2498,7 @@
   },
   {
     "id": 333,
-    "type": "document-bunker",
+    "type": "document",
     "title": "Email - Note to all employees",
     "description": "Beside sunbed in the room with big tree",
     "x": -1120.05,
@@ -2433,7 +2514,7 @@
   },
   {
     "id": 924,
-    "type": "document-bunker",
+    "type": "document",
     "title": "Email - Note to all employees",
     "x": -1158.80,
     "y": 30.45,
@@ -2447,7 +2528,7 @@
   },
   {
     "id": 334,
-    "type": "document-bunker",
+    "type": "document",
     "title": "Email - RE: RE: Golf Balls",
     "description": "In the room with couches, at the end turn to left table",
     "x": -1192.04,
@@ -2463,7 +2544,7 @@
   },
   {
     "id": 923,
-    "type": "document-bunker",
+    "type": "document",
     "title": "Personal Note",
     "description": "Message for Doris",
     "x": -1130.62,
@@ -2531,7 +2612,7 @@
   },
   {
     "id": 576,
-    "type": "document-bunker",
+    "type": "document",
     "title": "Stock Price Printout",
     "description": "On 2nd bunker floor",
     "x": 1156.44,
@@ -2546,7 +2627,7 @@
   },
   {
     "id": 830,
-    "type": "document-cave",
+    "type": "document",
     "title": "Astrology no.1",
     "x": 1154.24,
     "y": 523.05,
@@ -2557,7 +2638,7 @@
   },
   {
     "id": 829,
-    "type": "document-bunker",
+    "type": "document",
     "title": "Astrology no.2",
     "x": 1615.85,
     "y": 483.71,
@@ -2568,7 +2649,7 @@
   },
   {
     "id": 514,
-    "type": "document-cave",
+    "type": "document",
     "title": "Astrology no.3",
     "x": 1212.23,
     "y": 634.28,
@@ -2579,7 +2660,7 @@
   },
   {
     "id": 831,
-    "type": "document-cave",
+    "type": "document",
     "title": "The Cube",
     "x": 1153.69,
     "y": 522.74,
@@ -2651,6 +2732,7 @@
     "description": "Found in the hands of a frozen skeleton",
     "x": 110.97,
     "y": 91.41,
+    "inCave": true,
     "screenshot": "inversion_ab.webp"
   },
   {
@@ -2684,7 +2766,7 @@
   },
   {
     "id": 503,
-    "type": "document-cave",
+    "type": "document",
     "title": "Old Note no.5",
     "x": 1693.66,
     "y": 1032.73,
@@ -2703,7 +2785,7 @@
   },
   {
     "id": 896,
-    "type": "blueprint-cave",
+    "type": "blueprint",
     "title": "Item Plating Machine",
     "description": "Item upgrading machine",
     "x": 1333.13,
@@ -2718,7 +2800,7 @@
   },
   {
     "id": 567,
-    "type": "blueprint-cave",
+    "type": "blueprint",
     "title": "Armor Plating Machine",
     "description": "Armor upgrading machine",
     "x": 1598.33,
@@ -2727,7 +2809,7 @@
   },
   {
     "id": 379,
-    "type": "blueprint-cave",
+    "type": "blueprint",
     "title": "Powered Cross",
     "description": "Unlockable new decoration",
     "x": -648.78,
@@ -2761,7 +2843,7 @@
   },
   {
     "id": 494,
-    "type": "blueprint-cave",
+    "type": "blueprint",
     "title": "Clock",
     "description": "Unlockable new decoration",
     "x": 461.08,
@@ -2782,7 +2864,7 @@
   },
   {
     "id": 568,
-    "type": "blueprint-cave",
+    "type": "blueprint",
     "title": "Hang Glider Launcher",
     "x": -954.87,
     "y": 161.72,
@@ -2800,17 +2882,18 @@
   },
   {
     "id": 497,
-    "type": "blueprint-cave",
+    "type": "blueprint",
     "title": "Spin Trap",
     "description": "Unlockable new trap",
     "x": 1453.53,
     "y": 752.82,
+    "inCave": true,
     "screenshot": "blueprint_spin_trap.webp",
     "tp": "goto BlueprintSpinTrapPickup"
   },
   {
     "id": 498,
-    "type": "blueprint-cave",
+    "type": "blueprint",
     "title": "Uber Trap",
     "description": "Unlockable new trap",
     "x": -963.8,
@@ -2822,7 +2905,7 @@
   },
   {
     "id": 502,
-    "type": "blueprint-cave",
+    "type": "blueprint",
     "title": "Grind Trap",
     "description": "Unlockable new trap",
     "x": 1719.68,
@@ -2834,7 +2917,7 @@
   },
   {
     "id": 504,
-    "type": "blueprint-cave",
+    "type": "blueprint",
     "title": "Spear Thrower Trap",
     "description": "Unlockable new trap",
     "x": -115.44,
@@ -2846,14 +2929,14 @@
   },
   {
     "id": 563,
-    "type": "blueprint-cave",
+    "type": "blueprint",
     "x": -1151.12,
     "y": -1608.09,
     "inCave": true
   },
   {
     "id": 564,
-    "type": "blueprint-cave",
+    "type": "blueprint",
     "title": "Repel Shrine",
     "x": 1505.11,
     "y": -448.46,
@@ -2861,7 +2944,7 @@
   },
   {
     "id": 565,
-    "type": "blueprint-cave",
+    "type": "blueprint",
     "title": "Attract Shrine",
     "x": -1648.54,
     "y": -951.13,
@@ -3350,16 +3433,8 @@
     "id": 1702952620951,
     "type": "machete",
     "title": "Aloe and Devil's club",
-    "description": "",
     "x": -1166.7261889578033,
     "y": 1316.6328265693514
-  },
-  {
-    "id": 117,
-    "type": "supply",
-    "title": "Supply Suitcase",
-    "x": -423,
-    "y": 1613
   },
   {
     "id": 121,
@@ -3370,7 +3445,7 @@
   },
   {
     "id": 122,
-    "type": "supply",
+    "type": "utility-crate",
     "title": "2x Grey Crates",
     "description": "Two tarps and a canned drink are on the ground",
     "x": -1114.766235,
@@ -3385,49 +3460,49 @@
   },
   {
     "id": 126,
-    "type": "supply",
+    "type": "utility-crate",
     "title": "Grey Crate",
     "x": -1364.363892,
     "y": 1663.96582
   },
   {
     "id": 1712124048476,
-    "type": "supply",
+    "type": "utility-crate",
     "title": "Grey crate",
     "x": -1362.646118,
     "y": 1668.175537
   },
   {
     "id": 127,
-    "type": "supply",
+    "type": "utility-crate",
     "title": "2x Grey crates",
     "x": -1431.594849,
     "y": 1714.640503
   },
   {
     "id": 128,
-    "type": "supply",
+    "type": "utility-crate",
     "title": "Grey crate",
     "x": -1259.519409,
     "y": 1400.530518
   },
   {
     "id": 132,
-    "type": "supply",
+    "type": "utility-crate",
     "title": "grey crates",
     "x": -1653.191895,
     "y": 1185.944336
   },
   {
     "id": 133,
-    "type": "supply",
+    "type": "utility-crate",
     "title": "Grey Case",
     "x": -1438.519287,
     "y": 1213.343262
   },
   {
     "id": 1712120600750,
-    "type": "supply",
+    "type": "utility-crate",
     "title": "Grey crate",
     "x": -1645.103027,
     "y": 1187.315552
@@ -3483,22 +3558,29 @@
   },
   {
     "id": 157,
-    "type": "supply",
-    "title": "2x Supply Suitcases",
-    "x": -1217,
-    "y": 665
+    "type": "utility-crate",
+    "title": "2x Grey Crates",
+    "x":-1217.381958,
+    "y":665.765991
   },
   {
     "id": 158,
-    "type": "supply",
-    "title": "2x Supply Suitcases",
-    "x": -1217,
-    "y": 655
+    "type": "utility-case",
+    "title": "Supply Case",
+    "x":-1214.406616,
+    "y":654.19104
+  },
+  {
+    "id":1713851382509,
+    "type": "utility-crate",
+    "title": "Black and Yellow Crate",
+    "x":-1218.669922,
+    "y":655.736938
   },
   {
     "id": 159,
-    "type": "supply",
-    "title": "Supply Suitcase",
+    "type": "utility-crate",
+    "title": "Black and Yellow Crate",
     "x": -1188,
     "y": 572
   },
@@ -3525,16 +3607,15 @@
   },
   {
     "id": 170,
-    "type": "supply",
+    "type": "utility-crate",
     "title": "Grey Crate",
     "x": -751,
     "y": 1276
   },
   {
     "id": 1712721447033,
-    "type": "supply",
+    "type": "utility-crate",
     "title": "Grey Crate",
-    "description": "",
     "x": -1119.555298,
     "y": 1625.414795
   },
@@ -3577,7 +3658,6 @@
     "id": 266,
     "type": "utility-crate",
     "title": "Black and Yellow Crate",
-    "description": "",
     "x": -1099.905884,
     "y": 1280.482056
   },
@@ -3719,11 +3799,11 @@
   },
   {
     "id": 330,
-    "type": "supply",
-    "title": "2x Supply Suitcases",
-    "x": -1195,
-    "y": 81,
-    "isUnderground": true
+    "type": "utility-crate",
+    "title": "2x Grey Crates",
+    "x":-1194.801392,
+    "y":81.747337,
+    "inBunker": true
   },
   {
     "id": 336,
@@ -3863,6 +3943,20 @@
     "y": 1454.69
   },
   {
+    "id":1713853559578,
+    "type": "utility-crate",
+    "title": "Black and Yellow Crate",
+    "x":-1155.168701,
+    "y":447.833557
+  },
+  {
+    "id":1713854002976,
+    "type": "utility-crate",
+    "title": "Black and Yellow Crate",
+    "x":-1144.312134,
+    "y":450.445648
+  },
+  {
     "id": 468,
     "type": "supply",
     "title": "Flare Case",
@@ -3892,10 +3986,49 @@
   },
   {
     "id": 1711529061128,
-    "type": "supply",
+    "type": "utility-crate",
     "title": "Grey Crate",
     "x": -1496.2379489907346,
     "y": 1233.5477797799322
+  },
+  {
+    "id":1713843825222,
+    "type": "supply",
+    "title": "2x spools of wire",
+    "x":-439.429932,
+    "y":1475.907959,
+    "inCave": true
+  },
+  {
+    "id":1713843944677,
+    "type": "supply",
+    "title": "2x cloth",
+    "x":-413.669617,
+    "y":1474.393188,
+    "inCave": true
+  },
+  {
+    "id":1713844021040,
+    "type": "supply",
+    "title": "Bones, flares, vodka, cloth, MRE, watch, Soda",
+    "x":-422.403107,
+    "y":1480.699463,
+    "inCave": true
+  },
+  {
+    "id":1713843879036,
+    "type": "supply",
+    "title": "2x Soda cans",
+    "x":-439.301422,
+    "y":1469.314087,
+    "inCave": true
+  },
+  {
+    "id":1713854040043,
+    "type": "supply",
+    "title": "Skin Pouch",
+    "x":-1140.075195,
+    "y":446.987244
   },
   {
     "id": 124,
@@ -4065,6 +4198,13 @@
     "y": 1453
   },
   {
+    "id":1712127597389,
+    "type": "dark-green-suitcase",
+    "title": "Ammo case",
+    "x":-45.471256,
+    "y":1459.754639
+  },
+  {
     "id": 472,
     "type": "utility-case",
     "title": "Explosives Case",
@@ -4107,7 +4247,7 @@
     "title": "Flare Case",
     "x": -422.13,
     "y": 1496.44,
-    "isUnderground": true
+    "inCave": true
   },
   {
     "id": 125,
@@ -4207,8 +4347,10 @@
     "id": 13333,
     "type": "wooden-crate",
     "title": "5x Wood Crates",
+    "description": "Down the right hand path in the room with the hanging skeletons",
     "x": -572.58,
-    "y": 1380.27
+    "y": 1378.69,
+    "inCave": true
   },
   {
     "id": 13334,
@@ -4216,7 +4358,8 @@
     "title": "4x Wood Crates",
     "description": "At the bottom of a climb down rope.",
     "x": -615.34,
-    "y": 1412.45
+    "y": 1412.45,
+    "inCave": true
   },
   {
     "id": 13335,
@@ -4224,7 +4367,8 @@
     "title": "4x Wood Crates",
     "description": "At the end of a downward dead end tunnel.",
     "x": -631.80,
-    "y": 1422.27
+    "y": 1422.27,
+    "inCave": true
   },
   {
     "id": 13336,
@@ -4232,7 +4376,8 @@
     "title": "Wood Crate",
     "description": "Just before the breakable wood door with a cross.",
     "x": -646.30,
-    "y": 1384.69
+    "y": 1384.69,
+    "inCave": true
   },
   {
     "id": 130,
@@ -4470,9 +4615,9 @@
   {
     "id": 215,
     "type": "wooden-crate",
-    "title": "2x Wood Crates",
-    "x": -1141,
-    "y": 444
+    "title": "2x Wood Crats",
+    "x":-1141.95813,
+    "y":444.163147
   },
   {
     "id": 217,
@@ -4608,11 +4753,18 @@
     "y": 819
   },
   {
+    "id":1712123608135,
+    "title": "4x coffins with loose items",
+    "type": "wooden-crate",
+    "x":-1081.530884,
+    "y":1269.165771
+  },
+  {
     "id": 459,
     "type": "wooden-crate",
     "title": "Wood Crate",
-    "x": -1152,
-    "y": 455
+    "x":-1152.617676,
+    "y":455.572479
   },
   {
     "id": 460,
@@ -4720,6 +4872,22 @@
     "title": "2x Crates",
     "x": 627,
     "y": -1661
+  },
+  {
+    "id":1713855581004,
+    "type": "wooden-crate",
+    "title": "Wood Crate",
+    "x":-951.942322,
+    "y":187.373398,
+    "inCave": true
+  },
+  {
+    "id":1712091806262,
+    "type": "wooden-crate",
+    "title": "2x Wood crates + loose items",
+    "x":-947.608521,
+    "y":186.761673,
+    "inCave": true
   },
   {
     "id": 192,
@@ -5542,9 +5710,17 @@
     "id": 1712107394913,
     "type": "grave",
     "title": "5x graves",
-    "description": "",
     "x": -891.373108,
     "y": 1181.138306
+  },
+  {
+    "id":1711949383177,
+    "type": "grave",
+    "title": "Vodka, 2x stun ammo",
+    "description": "Beneath hanging worker",
+    "x":-645.125,
+    "y":1512.875,
+    "inCave": true
   },
   {
     "id": 422,
@@ -5719,6 +5895,49 @@
     "description": "Mountain Climbing Rope",
     "x": 376.97,
     "y": -1449.63
+  },
+  {
+    "id":1713843735747,
+    "type": "poi",
+    "title": "Severed arms and legs",
+    "description": "Throw them in the water to distract the sharks",
+    "x":-432.70108,
+    "y":1457.525391,
+    "inCave": true
+  },
+  {
+    "id": 118,
+    "type": "poi",
+    "title": "Broken Sleds",
+    "description": "Broken sleds with loose items.",
+    "x": -160.25,
+    "y": -91.75,
+    "screenshot": "broken_sled_ice.webp"
+  },
+  {
+    "id":1713841698125,
+    "type": "poi",
+    "title": "Fish and Bones",
+    "description": "Where the cave path splits",
+    "x":-537.689636,
+    "y":1440.217773,
+    "inCave": true
+  },
+  {
+    "id":1712727681762,
+    "type": "poi",
+    "title": "Speared Turtle",
+    "description": "Dead turtle with a spear and shell",
+    "x":-1693.629883,
+    "y":1484.912231
+  },
+  {
+    "id":1711958379829,
+    "type": "supply",
+    "title": "Big Aloe Patch",
+    "description": "19x Aloe on the hill at the tree line",
+    "x":-977.783386,
+    "y":181.315781
   },
   {
     "id": 236,
@@ -6502,7 +6721,6 @@
     "id": 449,
     "type": "night-vision",
     "title": "Night Vision",
-    "description": "",
     "x": -1133.87,
     "y": -1604.05,
     "inCave": true,
@@ -6609,7 +6827,6 @@
     "id": 1712816841957,
     "type": "cooking-pot",
     "title": "Cooking Pot",
-    "description": "",
     "x": -1609.150513,
     "y": 488.138885
   },
@@ -6864,6 +7081,16 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
   {
+    "id":1713857104819,
+    "type": "large-battery",
+    "title": "Golf Cart Battery",
+    "description": "In the carry box of the broken golf cart.",
+    "x":-1187.253906,
+    "y":137.056671,
+    "itemid": "additem 661",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
+  },
+  {
     "id": 433,
     "type": "solar-panel",
     "title": "2x Solar Panels",
@@ -7026,9 +7253,71 @@
     "id": 862,
     "type": "radio",
     "title": "Radio",
-    "description": "8x pcs.",
-    "x": -1208,
-    "y": 659,
+    "x":-1211.072144,
+    "y":653.333191,
+    "itemid": "additem 590",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
+  },
+  {
+    "id":1713850789741,
+    "type": "radio",
+    "title": "radio",
+    "x":-1206.778687,
+    "y":653.092163,
+    "itemid": "additem 590",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
+  },
+  {
+    "id":1713850806345,
+    "type": "radio",
+    "title": "radio",
+    "x":-1202.710693,
+    "y":656.139893,
+    "itemid": "additem 590",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
+  },
+  {
+    "id":1713850827415,
+    "type": "radio",
+    "title": "radio",
+    "x":-1202.188965,
+    "y":661.338867,
+    "itemid": "additem 590",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
+  },
+  {
+    "id":1713850846731,
+    "type": "radio",
+    "title": "radio",
+    "x":-1206.150146,
+    "y":664.653931,
+    "itemid": "additem 590",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
+  },
+  {
+    "id":1713850865004,
+    "type": "radio",
+    "title": "radio",
+    "x":-1211.289429,
+    "y":664.841248,
+    "itemid": "additem 590",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
+  },
+  {
+    "id":1713850883143,
+    "type": "radio",
+    "title": "radio",
+    "x":-1213.743896,
+    "y":661.242798,
+    "itemid": "additem 590",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
+  },
+  {
+    "id":1713850900518,
+    "type": "radio",
+    "title": "radio",
+    "x":-1213.515747,
+    "y":656.621704,
     "itemid": "additem 590",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
@@ -7063,7 +7352,7 @@
     "id": 378,
     "type": "radio",
     "title": "Radio",
-    "description": "Radio is hanging from the ceiling with a smashable laptop on the floor.",
+    "description": "Radio is hanging from the ceiling with a damaged laptop on the floor.",
     "x": -598.86,
     "y": 1448.47,
     "isUnderground": true,
@@ -7142,15 +7431,6 @@
     "y": -419.53,
     "itemid": "additem 590",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
-  },
-  {
-    "id": 118,
-    "type": "poi",
-    "title": "Broken Sleds",
-    "description": "Broken sleds with loose items.",
-    "x": -160.25,
-    "y": -91.75,
-    "screenshot": "broken_sled_ice.webp"
   },
   {
     "id": 1712103913230,
