@@ -37,7 +37,7 @@ export function getTypes(onlyBaseTypes: boolean = false): NodeType[] {
     baseSuppressor,
     baseSupply,
     baseSuitcaseDG,
-    baseSuitcaseOr,
+    baseOrangeCase,
     baseSolarPanel,
     createNodeType({
       value: "unknown",
@@ -397,20 +397,23 @@ export function getTypes(onlyBaseTypes: boolean = false): NodeType[] {
     caveSupply,
     bunkerSuitcaseDG,
     caveSuitcaseDG,
-    bunkerSuitcaseOr,
-    caveSuitcaseOr,
+    bunkerOrangeCase,
+    caveOrangeCase,
     bunkerSolarPanel,
     waterfall,
-  ]
-  
+  ];
+
   if (onlyBaseTypes) {
-  return baseTypes;
+    return baseTypes;
   } else {
     return baseTypes.concat(extendedTypes);
   }
 }
 
-function createNodeType(base: NodeType, extensions: Partial<NodeType> = {}): NodeType {
+function createNodeType(
+  base: NodeType,
+  extensions: Partial<NodeType> = {}
+): NodeType {
   return { ...base, ...extensions };
 }
 
@@ -420,24 +423,24 @@ const baseBook: NodeType = {
   icon: icons.book,
   src: "/icons/book.webp",
   filter: "documents",
-}
+};
 
 const baseCrate: NodeType = {
   value: "wooden-crate",
   title: t("Crate"),
   icon: icons.crate,
   filter: "loot",
-}
+};
 
 const bunkerCrate = createNodeType(baseCrate, {
   value: "wooden-crate-bunker",
   filter: ["loot", "bunker-loot"],
-})
+});
 
 const caveCrate = createNodeType(baseCrate, {
   value: "wooden-crate-cave",
   filter: ["loot", "cave-loot"],
-})
+});
 
 const baseCaseU: NodeType = {
   value: "utility-case",
@@ -445,17 +448,17 @@ const baseCaseU: NodeType = {
   icon: icons.case,
   src: "/icons/utility-case.webp",
   filter: "loot",
-}
+};
 
 const bunkerCaseU = createNodeType(baseCaseU, {
   value: "utility-case-bunker",
   filter: ["loot", "bunker-loot"],
-})
+});
 
 const caveCaseU = createNodeType(baseCaseU, {
   value: "utility-case-cave",
   filter: ["loot", "cave-loot"],
-})
+});
 
 const baseCrateU: NodeType = {
   value: "utility-crate",
@@ -463,22 +466,22 @@ const baseCrateU: NodeType = {
   icon: icons.case,
   src: "/icons/utility-crate.webp",
   filter: "loot",
-}
+};
 
 const bunkerCrateU = createNodeType(baseCrateU, {
   value: "utility-crate-bunker",
   filter: ["loot", "bunker-loot"],
-})
+});
 
 const caveCrateU = createNodeType(baseCrateU, {
   value: "utility-crate-cave",
   filter: ["loot", "cave-loot"],
-})
+});
 
 const bunkerBook = createNodeType(baseBook, {
   value: "book-bunker",
   filter: ["documents", "bunker-loot"],
-})
+});
 
 const baseDocument: NodeType = {
   value: "document",
@@ -486,17 +489,17 @@ const baseDocument: NodeType = {
   icon: icons.document,
   src: "/icons/document.webp",
   filter: "documents",
-}
+};
 
 const bunkerDocument = createNodeType(baseDocument, {
   value: "document-bunker",
   filter: ["documents", "bunker-loot"],
-})
+});
 
 const caveDocument = createNodeType(baseDocument, {
   value: "document-cave",
   filter: ["documents", "cave-loot"],
-})
+});
 
 const baseLargeBattery: NodeType = {
   value: "large-battery",
@@ -504,12 +507,12 @@ const baseLargeBattery: NodeType = {
   icon: icons.poi,
   src: "/icons/large-battery.webp",
   filter: "electronics",
-}
+};
 
 const bunkerLargeBattery = createNodeType(baseLargeBattery, {
   value: "large-battery-bunker",
   filter: ["electronics", "bunker-loot"],
-})
+});
 
 const baseOutfit: NodeType = {
   value: "outfit",
@@ -517,17 +520,17 @@ const baseOutfit: NodeType = {
   icon: icons.outfit,
   src: "/icons/outfit.webp",
   filter: "outfits",
-}
+};
 
 const bunkerOutfit = createNodeType(baseOutfit, {
   value: "outfit-bunker",
   filter: ["outfits", "bunker-loot"],
-})
+});
 
 const caveOutfit = createNodeType(baseOutfit, {
   value: "outfit-cave",
   filter: ["outfits", "cave-loot"],
-})
+});
 
 const basePistol: NodeType = {
   value: "pistol",
@@ -548,12 +551,12 @@ const basePutter: NodeType = {
   icon: icons.putter,
   src: "/icons/putter.webp",
   filter: "weapons",
-}
+};
 
 const bunkerPutter = createNodeType(basePutter, {
   value: "putter-bunker",
   filter: ["weapons", "bunker-loot"],
-})
+});
 
 const basePistolRail: NodeType = {
   value: "pistol-rail",
@@ -561,12 +564,12 @@ const basePistolRail: NodeType = {
   icon: icons["pistol-rail"],
   src: "/icons/pistol-rail.webp",
   filter: "attachments",
-}
+};
 
 const bunkerPistolRail = createNodeType(basePistolRail, {
   value: "pistol-rail-bunker",
   filter: ["attachments", "bunker-loot"],
-})
+});
 
 const basePOI: NodeType = {
   value: "poi",
@@ -574,17 +577,17 @@ const basePOI: NodeType = {
   icon: icons.poi,
   src: "/icons/poi.webp",
   filter: "poi",
-}
+};
 
 const bunkerPOI = createNodeType(basePOI, {
   value: "poi-bunker",
   filter: ["poi", "bunker-loot"],
-})
+});
 
 const cavePOI = createNodeType(basePOI, {
   value: "poi-cave",
   filter: ["poi", "cave-loot"],
-})
+});
 
 const baseRadio: NodeType = {
   value: "radio",
@@ -592,12 +595,12 @@ const baseRadio: NodeType = {
   icon: icons.poi,
   src: "/icons/radio.webp",
   filter: "electronics",
-}
+};
 
 const bunkerRadio = createNodeType(baseRadio, {
   value: "radio-bunker",
   filter: ["electronics", "bunker-loot"],
-})
+});
 
 const baseShotgunRail: NodeType = {
   value: "shotgun-rail",
@@ -605,12 +608,12 @@ const baseShotgunRail: NodeType = {
   icon: icons["shotgun-rail"],
   src: "/icons/shotgun-rail.webp",
   filter: "attachments",
-}
+};
 
 const bunkerShotgunRail = createNodeType(baseShotgunRail, {
   value: "shotgun-rail-bunker",
   filter: ["attachments", "bunker-loot"],
-})
+});
 
 const baseSuitcaseDG: NodeType = {
   value: "dark-green-suitcase",
@@ -618,35 +621,35 @@ const baseSuitcaseDG: NodeType = {
   icon: icons.case,
   src: "/icons/ammo-case.webp",
   filter: "loot",
-}
+};
 
 const bunkerSuitcaseDG = createNodeType(baseSuitcaseDG, {
   value: "dark-green-suitcase-bunker",
   filter: ["loot", "bunker-loot"],
-})
+});
 
 const caveSuitcaseDG = createNodeType(baseSuitcaseDG, {
   value: "dark-green-suitcase-cave",
   filter: ["loot", "cave-loot"],
-})
+});
 
-const baseSuitcaseOr: NodeType = {
-  value: "orange-suitcase",
+const baseOrangeCase: NodeType = {
+  value: "orange-case",
   title: t("Case"),
   icon: icons.case,
   src: "/icons/flare-case.webp",
   filter: "loot",
-}
+};
 
-const bunkerSuitcaseOr = createNodeType(baseSuitcaseOr, {
-  value: "orange-suitcase-bunker",
+const bunkerOrangeCase = createNodeType(baseOrangeCase, {
+  value: "orange-case-bunker",
   filter: ["loot", "bunker-loot"],
-})
+});
 
-const caveSuitcaseOr = createNodeType(baseSuitcaseOr, {
-  value: "orange-suitcase-cave",
+const caveOrangeCase = createNodeType(baseOrangeCase, {
+  value: "orange-case-cave",
   filter: ["loot", "cave-loot"],
-})
+});
 
 const baseSolarPanel: NodeType = {
   value: "solar-panel",
@@ -654,12 +657,12 @@ const baseSolarPanel: NodeType = {
   icon: icons.poi,
   src: "/icons/solar-panel.webp",
   filter: "electronics",
-}
+};
 
 const bunkerSolarPanel = createNodeType(baseSolarPanel, {
   value: "solar-panel-bunker",
   filter: ["electronics", "bunker-loot"],
-})
+});
 
 const baseFlashlightAttachment: NodeType = {
   value: "flashlight-attachment",
@@ -667,17 +670,17 @@ const baseFlashlightAttachment: NodeType = {
   icon: icons["flashlight-attachment"],
   src: "/icons/flashlight-attachment.webp",
   filter: "attachments",
-}
+};
 
 const bunkerFlashlightAttachment = createNodeType(baseFlashlightAttachment, {
   value: "flashlight-attachment-bunker",
   filter: ["attachments", "bunker-loot"],
-})
+});
 
 const caveFlashlightAttachment = createNodeType(baseFlashlightAttachment, {
   value: "flashlight-attachment-cave",
   filter: ["attachments", "cave-loot"],
-})
+});
 
 const baseSuppressor: NodeType = {
   value: "suppressor",
@@ -685,29 +688,29 @@ const baseSuppressor: NodeType = {
   icon: icons.suppressor,
   src: "/icons/suppressor.webp",
   filter: "attachments",
-}
+};
 
 const bunkerSuppressor = createNodeType(baseSuppressor, {
   value: "suppressor-bunker",
   filter: ["attachments", "bunker-loot"],
-})
+});
 
 const baseSupply: NodeType = {
   value: "supply",
   title: t("Supply"),
   icon: icons.case,
   filter: "loot",
-}
+};
 
 const bunkerSupply = createNodeType(baseSupply, {
   value: "supply-bunker",
   filter: "loot",
-})
+});
 
 const caveSupply = createNodeType(baseSupply, {
   value: "supply-cave",
   filter: "loot",
-})
+});
 
 const baseLake: NodeType = {
   value: "lake",
@@ -715,19 +718,19 @@ const baseLake: NodeType = {
   icon: icons.poi,
   src: "/icons/water.webp",
   filter: "lake",
-}
+};
 
 const pond = createNodeType(baseLake, {
   value: "pond",
   title: t("Water Body"),
   filter: "pond",
-})
+});
 
 const waterfall = createNodeType(baseLake, {
   value: "waterfall",
   title: t("Waterfall"),
   filter: "lake",
-})
+});
 
 const baseCamp: NodeType = {
   value: "abandoned-camp-y",
@@ -735,19 +738,19 @@ const baseCamp: NodeType = {
   icon: icons["abandoned-camp"],
   src: "/icons/abandoned-camp.webp",
   filter: "abandoned-camp",
-}
+};
 
 const camp = createNodeType(baseCamp, {
   value: "abandoned-camp-n",
   title: t("Without save point"),
   filter: "abandoned-camp",
-})
+});
 
 const fishingHut = createNodeType(baseCamp, {
   value: "fishing-hut",
   title: t("Fishing Hut"),
   filter: "abandoned-camp",
-})
+});
 
 const baseLaptop: NodeType = {
   value: "laptop-cave",
@@ -755,12 +758,12 @@ const baseLaptop: NodeType = {
   icon: icons.laptop,
   src: "/icons/laptop.webp",
   filter: "laptop",
-}
+};
 
 const laptop = createNodeType(baseLaptop, {
   value: "laptop-bunker",
   filter: "laptop",
-})
+});
 
 const baseCamera: NodeType = {
   value: "action-camera",
@@ -768,12 +771,12 @@ const baseCamera: NodeType = {
   icon: icons["action-camera"],
   src: "/icons/action-camera.webp",
   filter: "tools",
-}
+};
 
 const camera = createNodeType(baseCamera, {
   value: "action-camera-bunker",
   filter: ["tools", "bunker-loot"],
-})
+});
 
 const baseBlueprint: NodeType = {
   value: "blueprint",
@@ -781,12 +784,12 @@ const baseBlueprint: NodeType = {
   icon: icons.document,
   src: "/icons/document.webp",
   filter: "blueprint",
-}
+};
 
 const caveBlueprint = createNodeType(baseBlueprint, {
   value: "blueprint-cave",
   filter: ["blueprint", "cave-loot"],
-})
+});
 
 const baseCookingPot: NodeType = {
   value: "cooking-pot",
@@ -794,12 +797,12 @@ const baseCookingPot: NodeType = {
   icon: icons.poi,
   src: "/icons/cooking-pot.webp",
   filter: "tools",
-}
+};
 
 const bunkerCookingPot = createNodeType(baseCookingPot, {
   value: "cooking-pot-bunker",
   filter: ["tools", "bunker-loot"],
-})
+});
 
 const baseEmail: NodeType = {
   value: "email",
@@ -807,17 +810,17 @@ const baseEmail: NodeType = {
   icon: icons.document,
   src: "/icons/email.webp",
   filter: "documents",
-}
+};
 
 const bunkerEmail = createNodeType(baseEmail, {
   value: "email-bunker",
   filter: ["documents", "bunker-loot"],
-})
+});
 
 const caveEmail = createNodeType(baseEmail, {
   value: "email-cave",
   filter: ["documents", "cave-loot"],
-})
+});
 
 export function getCustomNodes() {
   return getItem<MapLocation[]>("custom_nodes", []);

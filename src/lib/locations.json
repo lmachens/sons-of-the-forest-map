@@ -126,7 +126,7 @@
   },
   {
     "id": 20006,
-    "type": "orange-suitcase",
+    "type": "orange-case",
     "title": "Flare Case",
     "description": "Part of the ocean crash site",
     "x": -434,
@@ -217,7 +217,7 @@
   },
   {
     "id": 30006,
-    "type": "orange-suitcase",
+    "type": "orange-case",
     "title": "Flare Case",
     "description": "Part of the forest crash site.",
     "x": -1147.5,
@@ -3633,14 +3633,14 @@
   },
   {
     "id": 468,
-    "type": "orange-suitcase",
+    "type": "orange-case",
     "title": "Flare Case",
     "x": -49.97,
     "y": 1452.19
   },
   {
     "id": 1714107027503,
-    "type": "orange-suitcase",
+    "type": "orange-case",
     "title": "Flare Case",
     "description": "By the pond",
     "x": -709.772705,
@@ -3918,7 +3918,7 @@
   },
   {
     "id": 120,
-    "type": "orange-suitcase",
+    "type": "orange-case",
     "title": "Flare Case",
     "x": -422.13,
     "y": 1496.44,
@@ -3926,49 +3926,49 @@
   },
   {
     "id": 125,
-    "type": "orange-suitcase",
+    "type": "orange-case",
     "title": "Flare Case",
     "x": -1360,
     "y": 1667
   },
   {
     "id": 131,
-    "type": "orange-suitcase",
+    "type": "orange-case",
     "title": "Flare Case",
     "x": -1651,
     "y": 1193
   },
   {
     "id": 134,
-    "type": "orange-suitcase",
+    "type": "orange-case",
     "title": "Flare Case",
     "x": -1436,
     "y": 1217
   },
   {
     "id": 149,
-    "type": "orange-suitcase",
+    "type": "orange-case",
     "title": "Flare Case",
     "x": -1723,
     "y": 57
   },
   {
     "id": 261,
-    "type": "orange-suitcase",
+    "type": "orange-case",
     "title": "Flare Case",
     "x": -808,
     "y": -216
   },
   {
     "id": 288,
-    "type": "orange-suitcase",
+    "type": "orange-case",
     "title": "Flare Case",
     "x": 1066,
     "y": -920
   },
   {
     "id": 321,
-    "type": "orange-suitcase",
+    "type": "orange-case",
     "title": "Flare Case",
     "x": -490,
     "y": 6,
@@ -3977,7 +3977,7 @@
   },
   {
     "id": 325,
-    "type": "orange-suitcase",
+    "type": "orange-case",
     "title": "Flare Case",
     "x": -566,
     "y": -98,
@@ -3986,14 +3986,14 @@
   },
   {
     "id": 331,
-    "type": "orange-suitcase",
+    "type": "orange-case",
     "title": "Flare Case",
     "x": -1093,
     "y": 84
   },
   {
     "id": 420,
-    "type": "orange-suitcase",
+    "type": "orange-case",
     "title": "Flare Case",
     "x": -150,
     "y": -418,
@@ -4001,7 +4001,7 @@
   },
   {
     "id": 421,
-    "type": "orange-suitcase",
+    "type": "orange-case",
     "title": "Flare Case",
     "x": -42,
     "y": -344,
@@ -4009,7 +4009,7 @@
   },
   {
     "id": 471,
-    "type": "orange-suitcase",
+    "type": "orange-case",
     "title": "Flare Case",
     "x": -710,
     "y": 461
