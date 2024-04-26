@@ -36,7 +36,7 @@ export function getTypes(onlyBaseTypes: boolean = false): NodeType[] {
     baseShotgunRail,
     baseSuppressor,
     baseSupply,
-    baseSuitcaseDG,
+    baseGreenCase,
     baseOrangeCase,
     baseSolarPanel,
     createNodeType({
@@ -395,8 +395,8 @@ export function getTypes(onlyBaseTypes: boolean = false): NodeType[] {
     bunkerSuppressor,
     bunkerSupply,
     caveSupply,
-    bunkerSuitcaseDG,
-    caveSuitcaseDG,
+    bunkerGreenCase,
+    caveGreenCase,
     bunkerOrangeCase,
     caveOrangeCase,
     bunkerSolarPanel,
@@ -615,21 +615,21 @@ const bunkerShotgunRail = createNodeType(baseShotgunRail, {
   filter: ["attachments", "bunker-loot"],
 });
 
-const baseSuitcaseDG: NodeType = {
-  value: "dark-green-suitcase",
+const baseGreenCase: NodeType = {
+  value: "green-case",
   title: t("Case"),
   icon: icons.case,
   src: "/icons/ammo-case.webp",
   filter: "loot",
 };
 
-const bunkerSuitcaseDG = createNodeType(baseSuitcaseDG, {
-  value: "dark-green-suitcase-bunker",
+const bunkerGreenCase = createNodeType(baseGreenCase, {
+  value: "green-case-bunker",
   filter: ["loot", "bunker-loot"],
 });
 
-const caveSuitcaseDG = createNodeType(baseSuitcaseDG, {
-  value: "dark-green-suitcase-cave",
+const caveGreenCase = createNodeType(baseGreenCase, {
+  value: "green-case-cave",
   filter: ["loot", "cave-loot"],
 });
 

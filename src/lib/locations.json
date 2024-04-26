@@ -36,7 +36,7 @@
   },
   {
     "id": 10004,
-    "type": "dark-green-suitcase",
+    "type": "green-case",
     "title": "Ammo Case",
     "description": "Part of the mountain crash site.",
     "x": -255.16,
@@ -52,7 +52,7 @@
   },
   {
     "id": 10006,
-    "type": "dark-green-suitcase",
+    "type": "green-case",
     "title": "Ammo Case",
     "description": "Part of the mountain crash site.",
     "x": -258.41,
@@ -68,7 +68,7 @@
   },
   {
     "id": 10008,
-    "type": "dark-green-suitcase",
+    "type": "green-case",
     "title": "Ammo Case",
     "x": -249.22,
     "y": 0.66
@@ -102,7 +102,7 @@
   },
   {
     "id": 20003,
-    "type": "dark-green-suitcase",
+    "type": "green-case",
     "title": "Ammo case",
     "description": "Tucked into the rocks at the waters edge. Part of ocean crash site set",
     "x": -454.968506,
@@ -110,7 +110,7 @@
   },
   {
     "id": 20004,
-    "type": "dark-green-suitcase",
+    "type": "green-case",
     "title": "Ammo case",
     "description": "Part of the ocean crash site",
     "x": -433.130127,
@@ -134,7 +134,7 @@
   },
   {
     "id": 20007,
-    "type": "dark-green-suitcase",
+    "type": "green-case",
     "title": "Red Case",
     "description": "part of ocean crash site set",
     "x": -421.464447,
@@ -150,7 +150,7 @@
   },
   {
     "id": 20009,
-    "type": "dark-green-suitcase",
+    "type": "green-case",
     "title": "Ammo case",
     "description": "Part of the ocean crash site",
     "x": -432.111664,
@@ -201,7 +201,7 @@
   },
   {
     "id": 30004,
-    "type": "dark-green-suitcase",
+    "type": "green-case",
     "title": "Ammo Case",
     "description": "Part of the forest crash site.",
     "x": -1146,
@@ -241,7 +241,7 @@
   },
   {
     "id": 30009,
-    "type": "dark-green-suitcase",
+    "type": "green-case",
     "title": "Ammo Case",
     "description": "Part of the forest crash site.",
     "x": -1139,
@@ -3781,21 +3781,21 @@
   },
   {
     "id": 124,
-    "type": "dark-green-suitcase",
+    "type": "green-case",
     "title": "Ammo Case",
     "x": -1119,
     "y": 1630
   },
   {
     "id": 129,
-    "type": "dark-green-suitcase",
+    "type": "green-case",
     "title": "Ammo Case",
     "x": -1254,
     "y": 1395
   },
   {
     "id": 148,
-    "type": "dark-green-suitcase",
+    "type": "green-case",
     "title": "2x Ammo Cases",
     "x": -1726,
     "y": 62
@@ -3816,21 +3816,21 @@
   },
   {
     "id": 156,
-    "type": "dark-green-suitcase",
+    "type": "green-case",
     "title": "Ammo Case",
     "x": -1218,
     "y": 662
   },
   {
     "id": 163,
-    "type": "dark-green-suitcase",
+    "type": "green-case",
     "title": "Ammo Case",
     "x": -887,
     "y": 767
   },
   {
     "id": 164,
-    "type": "dark-green-suitcase",
+    "type": "green-case",
     "title": "Ammo Case",
     "x": -844,
     "y": 1011
@@ -3844,42 +3844,42 @@
   },
   {
     "id": 244,
-    "type": "dark-green-suitcase",
+    "type": "green-case",
     "title": "2x Ammo Cases",
     "x": -1322,
     "y": -490
   },
   {
     "id": 262,
-    "type": "dark-green-suitcase",
+    "type": "green-case",
     "title": "Ammo Case",
     "x": -205,
     "y": 878
   },
   {
     "id": 263,
-    "type": "dark-green-suitcase",
+    "type": "green-case",
     "title": "Ammo Case",
     "x": 42,
     "y": 1371
   },
   {
     "id": 286,
-    "type": "dark-green-suitcase",
+    "type": "green-case",
     "title": "Ammo Case",
     "x": 1805,
     "y": -67
   },
   {
     "id": 287,
-    "type": "dark-green-suitcase",
+    "type": "green-case",
     "title": "2x Ammo Cases",
     "x": 1780,
     "y": -34
   },
   {
     "id": 320,
-    "type": "dark-green-suitcase",
+    "type": "green-case",
     "title": "Ammo Case",
     "x": -486,
     "y": 9,
@@ -3888,7 +3888,7 @@
   },
   {
     "id": 322,
-    "type": "dark-green-suitcase",
+    "type": "green-case",
     "title": "2x Ammo Cases",
     "x": -518,
     "y": 11,
@@ -3897,7 +3897,7 @@
   },
   {
     "id": 323,
-    "type": "dark-green-suitcase",
+    "type": "green-case",
     "title": "Ammo Case",
     "x": -563,
     "y": -65,
@@ -3906,7 +3906,7 @@
   },
   {
     "id": 324,
-    "type": "dark-green-suitcase",
+    "type": "green-case",
     "title": "Ammo Case",
     "x": -564,
     "y": -98,
@@ -3915,7 +3915,7 @@
   },
   {
     "id": 337,
-    "type": "dark-green-suitcase",
+    "type": "green-case",
     "title": "Ammo Case",
     "x": -1182,
     "y": 25,
@@ -3924,21 +3924,21 @@
   },
   {
     "id": 470,
-    "type": "dark-green-suitcase",
+    "type": "green-case",
     "title": "Ammo Case",
     "x": -238,
     "y": -9
   },
   {
     "id": 471,
-    "type": "dark-green-suitcase",
+    "type": "green-case",
     "title": "Ammo Case",
     "x": -45,
     "y": 1453
   },
   {
     "id": 1712127597389,
-    "type": "dark-green-suitcase",
+    "type": "green-case",
     "title": "Ammo case",
     "x": -45.471256,
     "y": 1459.754639
@@ -3976,7 +3976,7 @@
   },
   {
     "id": 580,
-    "type": "dark-green-suitcase",
+    "type": "green-case",
     "title": "Ammo Case",
     "x": -1133,
     "y": -282,
@@ -3984,7 +3984,7 @@
   },
   {
     "id": 581,
-    "type": "dark-green-suitcase",
+    "type": "green-case",
     "title": "Ammo Case",
     "x": -1205,
     "y": -277,
