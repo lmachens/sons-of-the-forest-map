@@ -23,7 +23,7 @@
     "type": "utility-case",
     "title": "Explosives Case",
     "description": "Part of the mountain crash site.",
-    "x": -238.50,
+    "x": -238.5,
     "y": -9.75
   },
   {
@@ -31,7 +31,7 @@
     "type": "utility-case",
     "title": "Supply Case",
     "description": "Part of the mountain crash site.",
-    "x": -252.50,
+    "x": -252.5,
     "y": -11.47
   },
   {
@@ -47,7 +47,7 @@
     "type": "utility-crate",
     "title": "Black and Yellow Crate",
     "description": "Part of the mountain crash site.",
-    "x": -254.50,
+    "x": -254.5,
     "y": -6.03
   },
   {
@@ -79,7 +79,7 @@
     "title": "Ocean Crash Site",
     "description": "Spawn Point",
     "x": -426.28,
-    "y": 1601.90,
+    "y": 1601.9,
     "screenshot": "ocean_crash.webp",
     "tp": "goto OceanCrash",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Starting_Points#Oceanfront_Wreckage_Zone"
@@ -189,7 +189,7 @@
     "title": "Explosives Case",
     "description": "Part of the forest crash site.",
     "x": -1146.81,
-    "y": -232.00
+    "y": -232.0
   },
   {
     "id": 30003,
@@ -220,7 +220,7 @@
     "type": "orange-suitcase",
     "title": "Flare Case",
     "description": "Part of the forest crash site.",
-    "x": -1147.50,
+    "x": -1147.5,
     "y": -240.69
   },
   {
@@ -228,7 +228,7 @@
     "type": "utility-crate",
     "title": "Black and Yellow Crate",
     "description": "Part of the forest crash site.",
-    "x": -1150.50,
+    "x": -1150.5,
     "y": -233.63
   },
   {
@@ -237,7 +237,7 @@
     "title": "Black and Yellow Crate",
     "description": "Part of the forest crash site.",
     "x": -1153.13,
-    "y": -233.50
+    "y": -233.5
   },
   {
     "id": 30009,
@@ -301,7 +301,7 @@
     "type": "pistol",
     "title": "Compact Pistol",
     "description": "On Emergency Raft",
-    "x": -1797.30,
+    "x": -1797.3,
     "y": 578.73,
     "screenshot": "pistol_1.webp",
     "tp": "goto RaftDiorama",
@@ -316,9 +316,7 @@
     "x": 1153.76,
     "y": -606.79,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "pistol_2.webp",
     "warning": "Teleport after entering the bunker!",
     "tp": "goto CompactPistolPickup",
@@ -357,8 +355,8 @@
     "id": 1713841340991,
     "type": "rebreather",
     "title": "Air-tank",
-    "x":-424.90332,
-    "y":1495.965088,
+    "x": -424.90332,
+    "y": 1495.965088,
     "inCave": true
   },
   {
@@ -408,10 +406,7 @@
     "x": -429.4,
     "y": -103.3,
     "inCave": true,
-    "requirements": [
-      13,
-      11
-    ],
+    "requirements": [13, 11],
     "screenshot": "shovel.webp",
     "warning": "Double use the command!",
     "tp": "goto ShovelPickup",
@@ -425,9 +420,7 @@
     "description": "Inside grave",
     "x": -1340.69,
     "y": 1412.2,
-    "requirements": [
-      15
-    ],
+    "requirements": [15],
     "screenshot": "shotgun.webp",
     "itemid": "additem 358",
     "tp": "goto -1341,3 95,7 1411,5",
@@ -455,9 +448,7 @@
     "x": -427.82,
     "y": 699.42,
     "inBunker": true,
-    "requirements": [
-      15
-    ],
+    "requirements": [15],
     "screenshot": "maintenance_card.webp",
     "warning": "Teleport after entering the bunker!",
     "tp": "goto KeyCardMaintenancePickup",
@@ -472,9 +463,7 @@
     "x": -415.01,
     "y": 712.26,
     "inBunker": true,
-    "requirements": [
-      15
-    ],
+    "requirements": [15],
     "screenshot": "firefighter_axe.webp",
     "warning": "Teleport after entering the bunker!",
     "tp": "goto FireAxePickup",
@@ -489,9 +478,7 @@
     "x": -978.11,
     "y": 1038.64,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "vip_card.webp",
     "warning": "Double use the command!",
     "tp": "goto KeyCardVIPPickup",
@@ -506,9 +493,7 @@
     "x": -1174.6,
     "y": -217.69,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "crossbow.webp",
     "warning": "Double use the command!",
     "tp": "goto CrossbowPickup",
@@ -523,9 +508,7 @@
     "x": 1140.92,
     "y": -612.99,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "guest_keycard.webp",
     "warning": "Double use the command!",
     "tp": "goto KeyCardGuestPickup",
@@ -540,9 +523,7 @@
     "x": -1157.58,
     "y": 17.77,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "guitar.webp",
     "warning": "Double use the command!",
     "tp": "goto GuitarPickup",
@@ -557,9 +538,7 @@
     "x": -1151.17,
     "y": 116.06,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "chainsaw.webp",
     "warning": "Double use the command!",
     "tp": "goto TacticalChainsawPickup",
@@ -574,9 +553,7 @@
     "x": -1120.68,
     "y": -1039.18,
     "inBunker": true,
-    "requirements": [
-      15
-    ],
+    "requirements": [15],
     "screenshot": "compound_bow.webp",
     "warning": "Double use the command!",
     "tp": "goto TacticalBowPickup",
@@ -589,7 +566,7 @@
     "title": "Revolver",
     "description": "In hand of dead worker",
     "x": 1140.69,
-    "y": 1048.70,
+    "y": 1048.7,
     "inBunker": true,
     "screenshot": "revolver.webp",
     "warning": "Teleport after entering the bunker!",
@@ -605,9 +582,7 @@
     "x": 1160.53,
     "y": -651.97,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "katana.webp",
     "warning": "Double use the command!",
     "tp": "goto KatanaPickup",
@@ -621,9 +596,7 @@
     "x": 188.09,
     "y": -668.96,
     "inCave": true,
-    "requirements": [
-      11
-    ],
+    "requirements": [11],
     "screenshot": "golden_armor.webp",
     "warning": "Teleport after entering the cave!",
     "tp": "goto 186,2 137,5 -667,4",
@@ -650,9 +623,7 @@
     "x": 1413.59,
     "y": 735.17,
     "inCave": true,
-    "requirements": [
-      11
-    ],
+    "requirements": [11],
     "screenshot": "pickaxe.webp",
     "warning": "Double use the command!",
     "tp": "goto PickaxePickup",
@@ -728,9 +699,7 @@
     "x": 1289.04,
     "y": 640.1,
     "inCave": true,
-    "requirements": [
-      11
-    ],
+    "requirements": [11],
     "screenshot": "artifact_b.webp",
     "warning": "Double use the command!",
     "tp": "goto ArtifactPieceBPickup",
@@ -744,9 +713,7 @@
     "x": -1089.28,
     "y": -129.56,
     "inCave": true,
-    "requirements": [
-      11
-    ],
+    "requirements": [11],
     "screenshot": "artifact_c.webp",
     "warning": "Double use the command!",
     "tp": "goto ArtifactPieceCPickup",
@@ -760,9 +727,7 @@
     "x": -405.64,
     "y": -878.48,
     "inCave": true,
-    "requirements": [
-      11
-    ],
+    "requirements": [11],
     "screenshot": "artifact_d.webp",
     "warning": "Double use the command!",
     "tp": "goto ArtifactPieceDPickup",
@@ -809,15 +774,7 @@
     "title": "Final Bunker",
     "x": 1766,
     "y": 553,
-    "items": [
-      513,
-      511,
-      516,
-      12,
-      826,
-      828,
-      829
-    ],
+    "items": [513, 511, 516, 12, 826, 828, 829],
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Bunkers#Luxury_Bunker",
     "tp": "goto BunkerLuxury"
   },
@@ -825,17 +782,11 @@
     "id": 513,
     "type": "final-bunker",
     "title": "Hell Cave Entrance",
-    "x": 1597.10,
+    "x": 1597.1,
     "y": 485.16,
     "inCave": true,
-    "requirements": [
-      27
-    ],
-    "items": [
-      514,
-      830,
-      831
-    ],
+    "requirements": [27],
+    "items": [514, 830, 831],
     "screenshot": "hell_cave_entrance.webp",
     "warning": "Teleport after entering the bunker to avoid falling under the map",
     "tp": "goto 1598,3 22 484,9",
@@ -848,22 +799,8 @@
     "description": "Dig out the hatch",
     "x": -478,
     "y": 710,
-    "requirements": [
-      15
-    ],
-    "items": [
-      34,
-      592,
-      17,
-      18,
-      434,
-      433,
-      306,
-      81,
-      89,
-      100,
-      93
-    ],
+    "requirements": [15],
+    "items": [34, 592, 17, 18, 434, 433, 306, 81, 89, 100, 93],
     "screenshot": "maintenance_a.webp",
     "tp": "goto BunkerAHatch",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Bunkers#Maintenance_A"
@@ -875,16 +812,8 @@
     "description": "Dig out the hatch",
     "x": -1133,
     "y": -1100,
-    "requirements": [
-      15
-    ],
-    "items": [
-      36,
-      24,
-      591,
-      567,
-      919
-    ],
+    "requirements": [15],
+    "items": [36, 24, 591, 567, 919],
     "screenshot": "maintenance_b.webp",
     "tp": "goto BunkerBHatch",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Bunkers#Maintenance_B"
@@ -896,14 +825,8 @@
     "description": "Dig out the hatch",
     "x": 1110,
     "y": 1007,
-    "requirements": [
-      15
-    ],
-    "items": [
-      25,
-      309,
-      507
-    ],
+    "requirements": [15],
+    "items": [25, 309, 507],
     "screenshot": "maintenance_c.webp",
     "tp": "goto BunkerCHatch",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Bunkers#Maintenance_C"
@@ -915,20 +838,8 @@
     "x": -1027,
     "y": 1036,
     "inCave": true,
-    "requirements": [
-      49
-    ],
-    "items": [
-      19,
-      20,
-      311,
-      75,
-      312,
-      315,
-      316,
-      314,
-      308
-    ],
+    "requirements": [49],
+    "items": [19, 20, 311, 75, 312, 315, 316, 314, 308],
     "screenshot": "food_and_dining_bunker.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Bunkers#Food_and_Dining_Bunker"
   },
@@ -940,29 +851,8 @@
     "y": -638,
     "inCave": true,
     "items": [
-      37,
-      585,
-      510,
-      21,
-      586,
-      9,
-      26,
-      113,
-      432,
-      443,
-      509,
-      82,
-      505,
-      83,
-      90,
-      104,
-      102,
-      103,
-      105,
-      506,
-      576,
-      508,
-      101
+      37, 585, 510, 21, 586, 9, 26, 113, 432, 443, 509, 82, 505, 83, 90, 104,
+      102, 103, 105, 506, 576, 508, 101
     ],
     "screenshot": "residential_bunker.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Bunkers#Residential_Bunker"
@@ -972,11 +862,9 @@
     "type": "printer",
     "title": "3D Printer",
     "x": -418.46,
-    "y": 700.50,
+    "y": 700.5,
     "inBunker": true,
-    "requirements": [
-      15
-    ],
+    "requirements": [15],
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/3D_Printer"
   },
   {
@@ -995,9 +883,7 @@
     "x": -1125.49,
     "y": -1048.59,
     "inBunker": true,
-    "requirements": [
-      15
-    ],
+    "requirements": [15],
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/3D_Printer"
   },
   {
@@ -1008,9 +894,7 @@
     "x": 1121.58,
     "y": -602.13,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/3D_Printer"
   },
   {
@@ -1031,10 +915,7 @@
     "x": -581,
     "y": -69,
     "inCave": true,
-    "requirements": [
-      13,
-      11
-    ],
+    "requirements": [13, 11],
     "screenshot": "laptop_shovel_cave.webp"
   },
   {
@@ -1045,9 +926,7 @@
     "x": -424.42,
     "y": 703.43,
     "inBunker": true,
-    "requirements": [
-      15
-    ],
+    "requirements": [15],
     "screenshot": "laptop_bunker_b.webp"
   },
   {
@@ -1058,9 +937,7 @@
     "x": -971,
     "y": 1036,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "laptop_food_and_dining_bunker.webp"
   },
   {
@@ -1071,9 +948,7 @@
     "x": -1179.18,
     "y": 27.76,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "laptop_entertainment_bunker.webp"
   },
   {
@@ -1084,9 +959,7 @@
     "x": -1127.82,
     "y": -1047.01,
     "inBunker": true,
-    "requirements": [
-      15
-    ],
+    "requirements": [15],
     "screenshot": "laptop_bunker_b.webp"
   },
   {
@@ -1097,34 +970,32 @@
     "x": 1176.95,
     "y": -646.12,
     "inBunker": true,
-    "requirements": [
-      21
-    ],
+    "requirements": [21],
     "screenshot": "laptop_residential_bunker.webp"
   },
   {
     "id": 1712088096993,
     "type": "laptop-cave",
     "title": "Damaged laptop",
-    "x":-597.260193,
-    "y":1450.916992,
+    "x": -597.260193,
+    "y": 1450.916992,
     "inCave": true
   },
   {
     "id": 1713844128416,
     "type": "laptop-cave",
     "title": "Damaged Laptop",
-    "x":-424.245605,
-    "y":1478.341675,
+    "x": -424.245605,
+    "y": 1478.341675,
     "inCave": true
   },
   {
     "id": 1713858317296,
-    "type":"laptop-bunker",
-    "title":"Damaged Laptop",
-    "description":"Strike to get a circuit board",
-    "x":-1198.463867,
-    "y":78.688484,
+    "type": "laptop-bunker",
+    "title": "Damaged Laptop",
+    "description": "Strike to get a circuit board",
+    "x": -1198.463867,
+    "y": 78.688484,
     "inBunker": true
   },
   {
@@ -1135,9 +1006,7 @@
     "x": 1137.45,
     "y": -621.13,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "action_camera_1.webp",
     "warning": "Teleport after entering the bunker!",
     "tp": "goto ActionCameraPickup",
@@ -1164,9 +1033,7 @@
     "x": -1095.15,
     "y": -10.46,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "action_camera_3.webp",
     "warning": "Teleport after entering the bunker!",
     "tp": "goto ActionCameraPickup",
@@ -1178,12 +1045,10 @@
     "type": "action-camera-bunker",
     "title": "Action Camera",
     "description": "Estate Agent",
-    "x": 1620.60,
+    "x": 1620.6,
     "y": 498.79,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "action_camera_4.webp",
     "warning": "Teleport after entering the bunker!",
     "tp": "goto ActionCameraPickup",
@@ -1197,15 +1062,7 @@
     "description": "Cave A",
     "x": -423,
     "y": 1512,
-    "items": [
-      11,
-      10,
-      380,
-      378,
-      71,
-      379,
-      99
-    ],
+    "items": [11, 10, 380, 378, 71, 379, 99],
     "screenshot": "cave_a.webp",
     "tp": "goto CaveAEntrance",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Caves#Beach/Rebreather_Cave"
@@ -1215,16 +1072,16 @@
     "type": "cave",
     "title": "Destructable Door",
     "description": "InCave",
-    "x":-612.686157,
-    "y":1416.595703,
+    "x": -612.686157,
+    "y": 1416.595703,
     "inCave": true
   },
   {
     "id": 1713843104164,
     "type": "cave",
     "title": "Destructable Wood Door",
-    "x":-643.631104,
-    "y":1385.073853,
+    "x": -643.631104,
+    "y": 1385.073853,
     "inCave": true
   },
   {
@@ -1232,8 +1089,8 @@
     "type": "cave",
     "title": "Underwater cave",
     "description": "Danger: Must have rebreather",
-    "x":-323.67812908814216,
-    "y":1512.0594632197838
+    "x": -323.67812908814216,
+    "y": 1512.0594632197838
   },
   {
     "id": 45,
@@ -1242,13 +1099,7 @@
     "description": "Cave B",
     "x": -1104,
     "y": -179,
-    "items": [
-      13,
-      12,
-      499,
-      96,
-      98
-    ],
+    "items": [13, 12, 499, 96, 98],
     "screenshot": "cave_b_main.webp",
     "tp": "goto CaveBEntrance",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Caves#Lakeside/Rope_Gun_Cave"
@@ -1259,9 +1110,7 @@
     "title": "Rope Gun Cave Second Entrance",
     "x": -1234,
     "y": -302,
-    "requirements": [
-      13
-    ],
+    "requirements": [13],
     "screenshot": "cave_b_second.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Caves#Lakeside/Rope_Gun_Cave"
   },
@@ -1272,12 +1121,7 @@
     "description": "Cave C",
     "x": -530,
     "y": 132,
-    "items": [
-      588,
-      15,
-      327,
-      318
-    ],
+    "items": [588, 15, 327, 318],
     "screenshot": "cave_c.webp",
     "tp": "goto CaveCEntrance",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Caves#Flooded/Shovel_Cave"
@@ -1289,13 +1133,7 @@
     "description": "Cave D",
     "x": -530,
     "y": -627,
-    "items": [
-      845,
-      449,
-      500,
-      27,
-      498
-    ],
+    "items": [845, 449, 500, 27, 498],
     "screenshot": "cave_d.webp",
     "tp": "goto CaveDEntrance",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Caves#Lake/Golden_Armor_Cave"
@@ -1307,11 +1145,7 @@
     "description": "Cave F",
     "x": 1289,
     "y": 588,
-    "items": [
-      894,
-      895,
-      896
-    ],
+    "items": [894, 895, 896],
     "screenshot": "cave_f.webp",
     "tp": "goto CaveFEntrance"
   },
@@ -1322,10 +1156,7 @@
     "description": "Cave G",
     "x": 1694.64,
     "y": 1042.21,
-    "items": [
-      501,
-      502
-    ],
+    "items": [501, 502],
     "screenshot": "cave_g.webp",
     "tp": "goto CaveGEntrance"
   },
@@ -1335,9 +1166,7 @@
     "title": "Cave leading to Residential Bunker",
     "x": 1230,
     "y": -652,
-    "items": [
-      33
-    ],
+    "items": [33],
     "screenshot": "cave_leading_to_residential_bunker.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Bunkers#Residential_Bunker"
   },
@@ -1347,9 +1176,7 @@
     "title": "Large Lake Grotto",
     "x": 966,
     "y": -406,
-    "items": [
-      204
-    ],
+    "items": [204],
     "screenshot": "large_lake_grotto.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Caves#Large_Lake_Grotto"
   },
@@ -1359,11 +1186,7 @@
     "title": "Mountaintop Lake Grotto",
     "x": 430,
     "y": -206,
-    "items": [
-      495,
-      494,
-      493
-    ],
+    "items": [495, 494, 493],
     "screenshot": "mountaintop_lake_grotto.webp",
     "tp": "goto IceCaveC",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Caves#Mountaintop_Lake_Grotto"
@@ -1393,9 +1216,7 @@
     "title": "Mountainside Grotto",
     "x": -106,
     "y": -1060,
-    "items": [
-      504
-    ],
+    "items": [504],
     "screenshot": "mountainside_grotto.webp",
     "tp": "goto IceCaveB",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Caves#Mountainside_Grotto"
@@ -1407,21 +1228,7 @@
     "x": -1190,
     "y": 126,
     "items": [
-      35,
-      23,
-      22,
-      483,
-      922,
-      825,
-      80,
-      79,
-      88,
-      335,
-      91,
-      333,
-      334,
-      94,
-      923
+      35, 23, 22, 483, 922, 825, 80, 79, 88, 335, 91, 333, 334, 94, 923
     ],
     "screenshot": "cave_leading_to_entertainment_bunker.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Bunkers#Entertainment_Bunker"
@@ -1432,9 +1239,7 @@
     "title": "FoodHatch",
     "x": -1014,
     "y": 1028,
-    "items": [
-      307
-    ],
+    "items": [307],
     "screenshot": "food_and_dining_cave.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Bunkers#Food_and_Dining_Bunker"
   },
@@ -1449,19 +1254,17 @@
     "id": 1713855480345,
     "type": "cave",
     "title": "Surface Cave",
-    "x":-947.177979,
-    "y":206.469223
+    "x": -947.177979,
+    "y": 206.469223
   },
   {
     "id": 63,
     "type": "abandoned-camp-n",
     "title": "Torn Tents 01",
     "description": "Camp site with 2 tents",
-    "x": -1363.90,
+    "x": -1363.9,
     "y": 1661.99,
-    "items": [
-      847
-    ],
+    "items": [847],
     "tp": "goto -1362,2 91,7 1665,2",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
@@ -1512,9 +1315,7 @@
     "description": "Camp site with 2 tents",
     "x": 721.09,
     "y": 736.98,
-    "items": [
-      177
-    ],
+    "items": [177],
     "tp": "goto 724,9 370 737,1",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
@@ -1533,8 +1334,8 @@
     "type": "abandoned-camp-n",
     "title": "Torn Tents 08",
     "description": "Camp site with 2 tents",
-    "x": 1695.50,
-    "y": 36.00,
+    "x": 1695.5,
+    "y": 36.0,
     "tp": "goto 1698,7 22,2 33,4",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
@@ -1554,7 +1355,7 @@
     "title": "Torn Tents 10",
     "description": "Camp site with 3 tents",
     "x": -705.54,
-    "y": -661.60,
+    "y": -661.6,
     "tp": "goto -702,9 289,7 -664",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
@@ -1563,11 +1364,9 @@
     "type": "abandoned-camp-n",
     "title": "Torn Tents 11",
     "description": "Camp site with 3 tents",
-    "x": -132.00,
+    "x": -132.0,
     "y": -1036.21,
-    "items": [
-      108
-    ],
+    "items": [108],
     "tp": "goto -129,9 408,9 -1037,",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
@@ -1578,12 +1377,7 @@
     "description": "Camp site with 3 tents",
     "x": -242.21,
     "y": 941.33,
-    "items": [
-      575,
-      859,
-      553,
-      554
-    ],
+    "items": [575, 859, 553, 554],
     "tp": "goto -237,3 97 944,5",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
@@ -1594,11 +1388,7 @@
     "description": "Camp site with 2 tents",
     "x": 1286.02,
     "y": -728.77,
-    "items": [
-      573,
-      897,
-      559
-    ],
+    "items": [573, 897, 559],
     "tp": "goto 1283,2 228,1 -727,7",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
@@ -1609,9 +1399,7 @@
     "description": "Camp site with 2 tents",
     "x": 799,
     "y": 975,
-    "items": [
-      178
-    ],
+    "items": [178],
     "tp": "goto 799,3 227,7 975,3",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
@@ -1620,12 +1408,9 @@
     "type": "abandoned-camp-y",
     "title": "Black Tents 06",
     "description": "Camp site with 2 tents",
-    "x": -27.90,
+    "x": -27.9,
     "y": 665.79,
-    "items": [
-      112,
-      555
-    ],
+    "items": [112, 555],
     "tp": "goto -29,7 251,0 668,3",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
@@ -1647,12 +1432,7 @@
     "x": -47.63,
     "y": 1456,
     "screenshot": "black_tents_03.webp",
-    "items": [
-      6,
-      881,
-      551,
-      552
-    ],
+    "items": [6, 881, 551, 552],
     "tp": "goto -47,5 16,8 1455,7",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
@@ -1663,9 +1443,7 @@
     "description": "Camp site with 1 tent, mylar tarps, rope, noodles",
     "x": -1121,
     "y": 1628,
-    "items": [
-      911
-    ],
+    "items": [911],
     "tp": "goto -1120,8 37 1629,8",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
@@ -1676,9 +1454,7 @@
     "description": "Camp site with 2 tents",
     "x": -1255,
     "y": 1397,
-    "items": [
-      912
-    ],
+    "items": [912],
     "tp": "goto -1256,9 100,4 1397,0",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
@@ -1689,10 +1465,7 @@
     "description": "Camp site with 1 tent",
     "x": -1388,
     "y": -217,
-    "items": [
-      905,
-      557
-    ],
+    "items": [905, 557],
     "tp": "goto -1389,2 116,7 -218,7",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
@@ -1713,13 +1486,7 @@
     "description": "Camp site with 3 tents",
     "x": -703,
     "y": 450,
-    "items": [
-      4,
-      858,
-      543,
-      863,
-      531
-    ],
+    "items": [4, 858, 543, 863, 531],
     "tp": "goto -703 102,9 449",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
@@ -1730,13 +1497,7 @@
     "description": "Camp site with 2 tents",
     "x": -1268,
     "y": -11,
-    "items": [
-      568,
-      556,
-      490,
-      340,
-      95
-    ],
+    "items": [568, 556, 490, 340, 95],
     "tp": "goto -1269,6 103,6 -11,1",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
@@ -1747,9 +1508,7 @@
     "description": "Camp site with 2 tents",
     "x": -1257,
     "y": -597,
-    "items": [
-      903
-    ],
+    "items": [903],
     "tp": "goto -1258,5 211,6 -599,1",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
@@ -1760,12 +1519,7 @@
     "description": "Camp site with 2 tents",
     "x": -1028,
     "y": -623,
-    "items": [
-      428,
-      902,
-      558,
-      77
-    ],
+    "items": [428, 902, 558, 77],
     "tp": "goto -1028 226 -623",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
@@ -1786,9 +1540,7 @@
     "description": "Camp site with 1 tent",
     "x": -156.27,
     "y": -112.61,
-    "items": [
-      827
-    ],
+    "items": [827],
     "tp": "goto -157,1 405,7 -110,4",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
@@ -1799,9 +1551,7 @@
     "description": "Camp site with 2 tents",
     "x": 363.19,
     "y": -166.97,
-    "items": [
-      174
-    ],
+    "items": [174],
     "tp": "goto 364,8 527,3 -170,9",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
@@ -1832,10 +1582,7 @@
     "description": "With save point",
     "x": 1456.76,
     "y": -417.45,
-    "items": [
-      574,
-      560
-    ],
+    "items": [574, 560],
     "tp": "goto 1454 192,2 -418,2",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
@@ -1854,7 +1601,7 @@
     "type": "abandoned-camp-y",
     "title": "Orange Tent 15",
     "description": "Camp site next to ice cave entrance with 1 tent.",
-    "x": -142.90,
+    "x": -142.9,
     "y": -85.58,
     "tp": "goto -144 405,5 -87,3",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
@@ -1865,12 +1612,7 @@
     "title": "Fishing Huts",
     "x": 1694,
     "y": 1025,
-    "items": [
-      388,
-      386,
-      389,
-      503
-    ],
+    "items": [388, 386, 389, 503],
     "tp": "goto AbandonedBuildings1",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
@@ -1889,10 +1631,7 @@
     "title": "Fishing Huts",
     "x": 1824.84,
     "y": -512.55,
-    "items": [
-      496,
-      439
-    ],
+    "items": [496, 439],
     "tp": "goto AbandonedBuildings3",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
@@ -1903,11 +1642,7 @@
     "description": "At frozen lake in the mountains",
     "x": 187.66,
     "y": -334.25,
-    "items": [
-      491,
-      387,
-      492
-    ],
+    "items": [491, 387, 492],
     "tp": "goto 194,6 525 -334,6",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
@@ -1966,9 +1701,7 @@
     "x": 1623.12,
     "y": 568.18,
     "inBunker": true,
-    "requirements": [
-      19
-    ],
+    "requirements": [19],
     "screenshot": "dress.webp",
     "warning": "Double use the command!",
     "tp": "goto VirginiaDressPickup",
@@ -1991,7 +1724,7 @@
     "type": "outfit",
     "title": "Hoodie",
     "x": -744.25,
-    "y": 20.40,
+    "y": 20.4,
     "screenshot": "hoodie_1.webp",
     "tp": "goto HoodiePickup",
     "itemid": "additem 490",
@@ -2004,9 +1737,7 @@
     "x": -1194.12,
     "y": 38.23,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "track_suit.webp",
     "warning": "Double use the command!",
     "tp": "goto VirginiaTrackSuitPickup",
@@ -2021,9 +1752,7 @@
     "x": -416.78,
     "y": 696.21,
     "inBunker": true,
-    "requirements": [
-      15
-    ],
+    "requirements": [15],
     "screenshot": "tuxedo.webp",
     "warning": "Teleport after entering the bunker!",
     "tp": "goto TuxedoPickup",
@@ -2038,9 +1767,7 @@
     "x": 1144.33,
     "y": -640.11,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "leather_suit_2.webp",
     "warning": "Double use the command!",
     "tp": "goto VirginiaLeatherSuitPickup",
@@ -2051,7 +1778,7 @@
     "id": 84,
     "type": "outfit",
     "title": "Leather Suit for Virginia",
-    "x": -887.70,
+    "x": -887.7,
     "y": 770.03,
     "screenshot": "leather_suit_1.webp",
     "tp": "goto -888,3 95 768,9",
@@ -2066,9 +1793,7 @@
     "x": 1139.1,
     "y": -615.59,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "gold_mask.webp",
     "warning": "Double use the command!",
     "tp": "goto GoldMaskPickup",
@@ -2082,9 +1807,7 @@
     "x": -509.26,
     "y": 128.13,
     "inCave": true,
-    "requirements": [
-      11
-    ],
+    "requirements": [11],
     "screenshot": "wetsuit.webp",
     "warning": "Double use the command!",
     "tp": "goto WetsuitPickup",
@@ -2099,9 +1822,7 @@
     "x": 1175.79,
     "y": -646.15,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "space_suit.webp",
     "warning": "Double use the command!",
     "tp": "goto SpaceSuitPickup",
@@ -2136,9 +1857,7 @@
     "description": "Inside grave",
     "x": -1340.96,
     "y": 1411.98,
-    "requirements": [
-      15
-    ],
+    "requirements": [15],
     "screenshot": "gps_locator_3.webp",
     "itemid": "additem 529",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/GPS_Locator"
@@ -2160,8 +1879,8 @@
     "type": "gps-locator",
     "title": "Worker GPS Locator",
     "description": "In the hand of the dead worker",
-    "x":-949.433472,
-    "y":217.765778
+    "x": -949.433472,
+    "y": 217.765778
   },
   {
     "id": 88,
@@ -2183,9 +1902,7 @@
     "x": -416.8,
     "y": 694.58,
     "inBunker": true,
-    "requirements": [
-      15
-    ],
+    "requirements": [15],
     "screenshot": "novel_a.webp",
     "warning": "Teleport after entering the bunker!",
     "tp": "goto NovelAPickup",
@@ -2200,9 +1917,7 @@
     "x": 1161,
     "y": -602.75,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "novel_b.webp",
     "warning": "Double use the command!",
     "tp": "goto NovelBPickup",
@@ -2232,15 +1947,13 @@
   },
   {
     "id": 92,
-    "type": "document-bunker",
+    "type": "email-bunker",
     "title": "Email - Another one",
     "description": "Artifact 2",
     "x": -1126.14,
     "y": 111.14,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "email_artifact_2.webp",
     "warning": "Teleport after entering the bunker to avoid falling under the map",
     "tp": "goto -1125,4 65 110,6",
@@ -2252,15 +1965,22 @@
     "title": "Attention All",
     "description": "Next to Laptop with location",
     "x": -424.48,
-    "y": 702.20,
+    "y": 702.2,
     "inBunker": true,
-    "requirements": [
-      15
-    ],
+    "requirements": [15],
     "screenshot": "email_attention_all_1.webp",
     "warning": "Teleport after entering the bunker!",
     "tp": "goto EmailPrintoutPaintingAPickup",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Painting_Email"
+  },
+  {
+    "id": 1714104610359,
+    "type": "email",
+    "title": "Email - Who is Jack Holt?",
+    "description": "Beside the soldier that is holding the axe",
+    "x": -704.026123,
+    "y": 445.653351,
+    "screenshot": "email_who_is_jack_holt.webp"
   },
   {
     "id": 94,
@@ -2268,11 +1988,9 @@
     "title": "Last will and testament of Edward Puffton",
     "description": "On second table behind doors",
     "x": -1178.63,
-    "y": 27.70,
+    "y": 27.7,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "email_last_will_and_testament.webp",
     "warning": "Teleport after entering the bunker to avoid falling under the map",
     "tp": "goto -1178,8 66 26,8"
@@ -2321,12 +2039,10 @@
     "type": "document",
     "title": "Music Album Cover",
     "description": "Next to TV",
-    "x": -432.40,
+    "x": -432.4,
     "y": 705.39,
     "inBunker": true,
-    "requirements": [
-      15
-    ],
+    "requirements": [15],
     "screenshot": "music_album_cover_2.webp",
     "warning": "Teleport after entering the bunker!",
     "tp": "goto -431,6 76,1 705,4",
@@ -2341,9 +2057,7 @@
     "x": -1157.62,
     "y": 29.89,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "music_album_cover_1.webp",
     "warning": "Double use the command!",
     "tp": "goto AlbumCoverPickup",
@@ -2358,9 +2072,7 @@
     "x": 1154.15,
     "y": -607.01,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "preliminary_findings.webp",
     "warning": "Double use the command!",
     "tp": "goto EmailPrintoutGovernmentAPickup"
@@ -2373,9 +2085,7 @@
     "x": 1151.61,
     "y": -619.97,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "scientific_data_2.webp",
     "warning": "Double use the command!",
     "tp": "goto EmailPrintoutGovernmentBPickup"
@@ -2388,9 +2098,7 @@
     "x": 1149.82,
     "y": -602.34,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "safe_in_cube.webp",
     "warning": "Double use the command!",
     "tp": "goto EmailPrintoutSqueakyShoesBPickup"
@@ -2403,9 +2111,7 @@
     "x": 1125.42,
     "y": -606.36,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "numbers_translation.webp",
     "warning": "Double use the command!",
     "tp": "goto NumbersPrintoutPickup"
@@ -2418,9 +2124,7 @@
     "x": 1126.39,
     "y": -604.85,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "email_printout_golf_4.webp",
     "warning": "Double use the command!",
     "tp": "goto EmailPrintoutGolfDPickup",
@@ -2454,9 +2158,7 @@
     "x": -975,
     "y": 1036,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Artifact_Emails"
   },
   {
@@ -2467,9 +2169,7 @@
     "x": -913,
     "y": 1036,
     "inBunker": true,
-    "requirements": [
-      19
-    ],
+    "requirements": [19],
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Balls_Emails"
   },
   {
@@ -2480,9 +2180,7 @@
     "x": -915,
     "y": 1037,
     "inBunker": true,
-    "requirements": [
-      19
-    ]
+    "requirements": [19]
   },
   {
     "id": 316,
@@ -2492,9 +2190,7 @@
     "x": -914,
     "y": 1038,
     "inBunker": true,
-    "requirements": [
-      19
-    ]
+    "requirements": [19]
   },
   {
     "id": 333,
@@ -2504,9 +2200,7 @@
     "x": -1120.05,
     "y": 18.71,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "email_note_to_all_employees_1.webp",
     "warning": "Teleport after entering the bunker to avoid falling under the map",
     "tp": "goto -1119,5 66 18,6",
@@ -2516,12 +2210,10 @@
     "id": 924,
     "type": "document-bunker",
     "title": "Email - Note to all employees",
-    "x": -1158.80,
+    "x": -1158.8,
     "y": 30.45,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "email_note_to_all_employees_2.webp",
     "warning": "Teleport after entering the bunker to avoid falling under the map",
     "tp": "goto -1156,2 65 30"
@@ -2534,9 +2226,7 @@
     "x": -1192.04,
     "y": 35.17,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "email_re_re_golf_balls.webp",
     "warning": "Teleport after entering the bunker to avoid falling under the map",
     "tp": "goto -1191,5 66 35,7",
@@ -2550,9 +2240,7 @@
     "x": -1130.62,
     "y": 79.08,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "personal_note_1.webp",
     "warning": "Teleport after entering the bunker to avoid falling under the map",
     "tp": "goto -1129,8 66,5 78,9"
@@ -2596,9 +2284,10 @@
   {
     "id": 915,
     "type": "pamphlet",
-    "title": "Cult Pamphlet no.2",
-    "x": -258,
-    "y": 1141,
+    "title": "Pamphlet - You will find meaning in life again",
+    "description": "found with some dead cultists",
+    "x": -258.430573,
+    "y": 1141.095459,
     "tp": "goto -257,7 49 1141,6",
     "screenshot": "pamphlet_2_3.webp"
   },
@@ -2616,11 +2305,9 @@
     "title": "Stock Price Printout",
     "description": "On 2nd bunker floor",
     "x": 1156.44,
-    "y": -654.40,
+    "y": -654.4,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "stock_price_printout.webp",
     "warning": "Double use the command!",
     "tp": "goto StockPricePrintoutPickup"
@@ -2674,12 +2361,10 @@
     "type": "email-bunker",
     "title": "FISHING VILLAGES",
     "description": "On 2nd bunker floor",
-    "x": 1165.60,
+    "x": 1165.6,
     "y": -654.36,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "fishing_email_2.webp",
     "warning": "Double use the command!",
     "tp": "goto FishingEmailBPickup"
@@ -2692,9 +2377,7 @@
     "x": 1140.14,
     "y": 1048.67,
     "inBunker": true,
-    "requirements": [
-      15
-    ],
+    "requirements": [15],
     "screenshot": "fishing_email_3.webp",
     "warning": "Double use the command!",
     "tp": "goto FishingEmailCPickup"
@@ -2707,9 +2390,7 @@
     "x": 1133.76,
     "y": -646.11,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "puffton_email_1.webp",
     "warning": "Double use the command!",
     "tp": "goto PufftonEmailAPickup"
@@ -2791,9 +2472,7 @@
     "x": 1333.13,
     "y": 699.42,
     "inCave": true,
-    "requirements": [
-      11
-    ],
+    "requirements": [11],
     "screenshot": "blueprint_item_plating_machine.webp",
     "warning": "Teleport after entering the cave!",
     "tp": "goto BlueprintItemPlatingPickup"
@@ -2986,7 +2665,7 @@
     "id": 109,
     "type": "hang-glider",
     "title": "Folding Glider",
-    "x": -1184.10,
+    "x": -1184.1,
     "y": -1728.82,
     "screenshot": "hang_glider_13.webp",
     "tp": "goto WorldHangGlider04",
@@ -3073,7 +2752,7 @@
     "id": 178,
     "type": "hang-glider",
     "title": "Folding Glider",
-    "x": 797.90,
+    "x": 797.9,
     "y": 974.66,
     "screenshot": "hang_glider_7.webp",
     "tp": "goto WorldHangGlider07",
@@ -3084,7 +2763,7 @@
     "id": 179,
     "type": "hang-glider",
     "title": "Folding Glider",
-    "x": 846.10,
+    "x": 846.1,
     "y": 1105.33,
     "screenshot": "hang_glider_6.webp",
     "tp": "goto WorldHangGlider14",
@@ -3096,7 +2775,7 @@
     "type": "hang-glider",
     "title": "Folding Glider",
     "x": 789.73,
-    "y": 273.90,
+    "y": 273.9,
     "screenshot": "hang_glider_14.webp",
     "tp": "goto WorldHangGlider10",
     "itemid": "spawnitem 626",
@@ -3133,7 +2812,7 @@
     "id": 823,
     "type": "golf-cart",
     "title": "Golf Cart 4",
-    "x": 1014.10,
+    "x": 1014.1,
     "y": 1223.05,
     "warning": "Crouch after teleporting",
     "tp": "goto WorldGolfCart04"
@@ -3169,7 +2848,7 @@
     "id": 442,
     "type": "golf-cart",
     "title": "Golf Cart 8",
-    "x": 897.70,
+    "x": 897.7,
     "y": 927.81,
     "warning": "Crouch after teleporting",
     "tp": "goto WorldGolfCart08"
@@ -3205,7 +2884,7 @@
     "id": 814,
     "type": "golf-cart",
     "title": "Golf Cart 12",
-    "x": -891.30,
+    "x": -891.3,
     "y": -918.24,
     "warning": "Crouch after teleporting",
     "tp": "goto WorldGolfCart12"
@@ -3214,7 +2893,7 @@
     "id": 821,
     "type": "golf-cart",
     "title": "Golf Cart 13",
-    "x": 1044.50,
+    "x": 1044.5,
     "y": 1825.06,
     "warning": "Crouch after teleporting",
     "tp": "goto WorldGolfCart13"
@@ -3232,7 +2911,7 @@
     "id": 815,
     "type": "golf-cart",
     "title": "Golf Cart 15",
-    "x": -623.90,
+    "x": -623.9,
     "y": -1044.91,
     "warning": "Crouch after teleporting",
     "tp": "goto WorldGolfCart15"
@@ -3334,9 +3013,7 @@
     "x": 1124.75,
     "y": -605.83,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "putter_2.webp",
     "warning": "Teleport after entering the bunker!",
     "tp": "goto GolfPutterPickup",
@@ -3361,7 +3038,7 @@
     "title": "Putter",
     "description": "On the back of the Golf Cart",
     "x": 846.95,
-    "y": 1535.40,
+    "y": 1535.4,
     "screenshot": "putter_3.webp",
     "tp": "goto 846,6 91 1536",
     "itemid": "additem 525",
@@ -3423,7 +3100,7 @@
   {
     "id": 1702953428827,
     "type": "machete",
-    "title": "pick-able plants",
+    "title": "Plant Resource",
     "description": "mushrooms, fireweed, devil's club and aloe",
     "x": -1269.9637790110394,
     "y": 1410.6780284671622
@@ -3431,7 +3108,8 @@
   {
     "id": 1702952620951,
     "type": "machete",
-    "title": "Aloe and Devil's club",
+    "title": "Plant Resource",
+    "description": "Aloe and Devil's club",
     "x": -1166.7261889578033,
     "y": 1316.6328265693514
   },
@@ -3467,44 +3145,51 @@
   {
     "id": 1712124048476,
     "type": "utility-crate",
-    "title": "Grey crate",
+    "title": "Grey Crate",
     "x": -1362.646118,
     "y": 1668.175537
   },
   {
     "id": 127,
     "type": "utility-crate",
-    "title": "2x Grey crates",
+    "title": "2x Grey Crates",
     "x": -1431.594849,
     "y": 1714.640503
   },
   {
     "id": 128,
     "type": "utility-crate",
-    "title": "Grey crate",
+    "title": "Grey Crate",
     "x": -1259.519409,
     "y": 1400.530518
   },
   {
     "id": 132,
     "type": "utility-crate",
-    "title": "grey crates",
+    "title": "Grey Crate",
     "x": -1653.191895,
     "y": 1185.944336
   },
   {
     "id": 133,
     "type": "utility-crate",
-    "title": "Grey Case",
+    "title": "Grey Crate",
     "x": -1438.519287,
     "y": 1213.343262
   },
   {
     "id": 1712120600750,
     "type": "utility-crate",
-    "title": "Grey crate",
+    "title": "Grey Crate",
     "x": -1645.103027,
     "y": 1187.315552
+  },
+  {
+    "id": 1712729084621,
+    "type": "utility-crate",
+    "title": "Grey Crate",
+    "x": -1256.99707,
+    "y": 1396.082153
   },
   {
     "id": 142,
@@ -3536,10 +3221,11 @@
   },
   {
     "id": 151,
-    "type": "supply",
-    "title": "2x Supply Suitcases",
-    "x": -1592,
-    "y": 224
+    "type": "utility-crate",
+    "title": "2x Black/yellow crates",
+    "description": "In a clearing beside a fallen tree near the pond",
+    "x": -1592.227539,
+    "y": 223.727798
   },
   {
     "id": 152,
@@ -3550,10 +3236,10 @@
   },
   {
     "id": 153,
-    "type": "supply",
-    "title": "2x Supply Suitcases",
-    "x": -1342,
-    "y": 237
+    "type": "utility-crate",
+    "title": "2x Black/yellow crates, loose rope",
+    "x": -1341.930298,
+    "y": 238.05928
   },
   {
     "id": 157,
@@ -3566,15 +3252,15 @@
     "id": 158,
     "type": "utility-case",
     "title": "Supply Case",
-    "x":-1214.406616,
-    "y":654.19104
+    "x": -1214.406616,
+    "y": 654.19104
   },
   {
     "id": 1713851382509,
     "type": "utility-crate",
     "title": "Black and Yellow Crate",
-    "x":-1218.669922,
-    "y":655.736938
+    "x": -1218.669922,
+    "y": 655.736938
   },
   {
     "id": 159,
@@ -3752,9 +3438,7 @@
     "x": -1009,
     "y": 954,
     "isUnderground": true,
-    "requirements": [
-      17
-    ]
+    "requirements": [17]
   },
   {
     "id": 319,
@@ -3763,9 +3447,7 @@
     "x": -488,
     "y": 8,
     "isUnderground": true,
-    "requirements": [
-      11
-    ]
+    "requirements": [11]
   },
   {
     "id": 326,
@@ -3774,9 +3456,7 @@
     "x": -524,
     "y": -17,
     "isUnderground": true,
-    "requirements": [
-      11
-    ]
+    "requirements": [11]
   },
   {
     "id": 328,
@@ -3785,9 +3465,7 @@
     "x": -580,
     "y": -95,
     "isUnderground": true,
-    "requirements": [
-      11
-    ]
+    "requirements": [11]
   },
   {
     "id": 329,
@@ -3811,9 +3489,7 @@
     "x": -1183,
     "y": 28,
     "isUnderground": true,
-    "requirements": [
-      17
-    ]
+    "requirements": [17]
   },
   {
     "id": 141,
@@ -3945,22 +3621,30 @@
     "id": 1713853559578,
     "type": "utility-crate",
     "title": "Black and Yellow Crate",
-    "x":-1155.168701,
-    "y":447.833557
+    "x": -1155.168701,
+    "y": 447.833557
   },
   {
     "id": 1713854002976,
     "type": "utility-crate",
     "title": "Black and Yellow Crate",
-    "x":-1144.312134,
-    "y":450.445648
+    "x": -1144.312134,
+    "y": 450.445648
   },
   {
     "id": 468,
-    "type": "supply",
+    "type": "orange-suitcase",
     "title": "Flare Case",
     "x": -49.97,
     "y": 1452.19
+  },
+  {
+    "id": 1714107027503,
+    "type": "orange-suitcase",
+    "title": "Flare Case",
+    "description": "By the pond",
+    "x": -709.772705,
+    "y": 460.811859
   },
   {
     "id": 469,
@@ -3971,48 +3655,48 @@
   },
   {
     "id": 476,
-    "type": "supply",
-    "title": "2x Supply Suitcases",
-    "x": -700,
-    "y": 446
+    "type": "utility-crate",
+    "title": "2x Black and Yellow Crate",
+    "x": -700.4599,
+    "y": 446.80188
   },
   {
     "id": 477,
-    "type": "supply",
-    "title": "2x Supply Suitcases",
-    "x": -707,
-    "y": 445
+    "type": "utility-crate",
+    "title": "2x Black and Yellow Crates",
+    "x": -707.488159,
+    "y": 445.23819
   },
   {
     "id": 1713843825222,
     "type": "supply",
     "title": "2x spools of wire",
-    "x":-439.429932,
-    "y":1475.907959,
+    "x": -439.429932,
+    "y": 1475.907959,
     "inCave": true
   },
   {
     "id": 1713843944677,
     "type": "supply",
     "title": "2x cloth",
-    "x":-413.669617,
-    "y":1474.393188,
+    "x": -413.669617,
+    "y": 1474.393188,
     "inCave": true
   },
   {
     "id": 1713844021040,
     "type": "supply",
     "title": "Bones, flares, vodka, cloth, MRE, watch, Soda",
-    "x":-422.403107,
-    "y":1480.699463,
+    "x": -422.403107,
+    "y": 1480.699463,
     "inCave": true
   },
   {
     "id": 1713843879036,
     "type": "supply",
     "title": "2x Soda cans",
-    "x":-439.301422,
-    "y":1469.314087,
+    "x": -439.301422,
+    "y": 1469.314087,
     "inCave": true
   },
   {
@@ -4026,8 +3710,8 @@
     "id": 1713854040043,
     "type": "supply",
     "title": "Skin Pouch",
-    "x":-1140.075195,
-    "y":446.987244
+    "x": -1140.075195,
+    "y": 446.987244
   },
   {
     "id": 124,
@@ -4134,9 +3818,7 @@
     "x": -486,
     "y": 9,
     "isUnderground": true,
-    "requirements": [
-      11
-    ]
+    "requirements": [11]
   },
   {
     "id": 322,
@@ -4145,9 +3827,7 @@
     "x": -518,
     "y": 11,
     "isUnderground": true,
-    "requirements": [
-      11
-    ]
+    "requirements": [11]
   },
   {
     "id": 323,
@@ -4156,9 +3836,7 @@
     "x": -563,
     "y": -65,
     "isUnderground": true,
-    "requirements": [
-      11
-    ]
+    "requirements": [11]
   },
   {
     "id": 324,
@@ -4167,9 +3845,7 @@
     "x": -564,
     "y": -98,
     "isUnderground": true,
-    "requirements": [
-      11
-    ]
+    "requirements": [11]
   },
   {
     "id": 337,
@@ -4178,9 +3854,7 @@
     "x": -1182,
     "y": 25,
     "isUnderground": true,
-    "requirements": [
-      17
-    ]
+    "requirements": [17]
   },
   {
     "id": 470,
@@ -4200,8 +3874,8 @@
     "id": 1712127597389,
     "type": "dark-green-suitcase",
     "title": "Ammo case",
-    "x":-45.471256,
-    "y":1459.754639
+    "x": -45.471256,
+    "y": 1459.754639
   },
   {
     "id": 472,
@@ -4212,17 +3886,19 @@
   },
   {
     "id": 478,
-    "type": "dark-green-suitcase",
-    "title": "Ammo Case",
-    "x": -706,
-    "y": 451
+    "type": "utility-case",
+    "title": "Explosives Case",
+    "description": "",
+    "x": -706.385864,
+    "y": 451.20166
   },
   {
     "id": 479,
-    "type": "dark-green-suitcase",
-    "title": "Ammo Case",
-    "x": -707,
-    "y": 457
+    "type": "utility-case",
+    "title": "Explosives Case",
+    "description": "On the rock beside the pond",
+    "x": -707.910095,
+    "y": 457.549957
   },
   {
     "id": 580,
@@ -4297,9 +3973,7 @@
     "x": -490,
     "y": 6,
     "isUnderground": true,
-    "requirements": [
-      11
-    ]
+    "requirements": [11]
   },
   {
     "id": 325,
@@ -4308,9 +3982,7 @@
     "x": -566,
     "y": -98,
     "isUnderground": true,
-    "requirements": [
-      11
-    ]
+    "requirements": [11]
   },
   {
     "id": 331,
@@ -4364,7 +4036,7 @@
     "type": "wooden-crate",
     "title": "4x Wood Crates",
     "description": "At the end of a downward dead end tunnel.",
-    "x": -631.80,
+    "x": -631.8,
     "y": 1422.27,
     "inCave": true
   },
@@ -4373,7 +4045,7 @@
     "type": "wooden-crate",
     "title": "Wood Crate",
     "description": "Just before the breakable wood door with a cross.",
-    "x": -646.30,
+    "x": -646.3,
     "y": 1384.69,
     "inCave": true
   },
@@ -4754,8 +4426,8 @@
     "id": 1712123608135,
     "title": "4x coffins with loose items",
     "type": "wooden-crate",
-    "x":-1081.530884,
-    "y":1269.165771
+    "x": -1081.530884,
+    "y": 1269.165771
   },
   {
     "id": 459,
@@ -4875,16 +4547,16 @@
     "id": 1713855581004,
     "type": "wooden-crate",
     "title": "Wood Crate",
-    "x":-951.942322,
-    "y":187.373398,
+    "x": -951.942322,
+    "y": 187.373398,
     "inCave": true
   },
   {
     "id": 1712091806262,
     "type": "wooden-crate",
     "title": "2x Wood crates + loose items",
-    "x":-947.608521,
-    "y":186.761673,
+    "x": -947.608521,
+    "y": 186.761673,
     "inCave": true
   },
   {
@@ -4927,10 +4599,7 @@
     "title": "Plane Crash Site",
     "x": -970.64,
     "y": -1061.47,
-    "items": [
-      76,
-      908
-    ],
+    "items": [76, 908],
     "screenshot": "plane_crash_site.webp",
     "tp": "goto PlaneWreck (2)",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Plane_Runway"
@@ -4966,9 +4635,7 @@
     "title": "Occultists corpses",
     "x": -257.4,
     "y": 1142.1,
-    "items": [
-      915
-    ],
+    "items": [915],
     "tp": "goto -257,4 49 1142,1",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Occultists_corpses"
   },
@@ -5247,7 +4914,7 @@
     "type": "poi",
     "title": "Boat Wreckage",
     "x": 1878.91,
-    "y": -483.70,
+    "y": -483.7,
     "tp": "goto 1879,4 29,1 -484,7",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Shipwrecks"
   },
@@ -5417,7 +5084,7 @@
     "id": 535,
     "type": "poi",
     "title": "2x Dead Killer Whales",
-    "x": 1505.40,
+    "x": 1505.4,
     "y": -1628.29,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Killer_Whale"
   },
@@ -5498,10 +5165,7 @@
     "description": "Buried Mercenary",
     "x": -1340,
     "y": 1412,
-    "items": [
-      16,
-      86
-    ],
+    "items": [16, 86],
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Team_B#Buried_Mercenary"
   },
   {
@@ -5692,7 +5356,7 @@
     "id": 538,
     "type": "grave",
     "title": "4x Graves",
-    "x": 600.70,
+    "x": 600.7,
     "y": -1152.37,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Gravesites"
   },
@@ -5716,8 +5380,8 @@
     "type": "grave",
     "title": "Vodka, 2x stun ammo",
     "description": "Beneath hanging worker",
-    "x":-645.125,
-    "y":1512.875,
+    "x": -645.125,
+    "y": 1512.875,
     "inCave": true
   },
   {
@@ -5791,13 +5455,7 @@
     "title": "Yacht Good Times",
     "x": 417,
     "y": 1173,
-    "items": [
-      70,
-      882,
-      427,
-      80,
-      98
-    ],
+    "items": [70, 882, 427, 80, 98],
     "screenshot": "yacht_good_times.webp",
     "tp": "goto PlasticBag (8)"
   },
@@ -5807,10 +5465,7 @@
     "title": "Yacht Evening Star",
     "x": 466,
     "y": 1217,
-    "items": [
-      824,
-      515
-    ],
+    "items": [824, 515],
     "screenshot": "yacht_evening_star.webp",
     "tp": "goto PlasticBag (14)"
   },
@@ -5818,8 +5473,8 @@
     "id": 920,
     "type": "poi",
     "title": "Dirt Runway for Aircraft",
-    "x": -894.00,
-    "y": -938.00,
+    "x": -894.0,
+    "y": -938.0,
     "tp": "goto Airstrip"
   },
   {
@@ -5829,10 +5484,7 @@
     "description": "Floating Mercenary",
     "x": -1796.5,
     "y": 578.4,
-    "items": [
-      8,
-      85
-    ],
+    "items": [8, 85],
     "tp": "goto RaftDiorama",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Team_B#Floating_Mercenary"
   },
@@ -5867,7 +5519,7 @@
     "type": "poi",
     "title": "Bridge",
     "description": "Rope Bridge",
-    "x": 1104.10,
+    "x": 1104.1,
     "y": 70.84
   },
   {
@@ -5899,8 +5551,8 @@
     "type": "poi",
     "title": "Severed arms and legs",
     "description": "Throw them in the water to distract the sharks",
-    "x":-432.70108,
-    "y":1457.525391,
+    "x": -432.70108,
+    "y": 1457.525391,
     "inCave": true
   },
   {
@@ -5917,8 +5569,8 @@
     "type": "poi",
     "title": "Fish and Bones",
     "description": "Where the cave path splits",
-    "x":-537.689636,
-    "y":1440.217773,
+    "x": -537.689636,
+    "y": 1440.217773,
     "inCave": true
   },
   {
@@ -5926,16 +5578,16 @@
     "type": "poi",
     "title": "Speared Turtle",
     "description": "Dead turtle with a spear and shell",
-    "x":-1693.629883,
-    "y":1484.912231
+    "x": -1693.629883,
+    "y": 1484.912231
   },
   {
     "id": 1711958379829,
     "type": "supply",
     "title": "Big Aloe Patch",
     "description": "19x Aloe on the hill at the tree line",
-    "x":-977.783386,
-    "y":181.315781
+    "x": -977.783386,
+    "y": 181.315781
   },
   {
     "id": 236,
@@ -5944,11 +5596,7 @@
     "description": "Village with 5 structures",
     "x": -738,
     "y": 27,
-    "items": [
-      462,
-      78,
-      918
-    ],
+    "items": [462, 78, 918],
     "tp": "goto Village1",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
   },
@@ -5969,9 +5617,7 @@
     "description": "Village with 9 structures",
     "x": -969,
     "y": -777,
-    "items": [
-      571
-    ],
+    "items": [571],
     "tp": "goto Village3",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
   },
@@ -5982,9 +5628,7 @@
     "description": "Village with 4 structures",
     "x": -1207,
     "y": 657,
-    "items": [
-      862
-    ],
+    "items": [862],
     "tp": "goto Village4",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
   },
@@ -5995,9 +5639,7 @@
     "description": "Large village with 11 structures",
     "x": -1087.342529,
     "y": 1278.549805,
-    "items": [
-      913
-    ],
+    "items": [913],
     "tp": "goto Village5",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
   },
@@ -6028,9 +5670,7 @@
     "description": "Village with 7 structures",
     "x": -1131,
     "y": -1083,
-    "items": [
-      572
-    ],
+    "items": [572],
     "tp": "goto Village8",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
   },
@@ -6041,10 +5681,7 @@
     "description": "Village with 4 structures",
     "x": -1173,
     "y": -1697,
-    "items": [
-      548,
-      549
-    ],
+    "items": [548, 549],
     "tp": "goto Village9",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
   },
@@ -6105,9 +5742,7 @@
     "description": "Village with 5 structures",
     "x": -763,
     "y": 765,
-    "items": [
-      544
-    ],
+    "items": [544],
     "tp": "goto Village15",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
   },
@@ -6198,9 +5833,7 @@
     "description": "Village with 5 structures",
     "x": -1350,
     "y": -835,
-    "items": [
-      545
-    ],
+    "items": [545],
     "tp": "goto Village24",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
   },
@@ -6291,9 +5924,7 @@
     "description": "Village with 5 structures",
     "x": -1777,
     "y": -1601,
-    "items": [
-      546
-    ],
+    "items": [546],
     "tp": "goto Village34",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
   },
@@ -6453,7 +6084,7 @@
     "title": "Village 51",
     "description": "Village with 2 structures",
     "x": 639.83,
-    "y": -791.90,
+    "y": -791.9,
     "tp": "goto Village51",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
   },
@@ -6543,9 +6174,7 @@
     "x": -424.63,
     "y": 702.06,
     "inBunker": true,
-    "requirements": [
-      15
-    ],
+    "requirements": [15],
     "screenshot": "laser_sight.webp",
     "warning": "Teleport after entering the bunker!",
     "tp": "goto LaserSightMod",
@@ -6560,9 +6189,7 @@
     "x": -1181.75,
     "y": 28.36,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "shotgun_rail_2.webp",
     "warning": "Teleport after entering the bunker!",
     "tp": "goto -1181,9 66 27,7",
@@ -6577,9 +6204,7 @@
     "x": 1144.27,
     "y": -639.34,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "shotgun_rail_3.webp",
     "warning": "Teleport after entering the bunker!",
     "tp": "goto ShotgunRailPickup",
@@ -6643,9 +6268,7 @@
     "x": 1056.95,
     "y": 1022.79,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "pistol_rail_3.webp",
     "warning": "Teleport after entering the bunker!",
     "tp": "goto CompactPistolRailPickup",
@@ -6660,9 +6283,7 @@
     "x": -580.72,
     "y": -69.44,
     "inCave": true,
-    "requirements": [
-      11
-    ],
+    "requirements": [11],
     "screenshot": "flashlight_attachment_1.webp",
     "warning": "Double use the command!",
     "tp": "goto FlashlightModPickup",
@@ -6677,9 +6298,7 @@
     "x": 1154.35,
     "y": -604.58,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "flashlight_attachment_2.webp",
     "warning": "Teleport only after entering the bunker!",
     "tp": "goto FlashlightModPickup",
@@ -6706,9 +6325,7 @@
     "x": -1125.58,
     "y": -1050.17,
     "inBunker": true,
-    "requirements": [
-      15
-    ],
+    "requirements": [15],
     "screenshot": "pistol_suppressor_2.webp",
     "warning": "Teleport after entering the bunker!",
     "tp": "goto -1126.3 270 -1050,2",
@@ -6722,9 +6339,7 @@
     "x": -1133.87,
     "y": -1604.05,
     "inCave": true,
-    "requirements": [
-      11
-    ],
+    "requirements": [11],
     "screenshot": "night_vision_1.webp",
     "warning": "Teleport only after you get inside the cave!",
     "tp": "goto -71,4 149 -470,8",
@@ -6758,7 +6373,7 @@
     "type": "cooking-pot",
     "title": "Cooking Pot",
     "description": "Inside campfire",
-    "x": 1283.00,
+    "x": 1283.0,
     "y": -727.37,
     "screenshot": "cooking_pot_3.webp",
     "itemid": "additem 517",
@@ -6803,9 +6418,7 @@
     "x": 1138.21,
     "y": -638.19,
     "inBunker": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "screenshot": "cooking_pot_7.webp",
     "itemid": "additem 517",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Cooking_Pot"
@@ -6815,7 +6428,7 @@
     "type": "cooking-pot-bunker",
     "title": "Cooking Pot",
     "x": 1614.59,
-    "y": 480.40,
+    "y": 480.4,
     "inBunker": true,
     "screenshot": "cooking_pot_8.webp",
     "itemid": "additem 517",
@@ -6915,11 +6528,9 @@
     "title": "Golf Cart Battery",
     "description": "On regal",
     "x": -1140.77,
-    "y": -1038.60,
+    "y": -1038.6,
     "isUnderground": true,
-    "requirements": [
-      15
-    ],
+    "requirements": [15],
     "itemid": "additem 661",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
@@ -6931,9 +6542,7 @@
     "x": -419.08,
     "y": 716.35,
     "isUnderground": true,
-    "requirements": [
-      15
-    ],
+    "requirements": [15],
     "itemid": "additem 661",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
@@ -6942,7 +6551,7 @@
     "type": "large-battery",
     "title": "2x Golf Cart Batteries",
     "description": "Next to golf cart wreckage",
-    "x": -480.30,
+    "x": -480.3,
     "y": 706.72,
     "itemid": "additem 661",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
@@ -6970,7 +6579,7 @@
     "type": "large-battery",
     "title": "Golf Cart Battery",
     "x": 1109.26,
-    "y": 1000.20,
+    "y": 1000.2,
     "itemid": "additem 661",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
@@ -6981,9 +6590,7 @@
     "x": 1139.52,
     "y": 1062.08,
     "isUnderground": true,
-    "requirements": [
-      15
-    ],
+    "requirements": [15],
     "itemid": "additem 661",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
@@ -7019,7 +6626,7 @@
     "type": "large-battery",
     "title": "Golf Cart Battery",
     "x": 1683.96,
-    "y": 1013.50,
+    "y": 1013.5,
     "itemid": "additem 661",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
@@ -7045,7 +6652,7 @@
     "id": 488,
     "type": "large-battery",
     "title": "Golf Cart Battery",
-    "x": 1027.40,
+    "x": 1027.4,
     "y": 1216.73,
     "itemid": "additem 661",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
@@ -7083,8 +6690,8 @@
     "type": "large-battery",
     "title": "Golf Cart Battery",
     "description": "In the carry box of the broken golf cart.",
-    "x":-1187.253906,
-    "y":137.056671,
+    "x": -1187.253906,
+    "y": 137.056671,
     "itemid": "additem 661",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
@@ -7096,9 +6703,7 @@
     "x": -415.51,
     "y": 709.07,
     "isUnderground": true,
-    "requirements": [
-      15
-    ],
+    "requirements": [15],
     "itemid": "additem 634",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Solar_Panel"
   },
@@ -7162,7 +6767,7 @@
     "type": "solar-panel",
     "title": "Solar Panel",
     "x": -30.39,
-    "y": 672.90,
+    "y": 672.9,
     "itemid": "additem 634",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Solar_Panel"
   },
@@ -7261,8 +6866,8 @@
     "id": 1713850789741,
     "type": "radio",
     "title": "radio",
-    "x":-1206.778687,
-    "y":653.092163,
+    "x": -1206.778687,
+    "y": 653.092163,
     "itemid": "additem 590",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
@@ -7270,8 +6875,8 @@
     "id": 1713850806345,
     "type": "radio",
     "title": "radio",
-    "x":-1202.710693,
-    "y":656.139893,
+    "x": -1202.710693,
+    "y": 656.139893,
     "itemid": "additem 590",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
@@ -7279,8 +6884,8 @@
     "id": 1713850827415,
     "type": "radio",
     "title": "radio",
-    "x":-1202.188965,
-    "y":661.338867,
+    "x": -1202.188965,
+    "y": 661.338867,
     "itemid": "additem 590",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
@@ -7288,8 +6893,8 @@
     "id": 1713850846731,
     "type": "radio",
     "title": "radio",
-    "x":-1206.150146,
-    "y":664.653931,
+    "x": -1206.150146,
+    "y": 664.653931,
     "itemid": "additem 590",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
@@ -7297,8 +6902,8 @@
     "id": 1713850865004,
     "type": "radio",
     "title": "radio",
-    "x":-1211.289429,
-    "y":664.841248,
+    "x": -1211.289429,
+    "y": 664.841248,
     "itemid": "additem 590",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
@@ -7306,8 +6911,8 @@
     "id": 1713850883143,
     "type": "radio",
     "title": "radio",
-    "x":-1213.743896,
-    "y":661.242798,
+    "x": -1213.743896,
+    "y": 661.242798,
     "itemid": "additem 590",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
@@ -7315,8 +6920,8 @@
     "id": 1713850900518,
     "type": "radio",
     "title": "radio",
-    "x":-1213.515747,
-    "y":656.621704,
+    "x": -1213.515747,
+    "y": 656.621704,
     "itemid": "additem 590",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
@@ -7324,8 +6929,8 @@
     "id": 863,
     "type": "radio",
     "title": "Radio",
-    "x": -700,
-    "y": 448,
+    "x": -700.921936,
+    "y": 447.450836,
     "itemid": "additem 590",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
@@ -7366,9 +6971,7 @@
     "x": -1117.67,
     "y": 7.83,
     "isUnderground": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "itemid": "additem 590",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
@@ -7377,11 +6980,9 @@
     "type": "radio",
     "title": "Radio",
     "x": 1137.17,
-    "y": -621.50,
+    "y": -621.5,
     "isUnderground": true,
-    "requirements": [
-      17
-    ],
+    "requirements": [17],
     "itemid": "additem 590",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
@@ -7430,15 +7031,6 @@
     "y": -419.53,
     "itemid": "additem 590",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
-  },
-  {
-    "id": 118,
-    "type": "poi",
-    "title": "Broken Sleds",
-    "description": "Broken sleds with loose items.",
-    "x": -160.25,
-    "y": -91.75,
-    "screenshot": "broken_sled_ice.webp"
   },
   {
     "id": 1712103913230,
@@ -8825,7 +8417,7 @@
     "id": 526,
     "type": "pond",
     "title": "Pond PCN (2)",
-    "x": 777.20,
+    "x": 777.2,
     "y": -1237.76,
     "tp": "goto LakePCN (2)",
     "tg": "togglego LakePCN (2)"
