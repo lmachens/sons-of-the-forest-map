@@ -871,8 +871,8 @@
     "id": 35,
     "type": "printer",
     "title": "3D Printer",
-    "x": -1195.58,
-    "y": 77.93,
+    "x": -1195.57019,
+    "y": 78.426552,
     "inBunker": true,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/3D_Printer"
   },
@@ -896,6 +896,14 @@
     "inBunker": true,
     "requirements": [17],
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/3D_Printer"
+  },
+  {
+    "id": 1712100165226,
+    "type": "supply",
+    "title": "Printer Resin",
+    "description": "In the back of the golf cart",
+    "x": -489.052727538146,
+    "y": 720.806975072037
   },
   {
     "id": 587,
@@ -1090,7 +1098,8 @@
     "title": "Underwater cave",
     "description": "Danger: Must have rebreather",
     "x": -323.67812908814216,
-    "y": 1512.0594632197838
+    "y": 1512.0594632197838,
+    "requirements": [50]
   },
   {
     "id": 45,
@@ -1224,14 +1233,21 @@
   {
     "id": 47,
     "type": "cave",
-    "title": "BunkerEntertainment",
+    "title": "Bunker Entertainment",
     "x": -1190,
     "y": 126,
-    "items": [
-      35, 23, 22, 483, 922, 825, 80, 79, 88, 335, 91, 333, 334, 94, 923
-    ],
+    "items": [35, 483, 88],
     "screenshot": "cave_leading_to_entertainment_bunker.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Bunkers#Entertainment_Bunker"
+  },
+  {
+    "id": 1714117463405,
+    "type": "final-bunker",
+    "title": "Keycard Door",
+    "description": "Enter through Bunker Entertainment Cave",
+    "x": -1149.017334,
+    "y": 51.62986,
+    "items": [23, 22, 922, 825, 80, 79, 335, 91, 333, 334, 94, 923]
   },
   {
     "id": 49,
@@ -1697,9 +1713,9 @@
     "id": 75,
     "type": "outfit-bunker",
     "title": "Virginia Dress",
-    "description": "On the right side from entrance",
-    "x": 1623.12,
-    "y": 568.18,
+    "description": "On the shelf between the bed and the ballet mirror",
+    "x": 1623.398315,
+    "y": 568.523193,
     "inBunker": true,
     "requirements": [19],
     "screenshot": "dress.webp",
@@ -1723,8 +1739,9 @@
     "id": 78,
     "type": "outfit",
     "title": "Hoodie",
-    "x": -744.25,
-    "y": 20.4,
+    "description": "On a cot to the left as you enter the tent",
+    "x": -1394.588989,
+    "y": -1117.484741,
     "screenshot": "hoodie_1.webp",
     "tp": "goto HoodiePickup",
     "itemid": "additem 490",
@@ -1881,6 +1898,14 @@
     "description": "In the hand of the dead worker",
     "x": -949.433472,
     "y": 217.765778
+  },
+  {
+    "id": 1714114158415,
+    "type": "gps-locator",
+    "title": "Military GPS Locator",
+    "description": "On the dead soldier in front of the tent",
+    "x": -1392.419434,
+    "y": -1124.268677
   },
   {
     "id": 88,
@@ -2405,6 +2430,14 @@
     "screenshot": "email_printout_golf_balls_1.webp",
     "tp": "goto EmailPrintoutGolfAPickup",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Balls_Emails"
+  },
+  {
+    "id": 1712136070886,
+    "type": "email",
+    "title": "Dimensional Disturbance",
+    "description": "on the floor of the tent between two dead soldiers",
+    "x": -1393.110352,
+    "y": -1117.372681
   },
   {
     "id": 3333,
@@ -3099,7 +3132,7 @@
   },
   {
     "id": 1702953428827,
-    "type": "machete",
+    "type": "plant-resource",
     "title": "Plant Resource",
     "description": "mushrooms, fireweed, devil's club and aloe",
     "x": -1269.9637790110394,
@@ -3107,11 +3140,19 @@
   },
   {
     "id": 1702952620951,
-    "type": "machete",
+    "type": "plant-resource",
     "title": "Plant Resource",
     "description": "Aloe and Devil's club",
     "x": -1166.7261889578033,
     "y": 1316.6328265693514
+  },
+  {
+    "id": 1711958781449,
+    "type": "plant-resource",
+    "title": "Fire Weed",
+    "description": "Large patch, seasonal",
+    "x": -1109.004883,
+    "y": -164.734512
   },
   {
     "id": 121,
@@ -3193,10 +3234,17 @@
   },
   {
     "id": 142,
-    "type": "supply",
-    "title": "2x Supply Suitcases",
-    "x": -1134,
-    "y": -130
+    "type": "utility-crate",
+    "title": "Grey Crate",
+    "x": -1131.897949,
+    "y": -131.74765
+  },
+  {
+    "id": 1714118791733,
+    "type": "utility-crate",
+    "title": "Grey Crate",
+    "x": -1135.645996,
+    "y": -129.504547
   },
   {
     "id": 143,
@@ -3222,7 +3270,7 @@
   {
     "id": 151,
     "type": "utility-crate",
-    "title": "2x Black/yellow crates",
+    "title": "2x Black and Yellow Crates",
     "description": "In a clearing beside a fallen tree near the pond",
     "x": -1592.227539,
     "y": 223.727798
@@ -3237,7 +3285,7 @@
   {
     "id": 153,
     "type": "utility-crate",
-    "title": "2x Black/yellow crates, loose rope",
+    "title": "2x Black and Yellow Crates",
     "x": -1341.930298,
     "y": 238.05928
   },
@@ -3700,6 +3748,24 @@
     "inCave": true
   },
   {
+    "id": 1712092591276,
+    "type": "supply",
+    "title": "Loose Items",
+    "description": "inCave. Watches, cloth, cat food",
+    "x": -1098.248535,
+    "y": -191.358749,
+    "inCave": true
+  },
+  {
+    "id": 1714119860216,
+    "type": "supply",
+    "title": "Rope",
+    "description": "",
+    "x": -1136.162842,
+    "y": -201.47728,
+    "InCave": true
+  },
+  {
     "id": 1711529061128,
     "type": "utility-crate",
     "title": "Grey Crate",
@@ -3743,8 +3809,8 @@
   },
   {
     "id": 155,
-    "type": "dark-green-suitcase",
-    "title": "2x Ammo Cases",
+    "type": "utility-case",
+    "title": "2x Explosives Cases",
     "x": -1249,
     "y": 217
   },
@@ -3901,6 +3967,14 @@
     "y": 457.549957
   },
   {
+    "id": 1714114717624,
+    "type": "utility-case",
+    "title": "Explosives Case",
+    "description": "",
+    "x": -1397.13623,
+    "y": -1128.791748
+  },
+  {
     "id": 580,
     "type": "dark-green-suitcase",
     "title": "Ammo Case",
@@ -3918,11 +3992,20 @@
   },
   {
     "id": 120,
-    "type": "orange-case",
+    "type": "orange-case-cave",
     "title": "Flare Case",
     "x": -422.13,
     "y": 1496.44,
-    "isUnderground": true
+    "inCave": true
+  },
+  {
+    "id": 1712092681262,
+    "type": "orange-case-cave",
+    "title": "Flare Crate",
+    "description": "InCave on ledge near entrance to large cave room",
+    "x": -1141.317993,
+    "y": -200.804871,
+    "inCave": true
   },
   {
     "id": 125,
@@ -5582,6 +5665,15 @@
     "y": 1484.912231
   },
   {
+    "id": 1714119808560,
+    "type": "poi",
+    "title": "Row of Skulls",
+    "description": "",
+    "x": -1132.570679,
+    "y": -201.701492,
+    "inCave": true
+  },
+  {
     "id": 1711958379829,
     "type": "supply",
     "title": "Big Aloe Patch",
@@ -6959,7 +7051,7 @@
     "description": "Radio is hanging from the ceiling with a damaged laptop on the floor.",
     "x": -598.86,
     "y": 1448.47,
-    "isUnderground": true,
+    "inCave": true,
     "screenshot": "radio_12.webp",
     "itemid": "additem 590",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
