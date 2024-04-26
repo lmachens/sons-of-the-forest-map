@@ -3,415 +3,66 @@ import icons from "./icons.json";
 import { MapLocation } from "./locations";
 import { getItem, setItem } from "./storage";
 
-export type NodeType = {
+export interface NodeType {
   value: string;
   title: string;
   icon: string;
   src?: string;
-  filter?: string | string[];
+  filter?: string[] | undefined;
+  inBunker?: boolean;
+  inCave?: boolean;
 };
 
-export function getTypes(onlyBaseTypes: boolean = false): NodeType[] {
-  const baseTypes: NodeType[] = [
-    baseBook,
-    baseBlueprint,
-    baseCamp,
-    baseCamera,
-    baseCrate,
-    baseCaseU,
-    baseCrateU,
-    baseCookingPot,
-    baseDocument,
-    baseEmail,
-    baseFlashlightAttachment,
-    baseLake,
-    baseLaptop,
-    baseLargeBattery,
-    baseOutfit,
-    basePistol,
-    basePutter,
-    basePistolRail,
-    basePOI,
-    baseRadio,
-    baseShotgunRail,
-    baseSuppressor,
-    baseSupply,
-    baseSuitcaseDG,
-    baseSuitcaseOr,
-    baseSolarPanel,
-    createNodeType({
-      value: "unknown",
-      title: t("Unknown"),
-      icon: icons.unknown,
-    }),
-    {
-      value: "artifact-a",
-      title: t("Artifact"),
-      icon: icons.poi,
-      src: "/icons/artifact-a.webp",
-      filter: ["artifact", "cave-loot"],
-    },
-    {
-      value: "artifact-b",
-      title: t("Artifact"),
-      icon: icons.poi,
-      src: "/icons/artifact-b.webp",
-      filter: ["artifact", "cave-loot"],
-    },
-    {
-      value: "artifact-c",
-      title: t("Artifact"),
-      icon: icons.poi,
-      src: "/icons/artifact-c.webp",
-      filter: ["artifact", "cave-loot"],
-    },
-    {
-      value: "artifact-d",
-      title: t("Artifact"),
-      icon: icons.poi,
-      src: "/icons/artifact-d.webp",
-      filter: ["artifact", "cave-loot"],
-    },
-    {
-      value: "artifact-e",
-      title: t("Artifact"),
-      icon: icons.poi,
-      src: "/icons/artifact-e.webp",
-      filter: ["artifact", "cave-loot"],
-    },
-    {
-      value: "binoculars",
-      title: t("Tool"),
-      icon: icons.binoculars,
-      src: "/icons/binoculars.webp",
-      filter: "tools",
-    },
-    {
-      value: "bunker-hatch",
-      title: t("Bunker Hatch"),
-      icon: icons["bunker-hatch"],
-      src: "/icons/bunker-hatch.webp",
-      filter: "bunker-hatch",
-    },
-    {
-      value: "cross",
-      title: t("Weapon"),
-      icon: icons.cross,
-      src: "/icons/cross.webp",
-      filter: ["weapons", "bunker-loot"],
-    },
-    {
-      value: "crossbow",
-      title: t("Weapon"),
-      icon: icons.crossbow,
-      src: "/icons/crossbow.webp",
-      filter: ["weapons", "bunker-loot"],
-    },
-    {
-      value: "chainsaw",
-      title: t("Tool"),
-      icon: icons.chainsaw,
-      src: "/icons/chainsaw.webp",
-      filter: ["tools", "bunker-loot"],
-    },
-    {
-      value: "compound-bow",
-      title: t("Weapon"),
-      icon: icons["compound-bow"],
-      src: "/icons/compound-bow.webp",
-      filter: ["weapons", "bunker-loot"],
-    },
-    {
-      value: "cave",
-      title: t("Cave"),
-      icon: icons.cave,
-      src: "/icons/cave.webp",
-      filter: "cave",
-    },
-    {
-      value: "can-opener",
-      title: t("Tool"),
-      icon: icons["can-opener"],
-      src: "/icons/can-opener.webp",
-      filter: "tools",
-    },
-    {
-      value: "flashlight",
-      title: t("Tool"),
-      icon: icons.flashlight,
-      src: "/icons/flashlight.webp",
-      filter: "tools",
-    },
-    {
-      value: "firefighter-axe",
-      title: t("Tool"),
-      icon: icons["firefighter-axe"],
-      src: "/icons/firefighter-axe.webp",
-      filter: ["tools", "bunker-loot"],
-    },
-    {
-      value: "final-bunker",
-      title: t("Final Bunker"),
-      icon: icons["final-bunker"],
-      src: "/icons/final-bunker.webp",
-      filter: "bunker-hatch",
-    },
-    {
-      value: "guitar",
-      title: t("Weapon"),
-      icon: icons.guitar,
-      src: "/icons/guitar.webp",
-      filter: ["weapons", "bunker-loot"],
-    },
-    {
-      value: "golden-armor",
-      title: t("Player Gear"),
-      icon: icons["golden-armor"],
-      src: "/icons/golden-armor.webp",
-      filter: ["outfits", "cave-loot"],
-    },
-    {
-      value: "golden-mask",
-      title: t("Player Gear"),
-      icon: icons.outfit,
-      src: "/icons/golden-mask.webp",
-      filter: ["outfits", "bunker-loot"],
-    },
-    {
-      value: "gps-locator",
-      title: t("Tool"),
-      icon: icons["gps-locator"],
-      src: "/icons/gps-locator.webp",
-      filter: "tools",
-    },
-    {
-      value: "golf-cart",
-      title: t("Drive around the map"),
-      icon: icons.unicycle,
-      src: "/icons/golf-cart.webp",
-      filter: "vehicle",
-    },
-    {
-      value: "grave",
-      title: t("Grave"),
-      icon: icons.poi,
-      src: "/icons/grave.webp",
-      filter: "poi",
-    },
-    {
-      value: "helicopter",
-      title: t("Point of Interest"),
-      icon: icons.helicopter,
-      src: "/icons/helicopter.webp",
-      filter: "poi",
-    },
-    {
-      value: "keycard",
-      title: t("Keycard"),
-      icon: icons.keycard,
-      src: "/icons/keycard.webp",
-      filter: ["tools", "bunker-loot"],
-    },
-    {
-      value: "hang-glider",
-      title: t("Aircarft"),
-      icon: icons["hang-glider"],
-      src: "/icons/hang-glider.webp",
-      filter: "vehicle",
-    },
-    {
-      value: "katana",
-      title: t("Weapon"),
-      icon: icons.katana,
-      src: "/icons/katana.webp",
-      filter: ["weapons", "bunker-loot"],
-    },
-    {
-      value: "laser-attachment",
-      title: t("Weapon Attachment"),
-      icon: icons["laser-sight"],
-      src: "/icons/laser-sight.webp",
-      filter: ["attachments", "bunker-loot"],
-    },
-    {
-      value: "modernAxe",
-      title: t("Tool"),
-      icon: icons["firefighter-axe"],
-      src: "/icons/modern-axe.webp",
-      filter: "tools",
-    },
-    {
-      value: "machete",
-      title: t("Weapon"),
-      icon: icons.machete,
-      src: "/icons/machete.webp",
-      filter: "weapons",
-    },
-    {
-      value: "night-vision",
-      title: t("Googles"),
-      icon: icons["night-vision"],
-      src: "/icons/night-vision.webp",
-      filter: ["tools", "cave-loot"],
-    },
-    {
-      value: "printer",
-      title: t("3D Printer"),
-      icon: icons.printer,
-      src: "/icons/printer.webp",
-      filter: ["printer", "bunker-loot"],
-    },
-    {
-      value: "pamphlet",
-      title: t("Pamphlet"),
-      icon: icons.document,
-      src: "/icons/pamphlet.webp",
-      filter: "documents",
-    },
-    {
-      value: "pickaxe",
-      title: t("Tool"),
-      icon: icons.poi,
-      src: "/icons/pickaxe.webp",
-      filter: ["tools", "cave-loot"],
-    },
-    {
-      value: "rebreather",
-      title: t("Tool"),
-      icon: icons.rebreather,
-      src: "/icons/rebreather.webp",
-      filter: ["tools", "cave-loot"],
-    },
-    {
-      value: "rope-gun",
-      title: t("Tool"),
-      icon: icons["rope-gun"],
-      src: "/icons/rope-gun.webp",
-      filter: ["tools", "cave-loot"],
-    },
-    {
-      value: "revolver",
-      title: t("Weapon"),
-      icon: icons.revolver,
-      src: "/icons/revolver.webp",
-      filter: ["weapons", "bunker-loot"],
-    },
-    {
-      value: "rifle",
-      title: t("Ranged type of weapon"),
-      icon: icons.shotgun,
-      src: "/icons/rifle.webp",
-      filter: ["weapons", "cave-loot"],
-    },
-    {
-      value: "spawnPoint",
-      title: t("Spawn Point"),
-      icon: icons["spawn-point"],
-      src: "/icons/spawn-point.webp",
-      filter: "poi",
-    },
-    {
-      value: "stun-baton",
-      title: t("Weapon"),
-      icon: icons["stun-baton"],
-      src: "/icons/stun-baton.webp",
-      filter: "weapons",
-    },
-    {
-      value: "stun-gun",
-      title: t("Weapon"),
-      icon: icons["stun-gun"],
-      src: "/icons/stun-gun.webp",
-      filter: ["weapons", "cave-loot"],
-    },
-    {
-      value: "slingshot",
-      title: t("Tool"),
-      icon: icons.slingshot,
-      src: "/icons/slingshot.webp",
-      filter: "tools",
-    },
-    {
-      value: "shovel",
-      title: t("Tool"),
-      icon: icons.shovel,
-      src: "/icons/shovel.webp",
-      filter: ["tools", "cave-loot"],
-    },
-    {
-      value: "shotgun",
-      title: t("Rifle"),
-      icon: icons.shotgun,
-      src: "/icons/shotgun.webp",
-      filter: "weapons",
-    },
-    {
-      value: "unicycle",
-      title: t("Unicycle"),
-      icon: icons.unicycle,
-      src: "/icons/knightv.webp",
-      filter: "vehicle",
-    },
-    {
-      value: "village",
-      title: t("Cannibals living space"),
-      icon: icons.village,
-      src: "/icons/village.webp",
-      filter: "village",
-    },
-  ];
-
-  const extendedTypes: NodeType[] = [
-    bunkerBook,
-    caveBlueprint,
-    camp,
-    camera,
-    bunkerCookingPot,
-    bunkerCrate,
-    caveCrate,
-    bunkerCaseU,
-    caveCaseU,
-    bunkerCrateU,
-    caveCrateU,
-    bunkerDocument,
-    caveDocument,
-    bunkerEmail,
-    caveEmail,
-    bunkerFlashlightAttachment,
-    caveFlashlightAttachment,
-    fishingHut,
-    laptop,
-    bunkerLargeBattery,
-    bunkerOutfit,
-    caveOutfit,
-    bunkerPistol,
-    bunkerPutter,
-    bunkerPistolRail,
-    pond,
-    bunkerPOI,
-    cavePOI,
-    bunkerRadio,
-    bunkerShotgunRail,
-    bunkerSuppressor,
-    bunkerSupply,
-    caveSupply,
-    bunkerSuitcaseDG,
-    caveSuitcaseDG,
-    bunkerSuitcaseOr,
-    caveSuitcaseOr,
-    bunkerSolarPanel,
-    waterfall,
-  ]
-  
-  if (onlyBaseTypes) {
-  return baseTypes;
-  } else {
-    return baseTypes.concat(extendedTypes);
-  }
+export interface NodeTypeOptions extends Partial<NodeType> {
+  inCave?: boolean;
+  inBunker?: boolean;
+  additionalFilters?: string[];
 }
 
-function createNodeType(base: NodeType, extensions: Partial<NodeType> = {}): NodeType {
-  return { ...base, ...extensions };
+const defaultUknown: NodeType = {
+  value: "unknown",
+  title: t("Unknown"),
+  icon: icons.unknown,
+}
+
+const baseArtifactA: NodeType = {
+  value: "artifact-a",
+  title: t("Artifact"),
+  icon: icons.poi,
+  src: "/icons/artifact-a.webp",
+  filter: ["artifact"],
+}
+
+const baseArtifactB: NodeType = {
+  value: "artifact-b",
+  title: t("Artifact"),
+  icon: icons.poi,
+  src: "/icons/artifact-b.webp",
+  filter: ["artifact"],
+}
+
+const baseArtifactC: NodeType = {
+  value: "artifact-c",
+  title: t("Artifact"),
+  icon: icons.poi,
+  src: "/icons/artifact-c.webp",
+  filter: ["artifact"],
+}
+
+const baseArtifactD: NodeType = {
+  value: "artifact-d",
+  title: t("Artifact"),
+  icon: icons.poi,
+  src: "/icons/artifact-d.webp",
+  filter: ["artifact"],
+}
+
+const baseArtifactE: NodeType = {
+  value: "artifact-e",
+  title: t("Artifact"),
+  icon: icons.poi,
+  src: "/icons/artifact-e.webp",
+  filter: ["artifact"],
 }
 
 const baseBook: NodeType = {
@@ -419,347 +70,59 @@ const baseBook: NodeType = {
   title: t("Book"),
   icon: icons.book,
   src: "/icons/book.webp",
-  filter: "documents",
+  filter: ["documents"],
 }
 
-const baseCrate: NodeType = {
-  value: "wooden-crate",
-  title: t("Crate"),
-  icon: icons.crate,
-  filter: "loot",
+const baseBinoculars: NodeType = {
+  value: "binoculars",
+  title: t("Tool"),
+  icon: icons.binoculars,
+  src: "/icons/binoculars.webp",
+  filter: ["tools"],
 }
 
-const bunkerCrate = createNodeType(baseCrate, {
-  value: "wooden-crate-bunker",
-  filter: ["loot", "bunker-loot"],
-})
-
-const caveCrate = createNodeType(baseCrate, {
-  value: "wooden-crate-cave",
-  filter: ["loot", "cave-loot"],
-})
-
-const baseCaseU: NodeType = {
-  value: "utility-case",
-  title: t("Utility Case"),
-  icon: icons.case,
-  src: "/icons/utility-case.webp",
-  filter: "loot",
-}
-
-const bunkerCaseU = createNodeType(baseCaseU, {
-  value: "utility-case-bunker",
-  filter: ["loot", "bunker-loot"],
-})
-
-const caveCaseU = createNodeType(baseCaseU, {
-  value: "utility-case-cave",
-  filter: ["loot", "cave-loot"],
-})
-
-const baseCrateU: NodeType = {
-  value: "utility-crate",
-  title: t("Utility Crate"),
-  icon: icons.case,
-  src: "/icons/utility-crate.webp",
-  filter: "loot",
-}
-
-const bunkerCrateU = createNodeType(baseCrateU, {
-  value: "utility-crate-bunker",
-  filter: ["loot", "bunker-loot"],
-})
-
-const caveCrateU = createNodeType(baseCrateU, {
-  value: "utility-crate-cave",
-  filter: ["loot", "cave-loot"],
-})
-
-const bunkerBook = createNodeType(baseBook, {
-  value: "book-bunker",
-  filter: ["documents", "bunker-loot"],
-})
-
-const baseDocument: NodeType = {
-  value: "document",
-  title: t("Document"),
+const baseBlueprint: NodeType = {
+  value: "blueprint",
+  title: t("Blueprint"),
   icon: icons.document,
   src: "/icons/document.webp",
-  filter: "documents",
+  filter: ["blueprint"],
 }
 
-const bunkerDocument = createNodeType(baseDocument, {
-  value: "document-bunker",
-  filter: ["documents", "bunker-loot"],
-})
-
-const caveDocument = createNodeType(baseDocument, {
-  value: "document-cave",
-  filter: ["documents", "cave-loot"],
-})
-
-const baseLargeBattery: NodeType = {
-  value: "large-battery",
-  title: t("Electronics"),
-  icon: icons.poi,
-  src: "/icons/large-battery.webp",
-  filter: "electronics",
+const baseBunkerHatch: NodeType = {
+  value: "bunker-hatch",
+  title: t("Bunker Hatch"),
+  icon: icons["bunker-hatch"],
+  src: "/icons/bunker-hatch.webp",
+  filter: ["bunker-hatch"],
 }
 
-const bunkerLargeBattery = createNodeType(baseLargeBattery, {
-  value: "large-battery-bunker",
-  filter: ["electronics", "bunker-loot"],
-})
-
-const baseOutfit: NodeType = {
-  value: "outfit",
-  title: t("Outfit"),
-  icon: icons.outfit,
-  src: "/icons/outfit.webp",
-  filter: "outfits",
+const baseFinalBunker: NodeType = {
+  value: "final-bunker",
+  title: t("Final Bunker"),
+  icon: icons["final-bunker"],
+  src: "/icons/final-bunker.webp",
+  filter: ["bunker-hatch"],
 }
-
-const bunkerOutfit = createNodeType(baseOutfit, {
-  value: "outfit-bunker",
-  filter: ["outfits", "bunker-loot"],
-})
-
-const caveOutfit = createNodeType(baseOutfit, {
-  value: "outfit-cave",
-  filter: ["outfits", "cave-loot"],
-})
-
-const basePistol: NodeType = {
-  value: "pistol",
-  title: t("Weapon"),
-  icon: icons.pistol,
-  src: "/icons/pistol.webp",
-  filter: "weapons",
-};
-
-const bunkerPistol = createNodeType(basePistol, {
-  value: "pistol-bunker",
-  filter: ["weapons", "bunker-loot"],
-});
-
-const basePutter: NodeType = {
-  value: "putter",
-  title: t("Weapon"),
-  icon: icons.putter,
-  src: "/icons/putter.webp",
-  filter: "weapons",
-}
-
-const bunkerPutter = createNodeType(basePutter, {
-  value: "putter-bunker",
-  filter: ["weapons", "bunker-loot"],
-})
-
-const basePistolRail: NodeType = {
-  value: "pistol-rail",
-  title: t("Weapon Attachment"),
-  icon: icons["pistol-rail"],
-  src: "/icons/pistol-rail.webp",
-  filter: "attachments",
-}
-
-const bunkerPistolRail = createNodeType(basePistolRail, {
-  value: "pistol-rail-bunker",
-  filter: ["attachments", "bunker-loot"],
-})
-
-const basePOI: NodeType = {
-  value: "poi",
-  title: t("Point of Interest"),
-  icon: icons.poi,
-  src: "/icons/poi.webp",
-  filter: "poi",
-}
-
-const bunkerPOI = createNodeType(basePOI, {
-  value: "poi-bunker",
-  filter: ["poi", "bunker-loot"],
-})
-
-const cavePOI = createNodeType(basePOI, {
-  value: "poi-cave",
-  filter: ["poi", "cave-loot"],
-})
-
-const baseRadio: NodeType = {
-  value: "radio",
-  title: t("Entertainment"),
-  icon: icons.poi,
-  src: "/icons/radio.webp",
-  filter: "electronics",
-}
-
-const bunkerRadio = createNodeType(baseRadio, {
-  value: "radio-bunker",
-  filter: ["electronics", "bunker-loot"],
-})
-
-const baseShotgunRail: NodeType = {
-  value: "shotgun-rail",
-  title: t("Weapon Attachment"),
-  icon: icons["shotgun-rail"],
-  src: "/icons/shotgun-rail.webp",
-  filter: "attachments",
-}
-
-const bunkerShotgunRail = createNodeType(baseShotgunRail, {
-  value: "shotgun-rail-bunker",
-  filter: ["attachments", "bunker-loot"],
-})
-
-const baseSuitcaseDG: NodeType = {
-  value: "dark-green-suitcase",
-  title: t("Case"),
-  icon: icons.case,
-  src: "/icons/ammo-case.webp",
-  filter: "loot",
-}
-
-const bunkerSuitcaseDG = createNodeType(baseSuitcaseDG, {
-  value: "dark-green-suitcase-bunker",
-  filter: ["loot", "bunker-loot"],
-})
-
-const caveSuitcaseDG = createNodeType(baseSuitcaseDG, {
-  value: "dark-green-suitcase-cave",
-  filter: ["loot", "cave-loot"],
-})
-
-const baseSuitcaseOr: NodeType = {
-  value: "orange-suitcase",
-  title: t("Case"),
-  icon: icons.case,
-  src: "/icons/flare-case.webp",
-  filter: "loot",
-}
-
-const bunkerSuitcaseOr = createNodeType(baseSuitcaseOr, {
-  value: "orange-suitcase-bunker",
-  filter: ["loot", "bunker-loot"],
-})
-
-const caveSuitcaseOr = createNodeType(baseSuitcaseOr, {
-  value: "orange-suitcase-cave",
-  filter: ["loot", "cave-loot"],
-})
-
-const baseSolarPanel: NodeType = {
-  value: "solar-panel",
-  title: t("Electronics"),
-  icon: icons.poi,
-  src: "/icons/solar-panel.webp",
-  filter: "electronics",
-}
-
-const bunkerSolarPanel = createNodeType(baseSolarPanel, {
-  value: "solar-panel-bunker",
-  filter: ["electronics", "bunker-loot"],
-})
-
-const baseFlashlightAttachment: NodeType = {
-  value: "flashlight-attachment",
-  title: t("Weapon Attachment"),
-  icon: icons["flashlight-attachment"],
-  src: "/icons/flashlight-attachment.webp",
-  filter: "attachments",
-}
-
-const bunkerFlashlightAttachment = createNodeType(baseFlashlightAttachment, {
-  value: "flashlight-attachment-bunker",
-  filter: ["attachments", "bunker-loot"],
-})
-
-const caveFlashlightAttachment = createNodeType(baseFlashlightAttachment, {
-  value: "flashlight-attachment-cave",
-  filter: ["attachments", "cave-loot"],
-})
-
-const baseSuppressor: NodeType = {
-  value: "suppressor",
-  title: t("Weapon Attachment"),
-  icon: icons.suppressor,
-  src: "/icons/suppressor.webp",
-  filter: "attachments",
-}
-
-const bunkerSuppressor = createNodeType(baseSuppressor, {
-  value: "suppressor-bunker",
-  filter: ["attachments", "bunker-loot"],
-})
-
-const baseSupply: NodeType = {
-  value: "supply",
-  title: t("Supply"),
-  icon: icons.case,
-  filter: "loot",
-}
-
-const bunkerSupply = createNodeType(baseSupply, {
-  value: "supply-bunker",
-  filter: "loot",
-})
-
-const caveSupply = createNodeType(baseSupply, {
-  value: "supply-cave",
-  filter: "loot",
-})
-
-const baseLake: NodeType = {
-  value: "lake",
-  title: t("Water Body"),
-  icon: icons.poi,
-  src: "/icons/water.webp",
-  filter: "lake",
-}
-
-const pond = createNodeType(baseLake, {
-  value: "pond",
-  title: t("Water Body"),
-  filter: "pond",
-})
-
-const waterfall = createNodeType(baseLake, {
-  value: "waterfall",
-  title: t("Waterfall"),
-  filter: "lake",
-})
 
 const baseCamp: NodeType = {
   value: "abandoned-camp-y",
   title: t("With save point"),
   icon: icons["abandoned-camp"],
   src: "/icons/abandoned-camp.webp",
-  filter: "abandoned-camp",
+  filter: ["abandoned-camp"],
 }
 
 const camp = createNodeType(baseCamp, {
   value: "abandoned-camp-n",
   title: t("Without save point"),
-  filter: "abandoned-camp",
+  filter: ["abandoned-camp"],
 })
 
 const fishingHut = createNodeType(baseCamp, {
   value: "fishing-hut",
   title: t("Fishing Hut"),
-  filter: "abandoned-camp",
-})
-
-const baseLaptop: NodeType = {
-  value: "laptop-cave",
-  title: t("Upload location to GPS Tracker"),
-  icon: icons.laptop,
-  src: "/icons/laptop.webp",
-  filter: "laptop",
-}
-
-const laptop = createNodeType(baseLaptop, {
-  value: "laptop-bunker",
-  filter: "laptop",
+  filter: ["abandoned-camp"],
 })
 
 const baseCamera: NodeType = {
@@ -767,57 +130,631 @@ const baseCamera: NodeType = {
   title: t("Watch pre-made videos"),
   icon: icons["action-camera"],
   src: "/icons/action-camera.webp",
-  filter: "tools",
+  filter: ["tools"],
 }
 
-const camera = createNodeType(baseCamera, {
-  value: "action-camera-bunker",
-  filter: ["tools", "bunker-loot"],
-})
-
-const baseBlueprint: NodeType = {
-  value: "blueprint",
-  title: t("Blueprint"),
-  icon: icons.document,
-  src: "/icons/document.webp",
-  filter: "blueprint",
+const baseCaseU: NodeType = {
+  value: "utility-case",
+  title: t("Utility Case"),
+  icon: icons.case,
+  src: "/icons/utility-case.webp",
+  filter: ["loot"],
 }
 
-const caveBlueprint = createNodeType(baseBlueprint, {
-  value: "blueprint-cave",
-  filter: ["blueprint", "cave-loot"],
-})
+const baseCave: NodeType = {
+  value: "cave",
+  title: t("Cave"),
+  icon: icons.cave,
+  src: "/icons/cave.webp",
+  filter: ["cave"],
+}
+
+const baseCanOpener: NodeType = {
+  value: "can-opener",
+  title: t("Tool"),
+  icon: icons["can-opener"],
+  src: "/icons/can-opener.webp",
+  filter: ["tools"],
+}
 
 const baseCookingPot: NodeType = {
   value: "cooking-pot",
   title: t("Tool"),
   icon: icons.poi,
   src: "/icons/cooking-pot.webp",
-  filter: "tools",
+  filter: ["tools"],
 }
 
-const bunkerCookingPot = createNodeType(baseCookingPot, {
-  value: "cooking-pot-bunker",
-  filter: ["tools", "bunker-loot"],
-})
+const baseCompoundBow: NodeType = {
+  value: "compound-bow",
+  title: t("Weapon"),
+  icon: icons["compound-bow"],
+  src: "/icons/compound-bow.webp",
+  filter: ["weapons"],
+}
+
+const baseChainsaw: NodeType = {
+  value: "chainsaw",
+  title: t("Tool"),
+  icon: icons.chainsaw,
+  src: "/icons/chainsaw.webp",
+  filter: ["tools"],
+}
+
+const baseCross: NodeType = {
+  value: "cross",
+  title: t("Weapon"),
+  icon: icons.cross,
+  src: "/icons/cross.webp",
+  filter: ["weapons"],
+}
+
+const baseCrossbow: NodeType = {
+  value: "crossbow",
+  title: t("Weapon"),
+  icon: icons.crossbow,
+  src: "/icons/crossbow.webp",
+  filter: ["weapons"],
+}
+
+const baseCrate: NodeType = {
+  value: "wooden-crate",
+  title: t("Crate"),
+  icon: icons.crate,
+  filter: ["loot"],
+}
+
+const baseCrateU: NodeType = {
+  value: "utility-crate",
+  title: t("Utility Crate"),
+  icon: icons.case,
+  src: "/icons/utility-crate.webp",
+  filter: ["loot"],
+}
+
+const baseDocument: NodeType = {
+  value: "document",
+  title: t("Document"),
+  icon: icons.document,
+  src: "/icons/document.webp",
+  filter: ["documents"],
+}
 
 const baseEmail: NodeType = {
   value: "email",
   title: t("Email"),
   icon: icons.document,
   src: "/icons/email.webp",
-  filter: "documents",
+  filter: ["documents"],
 }
 
-const bunkerEmail = createNodeType(baseEmail, {
-  value: "email-bunker",
-  filter: ["documents", "bunker-loot"],
+const baseFirefighterAxe: NodeType = {
+  value: "firefighter-axe",
+  title: t("Tool"),
+  icon: icons["firefighter-axe"],
+  src: "/icons/firefighter-axe.webp",
+  filter: ["tools"],
+}
+
+const baseFlashlight: NodeType = {
+  value: "flashlight",
+  title: t("Tool"),
+  icon: icons.flashlight,
+  src: "/icons/flashlight.webp",
+  filter: ["tools"],
+}
+
+const baseFlashlightAttachment: NodeType = {
+  value: "flashlight-attachment",
+  title: t("Weapon Attachment"),
+  icon: icons["flashlight-attachment"],
+  src: "/icons/flashlight-attachment.webp",
+  filter: ["attachments"],
+}
+
+const baseGrave: NodeType = {
+  value: "grave",
+  title: t("Grave"),
+  icon: icons.poi,
+  src: "/icons/grave.webp",
+  filter: ["poi"],
+}
+
+const baseGoldenArmor: NodeType = {
+  value: "golden-armor",
+  title: t("Player Gear"),
+  icon: icons["golden-armor"],
+  src: "/icons/golden-armor.webp",
+  filter: ["outfits"],
+}
+
+const baseGoldenMask: NodeType = {
+  value: "golden-mask",
+  title: t("Player Gear"),
+  icon: icons.outfit,
+  src: "/icons/golden-mask.webp",
+  filter: ["outfits"],
+}
+
+const baseGolfCart: NodeType = {
+  value: "golf-cart",
+  title: t("Vehicle"),
+  icon: icons.unicycle,
+  src: "/icons/golf-cart.webp",
+  filter: ["vehicle"],
+}
+
+const baseGPSLocator: NodeType = {
+  value: "gps-locator",
+  title: t("Tool"),
+  icon: icons["gps-locator"],
+  src: "/icons/gps-locator.webp",
+  filter: ["tools"],
+}
+
+const baseGuitar: NodeType = {
+  value: "guitar",
+  title: t("Weapon"),
+  icon: icons.guitar,
+  src: "/icons/guitar.webp",
+  filter: ["weapons"],
+}
+
+const baseHangGlider: NodeType = {
+  value: "hang-glider",
+  title: t("Aircarft"),
+  icon: icons["hang-glider"],
+  src: "/icons/hang-glider.webp",
+  filter: ["vehicle"],
+}
+
+const baseHelicopter: NodeType = {
+  value: "helicopter",
+  title: t("Point of Interest"),
+  icon: icons.helicopter,
+  src: "/icons/helicopter.webp",
+  filter: ["poi"],
+}
+
+const baseKatana: NodeType = {
+  value: "katana",
+  title: t("Weapon"),
+  icon: icons.katana,
+  src: "/icons/katana.webp",
+  filter: ["weapons"],
+}
+
+const baseKeycard: NodeType = {
+  value: "keycard",
+  title: t("Keycard"),
+  icon: icons.keycard,
+  src: "/icons/keycard.webp",
+  filter: ["tools"],
+}
+
+const baseLake: NodeType = {
+  value: "lake",
+  title: t("Water Body"),
+  icon: icons.poi,
+  src: "/icons/water.webp",
+  filter: ["lake"],
+}
+
+const pond = createNodeType(baseLake, {
+  value: "pond",
+  title: t("Water Body"),
+  filter: ["pond"],
 })
 
-const caveEmail = createNodeType(baseEmail, {
-  value: "email-cave",
-  filter: ["documents", "cave-loot"],
+const waterfall = createNodeType(baseLake, {
+  value: "waterfall",
+  title: t("Waterfall"),
+  filter: ["lake"],
 })
+
+const baseLaptop: NodeType = {
+  value: "laptop",
+  title: t("Upload location to GPS Tracker"),
+  icon: icons.laptop,
+  src: "/icons/laptop.webp",
+  filter: ["laptop"],
+}
+
+const baseLargeBattery: NodeType = {
+  value: "large-battery",
+  title: t("Electronics"),
+  icon: icons.poi,
+  src: "/icons/large-battery.webp",
+  filter: ["electronics"],
+}
+
+const baseLaserAttachment: NodeType = {
+  value: "laser-attachment",
+  title: t("Weapon Attachment"),
+  icon: icons["laser-sight"],
+  src: "/icons/laser-sight.webp",
+  filter: ["attachments"],
+}
+
+const baseMachete: NodeType = {
+  value: "machete",
+  title: t("Weapon"),
+  icon: icons.machete,
+  src: "/icons/machete.webp",
+  filter: ["weapons"],
+}
+
+const baseModernAxe: NodeType = {
+  value: "modern-axe",
+  title: t("Tool"),
+  icon: icons["firefighter-axe"],
+  src: "/icons/modern-axe.webp",
+  filter: ["tools"],
+}
+
+const baseNightVision: NodeType = {
+  value: "night-vision",
+  title: t("Goggles"),
+  icon: icons["night-vision"],
+  src: "/icons/night-vision.webp",
+  filter: ["tools"],
+}
+
+const baseOutfit: NodeType = {
+  value: "outfit",
+  title: t("Outfit"),
+  icon: icons.outfit,
+  src: "/icons/outfit.webp",
+  filter: ["outfits"],
+}
+
+const basePamphlet: NodeType = {
+  value: "pamphlet",
+  title: t("Pamphlet"),
+  icon: icons.document,
+  src: "/icons/pamphlet.webp",
+  filter: ["documents"],
+}
+
+const basePistol: NodeType = {
+  value: "pistol",
+  title: t("Weapon"),
+  icon: icons.pistol,
+  src: "/icons/pistol.webp",
+  filter: ["weapons"],
+}
+
+const basePistolRail: NodeType = {
+  value: "pistol-rail",
+  title: t("Weapon Attachment"),
+  icon: icons["pistol-rail"],
+  src: "/icons/pistol-rail.webp",
+  filter: ["attachments"],
+}
+
+const basePickaxe: NodeType = {
+  value: "pickaxe",
+  title: t("Tool"),
+  icon: icons.poi,
+  src: "/icons/pickaxe.webp",
+  filter: ["tools"],
+}
+
+const basePOI: NodeType = {
+  value: "poi",
+  title: t("Point of Interest"),
+  icon: icons.poi,
+  src: "/icons/poi.webp",
+  filter: ["poi"],
+}
+
+const basePrinter: NodeType = {
+  value: "printer",
+  title: t("3D Printer"),
+  icon: icons.printer,
+  src: "/icons/printer.webp",
+  filter: ["printer"],
+}
+
+const basePutter: NodeType = {
+  value: "putter",
+  title: t("Weapon"),
+  icon: icons.putter,
+  src: "/icons/putter.webp",
+  filter: ["weapons"],
+}
+
+const baseRadio: NodeType = {
+  value: "radio",
+  title: t("Entertainment"),
+  icon: icons.poi,
+  src: "/icons/radio.webp",
+  filter: ["electronics"],
+}
+
+const baseRebreather: NodeType = {
+  value: "rebreather",
+  title: t("Tool"),
+  icon: icons.rebreather,
+  src: "/icons/rebreather.webp",
+  filter: ["tools"],
+}
+
+const baseRevolver: NodeType = {
+  value: "revolver",
+  title: t("Weapon"),
+  icon: icons.revolver,
+  src: "/icons/revolver.webp",
+  filter: ["weapons"],
+}
+
+const baseRifle: NodeType = {
+  value: "rifle",
+  title: t("Weapon"),
+  icon: icons.shotgun,
+  src: "/icons/rifle.webp",
+  filter: ["weapons"],
+}
+
+const baseRopeGun: NodeType = {
+  value: "rope-gun",
+  title: t("Tool"),
+  icon: icons["rope-gun"],
+  src: "/icons/rope-gun.webp",
+  filter: ["tools"],
+}
+
+const baseShotgun: NodeType = {
+  value: "shotgun",
+  title: t("Weapon"),
+  icon: icons.shotgun,
+  src: "/icons/shotgun.webp",
+  filter: ["weapons"],
+}
+
+const baseShotgunRail: NodeType = {
+  value: "shotgun-rail",
+  title: t("Weapon Attachment"),
+  icon: icons["shotgun-rail"],
+  src: "/icons/shotgun-rail.webp",
+  filter: ["attachments"],
+}
+
+const baseShovel: NodeType = {
+  value: "shovel",
+  title: t("Tool"),
+  icon: icons.shovel,
+  src: "/icons/shovel.webp",
+  filter: ["tools"],
+}
+
+const baseSlingshot: NodeType = {
+  value: "slingshot",
+  title: t("Weapon"),
+  icon: icons.slingshot,
+  src: "/icons/slingshot.webp",
+  filter: ["weapons"],
+}
+
+const baseSpawnPoint: NodeType = {
+  value: "spawn-point",
+  title: t("Spawn Point"),
+  icon: icons["spawn-point"],
+  src: "/icons/spawn-point.webp",
+  filter: ["poi"],
+}
+
+const baseStunBaton: NodeType = {
+  value: "stun-baton",
+  title: t("Weapon"),
+  icon: icons["stun-baton"],
+  src: "/icons/stun-baton.webp",
+  filter: ["weapons"],
+}
+
+const baseStunGun: NodeType = {
+  value: "stun-gun",
+  title: t("Weapon"),
+  icon: icons["stun-gun"],
+  src: "/icons/stun-gun.webp",
+  filter: ["weapons"],
+}
+
+const baseSolarPanel: NodeType = {
+  value: "solar-panel",
+  title: t("Electronics"),
+  icon: icons.poi,
+  src: "/icons/solar-panel.webp",
+  filter: ["electronics"],
+}
+
+const baseSuppressor: NodeType = {
+  value: "suppressor",
+  title: t("Weapon Attachment"),
+  icon: icons.suppressor,
+  src: "/icons/suppressor.webp",
+  filter: ["attachments"],
+}
+
+const baseSupply: NodeType = {
+  value: "supply",
+  title: t("Supply"),
+  icon: icons.case,
+  filter: ["loot"],
+}
+
+const baseSuitcaseDG: NodeType = {
+  value: "dark-green-suitcase",
+  title: t("Case"),
+  icon: icons.case,
+  src: "/icons/ammo-case.webp",
+  filter: ["loot"],
+}
+
+const baseSuitcaseOr: NodeType = {
+  value: "orange-suitcase",
+  title: t("Case"),
+  icon: icons.case,
+  src: "/icons/flare-case.webp",
+  filter: ["loot"],
+}
+
+const baseUnicycle: NodeType = {
+  value: "unicycle",
+  title: t("Unicycle"),
+  icon: icons.unicycle,
+  src: "/icons/knightv.webp",
+  filter: ["vehicle"],
+}
+
+const baseVillage: NodeType = {
+  value: "village",
+  title: t("Village"),
+  icon: icons.village,
+  src: "/icons/village.webp",
+  filter: ["village"],
+}
+
+type NodeTypeKey = 'unknown' | 'artifact-a' | 'artifact-b' | 'artifact-c' | 'artifact-d' | 'artifact-e' |
+  'book' | 'binoculars' | 'blueprint' | 'bunker-hatch' | 'final-bunker' | 'camp-y' | 'camp-n' | 'fishing-hut' | 'camera' | 'caseu' | 'cave' | 
+  'canopener' | 'cookingpot' | 'compoundbow' | 'chainsaw' | 'cross' | 'crossbow' | 'crate' | 'crateu' | 'document' | 
+  'email' | 'firefighteraxe' | 'flashlight' | 'flashlight-attachment' | 'grave' | 'golden-armor' | 'golden-mask' | 
+  'golf-cart' | 'gps-locator' | 'guitar' | 'hang-glider' | 'helicopter' | 'katana' | 'keycard' | 'lake' | 'pond' | 'waterfall' | 'laptop' | 
+  'largebattery' | 'laser-attachment' | 'machete' | 'modern-axe' | 'night-vision' | 'outfit' | 'pamphlet' | 'pistol' | 
+  'pistol-rail' | 'pickaxe' | 'poi' | 'printer' | 'putter' | 'radio' | 'rebreather' | 'revolver' | 'rifle' | 'rope-gun' | 
+  'shotgun' | 'shotgun-rail' | 'shovel' | 'slingshot' | 'spawn-point' | 'stun-baton' | 'stun-gun' | 'solar-panel' | 
+  'suppressor' | 'supply' | 'suitcase-dg' | 'suitcase-or' | 'unicycle' | 'village';
+
+export function getBaseType(type: NodeTypeKey): NodeType {
+  switch(type) {
+    case 'unknown': return defaultUknown;
+    case 'artifact-a': return baseArtifactA;
+    case 'artifact-b': return baseArtifactB;
+    case 'artifact-c': return baseArtifactC;
+    case 'artifact-d': return baseArtifactD;
+    case 'artifact-e': return baseArtifactE;
+    case 'book' : return baseBook;
+    case 'binoculars' : return baseBinoculars;
+    case 'blueprint' : return baseBlueprint;
+    case 'bunker-hatch' : return baseBunkerHatch;
+    case 'final-bunker' : return baseFinalBunker;
+    case 'camp-y' : return baseCamp;
+    case 'camp-n' : return camp;
+    case 'fishing-hut' : return fishingHut;
+    case 'camera' : return baseCamera;
+    case 'caseu' : return baseCaseU;
+    case 'cave' : return baseCave;
+    case 'canopener' : return baseCanOpener;
+    case 'cookingpot' : return baseCookingPot;
+    case 'compoundbow' : return baseCompoundBow;
+    case 'chainsaw' : return baseChainsaw;
+    case 'cross' : return baseCross;
+    case 'crossbow' : return baseCrossbow;
+    case 'crate' : return baseCrate;
+    case 'crateu' : return baseCrateU;
+    case 'document' : return baseDocument;
+    case 'email' : return baseEmail;
+    case 'firefighteraxe' : return baseFirefighterAxe;
+    case 'flashlight' : return baseFlashlight;
+    case 'flashlight-attachment' : return baseFlashlightAttachment;
+    case 'grave' : return baseGrave;
+    case 'golden-armor' : return baseGoldenArmor;
+    case 'golden-mask' : return baseGoldenMask;
+    case 'golf-cart' : return baseGolfCart;
+    case 'gps-locator' : return baseGPSLocator;
+    case 'guitar' : return baseGuitar;
+    case 'hang-glider' : return baseHangGlider;
+    case 'helicopter' : return baseHelicopter;
+    case 'katana' : return baseKatana;
+    case 'keycard' : return baseKeycard;
+    case 'lake' : return baseLake;
+    case 'pond' : return pond;
+    case 'waterfall' : return waterfall;
+    case 'laptop' : return baseLaptop;
+    case 'largebattery' : return baseLargeBattery;
+    case 'laser-attachment' : return baseLaserAttachment;
+    case 'machete' : return baseMachete;
+    case 'modern-axe' : return baseModernAxe;
+    case 'night-vision' : return baseNightVision;
+    case 'outfit' : return baseOutfit;
+    case 'pamphlet' : return basePamphlet;
+    case 'pistol' : return basePistol;
+    case 'pistol-rail' : return basePistolRail;
+    case 'pickaxe' : return basePickaxe;
+    case 'poi' : return basePOI;
+    case 'printer' : return basePrinter;
+    case 'putter' : return basePutter;
+    case 'radio' : return baseRadio;
+    case 'rebreather' : return baseRebreather;
+    case 'revolver' : return baseRevolver;
+    case 'rifle' : return baseRifle;
+    case 'rope-gun' : return baseRopeGun;
+    case 'shotgun' : return baseShotgun;
+    case 'shotgun-rail' : return baseShotgunRail;
+    case 'shovel' : return baseShovel;
+    case 'slingshot' : return baseSlingshot;
+    case 'spawn-point' : return baseSpawnPoint;
+    case 'stun-baton' : return baseStunBaton;
+    case 'stun-gun' : return baseStunGun;
+    case 'solar-panel' : return baseSolarPanel;
+    case 'suppressor' : return baseSuppressor;
+    case 'supply' : return baseSupply;
+    case 'suitcase-dg' : return baseSuitcaseDG;
+    case 'suitcase-or' : return baseSuitcaseOr;
+    case 'unicycle' : return baseUnicycle;
+    case 'village' : return baseVillage;
+
+    default: return defaultUknown;
+  }
+}
+
+export function getAllNodeTypes(): NodeType[] {
+  return [
+    defaultUknown, baseArtifactA, baseArtifactB, baseArtifactC, baseArtifactD, baseArtifactE, baseBook,
+    baseBinoculars, baseBlueprint, baseBunkerHatch, baseFinalBunker, baseCamp, camp, fishingHut, baseCamera, 
+    baseCaseU, baseCave, baseCanOpener, baseCookingPot, baseCompoundBow, baseChainsaw, baseCross, baseCrossbow,
+    baseCrate, baseCrateU, baseDocument, baseEmail, baseFirefighterAxe, baseFlashlight,
+    baseFlashlightAttachment, baseGrave, baseGoldenArmor, baseGoldenMask, baseGolfCart, baseGPSLocator,
+    baseGuitar, baseHangGlider, baseHelicopter, baseKatana, baseKeycard, baseLake, pond, waterfall, baseLaptop,
+    baseLargeBattery, baseLaserAttachment, baseMachete, baseModernAxe, baseNightVision, baseOutfit,
+    basePamphlet, basePistol, basePistolRail, basePickaxe, basePOI, basePrinter, basePutter,
+    baseRadio, baseRebreather, baseRevolver, baseRifle, baseRopeGun, baseShotgun, baseShotgunRail,
+    baseShovel, baseSlingshot, baseSpawnPoint, baseStunBaton, baseStunGun, baseSolarPanel,
+    baseSuppressor, baseSupply, baseSuitcaseDG, baseSuitcaseOr, baseUnicycle, baseVillage
+  ];
+}
+
+export function loadTypes(data: any[]): NodeType[] {
+    return data.map((loc) => {
+      const baseType = getBaseType(loc.type as NodeTypeKey);
+      const filters = baseType.filter ? [...baseType.filter] : [];
+
+      if (loc.inCave) {
+        filters.push("cave-loot");
+      }
+      if (loc.inBunker) {
+        filters.push("bunker-loot");
+      }
+
+      return createNodeType(baseType, {
+        ...loc,
+        filter: filters,
+      });
+    });
+  }
+  export function createNodeType(base: NodeType, options: NodeTypeOptions = {}): NodeType {
+    const { inCave = false, inBunker = false, additionalFilters = [], ...extensions } = options;
+    let filters = [...(base.filter || []), ...additionalFilters];
+  
+    if (inCave) {
+      filters.push("cave-loot");
+    }
+    if (inBunker) {
+      filters.push("bunker-loot");
+    }
+
+      return { ...base, ...extensions, filter: filters };
+    }
 
 export function getCustomNodes() {
   return getItem<MapLocation[]>("custom_nodes", []);

@@ -10,11 +10,13 @@ import {
 } from "../lib/locations";
 import { setMeta } from "../lib/meta";
 import {
+  loadTypes,
+  NodeType,
+  getAllNodeTypes,
   getCustomNodes,
   getDeselectedFilters,
   getDiscoveredNodeIDs,
   getFilters,
-  getTypes,
   setCustomNodes,
   setDiscoveredNodeIDs,
 } from "../lib/nodes";
@@ -93,7 +95,7 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
   showTogglegoInfoSwitch.checked = settings.showTogglego;
   showItemIDSwitch.checked = settings.showItemId;
 
-  const types = getTypes();
+  const types = getAllNodeTypes();
   const filters = getFilters();
   const group = new leaflet.LayerGroup();
   const customGroup = new leaflet.LayerGroup();
@@ -113,27 +115,37 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
   function refreshVisibility() {
     const deselectedFilters = getDeselectedFilters();
     const mapLocationId = getMapLocationId();
+    const types: NodeType[] = getAllNodeTypes();
+    const latestMarkers: CanvasMarker[] = [];
 
-    getMapLocations().forEach((mapLocation) => {
-      const type = types.find((type) => type.value === mapLocation.type);
+    getMapLocations().forEach((mapLocation: MapLocation) => {
+      const type: NodeType | undefined = types.find((t: NodeType) => t.value === mapLocation.type);
+
       if (!type) {
         throw new Error(`Type not found for location ${mapLocation.id}`);
       }
 
-      let isVisible = mapLocation.id === mapLocationId;
-      if (!isVisible && type.filter !== undefined) {
-        if (Array.isArray(type.filter)) {
-          isVisible = type.filter.some(
-            (filter) => !deselectedFilters.includes(filter)
-          );
+      let isVisible: boolean = mapLocation.id === mapLocationId;
+
+      if (mapLocation.inBunker || mapLocation.inCave) {
+        if (mapLocation.inBunker) {
+          isVisible = mapLocation.inBunker;
+        }
+        if (mapLocation.inCave) {
+          isVisible = mapLocation.inCave;
+        }
+      } else {
+        if (!type.filter) {
+          throw new Error('Type filter not defined for location ${mapLocation.id}');
         } else {
-          isVisible = !deselectedFilters.includes(type.filter);
+          isVisible = !type.filter.some((filter: string) => !deselectedFilters.includes(filter));
         }
       }
 
-      const marker = latestMarkers.find(
-        (marker) => marker.options.id === mapLocation.id
+      const marker : CanvasMarker | undefined = latestMarkers.find(
+        (m: CanvasMarker) => m.options.id === mapLocation.id
       );
+
       if (marker) {
         if (group.hasLayer(marker)) {
           if (!isVisible) {
@@ -258,8 +270,9 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
     isDiscovered: boolean,
     isHighlighted = false
   ) {
-    const type =
-      types.find((type) => type.value === mapLocation.type) || types[0];
+    const type: NodeType =
+      types.find((t: NodeType) => t.value === mapLocation.type) || types[0];
+
     let primaryFilterColor = "#ffffff";
     if (type.filter) {
       const primaryFilterValue = Array.isArray(type.filter)
@@ -270,6 +283,31 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       );
       if (primaryFilter) {
         primaryFilterColor = primaryFilter.color;
+      }
+
+      let additionalFilters: string[] = [];
+      if (mapLocation.inBunker) {
+        additionalFilters.push("bunker-loot");
+      } else if (mapLocation.inCave) {
+        additionalFilters.push("cave-loot");
+      }
+
+      if (additionalFilters.length === 0 && type.filter) {
+        if (Array.isArray(type.filter)) {
+          additionalFilters = [type.filter[0]];
+        } else {
+          additionalFilters = [type.filter];
+        }
+      }
+
+      if (additionalFilters.length > 0) {
+        const primaryFilterValue = additionalFilters[0];
+        const primaryFilter = filters.find(
+          (filter) => filter.value === primaryFilterValue
+        );
+        if (primaryFilter) {
+          primaryFilterColor = primaryFilter.color;
+        }
       }
     }
 
@@ -580,7 +618,7 @@ export default function Nodes({ map }: { map: leaflet.Map }) {
       }"/></label>
       <label><span>Icon</span><div class="types">${types
         .map(
-          (type) =>
+          (type: NodeType) => // Explicitly declaring type here
             `<label class="type-label"><input name="type" type="radio" value="${
               type.value
             }" ${type.value === mapLocation.type ? "checked" : ""} />${

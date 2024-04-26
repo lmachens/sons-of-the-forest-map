@@ -8,8 +8,16 @@ import CanvasMarker from "../lib/canvas-marker";
 import { createElement } from "../lib/elements";
 import { t } from "../lib/i18n";
 import { getIconElement } from "../lib/icons";
-import { getCustomNodes, getTypes, setCustomNodes } from "../lib/nodes";
+import { getCustomNodes, setCustomNodes } from "../lib/nodes";
 import { PlayerPosition } from "../lib/player-marker";
+
+type NodeType = {
+  value: string;
+  title: string;
+  icon: string;
+};
+
+declare function getAllNodeTypes(): NodeType[];
 
 export default function CustomNode({
   element,
@@ -24,7 +32,7 @@ export default function CustomNode({
   onAdd: () => void;
   onOpen?: () => void;
 }) {
-  const baseTypes = getTypes(true);
+  const baseTypes = getAllNodeTypes();
   let isAdding = false;
   element.onclick = (event) => {
     event.stopPropagation();
@@ -91,7 +99,7 @@ export default function CustomNode({
     <label><span>Color</span><input type="color" name="color" value="#ffffff"/></label>
     <label><span>Type</span><div class="types">${baseTypes
       .map(
-        (type, index) =>
+        (type: NodeType, index: number) =>
           `<label class="type-label"><input name="type" type="radio" value="${
             type.value
           }" ${index === 0 ? "checked" : ""} />${

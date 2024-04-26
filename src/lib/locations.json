@@ -2785,7 +2785,7 @@
   },
   {
     "id": 896,
-    "type": "blueprint-cave",
+    "type": "blueprint",
     "title": "Item Plating Machine",
     "description": "Item upgrading machine",
     "x": 1333.13,
