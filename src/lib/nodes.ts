@@ -29,6 +29,7 @@ export function getTypes(onlyBaseTypes: boolean = false): NodeType[] {
     baseLargeBattery,
     baseOutfit,
     basePistol,
+    basePlantResource,
     basePutter,
     basePistolRail,
     basePOI,
@@ -544,6 +545,14 @@ const bunkerPistol = createNodeType(basePistol, {
   value: "pistol-bunker",
   filter: ["weapons", "bunker-loot"],
 });
+
+const basePlantResource: NodeType = {
+  value: "plant-resource",
+  title: t("Plant Resource"),
+  icon: icons.case,
+  src: "/icons/plant-resource.webp",
+  filter: "loot",
+};
 
 const basePutter: NodeType = {
   value: "putter",
