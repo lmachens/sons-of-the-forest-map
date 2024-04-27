@@ -898,12 +898,34 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/3D_Printer"
   },
   {
+    "id": 1714214399792,
+    "type": "printer",
+    "title": "3D Printer",
+    "x": 379.533936,
+    "y": -664.653992,
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/3D_Printer"
+  },
+  {
     "id": 1712100165226,
     "type": "supply",
     "title": "Printer Resin",
     "description": "In the back of the golf cart",
     "x": -489.052727538146,
     "y": 720.806975072037
+  },
+  {
+    "id": 1714214260870,
+    "title": "2x Printer Resin",
+    "type": "supply",
+    "x": 395.19165,
+    "y": -650.193359
+  },
+  {
+    "id": 1714214427849,
+    "title": "2x Printer Resin",
+    "type": "supply",
+    "x": 378.618774,
+    "y": -663.658081
   },
   {
     "id": 587,
@@ -1105,8 +1127,8 @@
     "type": "cave",
     "title": "Rope Gun Cave Main Entrance",
     "description": "Cave B",
-    "x": -1104,
-    "y": -179,
+    "x": -1108.271851,
+    "y": -176.803741,
     "items": [13, 12, 499, 96, 98],
     "screenshot": "cave_b_main.webp",
     "tp": "goto CaveBEntrance",
@@ -1300,6 +1322,22 @@
     "description": "Small resource cave",
     "x": 1537.627197,
     "y": 1488.06897
+  },
+  {
+    "id": 1714208686664,
+    "type": "cave",
+    "title": "Cave",
+    "description": "Small cave with another entrance at the end",
+    "x": 869.398315,
+    "y": -1423.78064
+  },
+  {
+    "id": 1714209035825,
+    "type": "cave",
+    "title": "Cave",
+    "description": "Small cave with another entrance at the end",
+    "x": 830.436157,
+    "y": -1477.485596
   },
   {
     "id": 63,
@@ -1952,12 +1990,28 @@
     "y": 1486.32312
   },
   {
+    "id": 1714214064663,
+    "type": "gps-locator",
+    "title": "Worker GPS",
+    "description": "",
+    "x": 388.742249,
+    "y": -655.907776
+  },
+  {
     "id": 1714114158415,
     "type": "gps-locator",
     "title": "Military GPS Locator",
     "description": "On the dead soldier in front of the tent",
     "x": -1392.419434,
     "y": -1124.268677
+  },
+  {
+    "id": 1714208583901,
+    "type": "gps-locator",
+    "title": "Military GPS Locator",
+    "description": "Lying on the ground near the hand of the dead soldier",
+    "x": 868.875671,
+    "y": -1413.10144
   },
   {
     "id": 88,
@@ -3002,12 +3056,142 @@
     "tp": "goto WorldGolfCart15"
   },
   {
+    "id": 1714213302091,
+    "type": "golf-cart",
+    "title": "Golf Cart 16",
+    "x": 723.24939,
+    "y": 1683.144775,
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart16"
+  },
+  {
+    "id": 1714213703641,
+    "type": "golf-cart",
+    "title": "Golf Cart 17",
+    "x": 715.588135,
+    "y": 1404.135376,
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart17"
+  },
+  {
+    "id": 1714213740836,
+    "type": "golf-cart",
+    "title": "Golf Cart 18",
+    "x": 930.86853,
+    "y": 1294.866333,
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart18"
+  },
+  {
+    "id": 1714213786370,
+    "type": "golf-cart",
+    "title": "Golf Cart 19",
+    "x": 320.988586,
+    "y": -206.056885,
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart19"
+  },
+  {
+    "id": 1714213833966,
+    "type": "golf-cart",
+    "title": "Golf Cart 20",
+    "description": "Snow Plow",
+    "x": 328.435577,
+    "y": -203.140823,
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart20"
+  },
+  {
+    "id": 1714213894220,
+    "type": "golf-cart",
+    "title": "Golf Cart 21",
+    "description": "Snow Plow",
+    "x": 664.611145,
+    "y": 531.026611,
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart21"
+  },
+  {
+    "id": 1714214016448,
+    "type": "golf-cart",
+    "title": "Golf Cart 23",
+    "description": "Snow Plow",
+    "x": 385.807587,
+    "y": -657.636597,
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart23"
+  },
+  {
+    "id": 1714214539821,
+    "type": "golf-cart",
+    "title": "Golf Cart 24",
+    "x": -477.215057,
+    "y": 722.037354,
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart24"
+  },
+  {
     "id": 1712715470320,
     "type": "golf-cart",
-    "title": "Golf cart 16",
-    "description": "Just outside a cave opening with two dead workers",
-    "x": -672.470642,
-    "y": 1153.743408
+    "title": "Golf cart 25",
+    "x": -672.134521,
+    "y": 1153.139648,
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart25"
+  },
+  {
+    "id": 1714215002329,
+    "type": "golf-cart",
+    "title": "Golf Cart 26",
+    "x": -985.297302,
+    "y": 115.319878,
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart26"
+  },
+  {
+    "id": 1714215064550,
+    "type": "golf-cart",
+    "title": "Golf Cart 27",
+    "x": 2.874964,
+    "y": 1236.35498,
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart27"
+  },
+  {
+    "id": 1714216871319,
+    "type": "golf-cart",
+    "title": "Golf Cart 28",
+    "x": -284.05484,
+    "y": 740.828674,
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart28"
+  },
+  {
+    "id": 1714217233034,
+    "type": "golf-cart",
+    "title": "Golf Cart 29",
+    "x": 578.288879,
+    "y": 1083.018188,
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart29"
+  },
+  {
+    "id": 1714217274857,
+    "type": "golf-cart",
+    "title": "Golf Cart 30",
+    "x": 1167.030518,
+    "y": -493.915924,
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart30"
+  },
+  {
+    "id": 1714217303756,
+    "type": "golf-cart",
+    "title": "Golf Cart 31",
+    "x": 1170.944092,
+    "y": -508.752808,
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart31"
   },
   {
     "id": 428,
@@ -3088,6 +3272,15 @@
     "x": -1177.63,
     "y": -1697.91,
     "screenshot": "knight_v_11.webp",
+    "itemid": "spawnitem 630"
+  },
+  {
+    "id": 1714206654963,
+    "type": "unicycle",
+    "title": "Knight V",
+    "x": -485.515991,
+    "y": 486.743561,
+    "screenshot": "knight_v_12.webp",
     "itemid": "spawnitem 630"
   },
   {
@@ -3304,6 +3497,28 @@
     "title": "Grey Crate",
     "x": -1496.2379489907346,
     "y": 1233.5477797799322
+  },
+  {
+    "id": 1714212163365,
+    "type": "utility-crate",
+    "title": "Grey Crate",
+    "x": -1113.723633,
+    "y": -169.567368
+  },
+  {
+    "id": 1714212191293,
+    "type": "utility-crate",
+    "title": "Grey Crate",
+    "x": -1109.255493,
+    "y": -173.041412
+  },
+  {
+    "id": 1712132185714,
+    "type": "utility-crate",
+    "title": "2x Grey crates",
+    "description": "Beside two dead cultists",
+    "x": -281.256775,
+    "y": 736.917358
   },
   {
     "id": 143,
@@ -3785,7 +4000,7 @@
   {
     "id": 1713843944677,
     "type": "supply",
-    "title": "2x cloth",
+    "title": "2x Cloth",
     "x": -413.669617,
     "y": 1474.393188,
     "inCave": true
@@ -3871,6 +4086,75 @@
     "inCave": true
   },
   {
+    "id": 1714206497037,
+    "type": "supply",
+    "title": "Cloth Stand",
+    "x": -488.618042,
+    "y": 494.731934
+  },
+  {
+    "id": 1714206521539,
+    "type": "supply",
+    "title": "Cloth Stand",
+    "x": -483.763245,
+    "y": 494.693756
+  },
+  {
+    "id": 1714208844627,
+    "type": "supply",
+    "title": "Rope, Cloth and 3x tape",
+    "x": 854.884583,
+    "y": -1442.149536,
+    "inCave": true
+  },
+  {
+    "id": 1714208893467,
+    "type": "supply",
+    "title": "Rope and Cloth",
+    "x": 855.118774,
+    "y": -1447.50769,
+    "inCave": true
+  },
+  {
+    "id": 1714208924974,
+    "type": "supply",
+    "title": "Rope and Cloth",
+    "x": 852.522034,
+    "y": -1445.115723,
+    "inCave": true
+  },
+  {
+    "id": 1712126871472,
+    "type": "supply",
+    "title": "Loose items",
+    "description": "Rope, tape, cereal, soda, tarp, watch, and oysters",
+    "x": -314.96994,
+    "y": 1607.863281
+  },
+  {
+    "id": 1714212225143,
+    "type": "supply",
+    "title": "Rope",
+    "x": -1112.799805,
+    "y": -177.534012
+  },
+  {
+    "id": 1714214128567,
+    "type": "supply",
+    "title": "3x Tape, 3x Wire, Circuit board",
+    "description": "Sitting in a open crate",
+    "x": 385.571014,
+    "y": -653.83783
+  },
+  {
+    "id": 1714206860954,
+    "type": "supply",
+    "title": "Energy Bars",
+    "description": "In a dish by the lean-to",
+    "x": -490.031464,
+    "y": 482.184113
+  },
+  {
     "id": 1713854040043,
     "type": "supply",
     "title": "Skin Pouch",
@@ -3924,6 +4208,14 @@
     "x": 1551.662109,
     "y": 1486.168091,
     "inCave": true
+  },
+  {
+    "id": 1714214224217,
+    "type": "green-case",
+    "title": "Crossbow Bolts",
+    "description": "On the ammo rack inside the tent",
+    "x": 393.078156,
+    "y": -654.552124
   },
   {
     "id": 124,
@@ -4121,6 +4413,21 @@
     "y": -1128.791748
   },
   {
+    "id": 1702544567930,
+    "type": "utility-case",
+    "title": "Explosives Case",
+    "x": -562.5034444338986,
+    "y": -85.64830887122058,
+    "inCave": true
+  },
+  {
+    "id": 1714214175878,
+    "type": "utility-case",
+    "title": "Explosives Case",
+    "x": 394.83371,
+    "y": -653.625671
+  },
+  {
     "id": 580,
     "type": "green-case",
     "title": "Ammo Case",
@@ -4281,7 +4588,7 @@
   {
     "id": 130,
     "type": "wooden-crate",
-    "title": "2x Wood crates",
+    "title": "2x Wood Crates",
     "description": "In shallow water next to a reef jut",
     "x": -1775.898315,
     "y": 1364.667236
@@ -4508,8 +4815,8 @@
     "id": 214,
     "type": "wooden-crate",
     "title": "2x Wood Crates",
-    "x": -478,
-    "y": 482
+    "x": -478.782501,
+    "y": 481.301422
   },
   {
     "id": 215,
@@ -4783,7 +5090,7 @@
   {
     "id": 1712091806262,
     "type": "wooden-crate",
-    "title": "2x Wood crates + loose items",
+    "title": "2x Wood Crates + loose items",
     "x": -947.608521,
     "y": 186.761673,
     "inCave": true
@@ -4826,6 +5133,29 @@
     "x": 1555.216797,
     "y": 1488.415894,
     "inCave": true
+  },
+  {
+    "id": 1714208744262,
+    "type": "wooden-crate",
+    "title": "3x Wood Crates",
+    "x": 859.475464,
+    "y": -1446.375122,
+    "inCave": true
+  },
+  {
+    "id": 1714208798637,
+    "type": "wooden-crate",
+    "title": "Wood Crate",
+    "x": 854.527344,
+    "y": -1443.458008,
+    "inCave": true
+  },
+  {
+    "id": 1714213962699,
+    "type": "wooden-crate",
+    "title": "2x Wood Crates",
+    "x": 655.39447,
+    "y": 538.161377
   },
   {
     "id": 192,
@@ -5038,9 +5368,9 @@
   {
     "id": 481,
     "type": "poi",
-    "title": "2x Effigies",
-    "x": -499,
-    "y": 476
+    "title": "Effigy",
+    "x": -499.208313,
+    "y": 477.113068
   },
   {
     "id": 482,
@@ -5063,6 +5393,13 @@
     "title": "Effigy",
     "x": 782.036194,
     "y": -1221.239014
+  },
+  {
+    "id": 1714206450413,
+    "type": "poi",
+    "title": "2x Effigies",
+    "x": -469.357727,
+    "y": 500.141571
   },
   {
     "id": 357,
@@ -5885,6 +6222,14 @@
     "title": "Climbing Rope",
     "x": 794.043823,
     "y": -1181.545044
+  },
+  {
+    "id": 1714208986825,
+    "type": "climbing-rope",
+    "title": "Climbing Rope",
+    "x": 840.411926,
+    "y": -1465.214966,
+    "inCave": true
   },
   {
     "id": 1711958379829,
