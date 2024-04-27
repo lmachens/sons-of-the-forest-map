@@ -34,11 +34,14 @@ export function getTypes(onlyBaseTypes: boolean = false): NodeType[] {
     basePistolRail,
     basePOI,
     baseRadio,
+    baseClimbingRope,
     baseShotgunRail,
+    baseSolafiteVein,
     baseSuppressor,
     baseSupply,
     baseGreenCase,
     baseOrangeCase,
+    baseRedCase,
     baseSolarPanel,
     createNodeType({
       value: "unknown",
@@ -392,6 +395,7 @@ export function getTypes(onlyBaseTypes: boolean = false): NodeType[] {
     bunkerPOI,
     cavePOI,
     bunkerRadio,
+    caveRadio,
     bunkerShotgunRail,
     bunkerSuppressor,
     bunkerSupply,
@@ -400,6 +404,8 @@ export function getTypes(onlyBaseTypes: boolean = false): NodeType[] {
     caveGreenCase,
     bunkerOrangeCase,
     caveOrangeCase,
+    bunkerRedCase,
+    caveRedCase,
     bunkerSolarPanel,
     waterfall,
   ];
@@ -611,6 +617,19 @@ const bunkerRadio = createNodeType(baseRadio, {
   filter: ["electronics", "bunker-loot"],
 });
 
+const caveRadio = createNodeType(baseRadio, {
+  value: "radio-cave",
+  filter: ["electronics", "cave-loot"],
+});
+
+const baseClimbingRope: NodeType = {
+  value: "climbing-rope",
+  title: t("Climbing Rope"),
+  icon: icons.poi,
+  src: "/icons/climbing-rope.webp",
+  filter: "poi",
+};
+
 const baseShotgunRail: NodeType = {
   value: "shotgun-rail",
   title: t("Weapon Attachment"),
@@ -623,6 +642,14 @@ const bunkerShotgunRail = createNodeType(baseShotgunRail, {
   value: "shotgun-rail-bunker",
   filter: ["attachments", "bunker-loot"],
 });
+
+const baseSolafiteVein: NodeType = {
+  value: "solafite-vein",
+  title: t("Solafite Vein"),
+  icon: icons.case,
+  src: "/icons/solafite.webp",
+  filter: "cave-loot",
+};
 
 const baseGreenCase: NodeType = {
   value: "green-case",
@@ -639,6 +666,24 @@ const bunkerGreenCase = createNodeType(baseGreenCase, {
 
 const caveGreenCase = createNodeType(baseGreenCase, {
   value: "green-case-cave",
+  filter: ["loot", "cave-loot"],
+});
+
+const baseRedCase: NodeType = {
+  value: "red-case",
+  title: t("Case"),
+  icon: icons.case,
+  src: "/icons/pills.webp",
+  filter: "loot",
+};
+
+const bunkerRedCase = createNodeType(baseRedCase, {
+  value: "red-case-bunker",
+  filter: ["loot", "bunker-loot"],
+});
+
+const caveRedCase = createNodeType(baseRedCase, {
+  value: "red-case-cave",
   filter: ["loot", "cave-loot"],
 });
 

@@ -12,7 +12,7 @@
   },
   {
     "id": 10001,
-    "type": "utility-case",
+    "type": "red-case",
     "title": "Supply Case",
     "description": "Part of the mountain crash site.",
     "x": -236,
@@ -28,7 +28,7 @@
   },
   {
     "id": 10003,
-    "type": "utility-case",
+    "type": "red-case",
     "title": "Supply Case",
     "description": "Part of the mountain crash site.",
     "x": -252.5,
@@ -118,8 +118,8 @@
   },
   {
     "id": 20005,
-    "type": "utility-case",
-    "title": "Red Case",
+    "type": "red-case",
+    "title": "Supply Case",
     "description": "Part of the ocean crash site",
     "x": -425.19,
     "y": 1597.16
@@ -134,8 +134,8 @@
   },
   {
     "id": 20007,
-    "type": "green-case",
-    "title": "Red Case",
+    "type": "red-case",
+    "title": "Supply Case",
     "description": "part of ocean crash site set",
     "x": -421.464447,
     "y": 1590.869019
@@ -158,7 +158,7 @@
   },
   {
     "id": 20010,
-    "type": "utility-case",
+    "type": "red-case",
     "title": "Supply Case",
     "description": "Part of the ocean crash site",
     "x": -423,
@@ -177,7 +177,7 @@
   },
   {
     "id": 30001,
-    "type": "utility-case",
+    "type": "red-case",
     "title": "Supply Case",
     "description": "Part of the forest crash site.",
     "x": -1137.56,
@@ -193,7 +193,7 @@
   },
   {
     "id": 30003,
-    "type": "utility-case",
+    "type": "red-case",
     "title": "Supply Case",
     "description": "Part of the forest crash site.",
     "x": -1147.38,
@@ -391,8 +391,8 @@
     "type": "slingshot",
     "title": "Slingshot",
     "description": "On middle mercenary corpse",
-    "x": -532.05,
-    "y": 121.64,
+    "x": -531.773743,
+    "y": 122.001984,
     "screenshot": "slingshot.webp",
     "tp": "goto SlingshotPickup",
     "itemid": "additem 459",
@@ -1079,7 +1079,6 @@
     "id": 1713842326161,
     "type": "cave",
     "title": "Destructable Door",
-    "description": "InCave",
     "x": -612.686157,
     "y": 1416.595703,
     "inCave": true
@@ -1274,6 +1273,35 @@
     "y": 206.469223
   },
   {
+    "id": 1711169284988,
+    "type": "cave",
+    "title": "Cave",
+    "x": -772.9375,
+    "y": 305.125
+  },
+  {
+    "id": 1711693063905,
+    "type": "cave",
+    "title": "Cave",
+    "x": 1535.65625,
+    "y": 1487.84375
+  },
+  {
+    "id": 1711693767368,
+    "type": "cave",
+    "title": "Cave",
+    "x": 1372.90625,
+    "y": 1735.9375
+  },
+  {
+    "id": 1714202114423,
+    "type": "cave",
+    "title": "Cave",
+    "description": "Small resource cave",
+    "x": 1537.627197,
+    "y": 1488.06897
+  },
+  {
     "id": 63,
     "type": "abandoned-camp-n",
     "title": "Torn Tents 01",
@@ -1385,6 +1413,14 @@
     "items": [108],
     "tp": "goto -129,9 408,9 -1037,",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 1714195878503,
+    "type": "abandoned-camp-n",
+    "title": "Torn Tents 12",
+    "description": "Abandoned Camp with 2 grey tents",
+    "x": 802.285706,
+    "y": -1184.213257
   },
   {
     "id": 57,
@@ -1898,6 +1934,22 @@
     "description": "In the hand of the dead worker",
     "x": -949.433472,
     "y": 217.765778
+  },
+  {
+    "id": 1713836096992,
+    "type": "gps-locator",
+    "title": "Worker GPS",
+    "description": "pinned to the chest on the dead worker",
+    "x": 1358.208008,
+    "y": 1729.184082
+  },
+  {
+    "id": 1714201977673,
+    "type": "gps-locator",
+    "title": "Worker GPS",
+    "description": "pinned to the chest on the dead worker",
+    "x": 1521.171875,
+    "y": 1486.32312
   },
   {
     "id": 1714114158415,
@@ -3247,6 +3299,13 @@
     "y": -129.504547
   },
   {
+    "id": 1711529061128,
+    "type": "utility-crate",
+    "title": "Grey Crate",
+    "x": -1496.2379489907346,
+    "y": 1233.5477797799322
+  },
+  {
     "id": 143,
     "type": "supply",
     "title": "Supply Suitcase",
@@ -3751,7 +3810,7 @@
     "id": 1712092591276,
     "type": "supply",
     "title": "Loose Items",
-    "description": "inCave. Watches, cloth, cat food",
+    "description": "Watches, cloth, cat food",
     "x": -1098.248535,
     "y": -191.358749,
     "inCave": true
@@ -3766,11 +3825,50 @@
     "InCave": true
   },
   {
-    "id": 1711529061128,
-    "type": "utility-crate",
-    "title": "Grey Crate",
-    "x": -1496.2379489907346,
-    "y": 1233.5477797799322
+    "id": 1714192321824,
+    "type": "supply",
+    "title": "Rope and 3x tape",
+    "x": -774.022583,
+    "y": 347.483246,
+    "inCave": true
+  },
+  {
+    "id": 1714192796353,
+    "type": "supply",
+    "title": "Cloth and Rope",
+    "x": -770.276917,
+    "y": 360.189606,
+    "inCave": true
+  },
+  {
+    "id": 1714195635965,
+    "type": "supply",
+    "title": "2x Rope",
+    "x": 794.757935,
+    "y": -1172.775635
+  },
+  {
+    "id": 1711693303475,
+    "type": "supply",
+    "title": "3x Crates, 3x Tape, Rope",
+    "x": 1549.84375,
+    "y": 1488.84375
+  },
+  {
+    "id": 1714197943843,
+    "type": "supply",
+    "title": "Rope, Cloth, 3x Tape",
+    "x": 1362.947388,
+    "y": 1750.480835,
+    "inCave": true
+  },
+  {
+    "id": 1714202336971,
+    "type": "supply",
+    "title": "3x Tape, 2x Rope 2x Cloth",
+    "x": 1554.424438,
+    "y": 1485.834106,
+    "inCave": true
   },
   {
     "id": 1713854040043,
@@ -3778,6 +3876,54 @@
     "title": "Skin Pouch",
     "x": -1140.075195,
     "y": 446.987244
+  },
+  {
+    "id": 1714192693532,
+    "type": "supply",
+    "title": "Skin pouch",
+    "x": -768.725952,
+    "y": 355.360748,
+    "inCave": true
+  },
+  {
+    "id": 1714192767193,
+    "type": "supply",
+    "title": "Skin pouch",
+    "x": -769.359558,
+    "y": 357.626373,
+    "inCave": true
+  },
+  {
+    "id": 1714198047157,
+    "type": "solafite-vein",
+    "title": "Solafite Vein",
+    "x": 1358.680176,
+    "y": 1760,
+    "inCave": true
+  },
+  {
+    "id": 1714202380100,
+    "type": "solafite-vein",
+    "title": "Solafite Vein",
+    "x": 1556.638916,
+    "y": 1483.549683,
+    "inCave": true
+  },
+  {
+    "id": 1714202412530,
+    "type": "solafite-vein",
+    "title": "Solafite Vein",
+    "x": 1552.951904,
+    "y": 1489.812378,
+    "inCave": true
+  },
+  {
+    "id": 1714202456725,
+    "type": "solafite-vein",
+    "title": "Solafite Vein",
+    "x": 1551.662109,
+    "y": 1486.168091,
+    "inCave": true
   },
   {
     "id": 124,
@@ -4002,7 +4148,7 @@
     "id": 1712092681262,
     "type": "orange-case-cave",
     "title": "Flare Crate",
-    "description": "InCave on ledge near entrance to large cave room",
+    "description": "On the ledge near the entrance to the large cave room",
     "x": -1141.317993,
     "y": -200.804871,
     "inCave": true
@@ -4643,6 +4789,45 @@
     "inCave": true
   },
   {
+    "id": 1714192838572,
+    "type": "wooden-crate",
+    "title": "3x Wood Crates",
+    "x": -772.606018,
+    "y": 356.541443,
+    "inCave": true
+  },
+  {
+    "id": 1714192902472,
+    "type": "wooden-crate",
+    "title": "Wood Crate",
+    "x": -770.474609,
+    "y": 346.573639,
+    "inCave": true
+  },
+  {
+    "id": 1714195608594,
+    "type": "wooden-crate",
+    "title": "3x Wood Crates",
+    "x": 791.10376,
+    "y": -1171.451538
+  },
+  {
+    "id": 1714197906222,
+    "type": "wooden-crate",
+    "title": "2x Wood Crates",
+    "x": 1365.339966,
+    "y": 1749.057373,
+    "inCave": true
+  },
+  {
+    "id": 1714202238747,
+    "type": "wooden-crate",
+    "title": "3x Wood Crates",
+    "x": 1555.216797,
+    "y": 1488.415894,
+    "inCave": true
+  },
+  {
     "id": 192,
     "type": "poi",
     "title": "Big Old Cross",
@@ -4871,6 +5056,13 @@
     "description": "Twins mutant emerging point",
     "x": 733.44,
     "y": -952.27
+  },
+  {
+    "id": 1714197066878,
+    "type": "poi",
+    "title": "Effigy",
+    "x": 782.036194,
+    "y": -1221.239014
   },
   {
     "id": 357,
@@ -5375,8 +5567,8 @@
     "id": 412,
     "type": "grave",
     "title": "3x Graves",
-    "x": 1255,
-    "y": 1690,
+    "x": 1256.203979,
+    "y": 1689.490112,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Gravesites"
   },
   {
@@ -5622,14 +5814,6 @@
     "y": -308.13
   },
   {
-    "id": 537,
-    "type": "poi",
-    "title": "Climbing Rope",
-    "description": "Mountain Climbing Rope",
-    "x": 376.97,
-    "y": -1449.63
-  },
-  {
     "id": 1713843735747,
     "type": "poi",
     "title": "Severed arms and legs",
@@ -5674,12 +5858,49 @@
     "inCave": true
   },
   {
+    "id": 537,
+    "type": "climbing-rope",
+    "title": "Climbing Rope",
+    "x": 376.97,
+    "y": -1449.63
+  },
+  {
+    "id": 1714193821037,
+    "type": "climbing-rope",
+    "title": "Climbing Rope",
+    "x": -767.3526,
+    "y": 321.500397,
+    "inCave": true
+  },
+  {
+    "id": 1711422165148,
+    "type": "climbing-rope",
+    "title": "Climbing Rope",
+    "x": 795.3183521395694,
+    "y": -1178.5702275426781
+  },
+  {
+    "id": 1714195735581,
+    "type": "climbing-rope",
+    "title": "Climbing Rope",
+    "x": 794.043823,
+    "y": -1181.545044
+  },
+  {
     "id": 1711958379829,
-    "type": "supply",
+    "type": "plant-resource",
     "title": "Big Aloe Patch",
     "description": "19x Aloe on the hill at the tree line",
     "x": -977.783386,
     "y": 181.315781
+  },
+  {
+    "id": 1714201281874,
+    "type": "plant-resource",
+    "title": "Devil's Club",
+    "description": "Summer and fall Seasonal plant",
+    "x": 1424.389404,
+    "y": 1671.287476
   },
   {
     "id": 236,
@@ -6788,6 +7009,14 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
   {
+    "id": 1713836044936,
+    "type": "large-battery",
+    "title": "Golfcart Battery",
+    "description": "",
+    "x": 1413.326904,
+    "y": 1730.657959
+  },
+  {
     "id": 433,
     "type": "solar-panel",
     "title": "2x Solar Panels",
@@ -7123,6 +7352,13 @@
     "y": -419.53,
     "itemid": "additem 590",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
+  },
+  {
+    "id": 1714202010300,
+    "type": "radio",
+    "title": "Radio",
+    "x": 1519.556274,
+    "y": 1485.891113
   },
   {
     "id": 1712103913230,
