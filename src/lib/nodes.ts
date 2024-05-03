@@ -26,9 +26,14 @@ export function getTypes(onlyBaseTypes: boolean = false): NodeType[] {
     baseFlashlightAttachment,
     baseLake,
     baseLaptop,
+    baseDamagedLaptop,
     baseLargeBattery,
     baseOutfit,
     basePistol,
+    basePistolAmmoBox,
+    baseRifleAmmoBox,
+    baseShotgunAmmoBoxBuckshot,
+    baseShotgunAmmoBoxSlug,
     basePlantResource,
     basePutter,
     basePistolRail,
@@ -385,10 +390,20 @@ export function getTypes(onlyBaseTypes: boolean = false): NodeType[] {
     caveFlashlightAttachment,
     fishingHut,
     laptop,
+    bunkerDamagedLaptop,
+    caveDamagedLaptop,
     bunkerLargeBattery,
     bunkerOutfit,
     caveOutfit,
     bunkerPistol,
+    bunkerPistolAmmoBox,
+    cavePistolAmmoBox,
+    bunkerRifleAmmoBox,
+    caveRifleAmmoBox,
+    bunkerShotgunAmmoBoxBuckshot,
+    caveShotgunAmmoBoxBuckshot,
+    bunkerShotgunAmmoBoxSlug,
+    caveShotgunAmmoBoxSlug,
     bunkerPutter,
     bunkerPistolRail,
     pond,
@@ -400,6 +415,7 @@ export function getTypes(onlyBaseTypes: boolean = false): NodeType[] {
     bunkerSuppressor,
     bunkerSupply,
     caveSupply,
+    caveSolafiteVein,
     bunkerGreenCase,
     caveGreenCase,
     bunkerOrangeCase,
@@ -552,6 +568,81 @@ const bunkerPistol = createNodeType(basePistol, {
   filter: ["weapons", "bunker-loot"],
 });
 
+const basePistolAmmoBox: NodeType = {
+  value: "pistol-ammo",
+  title: t("Pistol Ammo"),
+  icon: icons.case,
+  src: "/icons/ammo-case.webp",
+  filter: "loot",
+};
+
+const bunkerPistolAmmoBox = createNodeType(basePistolAmmoBox, {
+  value: "pistol-ammo-bunker",
+  filter: ["loot", "bunker-loot"],
+});
+
+const cavePistolAmmoBox = createNodeType(basePistolAmmoBox, {
+  value: "pistol-ammo-cave",
+  filter: ["loot", "cave-loot"],
+});
+
+const baseRifleAmmoBox: NodeType = {
+  value: "rifle-ammo",
+  title: t("Rifle Ammo"),
+  icon: icons.case,
+  src: "/icons/ammo-case.webp",
+  filter: "loot",
+};
+
+const bunkerRifleAmmoBox = createNodeType(baseRifleAmmoBox, {
+  value: "rifle-ammo-bunker",
+  filter: ["loot", "bunker-loot"],
+});
+
+const caveRifleAmmoBox = createNodeType(baseRifleAmmoBox, {
+  value: "rifle-ammo-cave",
+  filter: ["loot", "cave-loot"],
+});
+
+const baseShotgunAmmoBoxBuckshot: NodeType = {
+  value: "Buckshot-ammo",
+  title: t("Buckshot Ammo"),
+  icon: icons.case,
+  src: "/icons/ammo-case.webp",
+  filter: "loot",
+};
+
+const bunkerShotgunAmmoBoxBuckshot = createNodeType(
+  baseShotgunAmmoBoxBuckshot,
+  {
+    value: "buckshot-ammo-bunker",
+    filter: ["loot", "bunker-loot"],
+  }
+);
+
+const caveShotgunAmmoBoxBuckshot = createNodeType(baseShotgunAmmoBoxBuckshot, {
+  value: "buckshot-ammo-cave",
+  filter: ["loot", "cave-loot"],
+});
+
+const baseShotgunAmmoBoxSlug: NodeType = {
+  value: "slug-ammo",
+  title: t("Buckshot Ammo"),
+  icon: icons.case,
+  src: "/icons/ammo-case.webp",
+  filter: "loot",
+};
+
+const bunkerShotgunAmmoBoxSlug = createNodeType(baseShotgunAmmoBoxSlug, {
+  value: "slug-ammo-bunker",
+  filter: ["loot", "bunker-loot"],
+});
+
+const caveShotgunAmmoBoxSlug = createNodeType(baseShotgunAmmoBoxSlug, {
+  value: "slug-ammo-cave",
+  filter: ["loot", "cave-loot"],
+});
+
 const basePlantResource: NodeType = {
   value: "plant-resource",
   title: t("Plant Resource"),
@@ -648,8 +739,13 @@ const baseSolafiteVein: NodeType = {
   title: t("Solafite Vein"),
   icon: icons.case,
   src: "/icons/solafite.webp",
-  filter: "cave-loot",
+  filter: "loot",
 };
+
+const caveSolafiteVein = createNodeType(baseSolafiteVein, {
+  value: "solafite-vein-cave",
+  filter: ["loot", "cave-loot"],
+});
 
 const baseGreenCase: NodeType = {
   value: "green-case",
@@ -817,6 +913,24 @@ const baseLaptop: NodeType = {
 const laptop = createNodeType(baseLaptop, {
   value: "laptop-bunker",
   filter: "laptop",
+});
+
+const baseDamagedLaptop: NodeType = {
+  value: "damaged-laptop",
+  title: t("Destroy to collect circuit board"),
+  icon: icons.laptop,
+  src: "/icons/laptop.webp",
+  filter: "loot",
+};
+
+const bunkerDamagedLaptop = createNodeType(baseDamagedLaptop, {
+  value: "damaged-laptop-bunker",
+  filter: "loot",
+});
+
+const caveDamagedLaptop = createNodeType(baseDamagedLaptop, {
+  value: "damaged-laptop-cave",
+  filter: "loot",
 });
 
 const baseCamera: NodeType = {

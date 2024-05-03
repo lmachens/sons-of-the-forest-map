@@ -363,8 +363,8 @@
     "id": 12,
     "type": "cross",
     "title": "Cross",
-    "x": 1622.62,
-    "y": 484.21,
+    "x": -1174.652466,
+    "y": -217.814087,
     "inBunker": true,
     "screenshot": "cross.webp",
     "warning": "Double use the command!",
@@ -489,9 +489,9 @@
     "id": 20,
     "type": "crossbow",
     "title": "Crossbow",
-    "description": "Next to the projector",
-    "x": -1174.6,
-    "y": -217.69,
+    "description": "Between the planting shelves",
+    "x": -1021.52771,
+    "y": 986.72699,
     "inBunker": true,
     "requirements": [17],
     "screenshot": "crossbow.webp",
@@ -1005,15 +1005,15 @@
   },
   {
     "id": 1712088096993,
-    "type": "laptop-cave",
-    "title": "Damaged laptop",
+    "type": "damaged-laptop-cave",
+    "title": "Damaged Laptop",
     "x": -597.260193,
     "y": 1450.916992,
     "inCave": true
   },
   {
     "id": 1713844128416,
-    "type": "laptop-cave",
+    "type": "damaged-laptop-cave",
     "title": "Damaged Laptop",
     "x": -424.245605,
     "y": 1478.341675,
@@ -1021,12 +1021,19 @@
   },
   {
     "id": 1713858317296,
-    "type": "laptop-bunker",
+    "type": "damaged-laptop-bunker",
     "title": "Damaged Laptop",
     "description": "Strike to get a circuit board",
     "x": -1198.463867,
     "y": 78.688484,
     "inBunker": true
+  },
+  {
+    "id": 1714708781871,
+    "type": "damaged-laptop",
+    "title": "2x Damaged Laptops",
+    "x": -734.897156,
+    "y": 30.404057
   },
   {
     "id": 586,
@@ -1340,6 +1347,20 @@
     "y": -1477.485596
   },
   {
+    "id": 1714693416952,
+    "type": "cave",
+    "title": "Cave",
+    "x": 1484.678711,
+    "y": 745.49408
+  },
+  {
+    "id": 1712086593742,
+    "type": "cave",
+    "title": "Cave",
+    "x": -992.125305,
+    "y": 120.668495
+  },
+  {
     "id": 63,
     "type": "abandoned-camp-n",
     "title": "Torn Tents 01",
@@ -1406,9 +1427,9 @@
     "type": "abandoned-camp-n",
     "title": "Torn Tents 07",
     "description": "Camp site with 4 tents",
-    "x": 1260.68,
-    "y": 498.86,
-    "tp": "goto 1263,2 179,5 494,2",
+    "x": 1263.343994,
+    "y": 494.389038,
+    "tp": "gotocoords 1263.2 179.5 494.2",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
@@ -1416,9 +1437,9 @@
     "type": "abandoned-camp-n",
     "title": "Torn Tents 08",
     "description": "Camp site with 2 tents",
-    "x": 1695.5,
-    "y": 36.0,
-    "tp": "goto 1698,7 22,2 33,4",
+    "x": 1699.016968,
+    "y": 33.699944,
+    "tp": "gotocoords 1698.7 22.2 33.4",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
@@ -1735,6 +1756,14 @@
     "items": [491, 387, 492],
     "tp": "goto 194,6 525 -334,6",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 1714694725535,
+    "type": "abandoned-camp-n",
+    "title": "Hunting Cabin",
+    "description": "With cave Cellar",
+    "x": 1480.423584,
+    "y": 72.777794
   },
   {
     "id": 70,
@@ -2107,7 +2136,7 @@
   {
     "id": 1714104610359,
     "type": "email",
-    "title": "Email - Who is Jack Holt?",
+    "title": "Who is Jack Holt?",
     "description": "Beside the soldier that is holding the axe",
     "x": -704.026123,
     "y": 445.653351,
@@ -2128,8 +2157,8 @@
   },
   {
     "id": 96,
-    "type": "document-cave",
-    "title": "Email - Photo Reference",
+    "type": "email-cave",
+    "title": "Photo Reference",
     "x": -1139.6,
     "y": -234.44,
     "inCave": true,
@@ -2137,8 +2166,8 @@
   },
   {
     "id": 97,
-    "type": "document-cave",
-    "title": "Email - More Lightning",
+    "type": "email-cave",
+    "title": "More Lightning",
     "x": -1017.05,
     "y": -264.34,
     "inCave": true,
@@ -2273,8 +2302,8 @@
   },
   {
     "id": 308,
-    "type": "document-bunker",
-    "title": "Email - THOUGHT YOU MIGHT FIND THIS INTERESTING",
+    "type": "email-bunker",
+    "title": "THOUGHT YOU MIGHT FIND THIS INTERESTING",
     "description": "Next to dead person on the floor",
     "x": -1021,
     "y": 1036,
@@ -2283,8 +2312,8 @@
   },
   {
     "id": 312,
-    "type": "document-bunker",
-    "title": "Email - ONE MORE",
+    "type": "email-bunker",
+    "title": "ONE MORE",
     "description": "On desk to the left side",
     "x": -975,
     "y": 1036,
@@ -2294,8 +2323,8 @@
   },
   {
     "id": 314,
-    "type": "document-bunker",
-    "title": "Email - RE:RE:RE: GOLF BALLS",
+    "type": "email-bunker",
+    "title": "RE:RE:RE: GOLF BALLS",
     "description": "On the table with mutant",
     "x": -913,
     "y": 1036,
@@ -2546,16 +2575,6 @@
     "y": -1117.372681
   },
   {
-    "id": 3333,
-    "type": "document",
-    "title": "Inversion A/B",
-    "description": "Found in the hands of a frozen skeleton",
-    "x": 110.97,
-    "y": 91.41,
-    "inCave": true,
-    "screenshot": "inversion_ab.webp"
-  },
-  {
     "id": 389,
     "type": "document",
     "title": "Old Note no.1",
@@ -2570,8 +2589,8 @@
     "type": "document",
     "title": "Old Note no.2",
     "description": "Today is October 1979",
-    "x": 1832.23,
-    "y": -475.64,
+    "x": 1832.156494,
+    "y": -475.954651,
     "screenshot": "old_note_2.webp",
     "tp": "goto OldNoteBPickup"
   },
@@ -2579,6 +2598,7 @@
     "id": 492,
     "type": "document",
     "title": "Old Note no.3",
+    "description": "Drawing of buildings under two moons",
     "x": 189.94,
     "y": -329.71,
     "screenshot": "old_note_c.webp",
@@ -2588,6 +2608,7 @@
     "id": 503,
     "type": "document-cave",
     "title": "Old Note no.5",
+    "description": "We found it and broke it into 6 parts",
     "x": 1693.66,
     "y": 1032.73,
     "inCave": true,
@@ -2598,10 +2619,33 @@
     "id": 493,
     "type": "document",
     "title": "Old Note no.6",
+    "description": "The piece isn't here, this is the wrong cave.",
     "x": 458.72,
     "y": -226.45,
+    "inCave": true,
     "screenshot": "old_note_f.webp",
     "tp": "goto OldNoteFPickup"
+  },
+  {
+    "id": 3333,
+    "type": "document",
+    "title": "Old Note no.7",
+    "description": "Inversion A/B",
+    "x": 110.97,
+    "y": 91.41,
+    "inCave": true,
+    "screenshot": "inversion_ab.webp",
+    "tp": "goto OldNoteGPickup"
+  },
+  {
+    "id": 1714694882313,
+    "type": "blueprint",
+    "title": "Old Note no.8",
+    "description": "Never leave the island",
+    "x": 1477.591919,
+    "y": 74.129425,
+    "inCave": true,
+    "screenshot": "never-leave.webp"
   },
   {
     "id": 896,
@@ -3212,15 +3256,6 @@
     "itemid": "spawnitem 630"
   },
   {
-    "id": 462,
-    "type": "unicycle",
-    "title": "Knight V",
-    "x": -743,
-    "y": 28,
-    "screenshot": "knight_v_3.webp",
-    "itemid": "spawnitem 630"
-  },
-  {
     "id": 571,
     "type": "unicycle",
     "title": "Knight V",
@@ -3400,6 +3435,14 @@
     "y": -164.734512
   },
   {
+    "id": 1714696992033,
+    "type": "plant-resource",
+    "title": "Plant Resource",
+    "description": "Yarrow",
+    "x": 1720.857178,
+    "y": -202.57074
+  },
+  {
     "id": 121,
     "type": "utility-crate",
     "title": "2x Black and Yellow Crates",
@@ -3516,9 +3559,15 @@
     "id": 1712132185714,
     "type": "utility-crate",
     "title": "2x Grey crates",
-    "description": "Beside two dead cultists",
     "x": -281.256775,
     "y": 736.917358
+  },
+  {
+    "id": 1714716647870,
+    "type": "utility-crate",
+    "title": "2x Grey Crates",
+    "x": 1694.236816,
+    "y": 34.328114
   },
   {
     "id": 143,
@@ -3625,6 +3674,13 @@
     "title": "Grey Crate",
     "x": -1119.555298,
     "y": 1625.414795
+  },
+  {
+    "id": 1714695677664,
+    "type": "utility-crate",
+    "title": "Grey Crate",
+    "x": 1720.948486,
+    "y": 83.497238
   },
   {
     "id": 237,
@@ -3954,6 +4010,34 @@
     "y": 450.445648
   },
   {
+    "id": 476,
+    "type": "utility-crate",
+    "title": "2x Black and Yellow Crate",
+    "x": -700.4599,
+    "y": 446.80188
+  },
+  {
+    "id": 477,
+    "type": "utility-crate",
+    "title": "2x Black and Yellow Crates",
+    "x": -707.488159,
+    "y": 445.23819
+  },
+  {
+    "id": 1714695527320,
+    "type": "utility-crate",
+    "title": "2x Black and Yellow Crates",
+    "x": 1701.177979,
+    "y": 76.398598
+  },
+  {
+    "id": 1712086516856,
+    "type": "supply",
+    "title": "Black and Yellow Crate",
+    "x": -897.021362,
+    "y": 78.390015
+  },
+  {
     "id": 468,
     "type": "orange-case",
     "title": "Flare Case",
@@ -3974,20 +4058,6 @@
     "title": "Supply Suitcase",
     "x": -253,
     "y": -11
-  },
-  {
-    "id": 476,
-    "type": "utility-crate",
-    "title": "2x Black and Yellow Crate",
-    "x": -700.4599,
-    "y": 446.80188
-  },
-  {
-    "id": 477,
-    "type": "utility-crate",
-    "title": "2x Black and Yellow Crates",
-    "x": -707.488159,
-    "y": 445.23819
   },
   {
     "id": 1713843825222,
@@ -4100,6 +4170,13 @@
     "y": 494.693756
   },
   {
+    "id": 1712133113009,
+    "type": "supply",
+    "title": "Cloth Stand",
+    "x": -732.414917,
+    "y": 28.714109
+  },
+  {
     "id": 1714208844627,
     "type": "supply",
     "title": "Rope, Cloth and 3x tape",
@@ -4147,6 +4224,27 @@
     "y": -653.83783
   },
   {
+    "id": 1714694761643,
+    "type": "supply",
+    "title": "4x Ropes",
+    "x": 1479.662231,
+    "y": 63.110508
+  },
+  {
+    "id": 1714694799095,
+    "type": "supply",
+    "title": "3x Cloth",
+    "x": 1480.341797,
+    "y": 69.687523
+  },
+  {
+    "id": 1714695569362,
+    "type": "supply",
+    "title": "3x Wire Spools",
+    "x": 1713.760376,
+    "y": 66.399055
+  },
+  {
     "id": 1714206860954,
     "type": "supply",
     "title": "Energy Bars",
@@ -4178,8 +4276,23 @@
     "inCave": true
   },
   {
+    "id": 1714695417820,
+    "type": "supply",
+    "title": "Money Briefcase",
+    "x": 1698.758667,
+    "y": 31.457506
+  },
+  {
+    "id": 1714695036701,
+    "type": "rifle-ammo",
+    "title": "2x Rifle Ammo",
+    "x": 1479.699097,
+    "y": 79.506844,
+    "inCave": true
+  },
+  {
     "id": 1714198047157,
-    "type": "solafite-vein",
+    "type": "solafite-vein-cave",
     "title": "Solafite Vein",
     "x": 1358.680176,
     "y": 1760,
@@ -4187,7 +4300,7 @@
   },
   {
     "id": 1714202380100,
-    "type": "solafite-vein",
+    "type": "solafite-vein-cave",
     "title": "Solafite Vein",
     "x": 1556.638916,
     "y": 1483.549683,
@@ -4195,7 +4308,7 @@
   },
   {
     "id": 1714202412530,
-    "type": "solafite-vein",
+    "type": "solafite-vein-cave",
     "title": "Solafite Vein",
     "x": 1552.951904,
     "y": 1489.812378,
@@ -4203,11 +4316,18 @@
   },
   {
     "id": 1714202456725,
-    "type": "solafite-vein",
+    "type": "solafite-vein-cave",
     "title": "Solafite Vein",
     "x": 1551.662109,
     "y": 1486.168091,
     "inCave": true
+  },
+  {
+    "id": 1714695613427,
+    "type": "solafite-vein",
+    "title": "Solafite vein",
+    "x": 1712.418457,
+    "y": 78.696068
   },
   {
     "id": 1714214224217,
@@ -5158,6 +5278,22 @@
     "y": 538.161377
   },
   {
+    "id": 1714693171177,
+    "type": "wooden-crate",
+    "title": "2x Wood Crates",
+    "x": 1455.250854,
+    "y": 749.649292,
+    "inCave": true
+  },
+  {
+    "id": 1714694602719,
+    "type": "wooden-crate",
+    "title": "Wood Crate",
+    "description": "Outside behind the hunting cabin",
+    "x": 1473.72583,
+    "y": 71.739075
+  },
+  {
     "id": 192,
     "type": "poi",
     "title": "Big Old Cross",
@@ -5808,16 +5944,16 @@
     "id": 399,
     "type": "grave",
     "title": "2x Graves",
-    "x": -1596,
-    "y": -1131,
+    "x": -1596.356323,
+    "y": -1131.303223,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Gravesites"
   },
   {
     "id": 400,
     "type": "grave",
     "title": "2x Graves",
-    "x": -1611,
-    "y": -1151,
+    "x": -1613.265869,
+    "y": -1152.091064,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Gravesites"
   },
   {
@@ -6229,6 +6365,14 @@
     "title": "Climbing Rope",
     "x": 840.411926,
     "y": -1465.214966,
+    "inCave": true
+  },
+  {
+    "id": 1714693292909,
+    "type": "climbing-rope",
+    "title": "Climbing Rope",
+    "x": 1471.050171,
+    "y": 748.507324,
     "inCave": true
   },
   {
@@ -7356,10 +7500,23 @@
   {
     "id": 1713836044936,
     "type": "large-battery",
-    "title": "Golfcart Battery",
+    "title": "Golf Cart Battery",
     "description": "",
     "x": 1413.326904,
-    "y": 1730.657959
+    "y": 1730.657959,
+    "itemid": "additem 661",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
+  },
+  {
+    "id": 1714694994224,
+    "type": "large-battery",
+    "title": "4x Golf Cart Batteries",
+    "description": "In the hunting cabin basement",
+    "x": 1475.370361,
+    "y": 79.317261,
+    "isUnderground": true,
+    "itemid": "additem 661",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
   {
     "id": 433,
@@ -7613,8 +7770,8 @@
     "id": 918,
     "type": "radio",
     "title": "3x Radios",
-    "x": -734,
-    "y": 30,
+    "x": -734.519714,
+    "y": 29.599266,
     "itemid": "additem 590",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
