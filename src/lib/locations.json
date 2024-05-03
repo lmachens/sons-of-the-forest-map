@@ -377,8 +377,8 @@
     "type": "rope-gun",
     "title": "Rope Gun",
     "description": "Near the cave exit in the left tunnel",
-    "x": -1204.71,
-    "y": -277.52,
+    "x": -1204.664429,
+    "y": -277.852539,
     "inCave": true,
     "screenshot": "rope_gun.webp",
     "warning": "Double use the command!",
@@ -1023,7 +1023,6 @@
     "id": 1713858317296,
     "type": "damaged-laptop-bunker",
     "title": "Damaged Laptop",
-    "description": "Strike to get a circuit board",
     "x": -1198.463867,
     "y": 78.688484,
     "inBunker": true
@@ -1034,6 +1033,14 @@
     "title": "2x Damaged Laptops",
     "x": -734.897156,
     "y": 30.404057
+  },
+  {
+    "id": 1714728119112,
+    "type": "damaged-laptop-cave",
+    "title": "Damaged Laptop",
+    "x": -1133.091309,
+    "y": -283.069305,
+    "inCave": true
   },
   {
     "id": 586,
@@ -2159,9 +2166,10 @@
     "id": 96,
     "type": "email-cave",
     "title": "Photo Reference",
-    "x": -1139.6,
-    "y": -234.44,
+    "x": -1139.356812,
+    "y": -234.565079,
     "inCave": true,
+    "screenshot": "photo-reference.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Photo_Reference_Email"
   },
   {
@@ -2171,6 +2179,8 @@
     "x": -1017.05,
     "y": -264.34,
     "inCave": true,
+    "screenshot": "more-lighting.webp",
+    "tp": "gotocoords -1017.1 113.1 -264.3",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/More_Lighting_Email"
   },
   {
@@ -2573,6 +2583,17 @@
     "description": "on the floor of the tent between two dead soldiers",
     "x": -1393.110352,
     "y": -1117.372681
+  },
+  {
+    "id": 1714724999781,
+    "type": "email-cave",
+    "title": "Dig Site B",
+    "description": "Beside the dead worker",
+    "x": -940.587036,
+    "y": -292.868225,
+    "inCave": true,
+    "screenshot": "dig-site-b.webp",
+    "tp": "gotocoords -940.6 113.3 -292.9"
   },
   {
     "id": 389,
@@ -4245,6 +4266,14 @@
     "y": 66.399055
   },
   {
+    "id": 1712093582792,
+    "type": "supply",
+    "title": "Loose Items",
+    "description": "Pills, rope, flares, vodka",
+    "x": -1012.987183,
+    "y": -260.532196
+  },
+  {
     "id": 1714206860954,
     "type": "supply",
     "title": "Energy Bars",
@@ -4281,6 +4310,15 @@
     "title": "Money Briefcase",
     "x": 1698.758667,
     "y": 31.457506
+  },
+  {
+    "id": 1714722157753,
+    "type": "supply",
+    "title": "2x Sticky Bombs",
+    "description": "Beside the dead worker",
+    "x": -1082.799072,
+    "y": -237.130798,
+    "inCave": true
   },
   {
     "id": 1714695036701,
@@ -4551,16 +4589,24 @@
     "id": 580,
     "type": "green-case",
     "title": "Ammo Case",
-    "x": -1133,
-    "y": -282,
-    "isUnderground": true
+    "x": -1134.194458,
+    "y": -281.993896,
+    "inCave": true
   },
   {
     "id": 581,
     "type": "green-case",
     "title": "Ammo Case",
-    "x": -1205,
-    "y": -277,
+    "x": -1205.922729,
+    "y": -277.456177,
+    "inCave": true
+  },
+  {
+    "id": 1711960041320,
+    "type": "green-case",
+    "title": "Ammo Case",
+    "x": -1205.621094,
+    "y": -265.734467,
     "inCave": true
   },
   {
@@ -4574,7 +4620,7 @@
   {
     "id": 1712092681262,
     "type": "orange-case-cave",
-    "title": "Flare Crate",
+    "title": "Flare Case",
     "description": "On the ledge near the entrance to the large cave room",
     "x": -1141.317993,
     "y": -200.804871,
@@ -4669,6 +4715,14 @@
     "title": "Flare Case",
     "x": -710,
     "y": 461
+  },
+  {
+    "id": 1712093938211,
+    "type": "orange-case",
+    "title": "Flare Case",
+    "x": -941.723145,
+    "y": -292.967651,
+    "inCave": true
   },
   {
     "id": 13333,
@@ -5294,6 +5348,23 @@
     "y": 71.739075
   },
   {
+    "id": 1711959183147,
+    "type": "wooden-crate",
+    "title": "2x wood crates",
+    "description": "Underground on narrow ledge near a climbing rope",
+    "x": -1173.826782,
+    "y": -207.78981
+  },
+  {
+    "id": 1711959782595,
+    "type": "wooden-crate",
+    "title": "2x wood crates",
+    "description": "Hidden behind stalagmites",
+    "x": -1005.977966,
+    "y": -391.440765,
+    "inCave": true
+  },
+  {
     "id": 192,
     "type": "poi",
     "title": "Big Old Cross",
@@ -5312,8 +5383,8 @@
     "id": 582,
     "type": "poi",
     "title": "Wall Painting",
-    "x": -989,
-    "y": -248,
+    "x": -989.703003,
+    "y": -249.167862,
     "inCave": true
   },
   {
@@ -6329,6 +6400,24 @@
     "x": -1132.570679,
     "y": -201.701492,
     "inCave": true
+  },
+  {
+    "id": 1712093739948,
+    "type": "poi",
+    "title": "Hanging Workers",
+    "description": "Stab them to win prizes",
+    "x": -990.000305,
+    "y": -245.434174,
+    "inCave": true
+  },
+  {
+    "id": 1712094359209,
+    "type": "poi",
+    "title": "Hanging corpses",
+    "description": "stab to win prizes",
+    "x": -1143.133789,
+    "y": -269.700287,
+    "InCave": true
   },
   {
     "id": 537,

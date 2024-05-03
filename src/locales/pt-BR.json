@@ -876,7 +876,6 @@
   "Printer Resin": "Resina da impressora",
   "In the back of the golf cart": "Na parte de trás do carrinho de golfe",
   "Damaged Laptop": "Laptop danificado",
-  "Strike to get a circuit board": "Greve para obter uma placa de circuito",
   "Destructable Door": "Porta destrutível",
   "Destructable Wood Door": "Porta de madeira destrutível",
   "Underwater cave": "Caverna subaquática",
@@ -910,7 +909,6 @@
   "Skin Pouch": "Bolsa de pele",
   "2x Explosives Cases": "2x Casos de explosivos",
   "On the rock beside the pond": "Na rocha ao lado da lagoa",
-  "Flare Crate": "Flare Crate",
   "4x coffins with loose items": "Caixões 4x com itens soltos",
   "Vodka, 2x stun ammo": "Vodka, munição de atordoamento 2x",
   "Beneath hanging worker": "Sob trabalhador pendurado",
@@ -1006,5 +1004,16 @@
   "Solafite vein": "Veia solafita",
   "Outside behind the hunting cabin": "Lá atrás da cabine de caça",
   "4x Golf Cart Batteries": "Baterias de carrinho de golfe 4x",
-  "In the hunting cabin basement": "No porão da cabine de caça"
+  "In the hunting cabin basement": "No porão da cabine de caça",
+  "Dig Site B": "Site de escavação b",
+  "Beside the dead worker": "Ao lado do trabalhador morto",
+  "Pills, rope, flares, vodka": "Pílulas, corda, flares, vodka",
+  "2x Sticky Bombs": "2x bombas pegajosas",
+  "2x wood crates": "2x caixas de madeira",
+  "Underground on narrow ledge near a climbing rope": "Subterrâneo em borda estreita perto de uma corda de escalada",
+  "Hidden behind stalagmites": "Escondido atrás de estalagmites",
+  "Hanging Workers": "Trabalhadores pendurados",
+  "Stab them to win prizes": "Esfaqueá -los para ganhar prêmios",
+  "Hanging corpses": "Cadáveres pendurados",
+  "stab to win prizes": "esfaquear para ganhar prêmios"
 }

@@ -876,7 +876,6 @@
   "Printer Resin": "Żywica drukarki",
   "In the back of the golf cart": "Z tyłu wózka golfowego",
   "Damaged Laptop": "Uszkodzony laptop",
-  "Strike to get a circuit board": "Uderz, aby zdobyć tablicę obwodów",
   "Destructable Door": "Zniszczalne drzwi",
   "Destructable Wood Door": "Zniszczalne drzwi drewna",
   "Underwater cave": "Podwodna jaskinia",
@@ -910,7 +909,6 @@
   "Skin Pouch": "Torebka skóry",
   "2x Explosives Cases": "2x przypadki materiałów wybuchowych",
   "On the rock beside the pond": "Na skale obok stawu",
-  "Flare Crate": "Flare Crate",
   "4x coffins with loose items": "4x trumny z luźnymi przedmiotami",
   "Vodka, 2x stun ammo": "Wódka, 2x ogłuszenie amunicji",
   "Beneath hanging worker": "Pod wiszącym pracownikiem",
@@ -1006,5 +1004,16 @@
   "Solafite vein": "Solafite żyła",
   "Outside behind the hunting cabin": "Na zewnątrz za kabiną myśliwską",
   "4x Golf Cart Batteries": "4x baterie wózków golfowych",
-  "In the hunting cabin basement": "W piwnicy łowieckiej"
+  "In the hunting cabin basement": "W piwnicy łowieckiej",
+  "Dig Site B": "DIG SITE B",
+  "Beside the dead worker": "Obok martwego pracownika",
+  "Pills, rope, flares, vodka": "Pigułki, lina, rozbłyski, wódka",
+  "2x Sticky Bombs": "2x lepkie bomby",
+  "2x wood crates": "2x skrzynie z drewna",
+  "Underground on narrow ledge near a climbing rope": "Pod ziemią na wąskiej półce w pobliżu liny wspinaczkowej",
+  "Hidden behind stalagmites": "Ukryty za Stalagmites",
+  "Hanging Workers": "Wiszący pracownicy",
+  "Stab them to win prizes": "Dźgnij ich, aby wygrać nagrody",
+  "Hanging corpses": "Wiszące zwłoki",
+  "stab to win prizes": "Stag to Win Nagrody"
 }

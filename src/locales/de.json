@@ -876,7 +876,6 @@
   "Printer Resin": "Druckerharz",
   "In the back of the golf cart": "Hinten im Golfwagen",
   "Damaged Laptop": "Beschädigter Laptop",
-  "Strike to get a circuit board": "Streik, um eine Leiterplatte zu bekommen",
   "Destructable Door": "Zerstörbare Tür",
   "Destructable Wood Door": "Zerstörbare Holztür",
   "Underwater cave": "Unterwasserhöhle",
@@ -910,7 +909,6 @@
   "Skin Pouch": "Hautbeutel",
   "2x Explosives Cases": "2x Sprengstofffälle",
   "On the rock beside the pond": "Auf dem Felsen neben dem Teich",
-  "Flare Crate": "Flare -Kiste",
   "4x coffins with loose items": "4x Särge mit losen Gegenständen",
   "Vodka, 2x stun ammo": "Wodka, 2x Stun Munition",
   "Beneath hanging worker": "Unter hängenden Arbeitern",
@@ -1006,5 +1004,16 @@
   "Solafite vein": "Solafite -Ader",
   "Outside behind the hunting cabin": "Draußen hinter der Jagdkabine",
   "4x Golf Cart Batteries": "4x Golfwagen -Batterien",
-  "In the hunting cabin basement": "Im Keller der Jagdkabine"
+  "In the hunting cabin basement": "Im Keller der Jagdkabine",
+  "Dig Site B": "Grabstelle b",
+  "Beside the dead worker": "Neben dem toten Arbeiter",
+  "Pills, rope, flares, vodka": "Pillen, Seil, Fackeln, Wodka",
+  "2x Sticky Bombs": "2x klebrige Bomben",
+  "2x wood crates": "2x Holzkisten",
+  "Underground on narrow ledge near a climbing rope": "Untergrund am schmalen Felsvorsprung in der Nähe eines Kletterseils",
+  "Hidden behind stalagmites": "Versteckt hinter Stalagmiten",
+  "Hanging Workers": "Hängende Arbeiter",
+  "Stab them to win prizes": "Stach sie, um Preise zu gewinnen",
+  "Hanging corpses": "Hängende Leichen",
+  "stab to win prizes": "stechen, um Preise zu gewinnen"
 }
