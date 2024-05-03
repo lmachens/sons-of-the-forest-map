@@ -1902,17 +1902,6 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Leather_Suit"
   },
   {
-    "id": 84,
-    "type": "outfit",
-    "title": "Leather Suit for Virginia",
-    "x": -887.7,
-    "y": 770.03,
-    "screenshot": "leather_suit_1.webp",
-    "tp": "goto -888,3 95 768,9",
-    "itemid": "additem 557",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Leather_Suit"
-  },
-  {
     "id": 83,
     "type": "golden-mask",
     "title": "Golden Mask",
@@ -3418,8 +3407,8 @@
     "id": 114,
     "type": "helicopter",
     "title": "Helicopter Crash Site",
-    "x": -886,
-    "y": 770,
+    "x": -887.527649,
+    "y": 770.571594,
     "screenshot": "helicopter_crash_site.webp",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Helicopter_Crash_Sites"
   },
@@ -3462,6 +3451,30 @@
     "description": "Yarrow",
     "x": 1720.857178,
     "y": -202.57074
+  },
+  {
+    "id": 1711958379829,
+    "type": "plant-resource",
+    "title": "Big Aloe Patch",
+    "description": "19x Aloe on the hill at the tree line",
+    "x": -977.783386,
+    "y": 181.315781
+  },
+  {
+    "id": 1714201281874,
+    "type": "plant-resource",
+    "title": "Devil's Club",
+    "description": "Summer and fall Seasonal plant",
+    "x": 1424.389404,
+    "y": 1671.287476
+  },
+  {
+    "id": 1712095542496,
+    "type": "plant-resource",
+    "title": "Devil's Club",
+    "description": "Summer and fall Seasonal plant",
+    "x": -817.531799,
+    "y": -201.922073
   },
   {
     "id": 121,
@@ -3592,10 +3605,10 @@
   },
   {
     "id": 143,
-    "type": "supply",
-    "title": "Supply Suitcase",
-    "x": -1260,
-    "y": -205
+    "type": "utility-crate",
+    "title": "Black and Yellow Crate",
+    "x": -1259.432007,
+    "y": -206.171646
   },
   {
     "id": 144,
@@ -3622,7 +3635,7 @@
   {
     "id": 152,
     "type": "utility-crate",
-    "title": "2x Black and yellow Crates",
+    "title": "2x Black and Yellow Crates",
     "x": -1606.791504,
     "y": 488.999451
   },
@@ -3663,10 +3676,17 @@
   },
   {
     "id": 161,
-    "type": "supply",
-    "title": "2x Supply Suitcases",
-    "x": -883,
-    "y": 773
+    "type": "utility-crate",
+    "title": "Black and Yellow Crate",
+    "x": -882.543518,
+    "y": 773.345276
+  },
+  {
+    "id": 1714729986089,
+    "type": "utility-crate",
+    "title": "Black and Yellow Crate",
+    "x": -885.413208,
+    "y": 773.626526
   },
   {
     "id": 162,
@@ -6463,22 +6483,6 @@
     "x": 1471.050171,
     "y": 748.507324,
     "inCave": true
-  },
-  {
-    "id": 1711958379829,
-    "type": "plant-resource",
-    "title": "Big Aloe Patch",
-    "description": "19x Aloe on the hill at the tree line",
-    "x": -977.783386,
-    "y": 181.315781
-  },
-  {
-    "id": 1714201281874,
-    "type": "plant-resource",
-    "title": "Devil's Club",
-    "description": "Summer and fall Seasonal plant",
-    "x": 1424.389404,
-    "y": 1671.287476
   },
   {
     "id": 236,
