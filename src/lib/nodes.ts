@@ -44,6 +44,7 @@ export function getTypes(onlyBaseTypes: boolean = false): NodeType[] {
     baseSolafiteVein,
     baseSuppressor,
     baseSupply,
+    baseTravelSuitcase,
     baseGreenCase,
     baseOrangeCase,
     baseRedCase,
@@ -415,6 +416,8 @@ export function getTypes(onlyBaseTypes: boolean = false): NodeType[] {
     bunkerSuppressor,
     bunkerSupply,
     caveSupply,
+    bunkerTravelSuitcase,
+    caveTravelSuitcase,
     caveSolafiteVein,
     bunkerGreenCase,
     caveGreenCase,
@@ -854,12 +857,29 @@ const baseSupply: NodeType = {
 
 const bunkerSupply = createNodeType(baseSupply, {
   value: "supply-bunker",
-  filter: "loot",
+  filter: ["loot", "bunker-loot"],
 });
 
 const caveSupply = createNodeType(baseSupply, {
   value: "supply-cave",
+  filter: ["loot", "cave-loot"],
+});
+
+const baseTravelSuitcase: NodeType = {
+  value: "travel-suitcase",
+  title: t("Travel Suitcase"),
+  icon: icons.case,
   filter: "loot",
+};
+
+const bunkerTravelSuitcase = createNodeType(baseTravelSuitcase, {
+  value: "travel-suitcase-bunker",
+  filter: ["loot", "bunker-loot"],
+});
+
+const caveTravelSuitcase = createNodeType(baseTravelSuitcase, {
+  value: "travel-suitcase-cave",
+  filter: ["loot", "cave-loot"],
 });
 
 const baseLake: NodeType = {

@@ -360,6 +360,26 @@
     "inCave": true
   },
   {
+    "id": 1711957490489,
+    "type": "rebreather",
+    "title": "Air Tank",
+    "description": "On a rock shelf at the bottom of the pit",
+    "x": -551.948486,
+    "y": 148.811172,
+    "inCave": true,
+    "tp": "gotocoords -551 186.1 149.3"
+  },
+  {
+    "id": 1714975592430,
+    "type": "rebreather",
+    "title": "Air-Tank",
+    "description": "inCave",
+    "x": -556.487671,
+    "y": 153.040253,
+    "inCave": true,
+    "tp": "gotocoords -556.7 189.4 153"
+  },
+  {
     "id": 12,
     "type": "cross",
     "title": "Cross",
@@ -501,15 +521,30 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Crossbow"
   },
   {
+    "id": 1712114711796,
+    "type": "keycard",
+    "title": "Guest Key Card",
+    "description": "On the table beside the dead woman",
+    "x": -1184.022583,
+    "y": 41.3041,
+    "inBunker": true,
+    "requirements": [17],
+    "screenshot": "guest-key-card.webp",
+    "warning": "Double use the command!",
+    "tp": "gotocoords -1184.1 67.3 41.3",
+    "itemid": "additem 567",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Guest_Keycard"
+  },
+  {
     "id": 21,
     "type": "keycard",
-    "title": "Guest Card",
-    "description": "On 5th bunker floor",
+    "title": "Guest Key Card",
+    "description": "On 5th bunker floor - Only found here if not picked up at the party table",
     "x": 1140.92,
     "y": -612.99,
     "inBunker": true,
     "requirements": [17],
-    "screenshot": "guest_keycard.webp",
+    "screenshot": "guest_key-card-2.webp",
     "warning": "Double use the command!",
     "tp": "goto KeyCardGuestPickup",
     "itemid": "additem 567",
@@ -1043,6 +1078,30 @@
     "inCave": true
   },
   {
+    "id": 1712096007690,
+    "type": "damaged-laptop-cave",
+    "title": "Damaged Laptop",
+    "description": "Underground after dropping from zip line beside light at back of cave",
+    "x": -545.166626,
+    "y": 174.287537,
+    "inCave": true,
+    "tp": "gotocoords -545.1 190.1 173.8"
+  },
+  {
+    "id": 1714981758528,
+    "type": "damaged-laptop",
+    "title": "Damaged Laptop",
+    "x": -1271.623535,
+    "y": -9.711306
+  },
+  {
+    "id": 1714981966940,
+    "type": "damaged-laptop",
+    "title": "Damaged Laptop",
+    "x": -1267.41687,
+    "y": -12.923901
+  },
+  {
     "id": 586,
     "type": "action-camera-bunker",
     "title": "Action Camera",
@@ -1074,8 +1133,8 @@
     "type": "action-camera-bunker",
     "title": "Action Camera",
     "description": "Sahara Confidential",
-    "x": -1095.15,
-    "y": -10.46,
+    "x": 1065.987793,
+    "y": 1034.174316,
     "inBunker": true,
     "requirements": [17],
     "screenshot": "action_camera_3.webp",
@@ -2142,14 +2201,13 @@
     "id": 94,
     "type": "document-bunker",
     "title": "Last will and testament of Edward Puffton",
-    "description": "On second table behind doors",
-    "x": -1178.63,
-    "y": 27.7,
+    "description": "On the table beside the computer in Virginias' room. Will only appear after VIP bunker is unlocked.",
+    "x": 1628.338989,
+    "y": 569.422363,
     "inBunker": true,
-    "requirements": [17],
     "screenshot": "email_last_will_and_testament.webp",
     "warning": "Teleport after entering the bunker to avoid falling under the map",
-    "tp": "goto -1178,8 66 26,8"
+    "tp": "gotocoords 1628.2 23.2 569.2"
   },
   {
     "id": 96,
@@ -2388,7 +2446,7 @@
     "requirements": [17],
     "screenshot": "email_re_re_golf_balls.webp",
     "warning": "Teleport after entering the bunker to avoid falling under the map",
-    "tp": "goto -1191,5 66 35,7",
+    "tp": "gotocoords -1191.5 66 35.7",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Balls_Emails"
   },
   {
@@ -2555,6 +2613,18 @@
     "tp": "goto PufftonEmailAPickup"
   },
   {
+    "id": 1712106285309,
+    "type": "email-bunker",
+    "title": "RE:RE:IMPORTANT - Countdown Calculations",
+    "description": "In the room that is opened with the guest keycard",
+    "x": -976.573669,
+    "y": 1036.311035,
+    "inBunker": true,
+    "requirements": [1712114711796],
+    "screenshot": "important-countdown-calculations.webp",
+    "tp": "gotocoords -1178.7 67.4 27.2"
+  },
+  {
     "id": 95,
     "type": "email",
     "title": "RE: GOLF BALLS",
@@ -2583,6 +2653,16 @@
     "inCave": true,
     "screenshot": "dig-site-b.webp",
     "tp": "gotocoords -940.6 113.3 -292.9"
+  },
+  {
+    "id": 1713834740752,
+    "type": "email",
+    "title": "Notice of Employment Termination",
+    "description": "On the cot at the back of the tent",
+    "x": 1065.880371,
+    "y": 1033.399292,
+    "screenshot": "email_employment_termination.webp",
+    "tp": "gotocoords 1065.9 144.7 1033.4"
   },
   {
     "id": 389,
@@ -3912,24 +3992,24 @@
   },
   {
     "id": 141,
-    "type": "supply",
-    "title": "2x Supply Suitcases",
+    "type": "travel-suitcase",
+    "title": "2x travel Suitcases",
     "x": -1267,
     "y": -14
   },
   {
     "id": 593,
-    "type": "supply",
-    "title": "Supply Suitcase",
+    "type": "utility-crate",
+    "title": "Grey Crate",
     "x": -1267,
     "y": -6
   },
   {
     "id": 594,
-    "type": "supply",
-    "title": "Supply Suitcase",
-    "x": -1275,
-    "y": -13
+    "type": "utility-crate",
+    "title": "Grey Crate",
+    "x": -1276.108032,
+    "y": -13.607588
   },
   {
     "id": 343,
@@ -4388,6 +4468,15 @@
     "y": 78.696068
   },
   {
+    "id": 1714973735148,
+    "type": "solafite-vein",
+    "title": "Solafite Grave",
+    "description": "Grave surrounded by Solafite Ore Veins",
+    "x": 449.914093,
+    "y": 328.503204,
+    "screenshot": "solafite-grave.webp"
+  },
+  {
     "id": 1714214224217,
     "type": "green-case",
     "title": "Crossbow Bolts",
@@ -4531,12 +4620,12 @@
   },
   {
     "id": 337,
-    "type": "green-case",
+    "type": "green-case-bunker",
     "title": "Ammo Case",
-    "x": -1182,
-    "y": 25,
-    "isUnderground": true,
-    "requirements": [17]
+    "x": -1183.198242,
+    "y": 25.792925,
+    "inBunker": true,
+    "requirements": [1712114711796]
   },
   {
     "id": 470,
@@ -6396,6 +6485,13 @@
     "screenshot": "broken_sled_ice.webp"
   },
   {
+    "id": 1714973298891,
+    "type": "poi",
+    "title": "Broken Sled",
+    "x": 571.245972,
+    "y": 317.526978
+  },
+  {
     "id": 1713841698125,
     "type": "poi",
     "title": "Fish and Bones",
@@ -7886,17 +7982,6 @@
     "title": "Radio",
     "x": -1117.67,
     "y": 7.83,
-    "isUnderground": true,
-    "requirements": [17],
-    "itemid": "additem 590",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
-  },
-  {
-    "id": 510,
-    "type": "radio",
-    "title": "Radio",
-    "x": 1137.17,
-    "y": -621.5,
     "isUnderground": true,
     "requirements": [17],
     "itemid": "additem 590",
