@@ -359,6 +359,20 @@ export function getTypes(onlyBaseTypes: boolean = false): NodeType[] {
       src: "/icons/village.webp",
       filter: "village",
     },
+    {
+      value: "air-canister",
+      title: t("Resources"),
+      icon: icons.poi,
+      src: "/icons/air-canister.webp",
+      filter: "resources", 
+    },
+    {
+      value: "herb",
+      title: t("Herbs"),
+      icon: icons.poi,
+      src: "/icons/aloe-vera.webp",
+      filter: "resources",
+    },
   ];
 
   const extendedTypes: NodeType[] = [
@@ -503,12 +517,12 @@ const baseLargeBattery: NodeType = {
   title: t("Electronics"),
   icon: icons.poi,
   src: "/icons/large-battery.webp",
-  filter: "electronics",
+  filter: "resources",
 }
 
 const bunkerLargeBattery = createNodeType(baseLargeBattery, {
   value: "large-battery-bunker",
-  filter: ["electronics", "bunker-loot"],
+  filter: ["resources", "bunker-loot"],
 })
 
 const baseOutfit: NodeType = {
@@ -591,12 +605,12 @@ const baseRadio: NodeType = {
   title: t("Entertainment"),
   icon: icons.poi,
   src: "/icons/radio.webp",
-  filter: "electronics",
+  filter: "resources",
 }
 
 const bunkerRadio = createNodeType(baseRadio, {
   value: "radio-bunker",
-  filter: ["electronics", "bunker-loot"],
+  filter: ["resources", "bunker-loot"],
 })
 
 const baseShotgunRail: NodeType = {
@@ -653,12 +667,12 @@ const baseSolarPanel: NodeType = {
   title: t("Electronics"),
   icon: icons.poi,
   src: "/icons/solar-panel.webp",
-  filter: "electronics",
+  filter: "resources",
 }
 
 const bunkerSolarPanel = createNodeType(baseSolarPanel, {
   value: "solar-panel-bunker",
-  filter: ["electronics", "bunker-loot"],
+  filter: ["resources", "bunker-loot"],
 })
 
 const baseFlashlightAttachment: NodeType = {
@@ -891,7 +905,7 @@ export function getFilters(): Filter[] {
     {
       value: "bunker-loot",
       title: t("Bunker Loot"),
-      color: "rgb(173 216 230)",
+      color: "rgb(173, 216, 230)",
     },
     {
       value: "tools",
@@ -901,12 +915,12 @@ export function getFilters(): Filter[] {
     {
       value: "village",
       title: t("Villages"),
-      color: "rgb(255 0 0)",
+      color: "rgb(255, 0, 0)",
     },
     {
-      value: "electronics",
-      title: t("Electronics"),
-      color: "rgb(128, 200, 128)",
+      value: "resources",
+      title: t("Resources"),
+      color: "rgb(92, 177, 59)",
     },
     {
       value: "abandoned-camp",

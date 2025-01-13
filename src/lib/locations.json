@@ -255,7 +255,7 @@
     "x": -703.72,
     "y": 446.04,
     "screenshot": "modern_axe.webp",
-    "tp": "goto ModernAxePickup",
+    "tp": "goto -703,71 103,3 446,03",
     "itemid": "additem 356",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Modern_Axe"
   },
@@ -268,7 +268,7 @@
     "y": 386.43,
     "screenshot": "flashlight.webp",
     "warning": "You will be under it!",
-    "tp": "goto FlashlightPickup",
+    "tp": "goto -627,49 138,1 388,56",
     "itemid": "471",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Flashlight"
   },
@@ -276,11 +276,11 @@
     "id": 6,
     "type": "machete",
     "title": "Machete",
-    "description": "On the deflated boat",
+    "description": "Inserted into the sleeping bag",
     "x": -46.78,
     "y": 1457.58,
     "screenshot": "machete.webp",
-    "tp": "goto Machete2Pickup",
+    "tp": "goto -46,78 17,04 1457,58",
     "itemid": "additem 359",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Machete"
   },
@@ -292,7 +292,7 @@
     "x": -1143.84,
     "y": -162.33,
     "screenshot": "stun_baton.webp",
-    "tp": "goto TaserStickPickup",
+    "tp": "goto -1143,84 130,27 -162,33",
     "itemid": "additem 396",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Stun_Baton"
   },
@@ -301,27 +301,10 @@
     "type": "pistol",
     "title": "Compact Pistol",
     "description": "On Emergency Raft",
-    "x": -1797.30,
-    "y": 578.73,
-    "screenshot": "pistol_1.webp",
-    "tp": "goto RaftDiorama",
-    "itemid": "additem 355",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Pistol"
-  },
-  {
-    "id": 9,
-    "type": "pistol-bunker",
-    "title": "Compact Pistol",
-    "description": "On 1st bunker floor",
-    "x": 1153.76,
-    "y": -606.79,
-    "inBunker": true,
-    "requirements": [
-      17
-    ],
-    "screenshot": "pistol_2.webp",
-    "warning": "Teleport after entering the bunker!",
-    "tp": "goto CompactPistolPickup",
+    "x": -1797.3,
+    "y": 578.74,
+    "screenshot": "pistol.webp",
+    "tp": "goto -1797,3 14 578,74",
     "itemid": "additem 355",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Pistol"
   },
@@ -331,11 +314,10 @@
     "title": "Stun Gun",
     "description": "Inside the right tunnel",
     "x": -647.31,
-    "y": 1514.32,
+    "y": 1514.37,
     "inCave": true,
     "screenshot": "stun_gun.webp",
-    "warning": "Double use the command!",
-    "tp": "goto StunGunPickup",
+    "tp": "goto -647,31 17 1514,37",
     "itemid": "additem 353",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Stun_Gun"
   },
@@ -345,32 +327,30 @@
     "title": "Rebreather",
     "description": "Inside the left tunnel",
     "x": -421.94,
-    "y": 1477.25,
+    "y": 1477.02,
     "inCave": true,
     "screenshot": "rebreather.webp",
-    "warning": "Double use the command!",
-    "tp": "goto RebreatherPickup",
+    "tp": "goto -422,94 10,11 1477,02",
     "itemid": "additem 444",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Rebreather"
   },
   {
-    "id": 1713841340991,
-    "type": "rebreather",
+    "id": 40001,
+    "type": "air-canister",
     "title": "Air-tank",
-    "x":-424.90332,
-    "y":1495.965088,
+    "x": -424.90332,
+    "y": 1495.965088,
     "inCave": true
   },
   {
     "id": 12,
     "type": "cross",
     "title": "Cross",
-    "x": 1622.62,
-    "y": 484.21,
+    "x": -1174.59,
+    "y": -217.69,
     "inBunker": true,
     "screenshot": "cross.webp",
-    "warning": "Double use the command!",
-    "tp": "goto CrossPickup",
+    "tp": "goto -1174,59 111,32 -217,69",
     "itemid": "additem 468",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Cross"
   },
@@ -383,8 +363,7 @@
     "y": -277.52,
     "inCave": true,
     "screenshot": "rope_gun.webp",
-    "warning": "Double use the command!",
-    "tp": "goto RopeGunPickup",
+    "tp": "goto -1204,71 127,41 -277,52",
     "itemid": "additem 522",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Rope_Gun"
   },
@@ -393,10 +372,10 @@
     "type": "slingshot",
     "title": "Slingshot",
     "description": "On middle mercenary corpse",
-    "x": -532.05,
+    "x": -532.04,
     "y": 121.64,
     "screenshot": "slingshot.webp",
-    "tp": "goto SlingshotPickup",
+    "tp": "goto -532,04 195,89 121,64",
     "itemid": "additem 459",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Slingshot"
   },
@@ -405,16 +384,15 @@
     "type": "shovel",
     "title": "Shovel",
     "description": "In hands of dead worker inside cave",
-    "x": -429.4,
-    "y": -103.3,
+    "x": -429.40,
+    "y": -103.29,
     "inCave": true,
     "requirements": [
       13,
       11
     ],
     "screenshot": "shovel.webp",
-    "warning": "Double use the command!",
-    "tp": "goto ShovelPickup",
+    "tp": "goto -429,4 134,51 -103,29",
     "itemid": "additem 485",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Shovel"
   },
@@ -443,7 +421,7 @@
     "inCave": true,
     "screenshot": "rifle.webp",
     "warning": "Double use the command!",
-    "tp": "goto RiflePickup",
+    "tp": "goto 678,05 237,01 -282,29",
     "itemid": "additem 361",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Rifle"
   },
@@ -459,25 +437,23 @@
       15
     ],
     "screenshot": "maintenance_card.webp",
-    "warning": "Teleport after entering the bunker!",
-    "tp": "goto KeyCardMaintenancePickup",
+    "tp": "goto -428 76,68 700,46",
     "itemid": "additem 566",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Maintenance_Keycard"
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Keycards#Maintenance_Keycard-0"
   },
   {
     "id": 18,
     "type": "firefighter-axe",
     "title": "Firefighter Axe",
     "description": "At the end of the hallway",
-    "x": -415.01,
+    "x": -415.00,
     "y": 712.26,
     "inBunker": true,
     "requirements": [
       15
     ],
     "screenshot": "firefighter_axe.webp",
-    "warning": "Teleport after entering the bunker!",
-    "tp": "goto FireAxePickup",
+    "tp": "goto -416,58 76,68 711,96",
     "itemid": "additem 431",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Firefighter_Axe"
   },
@@ -486,17 +462,16 @@
     "type": "keycard",
     "title": "VIP Card",
     "description": "On desk in Security room",
-    "x": -978.11,
-    "y": 1038.64,
+    "x": -978.10,
+    "y": 1038.63,
     "inBunker": true,
     "requirements": [
       17
     ],
     "screenshot": "vip_card.webp",
-    "warning": "Double use the command!",
-    "tp": "goto KeyCardVIPPickup",
+    "tp": "goto -976,99 69,89 1038,73",
     "itemid": "additem 568",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/VIP_Keycard"
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Keycards#VIP_Keycard-0"
   },
   {
     "id": 20,
@@ -520,17 +495,16 @@
     "type": "keycard",
     "title": "Guest Card",
     "description": "On 5th bunker floor",
-    "x": 1140.92,
-    "y": -612.99,
+    "x": -1184.09,
+    "y": 41.71,
     "inBunker": true,
     "requirements": [
       17
     ],
     "screenshot": "guest_keycard.webp",
-    "warning": "Double use the command!",
-    "tp": "goto KeyCardGuestPickup",
+    "tp": "goto -1184,05 65,69 40,62",
     "itemid": "additem 567",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Guest_Keycard"
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Keycards#Guest_Keycard-0"
   },
   {
     "id": 22,
@@ -561,8 +535,7 @@
       17
     ],
     "screenshot": "chainsaw.webp",
-    "warning": "Double use the command!",
-    "tp": "goto TacticalChainsawPickup",
+    "tp": "goto -1152,09 64,84 116,22",
     "itemid": "additem 394",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Chainsaw"
   },
@@ -635,10 +608,10 @@
     "type": "binoculars",
     "title": "Binoculars",
     "description": "On top of the kayak",
-    "x": -1112.67,
-    "y": 1720.7,
+    "x": -1112.66,
+    "y": 1720.69,
     "screenshot": "binoculars.webp",
-    "tp": "goto BinocularsPickup",
+    "tp": "goto -1112,66 15,68 1720,69",
     "itemid": "additem 341",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Binoculars"
   },
@@ -648,14 +621,13 @@
     "title": "Pickaxe",
     "description": "Stuck in the Solafite Ore on the wall",
     "x": 1413.59,
-    "y": 735.17,
+    "y": 735.16,
     "inCave": true,
     "requirements": [
       11
     ],
     "screenshot": "pickaxe.webp",
-    "warning": "Double use the command!",
-    "tp": "goto PickaxePickup",
+    "tp": "goto 1414,73 79 735,35",
     "itemid": "additem 663",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Pickaxe"
   },
@@ -666,8 +638,7 @@
     "description": "Next to a tent",
     "x": -154.82,
     "y": -110.79,
-    "screenshot": "can_opener_3.webp",
-    "tp": "goto CanOpenerPickup",
+    "tp": "goto -154,82 406,54 -110,79",
     "itemid": "additem 432",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Can_Opener"
   },
@@ -675,11 +646,9 @@
     "id": 340,
     "type": "can-opener",
     "title": "Can Opener",
-    "description": "Next to campfire",
-    "x": -1269.18,
-    "y": -12.39,
-    "screenshot": "can_opener_2.webp",
-    "tp": "goto CanOpenerPickup (1)",
+    "x": -1269.17,
+    "y": -12.38,
+    "tp": "goto -1269,17 103,67 -12,38",
     "itemid": "additem 432",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Can_Opener"
   },
@@ -690,8 +659,7 @@
     "description": "On rocks",
     "x": -315.71,
     "y": 1611.97,
-    "screenshot": "can_opener_1.webp",
-    "tp": "goto CanOpenerPickup (2)",
+    "tp": "goto -315,71 14,3 1611,97",
     "itemid": "additem 432",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Can_Opener"
   },
@@ -700,10 +668,9 @@
     "type": "can-opener",
     "title": "Can Opener",
     "description": "On campfire rocks",
-    "x": 1283.1,
+    "x": 1283.09,
     "y": -728.56,
-    "screenshot": "can_opener_4.webp",
-    "tp": "goto CanOpenerPickup (3)",
+    "tp": "goto 1283,09 228,09 -728,56",
     "itemid": "additem 432",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Can_Opener"
   },
@@ -943,9 +910,7 @@
       37,
       585,
       510,
-      21,
       586,
-      9,
       26,
       113,
       432,
@@ -1011,6 +976,15 @@
     "requirements": [
       17
     ],
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/3D_Printer"
+  },
+  {
+    "id": 928,
+    "type": "printer",
+    "title": "3D Printer",
+    "description": "Inside tent",
+    "x": 379.12,
+    "y": -665.13,
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/3D_Printer"
   },
   {
@@ -1410,6 +1384,7 @@
       35,
       23,
       22,
+      21,
       483,
       922,
       825,
@@ -1453,145 +1428,10 @@
     "y":206.469223
   },
   {
-    "id": 63,
-    "type": "abandoned-camp-n",
-    "title": "Torn Tents 01",
-    "description": "Camp site with 2 tents",
-    "x": -1363.90,
-    "y": 1661.99,
-    "items": [
-      847
-    ],
-    "tp": "goto -1362,2 91,7 1665,2",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
-  },
-  {
-    "id": 61,
-    "type": "abandoned-camp-n",
-    "title": "Torn Tents 02",
-    "description": "Camp site with 2 tents 1 grey crate 3 damaged laptops",
-    "x": -748.975769,
-    "y": 1277.4646,
-    "tp": "goto -749,1 55,7 1277,1",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
-  },
-  {
-    "id": 65,
-    "type": "abandoned-camp-n",
-    "title": "Torn Tents 03",
-    "description": "Camp site with 2 tents",
-    "x": -1435.192627,
-    "y": 1214.059814,
-    "tp": "goto -1435,6 93,5 1214,0",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
-  },
-  {
-    "id": 66,
-    "type": "abandoned-camp-n",
-    "title": "Torn Tents 04",
-    "description": "Camp site with 4 tents",
-    "x": -1651.407471,
-    "y": 1188.27832,
-    "tp": "goto -1650,3 83,9 1188,9",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
-  },
-  {
-    "id": 58,
-    "type": "abandoned-camp-n",
-    "title": "Torn Tents 05",
-    "description": "Camp site with 2 tents",
-    "x": -255.35,
-    "y": 1071.43,
-    "tp": "goto -258,1 73,3 1073,9",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
-  },
-  {
-    "id": 54,
-    "type": "abandoned-camp-n",
-    "title": "Torn Tents 06",
-    "description": "Camp site with 2 tents",
-    "x": 721.09,
-    "y": 736.98,
-    "items": [
-      177
-    ],
-    "tp": "goto 724,9 370 737,1",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
-  },
-  {
-    "id": 53,
-    "type": "abandoned-camp-n",
-    "title": "Torn Tents 07",
-    "description": "Camp site with 4 tents",
-    "x": 1260.68,
-    "y": 498.86,
-    "tp": "goto 1263,2 179,5 494,2",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
-  },
-  {
-    "id": 52,
-    "type": "abandoned-camp-n",
-    "title": "Torn Tents 08",
-    "description": "Camp site with 2 tents",
-    "x": 1695.50,
-    "y": 36.00,
-    "tp": "goto 1698,7 22,2 33,4",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
-  },
-  {
-    "id": 181,
-    "type": "abandoned-camp-n",
-    "title": "Torn Tents 09",
-    "description": "Camp site with 3 tents",
-    "x": -1098.64,
-    "y": 87.15,
-    "tp": "goto -1095,5 101 88",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
-  },
-  {
-    "id": 186,
-    "type": "abandoned-camp-n",
-    "title": "Torn Tents 10",
-    "description": "Camp site with 3 tents",
-    "x": -705.54,
-    "y": -661.60,
-    "tp": "goto -702,9 289,7 -664",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
-  },
-  {
-    "id": 191,
-    "type": "abandoned-camp-n",
-    "title": "Torn Tents 11",
-    "description": "Camp site with 3 tents",
-    "x": -132.00,
-    "y": -1036.21,
-    "items": [
-      108
-    ],
-    "tp": "goto -129,9 408,9 -1037,",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
-  },
-  {
-    "id": 57,
-    "type": "abandoned-camp-y",
-    "title": "Orange Tents 05",
-    "description": "Camp site with 3 tents",
-    "x": -242.21,
-    "y": 941.33,
-    "items": [
-      575,
-      859,
-      553,
-      554
-    ],
-    "tp": "goto -237,3 97 944,5",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
-  },
-  {
     "id": 51,
     "type": "abandoned-camp-y",
-    "title": "Black Tent 19",
-    "description": "Camp site with 2 tents",
+    "title": "Abandoned Campsite 01",
+    "description": "2 black tents",
     "x": 1286.02,
     "y": -728.77,
     "items": [
@@ -1603,10 +1443,36 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
+    "id": 456,
+    "type": "abandoned-camp-y",
+    "title": "Abandoned Campsite 02",
+    "description": "3 black tents",
+    "x": 291.90,
+    "y": -974.43,
+    "items": [
+      570
+    ],
+    "tp": "goto 291,90 423,79 -974,43",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 454,
+    "type": "abandoned-camp-y",
+    "title": "Abandoned Campsite 03",
+    "description": "2 black tents",
+    "x": 403.22,
+    "y": 605.35,
+    "items": [
+      455
+    ],
+    "tp": "goto 403,22 404,95 605,35",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
     "id": 55,
     "type": "abandoned-camp-y",
-    "title": "Black Tents 07",
-    "description": "Camp site with 2 tents",
+    "title": "Abandoned Campsite 04",
+    "description": "2 black tents",
     "x": 799,
     "y": 975,
     "items": [
@@ -1618,8 +1484,8 @@
   {
     "id": 56,
     "type": "abandoned-camp-y",
-    "title": "Black Tents 06",
-    "description": "Camp site with 2 tents",
+    "title": "Abandoned Campsite 05",
+    "description": "2 black tents",
     "x": -27.90,
     "y": 665.79,
     "items": [
@@ -1632,8 +1498,8 @@
   {
     "id": 59,
     "type": "abandoned-camp-y",
-    "title": "Black Tents 04",
-    "description": "Camp site with 2 tents",
+    "title": "Abandoned Campsite 06",
+    "description": "2 black tents",
     "x": 61,
     "y": 1247,
     "tp": "goto 63,3 87,8 1247,9",
@@ -1642,11 +1508,10 @@
   {
     "id": 60,
     "type": "abandoned-camp-y",
-    "title": "Black Tents 03",
-    "description": "Camp site with 2 tents",
+    "title": "Abandoned Campsite 07",
+    "description": "2 black tents",
     "x": -47.63,
     "y": 1456,
-    "screenshot": "black_tents_03.webp",
     "items": [
       6,
       881,
@@ -1657,50 +1522,10 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
-    "id": 62,
-    "type": "abandoned-camp-y",
-    "title": "Orange Tent 01",
-    "description": "Camp site with 1 tent, mylar tarps, rope, noodles",
-    "x": -1121,
-    "y": 1628,
-    "items": [
-      911
-    ],
-    "tp": "goto -1120,8 37 1629,8",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
-  },
-  {
-    "id": 64,
-    "type": "abandoned-camp-y",
-    "title": "Blue Tents 02",
-    "description": "Camp site with 2 tents",
-    "x": -1255,
-    "y": 1397,
-    "items": [
-      912
-    ],
-    "tp": "goto -1256,9 100,4 1397,0",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
-  },
-  {
-    "id": 145,
-    "type": "abandoned-camp-y",
-    "title": "Orange Tent 09",
-    "description": "Camp site with 1 tent",
-    "x": -1388,
-    "y": -217,
-    "items": [
-      905,
-      557
-    ],
-    "tp": "goto -1389,2 116,7 -218,7",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
-  },
-  {
     "id": 146,
     "type": "abandoned-camp-y",
-    "title": "Black Tents 12",
-    "description": "Camp site with 2 tents",
+    "title": "Abandoned Campsite 08",
+    "description": "2 black tents",
     "x": -1722,
     "y": 59,
     "tp": "goto -1721,6 88,1 59",
@@ -1709,8 +1534,8 @@
   {
     "id": 180,
     "type": "abandoned-camp-y",
-    "title": "Black Tents 08",
-    "description": "Camp site with 3 tents",
+    "title": "Abandoned Campsite 09",
+    "description": "3 black tents",
     "x": -703,
     "y": 450,
     "items": [
@@ -1724,27 +1549,10 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
-    "id": 182,
-    "type": "abandoned-camp-y",
-    "title": "Orange Tent 10",
-    "description": "Camp site with 2 tents",
-    "x": -1268,
-    "y": -11,
-    "items": [
-      568,
-      556,
-      490,
-      340,
-      95
-    ],
-    "tp": "goto -1269,6 103,6 -11,1",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
-  },
-  {
     "id": 184,
     "type": "abandoned-camp-y",
-    "title": "Black Tents 11",
-    "description": "Camp site with 2 tents",
+    "title": "Abandoned Campsite 10",
+    "description": "2 black tents",
     "x": -1257,
     "y": -597,
     "items": [
@@ -1754,10 +1562,79 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
+    "id": 520,
+    "type": "abandoned-camp-y",
+    "title": "Abandoned Campsite 11",
+    "description": "1 black tent",
+    "x": 820.42,
+    "y": -996.05,
+    "tp": "goto 817,7 264,3 -995,9",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 62,
+    "type": "abandoned-camp-y",
+    "title": "Abandoned Campsite 12",
+    "description": "1 orange tent",
+    "x": -1121,
+    "y": 1628,
+    "items": [
+      911
+    ],
+    "tp": "goto -1120,8 37 1629,8",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 57,
+    "type": "abandoned-camp-y",
+    "title": "Abandoned Campsite 13",
+    "description": "3 orange tents",
+    "x": -242.21,
+    "y": 941.33,
+    "items": [
+      575,
+      859,
+      553,
+      554
+    ],
+    "tp": "goto -237,3 97 944,5",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 145,
+    "type": "abandoned-camp-y",
+    "title": "Abandoned Campsite 14",
+    "description": "1 orange tent",
+    "x": -1388,
+    "y": -217,
+    "items": [
+      905,
+      557
+    ],
+    "tp": "goto -1389,2 116,7 -218,7",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 182,
+    "type": "abandoned-camp-y",
+    "title": "Abandoned Campsite 15",
+    "description": "2 orange tents",
+    "x": -1268,
+    "y": -11,
+    "items": [
+      556,
+      490,
+      340,
+      95
+    ],
+    "tp": "goto -1269,6 103,6 -11,1",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
     "id": 185,
     "type": "abandoned-camp-y",
-    "title": "Orange Tents 12",
-    "description": "Camp site with 2 tents",
+    "title": "Abandoned Campsite 16",
+    "description": "2 orange tents",
     "x": -1028,
     "y": -623,
     "items": [
@@ -1772,8 +1649,8 @@
   {
     "id": 187,
     "type": "abandoned-camp-y",
-    "title": "Orange Tents 13",
-    "description": "Camp site with 2 tents",
+    "title": "Abandoned Campsite 17",
+    "description": "2 orange tents",
     "x": -474,
     "y": -335,
     "tp": "goto -473,7 323,3 -336",
@@ -1782,8 +1659,8 @@
   {
     "id": 188,
     "type": "abandoned-camp-y",
-    "title": "Orange Tent 14",
-    "description": "Camp site with 1 tent",
+    "title": "Abandoned Campsite 18",
+    "description": "1 orange tent",
     "x": -156.27,
     "y": -112.61,
     "items": [
@@ -1795,21 +1672,18 @@
   {
     "id": 189,
     "type": "abandoned-camp-y",
-    "title": "Orange Tents 17",
-    "description": "Camp site with 2 tents",
+    "title": "Abandoned Campsite 19",
+    "description": "2 orange tents",
     "x": 363.19,
     "y": -166.97,
-    "items": [
-      174
-    ],
     "tp": "goto 364,8 527,3 -170,9",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
     "id": 190,
     "type": "abandoned-camp-y",
-    "title": "Orange Tent 18",
-    "description": "Camp site with 1 tent",
+    "title": "Abandoned Campsite 20",
+    "description": "1 orange tent",
     "x": 400.81,
     "y": -182.38,
     "tp": "goto 403,9 513,7 -182,9",
@@ -1818,8 +1692,8 @@
   {
     "id": 518,
     "type": "abandoned-camp-y",
-    "title": "Orange Tent 21",
-    "description": "Camp site with 1 tent",
+    "title": "Abandoned Campsite 21",
+    "description": "1 orange tent",
     "x": -1347.69,
     "y": -1854.49,
     "tp": "goto -1344,6 18,1 -1855",
@@ -1828,8 +1702,8 @@
   {
     "id": 519,
     "type": "abandoned-camp-y",
-    "title": "Orange Tent 20",
-    "description": "With save point",
+    "title": "Abandoned Campsite 22",
+    "description": "1 orange tent",
     "x": 1456.76,
     "y": -417.45,
     "items": [
@@ -1840,23 +1714,145 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
-    "id": 520,
-    "type": "abandoned-camp-y",
-    "title": "Black Tent 16",
-    "description": "Camp site with 1 tent",
-    "x": 820.42,
-    "y": -996.05,
-    "tp": "goto 817,7 264,3 -995,9",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
-  },
-  {
     "id": 521,
     "type": "abandoned-camp-y",
-    "title": "Orange Tent 15",
-    "description": "Camp site next to ice cave entrance with 1 tent.",
+    "title": "Abandoned Campsite 23",
+    "description": "1 orange tent.",
     "x": -142.90,
     "y": -85.58,
     "tp": "goto -144 405,5 -87,3",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 64,
+    "type": "abandoned-camp-y",
+    "title": "Abandoned Campsite 24",
+    "description": "2 blue tents",
+    "x": -1255,
+    "y": 1397,
+    "items": [
+      912
+    ],
+    "tp": "goto -1256,9 100,4 1397,0",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 63,
+    "type": "abandoned-camp-n",
+    "title": "Torn Tent 01",
+    "description": "Camp site with 2 tents",
+    "x": -1363.90,
+    "y": 1661.99,
+    "items": [
+      847
+    ],
+    "tp": "goto -1362,2 91,7 1665,2",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 61,
+    "type": "abandoned-camp-n",
+    "title": "Torn Tent 02",
+    "description": "Camp site with 2 tents 1 grey crate 3 damaged laptops",
+    "x": -748.975769,
+    "y": 1277.4646,
+    "tp": "goto -749,1 55,7 1277,1",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 65,
+    "type": "abandoned-camp-n",
+    "title": "Torn Tent 03",
+    "description": "Camp site with 2 tents",
+    "x": -1435.192627,
+    "y": 1214.059814,
+    "tp": "goto -1435,6 93,5 1214,0",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 66,
+    "type": "abandoned-camp-n",
+    "title": "Torn Tent 04",
+    "description": "Camp site with 4 tents",
+    "x": -1651.407471,
+    "y": 1188.27832,
+    "tp": "goto -1650,3 83,9 1188,9",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 58,
+    "type": "abandoned-camp-n",
+    "title": "Torn Tent 05",
+    "description": "Camp site with 2 tents",
+    "x": -255.35,
+    "y": 1071.43,
+    "tp": "goto -258,1 73,3 1073,9",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 54,
+    "type": "abandoned-camp-n",
+    "title": "Torn Tent 06",
+    "description": "Camp site with 2 tents",
+    "x": 721.09,
+    "y": 736.98,
+    "items": [
+      177
+    ],
+    "tp": "goto 724,9 370 737,1",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 53,
+    "type": "abandoned-camp-n",
+    "title": "Torn Tent 07",
+    "description": "Camp site with 4 tents",
+    "x": 1260.68,
+    "y": 498.86,
+    "tp": "goto 1263,2 179,5 494,2",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 52,
+    "type": "abandoned-camp-n",
+    "title": "Torn Tent 08",
+    "description": "Camp site with 2 tents",
+    "x": 1695.50,
+    "y": 36.00,
+    "tp": "goto 1698,7 22,2 33,4",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 181,
+    "type": "abandoned-camp-n",
+    "title": "Torn Tent 09",
+    "description": "Camp site with 3 tents",
+    "x": -1098.64,
+    "y": 87.15,
+    "tp": "goto -1095,5 101 88",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 186,
+    "type": "abandoned-camp-n",
+    "title": "Torn Tent 10",
+    "description": "Camp site with 3 tents",
+    "x": -705.54,
+    "y": -661.60,
+    "tp": "goto -702,9 289,7 -664",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
+  },
+  {
+    "id": 191,
+    "type": "abandoned-camp-n",
+    "title": "Torn Tent 11",
+    "description": "Camp site with 3 tents",
+    "x": -132.00,
+    "y": -1036.21,
+    "items": [
+      108
+    ],
+    "tp": "goto -129,9 408,9 -1037",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Locations#Abandoned_Camps"
   },
   {
@@ -2156,12 +2152,134 @@
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/GPS_Locator"
   },
   {
-    "id": 1713855243882,
+    "id": 940,
+    "type": "gps-locator",
+    "title": "Mercenary GPS Locator",
+    "x": 1487.50,
+    "y": 68.40,
+    "tp": "goto 1487,5 83,3 68,4",
+    "itemid": "additem 529",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/GPS_Locator"
+  },
+  {
+    "id": 941,
+    "type": "gps-locator",
+    "title": "Mercenary GPS Locator",
+    "x": 869,
+    "y": -1412.84,
+    "tp": "goto 869 54,78 -1412,84",
+    "itemid": "additem 529",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/GPS_Locator"
+  },
+  {
+    "id": 942,
+    "type": "gps-locator",
+    "title": "Mercenary GPS Locator",
+    "x": 1466.83,
+    "y": -656.91,
+    "tp": "goto 1466,83 178,51 -656,91",
+    "itemid": "additem 529",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/GPS_Locator"
+  },
+  {
+    "id": 943,
+    "type": "gps-locator",
+    "title": "Mercenary GPS Locator",
+    "x": -1127.20,
+    "y": -1621.56,
+    "tp": "goto -1127,2 227,84 -1621,56",
+    "itemid": "additem 529",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/GPS_Locator"
+  },
+  {
+    "id": 944,
+    "type": "gps-locator",
+    "title": "Mercenary GPS Locator",
+    "x": -1392.80,
+    "y": -1124.61,
+    "tp": "goto -1392,8 234,23 -1124,61",
+    "itemid": "additem 529",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/GPS_Locator"
+  },
+  {
+    "id": 945,
+    "type": "gps-locator",
+    "title": "Mercenary GPS Locator",
+    "x": 1053.86,
+    "y": 1048.81,
+    "tp": "goto 1053,86 143,63 1048,81",
+    "itemid": "additem 529",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/GPS_Locator"
+  },
+  {
+    "id": 946,
     "type": "gps-locator",
     "title": "Worker GPS Locator",
-    "description": "In the hand of the dead worker",
-    "x":-949.433472,
-    "y":217.765778
+    "x": 1713.78,
+    "y": 73.66,
+    "tp": "goto 1713,78 25,38 73,66",
+    "itemid": "additem 529",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/GPS_Locator"
+  },
+  {
+    "id": 947,
+    "type": "gps-locator",
+    "title": "Worker GPS Locator",
+    "x": 1357.87,
+    "y": 1729.12,
+    "tp": "goto 1357,87 96,26 1729,12",
+    "itemid": "additem 529",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/GPS_Locator"
+  },
+  {
+    "id": 948,
+    "type": "gps-locator",
+    "title": "Worker GPS Locator",
+    "x": 1521.41,
+    "y": 1485.93,
+    "tp": "goto 1521,41 98,58 1485,93",
+    "itemid": "additem 529",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/GPS_Locator"
+  },
+  {
+    "id": 949,
+    "type": "gps-locator",
+    "title": "Worker GPS Locator",
+    "x": -709.10,
+    "y": -1433.10,
+    "tp": "goto -709,1 103,3 -1433,1",
+    "itemid": "additem 529",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/GPS_Locator"
+  },
+  {
+    "id": 950,
+    "type": "gps-locator",
+    "title": "Worker GPS Locator",
+    "x": 389.08,
+    "y": -656.01,
+    "tp": "goto 389,08 443,83 -656,01",
+    "itemid": "additem 529",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/GPS_Locator"
+  },
+  {
+    "id": 951,
+    "type": "gps-locator",
+    "title": "Worker GPS Locator",
+    "x": 1533.11,
+    "y": -471.77,
+    "tp": "goto 1533,11 188,33 -471,77",
+    "itemid": "additem 529",
+   "wiki": "https://sonsoftheforest.wiki.gg/wiki/GPS_Locator"
+  },
+  {
+    "id": 952,
+    "type": "gps-locator",
+    "title": "Worker GPS Locator",
+    "x": -950.01,
+    "y": 217.67,
+    "tp": "goto -950,01 79,14 217,67",
+    "itemid": "additem 529",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/GPS_Locator"
   },
   {
     "id": 88,
@@ -2789,23 +2907,24 @@
     "title": "Item Plating Machine",
     "description": "Item upgrading machine",
     "x": 1333.13,
-    "y": 699.42,
+    "y": 699.41,
     "inCave": true,
     "requirements": [
       11
     ],
     "screenshot": "blueprint_item_plating_machine.webp",
-    "warning": "Teleport after entering the cave!",
-    "tp": "goto BlueprintItemPlatingPickup"
+    "tp": "goto 1333,22 116,47 698,7"
   },
   {
-    "id": 567,
+    "id": 485,
     "type": "blueprint-cave",
     "title": "Armor Plating Machine",
     "description": "Armor upgrading machine",
-    "x": 1598.33,
-    "y": 486.42,
-    "inCave": true
+    "x": 1598.32,
+    "y": 486.41,
+    "inCave": true,
+    "screenshot": "blueprint_armor_plating_machine.webp",
+    "tp": "goto 1599,34 21,77 486,54"
   },
   {
     "id": 379,
@@ -2816,10 +2935,7 @@
     "y": 1388.92,
     "inCave": true,
     "screenshot": "blueprint_powered_cross.webp",
-    "warning": "Teleport after entering the cave!",
-    "tp": "goto BlueprintPoweredCrossPickup",
-    "itemid": "468",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Cross"
+    "tp": "goto -649,04 -17,07 1389,52"
   },
   {
     "id": 387,
@@ -2829,17 +2945,17 @@
     "x": 188.67,
     "y": -332.14,
     "screenshot": "blueprint_gore_couch.webp",
-    "tp": "goto BlueprintGoreCouchPickup"
+    "tp": "goto 189,61 523,87 -332,65"
   },
   {
     "id": 439,
     "type": "blueprint",
     "title": "Gore Chair",
     "description": "Unlockable new decoration",
-    "x": 1823.01,
+    "x": 1823.00,
     "y": -495.64,
     "screenshot": "blueprint_gore_chair.webp",
-    "tp": "goto BlueprintGoreChairPickup"
+    "tp": "goto 1822,77 49,01 -496,56"
   },
   {
     "id": 494,
@@ -2850,35 +2966,40 @@
     "y": -227.88,
     "inCave": true,
     "screenshot": "blueprint_clock.webp",
-    "warning": "Teleport after entering the cave!",
-    "tp": "goto BlueprintClockPickup"
+    "tp": "goto 461,27 498,63 -226,92"
   },
   {
     "id": 561,
-    "type": "blueprint",
+    "type": "blueprint-cave",
     "title": "Leg Lamp",
     "description": "Unlockable new decoration",
-    "x": 1474.47,
+    "x": 1474.46,
     "y": 71.51,
-    "tp": "goto BlueprintLegLampPickup"
+    "inCave": true,
+    "screenshot": "blueprint_leg_lamp.webp",
+    "tp": "goto 1475,4 76,49 71,47"
   },
   {
-    "id": 568,
+    "id": 457,
     "type": "blueprint-cave",
-    "title": "Hang Glider Launcher",
-    "x": -954.87,
+    "title": "Foldable Glider Launcher",
+    "description": "Helps with gliding from any place",
+    "x": -954.86,
     "y": 161.72,
-    "inCave": true
+    "inCave": true,
+    "screenshot": "blueprint_foldable_glider_launcher.webp",
+    "tp": "goto -955,47 76,03 162,28"
   },
   {
     "id": 496,
-    "type": "blueprint",
+    "type": "blueprint-cave",
     "title": "Spotlight",
     "description": "Unlockable new decoration",
-    "x": 1457.36,
+    "x": 1457.35,
     "y": -614.63,
+    "inCave": true,
     "screenshot": "blueprint_spotlight.webp",
-    "tp": "goto BlueprintSpotlightPickup"
+    "tp": "goto 1457,73 141,32 -613,98"
   },
   {
     "id": 497,
@@ -2887,20 +3008,20 @@
     "description": "Unlockable new trap",
     "x": 1453.53,
     "y": 752.82,
+    "inCave": true,
     "screenshot": "blueprint_spin_trap.webp",
-    "tp": "goto BlueprintSpinTrapPickup"
+    "tp": "goto 1454,46 87,57 752,54"
   },
   {
     "id": 498,
     "type": "blueprint-cave",
     "title": "Uber Trap",
     "description": "Unlockable new trap",
-    "x": -963.8,
-    "y": -1486.19,
+    "x": -963.79,
+    "y": -1486.18,
     "inCave": true,
-    "warning": "Double use the command!",
     "screenshot": "blueprint_uber_trap.webp",
-    "tp": "goto BlueprintUberTrapPickup"
+    "tp": "goto -962,92 149,85 -1486,4"
   },
   {
     "id": 502,
@@ -2911,8 +3032,7 @@
     "y": 1065.28,
     "inCave": true,
     "screenshot": "blueprint_grind_trap.webp",
-    "warning": "Double use the command!",
-    "tp": "goto BlueprintGrindTrapPickup"
+    "tp": "goto 1719,59 -31,83 1064,1"
   },
   {
     "id": 504,
@@ -2920,18 +3040,21 @@
     "title": "Spear Thrower Trap",
     "description": "Unlockable new trap",
     "x": -115.44,
-    "y": -1038.4,
+    "y": -1038.39,
     "inCave": true,
     "screenshot": "blueprint_spear_thrower_trap.webp",
-    "warning": "Double use the command!",
-    "tp": "goto BlueprintSpearThrowerTrapPickup"
+    "tp": "goto -116,34 386,03 -1038,13"
   },
   {
     "id": 563,
     "type": "blueprint-cave",
+    "title": "Teleporter",
+    "description": "Allows teleporting with Artifact",
     "x": -1151.12,
     "y": -1608.09,
-    "inCave": true
+    "inCave": true,
+    "screenshot": "blueprint_teleporter.webp",
+    "tp": "goto -1150,42 213,57 -1609,34"
   },
   {
     "id": 564,
@@ -2939,7 +3062,9 @@
     "title": "Repel Shrine",
     "x": 1505.11,
     "y": -448.46,
-    "inCave": true
+    "inCave": true,
+    "screenshot": "blueprint_repel_shrine.webp",
+    "tp": "goto 1505,47 178,05 -449,49"
   },
   {
     "id": 565,
@@ -2947,384 +3072,725 @@
     "title": "Attract Shrine",
     "x": -1648.54,
     "y": -951.13,
-    "inCave": true
-  },
-  {
-    "id": 106,
-    "type": "hang-glider",
-    "title": "Folding Glider",
-    "x": -799.53,
-    "y": -281.76,
-    "screenshot": "hang_glider_3.webp",
-    "tp": "goto WorldHangGlider13",
-    "itemid": "spawnitem 626",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hang_Glider"
+    "inCave": true,
+    "screenshot": "blueprint_attract_shrine.webp",
+    "tp": "goto -1649,45 17,1 -951,59"
   },
   {
     "id": 107,
     "type": "hang-glider",
-    "title": "Folding Glider",
+    "title": "Foldable Glider 01",
     "x": -504.43,
     "y": -307.39,
-    "screenshot": "hang_glider_4.webp",
+    "screenshot": "hang_glider_1.webp",
     "tp": "goto WorldHangGlider01",
     "itemid": "spawnitem 626",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hang_Glider"
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Foldable_Glider"
   },
   {
     "id": 108,
     "type": "hang-glider",
-    "title": "Folding Glider",
-    "x": -129.59,
-    "y": -1028.08,
-    "screenshot": "hang_glider_12.webp",
+    "title": "Foldable Glider 02",
+    "x": -129.60,
+    "y": -1028.05,
+    "screenshot": "hang_glider_2.webp",
     "tp": "goto WorldHangGlider02",
     "itemid": "spawnitem 626",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hang_Glider"
-  },
-  {
-    "id": 109,
-    "type": "hang-glider",
-    "title": "Folding Glider",
-    "x": -1184.10,
-    "y": -1728.82,
-    "screenshot": "hang_glider_13.webp",
-    "tp": "goto WorldHangGlider04",
-    "itemid": "spawnitem 626",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hang_Glider"
-  },
-  {
-    "id": 110,
-    "type": "hang-glider",
-    "title": "Folding Glider",
-    "x": -1772.03,
-    "y": 1171.02,
-    "screenshot": "hang_glider_2.webp",
-    "tp": "goto WorldHangGlider11",
-    "itemid": "spawnitem 626",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hang_Glider"
-  },
-  {
-    "id": 111,
-    "type": "hang-glider",
-    "title": "Folding Glider",
-    "x": -1298,
-    "y": 1737,
-    "screenshot": "hang_glider_1.webp",
-    "itemid": "spawnitem 626",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hang_Glider"
-  },
-  {
-    "id": 112,
-    "type": "hang-glider",
-    "title": "Folding Glider",
-    "x": -30.42,
-    "y": 665.78,
-    "screenshot": "hang_glider_5.webp",
-    "tp": "goto WorldHangGlider08",
-    "itemid": "spawnitem 626",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hang_Glider"
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Foldable_Glider"
   },
   {
     "id": 174,
     "type": "hang-glider",
-    "title": "Folding Glider",
-    "x": 366.28,
-    "y": -160.22,
-    "screenshot": "hang_glider_9.webp",
+    "title": "Foldable Glider 03",
+    "x": 499.20,
+    "y": -230.55,
+    "screenshot": "hang_glider_3.webp",
     "tp": "goto WorldHangGlider03",
     "itemid": "spawnitem 626",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hang_Glider"
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Foldable_Glider"
   },
   {
-    "id": 175,
+    "id": 109,
     "type": "hang-glider",
-    "title": "Folding Glider",
-    "x": 1083.82,
-    "y": -108.44,
-    "screenshot": "hang_glider_10.webp",
-    "tp": "goto WorldHangGlider06",
+    "title": "Foldable Glider 04",
+    "x": -1184.11,
+    "y": -1728.87,
+    "screenshot": "hang_glider_4.webp",
+    "tp": "goto WorldHangGlider04",
     "itemid": "spawnitem 626",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hang_Glider"
-  },
-  {
-    "id": 176,
-    "type": "hang-glider",
-    "title": "Folding Glider",
-    "x": 1297.53,
-    "y": -30.13,
-    "screenshot": "hang_glider_11.webp",
-    "tp": "goto WorldHangGlider09",
-    "itemid": "spawnitem 626",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hang_Glider"
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Foldable_Glider"
   },
   {
     "id": 177,
     "type": "hang-glider",
-    "title": "Folding Glider",
-    "x": 733.15,
-    "y": 740.77,
-    "screenshot": "hang_glider_8.webp",
+    "title": "Foldable Glider 05",
+    "x": 730.21,
+    "y": 737.53,
+    "screenshot": "hang_glider_5.webp",
     "tp": "goto WorldHangGlider05",
     "itemid": "spawnitem 626",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hang_Glider"
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Foldable_Glider"
+  },
+  {
+    "id": 175,
+    "type": "hang-glider",
+    "title": "Foldable Glider 06",
+    "x": 1083.83,
+    "y": -108.44,
+    "screenshot": "hang_glider_6.webp",
+    "tp": "goto WorldHangGlider06",
+    "itemid": "spawnitem 626",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Foldable_Glider"
   },
   {
     "id": 178,
     "type": "hang-glider",
-    "title": "Folding Glider",
-    "x": 797.90,
+    "title": "Foldable Glider 07",
+    "x": 797.91,
     "y": 974.66,
     "screenshot": "hang_glider_7.webp",
     "tp": "goto WorldHangGlider07",
     "itemid": "spawnitem 626",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hang_Glider"
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Foldable_Glider"
   },
   {
-    "id": 179,
+    "id": 112,
     "type": "hang-glider",
-    "title": "Folding Glider",
-    "x": 846.10,
-    "y": 1105.33,
-    "screenshot": "hang_glider_6.webp",
-    "tp": "goto WorldHangGlider14",
+    "title": "Foldable Glider 08",
+    "x": -30.42,
+    "y": 665.78,
+    "screenshot": "hang_glider_8.webp",
+    "tp": "goto WorldHangGlider08",
     "itemid": "spawnitem 626",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hang_Glider"
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Foldable_Glider"
+  },
+  {
+    "id": 176,
+    "type": "hang-glider",
+    "title": "Foldable Glider 09",
+    "x": 1297.42,
+    "y": -30.83,
+    "screenshot": "hang_glider_9.webp",
+    "tp": "goto WorldHangGlider09",
+    "itemid": "spawnitem 626",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Foldable_Glider"
   },
   {
     "id": 385,
     "type": "hang-glider",
-    "title": "Folding Glider",
+    "title": "Foldable Glider 10",
     "x": 789.73,
     "y": 273.90,
-    "screenshot": "hang_glider_14.webp",
+    "screenshot": "hang_glider_10.webp",
     "tp": "goto WorldHangGlider10",
     "itemid": "spawnitem 626",
-    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Hang_Glider"
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Foldable_Glider"
+  },
+  {
+    "id": 110,
+    "type": "hang-glider",
+    "title": "Foldable Glider 11",
+    "x": -1772.02,
+    "y": 1171.20,
+    "screenshot": "hang_glider_11.webp",
+    "tp": "goto WorldHangGlider11",
+    "itemid": "spawnitem 626",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Foldable_Glider"
+  },
+  {
+    "id": 111,
+    "type": "hang-glider",
+    "title": "Foldable Glider 12",
+    "x": -1297.05,
+    "y": 1740.64,
+    "screenshot": "hang_glider_12.webp",
+    "tp": "goto WorldHangGlider12",
+    "itemid": "spawnitem 626",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Foldable_Glider"
+  },
+  {
+    "id": 106,
+    "type": "hang-glider",
+    "title": "Foldable Glider 13",
+    "x": -799.53,
+    "y": -281.76,
+    "screenshot": "hang_glider_13.webp",
+    "tp": "goto WorldHangGlider13",
+    "itemid": "spawnitem 626",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Foldable_Glider"
+  },
+  {
+    "id": 179,
+    "type": "hang-glider",
+    "title": "Foldable Glider 14",
+    "x": 845.95,
+    "y": 1105.19,
+    "screenshot": "hang_glider_14.webp",
+    "tp": "goto WorldHangGlider14",
+    "itemid": "spawnitem 626",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Foldable_Glider"
+  },
+  {
+    "id": 570,
+    "type": "hang-glider",
+    "title": "Foldable Glider 15",
+    "x": 299.62,
+    "y": -973.85,
+    "screenshot": "hang_glider_15.webp",
+    "tp": "goto WorldHangGlider15",
+    "itemid": "spawnitem 626",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Foldable_Glider"
+  },
+  {
+    "id": 455,
+    "type": "hang-glider",
+    "title": "Foldable Glider 16",
+    "x": 408.77,
+    "y": 611.24,
+    "screenshot": "hang_glider_16.webp",
+    "tp": "goto WorldHangGlider16",
+    "itemid": "spawnitem 626",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Foldable_Glider"
+  },
+  {
+    "id": 453,
+    "type": "hang-glider",
+    "title": "Foldable Glider 17",
+    "x": 413.76,
+    "y": 1078.72,
+    "screenshot": "hang_glider_17.webp",
+    "tp": "goto WorldHangGlider17",
+    "itemid": "spawnitem 626",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Foldable_Glider"
+  },
+  {
+    "id": 452,
+    "type": "hang-glider",
+    "title": "Foldable Glider 18",
+    "x": -1438.96,
+    "y": -1124.43,
+    "screenshot": "hang_glider_18.webp",
+    "tp": "goto WorldHangGlider18",
+    "itemid": "spawnitem 626",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Foldable_Glider"
+  },
+  {
+    "id": 450,
+    "type": "hang-glider",
+    "title": "Foldable Glider 19",
+    "x": 247.74,
+    "y": 1087.01,
+    "screenshot": "hang_glider_19.webp",
+    "tp": "goto WorldHangGlider19",
+    "itemid": "spawnitem 626",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Foldable_Glider"
+  },
+  {
+    "id": 444,
+    "type": "hang-glider",
+    "title": "Foldable Glider 20",
+    "x": 56.17,
+    "y": -1561.90,
+    "screenshot": "hang_glider_20.webp",
+    "tp": "goto WorldHangGlider20",
+    "itemid": "spawnitem 626",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Foldable_Glider"
+  },
+  {
+    "id": 440,
+    "type": "hang-glider",
+    "title": "Foldable Glider 21",
+    "x": 1259.93,
+    "y": -298.68,
+    "screenshot": "hang_glider_21.webp",
+    "tp": "goto WorldHangGlider21",
+    "itemid": "spawnitem 626",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Foldable_Glider"
+  },
+  {
+    "id": 426,
+    "type": "hang-glider",
+    "title": "Foldable Glider 22",
+    "x": 746.30,
+    "y": 350.59,
+    "screenshot": "hang_glider_22.webp",
+    "tp": "goto WorldHangGlider22",
+    "itemid": "spawnitem 626",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Foldable_Glider"
   },
   {
     "id": 822,
     "type": "golf-cart",
-    "title": "Golf Cart 1",
+    "title": "Golf Cart 01",
     "x": 736,
     "y": 1493,
+    "screenshot": "golf_cart_1.webp",
     "warning": "Crouch after teleporting",
-    "tp": "goto WorldGolfCart01"
+    "tp": "goto WorldGolfCart01",
+    "itemid": "addprefab golfcart",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Cart"
   },
   {
     "id": 820,
     "type": "golf-cart",
-    "title": "Golf Cart 2",
+    "title": "Golf Cart 02",
     "x": 1031,
     "y": 1523,
+    "screenshot": "golf_cart_2.webp",
     "warning": "Crouch after teleporting",
-    "tp": "goto WorldGolfCart02"
+    "tp": "goto WorldGolfCart02",
+    "itemid": "addprefab golfcart",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Cart"
   },
   {
     "id": 819,
     "type": "golf-cart",
-    "title": "Golf Cart 3",
-    "x": 1582.85,
-    "y": 1340.58,
+    "title": "Golf Cart 03",
+    "x": 1582,
+    "y": 1340,
+    "screenshot": "golf_cart_3.webp",
     "warning": "Crouch after teleporting",
-    "tp": "goto WorldGolfCart03"
+    "tp": "goto WorldGolfCart03",
+    "itemid": "addprefab golfcart",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Cart"
   },
   {
     "id": 823,
     "type": "golf-cart",
-    "title": "Golf Cart 4",
-    "x": 1014.10,
-    "y": 1223.05,
+    "title": "Golf Cart 04",
+    "x": 1014,
+    "y": 1223,
+    "screenshot": "golf_cart_4.webp",
     "warning": "Crouch after teleporting",
-    "tp": "goto WorldGolfCart04"
+    "tp": "goto WorldGolfCart04",
+    "itemid": "addprefab golfcart",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Cart"
   },
   {
     "id": 817,
     "type": "golf-cart",
-    "title": "Golf Cart 5",
+    "title": "Golf Cart 05",
     "x": 1904,
     "y": 461,
+    "screenshot": "golf_cart_5.webp",
     "warning": "Crouch after teleporting",
-    "tp": "goto WorldGolfCart05"
+    "tp": "goto WorldGolfCart05",
+    "itemid": "addprefab golfcart",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Cart"
   },
   {
     "id": 816,
     "type": "golf-cart",
-    "title": "Golf Cart 6",
+    "title": "Golf Cart 06",
     "x": 1840,
     "y": 355,
+    "screenshot": "golf_cart_6.webp",
     "warning": "Crouch after teleporting",
-    "tp": "goto WorldGolfCart06"
+    "tp": "goto WorldGolfCart06",
+    "itemid": "addprefab golfcart",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Cart"
   },
   {
     "id": 818,
     "type": "golf-cart",
-    "title": "Golf Cart 7",
-    "x": 1707.11,
-    "y": 561.66,
+    "title": "Golf Cart 07",
+    "x": 1707,
+    "y": 561,
+    "screenshot": "golf_cart_7.webp",
     "warning": "Crouch after teleporting",
-    "tp": "goto WorldGolfCart07"
+    "tp": "goto WorldGolfCart07",
+    "itemid": "addprefab golfcart",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Cart"
   },
   {
     "id": 442,
     "type": "golf-cart",
-    "title": "Golf Cart 8",
-    "x": 897.70,
-    "y": 927.81,
+    "title": "Golf Cart 08",
+    "x": 897,
+    "y": 927,
+    "screenshot": "golf_cart_8.webp",
     "warning": "Crouch after teleporting",
-    "tp": "goto WorldGolfCart08"
+    "tp": "goto WorldGolfCart08",
+    "itemid": "addprefab golfcart",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Cart"
   },
   {
     "id": 815,
     "type": "golf-cart",
-    "title": "Golf Cart 9",
-    "x": 1185.27,
-    "y": 800.57,
+    "title": "Golf Cart 09",
+    "x": 1185,
+    "y": 801,
+    "screenshot": "golf_cart_9.webp",
     "warning": "Crouch after teleporting",
-    "tp": "goto WorldGolfCart09"
+    "tp": "goto WorldGolfCart09",
+    "itemid": "addprefab golfcart",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Cart"
   },
   {
     "id": 812,
     "type": "golf-cart",
     "title": "Golf Cart 10",
-    "x": -847.97,
-    "y": -1337.76,
+    "x": -1608,
+    "y": -1159,
+    "screenshot": "golf_cart_10.webp",
     "warning": "Crouch after teleporting",
-    "tp": "goto WorldGolfCart10"
+    "tp": "goto WorldGolfCart10",
+    "itemid": "addprefab golfcart",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Cart"
   },
   {
     "id": 813,
     "type": "golf-cart",
     "title": "Golf Cart 11",
-    "x": -928.46,
-    "y": -995.35,
+    "x": -928,
+    "y": -995,
+    "screenshot": "golf_cart_11.webp",
     "warning": "Crouch after teleporting",
-    "tp": "goto WorldGolfCart11"
+    "tp": "goto WorldGolfCart11",
+    "itemid": "addprefab golfcart",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Cart"
   },
   {
     "id": 814,
     "type": "golf-cart",
     "title": "Golf Cart 12",
-    "x": -891.30,
-    "y": -918.24,
+    "x": -891,
+    "y": -918,
+    "screenshot": "golf_cart_12.webp",
     "warning": "Crouch after teleporting",
-    "tp": "goto WorldGolfCart12"
+    "tp": "goto WorldGolfCart12",
+    "itemid": "addprefab golfcart",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Cart"
   },
   {
     "id": 821,
     "type": "golf-cart",
     "title": "Golf Cart 13",
-    "x": 1044.50,
-    "y": 1825.06,
+    "x": 1044,
+    "y": 1825,
+    "screenshot": "golf_cart_13.webp",
     "warning": "Crouch after teleporting",
-    "tp": "goto WorldGolfCart13"
+    "tp": "goto WorldGolfCart13",
+    "itemid": "addprefab golfcart",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Cart"
   },
   {
     "id": 523,
     "type": "golf-cart",
     "title": "Golf Cart 14",
-    "x": -716.73,
-    "y": -1227.74,
+    "x": 172,
+    "y": -1769,
+    "screenshot": "golf_cart_14.webp",
     "warning": "Crouch after teleporting",
-    "tp": "goto WorldGolfCart14"
+    "tp": "goto WorldGolfCart14",
+    "itemid": "addprefab golfcart",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Cart"
   },
   {
-    "id": 815,
+    "id": 596,
     "type": "golf-cart",
     "title": "Golf Cart 15",
-    "x": -623.90,
-    "y": -1044.91,
+    "x": 1269,
+    "y": -612,
+    "screenshot": "golf_cart_15.webp",
     "warning": "Crouch after teleporting",
-    "tp": "goto WorldGolfCart15"
+    "tp": "goto WorldGolfCart15",
+    "itemid": "addprefab golfcart",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Cart"
   },
   {
-    "id": 1712715470320,
+    "id": 926,
     "type": "golf-cart",
     "title": "Golf cart 16",
-    "description": "Just outside a cave opening with two dead workers",
-    "x": -672.470642,
-    "y": 1153.743408
+    "x": 722,
+    "y": 1682,
+    "screenshot": "golf_cart_16.webp",
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart16",
+    "itemid": "addprefab golfcart",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Cart"
+  },
+  {
+    "id": 140,
+    "type": "golf-cart",
+    "title": "Golf Cart 17",
+    "x": 715,
+    "y": 1403,
+    "screenshot": "golf_cart_17.webp",
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart17",
+    "itemid": "addprefab golfcart",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Cart"
+  },
+  {
+    "id": 138,
+    "type": "golf-cart",
+    "title": "Golf Cart 18",
+    "x": 931,
+    "y": 1294,
+    "screenshot": "golf_cart_18.webp",
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart18",
+    "itemid": "addprefab golfcart",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Cart"
+  },
+  {
+    "id": 137,
+    "type": "golf-cart",
+    "title": "Snow Cart 19",
+    "description": "Equipped ith a snow plow",
+    "x": 321,
+    "y": -206,
+    "screenshot": "golf_cart_19.webp",
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart19",
+    "itemid": "addprefab SnowCart",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Cart"
+  },
+  {
+    "id": 119,
+    "type": "golf-cart",
+    "title": "Snow Cart 20",
+    "description": "Equipped with a snow plow",
+    "x": 328,
+    "y": -203,
+    "screenshot": "golf_cart_20.webp",
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart20",
+    "itemid": "addprefab SnowCart",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Cart"
+  },
+  {
+    "id": 116,
+    "type": "golf-cart",
+    "title": "Snow Cart 21",
+    "description": "Equipped with a snow plow",
+    "x": 664,
+    "y": 631,
+    "screenshot": "golf_cart_21.webp",
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart21",
+    "itemid": "addprefab SnowCart",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Cart"
+  },
+  {
+    "id": 927,
+    "type": "golf-cart",
+    "title": "Snow Cart 23",
+    "description": "Equipped with a snow plow",
+    "x": 385,
+    "y": -657,
+    "screenshot": "golf_cart_23.webp",
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart23",
+    "itemid": "addprefab SnowCart",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Cart"
+  },
+  {
+    "id": 929,
+    "type": "golf-cart",
+    "title": "Golf Cart 24",
+    "x": -477,
+    "y": 721,
+    "screenshot": "golf_cart_24.webp",
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart24",
+    "itemid": "addprefab golfcart",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Cart"
+  },
+  {
+    "id": 930,
+    "type": "golf-cart",
+    "title": "Golf Cart 25",
+    "x": -672,
+    "y": 1152,
+    "screenshot": "golf_cart_25.webp",
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart25",
+    "itemid": "addprefab golfcart",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Cart"
+  },
+  {
+    "id": 931,
+    "type": "golf-cart",
+    "title": "Golf Cart 26",
+    "x": -985,
+    "y": 115,
+    "screenshot": "golf_cart_26.webp",
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart26",
+    "itemid": "addprefab golfcart",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Cart"
+  },
+  {
+    "id": 932,
+    "type": "golf-cart",
+    "title": "Golf Cart 27",
+    "x": 2,
+    "y": 1236,
+    "screenshot": "golf_cart_27.webp",
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart27",
+    "itemid": "addprefab golfcart",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Cart"
+  },
+  {
+    "id": 933,
+    "type": "golf-cart",
+    "title": "Golf Cart 28",
+    "x": -284,
+    "y": 740,
+    "screenshot": "golf_cart_28.webp",
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart28",
+    "itemid": "addprefab golfcart",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Cart"
+  },
+  {
+    "id": 934,
+    "type": "golf-cart",
+    "title": "Golf Cart 29",
+    "x": 577,
+    "y": 1083,
+    "screenshot": "golf_cart_29.webp",
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart29",
+    "itemid": "addprefab golfcart",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Cart"
+  },
+  {
+    "id": 935,
+    "type": "golf-cart",
+    "title": "Golf Cart 30",
+    "x": 1166,
+    "y": -494,
+    "screenshot": "golf_cart_30.webp",
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart30",
+    "itemid": "addprefab golfcart",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Cart"
+  },
+  {
+    "id": 936,
+    "type": "golf-cart",
+    "title": "Golf Cart 31",
+    "x": 1171,
+    "y": -508,
+    "screenshot": "golf_cart_31.webp",
+    "warning": "Crouch after teleporting",
+    "tp": "goto WorldGolfCart31",
+    "itemid": "addprefab golfcart",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Golf_Cart"
   },
   {
     "id": 428,
     "type": "unicycle",
-    "title": "Knight V",
+    "title": "Knight V 01",
     "x": -1031.79,
     "y": -625.11,
-    "screenshot": "knight_v_1.webp",
-    "itemid": "spawnitem 630"
-  },
-  {
-    "id": 568,
-    "type": "unicycle",
-    "title": "Knight V",
-    "x": -1271.26,
-    "y": -14.91,
-    "screenshot": "knight_v_2.webp",
-    "itemid": "spawnitem 630"
-  },
-  {
-    "id": 462,
-    "type": "unicycle",
-    "title": "Knight V",
-    "x": -743,
-    "y": 28,
-    "screenshot": "knight_v_3.webp",
-    "itemid": "spawnitem 630"
+    "screenshot": "knightv_1.webp",
+    "tp": "goto -1031,79 226,86 -625,11",
+    "itemid": "spawnitem 630",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Knight_V"
   },
   {
     "id": 571,
     "type": "unicycle",
-    "title": "Knight V",
-    "x": -973,
-    "y": -783,
-    "screenshot": "knight_v_6.webp",
-    "itemid": "spawnitem 630"
+    "title": "Knight V 02",
+    "x": -973.57,
+    "y": -783.28,
+    "screenshot": "knightv_2.webp",
+    "tp": "goto -973,57 272,88 -783,28",
+    "itemid": "spawnitem 630",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Knight_V"
   },
   {
     "id": 572,
     "type": "unicycle",
-    "title": "Knight V",
+    "title": "Knight V 03",
     "x": -1132.82,
     "y": -1086.89,
-    "screenshot": "knight_v_7.webp",
-    "itemid": "spawnitem 630"
+    "screenshot": "knightv_3.webp",
+    "tp": "goto -1132,82 278,82 -1086,89",
+    "itemid": "spawnitem 630",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Knight_V"
   },
   {
     "id": 573,
     "type": "unicycle",
-    "title": "Knight V",
+    "title": "Knight V 04",
     "x": 1285.29,
     "y": -725.34,
-    "screenshot": "knight_v_8.webp",
-    "itemid": "spawnitem 630"
+    "screenshot": "knightv_4.webp",
+    "tp": "goto 1285,29 228,15 -725,34",
+    "itemid": "spawnitem 630",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Knight_V"
   },
   {
     "id": 574,
     "type": "unicycle",
-    "title": "Knight V",
-    "x": 1455,
-    "y": -417,
-    "screenshot": "knight_v_9.webp",
-    "itemid": "spawnitem 630"
+    "title": "Knight V 05",
+    "x": 1454.98,
+    "y": -417.37,
+    "screenshot": "knightv_5.webp",
+    "tp": "goto 1454,98 192,25 -417,37",
+    "itemid": "spawnitem 630",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Knight_V"
   },
   {
     "id": 575,
     "type": "unicycle",
-    "title": "Knight V",
+    "title": "Knight V 06",
     "x": -238.12,
     "y": 950.96,
-    "screenshot": "knight_v_10.webp",
-    "itemid": "spawnitem 630"
+    "screenshot": "knightv_6.webp",
+    "tp": "goto -238,12 97,08 950,96",
+    "itemid": "spawnitem 630",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Knight_V"
   },
   {
     "id": 548,
     "type": "unicycle",
-    "title": "Knight V",
+    "title": "Knight V 07",
     "x": -1177.63,
     "y": -1697.91,
-    "screenshot": "knight_v_11.webp",
-    "itemid": "spawnitem 630"
+    "screenshot": "knightv_7.webp",
+    "tp": "goto -1177,63 227,55 -1697,91",
+    "itemid": "spawnitem 630",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Knight_V"
+  },
+  {
+    "id": 462,
+    "type": "unicycle",
+    "title": "Knight V 08",
+    "x": 1750.97,
+    "y": 805.73,
+    "screenshot": "knightv_8.webp",
+    "tp": "goto 1750,97 34,09 805,73",
+    "itemid": "spawnitem 630",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Knight_V"
+  },
+  {
+    "id": 568,
+    "type": "unicycle",
+    "title": "Knight V 09",
+    "x": -485.31,
+    "y": 486.94,
+    "screenshot": "knightv_9.webp",
+    "tp": "goto -485,31 128,36 486,94",
+    "itemid": "spawnitem 630",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Knight_V"
+  },
+  {
+    "id": 938,
+    "type": "unicycle",
+    "title": "Knight V 10",
+    "x": 1106.58,
+    "y": 1622.52,
+    "screenshot": "knightv_10.webp",
+    "tp": "goto 1106,58 87,50 1622,52",
+    "itemid": "spawnitem 630",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Knight_V"
   },
   {
     "id": 113,
@@ -3422,7 +3888,7 @@
   },
   {
     "id": 1702953428827,
-    "type": "machete",
+    "type": "herb",
     "title": "pick-able plants",
     "description": "mushrooms, fireweed, devil's club and aloe",
     "x": -1269.9637790110394,
@@ -3430,7 +3896,7 @@
   },
   {
     "id": 1702952620951,
-    "type": "machete",
+    "type": "herb",
     "title": "Aloe and Devil's club",
     "x": -1166.7261889578033,
     "y": 1316.6328265693514
@@ -4336,7 +4802,7 @@
     "isUnderground": true
   },
   {
-    "id": 471,
+    "id": 458,
     "type": "orange-suitcase",
     "title": "Flare Case",
     "x": -710,
@@ -4893,6 +5359,13 @@
     "title": "Big Old Cross",
     "x": 1728,
     "y": -1198
+  },
+  {
+    "id": 939,
+    "type": "poi",
+    "title": "Big Old Cross",
+    "x": 1593.71,
+    "y": -329.75
   },
   {
     "id": 204,
@@ -5904,7 +6377,7 @@
     "inCave": true
   },
   {
-    "id": 118,
+    "id": 117,
     "type": "poi",
     "title": "Broken Sleds",
     "description": "Broken sleds with loose items.",
@@ -5930,8 +6403,8 @@
     "y":1484.912231
   },
   {
-    "id": 1711958379829,
-    "type": "supply",
+    "id": 50001,
+    "type": "herb",
     "title": "Big Aloe Patch",
     "description": "19x Aloe on the hill at the tree line",
     "x":-977.783386,
@@ -5945,7 +6418,6 @@
     "x": -738,
     "y": 27,
     "items": [
-      462,
       78,
       918
     ],
@@ -6075,6 +6547,9 @@
     "description": "Village with 5 structures",
     "x": -482,
     "y": 489,
+    "items": [
+      568
+    ],
     "tp": "goto Village12",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
   },
@@ -6394,6 +6869,9 @@
     "description": "Village with 5 structures",
     "x": 1747,
     "y": 807,
+    "items": [
+      937
+    ],
     "tp": "goto Village44",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Villages"
   },
@@ -6721,13 +7199,8 @@
     "title": "Night Vision",
     "x": -1133.87,
     "y": -1604.05,
-    "inCave": true,
-    "requirements": [
-      11
-    ],
-    "screenshot": "night_vision_1.webp",
-    "warning": "Teleport only after you get inside the cave!",
-    "tp": "goto -71,4 149 -470,8",
+    "screenshot": "night_vision_goggles.webp",
+    "tp": "goto -1133,87 227,41 -1604,05",
     "itemid": "additem 354",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Night_Vision_Goggles"
   },
@@ -6735,10 +7208,9 @@
     "id": 881,
     "type": "cooking-pot",
     "title": "Cooking Pot",
-    "description": "Between Tents",
     "x": -46.68,
     "y": 1456.53,
-    "screenshot": "cooking_pot_1.webp",
+    "tp": "goto -46,68 16,78 1456,53",
     "itemid": "additem 517",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Cooking_Pot"
   },
@@ -6747,9 +7219,9 @@
     "type": "cooking-pot",
     "title": "Cooking Pot",
     "description": "On Good Times Yacht",
-    "x": 414.44,
-    "y": 1177.21,
-    "screenshot": "cooking_pot_2.webp",
+    "x": 414.43,
+    "y": 1177.20,
+    "tp": "goto 414,43 15,83 1177,2",
     "itemid": "additem 517",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Cooking_Pot"
   },
@@ -6757,10 +7229,9 @@
     "id": 897,
     "type": "cooking-pot",
     "title": "Cooking Pot",
-    "description": "Inside campfire",
     "x": 1283.00,
     "y": -727.37,
-    "screenshot": "cooking_pot_3.webp",
+    "tp": "goto 1283 228,04 -727,37",
     "itemid": "additem 517",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Cooking_Pot"
   },
@@ -6768,10 +7239,9 @@
     "id": 912,
     "type": "cooking-pot",
     "title": "Cooking Pot",
-    "description": "beside fire ring",
-    "x": -1255,
-    "y": 1396,
-    "screenshot": "cooking_pot_4.webp",
+    "x": -1256.54,
+    "y": 1396.85,
+    "tp": "goto -1256,54 100,33 1396,85",
     "itemid": "additem 517",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Cooking_Pot"
   },
@@ -6781,7 +7251,7 @@
     "title": "Cooking Pot",
     "x": -703.04,
     "y": 449.07,
-    "screenshot": "cooking_pot_5.webp",
+    "tp": "goto -703,04 102,94 449,07",
     "itemid": "additem 517",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Cooking_Pot"
   },
@@ -6791,7 +7261,7 @@
     "title": "Cooking Pot",
     "x": -1269.61,
     "y": -11.19,
-    "screenshot": "cooking_pot_6.webp",
+    "tp": "goto -1269,61 103,64 -11,19",
     "itemid": "additem 517",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Cooking_Pot"
   },
@@ -6802,11 +7272,11 @@
     "description": "On 2nd bunker floor",
     "x": 1138.21,
     "y": -638.19,
+    "tp": "goto 1138,35 209,24 -639,77",
     "inBunker": true,
     "requirements": [
       17
     ],
-    "screenshot": "cooking_pot_7.webp",
     "itemid": "additem 517",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Cooking_Pot"
   },
@@ -6816,17 +7286,30 @@
     "title": "Cooking Pot",
     "x": 1614.59,
     "y": 480.40,
+    "tp": "goto 1614,59 22,99 480,4",
     "inBunker": true,
-    "screenshot": "cooking_pot_8.webp",
     "itemid": "additem 517",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Cooking_Pot"
   },
   {
-    "id": 1712816841957,
+    "id": 584,
     "type": "cooking-pot",
     "title": "Cooking Pot",
-    "x": -1609.150513,
-    "y": 488.138885
+    "x": -1608.97,
+    "y": 487.92,
+    "tp": "goto -1608,97 14.24 487,92",
+    "itemid": "additem 517",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Cooking_Pot"
+  },
+  {
+    "id": 953,
+    "type": "cooking-pot",
+    "title": "Cooking Pot",
+    "x": -1393.75,
+    "y": -1124.70,
+    "tp": "goto -1393,75 233,65 -1124,70",
+    "itemid": "additem 517",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Cooking_Pot"
   },
   {
     "id": 884,
@@ -7085,6 +7568,15 @@
     "description": "In the carry box of the broken golf cart.",
     "x":-1187.253906,
     "y":137.056671,
+    "itemid": "additem 661",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
+  },
+  {
+    "id": 139,
+    "type": "large-battery",
+    "title": "Golf Cart Battery",
+    "x": 724.73,
+    "y": 1680.34,
     "itemid": "additem 661",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Large_Battery"
   },
@@ -7428,6 +7920,15 @@
     "title": "Radio",
     "x": 1456.98,
     "y": -419.53,
+    "itemid": "additem 590",
+    "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
+  },
+  {
+    "id": 341,
+    "type": "radio",
+    "title": "Radio",
+    "x": 1178.86,
+    "y": 806.26,
     "itemid": "additem 590",
     "wiki": "https://sonsoftheforest.wiki.gg/wiki/Radio"
   },
@@ -7921,7 +8422,7 @@
     "tg": "togglego LakeEC"
   },
   {
-    "id": 874,
+    "id": 595,
     "type": "lake",
     "title": "Lake ED",
     "description": "Hot Spring",
