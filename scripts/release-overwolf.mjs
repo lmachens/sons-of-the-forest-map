@@ -12,9 +12,14 @@ import {
 } from "@overwolf/ow-cli/bin/index.js";
 
 const PREVIEW_ACCESS_CHANNEL_ID = process.env.PREVIEW_ACCESS_CHANNEL_ID;
+
+console.log(
+  `About to release to channel ${PREVIEW_ACCESS_CHANNEL_ID} with ${process.env.OW_CLI_EMAIL}`
+);
 const FILE_NAME = "app";
 
 OwCliContainer.init();
+console.log("Initialized OW CLI container");
 
 const packOpkCmd = OwCliContainer.resolve(PackOpkCommand);
 const signOpkCmd = OwCliContainer.resolve(SignOpkCommand);
@@ -25,28 +30,34 @@ await packOpkCmd.handler({
   folderPath: "dist",
   outputFile: `${FILE_NAME}.opk`,
 });
+console.log("Packed OPK");
 await signOpkCmd.handler({
   filePath: `${FILE_NAME}.opk`,
   outputFile: `${FILE_NAME}.signed.opk`,
 });
+console.log("Signed OPK");
 if (PREVIEW_ACCESS_CHANNEL_ID) {
   const versionId = await uploadOpkCmd.handler({
     filePath: `${FILE_NAME}.signed.opk`,
-    channelId: +PREVIEW_ACCESS_CHANNEL_ID,
+    channelId: Number(PREVIEW_ACCESS_CHANNEL_ID),
     wait: true,
   });
+  console.log("Uploaded OPK");
   await releaseOpkCmd.handler({
     versionId,
     percent: 100,
-    channelId: +PREVIEW_ACCESS_CHANNEL_ID,
+    channelId: Number(PREVIEW_ACCESS_CHANNEL_ID),
   });
+  console.log("Released OPK");
 } else {
   const versionId = await uploadOpkCmd.handler({
     filePath: `${FILE_NAME}.signed.opk`,
     wait: true,
   });
+  console.log("Uploaded OPK");
   await releaseOpkCmd.handler({
     versionId,
     percent: 100,
   });
+  console.log("Released OPK");
 }
